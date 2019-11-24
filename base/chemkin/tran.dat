@@ -1,15 +1,15 @@
 ! Species         Shape    LJ-depth  LJ-diam   DiplMom   Polzblty  RotRelaxNum Data     
 ! Name            Index    epsilon/k_B sigma     mu        alpha     Zrot      Source   
 Ne                  0     148.600     3.758     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
-N2                  1      97.530     3.621     0.000     1.760     4.000    ! PrimaryTransportLibrary
+N2                  1      97.530     3.621     0.000     1.760     4.000    ! GRI-Mech
 ! X(1)                None
-H2(2)               1      59.700     2.833     0.000     0.000     0.000    ! PrimaryTransportLibrary
-CO(3)               1      91.700     3.690     0.000     1.760     4.000    ! PrimaryTransportLibrary
-CO2(4)              1     195.201     3.941     0.000     0.000     0.000    ! PrimaryTransportLibrary
-H2O(5)              2     809.102     2.641     0.000     1.760     4.000    ! PrimaryTransportLibrary
-CH2O(6)             2     498.000     3.590     0.000     0.000     2.000    ! NOx2018
+H2(2)               1      38.000     2.920     0.000     0.790   280.000    ! GRI-Mech
+CO(3)               1      98.100     3.650     0.000     1.950     1.800    ! GRI-Mech
+CO2(4)              1     244.001     3.763     0.000     2.650     2.100    ! GRI-Mech
+H2O(5)              2     572.402     2.605     1.844     0.000     4.000    ! GRI-Mech
+CH2O(6)             2     498.002     3.590     0.000     0.000     2.000    ! GRI-Mech
 HCOOH(7)            2     481.800     3.626     1.700     0.000     1.000    ! NOx2018
-CH3OH(8)            2     481.800     3.626     0.000     0.000     1.000    ! NOx2018
+CH3OH(8)            2     481.802     3.626     0.000     0.000     1.000    ! GRI-Mech
 HCOOCH3(9)          2     377.356     5.234     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=490.07 K, Pc=49.66 bar (from Joback method)
 ! H*(10)              None
 ! O*(11)              None
@@ -24,25 +24,20 @@ HCOOCH3(9)          2     377.356     5.234     0.000     0.000     0.000    ! E
 ! CH3O*(20)           None
 ! CH3O2*(21)          None
 ! CH3OH*(22)          None
-! H2X(52)             None
-! COX(53)             None
-! CHOX(64)            None
-! CH2O2X(54)          None
-! CH3OX(48)           None
-! SX(57)              None
-OCO(174)            2     436.691     5.898     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=567.13 K, Pc=40.16 bar (from Joback method)
-! SX(231)             None
+! H2X(41)             None
+! COX(42)             None
+! CHOX(51)            None
+! CH2O2X(43)          None
+! CH3OX(38)           None
 ! CH3X(25)            None
-CH4(24)             2     141.400     3.746     0.000     2.600    13.000    ! NOx2018
-! CH4X(249)           None
-! CH3O2X(51)          None
-! C2HO2X(68)          None
-! SX(130)             None
-! SX(55)              None
-! SX(162)             None
-COCO(227)           2     402.716     5.709     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=523.01 K, Pc=40.83 bar (from Joback method)
-! SX(362)             None
-O2(23)              1     106.700     3.467     0.000     0.000     0.000    ! PrimaryTransportLibrary
+CH4(24)             2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
+! CH4X(158)           None
+! SX(46)              None
+! CH3O2X(40)          None
+! SX(93)              None
+! SX(44)              None
+! SX(115)             None
+O2(23)              1     107.400     3.458     0.000     1.600     3.800    ! GRI-Mech
 ! CX(26)              None
 ! CH2X(27)            None
 ! CHX(28)             None

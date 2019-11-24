@@ -183,7 +183,11 @@ species(
 #    reactive=True,
 #    structure=adjacencyList(
 #        """
-#
+# 1 O u0 p2 c0 {2,S} {4,S}
+# 2 C u0 p0 c0 {1,S} {3,S} {5,D}
+# 3 H u0 p0 c0 {2,S}
+# 4 H u0 p0 c0 {1,S}
+# 5 X u0 p0 c0 {2,D}
 # """),
 # )
 
@@ -263,7 +267,12 @@ species(
 #    reactive=True,
 #    structure=adjacencyList(
 #        """
-#
+# 1 O u0 p2 c0 {2,S} {5,S}
+# 2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
+# 3 H u0 p0 c0 {2,S}
+# 4 H u0 p0 c0 {2,S}
+# 5 H u0 p0 c0 {1,S}
+# 6 X u0 p0 c0 {2,S}
 # """),
 # )
 
@@ -302,7 +311,6 @@ species(
 #    reactive=True,
 #    structure=adjacencyList(
 #        """
-#
 # """),
 # )
 
