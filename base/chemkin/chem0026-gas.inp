@@ -104,18 +104,18 @@ REACTIONS    KCAL/MOLE   MOLES
 
 H2(2)+CO(3)=CH2O(6)                                 2.890000e+09 1.160     82.100   
 
+H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
+DUPLICATE
+
+H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
+DUPLICATE
+
+H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
+DUPLICATE
+
 H2O(5)+CO(3)=HCOOH(7)                               2.540000e-01 3.700     53.360   
 
-H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
-DUPLICATE
-
 CO(3)+CH3OH(8)=HCOOCH3(9)                           1.270000e-01 3.700     53.360   
-
-H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
-DUPLICATE
-
-H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
-DUPLICATE
 
 END
 
