@@ -1,6 +1,6 @@
 # Data sources
 database(
-    thermoLibraries=['surfaceThermoPt', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
+    thermoLibraries=['surfaceThermoPt111', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
     reactionLibraries = [('Surface/CPOX_Pt/Deutschmann2006', True),'BurkeH2O2inArHe','BurkeH2O2inN2'],
     seedMechanisms = [],
     kineticsDepositories = ['training'],
@@ -10,12 +10,12 @@ database(
 
 catalystProperties( # default values for Cu(111)
     bindingEnergies = {
-                       'C':(-4.159, 'eV/molecule'), # from Abild-Pedersen DOI: 10.1103/PhysRevLett.99.016105
-                       'O':(-3.853, 'eV/molecule'), # from Abild-Pedersen DOI: 10.1103/PhysRevLett.99.016105
-                       'N':(-3.423, 'eV/molecule'), # from Katrin
-                       'H':(-2.579, 'eV/molecule'), # from Katrin
+                       'C':(-4.96033553E+00, 'eV/molecule'), # from Katrin
+                       'O':(-4.20763879E+00, 'eV/molecule'), # from Katrin
+                       'N':(-3.58446699E+00, 'eV/molecule'), # from Katrin
+                       'H':(-2.58383235E+00, 'eV/molecule'), # from Katrin
                        },
-    surfaceSiteDensity=(2.72e-9, 'mol/cm^2'),
+    surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
 )
 
 # List of species
@@ -326,8 +326,9 @@ species(
 #----------
 # Reaction systems
 surfaceReactor(
-    temperature=(483,'K'),
+    temperature=[(483,'K'),(547, 'K')],
     initialPressure=(15.0, 'atm'),
+    nSims = 4,
     initialGasMoleFractions={
         "CO": 0.1,
         "CO2": 0.1,
@@ -336,52 +337,16 @@ surfaceReactor(
     initialSurfaceCoverages={
         "X": 1.0,
     },
-    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    surfaceVolumeRatio=(1.e6, 'm^-1'),
     terminationConversion = { "CO":0.95,},
     terminationTime=(500., 's'),
-    # terminationConversion={'O2': 0.99,},
     # terminationRateRatio=0.01
 )
 
 surfaceReactor(
-    temperature=(547,'K'),
+    temperature=[(483,'K'),(547, 'K')],
     initialPressure=(15.0, 'atm'),
-    initialGasMoleFractions={
-        "CO": 0.1,
-        "CO2": 0.1,
-        "H2": 0.8,
-    },
-    initialSurfaceCoverages={
-        "X": 1.0,
-    },
-    surfaceVolumeRatio=(1.e5, 'm^-1'),
-    terminationConversion = { "CO":0.95,},
-    terminationTime=(500., 's'),
-    # terminationConversion={'O2': 0.99,},
-    # terminationRateRatio=0.01
-)
-
-surfaceReactor(
-    temperature=(483,'K'),
-    initialPressure=(50.0, 'atm'),
-    initialGasMoleFractions={
-        "CO": 0.1,
-        "CO2": 0.1,
-        "H2": 0.8,
-    },
-    initialSurfaceCoverages={
-        "X": 1.0,
-    },
-    surfaceVolumeRatio=(1.e5, 'm^-1'),
-    terminationConversion = { "CO":0.95,},
-    terminationTime=(500., 's'),
-    # terminationConversion={'O2': 0.99,},
-    # terminationRateRatio=0.01
-)
-
-surfaceReactor(
-    temperature=(547,'K'),
-    initialPressure=(50.0, 'atm'),
+    nSims = 4,
     initialGasMoleFractions={
         "CO": 0.1,
         "CO2": 0.1,
