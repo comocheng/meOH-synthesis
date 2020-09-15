@@ -8,12 +8,12 @@ database(
     kineticsEstimator = 'rate rules',
 )
 
-catalystProperties( # default values for Cu(111)
+catalystProperties( # default values for Cu(111) calculated by Katrin Blondal and Bjarne Kreitz at Brown University
     bindingEnergies = {
-                       'C':(-4.96033553E+00, 'eV/molecule'), # from Katrin
-                       'O':(-4.20763879E+00, 'eV/molecule'), # from Katrin
-                       'N':(-3.58446699E+00, 'eV/molecule'), # from Katrin
-                       'H':(-2.58383235E+00, 'eV/molecule'), # from Katrin
+                       'C':(-4.96033553, 'eV/molecule'),
+                       'O':(-4.20763879, 'eV/molecule'),
+                       'N':(-3.58446699, 'eV/molecule'),
+                       'H':(-2.58383235, 'eV/molecule'),
                        },
     surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
 )
@@ -23,6 +23,12 @@ species(
     label='X',
     reactive=True,
     structure=adjacencyList("1 X u0"),
+)
+
+species(
+    label='N2',
+    reactive=False,
+    structure=SMILES("N#N"),
 )
 
 species(
@@ -327,39 +333,78 @@ species(
 # Reaction systems
 surfaceReactor(
     temperature=[(483,'K'),(547, 'K')],
-    initialPressure=(15.0, 'atm'),
+    initialPressure=(15.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
-        "CO": 0.1,
-        "CO2": 0.1,
-        "H2": 0.8,
-    },
-    initialSurfaceCoverages={
-        "X": 1.0,
-    },
-    surfaceVolumeRatio=(1.e6, 'm^-1'),
-    terminationConversion = { "CO":0.95,},
-    terminationTime=(500., 's'),
-    # terminationRateRatio=0.01
-)
-
-surfaceReactor(
-    temperature=[(483,'K'),(547, 'K')],
-    initialPressure=(15.0, 'atm'),
-    nSims = 4,
-    initialGasMoleFractions={
-        "CO": 0.1,
-        "CO2": 0.1,
-        "H2": 0.8,
+        "CO": 0.0,
+        "CO2": 0.776,
+        "H2": 0.7669,
+        "N2": 0.1555,
     },
     initialSurfaceCoverages={
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    terminationConversion = { "CO":0.95,},
+    # terminationConversion = { "CO2":0.95,},
     terminationTime=(500., 's'),
-    # terminationConversion={'O2': 0.99,},
-    # terminationRateRatio=0.01
+    terminationRateRatio=0.01
+)
+
+surfaceReactor(
+    temperature=[(483,'K'),(547, 'K')],
+    initialPressure=(60.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.0,
+        "CO2": 0.776,
+        "H2": 0.7669,
+        "N2": 0.1555,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    # terminationConversion = { "CO2":0.95,},
+    terminationTime=(500., 's'),
+    terminationRateRatio=0.01
+)
+
+surfaceReactor(
+    temperature=[(483,'K'),(547, 'K')],
+    initialPressure=(15.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.2019,
+        "CO2": 0.0,
+        "H2": 0.6424,
+        "N2": 0.1557,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    # terminationConversion = { "CO":0.95,},
+    terminationTime=(500., 's'),
+    terminationRateRatio=0.01
+)
+
+surfaceReactor(
+    temperature=[(483,'K'),(547, 'K')],
+    initialPressure=(60.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.2019,
+        "CO2": 0.0,
+        "H2": 0.6424,
+        "N2": 0.1557,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    # terminationConversion = { "CO":0.95,},
+    terminationTime=(500., 's'),
+    terminationRateRatio=0.01
 )
 
 simulator(

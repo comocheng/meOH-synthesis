@@ -1,8 +1,7 @@
 :root:Removing old /scratch/westgroup/mazeau/meOH-synthesis/base/RMG_backup.log
 :root:Moving /scratch/westgroup/mazeau/meOH-synthesis/base/RMG.log to /scratch/westgroup/mazeau/meOH-synthesis/base/RMG_backup.log
 
-/usr/bin/gs: /shared/centos7/anaconda3/3.7/lib/libtiff.so.5: no version information available (required by /lib64/libgs.so.9)
-/home/mazeau.e/.conda/envs/rmg_env/lib/python3.7/site-packages/scipy/optimize/optimize.py:1826: LinAlgWarning: Ill-conditioned matrix (rcond=9.79183e-18): result may not be accurate.
+/home/mazeau.e/.conda/envs/rmg_env/lib/python3.7/site-packages/scipy/optimize/optimize.py:1978: LinAlgWarning: Ill-conditioned matrix (rcond=9.79183e-18): result may not be accurate.
   fu = func(x, *args)
-/home/mazeau.e/.conda/envs/rmg_env/lib/python3.7/site-packages/scipy/optimize/optimize.py:1826: LinAlgWarning: Ill-conditioned matrix (rcond=5.9437e-17): result may not be accurate.
+/home/mazeau.e/.conda/envs/rmg_env/lib/python3.7/site-packages/scipy/optimize/optimize.py:1978: LinAlgWarning: Ill-conditioned matrix (rcond=5.9437e-17): result may not be accurate.
   fu = func(x, *args)
