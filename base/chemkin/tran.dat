@@ -1,7 +1,7 @@
 ! Species         Shape    LJ-depth  LJ-diam   DiplMom   Polzblty  RotRelaxNum Data     
 ! Name            Index    epsilon/k_B sigma     mu        alpha     Zrot      Source   
-Ne                  0     148.600     3.758     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
 N2                  1      97.530     3.621     0.000     1.760     4.000    ! PrimaryTransportLibrary
+Ne                  0     148.600     3.758     0.000     0.000     0.000    ! Epsilon & sigma estimated with fixed Lennard Jones Parameters. This is the fallback method! Try improving transport databases!
 ! X(1)                None
 H2(2)               1      59.700     2.833     0.000     0.000     0.000    ! PrimaryTransportLibrary
 CO(3)               1      91.700     3.690     0.000     1.760     4.000    ! PrimaryTransportLibrary
@@ -25,52 +25,9 @@ HCOOCH3(9)          2     377.356     5.234     0.000     0.000     0.000    ! E
 ! CH3O2*(21)          None
 ! CH3OH*(22)          None
 ! H2X(52)             None
-! CH3OX(48)           None
-! SX(56)              None
-! CH2OX(169)          None
-! CHOX(168)           None
-! SX(54)              None
-! CH3X(25)            None
-CH4(24)             2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
-C2H4O(268)          2     436.001     3.970     0.000     0.000     2.000    ! GRI-Mech
-! SX(280)             None
-! CH4X(274)           None
-C2H6O(271)          2     362.600     4.530     0.000     0.000     1.500    ! NOx2018
-! CH2O2X(53)          None
-! SX(372)             None
-OCCO(226)           2     453.933     6.214     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=589.52 K, Pc=35.69 bar (from Joback method)
-! SX(246)             None
-! SX(439)             None
-! SX(213)             None
-! C2H5X(370)          None
-C2H6(273)           2     252.301     4.302     0.000     0.000     1.500    ! GRI-Mech
-! C2H6X(515)          None
-! SX(188)             None
-S(449)              2     473.260     6.560     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=614.62 K, Pc=31.63 bar (from Joback method)
-! SX(557)             None
-! SX(321)             None
-! SX(330)             None
-! SX(210)             None
-C3H8O(509)          2     402.352     5.826     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=522.54 K, Pc=38.39 bar (from Joback method)
-! SX(748)             None
-! SX(238)             None
-! SX(247)             None
-COCO(224)           2     402.716     5.709     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=523.01 K, Pc=40.83 bar (from Joback method)
-CH4O2(171)          2     436.691     5.898     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=567.13 K, Pc=40.16 bar (from Joback method)
-! SX(880)             None
-C2H4O2(63)          2     428.975     5.738     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=557.11 K, Pc=42.83 bar (from Joback method)
-! SX(244)             None
-! SX(877)             None
-S(373)              2     448.709     6.086     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=582.74 K, Pc=37.55 bar (from Joback method)
-! SX(120)             None
-S(866)              2     541.248     7.255     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=702.92 K, Pc=26.74 bar (from Joback method)
-! SX(1072)            None
-C3H6O(505)          2     376.893     5.351     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=489.47 K, Pc=46.4 bar (from Joback method)
-! SX(1266)            None
-! SX(1210)            None
-! SX(555)             None
-! SX(415)             None
 O2(23)              1     106.700     3.467     0.000     0.000     0.000    ! PrimaryTransportLibrary
+CH4(24)             2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
+! CH3X(25)            None
 ! CX(26)              None
 ! CH2X(27)            None
 ! CHX(28)             None
