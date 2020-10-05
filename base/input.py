@@ -1,7 +1,7 @@
 # Data sources
 database(
     thermoLibraries=['surfaceThermoPt111', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
-    reactionLibraries = [('Surface/CPOX_Pt/Deutschmann2006', True),'BurkeH2O2inArHe','BurkeH2O2inN2'],
+    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2'],
     seedMechanisms = [],
     kineticsDepositories = ['training'],
     kineticsFamilies =['surface','default'],

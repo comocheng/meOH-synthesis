@@ -699,125 +699,6 @@ Phases:
   name: phase
 Reactions:
 - kinetics:
-    A: 0.046
-    Ea: 0.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
-  products:
-  - H*
-  - H*
-  radicalchange: 0
-  reactants:
-  - X
-  - X
-  - H2
-  type: ElementaryReaction
-- kinetics:
-    A: 1.28e+17
-    Ea: 11200.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - X
-  - OH*
-  radicalchange: 0
-  reactants:
-  - O*
-  - H*
-  type: ElementaryReaction
-- kinetics:
-    A: 0.75
-    Ea: 0.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
-  products:
-  - H2O*
-  radicalchange: 0
-  reactants:
-  - X
-  - H2O
-  type: ElementaryReaction
-- kinetics:
-    A: 1.0e+16
-    Ea: 43100.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - OH*
-  - OH*
-  radicalchange: 0
-  reactants:
-  - O*
-  - H2O*
-  type: ElementaryReaction
-- kinetics:
-    A: 2.04e+17
-    Ea: 66220.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - X
-  - H2O*
-  radicalchange: 0
-  reactants:
-  - H*
-  - OH*
-  type: ElementaryReaction
-- kinetics:
-    A: 0.84
-    Ea: 0.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
-  products:
-  - CO*
-  radicalchange: 0
-  reactants:
-  - X
-  - CO
-  type: ElementaryReaction
-- kinetics:
-    A: 0.005
-    Ea: 0.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
-  products:
-  - CO2*
-  radicalchange: 0
-  reactants:
-  - X
-  - CO2
-  type: ElementaryReaction
-- kinetics:
-    A: 3.7e+17
-    Ea: 117600.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - X
-  - CO2*
-  radicalchange: 0
-  reactants:
-  - O*
-  - CO*
-  type: ElementaryReaction
-- kinetics:
-    A: 1000000000000000.0
-    Ea: 8400.0
-    n: 0.0
-    type: Arrhenius
-  products:
-  - OH*
-  - CO*
-  radicalchange: 0
-  reactants:
-  - H*
-  - CO2*
-  type: ElementaryReaction
-- kinetics:
     A: 2890.0000000000005
     Ea: 343506.0
     n: 1.16
@@ -943,6 +824,34 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 0.032
+    Ea: 0.0
+    T0: 1.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - H*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - H2
+  type: ElementaryReaction
+- kinetics:
+    A: 0.1
+    Ea: 26444.565063781338
+    T0: 1.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CO2*
+  radicalchange: 0
+  reactants:
+  - X
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 0.032
     Ea: 59628.01090648942
     T0: 1.0
     n: 0.0
@@ -953,6 +862,19 @@ Reactions:
   radicalchange: 0
   reactants:
   - X
+  - X
+  - H2O
+  type: ElementaryReaction
+- kinetics:
+    A: 0.1
+    Ea: 0.0
+    T0: 1.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H2O*
+  radicalchange: 0
+  reactants:
   - X
   - H2O
   type: ElementaryReaction
@@ -1071,6 +993,45 @@ Reactions:
   - X
   - X
   - HCOOCH3
+  type: ElementaryReaction
+- kinetics:
+    A: 7.452e+17
+    Ea: 162095.35940879994
+    n: 0.0
+    type: Arrhenius
+  products:
+  - O*
+  - H*
+  radicalchange: 0
+  reactants:
+  - X
+  - OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 4879000000000000.0
+    Ea: 77181.00000421586
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H*
+  - OH*
+  radicalchange: 0
+  reactants:
+  - X
+  - H2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 4.06e+16
+    Ea: 62715.4663408
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - CO2*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CO*
   type: ElementaryReaction
 - kinetics:
     A: 3.14e+17
@@ -1199,6 +1160,19 @@ Reactions:
   reactants:
   - H*
   - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 5.691e+16
+    Ea: 58856.0531112
+    n: 0.0
+    type: Arrhenius
+  products:
+  - O*
+  - H2O*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - OH*
   type: ElementaryReaction
 - kinetics:
     A: 3.298e+17

@@ -1,67 +1,7 @@
-X
-1 X u0 p0 c0
-
 O2
 multiplicity 3
 1 O u1 p2 c0 {2,S}
 2 O u1 p2 c0 {1,S}
-
-O*
-1 O u0 p2 c0 {2,D}
-2 X u0 p0 c0 {1,D}
-
-CH4
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-
-H*
-1 H u0 p0 c0 {2,S}
-2 X u0 p0 c0 {1,S}
-
-CH3X
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 X u0 p0 c0 {1,S}
-
-OH*
-1 O u0 p2 c0 {2,S} {3,S}
-2 H u0 p0 c0 {1,S}
-3 X u0 p0 c0 {1,S}
-
-H2O*
-1 O u0 p2 c0 {2,S} {3,S}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 X u0 p0 c0
-
-CX
-1 C u0 p0 c0 {2,Q}
-2 X u0 p0 c0 {1,Q}
-
-CO*
-1 O u0 p2 c0 {2,D}
-2 C u0 p0 c0 {1,D} {3,D}
-3 X u0 p0 c0 {2,D}
-
-CH2X
-1 C u0 p0 c0 {2,S} {3,S} {4,D}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 X u0 p0 c0 {1,D}
-
-CHX
-1 C u0 p0 c0 {2,S} {3,T}
-2 H u0 p0 c0 {1,S}
-3 X u0 p0 c0 {1,T}
-
-H2
-1 H u0 p0 c0 {2,S}
-2 H u0 p0 c0 {1,S}
 
 H
 multiplicity 2
@@ -74,6 +14,10 @@ multiplicity 3
 OH
 multiplicity 2
 1 O u1 p2 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+
+H2
+1 H u0 p0 c0 {2,S}
 2 H u0 p0 c0 {1,S}
 
 H2O
@@ -191,6 +135,13 @@ CO2
 2 O u0 p2 c0 {3,D}
 3 C u0 p0 c0 {1,D} {2,D}
 
+CH4
+1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+
 [CH2]OC[O]
 multiplicity 3
 1 O u0 p2 c0 {3,S} {4,S}
@@ -232,6 +183,18 @@ multiplicity 2
 5 H u0 p0 c0 {3,S}
 6 H u0 p0 c0 {3,S}
 7 H u0 p0 c0 {3,S}
+
+X
+1 X u0 p0 c0
+
+H*
+1 H u0 p0 c0 {2,S}
+2 X u0 p0 c0 {1,S}
+
+OH*
+1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0 {1,S}
 
 HCO*
 1 O u0 p2 c0 {2,D}
@@ -313,6 +276,13 @@ formic_acidX
 5 H u0 p0 c0 {1,S}
 6 X u0 p0 c0
 
+C[Pt]
+1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+5 X u0 p0 c0 {1,S}
+
 CH2OCHOX
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,D}
@@ -350,6 +320,16 @@ CH2O*
 3 H u0 p0 c0 {2,S}
 4 H u0 p0 c0 {2,S}
 5 X u0 p0 c0
+
+O*
+1 O u0 p2 c0 {2,D}
+2 X u0 p0 c0 {1,D}
+
+C=[Pt]
+1 C u0 p0 c0 {2,S} {3,S} {4,D}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0 {1,D}
 
 CH3OH*
 1 O u0 p2 c0 {2,S} {6,S}
@@ -1743,6 +1723,11 @@ COC([Pt])OOCO
 14 H u0 p0 c0 {4,S}
 15 X u0 p0 c0 {5,S}
 
+CO*
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,D}
+3 X u0 p0 c0 {2,D}
+
 OC#[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
 2 C u0 p0 c0 {1,S} {4,T}
@@ -1778,6 +1763,12 @@ OO[Pt]
 2 O u0 p2 c0 {1,S} {3,S}
 3 H u0 p0 c0 {2,S}
 4 X u0 p0 c0 {1,S}
+
+H2O*
+1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0
 
 formylperoxyX
 1 O u0 p2 c0 {2,S} {4,S}
