@@ -347,7 +347,7 @@ surfaceReactor(
     surfaceVolumeRatio=(1.e5, 'm^-1'),
     # terminationConversion = { "CO2":0.95,},
     terminationTime=(500., 's'),
-    terminationRateRatio=0.01
+    terminationRateRatio=0.001
 )
 
 surfaceReactor(
@@ -366,7 +366,7 @@ surfaceReactor(
     surfaceVolumeRatio=(1.e5, 'm^-1'),
     # terminationConversion = { "CO2":0.95,},
     terminationTime=(500., 's'),
-    terminationRateRatio=0.01
+    terminationRateRatio=0.001
 )
 
 surfaceReactor(
@@ -385,7 +385,7 @@ surfaceReactor(
     surfaceVolumeRatio=(1.e5, 'm^-1'),
     # terminationConversion = { "CO":0.95,},
     terminationTime=(500., 's'),
-    terminationRateRatio=0.01
+    terminationRateRatio=0.001
 )
 
 surfaceReactor(
@@ -404,7 +404,7 @@ surfaceReactor(
     surfaceVolumeRatio=(1.e5, 'm^-1'),
     # terminationConversion = { "CO":0.95,},
     terminationTime=(500., 's'),
-    terminationRateRatio=0.01
+    terminationRateRatio=0.001
 )
 
 simulator(
