@@ -347,14 +347,14 @@ surfaceReactor(
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    # terminationConversion = { "CO2":0.95,},
+    # terminationConversion = { "CO2":0.99,},
     terminationTime=(500., 's'),
-    terminationRateRatio=0.001
+    # terminationRateRatio=0.001
 )
 
 surfaceReactor(
     temperature=[(483,'K'),(547, 'K')],
-    initialPressure=(60.0, 'bar'),
+    initialPressure=(76.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
         "CO": 0.0,
@@ -366,9 +366,9 @@ surfaceReactor(
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    # terminationConversion = { "CO2":0.95,},
+    # terminationConversion = { "CO2":0.99,},
     terminationTime=(500., 's'),
-    terminationRateRatio=0.001
+    # terminationRateRatio=0.001
 )
 
 surfaceReactor(
@@ -385,14 +385,14 @@ surfaceReactor(
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    # terminationConversion = { "CO":0.95,},
+    # terminationConversion = { "CO":0.99,},
     terminationTime=(500., 's'),
-    terminationRateRatio=0.001
+    # terminationRateRatio=0.001
 )
 
 surfaceReactor(
     temperature=[(483,'K'),(547, 'K')],
-    initialPressure=(60.0, 'bar'),
+    initialPressure=(76.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
         "CO": 0.2019,
@@ -404,9 +404,9 @@ surfaceReactor(
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    # terminationConversion = { "CO":0.95,},
+    # terminationConversion = { "CO":0.99,},
     terminationTime=(500., 's'),
-    terminationRateRatio=0.001
+    # terminationRateRatio=0.001
 )
 
 simulator(
@@ -436,12 +436,13 @@ options(
     saveRestartPeriod=None,
     generateOutputHTML=True,
     generatePlots=False,
+    generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
     saveEdgeSpecies=True,
     saveSimulationProfiles=True,
 )
 
 generatedSpeciesConstraints(
     allowed=['input species','reaction libraries'],
-    maximumRadicalElectrons=2,
-    maximumCarbonAtoms=12,
+#    maximumRadicalElectrons=2,
+#    maximumCarbonAtoms=12,
 )
