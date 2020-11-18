@@ -352,7 +352,7 @@ surfaceReactor(
 
 surfaceReactor(
     temperature=[(483,'K'),(547, 'K')],
-    initialPressure=(60.0, 'bar'),
+    initialPressure=(76.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
         "CO": 0.0,
@@ -390,7 +390,7 @@ surfaceReactor(
 
 surfaceReactor(
     temperature=[(483,'K'),(547, 'K')],
-    initialPressure=(60.0, 'bar'),
+    initialPressure=(76.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
         "CO": 0.2019,
@@ -434,12 +434,13 @@ options(
     saveRestartPeriod=None,
     generateOutputHTML=True,
     generatePlots=False,
+    generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
     saveEdgeSpecies=True,
     saveSimulationProfiles=True,
 )
 
 generatedSpeciesConstraints(
     allowed=['input species','reaction libraries'],
-    maximumRadicalElectrons=2,
-    maximumCarbonAtoms=12,
+#    maximumRadicalElectrons=2,
+#    maximumCarbonAtoms=12,
 )
