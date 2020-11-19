@@ -3,7 +3,7 @@ restartFromSeed(path='seed')
 # Data sources
 database(
     thermoLibraries=['surfaceThermoPt111', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
-    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2'],
+    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Deutschmann_Ni'],
     seedMechanisms = [],
     kineticsDepositories = ['training'],
     kineticsFamilies =['surface','default'],
@@ -347,7 +347,7 @@ surfaceReactor(
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    # terminationConversion = { "CO2":0.99,},
+    terminationConversion = { "CO2":0.99,},
     terminationTime=(500., 's'),
     # terminationRateRatio=0.001
 )
@@ -366,7 +366,7 @@ surfaceReactor(
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    # terminationConversion = { "CO2":0.99,},
+    terminationConversion = { "CO2":0.99,},
     terminationTime=(500., 's'),
     # terminationRateRatio=0.001
 )
@@ -385,7 +385,7 @@ surfaceReactor(
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    # terminationConversion = { "CO":0.99,},
+    terminationConversion = { "CO":0.99,},
     terminationTime=(500., 's'),
     # terminationRateRatio=0.001
 )
@@ -404,7 +404,7 @@ surfaceReactor(
         "X": 1.0,
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
-    # terminationConversion = { "CO":0.99,},
+    terminationConversion = { "CO":0.99,},
     terminationTime=(500., 's'),
     # terminationRateRatio=0.001
 )

@@ -928,37 +928,78 @@ Phases:
         type: NASApolynomial
       type: NASA
     type: Species
-  - name: H
-    radicalelectrons: 1
-    smiles: '[H]'
+  - name: acetylX
+    radicalelectrons: 0
+    smiles: CC(=O)[Pt]
     thermo:
       polys:
-      - Tmax: 3459.6003738367535
+      - Tmax: 959.4055207064711
         Tmin: 100.0
         coefs:
-        - 2.4999999999985736
-        - 9.243846020396786e-15
-        - -1.3677983665251473e-17
-        - 6.6618476899264674e-21
-        - -1.0010691239894123e-24
-        - 25474.217768729155
-        - -0.44497289632819503
+        - 3.4371696994637806
+        - 0.005757876530374821
+        - 2.8334057755019083e-05
+        - -3.9457383109254975e-08
+        - 1.5120812388462096e-11
+        - -22745.85887350344
+        - -8.727140242354933
         type: NASApolynomial
       - Tmax: 5000.0
-        Tmin: 3459.6003738367535
+        Tmin: 959.4055207064711
         coefs:
-        - 2.4999999912187763
-        - 9.204555459946046e-12
-        - -3.586082925321867e-15
-        - 6.151989221655697e-19
-        - -3.920418005700823e-23
-        - 25474.21777537613
-        - -0.4449728422468991
+        - 6.617839761477981
+        - 0.009203336552139407
+        - -3.172833857281371e-06
+        - 5.861055465628669e-10
+        - -4.317009263591258e-14
+        - -24125.05006656008
+        - -27.94729156144758
         type: NASApolynomial
       type: NASA
     type: Species
   name: phase
 Reactions:
+- kinetics:
+    A: 0.032
+    Ea: 0.0
+    T0: 1.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - H*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - H2
+  type: ElementaryReaction
+- kinetics:
+    A: 0.5
+    Ea: 0.0
+    T0: 1.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CO*
+  radicalchange: 0
+  reactants:
+  - X
+  - CO
+  type: ElementaryReaction
+- kinetics:
+    A: 2.28e+16
+    Ea: 15900.0
+    n: 0.263
+    type: Arrhenius
+  products:
+  - H*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - HCO*
+  type: ElementaryReaction
 - kinetics:
     A: 2890.0000000000005
     Ea: 343506.0
@@ -1082,21 +1123,6 @@ Reactions:
   reactants:
   - H*
   - HCOOH
-  type: ElementaryReaction
-- kinetics:
-    A: 0.032
-    Ea: 0.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
-  products:
-  - H*
-  - H*
-  radicalchange: 0
-  reactants:
-  - X
-  - X
-  - H2
   type: ElementaryReaction
 - kinetics:
     A: 7.0e-06
@@ -2952,35 +2978,55 @@ Reactions:
   - methanediol
   type: ElementaryReaction
 - kinetics:
-    arr:
-      A: 45770000000000.01
-      Ea: 436725.92000000004
-      n: -1.4
-      type: Arrhenius
-    efficiencies:
-      CO: 1.9
-      CO2: 3.8
-      H2: 2.5
-      H2O: 12.0
-    type: ThirdBody
+    A: 1.39e+17
+    Ea: 19000.0
+    n: 0.101
+    type: Arrhenius
   products:
-  - H
-  - H
-  radicalchange: 2
+  - O*
+  - acetylX
+  radicalchange: 0
   reactants:
-  - H2
+  - CO*
+  - CH3O*
   type: ElementaryReaction
 - kinetics:
-    A: 0.85
-    Ea: 0.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
+    A: 10369679937188.807
+    Ea: 121703.29860998252
+    n: 0.936632797709627
+    type: Arrhenius
   products:
-  - H*
-  radicalchange: -1
+  - OH*
+  - acetylX
+  radicalchange: 0
+  reactants:
+  - CO*
+  - CH3OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 7.359755430719136e+18
+    Ea: 27150.000000000015
+    n: -0.1065
+    type: Arrhenius
+  products:
+  - CO*
+  - C[Pt]
+  radicalchange: 0
   reactants:
   - X
-  - H
+  - acetylX
+  type: ElementaryReaction
+- kinetics:
+    A: 41478719748755.23
+    Ea: 121703.29860998252
+    n: 0.936632797709627
+    type: Arrhenius
+  products:
+  - H*
+  - acetylX
+  radicalchange: 0
+  reactants:
+  - CO*
+  - C.[Pt]
   type: ElementaryReaction
 Units: {}
