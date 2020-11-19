@@ -873,6 +873,47 @@ Phases:
   name: phase
 Reactions:
 - kinetics:
+    A: 0.032
+    Ea: 0.0
+    T0: 1.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - H*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - H2
+  type: ElementaryReaction
+- kinetics:
+    A: 0.5
+    Ea: 0.0
+    T0: 1.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CO*
+  radicalchange: 0
+  reactants:
+  - X
+  - CO
+  type: ElementaryReaction
+- kinetics:
+    A: 2.28e+16
+    Ea: 15900.0
+    n: 0.263
+    type: Arrhenius
+  products:
+  - H*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - HCO*
+  type: ElementaryReaction
+- kinetics:
     A: 2890.0000000000005
     Ea: 343506.0
     n: 1.16
@@ -995,21 +1036,6 @@ Reactions:
   reactants:
   - H*
   - HCOOH
-  type: ElementaryReaction
-- kinetics:
-    A: 0.032
-    Ea: 0.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
-  products:
-  - H*
-  - H*
-  radicalchange: 0
-  reactants:
-  - X
-  - X
-  - H2
   type: ElementaryReaction
 - kinetics:
     A: 7.0e-06
