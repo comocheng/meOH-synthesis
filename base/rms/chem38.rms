@@ -1326,7 +1326,7 @@ Reactions:
   - CH2O
   type: ElementaryReaction
 - kinetics:
-    A: 0.1
+    A: 0.0017758080034852024
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1399,7 +1399,7 @@ Reactions:
   - CH3OH
   type: ElementaryReaction
 - kinetics:
-    A: 0.1
+    A: 0.0017758080034852024
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1620,7 +1620,7 @@ Reactions:
   - HCO*
   type: ElementaryReaction
 - kinetics:
-    A: 2.811e+20
+    A: 2.81e+20
     Ea: 92700.0
     n: -0.101
     type: Arrhenius
@@ -1633,7 +1633,7 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 4873277401028861.0
+    A: 4872410501190818.0
     Ea: 120260.48788970396
     n: 0.6398764921267321
     type: Arrhenius
@@ -1672,7 +1672,7 @@ Reactions:
   - CH3OH*
   type: ElementaryReaction
 - kinetics:
-    A: 7309916101543292.0
+    A: 7308615751786227.0
     Ea: 120260.48788970396
     n: 0.6398764921267321
     type: Arrhenius
@@ -1971,7 +1971,7 @@ Reactions:
   - CH3OH*
   type: ElementaryReaction
 - kinetics:
-    A: 0.1
+    A: 0.0017758080034852024
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1984,7 +1984,7 @@ Reactions:
   - H2
   type: ElementaryReaction
 - kinetics:
-    A: 4873277401028861.0
+    A: 4872410501190818.0
     Ea: 120260.48788970396
     n: 0.6398764921267321
     type: Arrhenius
@@ -2049,7 +2049,7 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 0.1
+    A: 0.0017758080034852024
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -2140,7 +2140,7 @@ Reactions:
   - formic_acidX
   type: ElementaryReaction
 - kinetics:
-    A: 1.4055e+20
+    A: 1.405e+20
     Ea: 92700.0
     n: -0.101
     type: Arrhenius
@@ -2465,7 +2465,7 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 4.2165e+20
+    A: 4.215e+20
     Ea: 92700.0
     n: -0.101
     type: Arrhenius
@@ -2794,7 +2794,7 @@ Reactions:
   - CH4
   type: ElementaryReaction
 - kinetics:
-    A: 1.52e+17
+    A: 1.54e+17
     Ea: 77820.1738341481
     n: 0.087
     type: Arrhenius
@@ -2807,7 +2807,7 @@ Reactions:
   - C.[Pt]
   type: ElementaryReaction
 - kinetics:
-    A: 5.622e+20
+    A: 5.62e+20
     Ea: 92700.0
     n: -0.101
     type: Arrhenius
@@ -2820,7 +2820,7 @@ Reactions:
   - C.[Pt]
   type: ElementaryReaction
 - kinetics:
-    A: 9746554802057722.0
+    A: 9744821002381636.0
     Ea: 120260.48788970396
     n: 0.6398764921267321
     type: Arrhenius
