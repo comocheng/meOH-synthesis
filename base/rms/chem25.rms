@@ -949,7 +949,7 @@ Reactions:
   - CH2O
   type: ElementaryReaction
 - kinetics:
-    A: 0.1
+    A: 0.0017758080034852024
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1022,7 +1022,7 @@ Reactions:
   - CH3OH
   type: ElementaryReaction
 - kinetics:
-    A: 0.1
+    A: 0.0017758080034852024
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1243,7 +1243,7 @@ Reactions:
   - HCO*
   type: ElementaryReaction
 - kinetics:
-    A: 2.811e+20
+    A: 2.81e+20
     Ea: 92700.0
     n: -0.101
     type: Arrhenius
@@ -1256,7 +1256,7 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 4873277401028861.0
+    A: 4872410501190818.0
     Ea: 120260.48788970396
     n: 0.6398764921267321
     type: Arrhenius
@@ -1295,7 +1295,7 @@ Reactions:
   - CH3OH*
   type: ElementaryReaction
 - kinetics:
-    A: 7309916101543292.0
+    A: 7308615751786227.0
     Ea: 120260.48788970396
     n: 0.6398764921267321
     type: Arrhenius
@@ -1594,7 +1594,7 @@ Reactions:
   - CH3OH*
   type: ElementaryReaction
 - kinetics:
-    A: 0.1
+    A: 0.0017758080034852024
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1607,7 +1607,7 @@ Reactions:
   - H2
   type: ElementaryReaction
 - kinetics:
-    A: 4873277401028861.0
+    A: 4872410501190818.0
     Ea: 120260.48788970396
     n: 0.6398764921267321
     type: Arrhenius
