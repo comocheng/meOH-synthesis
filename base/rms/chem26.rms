@@ -535,7 +535,7 @@ Phases:
         - 1.0810773672677303e-05
         - -2.1669875349839243e-08
         - 9.266974240207176e-12
-        - -34253.24488479022
+        - -36551.557965119486
         - -8.400353123363884
         type: NASApolynomial
       - Tmax: 5000.0
@@ -546,7 +546,7 @@ Phases:
         - -9.949849341014449e-07
         - 1.971899614673694e-10
         - -1.6220711338850447e-14
-        - -35618.2951047
+        - -37916.60818502927
         - -31.260464541081706
         type: NASApolynomial
       type: NASA
@@ -564,7 +564,7 @@ Phases:
         - 5.090641568569969e-05
         - -6.553120821946267e-08
         - 2.5246941142510238e-11
-        - -44246.31631793297
+        - -38256.01349912206
         - -7.820803758999167
         type: NASApolynomial
       - Tmax: 5000.0
@@ -575,7 +575,7 @@ Phases:
         - 3.6342091100919616e-07
         - -2.8546567179976507e-11
         - -4.352165981310762e-15
-        - -46370.792029068405
+        - -40380.489210257496
         - -37.93890185741948
         type: NASApolynomial
       type: NASA
@@ -651,7 +651,7 @@ Phases:
         - 3.7227194226613154e-05
         - -5.7363407017504184e-08
         - 2.362611551913328e-11
-        - -39434.22563740768
+        - -41732.53871773695
         - -6.145184015359265
         type: NASApolynomial
       - Tmax: 5000.0
@@ -662,7 +662,7 @@ Phases:
         - 9.707616349972384e-08
         - -3.1926601206345544e-11
         - -2.1347324007485835e-15
-        - -41918.85814216047
+        - -44217.17122248975
         - -46.092887465268525
         type: NASApolynomial
       type: NASA
@@ -696,6 +696,35 @@ Phases:
         type: NASApolynomial
       type: NASA
     type: Species
+  - name: CO2X
+    radicalelectrons: 0
+    smiles: O=C([Pt])O[Pt]
+    thermo:
+      polys:
+      - Tmax: 924.2322990506185
+        Tmin: 100.0
+        coefs:
+        - 3.1275806920835936
+        - -0.0005985815864347593
+        - 3.643307378598143e-05
+        - -5.174738064795973e-08
+        - 2.1084370522576434e-11
+        - -61507.52899634991
+        - -16.250960718797746
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 924.2322990506185
+        coefs:
+        - 8.663611103581584
+        - -0.0019386389003397649
+        - 1.8973383589059151e-06
+        - -3.5601373055160923e-10
+        - 2.055390061557601e-14
+        - -63496.926036436125
+        - -47.749312692403514
+        type: NASApolynomial
+      type: NASA
+    type: Species
   - name: '[H][H].[Pt]'
     radicalelectrons: 0
     smiles: '[H][H].[Pt]'
@@ -722,35 +751,6 @@ Phases:
         - -4.4102446518391794e-14
         - -785.2567994552975
         - 7.146333485507283
-        type: NASApolynomial
-      type: NASA
-    type: Species
-  - name: formic_acidX
-    radicalelectrons: 0
-    smiles: O=CO.[Pt]
-    thermo:
-      polys:
-      - Tmax: 950.5109564592557
-        Tmin: 100.0
-        coefs:
-        - 3.6694227681193077
-        - -0.003781070242798678
-        - 5.534178657671915e-05
-        - -7.041583188566637e-08
-        - 2.677833117493797e-11
-        - -49812.94532968943
-        - -8.382233471238727
-        type: NASApolynomial
-      - Tmax: 5000.0
-        Tmin: 950.5109564592557
-        coefs:
-        - 8.667673325228423
-        - 0.003456192942667828
-        - -6.940937226927347e-07
-        - 1.7823129525120073e-10
-        - -1.93189703492038e-14
-        - -52040.23499547722
-        - -38.96023903770418
         type: NASApolynomial
       type: NASA
     type: Species
@@ -847,7 +847,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 0.09999999999999999
-    Ea: 130640.0658982119
+    Ea: 111530.80614458048
     T0: 1.0
     n: 0.0
     type: StickingCoefficient
@@ -871,7 +871,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 0.09999999999999999
-    Ea: 73060.0
+    Ea: 96093.45626824955
     T0: 1.0
     n: 0.0
     type: StickingCoefficient
@@ -910,7 +910,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 0.049999999999999996
-    Ea: 73465.7058982118
+    Ea: 73060.0
     T0: 1.0
     n: 0.0
     type: StickingCoefficient
@@ -978,7 +978,7 @@ Reactions:
   - CH2O
   type: ElementaryReaction
 - kinetics:
-    A: 0.0017758080034852024
+    A: 1.0e-08
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1007,7 +1007,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 0.016
-    Ea: 92581.69028171466
+    Ea: 73472.43052808335
     T0: 1.0
     n: 0.0
     type: StickingCoefficient
@@ -1022,7 +1022,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 0.016
-    Ea: 9549.87989074312
+    Ea: 59356.08494926756
     T0: 1.0
     n: 0.0
     type: StickingCoefficient
@@ -1051,7 +1051,7 @@ Reactions:
   - CH3OH
   type: ElementaryReaction
 - kinetics:
-    A: 0.0017758080034852024
+    A: 1.0e-08
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1145,7 +1145,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 402000000000000.0
-    Ea: 11500.0
+    Ea: 49814.51825267007
     n: 0.0
     type: Arrhenius
   products:
@@ -1208,7 +1208,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 1.243e+18
-    Ea: 102874.49653691577
+    Ea: 83942.2397312
     n: 0.0
     type: Arrhenius
   products:
@@ -1298,9 +1298,9 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 20738529553747.785
-    Ea: 187220.21027566853
-    n: 1.0891584024705467
+    A: 20738529553753.83
+    Ea: 168110.9505220372
+    n: 1.0891584024705152
     type: Arrhenius
   products:
   - OH*
@@ -1338,7 +1338,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 3.628e+16
-    Ea: 89612.79466926947
+    Ea: 70503.53491563816
     n: 0.0
     type: Arrhenius
   products:
@@ -1351,7 +1351,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 3.628000000000007e+16
-    Ea: 40523.83983128
+    Ea: 56387.18933682237
     n: 0.0
     type: Arrhenius
   products:
@@ -1403,7 +1403,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 20739359874377.613
-    Ea: 121703.29860998252
+    Ea: 127044.02635074739
     n: 0.936632797709627
     type: Arrhenius
   products:
@@ -1415,9 +1415,9 @@ Reactions:
   - CO*
   type: ElementaryReaction
 - kinetics:
-    A: 22789267670.00125
-    Ea: 181505.39470025199
-    n: 1.298633157552949
+    A: 22789267669.990726
+    Ea: 162396.13494662056
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - OH*
@@ -1441,9 +1441,9 @@ Reactions:
   - COOH*
   type: ElementaryReaction
 - kinetics:
-    A: 11394633835.000626
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 11394633834.995363
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - OH*
@@ -1454,9 +1454,9 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 11394633835.000637
-    Ea: 99651.10515058188
-    n: 1.298633157552949
+    A: 11394633834.99537
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - H*
@@ -1494,7 +1494,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 3.628e+16
-    Ea: 85750.57355972985
+    Ea: 66641.31380609842
     n: 0.0
     type: Arrhenius
   products:
@@ -1507,7 +1507,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 3.628e+16
-    Ea: 40523.83983128
+    Ea: 50956.29861825291
     n: 0.0
     type: Arrhenius
   products:
@@ -1519,9 +1519,9 @@ Reactions:
   - HCO*
   type: ElementaryReaction
 - kinetics:
-    A: 22789267670.001274
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 22789267669.99074
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - HCO*
@@ -1532,9 +1532,9 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 22789267670.00125
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 22789267669.990726
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - HCO*
@@ -1545,9 +1545,9 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 11394633835.000626
-    Ea: 161221.21600854813
-    n: 1.298633157552949
+    A: 11394633834.995363
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - HCOO*
@@ -1558,9 +1558,9 @@ Reactions:
   - CH3OH*
   type: ElementaryReaction
 - kinetics:
-    A: 11394633835.000626
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 11394633834.995363
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - COOH*
@@ -1597,9 +1597,9 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 11394633835.000637
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 11394633834.99537
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - HCO*
@@ -1610,9 +1610,9 @@ Reactions:
   - CH2O*
   type: ElementaryReaction
 - kinetics:
-    A: 5697316917.500313
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 5697316917.497682
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - CH3O*
@@ -1623,7 +1623,45 @@ Reactions:
   - CH3OH*
   type: ElementaryReaction
 - kinetics:
-    A: 0.0017758080034852024
+    A: 0.2
+    Ea: 0.0
+    T0: 1.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CO2X
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 89600000000.0
+    Ea: 142079.20708125085
+    n: 0.422
+    type: Arrhenius
+  products:
+  - O*
+  - CO*
+  radicalchange: 0
+  reactants:
+  - CO2X
+  type: ElementaryReaction
+- kinetics:
+    A: 89600000000.0
+    Ea: 142079.20708125085
+    n: 0.422
+    type: Arrhenius
+  products:
+  - O*
+  - CO*
+  radicalchange: 0
+  reactants:
+  - CO2X
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e-08
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1662,9 +1700,9 @@ Reactions:
   - CO*
   type: ElementaryReaction
 - kinetics:
-    A: 22789267670.001274
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 22789267669.99074
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - H*
@@ -1675,9 +1713,9 @@ Reactions:
   - CO2*
   type: ElementaryReaction
 - kinetics:
-    A: 22789267670.00125
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 22789267669.990726
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - H*
@@ -1688,9 +1726,9 @@ Reactions:
   - CO2*
   type: ElementaryReaction
 - kinetics:
-    A: 11394633835.000637
-    Ea: 92738.4795705505
-    n: 1.298633157552949
+    A: 11394633834.99537
+    Ea: 142544.68462907476
+    n: 1.298633157553016
     type: Arrhenius
   products:
   - H*
@@ -1699,343 +1737,5 @@ Reactions:
   reactants:
   - '[H][H].[Pt]'
   - CH2O*
-  type: ElementaryReaction
-- kinetics:
-    A: 0.0017758080034852024
-    Ea: 0.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
-  products:
-  - formic_acidX
-  radicalchange: 0
-  reactants:
-  - X
-  - HCOOH
-  type: ElementaryReaction
-- kinetics:
-    A: 1.781e+17
-    Ea: 157271.09276720003
-    n: 0.0
-    type: Arrhenius
-  products:
-  - OH*
-  - HCO*
-  radicalchange: 0
-  reactants:
-  - X
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 4.424e+18
-    Ea: 87801.65296080001
-    n: 0.0
-    type: Arrhenius
-  products:
-  - X
-  - formic_acidX
-  radicalchange: 0
-  reactants:
-  - H*
-  - HCOO*
-  type: ElementaryReaction
-- kinetics:
-    A: 2.308e+18
-    Ea: 70434.2928
-    n: 0.0
-    type: Arrhenius
-  products:
-  - X
-  - formic_acidX
-  radicalchange: 0
-  reactants:
-  - H*
-  - COOH*
-  type: ElementaryReaction
-- kinetics:
-    A: 2.122e+19
-    Ea: 100344.7460616
-    n: 0.0
-    type: Arrhenius
-  products:
-  - X
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - H*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 20738529553747.785
-    Ea: 187220.21027566853
-    n: 1.0891584024705467
-    type: Arrhenius
-  products:
-  - OH*
-  - HCOO*
-  radicalchange: 0
-  reactants:
-  - O*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 42242676320.48838
-    Ea: 147820.97577940783
-    n: 1.3807529842534643
-    type: Arrhenius
-  products:
-  - OH*
-  - HCOO*
-  radicalchange: 0
-  reactants:
-  - O*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 1.405e+20
-    Ea: 92700.0
-    n: -0.101
-    type: Arrhenius
-  products:
-  - OH*
-  - COOH*
-  radicalchange: 0
-  reactants:
-  - O*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 1.814e+16
-    Ea: 84719.4525660919
-    n: 0.0
-    type: Arrhenius
-  products:
-  - O*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - OH*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 11394633835.000626
-    Ea: 176421.83470025106
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - OH*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - H2O*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 7.475e+18
-    Ea: 57891.199699199984
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CO*
-  - formic_acidX
-  radicalchange: 0
-  reactants:
-  - HCO*
-  - HCOO*
-  type: ElementaryReaction
-- kinetics:
-    A: 10369679937188.807
-    Ea: 121703.29860998252
-    n: 0.936632797709627
-    type: Arrhenius
-  products:
-  - HCO*
-  - COOH*
-  radicalchange: 0
-  reactants:
-  - CO*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 10369679937188.807
-    Ea: 121703.29860998252
-    n: 0.936632797709627
-    type: Arrhenius
-  products:
-  - HCO*
-  - COOH*
-  radicalchange: 0
-  reactants:
-  - CO*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 11394633835.000626
-    Ea: 223592.96000000043
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - HCOO*
-  - HCOO*
-  radicalchange: 0
-  reactants:
-  - CO2*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 11394633835.000637
-    Ea: 138992.47999999905
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - COOH*
-  - HCOO*
-  radicalchange: 0
-  reactants:
-  - CO2*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 11394633835.000626
-    Ea: 138992.47999999905
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - COOH*
-  - HCOO*
-  radicalchange: 0
-  reactants:
-  - CO2*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 11394633835.000626
-    Ea: 92738.4795705505
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - COOH*
-  - COOH*
-  radicalchange: 0
-  reactants:
-  - CO2*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 1.814e+16
-    Ea: 79190.53324909881
-    n: 0.0
-    type: Arrhenius
-  products:
-  - CO*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - HCO*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 5697316917.500313
-    Ea: 114524.68721450955
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - HCOO*
-  - CH3O*
-  radicalchange: 0
-  reactants:
-  - CH2O*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 5697316917.500319
-    Ea: 92738.4795705505
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - HCO*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - CH2O*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 5697316917.500319
-    Ea: 92738.4795705505
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - COOH*
-  - CH3O*
-  radicalchange: 0
-  reactants:
-  - CH2O*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 11394633835.000637
-    Ea: 92738.4795705505
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - HCO*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - CH2O*
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 5697316917.500313
-    Ea: 156137.65600854723
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - CH3O*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - formic_acidX
-  - CH3OH*
-  type: ElementaryReaction
-- kinetics:
-    A: 11394633835.000637
-    Ea: 92738.4795705505
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - H*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - '[H][H].[Pt]'
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 5697316917.500313
-    Ea: 218509.39999999953
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - HCOO*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - formic_acidX
-  - formic_acidX
-  type: ElementaryReaction
-- kinetics:
-    A: 5697316917.500319
-    Ea: 133908.91999999812
-    n: 1.298633157552949
-    type: Arrhenius
-  products:
-  - COOH*
-  - CH3O2*
-  radicalchange: 0
-  reactants:
-  - formic_acidX
-  - formic_acidX
   type: ElementaryReaction
 Units: {}
