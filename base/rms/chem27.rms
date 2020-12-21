@@ -1007,7 +1007,7 @@ Reactions:
   - CH2O
   type: ElementaryReaction
 - kinetics:
-    A: 1.0e-08
+    A: 1.0e-12
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1080,7 +1080,7 @@ Reactions:
   - CH3OH
   type: ElementaryReaction
 - kinetics:
-    A: 1.0e-08
+    A: 1.0e-12
     Ea: 0.0
     T0: 1.0
     n: 0.0
@@ -1690,7 +1690,7 @@ Reactions:
   - CO2X
   type: ElementaryReaction
 - kinetics:
-    A: 1.0e-08
+    A: 1.0e-12
     Ea: 0.0
     T0: 1.0
     n: 0.0
