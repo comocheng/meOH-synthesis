@@ -31,11 +31,14 @@ HCOOCH3(9)          2     377.356     5.234     0.000     0.000     0.000    ! E
 ! SX(51)              None
 ! CH3OX(44)           None
 ! CH2OX2(50)          None
+! CHO3X(91)           None
+H(23)               0     145.000     2.050     0.000     0.000     0.000    ! GRI-Mech
+HCO(31)             2     498.002     3.590     0.000     0.000     0.000    ! GRI-Mech
 ! CH3X(53)            None
 CH4(39)             2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
-H(23)               0     145.000     2.050     0.000     0.000     0.000    ! GRI-Mech
-! CH4X(405)           None
+OCHCO(417)          2     440.200     4.010     0.000     0.000     2.000    ! NOx2018
+! CH4X(436)           None
+CH2O3(185)          2     432.363     5.425     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=561.51 K, Pc=51.09 bar (from Joback method)
+! SX(574)             None
 ! CH2OX(174)          None
 ! CHOX(173)           None
-HCO(31)             2     498.002     3.590     0.000     0.000     0.000    ! GRI-Mech
-OCHCO(440)          2     440.200     4.010     0.000     0.000     2.000    ! NOx2018

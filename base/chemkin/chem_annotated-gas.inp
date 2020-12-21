@@ -33,7 +33,8 @@ SPECIES
     H(23)               ! H(23)
     HCO(31)             ! HCO(31)
     CH4(39)             ! CH4(39)
-    OCHCO(440)          ! OCHCO(440)
+    CH2O3(185)          ! O=C(O)O(185)
+    OCHCO(417)          ! OCHCO(417)
 END
 
 
@@ -119,8 +120,14 @@ CH4(39)                 C   1H   4          G   100.000  5000.000 1084.12      1
 -9.71997444E+03 1.39930944E+01 4.20541524E+00-5.35557362E-03 2.51123265E-05    3
 -2.13762843E-08 5.97523937E-12-1.01619433E+04-9.21279283E-01                   4
 
+! Thermo group additivity estimation: group(O2s-(Cds-O2d)H) + group(O2s-(Cds-O2d)H) + group(Cds-OdOsOs)
+CH2O3(185)              C   1H   2O   3     G   100.000  5000.000  956.74      1
+ 1.18951636E+01 1.71634542E-03-1.48117122E-07 9.26358257E-11-1.38650302E-14    2
+-7.81026565E+04-3.82535148E+01 2.98121897E+00 1.14382351E-02 2.77969862E-05    3
+-4.94731071E-08 2.08013384E-11-7.51362691E+04 1.09455328E+01                   4
+
 ! Thermo library: DFT_QCI_thermo
-OCHCO(440)              C   2H   1O   2     G   100.000  5000.000 1504.27      1
+OCHCO(417)              C   2H   1O   2     G   100.000  5000.000 1504.27      1
  6.43152166E+00 6.95779639E-03-3.00696666E-06 5.56993159E-10-3.81282416E-14    2
 -1.00145509E+04-5.47396858E+00 3.25386274E+00 1.54074443E-02-1.14325740E-05    3
  4.29105321E-09-6.58700917E-13-9.05853319E+03 1.11538825E+01                   4
@@ -165,7 +172,7 @@ DUPLICATE
 ! family: 1,2_Insertion_CO
 CO(3)+CH3OH(8)=HCOOCH3(9)                           1.270000e-01 3.700     53.360   
 
-! Reaction index: Chemkin #5; RMG #109
+! Reaction index: Chemkin #5; RMG #113
 ! Template reaction: 1,3_Insertion_CO2
 ! Flux pairs: H2(2), HCOOH(7); CO2(4), HCOOH(7); 
 ! Matched reaction 1 H2 + CO2 <=> CH2O2 in 1,3_Insertion_CO2/training
@@ -174,7 +181,7 @@ CO(3)+CH3OH(8)=HCOOCH3(9)                           1.270000e-01 3.700     53.36
 H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
 DUPLICATE
 
-! Reaction index: Chemkin #6; RMG #110
+! Reaction index: Chemkin #6; RMG #114
 ! Template reaction: 1,3_Insertion_CO2
 ! Flux pairs: H2(2), HCOOH(7); CO2(4), HCOOH(7); 
 ! Matched reaction 1 H2 + CO2 <=> CH2O2 in 1,3_Insertion_CO2/training
@@ -183,7 +190,83 @@ DUPLICATE
 H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
 DUPLICATE
 
-! Reaction index: Chemkin #7; RMG #45
+! Reaction index: Chemkin #7; RMG #5
+! Library reaction: BurkeH2O2inArHe
+! Flux pairs: H2(2), H(23); H2(2), H(23); 
+H2(2)+M=H(23)+H(23)+M                               4.577e+19 -1.400    104.380  
+H2O(5)/12.00/ H2(2)/2.50/ CO(3)/1.90/ CO2(4)/3.80/ 
+
+! Reaction index: Chemkin #8; RMG #32
+! Template reaction: R_Recombination
+! Flux pairs: HCO(31), CH2O(6); H(23), CH2O(6); 
+! Matched reaction 63 H + CHO <=> CH2O in R_Recombination/training
+! This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_Sp-3R!H=2CCNNOO_3R!H->O]
+! family: R_Recombination
+H(23)+HCO(31)=CH2O(6)                               4.680000e+10 0.000     -4.530   
+DUPLICATE
+
+! Reaction index: Chemkin #9; RMG #112
+! Template reaction: CO_Disproportionation
+! Flux pairs: H(23), H2(2); HCO(31), CO(3); 
+! Matched reaction 0 HCO + H <=> CO + H2 in CO_Disproportionation/training
+! This reaction matched rate rule [H_rad;HCO]
+! family: CO_Disproportionation
+H(23)+HCO(31)=H2(2)+CO(3)                           9.030000e+13 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #10; RMG #124
+! Template reaction: CO_Disproportionation
+! Flux pairs: HCO(31), CH2O(6); HCO(31), CO(3); 
+! Matched reaction 5 HCO + HCO_Y <=> CO + CH2O in CO_Disproportionation/training
+! This reaction matched rate rule [CO_pri_rad;HCO]
+! family: CO_Disproportionation
+HCO(31)+HCO(31)=CO(3)+CH2O(6)                       1.800000e+13 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #11; RMG #913
+! Template reaction: R_Addition_COm
+! Flux pairs: H(23), HCO(31); CO(3), HCO(31); 
+! Matched reaction 4 H + CO <=> CHO in R_Addition_COm/training
+! This reaction matched rate rule [COm;H_rad]
+! family: R_Addition_COm
+H(23)+CO(3)=HCO(31)                                 1.180000e+11 0.000     2.720    
+
+! Reaction index: Chemkin #12; RMG #916
+! Template reaction: H_Abstraction
+! Flux pairs: H2(2), H(23); HCO(31), CH2O(6); 
+! Matched reaction 309 H2 + HCO_r3 <=> CH2O + H in H_Abstraction/training
+! This reaction matched rate rule [CO_pri;H_rad]
+! family: H_Abstraction
+H2(2)+HCO(31)=H(23)+CH2O(6)                         1.800000e+06 2.000     48.940   
+
+! Reaction index: Chemkin #13; RMG #965
+! Template reaction: CO_Disproportionation
+! Flux pairs: HCO(31), CO(3); H(23), H2(2); 
+! Matched reaction 0 HCO + H <=> CO + H2 in CO_Disproportionation/training
+! This reaction matched rate rule [H_rad;HCO]
+! family: CO_Disproportionation
+H(23)+HCO(31)=H2(2)+CO(3)                           9.030000e+13 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #14; RMG #967
+! Template reaction: R_Recombination
+! Flux pairs: HCO(31), CH2O(6); H(23), CH2O(6); 
+! Matched reaction 63 H + CHO <=> CH2O in R_Recombination/training
+! This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_Sp-3R!H=2CCNNOO_3R!H->O]
+! family: R_Recombination
+H(23)+HCO(31)=CH2O(6)                               4.680000e+10 0.000     -4.530   
+DUPLICATE
+
+! Reaction index: Chemkin #15; RMG #968
+! Template reaction: CO_Disproportionation
+! Flux pairs: HCO(31), CO(3); HCO(31), CH2O(6); 
+! Matched reaction 5 HCO + HCO_Y <=> CO + CH2O in CO_Disproportionation/training
+! This reaction matched rate rule [CO_pri_rad;HCO]
+! family: CO_Disproportionation
+HCO(31)+HCO(31)=CO(3)+CH2O(6)                       1.800000e+13 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #16; RMG #45
 ! Template reaction: 1,3_Insertion_CO2
 ! Flux pairs: CO2(4), HCOOCH3(9); CH4(39), HCOOCH3(9); 
 ! Estimated using template [CO2;C_methane] for rate rule [CO2_Od;C_methane]
@@ -193,7 +276,7 @@ DUPLICATE
 CO2(4)+CH4(39)=HCOOCH3(9)                           3.624000e+04 2.830     79.200   
 DUPLICATE
 
-! Reaction index: Chemkin #8; RMG #911
+! Reaction index: Chemkin #17; RMG #1014
 ! Template reaction: 1,3_Insertion_CO2
 ! Flux pairs: CH4(39), HCOOCH3(9); CO2(4), HCOOCH3(9); 
 ! Estimated using template [CO2;C_methane] for rate rule [CO2_Od;C_methane]
@@ -203,89 +286,13 @@ DUPLICATE
 CO2(4)+CH4(39)=HCOOCH3(9)                           3.624000e+04 2.830     79.200   
 DUPLICATE
 
-! Reaction index: Chemkin #9; RMG #5
-! Library reaction: BurkeH2O2inArHe
-! Flux pairs: H2(2), H(23); H2(2), H(23); 
-H2(2)+M=H(23)+H(23)+M                               4.577e+19 -1.400    104.380  
-CO(3)/1.90/ CO2(4)/3.80/ H2O(5)/12.00/ H2(2)/2.50/ 
-
-! Reaction index: Chemkin #10; RMG #32
-! Template reaction: R_Recombination
-! Flux pairs: HCO(31), CH2O(6); H(23), CH2O(6); 
-! Matched reaction 63 H + CHO <=> CH2O in R_Recombination/training
-! This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_Sp-3R!H=2CCNNOO_3R!H->O]
-! family: R_Recombination
-H(23)+HCO(31)=CH2O(6)                               4.680000e+10 0.000     -4.530   
-DUPLICATE
-
-! Reaction index: Chemkin #11; RMG #108
-! Template reaction: CO_Disproportionation
-! Flux pairs: H(23), H2(2); HCO(31), CO(3); 
-! Matched reaction 0 HCO + H <=> CO + H2 in CO_Disproportionation/training
-! This reaction matched rate rule [H_rad;HCO]
-! family: CO_Disproportionation
-H(23)+HCO(31)=H2(2)+CO(3)                           9.030000e+13 0.000     0.000    
-DUPLICATE
-
-! Reaction index: Chemkin #12; RMG #120
-! Template reaction: CO_Disproportionation
-! Flux pairs: HCO(31), CH2O(6); HCO(31), CO(3); 
-! Matched reaction 5 HCO + HCO_Y <=> CO + CH2O in CO_Disproportionation/training
-! This reaction matched rate rule [CO_pri_rad;HCO]
-! family: CO_Disproportionation
-HCO(31)+HCO(31)=CO(3)+CH2O(6)                       1.800000e+13 0.000     0.000    
-DUPLICATE
-
-! Reaction index: Chemkin #13; RMG #921
+! Reaction index: Chemkin #18; RMG #933
 ! Template reaction: R_Addition_COm
-! Flux pairs: H(23), HCO(31); CO(3), HCO(31); 
-! Matched reaction 4 H + CO <=> CHO in R_Addition_COm/training
-! This reaction matched rate rule [COm;H_rad]
-! family: R_Addition_COm
-H(23)+CO(3)=HCO(31)                                 1.180000e+11 0.000     2.720    
-
-! Reaction index: Chemkin #14; RMG #924
-! Template reaction: H_Abstraction
-! Flux pairs: H2(2), H(23); HCO(31), CH2O(6); 
-! Matched reaction 309 H2 + HCO_r3 <=> CH2O + H in H_Abstraction/training
-! This reaction matched rate rule [CO_pri;H_rad]
-! family: H_Abstraction
-H2(2)+HCO(31)=H(23)+CH2O(6)                         1.800000e+06 2.000     48.940   
-
-! Reaction index: Chemkin #15; RMG #1127
-! Template reaction: CO_Disproportionation
-! Flux pairs: HCO(31), CO(3); H(23), H2(2); 
-! Matched reaction 0 HCO + H <=> CO + H2 in CO_Disproportionation/training
-! This reaction matched rate rule [H_rad;HCO]
-! family: CO_Disproportionation
-H(23)+HCO(31)=H2(2)+CO(3)                           9.030000e+13 0.000     0.000    
-DUPLICATE
-
-! Reaction index: Chemkin #16; RMG #1129
-! Template reaction: R_Recombination
-! Flux pairs: HCO(31), CH2O(6); H(23), CH2O(6); 
-! Matched reaction 63 H + CHO <=> CH2O in R_Recombination/training
-! This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_Sp-3R!H=2CCNNOO_3R!H->O]
-! family: R_Recombination
-H(23)+HCO(31)=CH2O(6)                               4.680000e+10 0.000     -4.530   
-DUPLICATE
-
-! Reaction index: Chemkin #17; RMG #1130
-! Template reaction: CO_Disproportionation
-! Flux pairs: HCO(31), CO(3); HCO(31), CH2O(6); 
-! Matched reaction 5 HCO + HCO_Y <=> CO + CH2O in CO_Disproportionation/training
-! This reaction matched rate rule [CO_pri_rad;HCO]
-! family: CO_Disproportionation
-HCO(31)+HCO(31)=CO(3)+CH2O(6)                       1.800000e+13 0.000     0.000    
-DUPLICATE
-
-! Reaction index: Chemkin #18; RMG #1093
-! Template reaction: R_Addition_COm
-! Flux pairs: HCO(31), OCHCO(440); CO(3), OCHCO(440); 
+! Flux pairs: HCO(31), OCHCO(417); CO(3), OCHCO(417); 
 ! Estimated using template [COm;Y_rad] for rate rule [COm;CO_pri_rad]
 ! Euclidian distance = 2.0
 ! family: R_Addition_COm
-CO(3)+HCO(31)=OCHCO(440)                            1.090300e+09 0.636     4.002    
+CO(3)+HCO(31)=OCHCO(417)                            1.090300e+09 0.636     4.002    
 
 END
 
