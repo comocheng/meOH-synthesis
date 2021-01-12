@@ -25,40 +25,32 @@ HCOOCH3(9)          2     377.356     5.234     0.000     0.000     0.000    ! E
 ! CH3O2*(21)          None
 ! CH3OH*(22)          None
 ! CO2X(51)            None
-! H2X(50)             None
 ! COX(60)             None
-! SX(53)              None
-! CH3OX(46)           None
+! H2_ads(50)          None
 ! CHOX2(61)           None
-! CHO3X(93)           None
-CH2O3(187)          2     432.363     5.425     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=561.51 K, Pc=51.09 bar (from Joback method)
-! CH2OX2(52)          None
-! SX(56)              None
-! SX(57)              None
-! CHX(32)             None
-! SX(541)             None
-! SX(559)             None
-! C2HOX(557)          None
-C2H4O(599)          2     436.001     3.970     0.000     0.000     2.000    ! GRI-Mech
-! SX(394)             None
-! CH3X(55)            None
-CH4(41)             2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
-! CH4X(797)           None
+! SX(53)              None
+! HOCOX(62)           None
 ! CH2OX(176)          None
 ! CHOX(175)           None
+! CH3OX(46)           None
+! CHX(32)             None
 ! CH2X(63)            None
-OCCO(335)           2     453.933     6.214     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=589.52 K, Pc=35.69 bar (from Joback method)
-S(610)              2     446.068     6.055     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=579.31 K, Pc=37.92 bar (from Joback method)
-! SX(845)             None
-C2H6O(789)          2     362.600     4.530     0.000     0.000     1.500    ! NOx2018
+! CH3X(55)            None
+CH4(41)             2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
+! SX(57)              None
+! SX(166)             None
 ! SX(222)             None
+! CH3O2X(49)          None
 CH4O2(178)          2     436.691     5.898     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=567.13 K, Pc=40.16 bar (from Joback method)
+! CH4X(472)           None
+! CH2OX2(52)          None
+OCCO(437)           2     453.933     6.214     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=589.52 K, Pc=35.69 bar (from Joback method)
+! SX(438)             None
+! C2HOX(618)          None
+! SX(449)             None
 ! SX(197)             None
-S(1007)             2     471.090     6.530     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=611.81 K, Pc=31.92 bar (from Joback method)
-! SX(799)             None
-C2H4O2(70)          2     428.975     5.738     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=557.11 K, Pc=42.83 bar (from Joback method)
-! SX(560)             None
-S(1163)             2     541.248     7.255     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=702.92 K, Pc=26.74 bar (from Joback method)
-COCO(333)           2     402.716     5.709     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=523.01 K, Pc=40.83 bar (from Joback method)
-! SX(919)             None
-! SX(127)             None
+! SX(199)             None
+! CX(31)              None
+! SX(403)             None
+! SX(450)             None
+S(468)              2     452.392     5.643     0.000     0.000     0.000    ! Epsilon & sigma estimated with Tc=587.52 K, Pc=47.5 bar (from Joback method)

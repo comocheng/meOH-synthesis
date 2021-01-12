@@ -10,14 +10,23 @@ database(
     kineticsEstimator = 'rate rules',
 )
 
-catalystProperties( # default values for Cu(111) calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+# catalystProperties( # default values for Cu(111) calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+#     bindingEnergies = {
+#                        'C':(-4.96033553, 'eV/molecule'),
+#                        'O':(-4.20763879, 'eV/molecule'),
+#                        'N':(-3.58446699, 'eV/molecule'),
+#                        'H':(-2.58383235, 'eV/molecule'),
+#                        },
+#     surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
+# )
+catalystProperties( # Pt111
     bindingEnergies = {
-                       'C':(-4.96033553, 'eV/molecule'),
-                       'O':(-4.20763879, 'eV/molecule'),
-                       'N':(-3.58446699, 'eV/molecule'),
-                       'H':(-2.58383235, 'eV/molecule'),
+    		           'H':(-2.75367887E+00, 'eV/molecule'),
+                       'C':(-7.02515507E+00, 'eV/molecule'),
+                       'N':(-4.63224568E+00, 'eV/molecule'),
+                       'O':(-3.81153179E+00, 'eV/molecule'),
                        },
-    surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
+    surfaceSiteDensity=(2.483E-09, 'mol/cm^2'),  # from Katrin
 )
 
 # List of species
