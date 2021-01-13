@@ -17,14 +17,14 @@ database(
 #                        },
 #     surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
 # )
-catalystProperties( # Pt111
+catalystProperties( # Rh111
     bindingEnergies = {
-    		           'H':(-2.75367887E+00, 'eV/molecule'),
-                       'C':(-7.02515507E+00, 'eV/molecule'),
-                       'N':(-4.63224568E+00, 'eV/molecule'),
-                       'O':(-3.81153179E+00, 'eV/molecule'),
+                       'C':(-6.568, 'eV/molecule'),
+                       'O':(-4.610, 'eV/molecule'),
+                       'N':(-4.352, 'eV/molecule'),
+                       'H':(-2.479, 'eV/molecule'),
                        },
-    surfaceSiteDensity=(2.483E-09, 'mol/cm^2'),  # from Katrin
+    surfaceSiteDensity=(2.72e-9, 'mol/cm^2'),
 )
 
 # List of species
@@ -355,8 +355,8 @@ surfaceReactor(
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
     terminationConversion = { "CO2":0.99,},
-    terminationTime=(500., 's'),
-    # terminationRateRatio=0.001
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
 )
 
 surfaceReactor(
@@ -374,8 +374,8 @@ surfaceReactor(
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
     terminationConversion = { "CO2":0.99,},
-    terminationTime=(500., 's'),
-    # terminationRateRatio=0.001
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
 )
 
 surfaceReactor(
@@ -393,8 +393,8 @@ surfaceReactor(
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
     terminationConversion = { "CO":0.99,},
-    terminationTime=(500., 's'),
-    # terminationRateRatio=0.001
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
 )
 
 surfaceReactor(
@@ -412,8 +412,8 @@ surfaceReactor(
     },
     surfaceVolumeRatio=(1.e5, 'm^-1'),
     terminationConversion = { "CO":0.99,},
-    terminationTime=(500., 's'),
-    # terminationRateRatio=0.001
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
 )
 
 simulator(

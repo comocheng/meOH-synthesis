@@ -30,10 +30,6 @@ SPECIES
     HCOOH(7)            ! HCOOH(7)
     CH3OH(8)            ! CH3OH(8)
     HCOOCH3(9)          ! HCOOCH3(9)
-    CH4(41)             ! CH4(41)
-    CH4O2(178)          ! methanediol(178)
-    OCCO(437)           ! OCCO(437)
-    S(468)              ! acetic_acid(468)
 END
 
 
@@ -101,30 +97,6 @@ HCOOCH3(9)              C   2H   4O   2     G   100.000  5000.000 1141.77      1
 -4.59010044E+04 2.12202036E-01 3.28123251E+00 1.13180591E-02 1.84477587E-05    3
 -2.41945197E-08 7.75136395E-12-4.46725565E+04 1.20363735E+01                   4
 
-! Thermo library: primaryThermoLibrary
-CH4(41)                 C   1H   4          G   100.000  5000.000 1084.12      1
- 9.08265721E-01 1.14540858E-02-4.57173828E-06 8.29191671E-10-5.66314895E-14    2
--9.71997444E+03 1.39930944E+01 4.20541524E+00-5.35557362E-03 2.51123265E-05    3
--2.13762843E-08 5.97523937E-12-1.01619433E+04-9.21279283E-01                   4
-
-! Thermo library: thermo_DFT_CCSDTF12_BAC
-CH4O2(178)              C   1H   4O   2     G    10.000  3000.000  639.76      1
- 4.46055000E+00 1.93316000E-02-1.42176000E-05 5.09053000E-09-6.81740000E-13    2
--4.87312000E+04 1.03399000E+00 3.92739000E+00 3.97483000E-03 6.56102000E-05    3
--1.23760000E-07 6.75141000E-11-4.82805000E+04 6.35739000E+00                   4
-
-! Thermo group additivity estimation: group(O2s-CsH) + group(O2s-CsH) + group(Cs-CsOsHH) + group(Cs-CsOsHH)
-OCCO(437)               C   2H   6O   2     G   100.000  5000.000 1023.84      1
- 6.37169814E+00 1.94715478E-02-7.88403928E-06 1.42795275E-09-9.72296828E-14    2
--5.08289901E+04-3.61770032E+00 2.45006155E+00 3.47926537E-02-3.03303076E-05    3
- 1.60435197E-08-3.66599881E-12-5.00259550E+04 1.53943704E+01                   4
-
-! Thermo library: DFT_QCI_thermo
-S(468)                  C   2H   4O   2     G   100.000  5000.000 1020.01      1
- 6.36119375E+00 1.55129261E-02-6.47988274E-06 1.25442971E-09-9.10572754E-14    2
--5.51024351E+04-7.66369748E+00 3.21748826E+00 1.02436173E-02 2.71475099E-05    3
--3.76380133E-08 1.35868741E-11-5.35456809E+04 1.20525287E+01                   4
-
 END
 
 
@@ -182,34 +154,6 @@ DUPLICATE
 ! family: 1,3_Insertion_CO2
 H2(2)+CO2(4)=HCOOH(7)                               1.510000e+09 1.230     73.900   
 DUPLICATE
-
-! Reaction index: Chemkin #7; RMG #53
-! Template reaction: 1,3_Insertion_CO2
-! Flux pairs: CO2(4), HCOOCH3(9); CH4(41), HCOOCH3(9); 
-! Estimated using template [CO2;C_methane] for rate rule [CO2_Od;C_methane]
-! Euclidian distance = 1.0
-! Multiplied by reaction path degeneracy 8.0
-! family: 1,3_Insertion_CO2
-CO2(4)+CH4(41)=HCOOCH3(9)                           3.624000e+04 2.830     79.200   
-DUPLICATE
-
-! Reaction index: Chemkin #8; RMG #1211
-! Template reaction: 1,3_Insertion_CO2
-! Flux pairs: CH4(41), HCOOCH3(9); CO2(4), HCOOCH3(9); 
-! Estimated using template [CO2;C_methane] for rate rule [CO2_Od;C_methane]
-! Euclidian distance = 1.0
-! Multiplied by reaction path degeneracy 8.0
-! family: 1,3_Insertion_CO2
-CO2(4)+CH4(41)=HCOOCH3(9)                           3.624000e+04 2.830     79.200   
-DUPLICATE
-
-! Reaction index: Chemkin #9; RMG #1212
-! Template reaction: 1,3_Insertion_CO2
-! Flux pairs: CH4(41), S(468); CO2(4), S(468); 
-! Matched reaction 2 CH4 + CO2 <=> C2H4O2 in 1,3_Insertion_CO2/training
-! This reaction matched rate rule [CO2_Cdd;C_methane]
-! family: 1,3_Insertion_CO2
-CO2(4)+CH4(41)=S(468)                               3.624000e+04 2.830     79.200   
 
 END
 
