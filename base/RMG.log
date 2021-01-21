@@ -1,7 +1,7 @@
 Global RMG Settings:
    database.directory   = /Users/emilymazeau/Code/RMG-database/input (Default, relative to RMG-Py source code)
    test_data.directory  = /Users/emilymazeau/Code/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
-RMG execution initiated at Wed Jan 13 16:39:56 2021
+RMG execution initiated at Thu Jan 21 14:25:16 2021
 
 #########################################################
 # RMG-Py - Reaction Mechanism Generator in Python       #
@@ -17,8 +17,8 @@ The current git HEAD for RMG-Py is:
 	b'Tue Jan 5 12:23:41 2021 -0500'
 
 The current git HEAD for RMG-database is:
-	b'0e22b493015246d6a1202db6f1d894466153da40'
-	b'Tue Jan 5 12:29:16 2021 -0500'
+	b'9307944caadc9b982822abe02dab97c8405619c7'
+	b'Thu Jan 21 14:10:31 2021 -0500'
 
 Reading input file "/Users/emilymazeau/Code/meOH-synthesis/base/input.py"...
 # Data sources
@@ -578,14 +578,6 @@ Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
 Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
 Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
@@ -622,24 +614,6 @@ ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([12.5,14.58,16.0
 The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
 Warning: Cphigh is above the theoretical CpInf value for ThermoData object
 ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([12.5,14.58,16.07,17.22,18.87,19.96,21.35],'cal/(mol*K)'), H298=(-69.7872,'kcal/mol'), S298=(27.26,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(83.1447,'J/(mol*K)'), label="""formyloxyX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(O-*R) Binding energy corrected by LSR (0.50O)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-73.536,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-73.536,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
 The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
@@ -708,19 +682,6 @@ Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
 Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
 Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
-Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
 Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
 Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
@@ -1367,9 +1328,6 @@ For reaction X(1) + X(1) + HCOOCH3(9) <=> HCOO*(17) + C[Pt](55), Ea raised from 
 For reaction X(1) + X(1) + HCOOCH3(9) <=> H*(10) + CH2OCHOX(57), Ea raised from 0.0 to 23.4 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + HCOOCH3(9) <=> H*(10) + CH3OCOX(58), Ea raised from 0.0 to 36.5 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + HCOOCH3(9) <=> methyl_formateX(59), Ea raised from 0.0 to 15.3 kJ/mol to match endothermicity of reaction.
-For reaction X(1) + H2O*(13) <=> H*(10) + OH*(12), Ea raised from 20.3 to 67.9 kJ/mol to match endothermicity of reaction.
-For reaction X(1) + H2O*(13) <=> H*(10) + OH*(12), Ea raised from 20.3 to 67.9 kJ/mol to match endothermicity of reaction.
-For reaction O*(11) + CO*(14) <=> X(1) + CO2*(15), Ea raised from 62.7 to 109.8 kJ/mol to match endothermicity of reaction.
 For reaction OH*(12) + CO*(14) <=> X(1) + COOH*(18), Ea raised from 11.5 to 108.0 kJ/mol to match endothermicity of reaction.
 For reaction H*(10) + HCO*(16) <=> X(1) + CH2O*(19), Ea raised from 45.3 to 52.1 kJ/mol to match endothermicity of reaction.
 For reaction H*(10) + HCO*(16) <=> X(1) + CH2O*(19), Ea raised from 45.3 to 52.1 kJ/mol to match endothermicity of reaction.
@@ -1406,6 +1364,7 @@ For reaction OH*(12) + CH2O*(19) <=> X(1) + OOC[Pt](48), Ea raised from 260.9 to
 For reaction CO*(14) + HCOO*(17) <=> X(1) + O=COOC#[Pt](194), Ea raised from 218.1 to 220.3 kJ/mol to match endothermicity of reaction.
 For reaction CO*(14) + CH3O2*(21) <=> X(1) + OCOOC#[Pt](201), Ea raised from 238.0 to 240.2 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + HCO*(16) <=> X(1) + O=CC(=O)O[Pt](95), Ea raised from 190.2 to 190.6 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + HCO*(16) <=> X(1) + O=COC(=O)[Pt](96), Ea raised from 143.2 to 145.0 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + HCOO*(17) <=> O*(11) + O=CC(=O)O[Pt](95), Ea raised from 70.7 to 74.0 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + CH3O*(20) <=> X(1) + COOC(=O)[Pt](102), Ea raised from 223.2 to 225.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + CH3O2*(21) <=> X(1) + O=C([Pt])OOCO(104), Ea raised from 189.7 to 195.0 kJ/mol to match endothermicity of reaction.
@@ -1649,7 +1608,7 @@ Added 66 new core reactions
     X(1) + OH*(12) <=> O*(11) + H*(10)
     X(1) + H2O*(13) <=> H*(10) + OH*(12)
     X(1) + H2O*(13) <=> H*(10) + OH*(12)
-    O*(11) + CO*(14) <=> X(1) + CO2*(15)
+    X(1) + CO2*(15) <=> O*(11) + CO*(14)
     H*(10) + CO*(14) <=> X(1) + HCO*(16)
     X(1) + HCOO*(17) <=> O*(11) + HCO*(16)
     OH*(12) + CO*(14) <=> X(1) + COOH*(18)
@@ -1660,9 +1619,9 @@ Added 66 new core reactions
     H2(2) + CO2(4) <=> HCOOH(7)
     H2(2) + CO2(4) <=> HCOOH(7)
     H*(10) + CO2*(15) <=> X(1) + HCOO*(17)
-    X(1) + COOH*(18) <=> H*(10) + CO2*(15)
+    H*(10) + CO2*(15) <=> X(1) + COOH*(18)
     H*(10) + CH2O*(19) <=> X(1) + CH3O*(20)
-    OH*(12) + OH*(12) <=> O*(11) + H2O*(13)
+    O*(11) + H2O*(13) <=> OH*(12) + OH*(12)
     O*(11) + HCO*(16) <=> OH*(12) + CO*(14)
     O*(11) + CH2O*(19) <=> OH*(12) + HCO*(16)
     O*(11) + CH2O*(19) <=> H*(10) + HCOO*(17)
@@ -2106,8 +2065,8 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:07
-    Memory used: 871.23 MB
+    Execution time (DD:HH:MM:SS): 00:00:00:59
+    Memory used: 796.02 MB
 
 Making seed mechanism...
 Beginning model generation stage 1...
@@ -2315,14 +2274,14 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:12
-    Memory used: 873.74 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:04
+    Memory used: 806.78 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.1042e-10 s, species COX(60) at 1.0116813969243494e-05 exceeded the minimum rate for simulation interruption of 1e-05
+At time 1.1200e-10 s, species COX(60) at 1.0394309049842759e-05 exceeded the minimum rate for simulation interruption of 1e-05
 Reached max number of objects...preparing to terminate
-At time 1.1042e-10 s, species COX(60) at rate ratio 1.0116813969243494e-05 exceeded the minimum rate for moving to model core of 1e-05
+At time 1.1200e-10 s, species COX(60) at rate ratio 1.0394309049842759e-05 exceeded the minimum rate for moving to model core of 1e-05
 terminating simulation due to interrupt...
 conditions choosen for reactor 0 were: T = 493.31420154677875 K, 
 
@@ -2504,13 +2463,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:15
-    Memory used: 877.46 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:08
+    Memory used: 807.53 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.2556e-08 s, reached target termination RateRatio: 0.009983773474905613
-    CO2(4) conversion: 0.00708   
+At time 2.2644e-08 s, reached target termination RateRatio: 0.009916507822609444
+    CO2(4) conversion: 0.007084  
 conditions choosen for reactor 0 were: T = 490.634624414328 K, 
 
 
@@ -2545,12 +2504,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:17
-    Memory used: 880.32 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:09
+    Memory used: 809.71 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.2505e-08 s, reached target termination RateRatio: 0.009976224672202749
+At time 2.2487e-08 s, reached target termination RateRatio: 0.009989795258978097
     CO2(4) conversion: 0.007042  
 conditions choosen for reactor 0 were: T = 501.39258000021965 K, 
 
@@ -2586,13 +2545,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:18
-    Memory used: 883.18 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:11
+    Memory used: 810.30 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 4.4147e-09 s, reached target termination RateRatio: 0.009943278886810876
-    CO2(4) conversion: 0.001369  
+At time 4.4042e-09 s, reached target termination RateRatio: 0.009984714971655524
+    CO2(4) conversion: 0.001368  
 conditions choosen for reactor 1 were: T = 493.1055219585634 K, 
 
 
@@ -2627,12 +2586,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:20
-    Memory used: 884.39 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:12
+    Memory used: 814.22 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 4.4502e-09 s, reached target termination RateRatio: 0.009983748051684338
+At time 4.4464e-09 s, reached target termination RateRatio: 0.009998716407663361
     CO2(4) conversion: 0.001397  
 conditions choosen for reactor 1 were: T = 493.31420154677875 K, 
 
@@ -2668,13 +2627,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:21
-    Memory used: 886.71 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:13
+    Memory used: 819.71 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 4.4535e-09 s, reached target termination RateRatio: 0.00997470677414517
-    CO2(4) conversion: 0.001398  
+At time 4.4522e-09 s, reached target termination RateRatio: 0.00997955579416805
+    CO2(4) conversion: 0.001397  
 conditions choosen for reactor 1 were: T = 490.634624414328 K, 
 
 
@@ -2709,12 +2668,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:23
-    Memory used: 892.20 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:15
+    Memory used: 823.62 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 4.4461e-09 s, reached target termination RateRatio: 0.0099564555868578
+At time 4.4391e-09 s, reached target termination RateRatio: 0.009983416939942624
     CO2(4) conversion: 0.00139   
 conditions choosen for reactor 1 were: T = 501.39258000021965 K, 
 
@@ -2750,8 +2709,8 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:24
-    Memory used: 894.36 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:16
+    Memory used: 826.85 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
@@ -2945,14 +2904,14 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:28
-    Memory used: 907.51 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:19
+    Memory used: 830.72 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 8.0468e-09 s, species CHX(32) at 1.0008386630424595e-05 exceeded the minimum rate for simulation interruption of 1e-05
+At time 8.0469e-09 s, species CHX(32) at 1.0008411849903033e-05 exceeded the minimum rate for simulation interruption of 1e-05
 Reached max number of objects...preparing to terminate
-At time 8.0468e-09 s, species CHX(32) at rate ratio 1.0008386630424595e-05 exceeded the minimum rate for moving to model core of 1e-05
+At time 8.0469e-09 s, species CHX(32) at rate ratio 1.0008411849903033e-05 exceeded the minimum rate for moving to model core of 1e-05
 terminating simulation due to interrupt...
 conditions choosen for reactor 2 were: T = 493.31420154677875 K, 
 
@@ -3070,12 +3029,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:31
-    Memory used: 908.29 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:22
+    Memory used: 837.43 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9504e-08 s, reached target termination RateRatio: 0.009977972272370664
+At time 1.9507e-08 s, reached target termination RateRatio: 0.009971570920613945
     CO(3) conversion: 0.03609   
 conditions choosen for reactor 2 were: T = 490.634624414328 K, 
 
@@ -3111,12 +3070,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:33
-    Memory used: 912.14 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:24
+    Memory used: 859.63 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9440e-08 s, reached target termination RateRatio: 0.009995199636875993
+At time 1.9447e-08 s, reached target termination RateRatio: 0.009980428602758473
     CO(3) conversion: 0.0359    
 conditions choosen for reactor 2 were: T = 501.39258000021965 K, 
 
@@ -3152,12 +3111,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:34
-    Memory used: 916.79 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:26
+    Memory used: 859.64 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 3.7627e-09 s, reached target termination RateRatio: 0.009934232848417268
+At time 3.7597e-09 s, reached target termination RateRatio: 0.009965275074361244
     CO(3) conversion: 0.006979  
 conditions choosen for reactor 3 were: T = 493.1055219585634 K, 
 
@@ -3193,12 +3152,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:37
-    Memory used: 917.18 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:28
+    Memory used: 860.08 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 3.7962e-09 s, reached target termination RateRatio: 0.009997732874548646
+At time 3.7965e-09 s, reached target termination RateRatio: 0.009994167549571657
     CO(3) conversion: 0.007124  
 conditions choosen for reactor 3 were: T = 493.31420154677875 K, 
 
@@ -3234,12 +3193,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:38
-    Memory used: 917.26 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:30
+    Memory used: 866.48 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 3.8052e-09 s, reached target termination RateRatio: 0.009913263593067047
+At time 3.8047e-09 s, reached target termination RateRatio: 0.009918485290777261
     CO(3) conversion: 0.007128  
 conditions choosen for reactor 3 were: T = 490.634624414328 K, 
 
@@ -3275,13 +3234,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:40
-    Memory used: 917.64 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:31
+    Memory used: 870.14 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 3.7907e-09 s, reached target termination RateRatio: 0.009955181612475808
-    CO(3) conversion: 0.007089  
+At time 3.7866e-09 s, reached target termination RateRatio: 0.009997466003351059
+    CO(3) conversion: 0.007088  
 conditions choosen for reactor 3 were: T = 501.39258000021965 K, 
 
 
@@ -3316,14 +3275,14 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:41
-    Memory used: 917.67 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:33
+    Memory used: 873.47 MB
 
 Making seed mechanism...
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.2723e-08 s, reached target termination RateRatio: 0.009996839099415957
-    CO2(4) conversion: 0.007196  
+At time 2.2785e-08 s, reached target termination RateRatio: 0.009949732123535645
+    CO2(4) conversion: 0.007198  
 conditions choosen for reactor 0 were: T = 489.7988131544492 K, 
 
 
@@ -3358,13 +3317,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:43
-    Memory used: 917.97 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:35
+    Memory used: 873.66 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.2520e-08 s, reached target termination RateRatio: 0.009949876709704125
-    CO2(4) conversion: 0.007032  
+At time 2.2470e-08 s, reached target termination RateRatio: 0.009987982581040306
+    CO2(4) conversion: 0.00703   
 conditions choosen for reactor 0 were: T = 507.84311814049767 K, 
 
 
@@ -3399,13 +3358,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:45
-    Memory used: 917.98 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:36
+    Memory used: 873.67 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.2871e-08 s, reached target termination RateRatio: 0.009994719208852042
-    CO2(4) conversion: 0.007288  
+At time 2.2906e-08 s, reached target termination RateRatio: 0.009968468501064065
+    CO2(4) conversion: 0.00729   
 conditions choosen for reactor 0 were: T = 491.5487202316912 K, 
 
 
@@ -3440,13 +3399,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:47
-    Memory used: 921.46 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:38
+    Memory used: 874.58 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.2508e-08 s, reached target termination RateRatio: 0.009989341190604097
-    CO2(4) conversion: 0.007055  
+At time 2.2560e-08 s, reached target termination RateRatio: 0.009949667065623117
+    CO2(4) conversion: 0.007057  
 conditions choosen for reactor 0 were: T = 535.0928630416612 K, 
 
 
@@ -3481,12 +3440,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:48
-    Memory used: 921.46 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:39
+    Memory used: 874.63 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 4.4866e-09 s, reached target termination RateRatio: 0.00998711508151812
+At time 4.4843e-09 s, reached target termination RateRatio: 0.009995780622789946
     CO2(4) conversion: 0.00142   
 conditions choosen for reactor 1 were: T = 489.7988131544492 K, 
 
@@ -3522,12 +3481,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:50
-    Memory used: 925.22 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:41
+    Memory used: 874.63 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 4.4435e-09 s, reached target termination RateRatio: 0.009951674388958175
+At time 4.4401e-09 s, reached target termination RateRatio: 0.009964737367643197
     CO2(4) conversion: 0.001388  
 conditions choosen for reactor 1 were: T = 507.84311814049767 K, 
 
@@ -3563,12 +3522,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:51
-    Memory used: 925.97 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:42
+    Memory used: 874.63 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 4.5173e-09 s, reached target termination RateRatio: 0.00997962401392071
+At time 4.5210e-09 s, reached target termination RateRatio: 0.009965319633900788
     CO2(4) conversion: 0.001439  
 conditions choosen for reactor 1 were: T = 491.5487202316912 K, 
 
@@ -3604,13 +3563,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:53
-    Memory used: 929.17 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:44
+    Memory used: 874.75 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 4.4403e-09 s, reached target termination RateRatio: 0.009994899290416333
-    CO2(4) conversion: 0.001392  
+At time 4.4585e-09 s, reached target termination RateRatio: 0.009924104375353843
+    CO2(4) conversion: 0.001393  
 conditions choosen for reactor 1 were: T = 535.0928630416612 K, 
 
 
@@ -3645,12 +3604,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:55
-    Memory used: 929.17 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:45
+    Memory used: 878.68 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9677e-08 s, reached target termination RateRatio: 0.009963700292808311
+At time 1.9660e-08 s, reached target termination RateRatio: 0.009997571078129272
     CO(3) conversion: 0.03668   
 conditions choosen for reactor 2 were: T = 489.7988131544492 K, 
 
@@ -3686,12 +3645,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:57
-    Memory used: 929.72 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:47
+    Memory used: 878.85 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9429e-08 s, reached target termination RateRatio: 0.009981505708927531
+At time 1.9428e-08 s, reached target termination RateRatio: 0.009984655360147691
     CO(3) conversion: 0.03584   
 conditions choosen for reactor 2 were: T = 507.84311814049767 K, 
 
@@ -3727,13 +3686,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:58
-    Memory used: 929.84 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:49
+    Memory used: 879.20 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9836e-08 s, reached target termination RateRatio: 0.009910015302001658
-    CO(3) conversion: 0.03716   
+At time 1.9798e-08 s, reached target termination RateRatio: 0.00998486436777761
+    CO(3) conversion: 0.03715   
 conditions choosen for reactor 2 were: T = 491.5487202316912 K, 
 
 
@@ -3768,12 +3727,12 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:00
-    Memory used: 930.59 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:50
+    Memory used: 883.56 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9459e-08 s, reached target termination RateRatio: 0.009993724627080001
+At time 1.9458e-08 s, reached target termination RateRatio: 0.009995752196043144
     CO(3) conversion: 0.03596   
 conditions choosen for reactor 2 were: T = 535.0928630416612 K, 
 
@@ -3809,13 +3768,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:02
-    Memory used: 930.98 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:52
+    Memory used: 887.74 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 3.8318e-09 s, reached target termination RateRatio: 0.00996239680503971
-    CO(3) conversion: 0.007244  
+At time 3.8348e-09 s, reached target termination RateRatio: 0.009932317517192028
+    CO(3) conversion: 0.007245  
 conditions choosen for reactor 3 were: T = 489.7988131544492 K, 
 
 
@@ -3850,13 +3809,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:04
-    Memory used: 938.10 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:54
+    Memory used: 888.13 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 3.7832e-09 s, reached target termination RateRatio: 0.009998962207197195
-    CO(3) conversion: 0.007076  
+At time 3.7862e-09 s, reached target termination RateRatio: 0.009968186775723862
+    CO(3) conversion: 0.007077  
 conditions choosen for reactor 3 were: T = 507.84311814049767 K, 
 
 
@@ -3891,13 +3850,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:06
-    Memory used: 938.46 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:55
+    Memory used: 889.08 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 3.8544e-09 s, reached target termination RateRatio: 0.00998619219979233
-    CO(3) conversion: 0.007337  
+At time 3.8602e-09 s, reached target termination RateRatio: 0.009926818264641164
+    CO(3) conversion: 0.007338  
 conditions choosen for reactor 3 were: T = 491.5487202316912 K, 
 
 
@@ -3932,13 +3891,13 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:07
-    Memory used: 939.52 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:57
+    Memory used: 889.45 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 3.7900e-09 s, reached target termination RateRatio: 0.00999938512280344
-    CO(3) conversion: 0.007101  
+At time 3.7917e-09 s, reached target termination RateRatio: 0.009981565310960464
+    CO(3) conversion: 0.007102  
 conditions choosen for reactor 3 were: T = 535.0928630416612 K, 
 
 
@@ -3973,8 +3932,8 @@ Saving current model edge to HTML file...
 Saving current reaction adjacency lists to file...
 Saving current model edge reaction adjacency lists to file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:09
-    Memory used: 946.44 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:59
+    Memory used: 890.88 MB
 
 Making seed mechanism...
 Performing final model checks...
@@ -3985,4 +3944,4 @@ MODEL GENERATION COMPLETED
 The final model core has 28 species and 87 reactions
 The final model edge has 313 species and 649 reactions
 
-RMG execution terminated at Wed Jan 13 16:42:06 2021
+RMG execution terminated at Thu Jan 21 14:27:16 2021

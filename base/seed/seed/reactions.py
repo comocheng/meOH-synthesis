@@ -402,18 +402,16 @@ entry(
     label = "X + H2O* <=> H* + OH*",
     degeneracy = 2.0,
     duplicate = True,
-    kinetics = SurfaceArrhenius(A=(4.879e+15,'m^2/(mol*s)'), n=0, Ea=(16.2236,'kcal/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Matched reaction 14 H2O* + X_4 <=> OH* + H* in Surface_Dissociation_vdW/training
+    kinetics = SurfaceArrhenius(A=(3.67e+17,'m^2/(mol*s)'), n=-0.086, Ea=(92.9,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 29 H2O* + X_4 <=> OH* + H* in Surface_Dissociation_vdW/training
     This reaction matched rate rule [O-H;VacantSite]
     family: Surface_Dissociation_vdW
-    metal: None
-    Ea raised from 20.3 to 67.9 kJ/mol to match endothermicity of reaction."""),
+    metal: None"""),
     longDesc = 
 """
-Matched reaction 14 H2O* + X_4 <=> OH* + H* in Surface_Dissociation_vdW/training
+Matched reaction 29 H2O* + X_4 <=> OH* + H* in Surface_Dissociation_vdW/training
 This reaction matched rate rule [O-H;VacantSite]
 family: Surface_Dissociation_vdW
 metal: None
-Ea raised from 20.3 to 67.9 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -422,37 +420,33 @@ entry(
     label = "X + H2O* <=> H* + OH*",
     degeneracy = 2.0,
     duplicate = True,
-    kinetics = SurfaceArrhenius(A=(4.879e+15,'m^2/(mol*s)'), n=0, Ea=(16.2236,'kcal/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Matched reaction 14 H2O* + X_4 <=> OH* + H* in Surface_Dissociation_vdW/training
+    kinetics = SurfaceArrhenius(A=(3.67e+17,'m^2/(mol*s)'), n=-0.086, Ea=(92.9,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 29 H2O* + X_4 <=> OH* + H* in Surface_Dissociation_vdW/training
     This reaction matched rate rule [Combined;VacantSite]
     family: Surface_Dissociation_vdW
-    metal: None
-    Ea raised from 20.3 to 67.9 kJ/mol to match endothermicity of reaction."""),
+    metal: None"""),
     longDesc = 
 """
-Matched reaction 14 H2O* + X_4 <=> OH* + H* in Surface_Dissociation_vdW/training
+Matched reaction 29 H2O* + X_4 <=> OH* + H* in Surface_Dissociation_vdW/training
 This reaction matched rate rule [Combined;VacantSite]
 family: Surface_Dissociation_vdW
 metal: None
-Ea raised from 20.3 to 67.9 kJ/mol to match endothermicity of reaction.
 """,
 )
 
 entry(
     index = 27,
-    label = "O* + CO* <=> X + CO2*",
+    label = "X + CO2* <=> O* + CO*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(4.06e+16,'m^2/(mol*s)'), n=0, Ea=(26.2446,'kcal/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Matched reaction 9 CO* + O* <=> CO2* + X_4 in Surface_Dissociation_Double_vdW/training
+    kinetics = SurfaceArrhenius(A=(4.64e+19,'m^2/(mol*s)'), n=-1, Ea=(89300,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 42 CO2* + X_4 <=> CO* + O* in Surface_Dissociation_Double_vdW/training
     This reaction matched rate rule [CO2;VacantSite]
     family: Surface_Dissociation_Double_vdW
-    metal: None
-    Ea raised from 62.7 to 109.8 kJ/mol to match endothermicity of reaction."""),
+    metal: None"""),
     longDesc = 
 """
-Matched reaction 9 CO* + O* <=> CO2* + X_4 in Surface_Dissociation_Double_vdW/training
+Matched reaction 42 CO2* + X_4 <=> CO* + O* in Surface_Dissociation_Double_vdW/training
 This reaction matched rate rule [CO2;VacantSite]
 family: Surface_Dissociation_Double_vdW
 metal: None
-Ea raised from 62.7 to 109.8 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -636,15 +630,15 @@ metal: None
 
 entry(
     index = 38,
-    label = "X + COOH* <=> H* + CO2*",
+    label = "H* + CO2* <=> X + COOH*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(8.028e+17,'m^2/(mol*s)'), n=0, Ea=(28.3645,'kcal/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Matched reaction 11 COOH* + X_5 <=> CO2_2* + H* in Surface_Addition_Single_vdW/training
+    kinetics = SurfaceArrhenius(A=(6.25e+20,'m^2/(mol*s)'), n=-0.475, Ea=(117200,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 45 CO2_2* + H* <=> COOH* + X_5 in Surface_Addition_Single_vdW/training
     This reaction matched rate rule [CO2;H*]
     family: Surface_Addition_Single_vdW
     metal: None"""),
     longDesc = 
 """
-Matched reaction 11 COOH* + X_5 <=> CO2_2* + H* in Surface_Addition_Single_vdW/training
+Matched reaction 45 CO2_2* + H* <=> COOH* + X_5 in Surface_Addition_Single_vdW/training
 This reaction matched rate rule [CO2;H*]
 family: Surface_Addition_Single_vdW
 metal: None
@@ -670,15 +664,15 @@ metal: None
 
 entry(
     index = 40,
-    label = "OH* + OH* <=> O* + H2O*",
+    label = "O* + H2O* <=> OH* + OH*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(5.691e+16,'m^2/(mol*s)'), n=0, Ea=(14.0669,'kcal/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Matched reaction 16 OH_2* + OH_4* <=> H2O* + O* in Surface_Abstraction_vdW/training
+    kinetics = SurfaceArrhenius(A=(8.14e+20,'m^2/(mol*s)'), n=-0.274, Ea=(218400,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 34 H2O* + O* <=> OH_2* + OH_4* in Surface_Abstraction_vdW/training
     This reaction matched rate rule [O-R;*=O]
     family: Surface_Abstraction_vdW
     metal: None"""),
     longDesc = 
 """
-Matched reaction 16 OH_2* + OH_4* <=> H2O* + O* in Surface_Abstraction_vdW/training
+Matched reaction 34 H2O* + O* <=> OH_2* + OH_4* in Surface_Abstraction_vdW/training
 This reaction matched rate rule [O-R;*=O]
 family: Surface_Abstraction_vdW
 metal: None
@@ -725,7 +719,7 @@ entry(
     index = 43,
     label = "O* + CH2O* <=> H* + HCOO*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(4.87241e+15,'m^2/(mol*s)'), n=0.639876, Ea=(120.26,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [AdsorbateVdW;*=O]
+    kinetics = SurfaceArrhenius(A=(4.78261e+20,'m^2/(mol*s)'), n=-0.1875, Ea=(155.55,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [AdsorbateVdW;*=O]
     Euclidian distance = 0
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Abstraction_vdW"""),
@@ -759,13 +753,13 @@ entry(
     label = "O* + CH3OH* <=> OH* + CH3O*",
     degeneracy = 1.0,
     duplicate = True,
-    kinetics = SurfaceArrhenius(A=(4.22427e+10,'m^2/(mol*s)'), n=1.38075, Ea=(147.821,'kJ/mol'), T0=(1,'K'), Tmin=(303.03,'K'), Tmax=(2000,'K'), comment="""From training reaction 16 used for O-R;*=O
+    kinetics = SurfaceArrhenius(A=(4.07e+20,'m^2/(mol*s)'), n=-0.274, Ea=(218.4,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""From training reaction 34 used for O-R;*=O
     Exact match found for rate rule [O-R;*=O]
     Euclidian distance = 0
     family: Surface_Abstraction_vdW"""),
     longDesc = 
 """
-From training reaction 16 used for O-R;*=O
+From training reaction 34 used for O-R;*=O
 Exact match found for rate rule [O-R;*=O]
 Euclidian distance = 0
 family: Surface_Abstraction_vdW
@@ -776,7 +770,7 @@ entry(
     index = 46,
     label = "O* + CH3OH* <=> H* + CH3O2*",
     degeneracy = 3.0,
-    kinetics = SurfaceArrhenius(A=(7.30862e+15,'m^2/(mol*s)'), n=0.639876, Ea=(120.26,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [AdsorbateVdW;*=O]
+    kinetics = SurfaceArrhenius(A=(7.17392e+20,'m^2/(mol*s)'), n=-0.1875, Ea=(155.55,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [AdsorbateVdW;*=O]
     Euclidian distance = 0
     Multiplied by reaction path degeneracy 3.0
     family: Surface_Abstraction_vdW"""),

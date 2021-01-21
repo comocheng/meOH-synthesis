@@ -439,7 +439,7 @@ reactions:
         5 *3 X u0 p0 c0 {3,S}
 
   - index: 28
-    reaction: O*(11) + CO*(14) <=> X(1) + CO2*(15)
+    reaction: X(1) + CO2*(15) <=> O*(11) + CO*(14)
     reaction_family: Surface_Dissociation_Double_vdW
     reactant: |
         1 *4 X u0 p0 c0
@@ -637,7 +637,7 @@ reactions:
         6 *1 X u0 p0 c0 {3,S}
 
   - index: 39
-    reaction: X(1) + COOH*(18) <=> H*(10) + CO2*(15)
+    reaction: H*(10) + CO2*(15) <=> X(1) + COOH*(18)
     reaction_family: Surface_Addition_Single_vdW
     reactant: |
         1 *4 H u0 p0 c0 {2,S}
@@ -675,7 +675,7 @@ reactions:
         7 *1 X u0 p0 c0 {3,S}
 
   - index: 41
-    reaction: OH*(12) + OH*(12) <=> O*(11) + H2O*(13)
+    reaction: O*(11) + H2O*(13) <=> OH*(12) + OH*(12)
     reaction_family: Surface_Abstraction_vdW
     reactant: |
         1 *4 O u0 p2 c0 {2,D}
