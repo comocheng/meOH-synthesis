@@ -140,17 +140,17 @@ CH3OH*(22)
 6 H u0 p0 c0 {1,S}
 7 X u0 p0 c0
 
-H2X(50)
-1 H u0 p0 c0 {2,S}
-2 H u0 p0 c0 {1,S}
-3 X u0 p0 c0
-
 CO2X(51)
 1 O u0 p2 c0 {3,S} {5,S}
 2 O u0 p2 c0 {3,D}
 3 C u0 p0 c0 {1,S} {2,D} {4,S}
 4 X u0 p0 c0 {3,S}
 5 X u0 p0 c0 {1,S}
+
+H2X(50)
+1 H u0 p0 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0
 
 COX(60)
 1 O u0 p2 c0 {2,S} {3,S}
@@ -2852,20 +2852,20 @@ HOX2(275)
 3 X u0 p0 c0 {1,S}
 4 X u0 p0 c0
 
-HOCOX(276)
-1 O u0 p2 c0 {3,S} {4,S}
-2 O u0 p2 c0 {3,D}
-3 C u0 p0 c0 {1,S} {2,D} {5,S}
-4 H u0 p0 c0 {1,S}
-5 X u0 p0 c0 {3,S}
-6 X u0 p0 c0
-
-SX(277)
+SX(276)
 1 O u0 p2 c0 {3,S} {5,S}
 2 O u0 p2 c0 {3,D}
 3 C u0 p0 c0 {1,S} {2,D} {4,S}
 4 H u0 p0 c0 {3,S}
 5 X u0 p0 c0 {1,S}
+6 X u0 p0 c0
+
+HOCOX(277)
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {5,S}
+4 H u0 p0 c0 {1,S}
+5 X u0 p0 c0 {3,S}
 6 X u0 p0 c0
 
 CO3X2(278)
