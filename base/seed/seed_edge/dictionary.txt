@@ -287,11 +287,6 @@ OC(O)[Pt]
 6 H u0 p0 c0 {1,S}
 7 X u0 p0 c0 {3,S}
 
-[H][H].[Pt]
-1 H u0 p0 c0 {2,S}
-2 H u0 p0 c0 {1,S}
-3 X u0 p0 c0
-
 [Pt]CO[Pt]
 1 O u0 p2 c0 {2,S} {6,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
@@ -1801,6 +1796,14 @@ OC(O)=[Pt]
 5 H u0 p0 c0 {2,S}
 6 X u0 p0 c0 {3,D}
 
+C.[Pt]
+1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+6 X u0 p0 c0
+
 methanediol
 1 O u0 p2 c0 {3,S} {6,S}
 2 O u0 p2 c0 {3,S} {7,S}
@@ -1810,11 +1813,31 @@ methanediol
 6 H u0 p0 c0 {1,S}
 7 H u0 p0 c0 {2,S}
 
+OCO.[Pt]
+1 O u0 p2 c0 {3,S} {6,S}
+2 O u0 p2 c0 {3,S} {7,S}
+3 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
+4 H u0 p0 c0 {3,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {1,S}
+7 H u0 p0 c0 {2,S}
+8 X u0 p0 c0
+
+[H][H].[Pt]
+1 H u0 p0 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0
+
 [Pt]OO[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {4,S}
 3 X u0 p0 c0 {1,S}
 4 X u0 p0 c0 {2,S}
+
+O2(S)X
+1 O u0 p2 c0 {2,D}
+2 O u0 p2 c0 {1,D}
+3 X u0 p0 c0
 
 OO[Pt]
 1 O u0 p2 c0 {2,S} {4,S}
@@ -1855,6 +1878,13 @@ HOCH2OOX
 7 H u0 p0 c0 {2,S}
 8 X u0 p0 c0 {3,S}
 
+OO.[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {2,S}
+5 X u0 p0 c0
+
 OOC#[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {4,S}
@@ -1878,6 +1908,15 @@ OCHOOH
 5 H u0 p0 c0 {4,S}
 6 H u0 p0 c0 {2,S}
 
+OCHOOHX
+1 O u0 p2 c0 {2,S} {4,S}
+2 O u0 p2 c0 {1,S} {6,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {3,D} {5,S}
+5 H u0 p0 c0 {4,S}
+6 H u0 p0 c0 {2,S}
+7 X u0 p0 c0
+
 O=C(O)O
 1 O u0 p2 c0 {4,S} {5,S}
 2 O u0 p2 c0 {4,S} {6,S}
@@ -1895,6 +1934,15 @@ OOC(O)=[Pt]
 6 H u0 p0 c0 {3,S}
 7 X u0 p0 c0 {4,D}
 
+O=C(O)O.[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,S} {6,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {2,S} {3,D}
+5 H u0 p0 c0 {1,S}
+6 H u0 p0 c0 {2,S}
+7 X u0 p0 c0
+
 CH3OOH
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {7,S}
@@ -1903,6 +1951,16 @@ CH3OOH
 5 H u0 p0 c0 {3,S}
 6 H u0 p0 c0 {3,S}
 7 H u0 p0 c0 {2,S}
+
+CH3OOHX
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {7,S}
+3 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
+4 H u0 p0 c0 {3,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {3,S}
+7 H u0 p0 c0 {2,S}
+8 X u0 p0 c0
 
 HOOCH2OH
 1 O u0 p2 c0 {3,S} {4,S}
@@ -1914,6 +1972,17 @@ HOOCH2OH
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {3,S}
 
+HOOCH2OHX
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {4,S} {7,S}
+3 O u0 p2 c0 {1,S} {8,S}
+4 C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
+5 H u0 p0 c0 {4,S}
+6 H u0 p0 c0 {4,S}
+7 H u0 p0 c0 {2,S}
+8 H u0 p0 c0 {3,S}
+9 X u0 p0 c0
+
 OCCO(S)X
 1 O u0 p2 c0 {3,D}
 2 O u0 p2 c0 {4,D}
@@ -1921,6 +1990,13 @@ OCCO(S)X
 4 C u0 p0 c0 {2,D} {3,S} {6,S}
 5 X u0 p0 c0 {3,S}
 6 X u0 p0 c0 {4,S}
+
+OCCO(S)X-2
+1 O u0 p2 c0 {3,D}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {1,D} {4,D}
+4 C u0 p0 c0 {2,D} {3,D}
+5 X u0 p0 c0
 
 OCHCOX
 1 O u0 p2 c0 {3,D}
@@ -2054,6 +2130,15 @@ O=COC=[Pt]
 6 H u0 p0 c0 {4,S}
 7 X u0 p0 c0 {3,D}
 
+glyoxalX
+1 O u0 p2 c0 {3,D}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {1,D} {4,S} {5,S}
+4 C u0 p0 c0 {2,D} {3,S} {6,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {4,S}
+7 X u0 p0 c0
+
 O=COOC=[Pt]
 1 O u0 p2 c0 {2,S} {4,S}
 2 O u0 p2 c0 {1,S} {5,S}
@@ -2063,6 +2148,16 @@ O=COOC=[Pt]
 6 H u0 p0 c0 {4,S}
 7 H u0 p0 c0 {5,S}
 8 X u0 p0 c0 {4,D}
+
+O=COC=O.[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,D}
+3 O u0 p2 c0 {5,D}
+4 C u0 p0 c0 {1,S} {2,D} {6,S}
+5 C u0 p0 c0 {1,S} {3,D} {7,S}
+6 H u0 p0 c0 {4,S}
+7 H u0 p0 c0 {5,S}
+8 X u0 p0 c0
 
 O=CC(=O)O
 1 O u0 p2 c0 {4,S} {7,S}
@@ -2093,6 +2188,26 @@ O=COC(O)=[Pt]
 7 H u0 p0 c0 {2,S}
 8 X u0 p0 c0 {4,D}
 
+O=CC(=O)O.[Pt]
+1 O u0 p2 c0 {4,S} {7,S}
+2 O u0 p2 c0 {4,D}
+3 O u0 p2 c0 {5,D}
+4 C u0 p0 c0 {1,S} {2,D} {5,S}
+5 C u0 p0 c0 {3,D} {4,S} {6,S}
+6 H u0 p0 c0 {5,S}
+7 H u0 p0 c0 {1,S}
+8 X u0 p0 c0
+
+CH3CHOX
+1 O u0 p2 c0 {3,D}
+2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
+3 C u0 p0 c0 {1,D} {2,S} {7,S}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {2,S}
+6 H u0 p0 c0 {2,S}
+7 H u0 p0 c0 {3,S}
+8 X u0 p0 c0
+
 COOC=[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {4,S}
@@ -2103,6 +2218,17 @@ COOC=[Pt]
 7 H u0 p0 c0 {3,S}
 8 H u0 p0 c0 {4,S}
 9 X u0 p0 c0 {4,D}
+
+HOCH2CHOX
+1 O u0 p2 c0 {3,S} {8,S}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
+4 C u0 p0 c0 {2,D} {3,S} {7,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {3,S}
+7 H u0 p0 c0 {4,S}
+8 H u0 p0 c0 {1,S}
+9 X u0 p0 c0
 
 OCOOC=[Pt]
 1  O u0 p2 c0 {2,S} {4,S}
@@ -2116,6 +2242,29 @@ OCOOC=[Pt]
 9  H u0 p0 c0 {3,S}
 10 X u0 p0 c0 {5,D}
 
+O=COCO.[Pt]
+1  O u0 p2 c0 {4,S} {5,S}
+2  O u0 p2 c0 {4,S} {9,S}
+3  O u0 p2 c0 {5,D}
+4  C u0 p0 c0 {1,S} {2,S} {6,S} {7,S}
+5  C u0 p0 c0 {1,S} {3,D} {8,S}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {2,S}
+10 X u0 p0 c0
+
+O=COOC=O.[Pt]
+1 O u0 p2 c0 {2,S} {5,S}
+2 O u0 p2 c0 {1,S} {6,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {3,D} {7,S}
+6 C u0 p0 c0 {2,S} {4,D} {8,S}
+7 H u0 p0 c0 {5,S}
+8 H u0 p0 c0 {6,S}
+9 X u0 p0 c0
+
 O=COOC(O)=[Pt]
 1 O u0 p2 c0 {2,S} {5,S}
 2 O u0 p2 c0 {1,S} {6,S}
@@ -2126,6 +2275,42 @@ O=COOC(O)=[Pt]
 7 H u0 p0 c0 {6,S}
 8 H u0 p0 c0 {3,S}
 9 X u0 p0 c0 {5,D}
+
+O=COC(=O)O.[Pt]
+1 O u0 p2 c0 {5,S} {6,S}
+2 O u0 p2 c0 {5,S} {8,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {2,S} {3,D}
+6 C u0 p0 c0 {1,S} {4,D} {7,S}
+7 H u0 p0 c0 {6,S}
+8 H u0 p0 c0 {2,S}
+9 X u0 p0 c0
+
+COOC=O.[Pt]
+1  O u0 p2 c0 {2,S} {4,S}
+2  O u0 p2 c0 {1,S} {5,S}
+3  O u0 p2 c0 {5,D}
+4  C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
+5  C u0 p0 c0 {2,S} {3,D} {9,S}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {4,S}
+9  H u0 p0 c0 {5,S}
+10 X u0 p0 c0
+
+O=COOCO.[Pt]
+1  O u0 p2 c0 {2,S} {5,S}
+2  O u0 p2 c0 {1,S} {6,S}
+3  O u0 p2 c0 {5,S} {10,S}
+4  O u0 p2 c0 {6,D}
+5  C u0 p0 c0 {1,S} {3,S} {7,S} {8,S}
+6  C u0 p0 c0 {2,S} {4,D} {9,S}
+7  H u0 p0 c0 {5,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {6,S}
+10 H u0 p0 c0 {3,S}
+11 X u0 p0 c0
 
 O=C(O)C(=O)O
 1 O u0 p2 c0 {5,S} {7,S}
@@ -2147,6 +2332,28 @@ O=C(O)OC(O)=[Pt]
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {3,S}
 9 X u0 p0 c0 {5,D}
+
+O=C(O)C(=O)O.[Pt]
+1 O u0 p2 c0 {5,S} {7,S}
+2 O u0 p2 c0 {6,S} {8,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {3,D} {6,S}
+6 C u0 p0 c0 {2,S} {4,D} {5,S}
+7 H u0 p0 c0 {1,S}
+8 H u0 p0 c0 {2,S}
+9 X u0 p0 c0
+
+acetic_acidX
+1 O u0 p2 c0 {4,S} {8,S}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {4,S} {5,S} {6,S} {7,S}
+4 C u0 p0 c0 {1,S} {2,D} {3,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {3,S}
+7 H u0 p0 c0 {3,S}
+8 H u0 p0 c0 {1,S}
+9 X u0 p0 c0
 
 COC(=O)O
 1 O u0 p2 c0 {4,S} {5,S}
@@ -2170,6 +2377,30 @@ COOC(O)=[Pt]
 8  H u0 p0 c0 {4,S}
 9  H u0 p0 c0 {3,S}
 10 X u0 p0 c0 {5,D}
+
+COC(=O)O.[Pt]
+1  O u0 p2 c0 {4,S} {5,S}
+2  O u0 p2 c0 {5,S} {9,S}
+3  O u0 p2 c0 {5,D}
+4  C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
+5  C u0 p0 c0 {1,S} {2,S} {3,D}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {4,S}
+9  H u0 p0 c0 {2,S}
+10 X u0 p0 c0
+
+O=C(O)CO.[Pt]
+1  O u0 p2 c0 {4,S} {8,S}
+2  O u0 p2 c0 {5,S} {9,S}
+3  O u0 p2 c0 {5,D}
+4  C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+5  C u0 p0 c0 {2,S} {3,D} {4,S}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {1,S}
+9  H u0 p0 c0 {2,S}
+10 X u0 p0 c0
 
 O=C(O)OCO
 1  O u0 p2 c0 {5,S} {6,S}
@@ -2195,6 +2426,19 @@ OCOOC(O)=[Pt]
 9  H u0 p0 c0 {3,S}
 10 H u0 p0 c0 {4,S}
 11 X u0 p0 c0 {6,D}
+
+O=C(O)OCO.[Pt]
+1  O u0 p2 c0 {5,S} {6,S}
+2  O u0 p2 c0 {5,S} {9,S}
+3  O u0 p2 c0 {6,S} {10,S}
+4  O u0 p2 c0 {6,D}
+5  C u0 p0 c0 {1,S} {2,S} {7,S} {8,S}
+6  C u0 p0 c0 {1,S} {3,S} {4,D}
+7  H u0 p0 c0 {5,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {2,S}
+10 H u0 p0 c0 {3,S}
+11 X u0 p0 c0
 
 CH3CH2OX
 1 O u0 p2 c0 {2,S} {9,S}
@@ -2242,6 +2486,18 @@ HOCH2OCH2X
 9  H u0 p0 c0 {2,S}
 10 X u0 p0 c0 {4,S}
 
+DMEX
+1  O u0 p2 c0 {2,S} {3,S}
+2  C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
+3  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
+4  H u0 p0 c0 {2,S}
+5  H u0 p0 c0 {2,S}
+6  H u0 p0 c0 {2,S}
+7  H u0 p0 c0 {3,S}
+8  H u0 p0 c0 {3,S}
+9  H u0 p0 c0 {3,S}
+10 X u0 p0 c0
+
 CH3OOCH3
 1  O u0 p2 c0 {2,S} {3,S}
 2  O u0 p2 c0 {1,S} {4,S}
@@ -2253,6 +2509,32 @@ CH3OOCH3
 8  H u0 p0 c0 {4,S}
 9  H u0 p0 c0 {4,S}
 10 H u0 p0 c0 {4,S}
+
+CH3OOCH3X
+1  O u0 p2 c0 {2,S} {3,S}
+2  O u0 p2 c0 {1,S} {4,S}
+3  C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+4  C u0 p0 c0 {2,S} {8,S} {9,S} {10,S}
+5  H u0 p0 c0 {3,S}
+6  H u0 p0 c0 {3,S}
+7  H u0 p0 c0 {3,S}
+8  H u0 p0 c0 {4,S}
+9  H u0 p0 c0 {4,S}
+10 H u0 p0 c0 {4,S}
+11 X u0 p0 c0
+
+COCO.[Pt]
+1  O u0 p2 c0 {3,S} {4,S}
+2  O u0 p2 c0 {3,S} {10,S}
+3  C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
+4  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
+5  H u0 p0 c0 {3,S}
+6  H u0 p0 c0 {3,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {4,S}
+9  H u0 p0 c0 {4,S}
+10 H u0 p0 c0 {2,S}
+11 X u0 p0 c0
 
 COOCO
 1  O u0 p2 c0 {2,S} {4,S}
@@ -2267,6 +2549,34 @@ COOCO
 10 H u0 p0 c0 {5,S}
 11 H u0 p0 c0 {3,S}
 
+COOCO.[Pt]
+1  O u0 p2 c0 {2,S} {4,S}
+2  O u0 p2 c0 {1,S} {5,S}
+3  O u0 p2 c0 {4,S} {11,S}
+4  C u0 p0 c0 {1,S} {3,S} {6,S} {7,S}
+5  C u0 p0 c0 {2,S} {8,S} {9,S} {10,S}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {5,S}
+10 H u0 p0 c0 {5,S}
+11 H u0 p0 c0 {3,S}
+12 X u0 p0 c0
+
+OCOCO.[Pt]
+1  O u0 p2 c0 {4,S} {5,S}
+2  O u0 p2 c0 {4,S} {10,S}
+3  O u0 p2 c0 {5,S} {11,S}
+4  C u0 p0 c0 {1,S} {2,S} {6,S} {7,S}
+5  C u0 p0 c0 {1,S} {3,S} {8,S} {9,S}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {5,S}
+10 H u0 p0 c0 {2,S}
+11 H u0 p0 c0 {3,S}
+12 X u0 p0 c0
+
 OCOOCO
 1  O u0 p2 c0 {2,S} {5,S}
 2  O u0 p2 c0 {1,S} {6,S}
@@ -2280,6 +2590,21 @@ OCOOCO
 10 H u0 p0 c0 {6,S}
 11 H u0 p0 c0 {3,S}
 12 H u0 p0 c0 {4,S}
+
+OCOOCO.[Pt]
+1  O u0 p2 c0 {2,S} {5,S}
+2  O u0 p2 c0 {1,S} {6,S}
+3  O u0 p2 c0 {5,S} {11,S}
+4  O u0 p2 c0 {6,S} {12,S}
+5  C u0 p0 c0 {1,S} {3,S} {7,S} {8,S}
+6  C u0 p0 c0 {2,S} {4,S} {9,S} {10,S}
+7  H u0 p0 c0 {5,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {6,S}
+10 H u0 p0 c0 {6,S}
+11 H u0 p0 c0 {3,S}
+12 H u0 p0 c0 {4,S}
+13 X u0 p0 c0
 
 CO2X
 1 O u0 p2 c0 {3,S} {5,S}
@@ -2489,6 +2814,35 @@ COC([Pt])OOC(=O)[Pt]
 12 X u0 p0 c0 {5,S}
 13 X u0 p0 c0 {7,S}
 
+HCOX
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,S} {4,S}
+3 H u0 p0 c0 {2,S}
+4 X u0 p0 c0 {2,S}
+5 X u0 p0 c0
+
+OH(D)X
+1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0 {1,S}
+4 X u0 p0 c0
+
+HOCOX-2
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {5,S}
+4 H u0 p0 c0 {1,S}
+5 X u0 p0 c0 {3,S}
+6 X u0 p0 c0
+
+formyloxyX
+1 O u0 p2 c0 {3,S} {5,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {4,S}
+4 H u0 p0 c0 {3,S}
+5 X u0 p0 c0 {1,S}
+6 X u0 p0 c0
+
 CO3t1X
 1 O u0 p2 c0 {4,S} {5,S}
 2 O u0 p2 c0 {4,S} {6,S}
@@ -2505,6 +2859,13 @@ CO3t2X
 5 X u0 p0 c0 {4,S}
 6 X u0 p0 c0 {2,S}
 
+HO2X
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0 {2,S}
+5 X u0 p0 c0
+
 OOC(=[Pt])O[Pt]
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,S} {7,S}
@@ -2513,6 +2874,24 @@ OOC(=[Pt])O[Pt]
 5 H u0 p0 c0 {3,S}
 6 X u0 p0 c0 {4,D}
 7 X u0 p0 c0 {2,S}
+
+O=C(O)O[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,S} {6,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {2,S} {3,D}
+5 H u0 p0 c0 {1,S}
+6 X u0 p0 c0 {2,S}
+7 X u0 p0 c0
+
+O=C([Pt])OO.[Pt]
+1 O u0 p2 c0 {2,S} {4,S}
+2 O u0 p2 c0 {1,S} {5,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {3,D} {6,S}
+5 H u0 p0 c0 {2,S}
+6 X u0 p0 c0 {4,S}
+7 X u0 p0 c0
 
 O=C([Pt])C(=O)O[Pt]
 1 O u0 p2 c0 {4,S} {7,S}
@@ -2550,6 +2929,15 @@ O=C([Pt])OOC#[Pt]
 6 X u0 p0 c0 {4,S}
 7 X u0 p0 c0 {5,T}
 
+OCHCOX-2
+1 O u0 p2 c0 {3,D}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {1,D} {4,S} {5,S}
+4 C u0 p0 c0 {2,D} {3,S} {6,S}
+5 H u0 p0 c0 {3,S}
+6 X u0 p0 c0 {4,S}
+7 X u0 p0 c0
+
 O=C(O[Pt])OC=[Pt]
 1 O u0 p2 c0 {4,S} {5,S}
 2 O u0 p2 c0 {4,S} {8,S}
@@ -2580,6 +2968,35 @@ O=COC(=[Pt])O[Pt]
 7 X u0 p0 c0 {4,D}
 8 X u0 p0 c0 {2,S}
 
+O=CC(=O)O[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {7,S}
+2 O u0 p2 c0 {4,D}
+3 O u0 p2 c0 {5,D}
+4 C u0 p0 c0 {1,S} {2,D} {5,S}
+5 C u0 p0 c0 {3,D} {4,S} {6,S}
+6 H u0 p0 c0 {5,S}
+7 X u0 p0 c0 {1,S}
+8 X u0 p0 c0
+
+O=COC(=O)[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,D}
+3 O u0 p2 c0 {5,D}
+4 C u0 p0 c0 {1,S} {2,D} {6,S}
+5 C u0 p0 c0 {1,S} {3,D} {7,S}
+6 H u0 p0 c0 {4,S}
+7 X u0 p0 c0 {5,S}
+8 X u0 p0 c0
+
+formylperoxyX-2
+1 O u0 p2 c0 {2,S} {4,S}
+2 O u0 p2 c0 {1,S} {6,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {3,D} {5,S}
+5 H u0 p0 c0 {4,S}
+6 X u0 p0 c0 {2,S}
+7 X u0 p0 c0
+
 O=COOC(=[Pt])O[Pt]
 1 O u0 p2 c0 {2,S} {5,S}
 2 O u0 p2 c0 {1,S} {6,S}
@@ -2590,6 +3007,38 @@ O=COOC(=[Pt])O[Pt]
 7 H u0 p0 c0 {6,S}
 8 X u0 p0 c0 {5,D}
 9 X u0 p0 c0 {3,S}
+
+O=COC(=O)O[Pt].[Pt]
+1 O u0 p2 c0 {5,S} {6,S}
+2 O u0 p2 c0 {5,S} {8,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {2,S} {3,D}
+6 C u0 p0 c0 {1,S} {4,D} {7,S}
+7 H u0 p0 c0 {6,S}
+8 X u0 p0 c0 {2,S}
+9 X u0 p0 c0
+
+O=COOC(=O)[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {5,S}
+2 O u0 p2 c0 {1,S} {6,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {3,D} {7,S}
+6 C u0 p0 c0 {2,S} {4,D} {8,S}
+7 H u0 p0 c0 {5,S}
+8 X u0 p0 c0 {6,S}
+9 X u0 p0 c0
+
+O=C(O)C(=O)[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {6,S}
+2 O u0 p2 c0 {4,D}
+3 O u0 p2 c0 {5,D}
+4 C u0 p0 c0 {1,S} {2,D} {5,S}
+5 C u0 p0 c0 {3,D} {4,S} {7,S}
+6 H u0 p0 c0 {1,S}
+7 X u0 p0 c0 {5,S}
+8 X u0 p0 c0
 
 O=C(O[Pt])OC(O)=[Pt]
 1 O u0 p2 c0 {5,S} {6,S}
@@ -2623,6 +3072,28 @@ O=C(O)OC(=[Pt])O[Pt]
 7 H u0 p0 c0 {3,S}
 8 X u0 p0 c0 {5,D}
 9 X u0 p0 c0 {2,S}
+
+O=C(O)C(=O)O[Pt].[Pt]
+1 O u0 p2 c0 {5,S} {7,S}
+2 O u0 p2 c0 {6,S} {8,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {3,D} {6,S}
+6 C u0 p0 c0 {2,S} {4,D} {5,S}
+7 H u0 p0 c0 {1,S}
+8 X u0 p0 c0 {2,S}
+9 X u0 p0 c0
+
+O=C(O)OC(=O)[Pt].[Pt]
+1 O u0 p2 c0 {5,S} {6,S}
+2 O u0 p2 c0 {5,S} {7,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {2,S} {3,D}
+6 C u0 p0 c0 {1,S} {4,D} {8,S}
+7 H u0 p0 c0 {2,S}
+8 X u0 p0 c0 {6,S}
+9 X u0 p0 c0
 
 O=C([Pt])CO[Pt]
 1 O u0 p2 c0 {3,S} {8,S}
@@ -2662,6 +3133,38 @@ O=C([Pt])OC[Pt]
 6 X u0 p0 c0 {3,S}
 7 X u0 p0 c0 {2,S}
 
+CH3OCOX-2
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+4 C u0 p0 c0 {1,S} {2,D} {8,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {3,S}
+7 H u0 p0 c0 {3,S}
+8 X u0 p0 c0 {4,S}
+9 X u0 p0 c0
+
+CH3OOX-2
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {7,S}
+3 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
+4 H u0 p0 c0 {3,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {3,S}
+7 X u0 p0 c0 {2,S}
+8 X u0 p0 c0
+
+acetyloxyX-2
+1 O u0 p2 c0 {4,S} {8,S}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {4,S} {5,S} {6,S} {7,S}
+4 C u0 p0 c0 {1,S} {2,D} {3,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {3,S}
+7 H u0 p0 c0 {3,S}
+8 X u0 p0 c0 {1,S}
+9 X u0 p0 c0
+
 COOC(=[Pt])O[Pt]
 1  O u0 p2 c0 {2,S} {4,S}
 2  O u0 p2 c0 {1,S} {5,S}
@@ -2673,6 +3176,65 @@ COOC(=[Pt])O[Pt]
 8  H u0 p0 c0 {4,S}
 9  X u0 p0 c0 {5,D}
 10 X u0 p0 c0 {3,S}
+
+COC(=O)O[Pt].[Pt]
+1  O u0 p2 c0 {4,S} {5,S}
+2  O u0 p2 c0 {5,S} {9,S}
+3  O u0 p2 c0 {5,D}
+4  C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
+5  C u0 p0 c0 {1,S} {2,S} {3,D}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {4,S}
+9  X u0 p0 c0 {2,S}
+10 X u0 p0 c0
+
+COOC(=O)[Pt].[Pt]
+1  O u0 p2 c0 {2,S} {4,S}
+2  O u0 p2 c0 {1,S} {5,S}
+3  O u0 p2 c0 {5,D}
+4  C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
+5  C u0 p0 c0 {2,S} {3,D} {9,S}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {4,S}
+9  X u0 p0 c0 {5,S}
+10 X u0 p0 c0
+
+O=C([Pt])OCO.[Pt]
+1  O u0 p2 c0 {4,S} {5,S}
+2  O u0 p2 c0 {4,S} {8,S}
+3  O u0 p2 c0 {5,D}
+4  C u0 p0 c0 {1,S} {2,S} {6,S} {7,S}
+5  C u0 p0 c0 {1,S} {3,D} {9,S}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {2,S}
+9  X u0 p0 c0 {5,S}
+10 X u0 p0 c0
+
+HOCH2OOX-2
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {4,S} {7,S}
+3 O u0 p2 c0 {1,S} {8,S}
+4 C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
+5 H u0 p0 c0 {4,S}
+6 H u0 p0 c0 {4,S}
+7 H u0 p0 c0 {2,S}
+8 X u0 p0 c0 {3,S}
+9 X u0 p0 c0
+
+O=C(CO)O[Pt].[Pt]
+1  O u0 p2 c0 {4,S} {8,S}
+2  O u0 p2 c0 {5,S} {9,S}
+3  O u0 p2 c0 {5,D}
+4  C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+5  C u0 p0 c0 {2,S} {3,D} {4,S}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {1,S}
+9  X u0 p0 c0 {2,S}
+10 X u0 p0 c0
 
 OCOOC(=[Pt])O[Pt]
 1  O u0 p2 c0 {2,S} {5,S}
@@ -2686,6 +3248,70 @@ OCOOC(=[Pt])O[Pt]
 9  H u0 p0 c0 {3,S}
 10 X u0 p0 c0 {6,D}
 11 X u0 p0 c0 {4,S}
+
+O=C(O[Pt])OCO.[Pt]
+1  O u0 p2 c0 {5,S} {6,S}
+2  O u0 p2 c0 {5,S} {9,S}
+3  O u0 p2 c0 {6,S} {10,S}
+4  O u0 p2 c0 {6,D}
+5  C u0 p0 c0 {1,S} {2,S} {7,S} {8,S}
+6  C u0 p0 c0 {1,S} {3,S} {4,D}
+7  H u0 p0 c0 {5,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {2,S}
+10 X u0 p0 c0 {3,S}
+11 X u0 p0 c0
+
+O=C([Pt])OOCO.[Pt]
+1  O u0 p2 c0 {2,S} {5,S}
+2  O u0 p2 c0 {1,S} {6,S}
+3  O u0 p2 c0 {5,S} {9,S}
+4  O u0 p2 c0 {6,D}
+5  C u0 p0 c0 {1,S} {3,S} {7,S} {8,S}
+6  C u0 p0 c0 {2,S} {4,D} {10,S}
+7  H u0 p0 c0 {5,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {3,S}
+10 X u0 p0 c0 {6,S}
+11 X u0 p0 c0
+
+O=C([Pt])C(=O)O[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {7,S}
+2 O u0 p2 c0 {4,D}
+3 O u0 p2 c0 {5,D}
+4 C u0 p0 c0 {1,S} {2,D} {5,S}
+5 C u0 p0 c0 {3,D} {4,S} {6,S}
+6 X u0 p0 c0 {5,S}
+7 X u0 p0 c0 {1,S}
+8 X u0 p0 c0
+
+CO3t1X-2
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,S} {6,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {2,S} {3,D}
+5 X u0 p0 c0 {1,S}
+6 X u0 p0 c0 {2,S}
+7 X u0 p0 c0
+
+O=C([Pt])OC(=O)[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,D}
+3 O u0 p2 c0 {5,D}
+4 C u0 p0 c0 {1,S} {2,D} {6,S}
+5 C u0 p0 c0 {1,S} {3,D} {7,S}
+6 X u0 p0 c0 {4,S}
+7 X u0 p0 c0 {5,S}
+8 X u0 p0 c0
+
+CO3t2X-2
+1 O u0 p2 c0 {2,S} {4,S}
+2 O u0 p2 c0 {1,S} {6,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {3,D} {5,S}
+5 X u0 p0 c0 {4,S}
+6 X u0 p0 c0 {2,S}
+7 X u0 p0 c0
 
 O=C(O[Pt])OC(=[Pt])O[Pt]
 1 O u0 p2 c0 {5,S} {6,S}
@@ -2708,6 +3334,39 @@ O=C([Pt])OOC(=[Pt])O[Pt]
 7 X u0 p0 c0 {5,D}
 8 X u0 p0 c0 {6,S}
 9 X u0 p0 c0 {3,S}
+
+O=C([Pt])OC(=O)O[Pt].[Pt]
+1 O u0 p2 c0 {5,S} {6,S}
+2 O u0 p2 c0 {5,S} {8,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {2,S} {3,D}
+6 C u0 p0 c0 {1,S} {4,D} {7,S}
+7 X u0 p0 c0 {6,S}
+8 X u0 p0 c0 {2,S}
+9 X u0 p0 c0
+
+O=C([Pt])OOC(=O)[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {5,S}
+2 O u0 p2 c0 {1,S} {6,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {3,D} {7,S}
+6 C u0 p0 c0 {2,S} {4,D} {8,S}
+7 X u0 p0 c0 {5,S}
+8 X u0 p0 c0 {6,S}
+9 X u0 p0 c0
+
+O=C(O[Pt])C(=O)O[Pt].[Pt]
+1 O u0 p2 c0 {5,S} {7,S}
+2 O u0 p2 c0 {6,S} {8,S}
+3 O u0 p2 c0 {5,D}
+4 O u0 p2 c0 {6,D}
+5 C u0 p0 c0 {1,S} {3,D} {6,S}
+6 C u0 p0 c0 {2,S} {4,D} {5,S}
+7 X u0 p0 c0 {1,S}
+8 X u0 p0 c0 {2,S}
+9 X u0 p0 c0
 
 COX
 1 O u0 p2 c0 {2,S} {3,S}
@@ -2790,12 +3449,33 @@ COC([Pt])OOC#[Pt]
 11 X u0 p0 c0 {4,S}
 12 X u0 p0 c0 {6,T}
 
+CHX
+1 C u0 p0 c0 {2,S} {3,T}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0 {1,T}
+4 X u0 p0 c0
+
+OC#[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 C u0 p0 c0 {1,S} {4,T}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0 {2,T}
+5 X u0 p0 c0
+
 [Pt]OOC#[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {4,S}
 3 C u0 p0 c0 {1,S} {5,T}
 4 X u0 p0 c0 {2,S}
 5 X u0 p0 c0 {3,T}
+
+OOC#[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 C u0 p0 c0 {1,S} {5,T}
+4 H u0 p0 c0 {2,S}
+5 X u0 p0 c0 {3,T}
+6 X u0 p0 c0
 
 C2O(S)X
 1 O u0 p2 c0 {2,D}
@@ -2837,7 +3517,15 @@ O=C(C#[Pt])O[Pt]
 5 X u0 p0 c0 {1,S}
 6 X u0 p0 c0 {4,T}
 
-OCHCOX-2
+O=CC#[Pt].[Pt]
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,S} {4,S}
+3 C u0 p0 c0 {2,S} {5,T}
+4 H u0 p0 c0 {2,S}
+5 X u0 p0 c0 {3,T}
+6 X u0 p0 c0
+
+OCHCOX-3
 1 O u0 p2 c0 {3,S} {7,S}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,S} {4,S} {6,D}
@@ -2854,6 +3542,34 @@ OCHCOX-2
 5 H u0 p0 c0 {3,S}
 6 X u0 p0 c0 {3,D}
 7 X u0 p0 c0 {4,T}
+
+O=COC#[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {5,S}
+4 C u0 p0 c0 {1,S} {6,T}
+5 H u0 p0 c0 {3,S}
+6 X u0 p0 c0 {4,T}
+7 X u0 p0 c0
+
+O=COOC#[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {4,S}
+2 O u0 p2 c0 {1,S} {5,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {3,D} {6,S}
+5 C u0 p0 c0 {2,S} {7,T}
+6 H u0 p0 c0 {4,S}
+7 X u0 p0 c0 {5,T}
+8 X u0 p0 c0
+
+O=C(O)C#[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {5,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {4,S}
+4 C u0 p0 c0 {3,S} {6,T}
+5 H u0 p0 c0 {1,S}
+6 X u0 p0 c0 {4,T}
+7 X u0 p0 c0
 
 O=C(O)C(=[Pt])O[Pt]
 1 O u0 p2 c0 {4,S} {8,S}
@@ -2874,6 +3590,16 @@ OC(=[Pt])OOC#[Pt]
 6 H u0 p0 c0 {3,S}
 7 X u0 p0 c0 {4,D}
 8 X u0 p0 c0 {5,T}
+
+O=C(O)OC#[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,S} {6,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {2,S} {3,D}
+5 C u0 p0 c0 {1,S} {7,T}
+6 H u0 p0 c0 {2,S}
+7 X u0 p0 c0 {5,T}
+8 X u0 p0 c0
 
 [Pt]OCC#[Pt]
 1 O u0 p2 c0 {2,S} {6,S}
@@ -2903,7 +3629,17 @@ acetylX-2
 7 X u0 p0 c0 {3,D}
 8 X u0 p0 c0 {1,S}
 
-CH3OCOX-2
+COC#[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
+3 C u0 p0 c0 {1,S} {7,T}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {2,S}
+6 H u0 p0 c0 {2,S}
+7 X u0 p0 c0 {3,T}
+8 X u0 p0 c0
+
+CH3OCOX-3
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,S} {9,S}
 3 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
@@ -2913,6 +3649,17 @@ CH3OCOX-2
 7 H u0 p0 c0 {3,S}
 8 X u0 p0 c0 {4,D}
 9 X u0 p0 c0 {2,S}
+
+COOC#[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+4 C u0 p0 c0 {2,S} {8,T}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {3,S}
+7 H u0 p0 c0 {3,S}
+8 X u0 p0 c0 {4,T}
+9 X u0 p0 c0
 
 OCC(=[Pt])O[Pt]
 1 O u0 p2 c0 {3,S} {7,S}
@@ -2924,6 +3671,24 @@ OCC(=[Pt])O[Pt]
 7 H u0 p0 c0 {1,S}
 8 X u0 p0 c0 {4,D}
 9 X u0 p0 c0 {2,S}
+
+OCOC#[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,S} {7,S}
+3 C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
+4 C u0 p0 c0 {1,S} {8,T}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {3,S}
+7 H u0 p0 c0 {2,S}
+8 X u0 p0 c0 {4,T}
+9 X u0 p0 c0
+
+[Pt]OC=[Pt]
+1 O u0 p2 c0 {2,S} {5,S}
+2 C u0 p0 c0 {1,S} {3,S} {4,D}
+3 H u0 p0 c0 {2,S}
+4 X u0 p0 c0 {2,D}
+5 X u0 p0 c0 {1,S}
 
 OCOC(=[Pt])O[Pt]
 1  O u0 p2 c0 {4,S} {5,S}
@@ -2937,12 +3702,43 @@ OCOC(=[Pt])O[Pt]
 9  X u0 p0 c0 {5,D}
 10 X u0 p0 c0 {3,S}
 
-[Pt]OC=[Pt]
-1 O u0 p2 c0 {2,S} {5,S}
-2 C u0 p0 c0 {1,S} {3,S} {4,D}
-3 H u0 p0 c0 {2,S}
-4 X u0 p0 c0 {2,D}
+OCOOC#[Pt].[Pt]
+1  O u0 p2 c0 {3,S} {4,S}
+2  O u0 p2 c0 {4,S} {8,S}
+3  O u0 p2 c0 {1,S} {5,S}
+4  C u0 p0 c0 {1,S} {2,S} {6,S} {7,S}
+5  C u0 p0 c0 {3,S} {9,T}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {2,S}
+9  X u0 p0 c0 {5,T}
+10 X u0 p0 c0
+
+O=C(C#[Pt])O[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {5,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {4,S}
+4 C u0 p0 c0 {3,S} {6,T}
 5 X u0 p0 c0 {1,S}
+6 X u0 p0 c0 {4,T}
+7 X u0 p0 c0
+
+O=C([Pt])OC#[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {5,S}
+4 C u0 p0 c0 {1,S} {6,T}
+5 X u0 p0 c0 {3,S}
+6 X u0 p0 c0 {4,T}
+7 X u0 p0 c0
+
+[Pt].[Pt]OOC#[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {5,S}
+3 C u0 p0 c0 {1,S} {4,T}
+4 X u0 p0 c0 {3,T}
+5 X u0 p0 c0 {2,S}
+6 X u0 p0 c0
 
 O=C(O[Pt])C(=[Pt])O[Pt]
 1 O u0 p2 c0 {4,S} {7,S}
@@ -2974,6 +3770,26 @@ O=C([Pt])OC(=[Pt])O[Pt]
 7 X u0 p0 c0 {3,S}
 8 X u0 p0 c0 {5,T}
 
+O=C([Pt])OOC#[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {4,S}
+2 O u0 p2 c0 {1,S} {5,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {3,D} {6,S}
+5 C u0 p0 c0 {2,S} {7,T}
+6 X u0 p0 c0 {4,S}
+7 X u0 p0 c0 {5,T}
+8 X u0 p0 c0
+
+O=C(O[Pt])OC#[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,S} {6,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {2,S} {3,D}
+5 C u0 p0 c0 {1,S} {7,T}
+6 X u0 p0 c0 {2,S}
+7 X u0 p0 c0 {5,T}
+8 X u0 p0 c0
+
 [Pt]OC(=[Pt])C#[Pt]
 1 O u0 p2 c0 {2,S} {5,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,D}
@@ -2981,6 +3797,14 @@ O=C([Pt])OC(=[Pt])O[Pt]
 4 X u0 p0 c0 {2,D}
 5 X u0 p0 c0 {1,S}
 6 X u0 p0 c0 {3,T}
+
+[Pt].[Pt]#COC#[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 C u0 p0 c0 {1,S} {4,T}
+3 C u0 p0 c0 {1,S} {5,T}
+4 X u0 p0 c0 {2,T}
+5 X u0 p0 c0 {3,T}
+6 X u0 p0 c0
 
 [Pt]OC(=[Pt])C(=[Pt])O[Pt]
 1 O u0 p2 c0 {3,S} {7,S}
@@ -3001,6 +3825,15 @@ O=C([Pt])OC(=[Pt])O[Pt]
 6 X u0 p0 c0 {2,S}
 7 X u0 p0 c0 {4,T}
 
+[Pt].[Pt]#COOC#[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 C u0 p0 c0 {1,S} {5,T}
+4 C u0 p0 c0 {2,S} {6,T}
+5 X u0 p0 c0 {3,T}
+6 X u0 p0 c0 {4,T}
+7 X u0 p0 c0
+
 OC([Pt])=[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
 2 C u0 p0 c0 {1,S} {4,D} {5,S}
@@ -3008,16 +3841,17 @@ OC([Pt])=[Pt]
 4 X u0 p0 c0 {2,D}
 5 X u0 p0 c0 {2,S}
 
+O=C=[Pt].[Pt]
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,D}
+3 X u0 p0 c0 {2,D}
+4 X u0 p0 c0
+
 [Pt]C=[Pt]
 1 C u0 p0 c0 {2,S} {3,S} {4,D}
 2 H u0 p0 c0 {1,S}
 3 X u0 p0 c0 {1,S}
 4 X u0 p0 c0 {1,D}
-
-CHX
-1 C u0 p0 c0 {2,S} {3,T}
-2 H u0 p0 c0 {1,S}
-3 X u0 p0 c0 {1,T}
 
 [Pt]OCOC=[Pt]
 1 O u0 p2 c0 {3,S} {4,S}
@@ -3095,6 +3929,21 @@ COC([Pt])OOC=[Pt]
 12 X u0 p0 c0 {4,S}
 13 X u0 p0 c0 {6,D}
 
+CH2(T)X
+1 C u0 p0 c0 {2,S} {3,S} {4,D}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0 {1,D}
+5 X u0 p0 c0
+
+HCOH(T)X
+1 O u0 p2 c0 {2,S} {4,S}
+2 C u0 p0 c0 {1,S} {3,S} {5,D}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {1,S}
+5 X u0 p0 c0 {2,D}
+6 X u0 p0 c0
+
 [Pt]OC([Pt])O[Pt]
 1 O u0 p2 c0 {3,S} {6,S}
 2 O u0 p2 c0 {3,S} {7,S}
@@ -3111,6 +3960,15 @@ COC([Pt])OOC=[Pt]
 4 H u0 p0 c0 {3,S}
 5 X u0 p0 c0 {3,D}
 6 X u0 p0 c0 {2,S}
+
+OOC=[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {5,S}
+3 C u0 p0 c0 {1,S} {4,S} {6,D}
+4 H u0 p0 c0 {3,S}
+5 H u0 p0 c0 {2,S}
+6 X u0 p0 c0 {3,D}
+7 X u0 p0 c0
 
 HCCOX
 1 O u0 p2 c0 {2,D}
@@ -3139,6 +3997,15 @@ O=C([Pt])OC=[Pt]
 6 X u0 p0 c0 {3,S}
 7 X u0 p0 c0 {4,D}
 
+OCHCOX-4
+1 O u0 p2 c0 {3,S} {6,S}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {1,S} {4,D} {5,S}
+4 C u0 p0 c0 {2,D} {3,D}
+5 H u0 p0 c0 {3,S}
+6 X u0 p0 c0 {1,S}
+7 X u0 p0 c0
+
 O=C(C=[Pt])O[Pt]
 1 O u0 p2 c0 {3,S} {7,S}
 2 O u0 p2 c0 {3,D}
@@ -3148,7 +4015,16 @@ O=C(C=[Pt])O[Pt]
 6 X u0 p0 c0 {4,D}
 7 X u0 p0 c0 {1,S}
 
-glyoxalX
+ketene(T)X
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,S} {4,S}
+3 C u0 p0 c0 {2,S} {5,S} {6,D}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {3,S}
+6 X u0 p0 c0 {3,D}
+7 X u0 p0 c0
+
+glyoxalX-2
 1 O u0 p2 c0 {3,S} {8,S}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,S} {4,S} {5,S} {7,S}
@@ -3168,6 +4044,16 @@ glyoxalX
 7 X u0 p0 c0 {3,D}
 8 X u0 p0 c0 {4,D}
 
+O=COC=[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {5,S}
+4 C u0 p0 c0 {1,S} {6,S} {7,D}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {4,S}
+7 X u0 p0 c0 {4,D}
+8 X u0 p0 c0
+
 O=COC([Pt])O[Pt]
 1 O u0 p2 c0 {4,S} {5,S}
 2 O u0 p2 c0 {4,S} {9,S}
@@ -3178,6 +4064,27 @@ O=COC([Pt])O[Pt]
 7 H u0 p0 c0 {5,S}
 8 X u0 p0 c0 {4,S}
 9 X u0 p0 c0 {2,S}
+
+O=COOC=[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {4,S}
+2 O u0 p2 c0 {1,S} {5,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {3,D} {6,S}
+5 C u0 p0 c0 {2,S} {7,S} {8,D}
+6 H u0 p0 c0 {4,S}
+7 H u0 p0 c0 {5,S}
+8 X u0 p0 c0 {5,D}
+9 X u0 p0 c0
+
+O=C(O)C=[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {6,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {4,S}
+4 C u0 p0 c0 {3,S} {5,S} {7,D}
+5 H u0 p0 c0 {4,S}
+6 H u0 p0 c0 {1,S}
+7 X u0 p0 c0 {4,D}
+8 X u0 p0 c0
 
 O=C(O)C([Pt])O[Pt]
 1 O u0 p2 c0 {4,S} {9,S}
@@ -3201,6 +4108,17 @@ OC(=[Pt])OOC=[Pt]
 8 X u0 p0 c0 {4,D}
 9 X u0 p0 c0 {5,D}
 
+O=C(O)OC=[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,S} {7,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {2,S} {3,D}
+5 C u0 p0 c0 {1,S} {6,S} {8,D}
+6 H u0 p0 c0 {5,S}
+7 H u0 p0 c0 {2,S}
+8 X u0 p0 c0 {5,D}
+9 X u0 p0 c0
+
 [Pt]OCC=[Pt]
 1 O u0 p2 c0 {2,S} {8,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
@@ -3221,7 +4139,7 @@ OC(=[Pt])OOC=[Pt]
 7 X u0 p0 c0 {2,S}
 8 X u0 p0 c0 {3,D}
 
-CH3CHOX
+CH3CHOX-2
 1 O u0 p2 c0 {2,S} {9,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {8,S}
 3 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
@@ -3232,7 +4150,30 @@ CH3CHOX
 8 X u0 p0 c0 {2,S}
 9 X u0 p0 c0 {1,S}
 
-HOCH2CHOX
+COC=[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
+3 C u0 p0 c0 {1,S} {7,S} {8,D}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {2,S}
+6 H u0 p0 c0 {2,S}
+7 H u0 p0 c0 {3,S}
+8 X u0 p0 c0 {3,D}
+9 X u0 p0 c0
+
+COOC=[Pt].[Pt]
+1  O u0 p2 c0 {2,S} {3,S}
+2  O u0 p2 c0 {1,S} {4,S}
+3  C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+4  C u0 p0 c0 {2,S} {8,S} {9,D}
+5  H u0 p0 c0 {3,S}
+6  H u0 p0 c0 {3,S}
+7  H u0 p0 c0 {3,S}
+8  H u0 p0 c0 {4,S}
+9  X u0 p0 c0 {4,D}
+10 X u0 p0 c0
+
+HOCH2CHOX-2
 1  O u0 p2 c0 {3,S} {10,S}
 2  O u0 p2 c0 {4,S} {8,S}
 3  C u0 p0 c0 {1,S} {4,S} {5,S} {9,S}
@@ -3243,6 +4184,18 @@ HOCH2CHOX
 8  H u0 p0 c0 {2,S}
 9  X u0 p0 c0 {3,S}
 10 X u0 p0 c0 {1,S}
+
+OCOC=[Pt].[Pt]
+1  O u0 p2 c0 {3,S} {4,S}
+2  O u0 p2 c0 {3,S} {8,S}
+3  C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
+4  C u0 p0 c0 {1,S} {7,S} {9,D}
+5  H u0 p0 c0 {3,S}
+6  H u0 p0 c0 {3,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {2,S}
+9  X u0 p0 c0 {4,D}
+10 X u0 p0 c0
 
 OCOC([Pt])O[Pt]
 1  O u0 p2 c0 {4,S} {5,S}
@@ -3256,6 +4209,48 @@ OCOC([Pt])O[Pt]
 9  H u0 p0 c0 {3,S}
 10 X u0 p0 c0 {4,S}
 11 X u0 p0 c0 {2,S}
+
+OCOOC=[Pt].[Pt]
+1  O u0 p2 c0 {2,S} {4,S}
+2  O u0 p2 c0 {1,S} {5,S}
+3  O u0 p2 c0 {4,S} {9,S}
+4  C u0 p0 c0 {1,S} {3,S} {6,S} {7,S}
+5  C u0 p0 c0 {2,S} {8,S} {10,D}
+6  H u0 p0 c0 {4,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {5,S}
+9  H u0 p0 c0 {3,S}
+10 X u0 p0 c0 {5,D}
+11 X u0 p0 c0
+
+O=C(C=[Pt])O[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {7,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {4,S}
+4 C u0 p0 c0 {3,S} {5,S} {6,D}
+5 H u0 p0 c0 {4,S}
+6 X u0 p0 c0 {4,D}
+7 X u0 p0 c0 {1,S}
+8 X u0 p0 c0
+
+O=C([Pt])OC=[Pt].[Pt]
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {6,S}
+4 C u0 p0 c0 {1,S} {5,S} {7,D}
+5 H u0 p0 c0 {4,S}
+6 X u0 p0 c0 {3,S}
+7 X u0 p0 c0 {4,D}
+8 X u0 p0 c0
+
+[Pt].[Pt]OOC=[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {6,S}
+3 C u0 p0 c0 {1,S} {4,S} {5,D}
+4 H u0 p0 c0 {3,S}
+5 X u0 p0 c0 {3,D}
+6 X u0 p0 c0 {2,S}
+7 X u0 p0 c0
 
 O=C(O[Pt])C([Pt])O[Pt]
 1 O u0 p2 c0 {4,S} {8,S}
@@ -3290,6 +4285,28 @@ O=C([Pt])OC([Pt])O[Pt]
 8 X u0 p0 c0 {5,D}
 9 X u0 p0 c0 {3,S}
 
+O=C([Pt])OOC=[Pt].[Pt]
+1 O u0 p2 c0 {2,S} {4,S}
+2 O u0 p2 c0 {1,S} {5,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {3,D} {7,S}
+5 C u0 p0 c0 {2,S} {6,S} {8,D}
+6 H u0 p0 c0 {5,S}
+7 X u0 p0 c0 {4,S}
+8 X u0 p0 c0 {5,D}
+9 X u0 p0 c0
+
+O=C(O[Pt])OC=[Pt].[Pt]
+1 O u0 p2 c0 {4,S} {5,S}
+2 O u0 p2 c0 {4,S} {8,S}
+3 O u0 p2 c0 {4,D}
+4 C u0 p0 c0 {1,S} {2,S} {3,D}
+5 C u0 p0 c0 {1,S} {6,S} {7,D}
+6 H u0 p0 c0 {5,S}
+7 X u0 p0 c0 {5,D}
+8 X u0 p0 c0 {2,S}
+9 X u0 p0 c0
+
 [Pt]OC(=[Pt])C=[Pt]
 1 O u0 p2 c0 {2,S} {7,S}
 2 C u0 p0 c0 {1,S} {3,S} {5,D}
@@ -3307,6 +4324,15 @@ O=C([Pt])OC([Pt])O[Pt]
 5 X u0 p0 c0 {2,S}
 6 X u0 p0 c0 {1,S}
 7 X u0 p0 c0 {3,T}
+
+[Pt].[Pt]=COC#[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 C u0 p0 c0 {1,S} {4,S} {5,D}
+3 C u0 p0 c0 {1,S} {6,T}
+4 H u0 p0 c0 {2,S}
+5 X u0 p0 c0 {2,D}
+6 X u0 p0 c0 {3,T}
+7 X u0 p0 c0
 
 [Pt]OC(=[Pt])C([Pt])O[Pt]
 1 O u0 p2 c0 {3,S} {8,S}
@@ -3339,6 +4365,16 @@ O=C([Pt])OC([Pt])O[Pt]
 7 X u0 p0 c0 {2,S}
 8 X u0 p0 c0 {4,T}
 
+[Pt].[Pt]=COOC#[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 C u0 p0 c0 {1,S} {5,S} {6,D}
+4 C u0 p0 c0 {2,S} {7,T}
+5 H u0 p0 c0 {3,S}
+6 X u0 p0 c0 {3,D}
+7 X u0 p0 c0 {4,T}
+8 X u0 p0 c0
+
 [Pt]OC([Pt])C=[Pt]
 1 O u0 p2 c0 {2,S} {8,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
@@ -3348,6 +4384,16 @@ O=C([Pt])OC([Pt])O[Pt]
 6 X u0 p0 c0 {2,S}
 7 X u0 p0 c0 {3,D}
 8 X u0 p0 c0 {1,S}
+
+[Pt].[Pt]=COC=[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 C u0 p0 c0 {1,S} {4,S} {6,D}
+3 C u0 p0 c0 {1,S} {5,S} {7,D}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {3,S}
+6 X u0 p0 c0 {2,D}
+7 X u0 p0 c0 {3,D}
+8 X u0 p0 c0
 
 [Pt]OC([Pt])C([Pt])O[Pt]
 1  O u0 p2 c0 {3,S} {9,S}
@@ -3372,7 +4418,29 @@ O=C([Pt])OC([Pt])O[Pt]
 8 X u0 p0 c0 {4,D}
 9 X u0 p0 c0 {2,S}
 
-ketene(T)X
+[Pt].[Pt]OC=CO[Pt]
+1 O u0 p2 c0 {3,S} {7,S}
+2 O u0 p2 c0 {4,S} {8,S}
+3 C u0 p0 c0 {1,S} {4,D} {5,S}
+4 C u0 p0 c0 {2,S} {3,D} {6,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {4,S}
+7 X u0 p0 c0 {1,S}
+8 X u0 p0 c0 {2,S}
+9 X u0 p0 c0
+
+[Pt].[Pt]=COOC=[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 O u0 p2 c0 {1,S} {4,S}
+3 C u0 p0 c0 {1,S} {5,S} {7,D}
+4 C u0 p0 c0 {2,S} {6,S} {8,D}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {4,S}
+7 X u0 p0 c0 {3,D}
+8 X u0 p0 c0 {4,D}
+9 X u0 p0 c0
+
+ketene(T)X-2
 1 O u0 p2 c0 {3,D}
 2 C u0 p0 c0 {3,S} {4,S} {6,D}
 3 C u0 p0 c0 {1,D} {2,S} {5,S}

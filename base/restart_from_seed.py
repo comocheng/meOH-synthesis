@@ -445,7 +445,7 @@ options(
     saveRestartPeriod=None,
     generateOutputHTML=True,
     generatePlots=False,
-    generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
+    # generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
     saveEdgeSpecies=True,
     saveSimulationProfiles=True,
 )

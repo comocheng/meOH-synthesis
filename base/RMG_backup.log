@@ -1,7 +1,7 @@
 Global RMG Settings:
    database.directory   = /Users/emilymazeau/Code/RMG-database/input (Default, relative to RMG-Py source code)
    test_data.directory  = /Users/emilymazeau/Code/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
-RMG execution initiated at Thu Jan 21 14:14:38 2021
+RMG execution initiated at Wed Jan 27 13:25:24 2021
 
 #########################################################
 # RMG-Py - Reaction Mechanism Generator in Python       #
@@ -13,12 +13,12 @@ RMG execution initiated at Thu Jan 21 14:14:38 2021
 #########################################################
 
 The current git HEAD for RMG-Py is:
-	b'e993a342733db632da8bf84a1c880e2532998cb8'
-	b'Tue Jan 5 12:23:41 2021 -0500'
+	b'ffa4e82e321a004c2d4b9464e269510cc9d22e1a'
+	b'Wed Jan 27 12:51:49 2021 -0500'
 
 The current git HEAD for RMG-database is:
-	b'9307944caadc9b982822abe02dab97c8405619c7'
-	b'Thu Jan 21 14:10:31 2021 -0500'
+	b'27c204fc0531b49a42aa2de9a73a52cb2aac8c24'
+	b'Mon Jan 25 15:52:57 2021 -0500'
 
 Reading input file "/Users/emilymazeau/Code/meOH-synthesis/base/input.py"...
 # Data sources
@@ -477,9 +477,6 @@ generatedSpeciesConstraints(
 #    maximumCarbonAtoms=12,
 )
 
-Using binding energies:
-{'C': (-6.568,'eV/molecule'), 'H': (-2.479,'eV/molecule'), 'O': (-4.61,'eV/molecule'), 'N': (-4.352,'eV/molecule')}
-Using surface site density: (2.72e-09,'mol/cm^2')
 Warning: Initial gas mole fractions do not sum to one; renormalizing.
 
 
@@ -548,18 +545,10 @@ Surface site density:     2.72e-05 mol/m2
 Surface sites in reactor: 0 moles
 Initial surface coverages (and amounts):
   X                  1 = 0 moles
-Warning: Generate Output HTML option was turned on. Note that this will slow down model generation.
-Warning: Generate Labeled Adjacency List for reactions option was turned on.
-Warning: Edge species saving was turned on. This will slow down model generation for large simulations.
-
-Loading thermodynamics library from surfaceThermoPt111.py in /Users/emilymazeau/Code/RMG-database/input/thermo/libraries...
-Loading thermodynamics library from primaryThermoLibrary.py in /Users/emilymazeau/Code/RMG-database/input/thermo/libraries...
-Loading thermodynamics library from thermo_DFT_CCSDTF12_BAC.py in /Users/emilymazeau/Code/RMG-database/input/thermo/libraries...
-Loading thermodynamics library from DFT_QCI_thermo.py in /Users/emilymazeau/Code/RMG-database/input/thermo/libraries...
-Loading thermodynamics group database from /Users/emilymazeau/Code/RMG-database/input/thermo/groups...
-Loading transport library from GRI-Mech.py in /Users/emilymazeau/Code/RMG-database/input/transport/libraries...
-Loading transport library from OneDMinN2.py in /Users/emilymazeau/Code/RMG-database/input/transport/libraries...
-Loading transport library from NOx2018.py in /Users/emilymazeau/Code/RMG-database/input/transport/libraries...
-Loading transport library from PrimaryTransportLibrary.py in /Users/emilymazeau/Code/RMG-database/input/transport/libraries...
-Loading transport group database from /Users/emilymazeau/Code/RMG-database/input/transport/groups...
-Error: Error when loading reaction family '/Users/emilymazeau/Code/RMG-database/input/kinetics/families/Surface_Dissociation_vdW'
+Error: The input file "/Users/emilymazeau/Code/meOH-synthesis/base/input.py" was invalid:
+Error: options() got an unexpected keyword argument 'generateLabeledReactions'
+Traceback (most recent call last):
+  File "/Users/emilymazeau/Code/RMG-Py/rmgpy/rmg/input.py", line 956, in read_input_file
+    exec(f.read(), global_context, local_context)
+  File "<string>", line 448, in <module>
+TypeError: options() got an unexpected keyword argument 'generateLabeledReactions'
