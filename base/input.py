@@ -1,3 +1,7 @@
+# Running on current commits 13feb2021 for 
+# RMG-Py: Meoh2 
+# RMG-Database: Meoh
+
 # Data sources
 database(
     thermoLibraries=['surfaceThermoPt111', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
@@ -8,24 +12,24 @@ database(
     kineticsEstimator = 'rate rules',
 )
 
-# catalystProperties( # default values for Cu(111) calculated by Katrin Blondal and Bjarne Kreitz at Brown University
-#     bindingEnergies = {
-#                        'C':(-4.96033553, 'eV/molecule'),
-#                        'O':(-4.20763879, 'eV/molecule'),
-#                        'N':(-3.58446699, 'eV/molecule'),
-#                        'H':(-2.58383235, 'eV/molecule'),
-#                        },
-#     surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
-# )
-catalystProperties( # Rh111
+catalystProperties( # default values for Cu(111) calculated by Katrin Blondal and Bjarne Kreitz at Brown University
     bindingEnergies = {
-                       'C':(-6.568, 'eV/molecule'),
-                       'O':(-4.610, 'eV/molecule'),
-                       'N':(-4.352, 'eV/molecule'),
-                       'H':(-2.479, 'eV/molecule'),
+                       'C':(-4.96033553, 'eV/molecule'),
+                       'O':(-4.20763879, 'eV/molecule'),
+                       'N':(-3.58446699, 'eV/molecule'),
+                       'H':(-2.58383235, 'eV/molecule'),
                        },
-    surfaceSiteDensity=(2.72e-9, 'mol/cm^2'),
+    surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
 )
+# catalystProperties( # Rh111
+#     bindingEnergies = {
+#                        'C':(-6.568, 'eV/molecule'),
+#                        'O':(-4.610, 'eV/molecule'),
+#                        'N':(-4.352, 'eV/molecule'),
+#                        'H':(-2.479, 'eV/molecule'),
+#                        },
+#     surfaceSiteDensity=(2.72e-9, 'mol/cm^2'),
+# )
 
 # List of species
 species(
@@ -341,7 +345,7 @@ species(
 #----------
 # Reaction systems
 surfaceReactor(
-    temperature=[(483,'K'),(547, 'K')],
+    temperature=[(400,'K'),(700, 'K')],
     initialPressure=(15.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
@@ -360,7 +364,7 @@ surfaceReactor(
 )
 
 surfaceReactor(
-    temperature=[(483,'K'),(547, 'K')],
+    temperature=[(400,'K'),(700, 'K')],
     initialPressure=(76.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
@@ -379,7 +383,7 @@ surfaceReactor(
 )
 
 surfaceReactor(
-    temperature=[(483,'K'),(547, 'K')],
+    temperature=[(400,'K'),(700, 'K')],
     initialPressure=(15.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
@@ -398,7 +402,7 @@ surfaceReactor(
 )
 
 surfaceReactor(
-    temperature=[(483,'K'),(547, 'K')],
+    temperature=[(400,'K'),(700, 'K')],
     initialPressure=(76.0, 'bar'),
     nSims = 4,
     initialGasMoleFractions={
@@ -406,6 +410,47 @@ surfaceReactor(
         "CO2": 0.0,
         "H2": 0.6424,
         "N2": 0.1557,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    terminationConversion = { "CO":0.99,},
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
+)
+
+# adding in reactor at 15 and 75 bar with all starting species present because why not. 
+surfaceReactor(
+    temperature=[(400,'K'),(700, 'K')],
+    initialPressure=(15.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.2,
+        "CO2": 0.2,
+        "H2": 0.2,
+        "H2O": 0.2,
+        "N2": 0.1,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    terminationConversion = { "CO":0.99,},
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
+)
+
+surfaceReactor(
+    temperature=[(400,'K'),(700, 'K')],
+    initialPressure=(76.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.2,
+        "CO2": 0.2,
+        "H2": 0.2,
+        "H2O": 0.2,
+        "N2": 0.1,
     },
     initialSurfaceCoverages={
         "X": 1.0,

@@ -11,5 +11,4 @@
 #SBATCH --ntasks=1
 
 source activate rmg_env
-echo $RMGpy
-python  $RMGpy/rmg.py -p input.py
+python  $RMG -p input.py

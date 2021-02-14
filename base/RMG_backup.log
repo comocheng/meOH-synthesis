@@ -1,7 +1,7 @@
 Global RMG Settings:
    database.directory   = /Users/emilymazeau/Code/RMG-database/input (Default, relative to RMG-Py source code)
    test_data.directory  = /Users/emilymazeau/Code/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
-RMG execution initiated at Wed Jan 27 13:27:14 2021
+RMG execution initiated at Mon Feb  1 16:26:10 2021
 
 #########################################################
 # RMG-Py - Reaction Mechanism Generator in Python       #
@@ -13,12 +13,12 @@ RMG execution initiated at Wed Jan 27 13:27:14 2021
 #########################################################
 
 The current git HEAD for RMG-Py is:
-	b'ffa4e82e321a004c2d4b9464e269510cc9d22e1a'
-	b'Wed Jan 27 12:51:49 2021 -0500'
+	b'a5594029d3c55f5904aef6710f7026c3e8a9eab5'
+	b'Mon Feb 1 16:21:03 2021 -0500'
 
 The current git HEAD for RMG-database is:
-	b'27c204fc0531b49a42aa2de9a73a52cb2aac8c24'
-	b'Mon Jan 25 15:52:57 2021 -0500'
+	b'161fff6551d7b7a8ca255bc50c9553891724efca'
+	b'Mon Feb 1 16:09:33 2021 -0500'
 
 Reading input file "/Users/emilymazeau/Code/meOH-synthesis/base/input.py"...
 # Data sources
@@ -477,6 +477,9 @@ generatedSpeciesConstraints(
 #    maximumCarbonAtoms=12,
 )
 
+Using binding energies:
+{'C': (-6.568,'eV/molecule'), 'H': (-2.479,'eV/molecule'), 'O': (-4.61,'eV/molecule'), 'N': (-4.352,'eV/molecule')}
+Using surface site density: (2.72e-09,'mol/cm^2')
 Warning: Initial gas mole fractions do not sum to one; renormalizing.
 
 
@@ -565,90 +568,28 @@ Loading frequencies group database from /Users/emilymazeau/Code/RMG-database/inp
 Loading Platts additivity group database from /Users/emilymazeau/Code/RMG-database/input/solvation/groups...
 Trimolecular reactions are turned on
 Adding rate rules from training set in kinetics families...
+Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
+Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
+Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
+Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
 Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([12.5,14.58,16.07,17.22,18.87,19.96,21.35],'cal/(mol*K)'), H298=(-74.4327,'kcal/mol'), S298=(27.26,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(83.1447,'J/(mol*K)'), label="""formyloxyX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(O-*R) Binding energy corrected by LSR (0.50O)""").
+ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-85.44,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3)""").
 The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
 Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-96.43,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2NR)*) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([12.5,14.58,16.07,17.22,18.87,19.96,21.35],'cal/(mol*K)'), H298=(-74.4327,'kcal/mol'), S298=(27.26,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(83.1447,'J/(mol*K)'), label="""formyloxyX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(O-*R) Binding energy corrected by LSR (0.50O)""").
+ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-85.44,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3)""").
 The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-96.43,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2NR)*) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([12.5,14.58,16.07,17.22,18.87,19.96,21.35],'cal/(mol*K)'), H298=(-74.4327,'kcal/mol'), S298=(27.26,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(83.1447,'J/(mol*K)'), label="""formyloxyX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(O-*R) Binding energy corrected by LSR (0.50O)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([12.5,14.58,16.07,17.22,18.87,19.96,21.35],'cal/(mol*K)'), H298=(-74.4327,'kcal/mol'), S298=(27.26,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(83.1447,'J/(mol*K)'), label="""formyloxyX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(O-*R) Binding energy corrected by LSR (0.50O)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-96.43,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2NR)*) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-96.43,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2NR)*) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([12.5,14.58,16.07,17.22,18.87,19.96,21.35],'cal/(mol*K)'), H298=(-74.4327,'kcal/mol'), S298=(27.26,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(83.1447,'J/(mol*K)'), label="""formyloxyX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(O-*R) Binding energy corrected by LSR (0.50O)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-96.43,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2NR)*) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([12.5,14.58,16.07,17.22,18.87,19.96,21.35],'cal/(mol*K)'), H298=(-74.4327,'kcal/mol'), S298=(27.26,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(83.1447,'J/(mol*K)'), label="""formyloxyX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(O-*R) Binding energy corrected by LSR (0.50O)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-96.43,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2NR)*) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.74,13.43,15.43,16.9,18.97,20.26,21.67],'cal/(mol*K)'), H298=(-82.8053,'kcal/mol'), S298=(27.52,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(78.9875,'J/(mol*K)'), label="""HOCOX""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C)""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
-Warning: Cphigh is above the theoretical CpInf value for ThermoData object
-ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([10.09,11.57,12.64,13.46,14.64,15.43,16.43],'cal/(mol*K)'), H298=(-87.45,'kcal/mol'), S298=(28.54,'cal/(mol*K)'), Cp0=(29.1007,'J/(mol*K)'), CpInf=(62.3585,'J/(mol*K)'), label="""CO2X""", comment="""Gas phase thermo from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111(R*vdW) Binding energy corrected by LSR ()""").
-The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
 Filling in rate rules in kinetics families by averaging...
 Adding reaction library BurkeH2O2inArHe to model edge...
 
@@ -1194,78 +1135,118 @@ Species COC.[Pt] renamed DMEX based on thermo library name
 Species COOC renamed CH3OOCH3 based on thermo library name
 Species COOC.[Pt] renamed CH3OOCH3X based on thermo library name
 Generating kinetics for new reactions...
-For reaction CH3O2*(21) <=> OOC[Pt](48), Ea raised from 258.3 to 259.0 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + CO2(4) <=> CO2*(15), Ea raised from 0.0 to 26.4 kJ/mol to match endothermicity of reaction.
+For reaction CH3O2*(21) <=> OOC[Pt](48), Ea raised from 258.3 to 259.0 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + H2O(5) <=> H*(10) + OH*(12), Ea raised from 0.0 to 50.3 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + HCOOH(7) <=> H*(10) + HCOO*(17), Ea raised from 0.0 to 64.2 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + HCOOH(7) <=> H*(10) + COOH*(18), Ea raised from 0.0 to 30.7 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + CH3OH(8) <=> H*(10) + CH3O*(20), Ea raised from 0.0 to 5.9 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + HCOOCH3(9) <=> HCOO*(17) + C[Pt](55), Ea raised from 0.0 to 7.9 kJ/mol to match endothermicity of reaction.
-For reaction X(1) + X(1) + HCOOCH3(9) <=> H*(10) + CH2OCHOX(57), Ea raised from 0.0 to 23.5 kJ/mol to match endothermicity of reaction.
+For reaction X(1) + X(1) + HCOOCH3(9) <=> H*(10) + CH2OCHOX(57), Ea raised from 0.0 to 23.4 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + HCOOCH3(9) <=> H*(10) + CH3OCOX(58), Ea raised from 0.0 to 36.5 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + HCOOCH3(9) <=> methyl_formateX(59), Ea raised from 0.0 to 15.3 kJ/mol to match endothermicity of reaction.
-For reaction X(1) + H2O*(13) <=> H*(10) + OH*(12), Ea raised from 20.3 to 67.9 kJ/mol to match endothermicity of reaction.
-For reaction O*(11) + CO*(14) <=> X(1) + CO2*(15), Ea raised from 62.7 to 109.9 kJ/mol to match endothermicity of reaction.
 For reaction OH*(12) + CO*(14) <=> X(1) + COOH*(18), Ea raised from 11.5 to 108.0 kJ/mol to match endothermicity of reaction.
-For reaction H*(10) + HCO*(16) <=> X(1) + CH2O*(19), Ea raised from 45.3 to 52.1 kJ/mol to match endothermicity of reaction.
 For reaction HOCO(36) + formyloxy(35) <=> CO2(4) + HCOOH(7) Ea raised from -3.9 to -3.9 kJ/mol.
 For reaction CO2(4) + HCO*(16) <=> O=COC(=O)[Pt](96), Ea raised from 170.3 to 171.5 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + HCOO*(17) <=> O=COOC(=O)[Pt](98), Ea raised from 120.5 to 127.9 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + HCOO*(17) <=> O=COOC(=O)[Pt](98), Ea raised from 120.5 to 127.8 kJ/mol to match endothermicity of reaction.
 For reaction CO2(4) + COOH*(18) <=> O=C(O)C(=O)O[Pt](99), Ea raised from 93.7 to 95.4 kJ/mol to match endothermicity of reaction.
 For reaction CO2(4) + CH3O*(20) <=> COOC(=O)[Pt](102), Ea raised from 250.3 to 252.1 kJ/mol to match endothermicity of reaction.
 For reaction CO2(4) + CH3O2*(21) <=> O=C([Pt])OOCO(104), Ea raised from 216.8 to 221.4 kJ/mol to match endothermicity of reaction.
 For reaction OH*(12) + CH2O(6) <=> OOC[Pt](48), Ea raised from 208.7 to 212.0 kJ/mol to match endothermicity of reaction.
-For reaction HCO*(16) + CH2O(6) <=> OCH2CHOX(122), Ea raised from 122.4 to 123.5 kJ/mol to match endothermicity of reaction.
+For reaction HCO*(16) + CH2O(6) <=> OCH2CHOX(122), Ea raised from 122.5 to 123.5 kJ/mol to match endothermicity of reaction.
 For reaction HCOO*(17) + CH2O(6) <=> O=COOC[Pt](124), Ea raised from 77.3 to 84.8 kJ/mol to match endothermicity of reaction.
-For reaction CH2O(6) + CH3O*(20) <=> COOC[Pt](128), Ea raised from 216.1 to 218.6 kJ/mol to match endothermicity of reaction.
+For reaction CH2O(6) + CH3O*(20) <=> COOC[Pt](128), Ea raised from 216.1 to 218.5 kJ/mol to match endothermicity of reaction.
 For reaction CH2O(6) + CH3O2*(21) <=> OCOOC[Pt](130), Ea raised from 173.6 to 178.4 kJ/mol to match endothermicity of reaction.
 For reaction HCOOH(7) + HCOOH(7) <=> OC1OOC1O(134), Ea raised from 359.7 to 362.6 kJ/mol to match endothermicity of reaction.
 For reaction HCOOH(7) + HCOOCH3(9) <=> COC1OOC1O(142), Ea raised from 363.0 to 365.7 kJ/mol to match endothermicity of reaction.
-For reaction HCO*(16) + HCOOH(7) <=> O=CC(O)O[Pt](148), Ea raised from 129.6 to 130.1 kJ/mol to match endothermicity of reaction.
+For reaction HCO*(16) + HCOOH(7) <=> O=CC(O)O[Pt](148), Ea raised from 129.7 to 130.1 kJ/mol to match endothermicity of reaction.
 For reaction HCO*(16) + HCOOH(7) <=> O=COC(O)[Pt](149), Ea raised from 73.1 to 73.6 kJ/mol to match endothermicity of reaction.
 For reaction HCOO*(17) + HCOOH(7) <=> O=COOC(O)[Pt](151), Ea raised from 152.8 to 157.7 kJ/mol to match endothermicity of reaction.
-For reaction HCOOH(7) + CH3O2*(21) <=> OCOOC(O)[Pt](157), Ea raised from 249.1 to 251.3 kJ/mol to match endothermicity of reaction.
+For reaction HCOOH(7) + CH3O2*(21) <=> OCOOC(O)[Pt](157), Ea raised from 249.1 to 251.2 kJ/mol to match endothermicity of reaction.
 For reaction HCOOCH3(9) + HCOOCH3(9) <=> COC1OOC1OC(161), Ea raised from 366.4 to 368.7 kJ/mol to match endothermicity of reaction.
-For reaction HCO*(16) + HCOOCH3(9) <=> COC(C=O)O[Pt](165), Ea raised from 133.0 to 133.1 kJ/mol to match endothermicity of reaction.
+For reaction HCO*(16) + HCOOCH3(9) <=> COC(C=O)O[Pt](165), Ea raised from 133.1 to 133.1 kJ/mol to match endothermicity of reaction.
 For reaction HCO*(16) + HCOOCH3(9) <=> COC([Pt])OC=O(166), Ea raised from 75.7 to 76.6 kJ/mol to match endothermicity of reaction.
 For reaction HCOO*(17) + HCOOCH3(9) <=> COC([Pt])OOC=O(168), Ea raised from 156.2 to 160.7 kJ/mol to match endothermicity of reaction.
 For reaction CH3O2*(21) + HCOOCH3(9) <=> COC([Pt])OOCO(174), Ea raised from 252.5 to 254.3 kJ/mol to match endothermicity of reaction.
+For reaction [H][H].[Pt](50) + CO2*(15) <=> H*(10) + HCOO*(17), Ea raised from 0.0 to 62.2 kJ/mol to match endothermicity of reaction.
+For reaction [H][H].[Pt](50) + CO2*(15) <=> H*(10) + COOH*(18), Ea raised from 0.0 to 28.7 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + methanediol(179) <=> H*(10) + CH3O2*(21), Ea raised from 0.0 to 33.1 kJ/mol to match endothermicity of reaction.
-For reaction X(1) + OCO.[Pt](180) <=> H*(10) + CH3O2*(21), Ea raised from 42.7 to 44.4 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + CH2O*(19) <=> H*(10) + CH3O2*(21), Ea raised from 0.0 to 70.0 kJ/mol to match endothermicity of reaction.
+For reaction [H][H].[Pt](50) + formic_acidX(54) <=> H*(10) + CH3O2*(21), Ea raised from 0.0 to 57.3 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) <=> O*(11) + CO*(14), Ea raised from 0.0 to 83.9 kJ/mol to match endothermicity of reaction.
+For reaction OH*(12) + CO*(14) <=> O*(11) + HCO*(16), Ea raised from 22.9 to 24.9 kJ/mol to match endothermicity of reaction.
 For reaction OH*(12) + CO*(14) <=> X(1) + OOC#[Pt](188), Ea raised from 311.1 to 311.6 kJ/mol to match endothermicity of reaction.
-For reaction OH*(12) + CO2*(15) <=> X(1) + O=C([Pt])OO(94), Ea raised from 305.3 to 305.7 kJ/mol to match endothermicity of reaction.
-For reaction OH*(12) + HCO*(16) <=> X(1) + OOC=[Pt](189), Ea raised from 404.9 to 405.2 kJ/mol to match endothermicity of reaction.
-For reaction X(1) + X(1) + O=C(O)O(192) <=> OH*(12) + COOH*(18), Ea raised from 0.0 to 68.3 kJ/mol to match endothermicity of reaction.
+For reaction OH*(12) + CO2*(15) <=> X(1) + O=C([Pt])OO(94), Ea raised from 305.3 to 305.6 kJ/mol to match endothermicity of reaction.
+For reaction OH*(12) + HCO*(16) <=> X(1) + OOC=[Pt](189), Ea raised from 404.8 to 405.2 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + CO2*(15) <=> OH*(12) + HCOO*(17), Ea raised from 0.0 to 122.1 kJ/mol to match endothermicity of reaction.
+For reaction X(1) + X(1) + O=C(O)O(192) <=> OH*(12) + COOH*(18), Ea raised from 0.0 to 68.4 kJ/mol to match endothermicity of reaction.
 For reaction OH*(12) + COOH*(18) <=> X(1) + OOC(O)=[Pt](193), Ea raised from 351.3 to 352.1 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + CO2*(15) <=> OH*(12) + COOH*(18), Ea raised from 0.0 to 88.6 kJ/mol to match endothermicity of reaction.
 For reaction OH*(12) + CH2O*(19) <=> X(1) + OOC[Pt](48), Ea raised from 260.9 to 261.2 kJ/mol to match endothermicity of reaction.
-For reaction CO*(14) + HCOO*(17) <=> X(1) + O=COOC#[Pt](203), Ea raised from 218.1 to 220.3 kJ/mol to match endothermicity of reaction.
-For reaction CO*(14) + CH3O2*(21) <=> X(1) + OCOOC#[Pt](210), Ea raised from 238.1 to 240.3 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + HCO*(16) <=> X(1) + O=CC(=O)O[Pt](95), Ea raised from 190.1 to 190.6 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + CH2O*(19) <=> OH*(12) + CH3O*(20), Ea raised from 0.0 to 33.3 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + formic_acidX(54) <=> OH*(12) + CH3O2*(21), Ea raised from 0.0 to 117.2 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + CO2*(15) <=> H*(10) + O=C(O)O[Pt](93), Ea raised from 0.0 to 77.5 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + CO2*(15) <=> H*(10) + O=C([Pt])OO(94), Ea raised from 0.0 to 373.5 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + CH2O*(19) <=> H*(10) + OOC[Pt](48), Ea raised from 0.0 to 329.1 kJ/mol to match endothermicity of reaction.
+For reaction CO*(14) + HCOO*(17) <=> X(1) + O=COOC#[Pt](203), Ea raised from 216.3 to 220.3 kJ/mol to match endothermicity of reaction.
+For reaction CO*(14) + CH3O2*(21) <=> X(1) + OCOOC#[Pt](210), Ea raised from 238.0 to 240.2 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + HCO*(16) <=> X(1) + O=CC(=O)O[Pt](95), Ea raised from 190.2 to 190.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + HCO*(16) <=> X(1) + O=COC(=O)[Pt](96), Ea raised from 143.2 to 145.0 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + HCOO*(17) <=> O*(11) + O=CC(=O)O[Pt](95), Ea raised from 70.6 to 73.9 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + CH2O*(19) <=> H*(10) + O=COC(=O)[Pt](96), Ea raised from 91.8 to 93.0 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + HCOO*(17) <=> O*(11) + O=CC(=O)O[Pt](95), Ea raised from 70.7 to 74.0 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH2O*(19) <=> HCO*(16) + HCOO*(17), Ea raised from 0.0 to 2.1 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH2O*(19) <=> H*(10) + O=CC(=O)O[Pt](95), Ea raised from 0.0 to 138.5 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH2O*(19) <=> H*(10) + O=COC(=O)[Pt](96), Ea raised from 0.0 to 92.9 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + CH3O*(20) <=> X(1) + COOC(=O)[Pt](102), Ea raised from 223.2 to 225.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + CH3O2*(21) <=> X(1) + O=C([Pt])OOCO(104), Ea raised from 189.7 to 195.0 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + CH3OH*(22) <=> H*(10) + O=C([Pt])OCO(209), Ea raised from 99.3 to 100.6 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + CH3OH*(22) <=> H*(10) + COOC(=O)[Pt](102), Ea raised from 271.6 to 272.7 kJ/mol to match endothermicity of reaction.
-For reaction HCO*(16) + HCOO*(17) <=> X(1) + O=COOC=[Pt](216), Ea raised from 275.9 to 280.2 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> OH*(12) + acetyloxyX(211), Ea raised from 0.0 to 44.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> HCOO*(17) + CH3O*(20), Ea raised from 0.0 to 101.3 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> O=C(O)O[Pt](93) + C[Pt](55), Ea raised from 0.0 to 23.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> HCOO*(17) + OC[Pt](46), Ea raised from 0.0 to 24.9 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> H*(10) + O=C(CO)O[Pt](212), Ea raised from 0.0 to 80.5 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> H*(10) + COC(=O)O[Pt](101), Ea raised from 0.0 to 80.0 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> OH*(12) + CH3OCOX(58), Ea raised from 0.0 to 96.9 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> COOH*(18) + CH3O*(20), Ea raised from 0.0 to 67.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> O=C([Pt])OO(94) + C[Pt](55), Ea raised from 0.0 to 319.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> H*(10) + O=C([Pt])OCO(209), Ea raised from 0.0 to 100.6 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CH3OH*(22) <=> H*(10) + COOC(=O)[Pt](102), Ea raised from 0.0 to 272.6 kJ/mol to match endothermicity of reaction.
+For reaction HCO*(16) + HCOO*(17) <=> X(1) + O=COOC=[Pt](216), Ea raised from 275.8 to 280.1 kJ/mol to match endothermicity of reaction.
+For reaction CO*(14) + formic_acidX(54) <=> HCO*(16) + COOH*(18), Ea raised from 103.0 to 103.1 kJ/mol to match endothermicity of reaction.
+For reaction CO*(14) + formic_acidX(54) <=> HCO*(16) + COOH*(18), Ea raised from 103.0 to 103.1 kJ/mol to match endothermicity of reaction.
 For reaction HCO*(16) + COOH*(18) <=> X(1) + O=C(O)OC=[Pt](219), Ea raised from 211.5 to 211.6 kJ/mol to match endothermicity of reaction.
-For reaction HCO*(16) + COOH*(18) <=> X(1) + O=COC(O)=[Pt](220), Ea raised from 138.6 to 141.6 kJ/mol to match endothermicity of reaction.
 For reaction HCO*(16) + CH3O2*(21) <=> X(1) + OCOOC=[Pt](225), Ea raised from 372.2 to 373.7 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + formic_acidX(54) <=> HCOO*(17) + HCOO*(17), Ea raised from 0.0 to 143.4 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + O=COC(=O)O(84) <=> COOH*(18) + HCOO*(17), Ea raised from 0.0 to 41.5 kJ/mol to match endothermicity of reaction.
 For reaction COOH*(18) + HCOO*(17) <=> X(1) + O=COOC(O)=[Pt](228), Ea raised from 219.2 to 225.7 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + formic_acidX(54) <=> COOH*(18) + HCOO*(17), Ea raised from 0.0 to 109.9 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + formic_acidX(54) <=> COOH*(18) + HCOO*(17), Ea raised from 0.0 to 109.9 kJ/mol to match endothermicity of reaction.
 For reaction HCOO*(17) + CH2O*(19) <=> X(1) + O=COOC[Pt](124), Ea raised from 129.5 to 134.0 kJ/mol to match endothermicity of reaction.
-For reaction HCOO*(17) + CH2O*(19) <=> O*(11) + OCH2CHOX(122), Ea raised from 55.2 to 56.0 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + OCO.[Pt](180) <=> HCOO*(17) + CH3O2*(21), Ea raised from 97.6 to 98.6 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + formic_acidX(54) <=> HCOO*(17) + CH3O*(20), Ea raised from 0.0 to 54.6 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + OCO.[Pt](180) <=> HCOO*(17) + CH3O2*(21), Ea raised from 0.0 to 98.6 kJ/mol to match endothermicity of reaction.
+For reaction formic_acidX(54) + formic_acidX(54) <=> HCOO*(17) + CH3O2*(21), Ea raised from 0.0 to 138.5 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + O=C(O)C(=O)O(232) <=> COOH*(18) + COOH*(18), Ea raised from 0.0 to 26.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + formic_acidX(54) <=> COOH*(18) + COOH*(18), Ea raised from 0.0 to 76.4 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + COC(=O)O(236) <=> COOH*(18) + CH3O*(20), Ea raised from 0.0 to 45.0 kJ/mol to match endothermicity of reaction.
 For reaction COOH*(18) + CH3O*(20) <=> X(1) + COOC(O)=[Pt](237), Ea raised from 349.0 to 349.9 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + formic_acidX(54) <=> COOH*(18) + CH3O*(20), Ea raised from 0.0 to 21.1 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + X(1) + O=C(O)OCO(240) <=> COOH*(18) + CH3O2*(21), Ea raised from 0.0 to 75.7 kJ/mol to match endothermicity of reaction.
-For reaction COOH*(18) + CH3O2*(21) <=> X(1) + OCOOC(O)=[Pt](241), Ea raised from 315.5 to 319.3 kJ/mol to match endothermicity of reaction.
-For reaction CH2O*(19) + CH3O*(20) <=> X(1) + CH3OCH2OX(127), Ea raised from 12.5 to 28.0 kJ/mol to match endothermicity of reaction.
+For reaction COOH*(18) + CH3O2*(21) <=> X(1) + OCOOC(O)=[Pt](241), Ea raised from 315.5 to 319.2 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + OCO.[Pt](180) <=> COOH*(18) + CH3O2*(21), Ea raised from 0.0 to 65.2 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + O=C(O)O.[Pt](194) <=> COOH*(18) + CH3O2*(21), Ea raised from 0.0 to 95.5 kJ/mol to match endothermicity of reaction.
+For reaction formic_acidX(54) + formic_acidX(54) <=> COOH*(18) + CH3O2*(21), Ea raised from 0.0 to 105.0 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH2O*(19) <=> H*(10) + OCH2CHOX(122), Ea raised from 0.0 to 120.6 kJ/mol to match endothermicity of reaction.
 For reaction CH2O*(19) + CH3O2*(21) <=> X(1) + OCOOC[Pt](130), Ea raised from 225.8 to 227.6 kJ/mol to match endothermicity of reaction.
-For reaction formic_acidX(54) + OCO.[Pt](180) <=> CH3O2*(21) + CH3O2*(21), Ea raised from 92.5 to 93.7 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> OH*(12) + CH3CH2OX(243), Ea raised from 0.0 to 70.9 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> CH3O*(20) + CH3O*(20), Ea raised from 0.0 to 12.5 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> C[Pt](55) + CH3O2*(21), Ea raised from 0.0 to 16.4 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> H*(10) + HOCH2CH2OX(245), Ea raised from 0.0 to 114.7 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> H*(10) + CH3OCH2OX(127), Ea raised from 0.0 to 75.0 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> OH*(12) + CH3OCH2X(244), Ea raised from 0.0 to 37.1 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> C[Pt](55) + OOC[Pt](48), Ea raised from 0.0 to 275.4 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> H*(10) + HOCH2OCH2X(246), Ea raised from 0.0 to 48.2 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + CH3OH*(22) <=> H*(10) + COOC[Pt](128), Ea raised from 0.0 to 314.8 kJ/mol to match endothermicity of reaction.
+For reaction CH2O*(19) + OCO.[Pt](180) <=> CH3O*(20) + CH3O2*(21), Ea raised from 0.0 to 9.9 kJ/mol to match endothermicity of reaction.
+For reaction formic_acidX(54) + CH3OH*(22) <=> CH3O*(20) + CH3O2*(21), Ea raised from 0.0 to 96.4 kJ/mol to match endothermicity of reaction.
+For reaction formic_acidX(54) + OCO.[Pt](180) <=> CH3O2*(21) + CH3O2*(21), Ea raised from 0.0 to 93.7 kJ/mol to match endothermicity of reaction.
 Warning: Marked reaction H2(2) + CO2(4) <=> HCOOH(7) as duplicate of H2(2) + CO2(4) <=> HCOOH(7) for saving to Chemkin file.
 
 Summary of Secondary Model Edge Enlargement
@@ -1495,57 +1476,66 @@ Created 223 new edge species
     OCOCO.[Pt](253)
     OCOOCO(254)
     OCOOCO.[Pt](255)
-Added 65 new core reactions
+Added 74 new core reactions
     H2(2) + CO(3) <=> CH2O(6)
     H2O(5) + CO(3) <=> HCOOH(7)
     H2(2) + CO2(4) <=> HCOOH(7)
     CO(3) + CH3OH(8) <=> HCOOCH3(9)
+    X(1) + H2O(5) <=> H2O*(13)
+    X(1) + CO2(4) <=> CO2*(15)
     H*(10) + CO2(4) <=> HCOO*(17)
     HCOO*(17) <=> COOH*(18)
     H*(10) + CO2(4) <=> COOH*(18)
+    X(1) + CH2O(6) <=> CH2O*(19)
     H*(10) + CH2O(6) <=> CH3O*(20)
     OH*(12) + CH2O(6) <=> CH3O2*(21)
     H*(10) + HCOOH(7) <=> CH3O2*(21)
-    X(1) + CO2(4) <=> CO2*(15)
+    X(1) + CH3OH(8) <=> CH3OH*(22)
     X(1) + X(1) + H2O(5) <=> H*(10) + OH*(12)
-    X(1) + H2O(5) <=> H2O*(13)
     X(1) + X(1) + CH2O(6) <=> H*(10) + HCO*(16)
-    X(1) + CH2O(6) <=> CH2O*(19)
     X(1) + X(1) + HCOOH(7) <=> OH*(12) + HCO*(16)
     X(1) + X(1) + HCOOH(7) <=> H*(10) + HCOO*(17)
     X(1) + X(1) + HCOOH(7) <=> H*(10) + COOH*(18)
     X(1) + X(1) + CH3OH(8) <=> H*(10) + CH3O*(20)
-    X(1) + CH3OH(8) <=> CH3OH*(22)
     X(1) + X(1) + HCOOCH3(9) <=> HCO*(16) + CH3O*(20)
     X(1) + OH*(12) <=> O*(11) + H*(10)
     X(1) + H2O*(13) <=> H*(10) + OH*(12)
-    O*(11) + CO*(14) <=> X(1) + CO2*(15)
-    H*(10) + CO*(14) <=> X(1) + HCO*(16)
+    X(1) + H2O*(13) <=> H*(10) + OH*(12)
+    X(1) + CO2*(15) <=> O*(11) + CO*(14)
+    X(1) + HCO*(16) <=> H*(10) + CO*(14)
     H*(10) + CO2*(15) <=> X(1) + HCOO*(17)
     X(1) + HCOO*(17) <=> O*(11) + HCO*(16)
-    X(1) + COOH*(18) <=> H*(10) + CO2*(15)
+    H*(10) + CO2*(15) <=> X(1) + COOH*(18)
     OH*(12) + CO*(14) <=> X(1) + COOH*(18)
-    H*(10) + HCO*(16) <=> X(1) + CH2O*(19)
+    X(1) + CH2O*(19) <=> H*(10) + HCO*(16)
+    X(1) + CH2O*(19) <=> H*(10) + HCO*(16)
     H*(10) + CH2O*(19) <=> X(1) + CH3O*(20)
-    X(1) + CH3O2*(21) <=> OH*(12) + CH2O*(19)
-    H*(10) + CH3O*(20) <=> X(1) + CH3OH*(22)
+    OH*(12) + CH2O*(19) <=> X(1) + CH3O2*(21)
+    X(1) + CH3OH*(22) <=> H*(10) + CH3O*(20)
+    X(1) + CH3OH*(22) <=> H*(10) + CH3O*(20)
     H2(2) + CO2(4) <=> HCOOH(7)
     H2(2) + CO2(4) <=> HCOOH(7)
+    X(1) + H2O*(13) <=> H*(10) + OH*(12)
+    X(1) + H2O*(13) <=> H*(10) + OH*(12)
+    X(1) + CH2O*(19) <=> H*(10) + HCO*(16)
+    X(1) + CH2O*(19) <=> H*(10) + HCO*(16)
     O*(11) + CH2O*(19) <=> H*(10) + HCOO*(17)
     H2O*(13) + CO*(14) <=> H*(10) + COOH*(18)
+    X(1) + CH3OH*(22) <=> H*(10) + CH3O*(20)
+    X(1) + CH3OH*(22) <=> H*(10) + CH3O*(20)
     O*(11) + CH3OH*(22) <=> H*(10) + CH3O2*(21)
     H2O*(13) + CH2O*(19) <=> H*(10) + CH3O2*(21)
-    OH*(12) + OH*(12) <=> O*(11) + H2O*(13)
-    O*(11) + HCO*(16) <=> OH*(12) + CO*(14)
+    O*(11) + H2O*(13) <=> OH*(12) + OH*(12)
+    OH*(12) + CO*(14) <=> O*(11) + HCO*(16)
     OH*(12) + CO2*(15) <=> O*(11) + HCOO*(17)
     OH*(12) + CO2*(15) <=> O*(11) + COOH*(18)
     O*(11) + CH2O*(19) <=> OH*(12) + HCO*(16)
     OH*(12) + CH2O*(19) <=> O*(11) + CH3O*(20)
     O*(11) + CH3OH*(22) <=> OH*(12) + CH3O*(20)
     O*(11) + CH3OH*(22) <=> OH*(12) + CH3O*(20)
-    OH*(12) + HCO*(16) <=> H2O*(13) + CO*(14)
+    H2O*(13) + CO*(14) <=> OH*(12) + HCO*(16)
     H2O*(13) + CO2*(15) <=> OH*(12) + HCOO*(17)
-    OH*(12) + COOH*(18) <=> H2O*(13) + CO2*(15)
+    H2O*(13) + CO2*(15) <=> OH*(12) + COOH*(18)
     O*(11) + CH3OH*(22) <=> OH*(12) + CH3O*(20)
     O*(11) + CH3OH*(22) <=> OH*(12) + CH3O*(20)
     H2O*(13) + CH2O*(19) <=> OH*(12) + CH3O*(20)
@@ -1554,14 +1544,14 @@ Added 65 new core reactions
     CO*(14) + CH2O*(19) <=> HCO*(16) + HCO*(16)
     HCO*(16) + CH2O*(19) <=> CO*(14) + CH3O*(20)
     COOH*(18) + CH2O*(19) <=> CO*(14) + CH3O2*(21)
-    HCO*(16) + CH3O*(20) <=> CO*(14) + CH3OH*(22)
+    CO*(14) + CH3OH*(22) <=> HCO*(16) + CH3O*(20)
     CO2*(15) + CH2O*(19) <=> HCO*(16) + HCOO*(17)
     CO2*(15) + CH2O*(19) <=> HCO*(16) + COOH*(18)
     CO2*(15) + CH3OH*(22) <=> HCOO*(17) + CH3O*(20)
     CO2*(15) + CH3OH*(22) <=> COOH*(18) + CH3O*(20)
     CH2O*(19) + CH2O*(19) <=> HCO*(16) + CH3O*(20)
     CH2O*(19) + CH3OH*(22) <=> CH3O*(20) + CH3O*(20)
-Created 471 new edge reactions
+Created 476 new edge reactions
     H(23) + HCO(33) <=> CH2O(6)
     [O]C[O](34) <=> HCOOH(7)
     OH(26) + HCO(33) <=> HCOOH(7)
@@ -1611,7 +1601,8 @@ Created 471 new edge reactions
     H*(10) + formic_acidX(54) <=> X(1) + CH3O2*(21)
     X(1) + CH3O2*(21) <=> O*(11) + OC[Pt](46)
     X(1) + CH3OH*(22) <=> OH*(12) + C[Pt](55)
-    H*(10) + OC[Pt](46) <=> X(1) + CH3OH*(22)
+    X(1) + CH3OH*(22) <=> H*(10) + OC[Pt](46)
+    X(1) + CH3OH*(22) <=> H*(10) + OC[Pt](46)
     H(23) + HCO(33) <=> H2(2) + CO(3)
     H(23) + HOCO(36) <=> H2(2) + CO2(4)
     H(23) + formyloxy(35) <=> H2(2) + CO2(4)
@@ -1809,19 +1800,23 @@ Created 471 new edge reactions
     CH3O*(20) + HCOOCH3(9) <=> COOC([Pt])OC(172)
     CH3O2*(21) + HCOOCH3(9) <=> COC(O[Pt])OCO(173)
     CH3O2*(21) + HCOOCH3(9) <=> COC([Pt])OOCO(174)
+    X(1) + [H][H].[Pt](50) <=> H*(10) + H*(10)
     O*(11) + [H][H].[Pt](50) <=> H*(10) + OH*(12)
     H*(10) + CO*(14) <=> X(1) + OC#[Pt](175)
     [H][H].[Pt](50) + CO*(14) <=> H*(10) + HCO*(16)
     H*(10) + HCO*(16) <=> X(1) + OC=[Pt](176)
-    H*(10) + HCOO*(17) <=> X(1) + formic_acidX(54)
+    X(1) + formic_acidX(54) <=> H*(10) + HCOO*(17)
+    X(1) + formic_acidX(54) <=> H*(10) + HCOO*(17)
     [H][H].[Pt](50) + CO2*(15) <=> H*(10) + HCOO*(17)
     H*(10) + COOH*(18) <=> X(1) + OC(O)=[Pt](177)
-    H*(10) + COOH*(18) <=> X(1) + formic_acidX(54)
+    X(1) + formic_acidX(54) <=> H*(10) + COOH*(18)
+    X(1) + formic_acidX(54) <=> H*(10) + COOH*(18)
     [H][H].[Pt](50) + CO2*(15) <=> H*(10) + COOH*(18)
     H*(10) + CH2O*(19) <=> X(1) + OC[Pt](46)
     O*(11) + C.[Pt](178) <=> H*(10) + CH3O*(20)
     [H][H].[Pt](50) + CH2O*(19) <=> H*(10) + CH3O*(20)
     X(1) + X(1) + methanediol(179) <=> H*(10) + CH3O2*(21)
+    X(1) + OCO.[Pt](180) <=> H*(10) + CH3O2*(21)
     X(1) + OCO.[Pt](180) <=> H*(10) + CH3O2*(21)
     [H][H].[Pt](50) + formic_acidX(54) <=> H*(10) + CH3O2*(21)
     [Pt]OO[Pt](181) <=> O*(11) + O*(11)
@@ -1925,7 +1920,7 @@ Created 471 new edge reactions
     HCO*(16) + HCO*(16) <=> X(1) + O=COC=[Pt](214)
     X(1) + glyoxalX(215) <=> HCO*(16) + HCO*(16)
     O*(11) + glyoxalX(215) <=> HCO*(16) + HCOO*(17)
-    HCO*(16) + HCOO*(17) <=> CO*(14) + formic_acidX(54)
+    CO*(14) + formic_acidX(54) <=> HCO*(16) + HCOO*(17)
     X(1) + X(1) + O=COC=O(67) <=> HCO*(16) + HCOO*(17)
     HCO*(16) + HCOO*(17) <=> X(1) + O=COOC=[Pt](216)
     X(1) + O=COC=O.[Pt](217) <=> HCO*(16) + HCOO*(17)
@@ -1963,8 +1958,8 @@ Created 471 new edge reactions
     HCOO*(17) + CH2O*(19) <=> X(1) + O=COOC[Pt](124)
     HCOO*(17) + CH2O*(19) <=> O*(11) + OCH2CHOX(122)
     HCOO*(17) + CH2O*(19) <=> O*(11) + CH2OCHOX(57)
-    HCOO*(17) + CH3O*(20) <=> O*(11) + methyl_formateX(59)
-    HCOO*(17) + CH3O*(20) <=> O*(11) + methyl_formateX(59)
+    O*(11) + methyl_formateX(59) <=> HCOO*(17) + CH3O*(20)
+    O*(11) + methyl_formateX(59) <=> HCOO*(17) + CH3O*(20)
     X(1) + X(1) + COOC=O(115) <=> HCOO*(17) + CH3O*(20)
     X(1) + COOC=O.[Pt](230) <=> HCOO*(17) + CH3O*(20)
     CH2O*(19) + formic_acidX(54) <=> HCOO*(17) + CH3O*(20)
@@ -2035,8 +2030,8 @@ Created 471 new edge reactions
     formic_acidX(54) + OCO.[Pt](180) <=> CH3O2*(21) + CH3O2*(21)
 
 After model enlargement:
-    The model core has 24 species and 68 reactions
-    The model edge has 233 species and 506 reactions
+    The model core has 24 species and 77 reactions
+    The model edge has 233 species and 511 reactions
 
 
 conditions choosen for reactor 1 were: T = 483.0 K, 
@@ -2046,21 +2041,21 @@ Completed initial enlarge edge step.
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 62 reactions.
+Chemkin file contains 71 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 62 reactions.
+Chemkin file contains 71 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 375 reactions.
+Chemkin file contains 389 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 375 reactions.
+Chemkin file contains 389 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:00:58
-    Memory used: 794.12 MB
+    Execution time (DD:HH:MM:SS): 00:00:00:57
+    Memory used: 756.47 MB
 
 Making seed mechanism...
 Beginning model generation stage 1...
@@ -2068,78 +2063,11 @@ Beginning model generation stage 1...
 Making seed mechanism...
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 0.0000e+00 s, species [H][H].[Pt](50) at 1.0416666515232142 exceeded the minimum rate for simulation interruption of 1e-05
 At time 0.0000e+00 s, species CO2X(51) at 0.45117068883414363 exceeded the minimum rate for simulation interruption of 1e-05
-Exceeded max number of objects...removing excess objects
 Reached max number of objects...preparing to terminate
-At time 0.0000e+00 s, species [H][H].[Pt](50) at rate ratio 1.0416666515232142 exceeded the minimum rate for moving to model core of 1e-05
+At time 0.0000e+00 s, species CO2X(51) at rate ratio 0.45117068883414363 exceeded the minimum rate for moving to model core of 1e-05
 terminating simulation due to interrupt...
 conditions choosen for reactor 0 were: T = 493.1055219585634 K, 
-
-
-Adding species [H][H].[Pt](50) to model core
-
-Summary of Model Enlargement
----------------------------------
-Added 1 new core species
-    [H][H].[Pt](50)
-Created 0 new edge species
-Moved 6 reactions from edge to core
-    X(1) + H2(2) <=> [H][H].[Pt](50)
-    O*(11) + [H][H].[Pt](50) <=> H*(10) + OH*(12)
-    [H][H].[Pt](50) + CO*(14) <=> H*(10) + HCO*(16)
-    [H][H].[Pt](50) + CO2*(15) <=> H*(10) + HCOO*(17)
-    [H][H].[Pt](50) + CO2*(15) <=> H*(10) + COOH*(18)
-    [H][H].[Pt](50) + CH2O*(19) <=> H*(10) + CH3O*(20)
-Added 0 new core reactions
-Created 0 new edge reactions
-
-After model enlargement:
-    The model core has 25 species and 74 reactions
-    The model edge has 232 species and 500 reactions
-
-
-For reaction generation 1 process is used.
-Generating kinetics for new reactions...
-
-Summary of Secondary Model Edge Enlargement
----------------------------------
-Added 0 new core species
-Created 0 new edge species
-Added 0 new core reactions
-Created 1 new edge reactions
-    [H][H].[Pt](50) + CH2O*(19) <=> H*(10) + OC[Pt](46)
-
-After model enlargement:
-    The model core has 25 species and 74 reactions
-    The model edge has 232 species and 501 reactions
-
-
-Saving current model core to Chemkin file...
-Chemkin file contains 6 reactions.
-Chemkin file contains 68 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 6 reactions.
-Chemkin file contains 68 reactions.
-Saving current model core and edge to Chemkin file...
-Chemkin file contains 202 reactions.
-Chemkin file contains 376 reactions.
-Saving annotated version of Chemkin files...
-Chemkin file contains 202 reactions.
-Chemkin file contains 376 reactions.
-Saving current model core to HTML file...
-Saving current model edge to HTML file...
-Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:00
-    Memory used: 795.80 MB
-
-Conducting simulation of reaction system 1...
-Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 0.0000e+00 s, species CO2X(51) at 0.17920338371753913 exceeded the minimum rate for simulation interruption of 1e-05
-Reached max number of objects...preparing to terminate
-At time 0.0000e+00 s, species CO2X(51) at rate ratio 0.17920338371753913 exceeded the minimum rate for moving to model core of 1e-05
-terminating simulation due to interrupt...
-conditions choosen for reactor 0 were: T = 493.31420154677875 K, 
 
 
 Adding species CO2X(51) to model core
@@ -2157,8 +2085,8 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 26 species and 77 reactions
-    The model edge has 231 species and 498 reactions
+    The model core has 25 species and 80 reactions
+    The model edge has 232 species and 508 reactions
 
 
 For reaction generation 1 process is used.
@@ -2166,8 +2094,8 @@ Generating thermo for new species...
 Species [Pt]O[Pt] renamed O(T)X based on thermo library name
 Species O=C[Pt].[Pt] renamed HCOX based on thermo library name
 Species O[Pt].[Pt] renamed OH(D)X based on thermo library name
-Species O=C(O)[Pt].[Pt] renamed HOCOX based on thermo library name
 Species O=CO[Pt].[Pt] renamed formyloxyX based on thermo library name
+Species O=C(O)[Pt].[Pt] renamed HOCOX based on thermo library name
 Species O=C(O[Pt])O[Pt] renamed CO3t1X based on thermo library name
 Species O=C([Pt])OO[Pt] renamed CO3t2X based on thermo library name
 Species OO[Pt].[Pt] renamed HO2X based on thermo library name
@@ -2181,37 +2109,37 @@ Species O=C(O[Pt])O[Pt].[Pt] renamed CO3t1X based on thermo library name
 Species O=C([Pt])OO[Pt].[Pt] renamed CO3t2X based on thermo library name
 Generating kinetics for new reactions...
 For reaction CO2X(51) <=> O*(11) + CO*(14), Ea raised from 0.0 to 83.9 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + CO2X(51) <=> O=C(O[Pt])C(=O)O[Pt](259), Ea raised from 530.4 to 531.2 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + CO2X(51) <=> O=C(O[Pt])C(=O)O[Pt](259), Ea raised from 530.4 to 531.3 kJ/mol to match endothermicity of reaction.
 For reaction CO2(4) + CO2X(51) <=> O=C([Pt])OC(=O)O[Pt](260), Ea raised from 486.7 to 489.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2(4) + CO2X(51) <=> O=C([Pt])OC(=O)O[Pt](260), Ea raised from 486.7 to 489.6 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + CO2X(51) <=> O=C([Pt])OOC(=O)[Pt](261), Ea raised from 577.5 to 581.6 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + CO2X(51) <=> O=C([Pt])OOC(=O)[Pt](261), Ea raised from 577.4 to 581.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + CH2O(6) <=> O=C(CO[Pt])O[Pt](262), Ea raised from 402.9 to 405.9 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + CH2O(6) <=> O=C([Pt])OCO[Pt](263), Ea raised from 345.4 to 350.7 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + CH2O(6) <=> O=C(O[Pt])OC[Pt](264), Ea raised from 310.6 to 314.4 kJ/mol to match endothermicity of reaction.
-For reaction CO2X(51) + CH2O(6) <=> O=C([Pt])OOC[Pt](265), Ea raised from 534.3 to 538.5 kJ/mol to match endothermicity of reaction.
-For reaction CO2X(51) + HCOOH(7) <=> O=C(O[Pt])C(O)O[Pt](266), Ea raised from 399.0 to 401.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2X(51) + CH2O(6) <=> O=C([Pt])OOC[Pt](265), Ea raised from 534.2 to 538.5 kJ/mol to match endothermicity of reaction.
+For reaction CO2X(51) + HCOOH(7) <=> O=C(O[Pt])C(O)O[Pt](266), Ea raised from 399.1 to 401.8 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCOOH(7) <=> O=C([Pt])OC(O)O[Pt](267), Ea raised from 427.3 to 430.4 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCOOH(7) <=> O=C(O[Pt])OC(O)[Pt](268), Ea raised from 388.7 to 391.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCOOH(7) <=> O=C([Pt])OOC(O)[Pt](269), Ea raised from 609.8 to 611.4 kJ/mol to match endothermicity of reaction.
-For reaction CO2X(51) + HCOOCH3(9) <=> COC(O[Pt])C(=O)O[Pt](270), Ea raised from 402.4 to 404.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2X(51) + HCOOCH3(9) <=> COC(O[Pt])C(=O)O[Pt](270), Ea raised from 402.5 to 404.8 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCOOCH3(9) <=> COC(O[Pt])OC(=O)[Pt](271), Ea raised from 430.7 to 433.4 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCOOCH3(9) <=> COC([Pt])OC(=O)O[Pt](272), Ea raised from 392.1 to 394.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCOOCH3(9) <=> COC([Pt])OOC(=O)[Pt](273), Ea raised from 613.2 to 614.4 kJ/mol to match endothermicity of reaction.
 For reaction CO*(14) + CO2X(51) <=> X(1) + O=C([Pt])OOC#[Pt](287), Ea raised from 673.3 to 674.0 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + CO2X(51) <=> X(1) + O=C(O[Pt])C(=O)O[Pt](259), Ea raised from 503.3 to 504.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CO2X(51) <=> X(1) + O=C(O[Pt])C(=O)O[Pt](259), Ea raised from 503.4 to 504.8 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + CO2X(51) <=> X(1) + O=C([Pt])OC(=O)O[Pt](260), Ea raised from 459.6 to 463.1 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + CO2X(51) <=> X(1) + O=C([Pt])OC(=O)O[Pt](260), Ea raised from 459.6 to 463.1 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + CO2X(51) <=> X(1) + O=C([Pt])OOC(=O)[Pt](261), Ea raised from 550.4 to 555.1 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + CO2X(51) <=> O*(11) + O=C([Pt])C(=O)O[Pt](284), Ea raised from 427.5 to 429.1 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + CO2X(51) <=> CO*(14) + CO3t1X(278), Ea raised from 395.6 to 396.8 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + CO2X(51) <=> O*(11) + O=C([Pt])OC(=O)[Pt](285), Ea raised from 480.7 to 482.1 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CO2X(51) <=> O*(11) + O=C([Pt])C(=O)O[Pt](284), Ea raised from 427.6 to 429.1 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CO2X(51) <=> CO*(14) + CO3t1X(278), Ea raised from 395.7 to 396.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + CO2X(51) <=> O*(11) + O=C([Pt])OC(=O)[Pt](285), Ea raised from 480.8 to 482.2 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + CO2X(51) <=> CO*(14) + CO3t2X(279), Ea raised from 585.0 to 586.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCO*(16) <=> X(1) + O=C(O[Pt])OC=[Pt](289), Ea raised from 629.5 to 629.6 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCO*(16) <=> X(1) + O=C([Pt])OOC=[Pt](290), Ea raised from 732.8 to 733.9 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCO*(16) <=> X(1) + O=COC(=[Pt])O[Pt](291), Ea raised from 344.5 to 344.8 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + HCOO*(17) <=> X(1) + O=COOC(=[Pt])O[Pt](295), Ea raised from 294.7 to 301.2 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + COOH*(18) <=> X(1) + O=C(O[Pt])OC(O)=[Pt](299), Ea raised from 455.0 to 459.6 kJ/mol to match endothermicity of reaction.
-For reaction CO2X(51) + COOH*(18) <=> X(1) + O=C([Pt])OOC(O)=[Pt](300), Ea raised from 676.2 to 679.4 kJ/mol to match endothermicity of reaction.
+For reaction CO2X(51) + COOH*(18) <=> X(1) + O=C([Pt])OOC(O)=[Pt](300), Ea raised from 676.1 to 679.4 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + COOH*(18) <=> X(1) + O=C(O)OC(=[Pt])O[Pt](301), Ea raised from 242.8 to 244.9 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + CH2O*(19) <=> X(1) + O=C([Pt])OCO[Pt](263), Ea raised from 397.6 to 399.9 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + CH2O*(19) <=> X(1) + O=C(O[Pt])OC[Pt](264), Ea raised from 362.8 to 363.6 kJ/mol to match endothermicity of reaction.
@@ -2219,7 +2147,7 @@ For reaction CO2X(51) + CH2O*(19) <=> X(1) + O=C([Pt])OOC[Pt](265), Ea raised fr
 For reaction CO2X(51) + CH3O*(20) <=> X(1) + COOC(=[Pt])O[Pt](311), Ea raised from 424.5 to 425.4 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + CH3O2*(21) <=> X(1) + OCOOC(=[Pt])O[Pt](317), Ea raised from 391.0 to 394.8 kJ/mol to match endothermicity of reaction.
 For reaction CO2X(51) + CO2X(51) <=> X(1) + O=C(O[Pt])OC(=[Pt])O[Pt](324), Ea raised from 1047.4 to 1049.5 kJ/mol to match endothermicity of reaction.
-For reaction CO2X(51) + CO2X(51) <=> X(1) + O=C([Pt])OOC(=[Pt])O[Pt](325), Ea raised from 1295.8 to 1297.3 kJ/mol to match endothermicity of reaction.
+For reaction CO2X(51) + CO2X(51) <=> X(1) + O=C([Pt])OOC(=[Pt])O[Pt](325), Ea raised from 1295.7 to 1297.3 kJ/mol to match endothermicity of reaction.
 Warning: Marked reaction CO2X(51) <=> O*(11) + CO*(14) as duplicate of CO2X(51) <=> O*(11) + CO*(14) for saving to Chemkin file.
 
 Summary of Secondary Model Edge Enlargement
@@ -2246,8 +2174,8 @@ Created 73 new edge species
     COC([Pt])OOC(=O)[Pt](273)
     HCOX(274)
     OH(D)X(275)
-    HOCOX(276)
-    formyloxyX(277)
+    formyloxyX(276)
+    HOCOX(277)
     CO3t1X(278)
     CO3t2X(279)
     HO2X(280)
@@ -2301,7 +2229,7 @@ Created 73 new edge species
     O=C(O[Pt])C(=O)O[Pt].[Pt](328)
 Added 1 new core reactions
     CO2X(51) <=> O*(11) + CO*(14)
-Created 113 new edge reactions
+Created 115 new edge reactions
     X(1) + CO2X(51) <=> O*(11) + O=C([Pt])[Pt](256)
     X(1) + CO2X(51) <=> O(T)X(257) + CO*(14)
     X(1) + CO2X(51) <=> [Pt]OC(=[Pt])O[Pt](258)
@@ -2324,15 +2252,17 @@ Created 113 new edge reactions
     O*(11) + HCOX(274) <=> H*(10) + CO2X(51)
     OH(D)X(275) + CO*(14) <=> H*(10) + CO2X(51)
     H*(10) + CO2X(51) <=> X(1) + HOCOX(62)
-    X(1) + HOCOX(276) <=> H*(10) + CO2X(51)
-    X(1) + formyloxyX(277) <=> H*(10) + CO2X(51)
+    X(1) + formyloxyX(276) <=> H*(10) + CO2X(51)
+    X(1) + HOCOX(277) <=> H*(10) + CO2X(51)
+    X(1) + HOCOX(277) <=> H*(10) + CO2X(51)
+    X(1) + formyloxyX(276) <=> H*(10) + CO2X(51)
     [Pt]OO[Pt](181) + CO*(14) <=> O*(11) + CO2X(51)
     X(1) + CO3t1X(278) <=> O*(11) + CO2X(51)
     X(1) + CO3t2X(279) <=> O*(11) + CO2X(51)
-    O*(11) + HOCOX(276) <=> OH*(12) + CO2X(51)
+    O*(11) + HOCOX(277) <=> OH*(12) + CO2X(51)
     HO2X(280) + CO*(14) <=> OH*(12) + CO2X(51)
-    O*(11) + formyloxyX(277) <=> OH*(12) + CO2X(51)
-    O*(11) + HOCOX(276) <=> OH*(12) + CO2X(51)
+    O*(11) + formyloxyX(276) <=> OH*(12) + CO2X(51)
+    O*(11) + HOCOX(277) <=> OH*(12) + CO2X(51)
     OH*(12) + CO2X(51) <=> X(1) + OOC(=[Pt])O[Pt](281)
     X(1) + O=C(O)O[Pt].[Pt](282) <=> OH*(12) + CO2X(51)
     X(1) + O=C([Pt])OO.[Pt](283) <=> OH*(12) + CO2X(51)
@@ -2350,9 +2280,9 @@ Created 113 new edge reactions
     CO2*(15) + CO2X(51) <=> O*(11) + O=C([Pt])OC(=O)[Pt](285)
     CO2*(15) + CO2X(51) <=> CO*(14) + CO3t2X(279)
     O*(11) + OCHCOX(288) <=> CO2X(51) + HCO*(16)
-    CO*(14) + formyloxyX(277) <=> CO2X(51) + HCO*(16)
-    CO*(14) + formyloxyX(277) <=> CO2X(51) + HCO*(16)
-    CO*(14) + HOCOX(276) <=> CO2X(51) + HCO*(16)
+    CO*(14) + formyloxyX(276) <=> CO2X(51) + HCO*(16)
+    CO*(14) + formyloxyX(276) <=> CO2X(51) + HCO*(16)
+    CO*(14) + HOCOX(277) <=> CO2X(51) + HCO*(16)
     CO2X(51) + HCO*(16) <=> X(1) + O=C(O[Pt])OC=[Pt](289)
     CO2X(51) + HCO*(16) <=> X(1) + O=C([Pt])OOC=[Pt](290)
     CO2X(51) + HCO*(16) <=> X(1) + O=COC(=[Pt])O[Pt](291)
@@ -2365,8 +2295,8 @@ Created 113 new edge reactions
     CO2X(51) + HCOO*(17) <=> X(1) + O=COOC(=[Pt])O[Pt](295)
     X(1) + O=COC(=O)O[Pt].[Pt](296) <=> CO2X(51) + HCOO*(17)
     X(1) + O=COOC(=O)[Pt].[Pt](297) <=> CO2X(51) + HCOO*(17)
-    CO2*(15) + formyloxyX(277) <=> CO2X(51) + HCOO*(17)
-    CO2*(15) + HOCOX(276) <=> CO2X(51) + HCOO*(17)
+    CO2*(15) + formyloxyX(276) <=> CO2X(51) + HCOO*(17)
+    CO2*(15) + HOCOX(277) <=> CO2X(51) + HCOO*(17)
     O*(11) + O=C(O)C(=O)[Pt].[Pt](298) <=> CO2X(51) + COOH*(18)
     CO*(14) + O=C(O)O[Pt].[Pt](282) <=> CO2X(51) + COOH*(18)
     CO*(14) + O=C(O)O[Pt].[Pt](282) <=> CO2X(51) + COOH*(18)
@@ -2376,8 +2306,8 @@ Created 113 new edge reactions
     CO2X(51) + COOH*(18) <=> X(1) + O=C(O)OC(=[Pt])O[Pt](301)
     X(1) + O=C(O)C(=O)O[Pt].[Pt](302) <=> CO2X(51) + COOH*(18)
     X(1) + O=C(O)OC(=O)[Pt].[Pt](303) <=> CO2X(51) + COOH*(18)
-    CO2*(15) + formyloxyX(277) <=> CO2X(51) + COOH*(18)
-    CO2*(15) + HOCOX(276) <=> CO2X(51) + COOH*(18)
+    CO2*(15) + formyloxyX(276) <=> CO2X(51) + COOH*(18)
+    CO2*(15) + HOCOX(277) <=> CO2X(51) + COOH*(18)
     CO2X(51) + CH2O*(19) <=> X(1) + O=C(CO[Pt])O[Pt](262)
     CO2X(51) + CH2O*(19) <=> X(1) + O=C([Pt])OCO[Pt](263)
     CO2X(51) + CH2O*(19) <=> X(1) + O=C(O[Pt])OC[Pt](264)
@@ -2393,8 +2323,8 @@ Created 113 new edge reactions
     CO2X(51) + CH3O*(20) <=> X(1) + COOC(=[Pt])O[Pt](311)
     X(1) + COC(=O)O[Pt].[Pt](312) <=> CO2X(51) + CH3O*(20)
     X(1) + COOC(=O)[Pt].[Pt](313) <=> CO2X(51) + CH3O*(20)
-    formyloxyX(277) + CH2O*(19) <=> CO2X(51) + CH3O*(20)
-    HOCOX(276) + CH2O*(19) <=> CO2X(51) + CH3O*(20)
+    formyloxyX(276) + CH2O*(19) <=> CO2X(51) + CH3O*(20)
+    HOCOX(277) + CH2O*(19) <=> CO2X(51) + CH3O*(20)
     O*(11) + O=C([Pt])OCO.[Pt](314) <=> CO2X(51) + CH3O2*(21)
     CO*(14) + HOCH2OOX(315) <=> CO2X(51) + CH3O2*(21)
     O*(11) + O=C(CO)O[Pt].[Pt](316) <=> CO2X(51) + CH3O2*(21)
@@ -2404,8 +2334,8 @@ Created 113 new edge reactions
     X(1) + O=C([Pt])OOCO.[Pt](319) <=> CO2X(51) + CH3O2*(21)
     O=C(O)O[Pt].[Pt](282) + CH2O*(19) <=> CO2X(51) + CH3O2*(21)
     O=C([Pt])OO.[Pt](283) + CH2O*(19) <=> CO2X(51) + CH3O2*(21)
-    formyloxyX(277) + formic_acidX(54) <=> CO2X(51) + CH3O2*(21)
-    HOCOX(276) + formic_acidX(54) <=> CO2X(51) + CH3O2*(21)
+    formyloxyX(276) + formic_acidX(54) <=> CO2X(51) + CH3O2*(21)
+    HOCOX(277) + formic_acidX(54) <=> CO2X(51) + CH3O2*(21)
     O*(11) + O=C([Pt])C(=O)O[Pt].[Pt](320) <=> CO2X(51) + CO2X(51)
     CO*(14) + CO3t1X(321) <=> CO2X(51) + CO2X(51)
     O*(11) + O=C([Pt])OC(=O)[Pt].[Pt](322) <=> CO2X(51) + CO2X(51)
@@ -2417,33 +2347,99 @@ Created 113 new edge reactions
     X(1) + O=C(O[Pt])C(=O)O[Pt].[Pt](328) <=> CO2X(51) + CO2X(51)
 
 After model enlargement:
-    The model core has 26 species and 78 reactions
-    The model edge has 304 species and 611 reactions
+    The model core has 25 species and 81 reactions
+    The model edge has 305 species and 623 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 72 reactions.
+Chemkin file contains 75 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 72 reactions.
+Chemkin file contains 75 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 490 reactions.
+Chemkin file contains 505 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 490 reactions.
+Chemkin file contains 505 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:06
-    Memory used: 806.72 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:03
+    Memory used: 761.05 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.6786e-10 s, species COX(60) at 1.0669877576045276e-05 exceeded the minimum rate for simulation interruption of 1e-05
+At time 2.2656e-12 s, species [H][H].[Pt](50) at 1.0297632005396993e-05 exceeded the minimum rate for simulation interruption of 1e-05
 Reached max number of objects...preparing to terminate
-At time 1.6786e-10 s, species COX(60) at rate ratio 1.0669877576045276e-05 exceeded the minimum rate for moving to model core of 1e-05
+At time 2.2656e-12 s, species [H][H].[Pt](50) at rate ratio 1.0297632005396993e-05 exceeded the minimum rate for moving to model core of 1e-05
+terminating simulation due to interrupt...
+conditions choosen for reactor 0 were: T = 493.31420154677875 K, 
+
+
+Adding species [H][H].[Pt](50) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    [H][H].[Pt](50)
+Created 0 new edge species
+Moved 7 reactions from edge to core
+    X(1) + H2(2) <=> [H][H].[Pt](50)
+    X(1) + [H][H].[Pt](50) <=> H*(10) + H*(10)
+    O*(11) + [H][H].[Pt](50) <=> H*(10) + OH*(12)
+    [H][H].[Pt](50) + CO*(14) <=> H*(10) + HCO*(16)
+    [H][H].[Pt](50) + CO2*(15) <=> H*(10) + HCOO*(17)
+    [H][H].[Pt](50) + CO2*(15) <=> H*(10) + COOH*(18)
+    [H][H].[Pt](50) + CH2O*(19) <=> H*(10) + CH3O*(20)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 26 species and 88 reactions
+    The model edge has 304 species and 616 reactions
+
+
+For reaction generation 1 process is used.
+Generating kinetics for new reactions...
+
+Summary of Secondary Model Edge Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 1 new edge reactions
+    [H][H].[Pt](50) + CH2O*(19) <=> H*(10) + OC[Pt](46)
+
+After model enlargement:
+    The model core has 26 species and 88 reactions
+    The model edge has 304 species and 617 reactions
+
+
+Saving current model core to Chemkin file...
+Chemkin file contains 6 reactions.
+Chemkin file contains 82 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 6 reactions.
+Chemkin file contains 82 reactions.
+Saving current model core and edge to Chemkin file...
+Chemkin file contains 202 reactions.
+Chemkin file contains 506 reactions.
+Saving annotated version of Chemkin files...
+Chemkin file contains 202 reactions.
+Chemkin file contains 506 reactions.
+Saving current model core to HTML file...
+Saving current model edge to HTML file...
+Updating RMG execution statistics...
+    Execution time (DD:HH:MM:SS): 00:00:01:05
+    Memory used: 764.70 MB
+
+Conducting simulation of reaction system 1...
+Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
+At time 1.1068e-10 s, species COX(60) at 1.0244730823739118e-05 exceeded the minimum rate for simulation interruption of 1e-05
+Reached max number of objects...preparing to terminate
+At time 1.1068e-10 s, species COX(60) at rate ratio 1.0244730823739118e-05 exceeded the minimum rate for moving to model core of 1e-05
 terminating simulation due to interrupt...
 conditions choosen for reactor 0 were: T = 490.634624414328 K, 
 
@@ -2461,8 +2457,8 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 27 species and 79 reactions
-    The model edge has 303 species and 610 reactions
+    The model core has 27 species and 89 reactions
+    The model edge has 303 species and 616 reactions
 
 
 For reaction generation 1 process is used.
@@ -2484,23 +2480,23 @@ For reaction COX(60) + HCOOH(7) <=> OC(O[Pt])OC#[Pt](332), Ea raised from 674.5 
 For reaction COX(60) + HCOOH(7) <=> OC([Pt])OOC#[Pt](333), Ea raised from 459.7 to 461.6 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + HCOOCH3(9) <=> COC(O[Pt])OC#[Pt](334), Ea raised from 677.9 to 678.5 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + HCOOCH3(9) <=> COC([Pt])OOC#[Pt](335), Ea raised from 463.1 to 464.6 kJ/mol to match endothermicity of reaction.
-For reaction H2O*(13) + COX(60) <=> H*(10) + HOCOX(62), Ea raised from 178.8 to 180.7 kJ/mol to match endothermicity of reaction.
+For reaction H2O*(13) + COX(60) <=> H*(10) + HOCOX(62), Ea raised from 178.8 to 180.6 kJ/mol to match endothermicity of reaction.
 For reaction CO*(14) + COX(60) <=> X(1) + [Pt]#COOC#[Pt](343), Ea raised from 1002.1 to 1002.3 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CO2*(15) <=> X(1) + O=C(O[Pt])OC#[Pt](286), Ea raised from 859.1 to 861.5 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CO2*(15) <=> X(1) + O=C([Pt])OOC#[Pt](287), Ea raised from 474.9 to 479.0 kJ/mol to match endothermicity of reaction.
-For reaction COX(60) + CO2*(15) <=> O*(11) + O=C(C#[Pt])O[Pt](344), Ea raised from 107.2 to 110.8 kJ/mol to match endothermicity of reaction.
-For reaction COX(60) + CO2*(15) <=> CX(31) + CO3t1X(278), Ea raised from 447.8 to 452.1 kJ/mol to match endothermicity of reaction.
-For reaction COX(60) + CO2*(15) <=> O*(11) + O=C([Pt])OC#[Pt](342), Ea raised from 793.5 to 795.6 kJ/mol to match endothermicity of reaction.
+For reaction COX(60) + CO2*(15) <=> O*(11) + O=C(C#[Pt])O[Pt](344), Ea raised from 107.3 to 110.9 kJ/mol to match endothermicity of reaction.
+For reaction COX(60) + CO2*(15) <=> CX(31) + CO3t1X(278), Ea raised from 447.9 to 452.2 kJ/mol to match endothermicity of reaction.
+For reaction COX(60) + CO2*(15) <=> O*(11) + O=C([Pt])OC#[Pt](342), Ea raised from 793.5 to 795.7 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CO2*(15) <=> CX(31) + CO3t2X(279), Ea raised from 637.2 to 641.9 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + HCO*(16) <=> X(1) + [Pt]=COOC#[Pt](347), Ea raised from 766.3 to 766.7 kJ/mol to match endothermicity of reaction.
-For reaction COX(60) + COOH*(18) <=> X(1) + OC(=[Pt])OOC#[Pt](352), Ea raised from 709.6 to 712.3 kJ/mol to match endothermicity of reaction.
+For reaction COX(60) + COOH*(18) <=> X(1) + OC(=[Pt])OOC#[Pt](352), Ea raised from 709.6 to 712.2 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CH2O*(19) <=> H*(10) + OCHCOX(346), Ea raised from 198.6 to 199.6 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CH2O*(19) <=> X(1) + [Pt]COOC#[Pt](331), Ea raised from 438.3 to 438.7 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CH2O*(19) <=> O*(11) + [Pt]OCC#[Pt](354), Ea raised from 224.8 to 225.9 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CH2O*(19) <=> CX(31) + [Pt]OCO[Pt](305), Ea raised from 358.0 to 359.0 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CH2O*(19) <=> CX(31) + [Pt]COO[Pt](307), Ea raised from 532.0 to 534.7 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CH3OH*(22) <=> H*(10) + OCC(=[Pt])O[Pt](360), Ea raised from 181.4 to 182.3 kJ/mol to match endothermicity of reaction.
-For reaction COX(60) + CH3OH*(22) <=> H*(10) + CH3OCOX(358), Ea raised from 187.8 to 189.0 kJ/mol to match endothermicity of reaction.
+For reaction COX(60) + CH3OH*(22) <=> H*(10) + CH3OCOX(358), Ea raised from 187.8 to 188.9 kJ/mol to match endothermicity of reaction.
 For reaction COX(60) + CO2X(51) <=> X(1) + [Pt]OC(=[Pt])OOC#[Pt](369), Ea raised from 1580.2 to 1580.7 kJ/mol to match endothermicity of reaction.
 
 Summary of Secondary Model Edge Enlargement
@@ -2556,7 +2552,7 @@ Created 48 new edge species
     [Pt]OC(=[Pt])OC#[Pt](375)
     [Pt].[Pt]#COOC#[Pt](376)
 Added 0 new core reactions
-Created 113 new edge reactions
+Created 114 new edge reactions
     COX(60) <=> O*(11) + CX(31)
     X(1) + COX(60) <=> O*(11) + C(T)X(329)
     X(1) + COX(60) <=> O(T)X(257) + CX(31)
@@ -2571,6 +2567,7 @@ Created 113 new edge reactions
     O*(11) + CHX(336) <=> H*(10) + COX(60)
     OH(D)X(275) + CX(31) <=> H*(10) + COX(60)
     X(1) + [Pt]OC=[Pt](61) <=> H*(10) + COX(60)
+    X(1) + OC#[Pt].[Pt](337) <=> H*(10) + COX(60)
     X(1) + OC#[Pt].[Pt](337) <=> H*(10) + COX(60)
     [Pt]OO[Pt](181) + CX(31) <=> O*(11) + COX(60)
     [Pt]OC(=[Pt])O[Pt](258) <=> O*(11) + COX(60)
@@ -2595,7 +2592,7 @@ Created 113 new edge reactions
     COX(60) + CO2*(15) <=> CX(31) + CO3t2X(279)
     COX(60) + HCO*(16) <=> CO*(14) + [Pt]OC=[Pt](61)
     O*(11) + O=CC#[Pt].[Pt](345) <=> COX(60) + HCO*(16)
-    CX(31) + formyloxyX(277) <=> COX(60) + HCO*(16)
+    CX(31) + formyloxyX(276) <=> COX(60) + HCO*(16)
     CO*(14) + OC#[Pt].[Pt](337) <=> COX(60) + HCO*(16)
     X(1) + OCHCOX(346) <=> COX(60) + HCO*(16)
     COX(60) + HCO*(16) <=> X(1) + [Pt]=COOC#[Pt](347)
@@ -2649,7 +2646,6 @@ Created 113 new edge reactions
     COX(60) + CH3OH*(22) <=> [Pt]OC=[Pt](61) + OC[Pt](46)
     COX(60) + CH3OH*(22) <=> H*(10) + OCC(=[Pt])O[Pt](360)
     COX(60) + CH3OH*(22) <=> H*(10) + CH3OCOX(358)
-    [H][H].[Pt](50) + COX(60) <=> H*(10) + [Pt]OC=[Pt](61)
     O*(11) + O=C([Pt])C(=[Pt])O[Pt](341) <=> COX(60) + CO2X(51)
     CO*(14) + [Pt]OC(=[Pt])O[Pt](258) <=> COX(60) + CO2X(51)
     O*(11) + O=C(C#[Pt])O[Pt].[Pt](364) <=> COX(60) + CO2X(51)
@@ -2663,6 +2659,7 @@ Created 113 new edge reactions
     COX(60) + CO2X(51) <=> X(1) + [Pt]OC(=[Pt])OOC#[Pt](369)
     X(1) + O=C([Pt])OOC#[Pt].[Pt](370) <=> COX(60) + CO2X(51)
     X(1) + O=C(O[Pt])OC#[Pt].[Pt](371) <=> COX(60) + CO2X(51)
+    [H][H].[Pt](50) + COX(60) <=> H*(10) + [Pt]OC=[Pt](61)
     O*(11) + [Pt]OC(=[Pt])C#[Pt](372) <=> COX(60) + COX(60)
     CX(31) + [Pt]OC(=[Pt])O[Pt](258) <=> COX(60) + COX(60)
     O*(11) + [Pt].[Pt]#COC#[Pt](373) <=> COX(60) + COX(60)
@@ -2672,32 +2669,32 @@ Created 113 new edge reactions
     X(1) + [Pt].[Pt]#COOC#[Pt](376) <=> COX(60) + COX(60)
 
 After model enlargement:
-    The model core has 27 species and 79 reactions
-    The model edge has 351 species and 723 reactions
+    The model core has 27 species and 89 reactions
+    The model edge has 351 species and 730 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:09
-    Memory used: 807.88 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:08
+    Memory used: 778.42 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9834e-08 s, reached target termination RateRatio: 0.00996944139472743
-    CO2(4) conversion: 0.005698  
+At time 2.2474e-08 s, reached target termination RateRatio: 0.009996905875955444
+    CO2(4) conversion: 0.00704   
 conditions choosen for reactor 0 were: T = 501.39258000021965 K, 
 
 
@@ -2711,32 +2708,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 27 species and 79 reactions
-    The model edge has 351 species and 723 reactions
+    The model core has 27 species and 89 reactions
+    The model edge has 351 species and 730 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:11
-    Memory used: 812.25 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:10
+    Memory used: 786.61 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.3716e-09 s, reached target termination RateRatio: 0.00995521896018034
-    CO2(4) conversion: 0.0005164 
+At time 4.4197e-09 s, reached target termination RateRatio: 0.009921381962695576
+    CO2(4) conversion: 0.001369  
 conditions choosen for reactor 1 were: T = 493.1055219585634 K, 
 
 
@@ -2750,32 +2747,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 27 species and 79 reactions
-    The model edge has 351 species and 723 reactions
+    The model core has 27 species and 89 reactions
+    The model edge has 351 species and 730 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:13
-    Memory used: 814.66 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:12
+    Memory used: 788.93 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.3872e-09 s, reached target termination RateRatio: 0.00994494111682644
-    CO2(4) conversion: 0.0005294 
+At time 4.4573e-09 s, reached target termination RateRatio: 0.00995309638405669
+    CO2(4) conversion: 0.001397  
 conditions choosen for reactor 1 were: T = 493.31420154677875 K, 
 
 
@@ -2789,32 +2786,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 27 species and 79 reactions
-    The model edge has 351 species and 723 reactions
+    The model core has 27 species and 89 reactions
+    The model edge has 351 species and 730 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
     Execution time (DD:HH:MM:SS): 00:00:01:14
-    Memory used: 819.29 MB
+    Memory used: 796.81 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.3854e-09 s, reached target termination RateRatio: 0.009981714972671364
-    CO2(4) conversion: 0.0005295 
+At time 4.4581e-09 s, reached target termination RateRatio: 0.009953634553527794
+    CO2(4) conversion: 0.001397  
 conditions choosen for reactor 1 were: T = 490.634624414328 K, 
 
 
@@ -2828,32 +2825,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 27 species and 79 reactions
-    The model edge has 351 species and 723 reactions
+    The model core has 27 species and 89 reactions
+    The model edge has 351 species and 730 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:16
-    Memory used: 821.83 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:15
+    Memory used: 801.34 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.3848e-09 s, reached target termination RateRatio: 0.009921041370289645
-    CO2(4) conversion: 0.0005263 
+At time 4.4455e-09 s, reached target termination RateRatio: 0.009955588908436092
+    CO2(4) conversion: 0.00139   
 conditions choosen for reactor 1 were: T = 501.39258000021965 K, 
 
 
@@ -2867,33 +2864,33 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 27 species and 79 reactions
-    The model edge has 351 species and 723 reactions
+    The model core has 27 species and 89 reactions
+    The model edge has 351 species and 730 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 73 reactions.
+Chemkin file contains 83 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 603 reactions.
+Chemkin file contains 620 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:18
-    Memory used: 822.46 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:17
+    Memory used: 804.21 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.2132e-09 s, species [Pt]OC=[Pt](61) at 1.0013778721084281e-05 exceeded the minimum rate for simulation interruption of 1e-05
+At time 2.6074e-11 s, species [Pt]OC=[Pt](61) at 1.0030659682913337e-05 exceeded the minimum rate for simulation interruption of 1e-05
 Reached max number of objects...preparing to terminate
-At time 1.2132e-09 s, species [Pt]OC=[Pt](61) at rate ratio 1.0013778721084281e-05 exceeded the minimum rate for moving to model core of 1e-05
+At time 2.6074e-11 s, species [Pt]OC=[Pt](61) at rate ratio 1.0030659682913337e-05 exceeded the minimum rate for moving to model core of 1e-05
 terminating simulation due to interrupt...
 conditions choosen for reactor 2 were: T = 493.1055219585634 K, 
 
@@ -2921,8 +2918,8 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 28 species and 90 reactions
-    The model edge has 350 species and 712 reactions
+    The model core has 28 species and 100 reactions
+    The model edge has 350 species and 719 reactions
 
 
 For reaction generation 1 process is used.
@@ -2937,14 +2934,14 @@ Species CC([Pt])O[Pt] renamed CH3CHOX based on thermo library name
 Species OCC([Pt])O[Pt] renamed HOCH2CHOX based on thermo library name
 Generating kinetics for new reactions...
 For reaction [Pt]OC=[Pt](61) <=> O*(11) + CHX(32), Ea raised from 0.0 to 3.0 kJ/mol to match endothermicity of reaction.
-For reaction CO2(4) + [Pt]OC=[Pt](61) <=> O=C([Pt])OOC=[Pt](290), Ea raised from 565.4 to 565.8 kJ/mol to match endothermicity of reaction.
+For reaction CO2(4) + [Pt]OC=[Pt](61) <=> O=C([Pt])OOC=[Pt](290), Ea raised from 565.3 to 565.8 kJ/mol to match endothermicity of reaction.
 For reaction [Pt]OC=[Pt](61) + CH2O(6) <=> [Pt]COOC=[Pt](381), Ea raised from 531.2 to 532.3 kJ/mol to match endothermicity of reaction.
-For reaction O*(11) + [Pt]CO[Pt](52) <=> OH*(12) + [Pt]OC=[Pt](61), Ea raised from 0.0 to 6.7 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + [Pt]OC=[Pt](61) <=> X(1) + O=C(O[Pt])OC=[Pt](289), Ea raised from 435.0 to 435.1 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + [Pt]OC=[Pt](61) <=> X(1) + O=C([Pt])OOC=[Pt](290), Ea raised from 538.3 to 539.4 kJ/mol to match endothermicity of reaction.
-For reaction CO2*(15) + [Pt]OC=[Pt](61) <=> O*(11) + O=C(C=[Pt])O[Pt](395), Ea raised from 228.1 to 230.1 kJ/mol to match endothermicity of reaction.
+For reaction CO2*(15) + [Pt]OC=[Pt](61) <=> O*(11) + O=C(C=[Pt])O[Pt](395), Ea raised from 228.2 to 230.2 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + [Pt]OC=[Pt](61) <=> CO3t1X(278) + CHX(32), Ea raised from 315.6 to 316.0 kJ/mol to match endothermicity of reaction.
 For reaction CO2*(15) + [Pt]OC=[Pt](61) <=> CO3t2X(279) + CHX(32), Ea raised from 505.0 to 505.8 kJ/mol to match endothermicity of reaction.
+For reaction COX(60) + formic_acidX(54) <=> [Pt]OC=[Pt](61) + COOH*(18), Ea raised from 99.2 to 102.5 kJ/mol to match endothermicity of reaction.
 For reaction X(1) + methyl_formateX(56) <=> [Pt]OC=[Pt](61) + CH3O*(20), Ea raised from 114.5 to 114.8 kJ/mol to match endothermicity of reaction.
 
 Summary of Secondary Model Edge Enlargement
@@ -3011,7 +3008,7 @@ Created 59 new edge species
     [Pt].[Pt]OC=CO[Pt](434)
     [Pt].[Pt]=COOC=[Pt](435)
 Added 0 new core reactions
-Created 154 new edge reactions
+Created 155 new edge reactions
     [Pt]OC=[Pt](61) <=> O*(11) + CHX(32)
     [Pt]OC=[Pt](61) <=> OC([Pt])=[Pt](377)
     H*(10) + O=C=[Pt].[Pt](378) <=> X(1) + [Pt]OC=[Pt](61)
@@ -3029,13 +3026,14 @@ Created 154 new edge reactions
     OH(D)X(275) + CHX(32) <=> H*(10) + [Pt]OC=[Pt](61)
     X(1) + [Pt]CO[Pt](52) <=> H*(10) + [Pt]OC=[Pt](61)
     X(1) + HCOH(T)X(387) <=> H*(10) + [Pt]OC=[Pt](61)
+    X(1) + HCOH(T)X(387) <=> H*(10) + [Pt]OC=[Pt](61)
     [H][H].[Pt](50) + O=C=[Pt].[Pt](378) <=> H*(10) + [Pt]OC=[Pt](61)
     [Pt]OO[Pt](181) + CHX(32) <=> O*(11) + [Pt]OC=[Pt](61)
     OH*(12) + O=C=[Pt].[Pt](378) <=> O*(11) + [Pt]OC=[Pt](61)
     [Pt]OC([Pt])O[Pt](388) <=> O*(11) + [Pt]OC=[Pt](61)
     X(1) + [Pt]OOC=[Pt](389) <=> O*(11) + [Pt]OC=[Pt](61)
-    X(1) + formyloxyX(277) <=> O*(11) + [Pt]OC=[Pt](61)
-    O*(11) + [Pt]CO[Pt](52) <=> OH*(12) + [Pt]OC=[Pt](61)
+    X(1) + formyloxyX(276) <=> O*(11) + [Pt]OC=[Pt](61)
+    OH*(12) + [Pt]OC=[Pt](61) <=> O*(11) + [Pt]CO[Pt](52)
     O*(11) + HCOH(T)X(387) <=> OH*(12) + [Pt]OC=[Pt](61)
     HO2X(280) + CHX(32) <=> OH*(12) + [Pt]OC=[Pt](61)
     O*(11) + HCOH(T)X(387) <=> OH*(12) + [Pt]OC=[Pt](61)
@@ -3059,7 +3057,7 @@ Created 154 new edge reactions
     CO2*(15) + [Pt]OC=[Pt](61) <=> CO3t2X(279) + CHX(32)
     HCO*(16) + [Pt]OC=[Pt](61) <=> CO*(14) + [Pt]CO[Pt](52)
     O*(11) + ketene(T)X(396) <=> HCO*(16) + [Pt]OC=[Pt](61)
-    CHX(32) + formyloxyX(277) <=> HCO*(16) + [Pt]OC=[Pt](61)
+    CHX(32) + formyloxyX(276) <=> HCO*(16) + [Pt]OC=[Pt](61)
     CO*(14) + HCOH(T)X(387) <=> HCO*(16) + [Pt]OC=[Pt](61)
     X(1) + glyoxalX(397) <=> HCO*(16) + [Pt]OC=[Pt](61)
     HCO*(16) + [Pt]OC=[Pt](61) <=> X(1) + [Pt]=COOC=[Pt](398)
@@ -3122,23 +3120,23 @@ Created 154 new edge reactions
     [Pt]OC=[Pt](61) + CH3OH*(22) <=> [Pt]CO[Pt](52) + OC[Pt](46)
     [Pt]OC=[Pt](61) + CH3OH*(22) <=> H*(10) + HOCH2CHOX(411)
     [Pt]OC=[Pt](61) + CH3OH*(22) <=> H*(10) + methyl_formateX(56)
-    [H][H].[Pt](50) + [Pt]OC=[Pt](61) <=> H*(10) + [Pt]CO[Pt](52)
     O*(11) + O=C([Pt])C([Pt])O[Pt](392) <=> CO2X(51) + [Pt]OC=[Pt](61)
     CO*(14) + [Pt]OC([Pt])O[Pt](388) <=> CO2X(51) + [Pt]OC=[Pt](61)
     O*(11) + O=C(C=[Pt])O[Pt].[Pt](415) <=> CO2X(51) + [Pt]OC=[Pt](61)
     CO3t1X(321) + CHX(32) <=> CO2X(51) + [Pt]OC=[Pt](61)
-    COX(60) + formyloxyX(277) <=> CO2X(51) + [Pt]OC=[Pt](61)
+    COX(60) + formyloxyX(276) <=> CO2X(51) + [Pt]OC=[Pt](61)
     O*(11) + O=C([Pt])OC=[Pt].[Pt](416) <=> CO2X(51) + [Pt]OC=[Pt](61)
     CO3t2X(323) + CHX(32) <=> CO2X(51) + [Pt]OC=[Pt](61)
-    COX(60) + HOCOX(276) <=> CO2X(51) + [Pt]OC=[Pt](61)
+    COX(60) + HOCOX(277) <=> CO2X(51) + [Pt]OC=[Pt](61)
     CO*(14) + [Pt].[Pt]OOC=[Pt](417) <=> CO2X(51) + [Pt]OC=[Pt](61)
     X(1) + O=C(O[Pt])C([Pt])O[Pt](418) <=> CO2X(51) + [Pt]OC=[Pt](61)
     X(1) + O=C([Pt])OC([Pt])O[Pt](419) <=> CO2X(51) + [Pt]OC=[Pt](61)
     CO2X(51) + [Pt]OC=[Pt](61) <=> X(1) + [Pt]OC(=[Pt])OOC=[Pt](420)
     X(1) + O=C([Pt])OOC=[Pt].[Pt](421) <=> CO2X(51) + [Pt]OC=[Pt](61)
     X(1) + O=C(O[Pt])OC=[Pt].[Pt](422) <=> CO2X(51) + [Pt]OC=[Pt](61)
-    O=C=[Pt].[Pt](378) + formyloxyX(277) <=> CO2X(51) + [Pt]OC=[Pt](61)
-    O=C=[Pt].[Pt](378) + HOCOX(276) <=> CO2X(51) + [Pt]OC=[Pt](61)
+    O=C=[Pt].[Pt](378) + formyloxyX(276) <=> CO2X(51) + [Pt]OC=[Pt](61)
+    O=C=[Pt].[Pt](378) + HOCOX(277) <=> CO2X(51) + [Pt]OC=[Pt](61)
+    [H][H].[Pt](50) + [Pt]OC=[Pt](61) <=> H*(10) + [Pt]CO[Pt](52)
     O*(11) + [Pt]OC(=[Pt])C=[Pt](423) <=> COX(60) + [Pt]OC=[Pt](61)
     [Pt]OC(=[Pt])O[Pt](258) + CHX(32) <=> COX(60) + [Pt]OC=[Pt](61)
     O*(11) + [Pt]OC([Pt])C#[Pt](424) <=> COX(60) + [Pt]OC=[Pt](61)
@@ -3168,33 +3166,33 @@ Created 154 new edge reactions
     O=C=[Pt].[Pt](378) + HCOH(T)X(387) <=> [Pt]OC=[Pt](61) + [Pt]OC=[Pt](61)
 
 After model enlargement:
-    The model core has 28 species and 90 reactions
-    The model edge has 409 species and 866 reactions
+    The model core has 28 species and 100 reactions
+    The model edge has 409 species and 874 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 84 reactions.
+Chemkin file contains 94 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 84 reactions.
+Chemkin file contains 94 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 757 reactions.
+Chemkin file contains 775 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 757 reactions.
+Chemkin file contains 775 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:22
-    Memory used: 831.29 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:21
+    Memory used: 811.77 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.3452e-08 s, species CHX(32) at 1.0001316308080856e-05 exceeded the minimum rate for simulation interruption of 1e-05
+At time 7.8645e-09 s, species CHX(32) at 1.0013861623713647e-05 exceeded the minimum rate for simulation interruption of 1e-05
 Reached max number of objects...preparing to terminate
-At time 1.3452e-08 s, species CHX(32) at rate ratio 1.0001316308080856e-05 exceeded the minimum rate for moving to model core of 1e-05
+At time 7.8645e-09 s, species CHX(32) at rate ratio 1.0013861623713647e-05 exceeded the minimum rate for moving to model core of 1e-05
 terminating simulation due to interrupt...
 conditions choosen for reactor 2 were: T = 493.31420154677875 K, 
 
@@ -3214,8 +3212,8 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 408 species and 863 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 408 species and 871 reactions
 
 
 For reaction generation 1 process is used.
@@ -3223,7 +3221,6 @@ Generating thermo for new species...
 Species O=CC=[Pt] renamed ketene(T)X based on thermo library name
 Generating kinetics for new reactions...
 For reaction CO2*(15) + CHX(32) <=> CX(31) + COOH*(18), Ea raised from 109.5 to 110.0 kJ/mol to match endothermicity of reaction.
-For reaction CHX(32) + CH2O*(19) <=> CX(31) + CH3O*(20), Ea raised from 54.6 to 54.7 kJ/mol to match endothermicity of reaction.
 
 Summary of Secondary Model Edge Enlargement
 ---------------------------------
@@ -3284,12 +3281,12 @@ Created 64 new edge reactions
     CHX(32) + CH3OH*(22) <=> C=[Pt](63) + OC[Pt](46)
     CHX(32) + CH3OH*(22) <=> H*(10) + OCC=[Pt](440)
     CHX(32) + CH3OH*(22) <=> H*(10) + COC=[Pt](439)
-    [H][H].[Pt](50) + CHX(32) <=> H*(10) + C=[Pt](63)
     O*(11) + HCCOX(391) <=> CO2X(51) + CHX(32)
-    CX(31) + formyloxyX(277) <=> CO2X(51) + CHX(32)
-    CX(31) + HOCOX(276) <=> CO2X(51) + CHX(32)
+    CX(31) + formyloxyX(276) <=> CO2X(51) + CHX(32)
+    CX(31) + HOCOX(277) <=> CO2X(51) + CHX(32)
     X(1) + O=C(C=[Pt])O[Pt](395) <=> CO2X(51) + CHX(32)
     X(1) + O=C([Pt])OC=[Pt](393) <=> CO2X(51) + CHX(32)
+    [H][H].[Pt](50) + CHX(32) <=> H*(10) + C=[Pt](63)
     CX(31) + [Pt]OC=[Pt](61) <=> COX(60) + CHX(32)
     O*(11) + [Pt]=CC#[Pt](442) <=> COX(60) + CHX(32)
     CX(31) + [Pt]OC=[Pt](61) <=> COX(60) + CHX(32)
@@ -3307,32 +3304,32 @@ Created 64 new edge reactions
     [Pt]=CC=[Pt](444) <=> CHX(32) + CHX(32)
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:25
-    Memory used: 835.83 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:24
+    Memory used: 816.71 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.3678e-08 s, reached target termination RateRatio: 0.009990252964172181
-    CO(3) conversion: 0.0338    
+At time 1.9507e-08 s, reached target termination RateRatio: 0.009965252970102837
+    CO(3) conversion: 0.03608   
 conditions choosen for reactor 2 were: T = 490.634624414328 K, 
 
 
@@ -3346,32 +3343,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:27
-    Memory used: 840.35 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:26
+    Memory used: 826.16 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.3679e-08 s, reached target termination RateRatio: 0.009969587912258267
-    CO(3) conversion: 0.03362   
+At time 1.9467e-08 s, reached target termination RateRatio: 0.009935875929772396
+    CO(3) conversion: 0.03589   
 conditions choosen for reactor 2 were: T = 501.39258000021965 K, 
 
 
@@ -3385,32 +3382,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:29
-    Memory used: 840.36 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:28
+    Memory used: 836.15 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 7.4298e-09 s, reached target termination RateRatio: 0.009956432022111262
-    CO(3) conversion: 0.005395  
+At time 3.7601e-09 s, reached target termination RateRatio: 0.009957482406783987
+    CO(3) conversion: 0.006977  
 conditions choosen for reactor 3 were: T = 493.1055219585634 K, 
 
 
@@ -3424,32 +3421,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:32
-    Memory used: 849.40 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:30
+    Memory used: 841.10 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 7.4599e-09 s, reached target termination RateRatio: 0.009996304537066823
-    CO(3) conversion: 0.005538  
+At time 3.7988e-09 s, reached target termination RateRatio: 0.009965136619944807
+    CO(3) conversion: 0.007122  
 conditions choosen for reactor 3 were: T = 493.31420154677875 K, 
 
 
@@ -3463,32 +3460,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:34
-    Memory used: 849.90 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:32
+    Memory used: 846.44 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 7.5041e-09 s, reached target termination RateRatio: 0.009928929205739224
-    CO(3) conversion: 0.005553  
+At time 3.7981e-09 s, reached target termination RateRatio: 0.009980754220748204
+    CO(3) conversion: 0.007125  
 conditions choosen for reactor 3 were: T = 490.634624414328 K, 
 
 
@@ -3502,32 +3499,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:36
-    Memory used: 852.68 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:34
+    Memory used: 846.50 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 7.4480e-09 s, reached target termination RateRatio: 0.009994029618934116
-    CO(3) conversion: 0.005502  
+At time 3.7870e-09 s, reached target termination RateRatio: 0.00998761802565969
+    CO(3) conversion: 0.007087  
 conditions choosen for reactor 3 were: T = 501.39258000021965 K, 
 
 
@@ -3541,33 +3538,33 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:38
-    Memory used: 857.20 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:36
+    Memory used: 846.60 MB
 
 Making seed mechanism...
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.0002e-08 s, reached target termination RateRatio: 0.00994673465723932
-    CO2(4) conversion: 0.00585   
+At time 2.2741e-08 s, reached target termination RateRatio: 0.009978933182023437
+    CO2(4) conversion: 0.007194  
 conditions choosen for reactor 0 were: T = 489.7988131544492 K, 
 
 
@@ -3581,32 +3578,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:41
-    Memory used: 866.28 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:38
+    Memory used: 851.50 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9816e-08 s, reached target termination RateRatio: 0.009974467000767368
-    CO2(4) conversion: 0.005686  
+At time 2.2468e-08 s, reached target termination RateRatio: 0.00998660729411444
+    CO2(4) conversion: 0.007028  
 conditions choosen for reactor 0 were: T = 507.84311814049767 K, 
 
 
@@ -3620,32 +3617,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:43
-    Memory used: 866.44 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:40
+    Memory used: 856.68 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.0031e-08 s, reached target termination RateRatio: 0.009980815136971284
-    CO2(4) conversion: 0.005934  
+At time 2.2862e-08 s, reached target termination RateRatio: 0.009996657664165819
+    CO2(4) conversion: 0.007285  
 conditions choosen for reactor 0 were: T = 491.5487202316912 K, 
 
 
@@ -3659,32 +3656,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:45
-    Memory used: 870.99 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:42
+    Memory used: 857.34 MB
 
 Conducting simulation of reaction system 1...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.9805e-08 s, reached target termination RateRatio: 0.009996150678613792
-    CO2(4) conversion: 0.005708  
+At time 2.2535e-08 s, reached target termination RateRatio: 0.009965907902684664
+    CO2(4) conversion: 0.007054  
 conditions choosen for reactor 0 were: T = 535.0928630416612 K, 
 
 
@@ -3698,32 +3695,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:47
-    Memory used: 871.08 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:44
+    Memory used: 858.61 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.3979e-09 s, reached target termination RateRatio: 0.00998567355381572
-    CO2(4) conversion: 0.00054   
+At time 4.4829e-09 s, reached target termination RateRatio: 0.009997321463679034
+    CO2(4) conversion: 0.00142   
 conditions choosen for reactor 1 were: T = 489.7988131544492 K, 
 
 
@@ -3737,32 +3734,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:49
-    Memory used: 871.35 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:46
+    Memory used: 860.22 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.3838e-09 s, reached target termination RateRatio: 0.009916715985301994
-    CO2(4) conversion: 0.0005252 
+At time 4.4327e-09 s, reached target termination RateRatio: 0.009991224463332154
+    CO2(4) conversion: 0.001387  
 conditions choosen for reactor 1 were: T = 507.84311814049767 K, 
 
 
@@ -3776,32 +3773,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:51
-    Memory used: 881.25 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:48
+    Memory used: 862.10 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.4089e-09 s, reached target termination RateRatio: 0.009983871421599195
-    CO2(4) conversion: 0.0005484 
+At time 4.5120e-09 s, reached target termination RateRatio: 0.00999473772094322
+    CO2(4) conversion: 0.001438  
 conditions choosen for reactor 1 were: T = 491.5487202316912 K, 
 
 
@@ -3815,32 +3812,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:53
-    Memory used: 881.64 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:50
+    Memory used: 862.59 MB
 
 Conducting simulation of reaction system 2...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 1.3826e-09 s, reached target termination RateRatio: 0.009984325877053364
-    CO2(4) conversion: 0.0005272 
+At time 4.4443e-09 s, reached target termination RateRatio: 0.009976577784899193
+    CO2(4) conversion: 0.001392  
 conditions choosen for reactor 1 were: T = 535.0928630416612 K, 
 
 
@@ -3854,32 +3851,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:55
-    Memory used: 882.07 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:52
+    Memory used: 867.91 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.3733e-08 s, reached target termination RateRatio: 0.009997128942383639
-    CO(3) conversion: 0.03438   
+At time 1.9675e-08 s, reached target termination RateRatio: 0.009958872834674873
+    CO(3) conversion: 0.03667   
 conditions choosen for reactor 2 were: T = 489.7988131544492 K, 
 
 
@@ -3893,32 +3890,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:01:58
-    Memory used: 883.25 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:54
+    Memory used: 868.07 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.3686e-08 s, reached target termination RateRatio: 0.009956830726544854
-    CO(3) conversion: 0.03356   
+At time 1.9443e-08 s, reached target termination RateRatio: 0.009949130052334809
+    CO(3) conversion: 0.03583   
 conditions choosen for reactor 2 were: T = 507.84311814049767 K, 
 
 
@@ -3932,32 +3929,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:00
-    Memory used: 884.15 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:57
+    Memory used: 869.02 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.3810e-08 s, reached target termination RateRatio: 0.009972389762413126
-    CO(3) conversion: 0.03485   
+At time 1.9792e-08 s, reached target termination RateRatio: 0.009986637002308979
+    CO(3) conversion: 0.03713   
 conditions choosen for reactor 2 were: T = 491.5487202316912 K, 
 
 
@@ -3971,32 +3968,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:02
-    Memory used: 889.74 MB
+    Execution time (DD:HH:MM:SS): 00:00:01:59
+    Memory used: 873.83 MB
 
 Conducting simulation of reaction system 3...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 2.3663e-08 s, reached target termination RateRatio: 0.009992786814995252
-    CO(3) conversion: 0.03368   
+At time 1.9480e-08 s, reached target termination RateRatio: 0.009946497018034574
+    CO(3) conversion: 0.03596   
 conditions choosen for reactor 2 were: T = 535.0928630416612 K, 
 
 
@@ -4010,32 +4007,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:04
-    Memory used: 890.68 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:01
+    Memory used: 874.82 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 7.5095e-09 s, reached target termination RateRatio: 0.009987223126350406
-    CO(3) conversion: 0.005661  
+At time 3.8363e-09 s, reached target termination RateRatio: 0.009908741237967304
+    CO(3) conversion: 0.007242  
 conditions choosen for reactor 3 were: T = 489.7988131544492 K, 
 
 
@@ -4049,32 +4046,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:07
-    Memory used: 897.03 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:03
+    Memory used: 880.65 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 7.4731e-09 s, reached target termination RateRatio: 0.009947729551460926
-    CO(3) conversion: 0.005498  
+At time 3.7848e-09 s, reached target termination RateRatio: 0.009977305268428193
+    CO(3) conversion: 0.007075  
 conditions choosen for reactor 3 were: T = 507.84311814049767 K, 
 
 
@@ -4088,32 +4085,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:09
-    Memory used: 902.23 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:05
+    Memory used: 881.89 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 7.5627e-09 s, reached target termination RateRatio: 0.009955192559217138
-    CO(3) conversion: 0.00576   
+At time 3.8594e-09 s, reached target termination RateRatio: 0.009925123213688415
+    CO(3) conversion: 0.007334  
 conditions choosen for reactor 3 were: T = 491.5487202316912 K, 
 
 
@@ -4127,32 +4124,32 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:11
-    Memory used: 904.42 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:07
+    Memory used: 882.88 MB
 
 Conducting simulation of reaction system 4...
 Warning: Pressure may be varying, but using initial pressure to evaluate k(T,P) expressions!
-At time 7.4495e-09 s, reached target termination RateRatio: 0.009999385076244195
-    CO(3) conversion: 0.005514  
+At time 3.7911e-09 s, reached target termination RateRatio: 0.009981786962762463
+    CO(3) conversion: 0.0071    
 conditions choosen for reactor 3 were: T = 535.0928630416612 K, 
 
 
@@ -4166,27 +4163,27 @@ Added 0 new core reactions
 Created 0 new edge reactions
 
 After model enlargement:
-    The model core has 29 species and 93 reactions
-    The model edge has 418 species and 927 reactions
+    The model core has 29 species and 103 reactions
+    The model edge has 418 species and 935 reactions
 
 
 Saving current model core to Chemkin file...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 6 reactions.
-Chemkin file contains 87 reactions.
+Chemkin file contains 97 reactions.
 Saving current model core and edge to Chemkin file...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving annotated version of Chemkin files...
 Chemkin file contains 202 reactions.
-Chemkin file contains 821 reactions.
+Chemkin file contains 839 reactions.
 Saving current model core to HTML file...
 Saving current model edge to HTML file...
 Updating RMG execution statistics...
-    Execution time (DD:HH:MM:SS): 00:00:02:14
-    Memory used: 910.75 MB
+    Execution time (DD:HH:MM:SS): 00:00:02:09
+    Memory used: 884.10 MB
 
 Making seed mechanism...
 Performing final model checks...
@@ -4194,7 +4191,7 @@ No collision rate violators found in the model's core.
 
 MODEL GENERATION COMPLETED
 
-The final model core has 29 species and 93 reactions
-The final model edge has 418 species and 927 reactions
+The final model core has 29 species and 103 reactions
+The final model edge has 418 species and 935 reactions
 
-RMG execution terminated at Wed Jan 27 13:29:29 2021
+RMG execution terminated at Mon Feb  1 16:28:22 2021

@@ -143,7 +143,7 @@ entry(
     index = 9,
     label = "H* + CO2 <=> HCOO*",
     degeneracy = 2.0,
-    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(82.0048,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Adsorbate1;R=R] for rate rule [*H;R=R]
+    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(111.531,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Adsorbate1;R=R] for rate rule [*H;R=R]
     Euclidian distance = 1.0
     Multiplied by reaction path degeneracy 2.0
     family: Surface_EleyRideal_Addition_Multiple_Bond"""),
@@ -175,16 +175,18 @@ entry(
     index = 11,
     label = "H* + CO2 <=> COOH*",
     degeneracy = 2.0,
-    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(73.06,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Adsorbate1;R=R] for rate rule [*H;R=R]
+    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(96.0935,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Adsorbate1;R=R] for rate rule [*H;R=R]
     Euclidian distance = 1.0
     Multiplied by reaction path degeneracy 2.0
-    family: Surface_EleyRideal_Addition_Multiple_Bond"""),
+    family: Surface_EleyRideal_Addition_Multiple_Bond
+    Ea raised from 95.8 to 96.1 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;R=R] for rate rule [*H;R=R]
 Euclidian distance = 1.0
 Multiplied by reaction path degeneracy 2.0
 family: Surface_EleyRideal_Addition_Multiple_Bond
+Ea raised from 95.8 to 96.1 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -267,18 +269,18 @@ entry(
     index = 17,
     label = "X + X + H2O <=> H* + OH*",
     degeneracy = 2.0,
-    kinetics = StickingCoefficient(A=0.032, n=0, Ea=(50.3265,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [H2O;VacantSite1;VacantSite2]
+    kinetics = StickingCoefficient(A=0.032, n=0, Ea=(59.6227,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [H2O;VacantSite1;VacantSite2]
     Euclidian distance = 3.0
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Adsorption_Dissociative
-    Ea raised from 0.0 to 50.3 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 59.6 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [H2O;VacantSite1;VacantSite2]
 Euclidian distance = 3.0
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Adsorption_Dissociative
-Ea raised from 0.0 to 50.3 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 59.6 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -303,14 +305,16 @@ entry(
     index = 19,
     label = "X + X + HCOOH <=> OH* + HCO*",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
+    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(28.3322,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
     Euclidian distance = 2.0
-    family: Surface_Adsorption_Dissociative"""),
+    family: Surface_Adsorption_Dissociative
+    Ea raised from 0.0 to 28.3 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
 Euclidian distance = 2.0
 family: Surface_Adsorption_Dissociative
+Ea raised from 0.0 to 28.3 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -318,16 +322,16 @@ entry(
     index = 20,
     label = "X + X + HCOOH <=> H* + HCOO*",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(64.1763,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-H;VacantSite1;VacantSite2]
+    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(73.4724,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-H;VacantSite1;VacantSite2]
     Euclidian distance = 2.0
     family: Surface_Adsorption_Dissociative
-    Ea raised from 0.0 to 64.2 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 73.5 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-H;VacantSite1;VacantSite2]
 Euclidian distance = 2.0
 family: Surface_Adsorption_Dissociative
-Ea raised from 0.0 to 64.2 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 73.5 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -335,16 +339,16 @@ entry(
     index = 21,
     label = "X + X + HCOOH <=> H* + COOH*",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(30.6921,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [C-H;VacantSite1;VacantSite2]
+    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(59.3561,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [C-H;VacantSite1;VacantSite2]
     Euclidian distance = 1.0
     family: Surface_Adsorption_Dissociative
-    Ea raised from 0.0 to 30.7 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 59.4 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [C-H;VacantSite1;VacantSite2]
 Euclidian distance = 1.0
 family: Surface_Adsorption_Dissociative
-Ea raised from 0.0 to 30.7 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 59.4 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -352,16 +356,16 @@ entry(
     index = 22,
     label = "X + X + CH3OH <=> H* + CH3O*",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(5.887,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-H;VacantSite1;VacantSite2]
+    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(15.1832,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-H;VacantSite1;VacantSite2]
     Euclidian distance = 2.0
     family: Surface_Adsorption_Dissociative
-    Ea raised from 0.0 to 5.9 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 15.2 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-H;VacantSite1;VacantSite2]
 Euclidian distance = 2.0
 family: Surface_Adsorption_Dissociative
-Ea raised from 0.0 to 5.9 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 15.2 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -369,14 +373,16 @@ entry(
     index = 23,
     label = "X + X + HCOOCH3 <=> HCO* + CH3O*",
     degeneracy = 1.0,
-    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
+    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(4.92873,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
     Euclidian distance = 2.0
-    family: Surface_Adsorption_Dissociative"""),
+    family: Surface_Adsorption_Dissociative
+    Ea raised from 0.0 to 4.9 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
 Euclidian distance = 2.0
 family: Surface_Adsorption_Dissociative
+Ea raised from 0.0 to 4.9 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -520,18 +526,18 @@ entry(
     index = 32,
     label = "OH* + CO* <=> X + COOH*",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(4.02e+14,'m^2/(mol*s)'), n=0, Ea=(108.004,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Matched reaction 1 OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4 in Surface_Dissociation/training
+    kinetics = SurfaceArrhenius(A=(4.02e+14,'m^2/(mol*s)'), n=0, Ea=(49.8145,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Matched reaction 1 OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4 in Surface_Dissociation/training
     This reaction matched rate rule [C-O;VacantSite]
     family: Surface_Dissociation
     metal: None
-    Ea raised from 11.5 to 108.0 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 11.5 to 49.8 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Matched reaction 1 OCX_3 + HOX_5 <=> HOCXO_1 + Ni_4 in Surface_Dissociation/training
 This reaction matched rate rule [C-O;VacantSite]
 family: Surface_Dissociation
 metal: None
-Ea raised from 11.5 to 108.0 kJ/mol to match endothermicity of reaction.
+Ea raised from 11.5 to 49.8 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -764,7 +770,7 @@ entry(
     index = 46,
     label = "H2O* + CO* <=> H* + COOH*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(4.78261e+20,'m^2/(mol*s)'), n=-0.1875, Ea=(175.938,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [AdsorbateVdW;*=C=R]
+    kinetics = SurfaceArrhenius(A=(4.78261e+20,'m^2/(mol*s)'), n=-0.1875, Ea=(155.55,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [AdsorbateVdW;*=C=R]
     Euclidian distance = 3.0
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Abstraction_vdW"""),
@@ -832,18 +838,18 @@ entry(
     index = 50,
     label = "H2O* + CH2O* <=> H* + CH3O2*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(70.0482,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;Adsorbate2]
+    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(79.3443,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;Adsorbate2]
     Euclidian distance = 2.0
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 70.0 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 79.3 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;Adsorbate2]
 Euclidian distance = 2.0
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 70.0 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 79.3 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -868,18 +874,16 @@ entry(
     index = 52,
     label = "OH* + CO* <=> O* + HCO*",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(1.39e+17,'m^2/(mol*s)'), n=0.101, Ea=(24.8967,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""From training reaction 24 used for C=*;*OH
+    kinetics = SurfaceArrhenius(A=(1.39e+17,'m^2/(mol*s)'), n=0.101, Ea=(19,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""From training reaction 24 used for C=*;*OH
     Exact match found for rate rule [C=*;*OH]
     Euclidian distance = 0
-    family: Surface_Abstraction
-    Ea raised from 22.9 to 24.9 kJ/mol to match endothermicity of reaction."""),
+    family: Surface_Abstraction"""),
     longDesc = 
 """
 From training reaction 24 used for C=*;*OH
 Exact match found for rate rule [C=*;*OH]
 Euclidian distance = 0
 family: Surface_Abstraction
-Ea raised from 22.9 to 24.9 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -887,16 +891,18 @@ entry(
     index = 53,
     label = "OH* + CO2* <=> O* + HCOO*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(53.6827,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*O-R]
+    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(70.5035,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*O-R]
     Euclidian distance = 3.1622776601683795
     Multiplied by reaction path degeneracy 2.0
-    family: Surface_Adsorption_Abstraction_vdW"""),
+    family: Surface_Adsorption_Abstraction_vdW
+    Ea raised from 70.2 to 70.5 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*O-R]
 Euclidian distance = 3.1622776601683795
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Adsorption_Abstraction_vdW
+Ea raised from 70.2 to 70.5 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -904,7 +910,7 @@ entry(
     index = 54,
     label = "OH* + CO2* <=> O* + COOH*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(38.9605,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [CO2;*O-R]
+    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(63.4003,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [CO2;*O-R]
     Euclidian distance = 4.123105625617661
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Adsorption_Abstraction_vdW"""),
@@ -940,7 +946,7 @@ entry(
     index = 56,
     label = "OH* + CH2O* <=> O* + CH3O*",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(15.8999,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*O-R]
+    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(32.2052,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*O-R]
     Euclidian distance = 2.23606797749979
     family: Surface_Adsorption_Abstraction_vdW"""),
     longDesc = 
@@ -1006,18 +1012,18 @@ entry(
     index = 60,
     label = "H2O* + CO2* <=> OH* + HCOO*",
     degeneracy = 4.0,
-    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(122.119,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;O-R]
+    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(160.941,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;O-R]
     Euclidian distance = 3.1622776601683795
     Multiplied by reaction path degeneracy 4.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 122.1 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 160.9 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;O-R]
 Euclidian distance = 3.1622776601683795
 Multiplied by reaction path degeneracy 4.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 122.1 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 160.9 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1025,18 +1031,18 @@ entry(
     index = 61,
     label = "H2O* + CO2* <=> OH* + COOH*",
     degeneracy = 4.0,
-    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(88.6346,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;O-R]
+    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(146.825,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;O-R]
     Euclidian distance = 4.123105625617661
     Multiplied by reaction path degeneracy 4.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 88.6 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 146.8 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;O-R]
 Euclidian distance = 4.123105625617661
 Multiplied by reaction path degeneracy 4.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 88.6 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 146.8 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1078,18 +1084,18 @@ entry(
     index = 64,
     label = "H2O* + CH2O* <=> OH* + CH3O*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(33.3401,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
+    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(72.1623,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
     Euclidian distance = 2.23606797749979
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 33.3 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 72.2 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
 Euclidian distance = 2.23606797749979
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 33.3 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 72.2 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1097,7 +1103,7 @@ entry(
     index = 65,
     label = "CO2* + HCO* <=> CO* + HCOO*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(44.0734,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*C-H]
+    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(68.5132,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*C-H]
     Euclidian distance = 3.605551275463989
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Adsorption_Abstraction_vdW"""),
@@ -1114,7 +1120,7 @@ entry(
     index = 66,
     label = "CO2* + HCO* <=> CO* + COOH*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(29.3512,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [CO2;*C-H]
+    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(61.9255,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [CO2;*C-H]
     Euclidian distance = 4.47213595499958
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Adsorption_Abstraction_vdW"""),
@@ -1148,7 +1154,7 @@ entry(
     index = 68,
     label = "HCO* + CH2O* <=> CO* + CH3O*",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(6.29062,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-H]
+    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(30.7304,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-H]
     Euclidian distance = 2.8284271247461903
     family: Surface_Adsorption_Abstraction_vdW"""),
     longDesc = 
@@ -1163,7 +1169,7 @@ entry(
     index = 69,
     label = "COOH* + CH2O* <=> CO* + CH3O2*",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-R]
+    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(20.9929,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-R]
     Euclidian distance = 2.23606797749979
     family: Surface_Adsorption_Abstraction_vdW"""),
     longDesc = 
@@ -1193,18 +1199,18 @@ entry(
     index = 71,
     label = "CO2* + CH2O* <=> HCO* + HCOO*",
     degeneracy = 4.0,
-    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(2.14023,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;C-R]
+    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(60.3302,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;C-R]
     Euclidian distance = 3.1622776601683795
     Multiplied by reaction path degeneracy 4.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 2.1 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 60.3 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;C-R]
 Euclidian distance = 3.1622776601683795
 Multiplied by reaction path degeneracy 4.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 2.1 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 60.3 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1212,16 +1218,18 @@ entry(
     index = 72,
     label = "CO2* + CH2O* <=> HCO* + COOH*",
     degeneracy = 4.0,
-    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;C-R]
+    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(46.2138,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;C-R]
     Euclidian distance = 4.123105625617661
     Multiplied by reaction path degeneracy 4.0
-    family: Surface_Dual_Adsorption_vdW"""),
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 46.2 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;C-R]
 Euclidian distance = 4.123105625617661
 Multiplied by reaction path degeneracy 4.0
 family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 46.2 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1229,18 +1237,18 @@ entry(
     index = 73,
     label = "CO2* + CH3OH* <=> HCOO* + CH3O*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(101.255,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;O-R]
+    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(140.077,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;O-R]
     Euclidian distance = 3.1622776601683795
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 101.3 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 140.1 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;O-R]
 Euclidian distance = 3.1622776601683795
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 101.3 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 140.1 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1248,18 +1256,18 @@ entry(
     index = 74,
     label = "CO2* + CH3OH* <=> COOH* + CH3O*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(67.771,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;O-R]
+    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(125.961,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;O-R]
     Euclidian distance = 4.123105625617661
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 67.8 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 126.0 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;O-R]
 Euclidian distance = 4.123105625617661
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 67.8 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 126.0 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1284,16 +1292,16 @@ entry(
     index = 76,
     label = "CH2O* + CH3OH* <=> CH3O* + CH3O*",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(1e+13,'m^2/(mol*s)'), n=0, Ea=(12.4765,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
+    kinetics = SurfaceArrhenius(A=(1e+13,'m^2/(mol*s)'), n=0, Ea=(51.2987,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
     Euclidian distance = 2.23606797749979
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 12.5 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 51.3 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
 Euclidian distance = 2.23606797749979
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 12.5 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 51.3 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1336,16 +1344,16 @@ entry(
     label = "CO2X <=> O* + CO*",
     degeneracy = 1.0,
     duplicate = True,
-    kinetics = SurfaceArrhenius(A=(8.96e+10,'1/s'), n=0.422, Ea=(83.8892,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined]
+    kinetics = SurfaceArrhenius(A=(8.96e+10,'1/s'), n=0.422, Ea=(142.079,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined]
     Euclidian distance = 0
     family: Surface_Bidentate_Dissociation
-    Ea raised from 0.0 to 83.9 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 142.1 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Exact match found for rate rule [Combined]
 Euclidian distance = 0
 family: Surface_Bidentate_Dissociation
-Ea raised from 0.0 to 83.9 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 142.1 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1354,16 +1362,16 @@ entry(
     label = "CO2X <=> O* + CO*",
     degeneracy = 1.0,
     duplicate = True,
-    kinetics = SurfaceArrhenius(A=(8.96e+10,'1/s'), n=0.422, Ea=(83.8892,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined]
+    kinetics = SurfaceArrhenius(A=(8.96e+10,'1/s'), n=0.422, Ea=(142.079,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined]
     Euclidian distance = 0
     family: Surface_Bidentate_Dissociation
-    Ea raised from 0.0 to 83.9 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 142.1 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Exact match found for rate rule [Combined]
 Euclidian distance = 0
 family: Surface_Bidentate_Dissociation
-Ea raised from 0.0 to 83.9 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 142.1 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1437,18 +1445,18 @@ entry(
     index = 85,
     label = "[H][H].[Pt] + CO2* <=> H* + HCOO*",
     degeneracy = 4.0,
-    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(62.234,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;H-H]
+    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(71.5301,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;H-H]
     Euclidian distance = 3.1622776601683795
     Multiplied by reaction path degeneracy 4.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 62.2 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 71.5 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;H-H]
 Euclidian distance = 3.1622776601683795
 Multiplied by reaction path degeneracy 4.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 62.2 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 71.5 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1456,18 +1464,18 @@ entry(
     index = 86,
     label = "[H][H].[Pt] + CO2* <=> H* + COOH*",
     degeneracy = 4.0,
-    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(28.7498,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;H-H]
+    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(57.4138,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;H-H]
     Euclidian distance = 4.123105625617661
     Multiplied by reaction path degeneracy 4.0
     family: Surface_Dual_Adsorption_vdW
-    Ea raised from 0.0 to 28.7 kJ/mol to match endothermicity of reaction."""),
+    Ea raised from 0.0 to 57.4 kJ/mol to match endothermicity of reaction."""),
     longDesc = 
 """
 Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;H-H]
 Euclidian distance = 4.123105625617661
 Multiplied by reaction path degeneracy 4.0
 family: Surface_Dual_Adsorption_vdW
-Ea raised from 0.0 to 28.7 kJ/mol to match endothermicity of reaction.
+Ea raised from 0.0 to 57.4 kJ/mol to match endothermicity of reaction.
 """,
 )
 
@@ -1492,7 +1500,7 @@ entry(
     index = 88,
     label = "X + CO* <=> COX",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(4.27e+15,'m^2/(mol*s)'), n=0.549, Ea=(4.184,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined;VacantSite]
+    kinetics = SurfaceArrhenius(A=(4.27e+15,'m^2/(mol*s)'), n=0.549, Ea=(62.3469,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined;VacantSite]
     Euclidian distance = 0
     family: Surface_DoubleBond_to_Bidentate"""),
     longDesc = 
@@ -1505,21 +1513,420 @@ family: Surface_DoubleBond_to_Bidentate
 
 entry(
     index = 89,
-    label = "X + HCO* <=> [Pt]OC=[Pt]",
-    degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(4.27e+15,'m^2/(mol*s)'), n=0.549, Ea=(4.184,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined;VacantSite]
+    label = "CH3O* <=> OC[Pt]",
+    degeneracy = 3.0,
+    kinetics = SurfaceArrhenius(A=(3.33867e+12,'s^-1'), n=0, Ea=(60.5233,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [Adsorbate1]
     Euclidian distance = 0
-    family: Surface_DoubleBond_to_Bidentate"""),
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Migration"""),
     longDesc = 
 """
-Exact match found for rate rule [Combined;VacantSite]
+Estimated using an average for rate rule [Adsorbate1]
 Euclidian distance = 0
-family: Surface_DoubleBond_to_Bidentate
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Migration
 """,
 )
 
 entry(
     index = 90,
+    label = "X + X + CH3OH <=> H* + OC[Pt]",
+    degeneracy = 3.0,
+    kinetics = StickingCoefficient(A=0.048, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [C-H;VacantSite1;VacantSite2]
+    Euclidian distance = 1.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Adsorption_Dissociative"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [C-H;VacantSite1;VacantSite2]
+Euclidian distance = 1.0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Adsorption_Dissociative
+""",
+)
+
+entry(
+    index = 91,
+    label = "X + CH3O2* <=> O* + OC[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(2.25e+16,'m^2/(mol*s)'), n=0.188, Ea=(29.6,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Estimated using template [O;VacantSite] for rate rule [O-C;VacantSite]
+    Euclidian distance = 1.0
+    family: Surface_Dissociation"""),
+    longDesc = 
+"""
+Estimated using template [O;VacantSite] for rate rule [O-C;VacantSite]
+Euclidian distance = 1.0
+family: Surface_Dissociation
+""",
+)
+
+entry(
+    index = 92,
+    label = "X + CH3OH* <=> H* + OC[Pt]",
+    degeneracy = 3.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(1.155e+17,'m^2/(mol*s)'), n=0.087, Ea=(55.8,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""From training reaction 12 used for C-H;VacantSite
+    Exact match found for rate rule [C-H;VacantSite]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Dissociation_vdW"""),
+    longDesc = 
+"""
+From training reaction 12 used for C-H;VacantSite
+Exact match found for rate rule [C-H;VacantSite]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Dissociation_vdW
+""",
+)
+
+entry(
+    index = 93,
+    label = "X + CH3OH* <=> H* + OC[Pt]",
+    degeneracy = 3.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(8.99493e+17,'m^2/(mol*s)'), n=0.000333333, Ea=(75.8967,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [Combined;VacantSite]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Dissociation_vdW"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Combined;VacantSite]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Dissociation_vdW
+""",
+)
+
+entry(
+    index = 94,
+    label = "H* + CH2O <=> OC[Pt]",
+    degeneracy = 1.0,
+    kinetics = StickingCoefficient(A=0.05, n=0, Ea=(73.06,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Adsorbate1;R=R] for rate rule [*H;R=R]
+    Euclidian distance = 1.0
+    family: Surface_EleyRideal_Addition_Multiple_Bond"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;R=R] for rate rule [*H;R=R]
+Euclidian distance = 1.0
+family: Surface_EleyRideal_Addition_Multiple_Bond
+""",
+)
+
+entry(
+    index = 95,
+    label = "H* + CH2O* <=> X + OC[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(3.125e+20,'m^2/(mol*s)'), n=-0.475, Ea=(117.2,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C=O;H*] for rate rule [2R-C=O;H*]
+    Euclidian distance = 1.0
+    family: Surface_Addition_Single_vdW"""),
+    longDesc = 
+"""
+Estimated using template [C=O;H*] for rate rule [2R-C=O;H*]
+Euclidian distance = 1.0
+family: Surface_Addition_Single_vdW
+""",
+)
+
+entry(
+    index = 96,
+    label = "O* + CH3OH* <=> OH* + OC[Pt]",
+    degeneracy = 3.0,
+    kinetics = SurfaceArrhenius(A=(4.215e+20,'m^2/(mol*s)'), n=-0.101, Ea=(92.7,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""From training reaction 21 used for C-R;*=O
+    Exact match found for rate rule [C-R;*=O]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+From training reaction 21 used for C-R;*=O
+Exact match found for rate rule [C-R;*=O]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 97,
+    label = "OH* + CH2O* <=> O* + OC[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(8.162,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*O-R]
+    Euclidian distance = 3.1622776601683795
+    family: Surface_Adsorption_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*O-R]
+Euclidian distance = 3.1622776601683795
+family: Surface_Adsorption_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 98,
+    label = "H2O* + CH2O* <=> OH* + OC[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(15.2086,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;O-R]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 15.2 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;O-R]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 15.2 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 99,
+    label = "CO* + CH3OH* <=> HCO* + OC[Pt]",
+    degeneracy = 3.0,
+    kinetics = SurfaceArrhenius(A=(4.215e+20,'m^2/(mol*s)'), n=-0.101, Ea=(92.7,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C=R]
+    Euclidian distance = 3.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C=R]
+Euclidian distance = 3.0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 100,
+    label = "CO2* + CH3OH* <=> HCOO* + OC[Pt]",
+    degeneracy = 6.0,
+    kinetics = SurfaceArrhenius(A=(6e+13,'m^2/(mol*s)'), n=0, Ea=(83.1237,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;C-R]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 6.0
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 83.1 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;C-R]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 6.0
+family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 83.1 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 101,
+    label = "CO2* + CH3OH* <=> COOH* + OC[Pt]",
+    degeneracy = 6.0,
+    kinetics = SurfaceArrhenius(A=(6e+13,'m^2/(mol*s)'), n=0, Ea=(69.0074,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;C-R]
+    Euclidian distance = 4.123105625617661
+    Multiplied by reaction path degeneracy 6.0
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 69.0 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;C-R]
+Euclidian distance = 4.123105625617661
+Multiplied by reaction path degeneracy 6.0
+family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 69.0 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 102,
+    label = "HCO* + CH2O* <=> CO* + OC[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(6.68718,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*C-H]
+    Euclidian distance = 3.605551275463989
+    family: Surface_Adsorption_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*C-H]
+Euclidian distance = 3.605551275463989
+family: Surface_Adsorption_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 103,
+    label = "CH2O* + CH2O* <=> HCO* + OC[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;C-R]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Dual_Adsorption_vdW"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;C-R]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Dual_Adsorption_vdW
+""",
+)
+
+entry(
+    index = 104,
+    label = "CH2O* + CH3OH* <=> CH3O* + OC[Pt]",
+    degeneracy = 3.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(3e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Dual_Adsorption_vdW"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Dual_Adsorption_vdW
+""",
+)
+
+entry(
+    index = 105,
+    label = "CH2O* + CH3OH* <=> CH3O* + OC[Pt]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(1e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;O-R]
+    Euclidian distance = 3.1622776601683795
+    family: Surface_Dual_Adsorption_vdW"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;O-R]
+Euclidian distance = 3.1622776601683795
+family: Surface_Dual_Adsorption_vdW
+""",
+)
+
+entry(
+    index = 106,
+    label = "CH2O* + CH3OH* <=> OC[Pt] + OC[Pt]",
+    degeneracy = 3.0,
+    kinetics = SurfaceArrhenius(A=(3e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;C-R]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Dual_Adsorption_vdW"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;C-R]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Dual_Adsorption_vdW
+""",
+)
+
+entry(
+    index = 107,
+    label = "[H][H].[Pt] + CH2O* <=> H* + OC[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;H-H]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Dual_Adsorption_vdW"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;H-H]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Dual_Adsorption_vdW
+""",
+)
+
+entry(
+    index = 108,
+    label = "X + CH3OH* <=> H* + OC[Pt]",
+    degeneracy = 3.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(8.99493e+17,'m^2/(mol*s)'), n=0.000333333, Ea=(75.8967,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [Combined;VacantSite]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Dissociation_vdW"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Combined;VacantSite]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Dissociation_vdW
+""",
+)
+
+entry(
+    index = 109,
+    label = "X + CH3OH* <=> H* + OC[Pt]",
+    degeneracy = 3.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(1.155e+17,'m^2/(mol*s)'), n=0.087, Ea=(55.8,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""From training reaction 12 used for C-H;VacantSite
+    Exact match found for rate rule [C-H;VacantSite]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Dissociation_vdW"""),
+    longDesc = 
+"""
+From training reaction 12 used for C-H;VacantSite
+Exact match found for rate rule [C-H;VacantSite]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Dissociation_vdW
+""",
+)
+
+entry(
+    index = 110,
+    label = "CH2O* + CH3OH* <=> CH3O* + OC[Pt]",
+    degeneracy = 3.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(3e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Dual_Adsorption_vdW"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Dual_Adsorption_vdW
+""",
+)
+
+entry(
+    index = 111,
+    label = "CH2O* + CH3OH* <=> CH3O* + OC[Pt]",
+    degeneracy = 1.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(1e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;O-R]
+    Euclidian distance = 3.1622776601683795
+    family: Surface_Dual_Adsorption_vdW"""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;O-R]
+Euclidian distance = 3.1622776601683795
+family: Surface_Dual_Adsorption_vdW
+""",
+)
+
+entry(
+    index = 112,
+    label = "X + HCO* <=> [Pt]OC=[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(4.27e+15,'m^2/(mol*s)'), n=0.549, Ea=(58.9821,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined;VacantSite]
+    Euclidian distance = 0
+    family: Surface_DoubleBond_to_Bidentate
+    Ea raised from 58.5 to 59.0 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Exact match found for rate rule [Combined;VacantSite]
+Euclidian distance = 0
+family: Surface_DoubleBond_to_Bidentate
+Ea raised from 58.5 to 59.0 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 113,
     label = "X + [Pt]OC=[Pt] <=> H* + COX",
     degeneracy = 1.0,
     kinetics = SurfaceArrhenius(A=(3.71e+17,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""From training reaction 48 used for C-H;VacantSite
@@ -1536,7 +1943,7 @@ family: Surface_Dissociation
 )
 
 entry(
-    index = 91,
+    index = 114,
     label = "OH* + COX <=> O* + [Pt]OC=[Pt]",
     degeneracy = 1.0,
     kinetics = SurfaceArrhenius(A=(4.4e+18,'m^2/(mol*s)'), n=0.101, Ea=(42.4,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""From training reaction 26 used for C#*;*OH
@@ -1553,7 +1960,7 @@ family: Surface_Abstraction
 )
 
 entry(
-    index = 92,
+    index = 115,
     label = "H2O* + COX <=> OH* + [Pt]OC=[Pt]",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(8.14e+20,'m^2/(mol*s)'), n=-0.274, Ea=(218.4,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [O-R;Adsorbate1] for rate rule [O-R;*#C]
@@ -1570,7 +1977,7 @@ family: Surface_Abstraction_vdW
 )
 
 entry(
-    index = 93,
+    index = 116,
     label = "COX + HCO* <=> CO* + [Pt]OC=[Pt]",
     degeneracy = 1.0,
     kinetics = SurfaceArrhenius(A=(4.4e+18,'m^2/(mol*s)'), n=0.101, Ea=(42.4,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Estimated using template [C#*;*R-H] for rate rule [C#*;*-C-H]
@@ -1585,10 +1992,10 @@ family: Surface_Abstraction
 )
 
 entry(
-    index = 94,
+    index = 117,
     label = "CO2* + [Pt]OC=[Pt] <=> COX + HCOO*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(45.6964,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*C-R]
+    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(70.5055,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*C-R]
     Euclidian distance = 3.1622776601683795
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Adsorption_Abstraction_vdW"""),
@@ -1602,10 +2009,10 @@ family: Surface_Adsorption_Abstraction_vdW
 )
 
 entry(
-    index = 95,
+    index = 118,
     label = "CO2* + [Pt]OC=[Pt] <=> COX + COOH*",
     degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(30.9742,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [CO2;*C-R]
+    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(63.5485,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [CO2;*C-R]
     Euclidian distance = 4.123105625617661
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Adsorption_Abstraction_vdW"""),
@@ -1619,7 +2026,7 @@ family: Surface_Adsorption_Abstraction_vdW
 )
 
 entry(
-    index = 96,
+    index = 119,
     label = "COX + CH2O* <=> HCO* + [Pt]OC=[Pt]",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(2.81e+20,'m^2/(mol*s)'), n=-0.101, Ea=(92.7,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*#C]
@@ -1636,10 +2043,10 @@ family: Surface_Abstraction_vdW
 )
 
 entry(
-    index = 97,
+    index = 120,
     label = "[Pt]OC=[Pt] + CH2O* <=> COX + CH3O*",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(7.9136,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-R]
+    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(32.3534,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-R]
     Euclidian distance = 2.23606797749979
     family: Surface_Adsorption_Abstraction_vdW"""),
     longDesc = 
@@ -1651,7 +2058,7 @@ family: Surface_Adsorption_Abstraction_vdW
 )
 
 entry(
-    index = 98,
+    index = 121,
     label = "COX + CH3OH* <=> [Pt]OC=[Pt] + CH3O*",
     degeneracy = 1.0,
     kinetics = SurfaceArrhenius(A=(4.07e+20,'m^2/(mol*s)'), n=-0.274, Ea=(218.4,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [O-R;Adsorbate1] for rate rule [O-R;*#C]
@@ -1666,7 +2073,24 @@ family: Surface_Abstraction_vdW
 )
 
 entry(
-    index = 99,
+    index = 122,
+    label = "COX + CH3OH* <=> [Pt]OC=[Pt] + OC[Pt]",
+    degeneracy = 3.0,
+    kinetics = SurfaceArrhenius(A=(4.215e+20,'m^2/(mol*s)'), n=-0.101, Ea=(92.7,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*#C]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*#C]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 123,
     label = "[H][H].[Pt] + COX <=> H* + [Pt]OC=[Pt]",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(4.78261e+20,'m^2/(mol*s)'), n=-0.1875, Ea=(155.55,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*#C]
@@ -1683,45 +2107,615 @@ family: Surface_Abstraction_vdW
 )
 
 entry(
-    index = 100,
-    label = "O* + CHX <=> X + HCO*",
+    index = 124,
+    label = "[Pt]OC=[Pt] + CH2O* <=> COX + OC[Pt]",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(4.59e+16,'m^2/(mol*s)'), n=0, Ea=(109900,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    kinetics = SurfaceArrhenius(A=(1.845e+16,'m^2/(mol*s)'), n=0, Ea=(8.31015,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*C-R]
+    Euclidian distance = 3.1622776601683795
+    family: Surface_Adsorption_Abstraction_vdW"""),
     longDesc = 
 """
-Originally from reaction library: Surface/Deutschmann_Ni
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*C-R]
+Euclidian distance = 3.1622776601683795
+family: Surface_Adsorption_Abstraction_vdW
 """,
 )
 
 entry(
-    index = 101,
-    label = "[Pt]OC=[Pt] <=> O* + CHX",
+    index = 125,
+    label = "X + X + CH2O <=> [Pt]CO[Pt]",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(8.96e+10,'1/s'), n=0.422, Ea=(3.04466,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined]
+    kinetics = StickingCoefficient(A=0.1, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Adsorbate;VacantSite1;VacantSite2]
     Euclidian distance = 0
-    family: Surface_Bidentate_Dissociation
-    Ea raised from 0.0 to 3.0 kJ/mol to match endothermicity of reaction."""),
+    family: Surface_Adsorption_Bidentate"""),
     longDesc = 
 """
-Exact match found for rate rule [Combined]
+Exact match found for rate rule [Adsorbate;VacantSite1;VacantSite2]
 Euclidian distance = 0
-family: Surface_Bidentate_Dissociation
-Ea raised from 0.0 to 3.0 kJ/mol to match endothermicity of reaction.
+family: Surface_Adsorption_Bidentate
 """,
 )
 
 entry(
-    index = 102,
-    label = "CO* + [Pt]OC=[Pt] <=> CO2X + CHX",
+    index = 126,
+    label = "X + CH2O* <=> [Pt]CO[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(2e+15,'m^2/(mol*s)'), n=0, Ea=(22.7541,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Exact match found for rate rule [Combined;VacantSite]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_vdW_to_Bidentate
+    Ea raised from 0.0 to 22.8 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Exact match found for rate rule [Combined;VacantSite]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Surface_vdW_to_Bidentate
+Ea raised from 0.0 to 22.8 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 127,
+    label = "X + [Pt]CO[Pt] <=> H* + [Pt]OC=[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(7.42e+17,'m^2/(mol*s)'), n=0, Ea=(12.7929,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""From training reaction 48 used for C-H;VacantSite
+    Exact match found for rate rule [C-H;VacantSite]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Dissociation
+    Ea raised from 0.0 to 12.8 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+From training reaction 48 used for C-H;VacantSite
+Exact match found for rate rule [C-H;VacantSite]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Dissociation
+Ea raised from 0.0 to 12.8 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 128,
+    label = "OH* + [Pt]OC=[Pt] <=> O* + [Pt]CO[Pt]",
     degeneracy = 1.0,
-    kinetics = SurfaceArrhenius(A=(1.39e+17,'m^2/(mol*s)'), n=0.101, Ea=(19,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Estimated using template [C=*;Donating] for rate rule [C=*;*R-O]
-    Euclidian distance = 1.0
+    kinetics = SurfaceArrhenius(A=(1.39e+17,'m^2/(mol*s)'), n=0.101, Ea=(19,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""From training reaction 24 used for C=*;*OH
+    Exact match found for rate rule [C=*;*OH]
+    Euclidian distance = 0
     family: Surface_Abstraction"""),
     longDesc = 
 """
-Estimated using template [C=*;Donating] for rate rule [C=*;*R-O]
-Euclidian distance = 1.0
+From training reaction 24 used for C=*;*OH
+Exact match found for rate rule [C=*;*OH]
+Euclidian distance = 0
 family: Surface_Abstraction
+""",
+)
+
+entry(
+    index = 129,
+    label = "H2O* + [Pt]OC=[Pt] <=> OH* + [Pt]CO[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(8.14e+20,'m^2/(mol*s)'), n=-0.274, Ea=(218.4,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [O-R;Adsorbate1] for rate rule [O-R;*=C-2R]
+    Euclidian distance = 3.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [O-R;Adsorbate1] for rate rule [O-R;*=C-2R]
+Euclidian distance = 3.0
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 130,
+    label = "HCO* + [Pt]OC=[Pt] <=> CO* + [Pt]CO[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1.39e+17,'m^2/(mol*s)'), n=0.101, Ea=(19,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Estimated using template [C=*;*R-H] for rate rule [C=*;*-C-H]
+    Euclidian distance = 2.0
+    family: Surface_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C=*;*R-H] for rate rule [C=*;*-C-H]
+Euclidian distance = 2.0
+family: Surface_Abstraction
+""",
+)
+
+entry(
+    index = 131,
+    label = "CO2* + [Pt]CO[Pt] <=> [Pt]OC=[Pt] + HCOO*",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(7.38e+16,'m^2/(mol*s)'), n=0, Ea=(97.8636,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*C-H]
+    Euclidian distance = 3.605551275463989
+    Multiplied by reaction path degeneracy 4.0
+    family: Surface_Adsorption_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C=O;*C-H]
+Euclidian distance = 3.605551275463989
+Multiplied by reaction path degeneracy 4.0
+family: Surface_Adsorption_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 132,
+    label = "CO2* + [Pt]CO[Pt] <=> [Pt]OC=[Pt] + COOH*",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(7.38e+16,'m^2/(mol*s)'), n=0, Ea=(82.4418,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [CO2;*C-H]
+    Euclidian distance = 4.47213595499958
+    Multiplied by reaction path degeneracy 4.0
+    family: Surface_Adsorption_Abstraction_vdW
+    Ea raised from 82.2 to 82.4 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [CO2;*C-H]
+Euclidian distance = 4.47213595499958
+Multiplied by reaction path degeneracy 4.0
+family: Surface_Adsorption_Abstraction_vdW
+Ea raised from 82.2 to 82.4 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 133,
+    label = "[Pt]OC=[Pt] + CH2O* <=> HCO* + [Pt]CO[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(2.81e+20,'m^2/(mol*s)'), n=-0.101, Ea=(92.7,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C-2R]
+    Euclidian distance = 3.0
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C-2R]
+Euclidian distance = 3.0
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 134,
+    label = "CH2O* + [Pt]CO[Pt] <=> [Pt]OC=[Pt] + CH3O*",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(43.8438,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-H]
+    Euclidian distance = 2.8284271247461903
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Adsorption_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-H]
+Euclidian distance = 2.8284271247461903
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Adsorption_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 135,
+    label = "[Pt]OC=[Pt] + CH3OH* <=> [Pt]CO[Pt] + CH3O*",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(4.07e+20,'m^2/(mol*s)'), n=-0.274, Ea=(218.4,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [O-R;Adsorbate1] for rate rule [O-R;*=C-2R]
+    Euclidian distance = 3.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [O-R;Adsorbate1] for rate rule [O-R;*=C-2R]
+Euclidian distance = 3.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 136,
+    label = "[Pt]OC=[Pt] + CH3OH* <=> [Pt]CO[Pt] + OC[Pt]",
+    degeneracy = 3.0,
+    kinetics = SurfaceArrhenius(A=(4.215e+20,'m^2/(mol*s)'), n=-0.101, Ea=(92.7,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C-2R]
+    Euclidian distance = 3.0
+    Multiplied by reaction path degeneracy 3.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C-2R]
+Euclidian distance = 3.0
+Multiplied by reaction path degeneracy 3.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 137,
+    label = "[H][H].[Pt] + [Pt]OC=[Pt] <=> H* + [Pt]CO[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(4.78261e+20,'m^2/(mol*s)'), n=-0.1875, Ea=(155.55,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*=C-2R]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [H-H;*=C-2R]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 138,
+    label = "CH2O* + [Pt]CO[Pt] <=> [Pt]OC=[Pt] + OC[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(3.69e+16,'m^2/(mol*s)'), n=0, Ea=(19.8005,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*C-H]
+    Euclidian distance = 3.605551275463989
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Adsorption_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*C-H]
+Euclidian distance = 3.605551275463989
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Adsorption_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 139,
+    label = "[Pt]OC=[Pt] + [Pt]OC=[Pt] <=> COX + [Pt]CO[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1.39e+17,'m^2/(mol*s)'), n=0.101, Ea=(19,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Estimated using template [C=*;*R-H] for rate rule [C=*;*=C-H]
+    Euclidian distance = 2.0
+    family: Surface_Abstraction"""),
+    longDesc = 
+"""
+Estimated using template [C=*;*R-H] for rate rule [C=*;*=C-H]
+Euclidian distance = 2.0
+family: Surface_Abstraction
+""",
+)
+
+entry(
+    index = 140,
+    label = "O* + C.[Pt] <=> H* + CH3O*",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(9.56523e+20,'m^2/(mol*s)'), n=-0.1875, Ea=(155.55,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [AdsorbateVdW;*=O]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 4.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [AdsorbateVdW;*=O]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 4.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 141,
+    label = "X + X + CH3OH <=> OH* + C[Pt]",
+    degeneracy = 1.0,
+    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(31.2515,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
+    Euclidian distance = 2.0
+    family: Surface_Adsorption_Dissociative
+    Ea raised from 0.0 to 31.3 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
+Euclidian distance = 2.0
+family: Surface_Adsorption_Dissociative
+Ea raised from 0.0 to 31.3 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 142,
+    label = "X + X + HCOOCH3 <=> HCOO* + C[Pt]",
+    degeneracy = 1.0,
+    kinetics = StickingCoefficient(A=0.016, n=0, Ea=(66.1373,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
+    Euclidian distance = 2.0
+    family: Surface_Adsorption_Dissociative
+    Ea raised from 0.0 to 66.1 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
+Euclidian distance = 2.0
+family: Surface_Adsorption_Dissociative
+Ea raised from 0.0 to 66.1 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 143,
+    label = "X + CH3O* <=> O* + C[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(2.25e+16,'m^2/(mol*s)'), n=0.188, Ea=(29.6,'kJ/mol'), T0=(1,'K'), Tmin=(298,'K'), Tmax=(2000,'K'), comment="""Estimated using template [O;VacantSite] for rate rule [O-C;VacantSite]
+    Euclidian distance = 1.0
+    family: Surface_Dissociation"""),
+    longDesc = 
+"""
+Estimated using template [O;VacantSite] for rate rule [O-C;VacantSite]
+Euclidian distance = 1.0
+family: Surface_Dissociation
+""",
+)
+
+entry(
+    index = 144,
+    label = "X + CH3OH* <=> OH* + C[Pt]",
+    degeneracy = 2.0,
+    kinetics = SurfaceArrhenius(A=(5.99662e+17,'m^2/(mol*s)'), n=0.000333333, Ea=(75.8967,'kJ/mol'), T0=(1,'K'), comment="""Estimated using an average for rate rule [Combined;VacantSite]
+    Euclidian distance = 0
+    Multiplied by reaction path degeneracy 2.0
+    family: Surface_Dissociation_vdW"""),
+    longDesc = 
+"""
+Estimated using an average for rate rule [Combined;VacantSite]
+Euclidian distance = 0
+Multiplied by reaction path degeneracy 2.0
+family: Surface_Dissociation_vdW
+""",
+)
+
+entry(
+    index = 145,
+    label = "CO* + CH3OH* <=> COOH* + C[Pt]",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1.405e+20,'m^2/(mol*s)'), n=-0.101, Ea=(124.71,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-OH;*=C=R]
+    Euclidian distance = 3.605551275463989
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [C-R;Adsorbate1] for rate rule [C-OH;*=C=R]
+Euclidian distance = 3.605551275463989
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 146,
+    label = "CH2O* + CH3OH* <=> C[Pt] + CH3O2*",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1e+13,'m^2/(mol*s)'), n=0, Ea=(74.5491,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-OH]
+    Euclidian distance = 3.605551275463989
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 74.5 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-OH]
+Euclidian distance = 3.605551275463989
+family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 74.5 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 147,
+    label = "X + C.[Pt] <=> H* + C[Pt]",
+    degeneracy = 4.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(1.54e+17,'m^2/(mol*s)'), n=0.087, Ea=(77820.2,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 12 CH4* + X_4 <=> CH3* + H* in Surface_Dissociation_vdW/training
+    This reaction matched rate rule [C-H;VacantSite]
+    family: Surface_Dissociation_vdW
+    metal: None
+    Ea raised from 55.8 to 77.8 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Matched reaction 12 CH4* + X_4 <=> CH3* + H* in Surface_Dissociation_vdW/training
+This reaction matched rate rule [C-H;VacantSite]
+family: Surface_Dissociation_vdW
+metal: None
+Ea raised from 55.8 to 77.8 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 148,
+    label = "X + C.[Pt] <=> H* + C[Pt]",
+    degeneracy = 4.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(1.54e+17,'m^2/(mol*s)'), n=0.087, Ea=(77820.2,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 12 CH4* + X_4 <=> CH3* + H* in Surface_Dissociation_vdW/training
+    This reaction matched rate rule [Combined;VacantSite]
+    family: Surface_Dissociation_vdW
+    metal: None
+    Ea raised from 55.8 to 77.8 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Matched reaction 12 CH4* + X_4 <=> CH3* + H* in Surface_Dissociation_vdW/training
+This reaction matched rate rule [Combined;VacantSite]
+family: Surface_Dissociation_vdW
+metal: None
+Ea raised from 55.8 to 77.8 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 149,
+    label = "O* + C.[Pt] <=> OH* + C[Pt]",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(5.62e+20,'m^2/(mol*s)'), n=-0.101, Ea=(92700,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 21 CH4* + O* <=> CH3* + OH_4* in Surface_Abstraction_vdW/training
+    This reaction matched rate rule [C-R;*=O]
+    family: Surface_Abstraction_vdW
+    metal: None"""),
+    longDesc = 
+"""
+Matched reaction 21 CH4* + O* <=> CH3* + OH_4* in Surface_Abstraction_vdW/training
+This reaction matched rate rule [C-R;*=O]
+family: Surface_Abstraction_vdW
+metal: None
+""",
+)
+
+entry(
+    index = 150,
+    label = "CO* + C.[Pt] <=> HCO* + C[Pt]",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(5.62e+20,'m^2/(mol*s)'), n=-0.101, Ea=(96.6108,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C=R]
+    Euclidian distance = 3.0
+    Multiplied by reaction path degeneracy 4.0
+    family: Surface_Abstraction_vdW
+    Ea raised from 95.5 to 96.6 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C=R]
+Euclidian distance = 3.0
+Multiplied by reaction path degeneracy 4.0
+family: Surface_Abstraction_vdW
+Ea raised from 95.5 to 96.6 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 151,
+    label = "CO2* + C.[Pt] <=> HCOO* + C[Pt]",
+    degeneracy = 8.0,
+    kinetics = SurfaceArrhenius(A=(8e+13,'m^2/(mol*s)'), n=0, Ea=(161.585,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;C-R]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 8.0
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 161.6 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;C-R]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 8.0
+family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 161.6 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 152,
+    label = "CO2* + C.[Pt] <=> COOH* + C[Pt]",
+    degeneracy = 8.0,
+    kinetics = SurfaceArrhenius(A=(8e+13,'m^2/(mol*s)'), n=0, Ea=(147.469,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;C-R]
+    Euclidian distance = 4.123105625617661
+    Multiplied by reaction path degeneracy 8.0
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 147.5 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [CO2;C-R]
+Euclidian distance = 4.123105625617661
+Multiplied by reaction path degeneracy 8.0
+family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 147.5 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 153,
+    label = "CH2O* + C.[Pt] <=> C[Pt] + CH3O*",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(72.8068,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
+    Euclidian distance = 2.23606797749979
+    Multiplied by reaction path degeneracy 4.0
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 72.8 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
+Euclidian distance = 2.23606797749979
+Multiplied by reaction path degeneracy 4.0
+family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 72.8 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 154,
+    label = "CH2O* + C.[Pt] <=> C[Pt] + OC[Pt]",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(4e+13,'m^2/(mol*s)'), n=0, Ea=(15.8531,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;C-R]
+    Euclidian distance = 3.1622776601683795
+    Multiplied by reaction path degeneracy 4.0
+    family: Surface_Dual_Adsorption_vdW
+    Ea raised from 0.0 to 15.9 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;C-R]
+Euclidian distance = 3.1622776601683795
+Multiplied by reaction path degeneracy 4.0
+family: Surface_Dual_Adsorption_vdW
+Ea raised from 0.0 to 15.9 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 155,
+    label = "COX + C.[Pt] <=> [Pt]OC=[Pt] + C[Pt]",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(5.62e+20,'m^2/(mol*s)'), n=-0.101, Ea=(96.0466,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*#C]
+    Euclidian distance = 2.0
+    Multiplied by reaction path degeneracy 4.0
+    family: Surface_Abstraction_vdW
+    Ea raised from 92.7 to 96.0 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*#C]
+Euclidian distance = 2.0
+Multiplied by reaction path degeneracy 4.0
+family: Surface_Abstraction_vdW
+Ea raised from 92.7 to 96.0 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 156,
+    label = "[Pt]OC=[Pt] + C.[Pt] <=> [Pt]CO[Pt] + C[Pt]",
+    degeneracy = 4.0,
+    kinetics = SurfaceArrhenius(A=(5.62e+20,'m^2/(mol*s)'), n=-0.101, Ea=(92.7,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C-2R]
+    Euclidian distance = 3.0
+    Multiplied by reaction path degeneracy 4.0
+    family: Surface_Abstraction_vdW"""),
+    longDesc = 
+"""
+Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C-2R]
+Euclidian distance = 3.0
+Multiplied by reaction path degeneracy 4.0
+family: Surface_Abstraction_vdW
+""",
+)
+
+entry(
+    index = 157,
+    label = "X + C.[Pt] <=> H* + C[Pt]",
+    degeneracy = 4.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(1.54e+17,'m^2/(mol*s)'), n=0.087, Ea=(77820.2,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 12 CH4* + X_4 <=> CH3* + H* in Surface_Dissociation_vdW/training
+    This reaction matched rate rule [Combined;VacantSite]
+    family: Surface_Dissociation_vdW
+    metal: None
+    Ea raised from 55.8 to 77.8 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Matched reaction 12 CH4* + X_4 <=> CH3* + H* in Surface_Dissociation_vdW/training
+This reaction matched rate rule [Combined;VacantSite]
+family: Surface_Dissociation_vdW
+metal: None
+Ea raised from 55.8 to 77.8 kJ/mol to match endothermicity of reaction.
+""",
+)
+
+entry(
+    index = 158,
+    label = "X + C.[Pt] <=> H* + C[Pt]",
+    degeneracy = 4.0,
+    duplicate = True,
+    kinetics = SurfaceArrhenius(A=(1.54e+17,'m^2/(mol*s)'), n=0.087, Ea=(77820.2,'J/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Matched reaction 12 CH4* + X_4 <=> CH3* + H* in Surface_Dissociation_vdW/training
+    This reaction matched rate rule [C-H;VacantSite]
+    family: Surface_Dissociation_vdW
+    metal: None
+    Ea raised from 55.8 to 77.8 kJ/mol to match endothermicity of reaction."""),
+    longDesc = 
+"""
+Matched reaction 12 CH4* + X_4 <=> CH3* + H* in Surface_Dissociation_vdW/training
+This reaction matched rate rule [C-H;VacantSite]
+family: Surface_Dissociation_vdW
+metal: None
+Ea raised from 55.8 to 77.8 kJ/mol to match endothermicity of reaction.
 """,
 )
 
