@@ -248,6 +248,14 @@ CH3O*
 5 H u0 p0 c0 {2,S}
 6 X u0 p0 c0 {1,S}
 
+OC[Pt]
+1 O u0 p2 c0 {2,S} {5,S}
+2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {1,S}
+6 X u0 p0 c0 {2,S}
+
 HOCH2O
 multiplicity 2
 1 O u0 p2 c0 {3,S} {6,S}
@@ -300,6 +308,13 @@ formic_acidX-2
 4 H u0 p0 c0 {3,S}
 5 H u0 p0 c0 {1,S}
 6 X u0 p0 c0
+
+C[Pt]
+1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+5 X u0 p0 c0 {1,S}
 
 methyl_formateX
 1  O u0 p2 c0 {3,S} {4,S}
@@ -364,6 +379,15 @@ C=[Pt]
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 4 X u0 p0 c0 {1,D}
+
+CH3OH*
+1 O u0 p2 c0 {2,S} {6,S}
+2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {2,S}
+6 H u0 p0 c0 {1,S}
+7 X u0 p0 c0
 
 CO
 1 O u0 p1 c+1 {2,T}
@@ -1769,6 +1793,14 @@ OC(O)=[Pt]
 5 H u0 p0 c0 {2,S}
 6 X u0 p0 c0 {3,D}
 
+C.[Pt]
+1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+6 X u0 p0 c0
+
 methanediol
 1 O u0 p2 c0 {3,S} {6,S}
 2 O u0 p2 c0 {3,S} {7,S}
@@ -1842,22 +1874,6 @@ HOCH2OOX
 6 H u0 p0 c0 {4,S}
 7 H u0 p0 c0 {2,S}
 8 X u0 p0 c0 {3,S}
-
-CH3OH*
-1 O u0 p2 c0 {2,S} {6,S}
-2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3 H u0 p0 c0 {2,S}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {1,S}
-7 X u0 p0 c0
-
-C[Pt]
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 X u0 p0 c0 {1,S}
 
 OO.[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
@@ -3815,198 +3831,6 @@ O=C(O[Pt])OC#[Pt].[Pt]
 6 X u0 p0 c0 {4,T}
 7 X u0 p0 c0
 
-OC[Pt]
-1 O u0 p2 c0 {2,S} {5,S}
-2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
-3 H u0 p0 c0 {2,S}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {1,S}
-6 X u0 p0 c0 {2,S}
-
-OCC(O)O[Pt]
-1  O u0 p2 c0 {4,S} {9,S}
-2  O u0 p2 c0 {4,S} {11,S}
-3  O u0 p2 c0 {5,S} {10,S}
-4  C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
-5  C u0 p0 c0 {3,S} {4,S} {7,S} {8,S}
-6  H u0 p0 c0 {4,S}
-7  H u0 p0 c0 {5,S}
-8  H u0 p0 c0 {5,S}
-9  H u0 p0 c0 {1,S}
-10 H u0 p0 c0 {3,S}
-11 X u0 p0 c0 {2,S}
-
-OCOC(O)[Pt]
-1  O u0 p2 c0 {4,S} {5,S}
-2  O u0 p2 c0 {4,S} {9,S}
-3  O u0 p2 c0 {5,S} {10,S}
-4  C u0 p0 c0 {1,S} {2,S} {6,S} {11,S}
-5  C u0 p0 c0 {1,S} {3,S} {7,S} {8,S}
-6  H u0 p0 c0 {4,S}
-7  H u0 p0 c0 {5,S}
-8  H u0 p0 c0 {5,S}
-9  H u0 p0 c0 {2,S}
-10 H u0 p0 c0 {3,S}
-11 X u0 p0 c0 {4,S}
-
-COC(CO)O[Pt]
-1  O u0 p2 c0 {4,S} {6,S}
-2  O u0 p2 c0 {4,S} {14,S}
-3  O u0 p2 c0 {5,S} {13,S}
-4  C u0 p0 c0 {1,S} {2,S} {5,S} {7,S}
-5  C u0 p0 c0 {3,S} {4,S} {8,S} {9,S}
-6  C u0 p0 c0 {1,S} {10,S} {11,S} {12,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {5,S}
-9  H u0 p0 c0 {5,S}
-10 H u0 p0 c0 {6,S}
-11 H u0 p0 c0 {6,S}
-12 H u0 p0 c0 {6,S}
-13 H u0 p0 c0 {3,S}
-14 X u0 p0 c0 {2,S}
-
-COC([Pt])OCO
-1  O u0 p2 c0 {4,S} {5,S}
-2  O u0 p2 c0 {4,S} {6,S}
-3  O u0 p2 c0 {5,S} {13,S}
-4  C u0 p0 c0 {1,S} {2,S} {7,S} {14,S}
-5  C u0 p0 c0 {1,S} {3,S} {8,S} {9,S}
-6  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {5,S}
-9  H u0 p0 c0 {5,S}
-10 H u0 p0 c0 {6,S}
-11 H u0 p0 c0 {6,S}
-12 H u0 p0 c0 {6,S}
-13 H u0 p0 c0 {3,S}
-14 X u0 p0 c0 {4,S}
-
-OCOC#[Pt]
-1 O u0 p2 c0 {3,S} {4,S}
-2 O u0 p2 c0 {3,S} {7,S}
-3 C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
-4 C u0 p0 c0 {1,S} {8,T}
-5 H u0 p0 c0 {3,S}
-6 H u0 p0 c0 {3,S}
-7 H u0 p0 c0 {2,S}
-8 X u0 p0 c0 {4,T}
-
-OCOC=[Pt]
-1 O u0 p2 c0 {3,S} {4,S}
-2 O u0 p2 c0 {3,S} {8,S}
-3 C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
-4 C u0 p0 c0 {1,S} {7,S} {9,D}
-5 H u0 p0 c0 {3,S}
-6 H u0 p0 c0 {3,S}
-7 H u0 p0 c0 {4,S}
-8 H u0 p0 c0 {2,S}
-9 X u0 p0 c0 {4,D}
-
-OCOC(O)=[Pt]
-1  O u0 p2 c0 {4,S} {5,S}
-2  O u0 p2 c0 {4,S} {8,S}
-3  O u0 p2 c0 {5,S} {9,S}
-4  C u0 p0 c0 {1,S} {2,S} {6,S} {7,S}
-5  C u0 p0 c0 {1,S} {3,S} {10,D}
-6  H u0 p0 c0 {4,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {2,S}
-9  H u0 p0 c0 {3,S}
-10 X u0 p0 c0 {5,D}
-
-ethanolX
-1  O u0 p2 c0 {2,S} {9,S}
-2  C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3  C u0 p0 c0 {2,S} {6,S} {7,S} {8,S}
-4  H u0 p0 c0 {2,S}
-5  H u0 p0 c0 {2,S}
-6  H u0 p0 c0 {3,S}
-7  H u0 p0 c0 {3,S}
-8  H u0 p0 c0 {3,S}
-9  H u0 p0 c0 {1,S}
-10 X u0 p0 c0
-
-COCO
-1  O u0 p2 c0 {3,S} {4,S}
-2  O u0 p2 c0 {3,S} {10,S}
-3  C u0 p0 c0 {1,S} {2,S} {5,S} {6,S}
-4  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
-5  H u0 p0 c0 {3,S}
-6  H u0 p0 c0 {3,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {4,S}
-9  H u0 p0 c0 {4,S}
-10 H u0 p0 c0 {2,S}
-
-OCCO.[Pt]
-1  O u0 p2 c0 {3,S} {9,S}
-2  O u0 p2 c0 {4,S} {10,S}
-3  C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
-4  C u0 p0 c0 {2,S} {3,S} {7,S} {8,S}
-5  H u0 p0 c0 {3,S}
-6  H u0 p0 c0 {3,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {4,S}
-9  H u0 p0 c0 {1,S}
-10 H u0 p0 c0 {2,S}
-11 X u0 p0 c0
-
-OCOCO
-1  O u0 p2 c0 {4,S} {5,S}
-2  O u0 p2 c0 {4,S} {10,S}
-3  O u0 p2 c0 {5,S} {11,S}
-4  C u0 p0 c0 {1,S} {2,S} {6,S} {7,S}
-5  C u0 p0 c0 {1,S} {3,S} {8,S} {9,S}
-6  H u0 p0 c0 {4,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {5,S}
-9  H u0 p0 c0 {5,S}
-10 H u0 p0 c0 {2,S}
-11 H u0 p0 c0 {3,S}
-
-O=C([Pt])CO.[Pt]
-1 O u0 p2 c0 {3,S} {7,S}
-2 O u0 p2 c0 {4,D}
-3 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
-4 C u0 p0 c0 {2,D} {3,S} {8,S}
-5 H u0 p0 c0 {3,S}
-6 H u0 p0 c0 {3,S}
-7 H u0 p0 c0 {1,S}
-8 X u0 p0 c0 {4,S}
-9 X u0 p0 c0
-
-HOCH2OX
-1 O u0 p2 c0 {3,S} {6,S}
-2 O u0 p2 c0 {3,S} {7,S}
-3 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
-4 H u0 p0 c0 {3,S}
-5 H u0 p0 c0 {3,S}
-6 H u0 p0 c0 {1,S}
-7 X u0 p0 c0 {2,S}
-8 X u0 p0 c0
-
-OCC#[Pt].[Pt]
-1 O u0 p2 c0 {2,S} {6,S}
-2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3 C u0 p0 c0 {2,S} {7,T}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {1,S}
-7 X u0 p0 c0 {3,T}
-8 X u0 p0 c0
-
-OCCO
-1  O u0 p2 c0 {3,S} {9,S}
-2  O u0 p2 c0 {4,S} {10,S}
-3  C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
-4  C u0 p0 c0 {2,S} {3,S} {7,S} {8,S}
-5  H u0 p0 c0 {3,S}
-6  H u0 p0 c0 {3,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {4,S}
-9  H u0 p0 c0 {1,S}
-10 H u0 p0 c0 {2,S}
-
 OC([Pt])=[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
 2 C u0 p0 c0 {1,S} {4,D} {5,S}
@@ -4556,17 +4380,6 @@ O=C(O[Pt])OC=[Pt].[Pt]
 7 X u0 p0 c0 {4,T}
 8 X u0 p0 c0
 
-OCC=[Pt].[Pt]
-1 O u0 p2 c0 {2,S} {7,S}
-2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3 C u0 p0 c0 {2,S} {6,S} {8,D}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {3,S}
-7 H u0 p0 c0 {1,S}
-8 X u0 p0 c0 {3,D}
-9 X u0 p0 c0
-
 [Pt]OC([Pt])C=[Pt]
 1 O u0 p2 c0 {2,S} {8,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
@@ -4824,6 +4637,16 @@ CH2OHX
 5 H u0 p0 c0 {1,S}
 6 X u0 p0 c0 {2,S}
 7 X u0 p0 c0
+
+HOCH2OX
+1 O u0 p2 c0 {3,S} {6,S}
+2 O u0 p2 c0 {3,S} {7,S}
+3 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
+4 H u0 p0 c0 {3,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {1,S}
+7 X u0 p0 c0 {2,S}
+8 X u0 p0 c0
 
 OOC[Pt].[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
@@ -5294,18 +5117,6 @@ O=C(O[Pt])OC[Pt].[Pt]
 8 X u0 p0 c0 {4,T}
 9 X u0 p0 c0
 
-CH2CH2OHX
-1  O u0 p2 c0 {2,S} {8,S}
-2  C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3  C u0 p0 c0 {2,S} {6,S} {7,S} {9,S}
-4  H u0 p0 c0 {2,S}
-5  H u0 p0 c0 {2,S}
-6  H u0 p0 c0 {3,S}
-7  H u0 p0 c0 {3,S}
-8  H u0 p0 c0 {1,S}
-9  X u0 p0 c0 {3,S}
-10 X u0 p0 c0
-
 [Pt]CC([Pt])O[Pt]
 1 O u0 p2 c0 {2,S} {9,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {7,S}
@@ -5449,186 +5260,4 @@ CH2CH2OHX
 9  X u0 p0 c0 {1,S}
 10 X u0 p0 c0 {2,S}
 11 X u0 p0 c0
-
-C.[Pt]
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-6 X u0 p0 c0
-
-CC(O)O[Pt]
-1  O u0 p2 c0 {3,S} {9,S}
-2  O u0 p2 c0 {3,S} {10,S}
-3  C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
-4  C u0 p0 c0 {3,S} {6,S} {7,S} {8,S}
-5  H u0 p0 c0 {3,S}
-6  H u0 p0 c0 {4,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {4,S}
-9  H u0 p0 c0 {1,S}
-10 X u0 p0 c0 {2,S}
-
-COC(C)O[Pt]
-1  O u0 p2 c0 {3,S} {5,S}
-2  O u0 p2 c0 {3,S} {13,S}
-3  C u0 p0 c0 {1,S} {2,S} {4,S} {6,S}
-4  C u0 p0 c0 {3,S} {7,S} {8,S} {9,S}
-5  C u0 p0 c0 {1,S} {10,S} {11,S} {12,S}
-6  H u0 p0 c0 {3,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {4,S}
-9  H u0 p0 c0 {4,S}
-10 H u0 p0 c0 {5,S}
-11 H u0 p0 c0 {5,S}
-12 H u0 p0 c0 {5,S}
-13 X u0 p0 c0 {2,S}
-
-COC([Pt])OC
-1  O u0 p2 c0 {3,S} {4,S}
-2  O u0 p2 c0 {3,S} {5,S}
-3  C u0 p0 c0 {1,S} {2,S} {6,S} {13,S}
-4  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
-5  C u0 p0 c0 {2,S} {10,S} {11,S} {12,S}
-6  H u0 p0 c0 {3,S}
-7  H u0 p0 c0 {4,S}
-8  H u0 p0 c0 {4,S}
-9  H u0 p0 c0 {4,S}
-10 H u0 p0 c0 {5,S}
-11 H u0 p0 c0 {5,S}
-12 H u0 p0 c0 {5,S}
-13 X u0 p0 c0 {3,S}
-
-COC#[Pt]
-1 O u0 p2 c0 {2,S} {3,S}
-2 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
-3 C u0 p0 c0 {1,S} {7,T}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {2,S}
-7 X u0 p0 c0 {3,T}
-
-CH3CHO
-1 O u0 p2 c0 {3,D}
-2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
-3 C u0 p0 c0 {1,D} {2,S} {7,S}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {2,S}
-7 H u0 p0 c0 {3,S}
-
-COC=[Pt]
-1 O u0 p2 c0 {2,S} {3,S}
-2 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
-3 C u0 p0 c0 {1,S} {7,S} {8,D}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {2,S}
-7 H u0 p0 c0 {3,S}
-8 X u0 p0 c0 {3,D}
-
-acetic_acid
-1 O u0 p2 c0 {4,S} {8,S}
-2 O u0 p2 c0 {4,D}
-3 C u0 p0 c0 {4,S} {5,S} {6,S} {7,S}
-4 C u0 p0 c0 {1,S} {2,D} {3,S}
-5 H u0 p0 c0 {3,S}
-6 H u0 p0 c0 {3,S}
-7 H u0 p0 c0 {3,S}
-8 H u0 p0 c0 {1,S}
-
-COC(O)=[Pt]
-1 O u0 p2 c0 {3,S} {4,S}
-2 O u0 p2 c0 {4,S} {8,S}
-3 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
-4 C u0 p0 c0 {1,S} {2,S} {9,D}
-5 H u0 p0 c0 {3,S}
-6 H u0 p0 c0 {3,S}
-7 H u0 p0 c0 {3,S}
-8 H u0 p0 c0 {2,S}
-9 X u0 p0 c0 {4,D}
-
-CC.[Pt]
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-6 H u0 p0 c0 {2,S}
-7 H u0 p0 c0 {2,S}
-8 H u0 p0 c0 {2,S}
-9 X u0 p0 c0
-
-DME
-1 O u0 p2 c0 {2,S} {3,S}
-2 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
-3 C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {2,S}
-7 H u0 p0 c0 {3,S}
-8 H u0 p0 c0 {3,S}
-9 H u0 p0 c0 {3,S}
-
-acetylX-3
-1 O u0 p2 c0 {3,D}
-2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
-3 C u0 p0 c0 {1,D} {2,S} {7,S}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {2,S}
-7 X u0 p0 c0 {3,S}
-8 X u0 p0 c0
-
-CC#[Pt].[Pt]
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 C u0 p0 c0 {1,S} {6,T}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-6 X u0 p0 c0 {2,T}
-7 X u0 p0 c0
-
-ethanol
-1 O u0 p2 c0 {2,S} {9,S}
-2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3 C u0 p0 c0 {2,S} {6,S} {7,S} {8,S}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {3,S}
-7 H u0 p0 c0 {3,S}
-8 H u0 p0 c0 {3,S}
-9 H u0 p0 c0 {1,S}
-
-CHCH3(T)X
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 C u0 p0 c0 {1,S} {6,S} {7,D}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-6 H u0 p0 c0 {2,S}
-7 X u0 p0 c0 {2,D}
-8 X u0 p0 c0
-
-C2H5X
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-6 H u0 p0 c0 {2,S}
-7 H u0 p0 c0 {2,S}
-8 X u0 p0 c0 {2,S}
-9 X u0 p0 c0
-
-C2H6
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 C u0 p0 c0 {1,S} {6,S} {7,S} {8,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-6 H u0 p0 c0 {2,S}
-7 H u0 p0 c0 {2,S}
-8 H u0 p0 c0 {2,S}
 
