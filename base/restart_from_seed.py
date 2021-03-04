@@ -174,7 +174,7 @@ species(
 #    reactive=True,
 #    structure=adjacencyList(
 #        """
-#
+
 # """),
 # )
 
@@ -212,18 +212,41 @@ species(
 # """),
 # )
 
+# HCOO in grabow is bidentate so i'll represent it that way. this is singly bound
+# species(
+#    label='HCOO*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+# 1 O u0 p2 c0 {3,S} {5,S}
+# 2 O u0 p2 c0 {3,D}
+# 3 C u0 p0 c0 {1,S} {2,D} {4,S}
+# 4 H u0 p0 c0 {3,S}
+# 5 X u0 p0 c0 {1,S}
+# """),
+# )
+
+# HCOO as grabow represents it. I do not have their weird resonance structure though:
+#     H
+#     C
+#    / \
+#   O   O
+#__||__||____resonant 1.5 bond b/w O and X
+#
 species(
    label='HCOO*',
    reactive=True,
    structure=adjacencyList(
        """
-1 O u0 p2 c0 {3,S} {5,S}
-2 O u0 p2 c0 {3,D}
-3 C u0 p0 c0 {1,S} {2,D} {4,S}
-4 H u0 p0 c0 {3,S}
+1 O u0 p2 c0 {2,S} {5,S}
+2 C u1 p0 c0 {1,S} {3,S} {4,S}
+3 O u0 p2 c0 {2,S} {6,S}
+4 H u0 p0 c0 {2,S}
 5 X u0 p0 c0 {1,S}
+6 X u0 p0 c0 {3,S}
 """),
 )
+
 
 # species(
 #    label='H2CO2*',
@@ -247,14 +270,19 @@ species(
 """),
 )
 
-# species(
-#    label='HCOOH*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-#
-# """),
-# )
+species(
+   label='HCOOH*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,S} {4,S}
+2 C u1 p0 c0 {1,S} {3,S} {5,S}
+3 O u0 p2 c0 {2,S} {6,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {2,S}
+6 X u0 p0 c0 {3,S}
+"""),
+)
 
 species(
    label='CH2O*',
