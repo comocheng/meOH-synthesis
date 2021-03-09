@@ -210,19 +210,19 @@ species(
 # """),
 # )
 
-# HCOO in grabow is bidentate so i'll represent it that way. this is singly bound
-# species(
-#    label='HCOO*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-# 1 O u0 p2 c0 {3,S} {5,S}
-# 2 O u0 p2 c0 {3,D}
-# 3 C u0 p0 c0 {1,S} {2,D} {4,S}
-# 4 H u0 p0 c0 {3,S}
-# 5 X u0 p0 c0 {1,S}
-# """),
-# )
+# HCOO representation in 
+species(
+   label='HCOO*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {3,S} {5,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {4,S}
+4 H u0 p0 c0 {3,S}
+5 X u0 p0 c0 {1,S}
+"""),
+)
 
 # HCOO as grabow represents it. I do not have their weird resonance structure though:
 #     H
@@ -231,19 +231,19 @@ species(
 #   O   O
 #__||__||____resonant 1.5 bond b/w O and X
 #
-species(
-   label='HCOO*',
-   reactive=True,
-   structure=adjacencyList(
-       """
-1 O u0 p2 c0 {2,S} {5,S}
-2 C u1 p0 c0 {1,S} {3,S} {4,S}
-3 O u0 p2 c0 {2,S} {6,S}
-4 H u0 p0 c0 {2,S}
-5 X u0 p0 c0 {1,S}
-6 X u0 p0 c0 {3,S}
-"""),
-)
+# species(
+#    label='HCOO*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+# 1 O u0 p2 c0 {2,S} {5,S}
+# 2 C u1 p0 c0 {1,S} {3,S} {4,S}
+# 3 O u0 p2 c0 {2,S} {6,S}
+# 4 H u0 p0 c0 {2,S}
+# 5 X u0 p0 c0 {1,S}
+# 6 X u0 p0 c0 {3,S}
+# """),
+# )
 
 
 # species(
@@ -268,17 +268,33 @@ species(
 """),
 )
 
+# radical representation
+# species(
+#    label='HCOOH*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+# 1 O u0 p2 c0 {2,S} {4,S}
+# 2 C u1 p0 c0 {1,S} {3,S} {5,S}
+# 3 O u0 p2 c0 {2,S} {6,S}
+# 4 H u0 p0 c0 {1,S}
+# 5 H u0 p0 c0 {2,S}
+# 6 X u0 p0 c0 {3,S}
+# """),
+# )
+
+# vdw representation
 species(
    label='HCOOH*',
    reactive=True,
    structure=adjacencyList(
        """
-1 O u0 p2 c0 {2,S} {4,S}
-2 C u1 p0 c0 {1,S} {3,S} {5,S}
-3 O u0 p2 c0 {2,S} {6,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {2,S}
-6 X u0 p0 c0 {3,S}
+1 O u0 p2 c0 {2,S} {6,S}
+2 C u0 p0 c0 {1,S} {3,S} {4,D}
+3 H u0 p0 c0 {2,S}
+4 O u0 p2 c0 {2,D}
+5 X u0 p0 c0
+6 H u0 p0 c0 {1,S}
 """),
 )
 
@@ -519,6 +535,7 @@ options(
     # generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
     saveEdgeSpecies=True,
     saveSimulationProfiles=True,
+    generateSeedEachIteration=True
 )
 
 generatedSpeciesConstraints(
@@ -526,3 +543,4 @@ generatedSpeciesConstraints(
 #    maximumRadicalElectrons=2,
 #    maximumCarbonAtoms=12,
 )
+
