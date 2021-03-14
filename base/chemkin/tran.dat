@@ -25,8 +25,8 @@ HCOOCH3(9)          2     377.356     5.234     0.000     0.000     0.000    ! E
 ! CH3O*(21)           None
 ! CH3O2*(22)          None
 ! CH3OH*(23)          None
-! CO2X(52)            None
+! CO2XX(52)           None
 ! H2X(51)             None
-! COX(60)             None
+! COXX(60)            None
 ! CHOX2(61)           None
 ! CH2OX2(53)          None

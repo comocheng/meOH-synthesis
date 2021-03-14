@@ -141,7 +141,7 @@ O*
 1 O u0 p2 c0 {2,D}
 2 X u0 p0 c0 {1,D}
 
-CO2X
+CO2XX
 1 O u0 p2 c0 {3,S} {5,S}
 2 O u0 p2 c0 {3,D}
 3 C u0 p0 c0 {1,S} {2,D} {4,S}
@@ -153,7 +153,7 @@ CO2X
 2 H u0 p0 c0 {1,S}
 3 X u0 p0 c0
 
-COX
+COXX
 1 O u0 p2 c0 {2,S} {3,S}
 2 C u0 p0 c0 {1,S} {4,T}
 3 X u0 p0 c0 {1,S}

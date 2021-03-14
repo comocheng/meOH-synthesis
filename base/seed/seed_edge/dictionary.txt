@@ -292,7 +292,7 @@ OC(O)[Pt]
 6 H u0 p0 c0 {1,S}
 7 X u0 p0 c0 {3,S}
 
-formic_acidX
+formic_acidXX
 1 O u0 p2 c0 {3,S} {5,S}
 2 O u0 p2 c0 {3,S} {7,S}
 3 C u0 p0 c0 {1,S} {2,S} {4,S} {6,S}
@@ -308,7 +308,7 @@ C[Pt]
 4 H u0 p0 c0 {1,S}
 5 X u0 p0 c0 {1,S}
 
-methyl_formateX
+methyl_formateXX
 1  O u0 p2 c0 {3,S} {4,S}
 2  O u0 p2 c0 {3,S} {10,S}
 3  C u0 p0 c0 {1,S} {2,S} {5,S} {9,S}
@@ -340,7 +340,7 @@ CH3OCOX
 7 H u0 p0 c0 {3,S}
 8 X u0 p0 c0 {4,S}
 
-methyl_formateX-2
+methyl_formate
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
@@ -351,7 +351,7 @@ methyl_formateX-2
 8 H u0 p0 c0 {4,S}
 9 X u0 p0 c0
 
-HOCOX
+HOCOXX
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {3,S} {6,S}
 3 C u0 p0 c0 {1,S} {2,S} {5,D}
@@ -433,6 +433,14 @@ multiplicity 2
 8 H u0 p0 c0 {4,S}
 9 H u0 p0 c0 {4,S}
 
+glyoxal
+1 O u0 p2 c0 {3,D}
+2 O u0 p2 c0 {4,D}
+3 C u0 p0 c0 {1,D} {4,S} {6,S}
+4 C u0 p0 c0 {2,D} {3,S} {5,S}
+5 H u0 p0 c0 {4,S}
+6 H u0 p0 c0 {3,S}
+
 O=COC=O
 1 O u0 p2 c0 {4,S} {5,S}
 2 O u0 p2 c0 {4,D}
@@ -441,6 +449,15 @@ O=COC=O
 5 C u0 p0 c0 {1,S} {3,D} {7,S}
 6 H u0 p0 c0 {4,S}
 7 H u0 p0 c0 {5,S}
+
+O=CC(=O)O
+1 O u0 p2 c0 {4,S} {7,S}
+2 O u0 p2 c0 {4,D}
+3 O u0 p2 c0 {5,D}
+4 C u0 p0 c0 {1,S} {2,D} {5,S}
+5 C u0 p0 c0 {3,D} {4,S} {6,S}
+6 H u0 p0 c0 {5,S}
+7 H u0 p0 c0 {1,S}
 
 C2H2O3
 1 O u0 p2 c0 {2,S} {4,S}
@@ -480,6 +497,18 @@ O=CCOC=O
 7  H u0 p0 c0 {4,S}
 8  H u0 p0 c0 {4,S}
 9  H u0 p0 c0 {5,S}
+10 H u0 p0 c0 {6,S}
+
+COC(=O)C=O
+1  O u0 p2 c0 {4,S} {5,S}
+2  O u0 p2 c0 {5,D}
+3  O u0 p2 c0 {6,D}
+4  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
+5  C u0 p0 c0 {1,S} {2,D} {6,S}
+6  C u0 p0 c0 {3,D} {5,S} {10,S}
+7  H u0 p0 c0 {4,S}
+8  H u0 p0 c0 {4,S}
+9  H u0 p0 c0 {4,S}
 10 H u0 p0 c0 {6,S}
 
 [O]C(=O)C([O])=O
@@ -1820,13 +1849,24 @@ OCO.[Pt]
 7 H u0 p0 c0 {2,S}
 8 X u0 p0 c0
 
+H2O*
+1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0
+
+[H][H].[Pt]
+1 H u0 p0 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0
+
 [Pt]OO[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {4,S}
 3 X u0 p0 c0 {1,S}
 4 X u0 p0 c0 {2,S}
 
-O2(S)X
+O2(S)
 1 O u0 p2 c0 {2,D}
 2 O u0 p2 c0 {1,D}
 3 X u0 p0 c0
@@ -1836,12 +1876,6 @@ OO[Pt]
 2 O u0 p2 c0 {1,S} {3,S}
 3 H u0 p0 c0 {2,S}
 4 X u0 p0 c0 {1,S}
-
-H2O*
-1 O u0 p2 c0 {2,S} {3,S}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 X u0 p0 c0
 
 formylperoxyX
 1 O u0 p2 c0 {2,S} {4,S}
@@ -1900,7 +1934,7 @@ OCHOOH
 5 H u0 p0 c0 {4,S}
 6 H u0 p0 c0 {2,S}
 
-OCHOOHX
+OCHOOH-2
 1 O u0 p2 c0 {2,S} {4,S}
 2 O u0 p2 c0 {1,S} {6,S}
 3 O u0 p2 c0 {4,D}
@@ -1944,7 +1978,7 @@ CH3OOH
 6 H u0 p0 c0 {3,S}
 7 H u0 p0 c0 {2,S}
 
-CH3OOHX
+CH3OOH-2
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {7,S}
 3 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
@@ -1964,7 +1998,7 @@ HOOCH2OH
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {3,S}
 
-HOOCH2OHX
+HOOCH2OH-2
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,S} {7,S}
 3 O u0 p2 c0 {1,S} {8,S}
@@ -1975,7 +2009,7 @@ HOOCH2OHX
 8 H u0 p0 c0 {3,S}
 9 X u0 p0 c0
 
-OCCO(S)X
+OCCOXX
 1 O u0 p2 c0 {3,D}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,D} {4,S} {5,S}
@@ -1983,7 +2017,7 @@ OCCO(S)X
 5 X u0 p0 c0 {3,S}
 6 X u0 p0 c0 {4,S}
 
-OCCO(S)X-2
+OCCO(S)
 1 O u0 p2 c0 {3,D}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,D} {4,D}
@@ -2105,14 +2139,6 @@ O=C(CO)O[Pt]
 8 H u0 p0 c0 {1,S}
 9 X u0 p0 c0 {2,S}
 
-glyoxal
-1 O u0 p2 c0 {3,D}
-2 O u0 p2 c0 {4,D}
-3 C u0 p0 c0 {1,D} {4,S} {5,S}
-4 C u0 p0 c0 {2,D} {3,S} {6,S}
-5 H u0 p0 c0 {3,S}
-6 H u0 p0 c0 {4,S}
-
 O=COC=[Pt]
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,D}
@@ -2122,7 +2148,7 @@ O=COC=[Pt]
 6 H u0 p0 c0 {4,S}
 7 X u0 p0 c0 {3,D}
 
-glyoxalX
+glyoxal-2
 1 O u0 p2 c0 {3,D}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,D} {4,S} {5,S}
@@ -2150,15 +2176,6 @@ O=COC=O.[Pt]
 6 H u0 p0 c0 {4,S}
 7 H u0 p0 c0 {5,S}
 8 X u0 p0 c0
-
-O=CC(=O)O
-1 O u0 p2 c0 {4,S} {7,S}
-2 O u0 p2 c0 {4,D}
-3 O u0 p2 c0 {5,D}
-4 C u0 p0 c0 {1,S} {2,D} {5,S}
-5 C u0 p0 c0 {3,D} {4,S} {6,S}
-6 H u0 p0 c0 {5,S}
-7 H u0 p0 c0 {1,S}
 
 O=C(O)OC=[Pt]
 1 O u0 p2 c0 {4,S} {5,S}
@@ -2190,7 +2207,7 @@ O=CC(=O)O.[Pt]
 7 H u0 p0 c0 {1,S}
 8 X u0 p0 c0
 
-CH3CHOX
+CH3CHO
 1 O u0 p2 c0 {3,D}
 2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 3 C u0 p0 c0 {1,D} {2,S} {7,S}
@@ -2211,7 +2228,7 @@ COOC=[Pt]
 8 H u0 p0 c0 {4,S}
 9 X u0 p0 c0 {4,D}
 
-HOCH2CHOX
+HOCH2CHO-2
 1 O u0 p2 c0 {3,S} {8,S}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
@@ -2336,7 +2353,7 @@ O=C(O)C(=O)O.[Pt]
 8 H u0 p0 c0 {2,S}
 9 X u0 p0 c0
 
-acetic_acidX
+acetic_acid
 1 O u0 p2 c0 {4,S} {8,S}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {4,S} {5,S} {6,S} {7,S}
@@ -2516,7 +2533,7 @@ HOCH2OCH2X
 9  H u0 p0 c0 {2,S}
 10 X u0 p0 c0 {4,S}
 
-DMEX
+DME
 1  O u0 p2 c0 {2,S} {3,S}
 2  C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
 3  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
@@ -2540,7 +2557,7 @@ CH3OOCH3
 9  H u0 p0 c0 {4,S}
 10 H u0 p0 c0 {4,S}
 
-CH3OOCH3X
+CH3OOCH3-2
 1  O u0 p2 c0 {2,S} {3,S}
 2  O u0 p2 c0 {1,S} {4,S}
 3  C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
@@ -2636,7 +2653,7 @@ OCOOCO.[Pt]
 12 H u0 p0 c0 {4,S}
 13 X u0 p0 c0
 
-CO2X
+CO2XX
 1 O u0 p2 c0 {3,S} {5,S}
 2 O u0 p2 c0 {3,D}
 3 C u0 p0 c0 {1,S} {2,D} {4,S}
@@ -2649,7 +2666,7 @@ O=C([Pt])[Pt]
 3 X u0 p0 c0 {2,S}
 4 X u0 p0 c0 {2,S}
 
-O(T)X
+O(T)XX
 1 O u0 p2 c0 {2,S} {3,S}
 2 X u0 p0 c0 {1,S}
 3 X u0 p0 c0 {1,S}
@@ -2865,7 +2882,7 @@ formyloxyX
 5 X u0 p0 c0 {1,S}
 6 X u0 p0 c0
 
-HOCOX-2
+HOCOX
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {3,D}
 3 C u0 p0 c0 {1,S} {2,D} {5,S}
@@ -2873,7 +2890,7 @@ HOCOX-2
 5 X u0 p0 c0 {3,S}
 6 X u0 p0 c0
 
-CO3t1X
+CO3t1XX
 1 O u0 p2 c0 {4,S} {5,S}
 2 O u0 p2 c0 {4,S} {6,S}
 3 O u0 p2 c0 {4,D}
@@ -2881,7 +2898,7 @@ CO3t1X
 5 X u0 p0 c0 {1,S}
 6 X u0 p0 c0 {2,S}
 
-CO3t2X
+CO3t2XX
 1 O u0 p2 c0 {2,S} {4,S}
 2 O u0 p2 c0 {1,S} {6,S}
 3 O u0 p2 c0 {4,D}
@@ -3357,7 +3374,7 @@ O=C([Pt])C(=O)O[Pt].[Pt]
 7 X u0 p0 c0 {1,S}
 8 X u0 p0 c0
 
-CO3t1X-2
+CO3t1XX-2
 1 O u0 p2 c0 {4,S} {5,S}
 2 O u0 p2 c0 {4,S} {6,S}
 3 O u0 p2 c0 {4,D}
@@ -3376,7 +3393,7 @@ O=C([Pt])OC(=O)[Pt].[Pt]
 7 X u0 p0 c0 {5,S}
 8 X u0 p0 c0
 
-CO3t2X-2
+CO3t2XX-2
 1 O u0 p2 c0 {2,S} {4,S}
 2 O u0 p2 c0 {1,S} {6,S}
 3 O u0 p2 c0 {4,D}
@@ -3440,18 +3457,13 @@ O=C(O[Pt])C(=O)O[Pt].[Pt]
 8 X u0 p0 c0 {2,S}
 9 X u0 p0 c0
 
-[H][H].[Pt]
-1 H u0 p0 c0 {2,S}
-2 H u0 p0 c0 {1,S}
-3 X u0 p0 c0
-
-COX
+COXX
 1 O u0 p2 c0 {2,S} {3,S}
 2 C u0 p0 c0 {1,S} {4,T}
 3 X u0 p0 c0 {1,S}
 4 X u0 p0 c0 {2,T}
 
-C(T)X
+C(T)XX
 1 C u0 p0 c0 {2,T} {3,S}
 2 X u0 p0 c0 {1,T}
 3 X u0 p0 c0 {1,S}
@@ -3554,7 +3566,7 @@ OOC#[Pt].[Pt]
 5 X u0 p0 c0 {3,T}
 6 X u0 p0 c0
 
-C2O(S)X
+C2O(S)XX
 1 O u0 p2 c0 {2,D}
 2 C u0 p0 c0 {1,D} {3,S} {4,S}
 3 C u0 p0 c0 {2,S} {5,T}
@@ -3602,7 +3614,7 @@ O=CC#[Pt].[Pt]
 5 X u0 p0 c0 {3,T}
 6 X u0 p0 c0
 
-OCHCOX-3
+OCHCOXX
 1 O u0 p2 c0 {3,S} {7,S}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,S} {4,S} {6,D}
@@ -3716,7 +3728,7 @@ OC([Pt])OC#[Pt]
 6 X u0 p0 c0 {2,S}
 7 X u0 p0 c0 {3,T}
 
-acetylX-2
+acetylXX
 1 O u0 p2 c0 {3,S} {8,S}
 2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 3 C u0 p0 c0 {1,S} {2,S} {7,D}
@@ -3736,7 +3748,7 @@ COC#[Pt].[Pt]
 7 X u0 p0 c0 {3,T}
 8 X u0 p0 c0
 
-CH3OCOX-3
+CH3OCOXX
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,S} {9,S}
 3 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
@@ -4067,7 +4079,7 @@ OOC=[Pt].[Pt]
 6 X u0 p0 c0 {3,D}
 7 X u0 p0 c0
 
-HCCOX
+HCCOXX
 1 O u0 p2 c0 {2,D}
 2 C u0 p0 c0 {1,D} {3,S} {5,S}
 3 C u0 p0 c0 {2,S} {4,S} {6,D}
@@ -4094,7 +4106,7 @@ O=C([Pt])OC=[Pt]
 6 X u0 p0 c0 {3,S}
 7 X u0 p0 c0 {4,D}
 
-OCHCOX-4
+OCHCOX-3
 1 O u0 p2 c0 {3,S} {6,S}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,S} {4,D} {5,S}
@@ -4121,7 +4133,7 @@ ketene(T)X
 6 X u0 p0 c0 {3,D}
 7 X u0 p0 c0
 
-glyoxalX-2
+glyoxalXX
 1 O u0 p2 c0 {3,S} {8,S}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,S} {4,S} {5,S} {7,S}
@@ -4258,7 +4270,7 @@ OC([Pt])OC=[Pt]
 7 X u0 p0 c0 {2,S}
 8 X u0 p0 c0 {3,D}
 
-CH3CHOX-2
+CH3CHOXX
 1 O u0 p2 c0 {2,S} {9,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {8,S}
 3 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
@@ -4292,7 +4304,7 @@ COOC=[Pt].[Pt]
 9  X u0 p0 c0 {4,D}
 10 X u0 p0 c0
 
-HOCH2CHOX-2
+HOCH2CHOXX
 1  O u0 p2 c0 {3,S} {10,S}
 2  O u0 p2 c0 {4,S} {8,S}
 3  C u0 p0 c0 {1,S} {4,S} {5,S} {9,S}
@@ -4567,7 +4579,7 @@ O=C(O[Pt])OC=[Pt].[Pt]
 8 X u0 p0 c0 {4,D}
 9 X u0 p0 c0
 
-HCOH(T)X-2
+HCOH(T)XX
 1 O u0 p2 c0 {2,S} {4,S}
 2 C u0 p0 c0 {1,S} {3,S} {5,S} {6,S}
 3 H u0 p0 c0 {2,S}
@@ -4575,7 +4587,7 @@ HCOH(T)X-2
 5 X u0 p0 c0 {2,S}
 6 X u0 p0 c0 {2,S}
 
-CH2(T)X-2
+CH2(T)XX
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
@@ -4780,7 +4792,7 @@ OOC[Pt].[Pt]
 7 X u0 p0 c0 {3,S}
 8 X u0 p0 c0
 
-keteneX
+keteneXX
 1 O u0 p2 c0 {3,D}
 2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 3 C u0 p0 c0 {1,D} {2,S} {7,S}

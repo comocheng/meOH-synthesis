@@ -148,7 +148,7 @@ CH3OH*(23)
 6 H u0 p0 c0 {1,S}
 7 X u0 p0 c0
 
-CO2X(52)
+CO2XX(52)
 1 O u0 p2 c0 {3,S} {5,S}
 2 O u0 p2 c0 {3,D}
 3 C u0 p0 c0 {1,S} {2,D} {4,S}
@@ -160,7 +160,7 @@ H2X(51)
 2 H u0 p0 c0 {1,S}
 3 X u0 p0 c0
 
-COX(60)
+COXX(60)
 1 O u0 p2 c0 {2,S} {3,S}
 2 C u0 p0 c0 {1,S} {4,T}
 3 X u0 p0 c0 {1,S}
