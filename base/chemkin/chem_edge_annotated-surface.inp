@@ -472,12 +472,11 @@ CO*(14)                 C   1O   1X   1     G   100.000  5000.000  891.32      1
 -2.23513389E+04-4.85379925E+00-1.38218471E+00 3.75310911E-02-8.29779551E-05    3
  8.09731714E-08-2.85485057E-11-2.25369671E+04 4.35463035E+00                   4
 
-! Gas phase thermo for CO2 from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation:
-! adsorptionPt111(R*vdW) Binding energy corrected by LSR () from Pt111
-CO2*(15)                C   1O   2X   1     G   100.000  5000.000  953.58      1
- 5.99797425E+00 2.27495290E-03-6.81151398E-07 1.34446413E-10-1.11521352E-14    2
--4.61838021E+04-2.11646569E+01 3.09270665E+00 5.29257511E-03 8.99525075E-06    3
--1.67139901E-08 7.04956887E-12-4.52128361E+04-5.10062523E+00                   4
+! Thermo library: surfaceThermoPt111 Binding energy corrected by LSR () from Pt111
+CO2*(15)                C   1O   2X   1     G   100.000  5000.000  882.20      1
+ 1.80941218E+00 9.72906358E-03-5.37552236E-06 1.03574152E-09-6.94987626E-14    2
+-4.74613533E+04 1.52497318E+00-1.54718249E+00 4.08838213E-02-8.54431738E-05    3
+ 8.20175827E-08-2.88208633E-11-4.74892240E+04 1.37833266E+01                   4
 
 ! Thermo library: surfaceThermoPt111 Binding energy corrected by LSR (0.25C) from Pt111
 HCO*(16)                C   1H   1O   1X   1G   100.000  5000.000  873.22      1
@@ -485,19 +484,17 @@ HCO*(16)                C   1H   1O   1X   1G   100.000  5000.000  873.22      1
 -2.18133115E+04-4.46392663E+00-1.43679585E+00 3.69243541E-02-7.17904403E-05    3
  6.73532841E-08-2.35178331E-11-2.16948208E+04 8.27561958E+00                   4
 
-! Gas phase thermo for formyloxy from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation:
-! adsorptionPt111(O-*R) Binding energy corrected by LSR (0.50O) from Pt111
-HCOO*(17)               C   1H   1O   2X   1G   100.000  5000.000  956.07      1
- 7.56059387E+00 3.23188687E-03-9.95069145E-07 1.97209997E-10-1.62223821E-14    2
--3.79165840E+04-3.12599937E+01 3.40107587E+00 8.17036809E-03 1.08118772E-05    3
--2.16713720E-08 9.26764028E-12-3.65515694E+04-8.40044088E+00                   4
+! Thermo library: surfaceThermoPt111 Binding energy corrected by LSR (0.50O) from Pt111
+HCOO*(17)               C   1H   1O   2X   1G   100.000  5000.000  833.17      1
+ 3.32787355E+00 1.20449003E-02-6.27963935E-06 1.22724237E-09-8.50486314E-14    2
+-4.87978699E+04-1.50585377E+01-1.79154169E+00 4.37078588E-02-7.60395981E-05    3
+ 6.72525618E-08-2.29590643E-11-4.81907089E+04 7.22955985E+00                   4
 
-! Gas phase thermo for HOCO from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation:
-! adsorptionPt111(C-*R3) Binding energy corrected by LSR (0.25C) from Pt111
-COOH*(18)               C   1H   1O   2X   1G   100.000  5000.000  943.38      1
- 8.73041822E+00 9.99861724E-04 3.63090778E-07-2.84678305E-11-4.35874368E-15    2
--4.03803412E+04-3.79370725E+01 3.72350374E+00-4.28057613E-03 5.09110200E-05    3
--6.55375169E-08 2.52497801E-11-3.82560035E+04-7.82116389E+00                   4
+! Thermo library: surfaceThermoPt111 Binding energy corrected by LSR (0.25C) from Pt111
+COOH*(18)               C   1H   1O   2X   1G   100.000  5000.000  816.24      1
+ 3.87906825E+00 9.05725681E-03-4.52242126E-06 8.78581960E-10-6.09443442E-14    2
+-4.71639503E+04-1.26539206E+01-1.63421584E+00 3.88307021E-02-6.43006419E-05    3
+ 5.38384161E-08-1.75483211E-11-4.63557102E+04 1.22627462E+01                   4
 
 ! Gas phase thermo for formic_acid from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation:
 ! adsorptionPt111((CR2NR)*) Binding energy corrected by LSR () from Pt111
@@ -3671,8 +3668,8 @@ X(1)+H2O(5)=H2O*(13)                                1.000e-01 0.000     0.000
 ! This reaction matched rate rule [Adsorbate;VacantSite]
 ! family: Surface_Adsorption_vdW
 ! metal: None
-! Ea raised from 0.0 to 26.4 kJ/mol to match endothermicity of reaction.
-X(1)+CO2(4)=CO2*(15)                                7.000e-06 0.000     6.320    
+! Ea raised from 0.0 to 7.3 kJ/mol to match endothermicity of reaction.
+X(1)+CO2(4)=CO2*(15)                                7.000e-06 0.000     1.735    
     STICK
 
 ! Reaction index: Chemkin #6; RMG #66
@@ -3682,7 +3679,7 @@ X(1)+CO2(4)=CO2*(15)                                7.000e-06 0.000     6.320
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-H*(10)+CO2(4)=HCOO*(17)                             1.000e-01 0.000     26.656   
+H*(10)+CO2(4)=HCOO*(17)                             1.000e-01 0.000     17.462   
     STICK
 
 ! Reaction index: Chemkin #7; RMG #67
@@ -3700,8 +3697,7 @@ HCOO*(17)=COOH*(18)                                 1.112889e+12 0.000     14.46
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-! Ea raised from 95.8 to 96.1 kJ/mol to match endothermicity of reaction.
-H*(10)+CO2(4)=COOH*(18)                             1.000e-01 0.000     22.967   
+H*(10)+CO2(4)=COOH*(18)                             1.000e-01 0.000     17.462   
     STICK
 
 ! Reaction index: Chemkin #9; RMG #70
@@ -3805,8 +3801,7 @@ X(1)+X(1)+HCOOH(7)=OH*(12)+HCO*(16)                 1.600e-02 0.000     6.772
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-H;VacantSite1;VacantSite2]
 ! Euclidian distance = 2.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 73.5 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+HCOOH(7)=H*(10)+HCOO*(17)                 1.600e-02 0.000     17.560   
+X(1)+X(1)+HCOOH(7)=H*(10)+HCOO*(17)                 1.600e-02 0.000     0.000    
     STICK
 
 ! Reaction index: Chemkin #20; RMG #91
@@ -3815,8 +3810,7 @@ X(1)+X(1)+HCOOH(7)=H*(10)+HCOO*(17)                 1.600e-02 0.000     17.560
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [C-H;VacantSite1;VacantSite2]
 ! Euclidian distance = 1.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 59.4 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+HCOOH(7)=H*(10)+COOH*(18)                 1.600e-02 0.000     14.186   
+X(1)+X(1)+HCOOH(7)=H*(10)+COOH*(18)                 1.600e-02 0.000     0.000    
     STICK
 
 ! Reaction index: Chemkin #21; RMG #94
@@ -3901,7 +3895,7 @@ H*(10)+CO2*(15)=X(1)+HCOO*(17)                      6.250000e+24 -0.475    28.01
 ! Estimated using template [O;VacantSite] for rate rule [O-C;VacantSite]
 ! Euclidian distance = 1.0
 ! family: Surface_Dissociation
-X(1)+HCOO*(17)=O*(11)+HCO*(16)                      2.250000e+20 0.188     7.075    
+X(1)+HCOO*(17)=O*(11)+HCO*(16)                      2.250000e+20 0.188     9.626    
 
 ! Reaction index: Chemkin #30; RMG #113
 ! Template reaction: Surface_Addition_Single_vdW
@@ -3919,8 +3913,7 @@ H*(10)+CO2*(15)=X(1)+COOH*(18)                      6.250000e+24 -0.475    28.01
 ! This reaction matched rate rule [C-O;VacantSite]
 ! family: Surface_Dissociation
 ! metal: None
-! Ea raised from 11.5 to 49.8 kJ/mol to match endothermicity of reaction.
-OH*(12)+CO*(14)=X(1)+COOH*(18)                      4.020000e+18 0.000     11.906   
+OH*(12)+CO*(14)=X(1)+COOH*(18)                      4.020000e+18 0.000     2.749    
 
 ! Reaction index: Chemkin #32; RMG #117
 ! Template reaction: Surface_Dissociation_vdW
@@ -3938,7 +3931,7 @@ X(1)+HCOOH*(19)=OH*(12)+HCO*(16)                    5.996619e+21 0.000     18.14
 ! Exact match found for rate rule [O-H;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation_vdW
-X(1)+HCOOH*(19)=H*(10)+HCOO*(17)                    3.670000e+21 -0.086    24.119   
+X(1)+HCOOH*(19)=H*(10)+HCOO*(17)                    3.670000e+21 -0.086    22.204   
 DUPLICATE
 
 ! Reaction index: Chemkin #34; RMG #119
@@ -3948,7 +3941,7 @@ DUPLICATE
 ! Exact match found for rate rule [C-H;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation_vdW
-X(1)+HCOOH*(19)=H*(10)+COOH*(18)                    3.850000e+20 0.087     20.370   
+X(1)+HCOOH*(19)=H*(10)+COOH*(18)                    3.850000e+20 0.087     13.337   
 DUPLICATE
 
 ! Reaction index: Chemkin #35; RMG #120
@@ -3957,7 +3950,7 @@ DUPLICATE
 ! Estimated using an average for rate rule [Combined;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation_vdW
-X(1)+HCOOH*(19)=H*(10)+COOH*(18)                    2.998309e+21 0.000     20.370   
+X(1)+HCOOH*(19)=H*(10)+COOH*(18)                    2.998309e+21 0.000     18.140   
 DUPLICATE
 
 ! Reaction index: Chemkin #36; RMG #121
@@ -3966,7 +3959,7 @@ DUPLICATE
 ! Estimated using an average for rate rule [Combined;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation_vdW
-X(1)+HCOOH*(19)=H*(10)+HCOO*(17)                    2.998309e+21 0.000     24.119   
+X(1)+HCOOH*(19)=H*(10)+HCOO*(17)                    2.998309e+21 0.000     18.140   
 DUPLICATE
 
 ! Reaction index: Chemkin #37; RMG #124
@@ -4088,7 +4081,7 @@ O*(11)+CH2O*(20)=H*(10)+HCOO*(17)                   4.782614e+24 -0.188    37.17
 ! Estimated using an average for rate rule [Combined;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation_vdW
-X(1)+HCOOH*(19)=H*(10)+HCOO*(17)                    2.998309e+21 0.000     24.119   
+X(1)+HCOOH*(19)=H*(10)+HCOO*(17)                    2.998309e+21 0.000     18.140   
 DUPLICATE
 
 ! Reaction index: Chemkin #50; RMG #351
@@ -4098,7 +4091,7 @@ DUPLICATE
 ! Exact match found for rate rule [O-H;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation_vdW
-X(1)+HCOOH*(19)=H*(10)+HCOO*(17)                    3.670000e+21 -0.086    24.119   
+X(1)+HCOOH*(19)=H*(10)+HCOO*(17)                    3.670000e+21 -0.086    22.204   
 DUPLICATE
 
 ! Reaction index: Chemkin #51; RMG #353
@@ -4115,7 +4108,7 @@ H2O*(13)+CO*(14)=H*(10)+COOH*(18)                   4.782614e+24 -0.188    37.17
 ! Estimated using an average for rate rule [Combined;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation_vdW
-X(1)+HCOOH*(19)=H*(10)+COOH*(18)                    2.998309e+21 0.000     20.370   
+X(1)+HCOOH*(19)=H*(10)+COOH*(18)                    2.998309e+21 0.000     18.140   
 DUPLICATE
 
 ! Reaction index: Chemkin #53; RMG #356
@@ -4125,7 +4118,7 @@ DUPLICATE
 ! Exact match found for rate rule [C-H;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation_vdW
-X(1)+HCOOH*(19)=H*(10)+COOH*(18)                    3.850000e+20 0.087     20.370   
+X(1)+HCOOH*(19)=H*(10)+COOH*(18)                    3.850000e+20 0.087     13.337   
 DUPLICATE
 
 ! Reaction index: Chemkin #54; RMG #358
@@ -4204,8 +4197,7 @@ OH*(12)+CO*(14)=O*(11)+HCO*(16)                     1.390000e+21 0.101     4.541
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 70.2 to 70.5 kJ/mol to match endothermicity of reaction.
-OH*(12)+CO2*(15)=O*(11)+HCOO*(17)                   3.690000e+20 0.000     16.851   
+OH*(12)+CO2*(15)=O*(11)+HCOO*(17)                   3.690000e+20 0.000     8.815    
 
 ! Reaction index: Chemkin #63; RMG #389
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -4213,7 +4205,7 @@ OH*(12)+CO2*(15)=O*(11)+HCOO*(17)                   3.690000e+20 0.000     16.85
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-OH*(12)+CO2*(15)=O*(11)+COOH*(18)                   3.690000e+20 0.000     15.153   
+OH*(12)+CO2*(15)=O*(11)+COOH*(18)                   3.690000e+20 0.000     10.271   
 
 ! Reaction index: Chemkin #64; RMG #391
 ! Template reaction: Surface_Abstraction_vdW
@@ -4238,7 +4230,7 @@ DUPLICATE
 ! Exact match found for rate rule [C-R;*=O]
 ! Euclidian distance = 0
 ! family: Surface_Abstraction_vdW
-O*(11)+HCOOH*(19)=OH*(12)+COOH*(18)                 1.405000e+24 -0.101    23.790   
+O*(11)+HCOOH*(19)=OH*(12)+COOH*(18)                 1.405000e+24 -0.101    22.156   
 
 ! Reaction index: Chemkin #67; RMG #397
 ! Template reaction: Surface_Abstraction_vdW
@@ -4311,8 +4303,8 @@ DUPLICATE
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 160.9 kJ/mol to match endothermicity of reaction.
-H2O*(13)+CO2*(15)=OH*(12)+HCOO*(17)                 4.000000e+17 0.000     38.466   
+! Ea raised from 0.0 to 83.1 kJ/mol to match endothermicity of reaction.
+H2O*(13)+CO2*(15)=OH*(12)+HCOO*(17)                 4.000000e+17 0.000     19.854   
 
 ! Reaction index: Chemkin #76; RMG #425
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -4320,25 +4312,24 @@ H2O*(13)+CO2*(15)=OH*(12)+HCOO*(17)                 4.000000e+17 0.000     38.46
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 146.8 kJ/mol to match endothermicity of reaction.
-H2O*(13)+CO2*(15)=OH*(12)+COOH*(18)                 4.000000e+17 0.000     35.092   
+! Ea raised from 0.0 to 98.4 kJ/mol to match endothermicity of reaction.
+H2O*(13)+CO2*(15)=OH*(12)+COOH*(18)                 4.000000e+17 0.000     23.509   
 
 ! Reaction index: Chemkin #77; RMG #426
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [H2O;*O]
-! Euclidian distance = 3.1622776601683795
-! Multiplied by reaction path degeneracy 2.0
+! Estimated using template [Donating;Abstracting] for rate rule [O-H;*O-H]
+! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -11.5 to 0.0 kJ/mol.
-H2O*(13)+HCOO*(17)=OH*(12)+HCOOH*(19)               2.000000e+17 0.000     0.000    
+! Ea raised from -39.3 to 0.0 kJ/mol.
+OH*(12)+HCOOH*(19)=H2O*(13)+HCOO*(17)               1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #78; RMG #428
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [C-R;*O-H]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from 3.6 to 7.1 kJ/mol to match endothermicity of reaction.
-OH*(12)+HCOOH*(19)=H2O*(13)+COOH*(18)               1.000000e+17 0.000     1.701    
+! Ea raised from -32.0 to 0.0 kJ/mol.
+OH*(12)+HCOOH*(19)=H2O*(13)+COOH*(18)               1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #79; RMG #434
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -4398,7 +4389,7 @@ OH*(12)+CH3OH*(23)=H2O*(13)+CH3O*(21)               1.000000e+17 0.000     0.000
 ! Euclidian distance = 3.605551275463989
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+HCO*(16)=CO*(14)+HCOO*(17)                 3.690000e+20 0.000     16.375   
+CO2*(15)+HCO*(16)=CO*(14)+HCOO*(17)                 3.690000e+20 0.000     8.462    
 
 ! Reaction index: Chemkin #86; RMG #474
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -4406,7 +4397,7 @@ CO2*(15)+HCO*(16)=CO*(14)+HCOO*(17)                 3.690000e+20 0.000     16.37
 ! Euclidian distance = 4.47213595499958
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+HCO*(16)=CO*(14)+COOH*(18)                 3.690000e+20 0.000     14.801   
+CO2*(15)+HCO*(16)=CO*(14)+COOH*(18)                 3.690000e+20 0.000     9.919    
 
 ! Reaction index: Chemkin #87; RMG #478
 ! Template reaction: Surface_Abstraction_vdW
@@ -4420,8 +4411,7 @@ CO*(14)+HCOOH*(19)=HCO*(16)+HCOO*(17)               4.070000e+24 -0.274    52.19
 ! Estimated using template [C-R;Adsorbate1] for rate rule [C-OH;*=C=R]
 ! Euclidian distance = 3.605551275463989
 ! family: Surface_Abstraction_vdW
-! Ea raised from 103.0 to 103.1 kJ/mol to match endothermicity of reaction.
-CO*(14)+HCOOH*(19)=HCO*(16)+COOH*(18)               1.405000e+24 -0.101    24.637   
+CO*(14)+HCOOH*(19)=HCO*(16)+COOH*(18)               1.405000e+24 -0.101    22.156   
 DUPLICATE
 
 ! Reaction index: Chemkin #89; RMG #480
@@ -4429,8 +4419,7 @@ DUPLICATE
 ! Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C=R]
 ! Euclidian distance = 3.0
 ! family: Surface_Abstraction_vdW
-! Ea raised from 103.0 to 103.1 kJ/mol to match endothermicity of reaction.
-CO*(14)+HCOOH*(19)=HCO*(16)+COOH*(18)               1.405000e+24 -0.101    24.637   
+CO*(14)+HCOOH*(19)=HCO*(16)+COOH*(18)               1.405000e+24 -0.101    22.156   
 DUPLICATE
 
 ! Reaction index: Chemkin #90; RMG #483
@@ -4453,7 +4442,7 @@ HCO*(16)+CH2O*(20)=CO*(14)+CH3O*(21)                1.845000e+20 0.000     7.345
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Adsorption_Abstraction_vdW
-COOH*(18)+CH2O*(20)=CO*(14)+CH3O2*(22)              1.845000e+20 0.000     5.017    
+COOH*(18)+CH2O*(20)=CO*(14)+CH3O2*(22)              1.845000e+20 0.000     12.181   
 
 ! Reaction index: Chemkin #93; RMG #491
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -4475,8 +4464,8 @@ CO*(14)+CH3OH*(23)=HCO*(16)+CH3O*(21)               4.070000e+24 -0.274    52.19
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 182.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=HCOO*(17)+HCOO*(17)             2.000000e+17 0.000     43.541   
+! Ea raised from 0.0 to 7.2 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=HCOO*(17)+HCOO*(17)             2.000000e+17 0.000     1.731    
 
 ! Reaction index: Chemkin #96; RMG #513
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -4484,8 +4473,8 @@ CO2*(15)+HCOOH*(19)=HCOO*(17)+HCOO*(17)             2.000000e+17 0.000     43.54
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 168.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=COOH*(18)+HCOO*(17)             2.000000e+17 0.000     40.167   
+! Ea raised from 0.0 to 22.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=COOH*(18)+HCOO*(17)             2.000000e+17 0.000     5.386    
 DUPLICATE
 
 ! Reaction index: Chemkin #97; RMG #517
@@ -4494,8 +4483,8 @@ DUPLICATE
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 168.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=COOH*(18)+HCOO*(17)             2.000000e+17 0.000     40.167   
+! Ea raised from 0.0 to 22.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=COOH*(18)+HCOO*(17)             2.000000e+17 0.000     5.386    
 DUPLICATE
 
 ! Reaction index: Chemkin #98; RMG #519
@@ -4504,8 +4493,8 @@ DUPLICATE
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 153.9 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=COOH*(18)+COOH*(18)             2.000000e+17 0.000     36.793   
+! Ea raised from 0.0 to 37.8 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=COOH*(18)+COOH*(18)             2.000000e+17 0.000     9.041    
 
 ! Reaction index: Chemkin #99; RMG #522
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -4513,8 +4502,7 @@ CO2*(15)+HCOOH*(19)=COOH*(18)+COOH*(18)             2.000000e+17 0.000     36.79
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 60.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2O*(20)=HCO*(16)+HCOO*(17)               4.000000e+17 0.000     14.419   
+CO2*(15)+CH2O*(20)=HCO*(16)+HCOO*(17)               4.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #100; RMG #524
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -4522,8 +4510,7 @@ CO2*(15)+CH2O*(20)=HCO*(16)+HCOO*(17)               4.000000e+17 0.000     14.41
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 46.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2O*(20)=HCO*(16)+COOH*(18)               4.000000e+17 0.000     11.045   
+CO2*(15)+CH2O*(20)=HCO*(16)+COOH*(18)               4.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #101; RMG #535
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -4531,8 +4518,8 @@ CO2*(15)+CH2O*(20)=HCO*(16)+COOH*(18)               4.000000e+17 0.000     11.04
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 140.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=HCOO*(17)+CH3O*(21)             2.000000e+17 0.000     33.479   
+! Ea raised from 0.0 to 62.2 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=HCOO*(17)+CH3O*(21)             2.000000e+17 0.000     14.867   
 
 ! Reaction index: Chemkin #102; RMG #541
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -4540,16 +4527,15 @@ CO2*(15)+CH3OH*(23)=HCOO*(17)+CH3O*(21)             2.000000e+17 0.000     33.47
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 126.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=COOH*(18)+CH3O*(21)             2.000000e+17 0.000     30.105   
+! Ea raised from 0.0 to 77.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=COOH*(18)+CH3O*(21)             2.000000e+17 0.000     18.522   
 
 ! Reaction index: Chemkin #103; RMG #553
 ! Template reaction: Surface_Abstraction_vdW
 ! Estimated using template [C-R;Adsorbate1] for rate rule [C-OH;*=C=R]
 ! Euclidian distance = 3.605551275463989
 ! family: Surface_Abstraction_vdW
-! Ea raised from 103.0 to 103.1 kJ/mol to match endothermicity of reaction.
-CO*(14)+HCOOH*(19)=HCO*(16)+COOH*(18)               1.405000e+24 -0.101    24.637   
+CO*(14)+HCOOH*(19)=HCO*(16)+COOH*(18)               1.405000e+24 -0.101    22.156   
 DUPLICATE
 
 ! Reaction index: Chemkin #104; RMG #554
@@ -4557,8 +4543,7 @@ DUPLICATE
 ! Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*=C=R]
 ! Euclidian distance = 3.0
 ! family: Surface_Abstraction_vdW
-! Ea raised from 103.0 to 103.1 kJ/mol to match endothermicity of reaction.
-CO*(14)+HCOOH*(19)=HCO*(16)+COOH*(18)               1.405000e+24 -0.101    24.637   
+CO*(14)+HCOOH*(19)=HCO*(16)+COOH*(18)               1.405000e+24 -0.101    22.156   
 DUPLICATE
 
 ! Reaction index: Chemkin #105; RMG #560
@@ -4567,7 +4552,7 @@ DUPLICATE
 ! Euclidian distance = 1.4142135623730951
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -61.9 to 0.0 kJ/mol.
+! Ea raised from -11.1 to 0.0 kJ/mol.
 HCOO*(17)+CH2O*(20)=HCO*(16)+HCOOH*(19)             2.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #106; RMG #561
@@ -4576,7 +4561,7 @@ HCOO*(17)+CH2O*(20)=HCO*(16)+HCOOH*(19)             2.000000e+17 0.000     0.000
 ! Euclidian distance = 2.23606797749979
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -54.0 to 0.0 kJ/mol.
+! Ea raised from -18.3 to 0.0 kJ/mol.
 COOH*(18)+CH2O*(20)=HCO*(16)+HCOOH*(19)             2.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #107; RMG #574
@@ -4621,8 +4606,8 @@ CH2O*(20)+CH3O*(21)=HCO*(16)+CH3OH*(23)             2.000000e+17 0.000     0.000
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 168.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=COOH*(18)+HCOO*(17)             2.000000e+17 0.000     40.167   
+! Ea raised from 0.0 to 22.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=COOH*(18)+HCOO*(17)             2.000000e+17 0.000     5.386    
 DUPLICATE
 
 ! Reaction index: Chemkin #112; RMG #597
@@ -4631,65 +4616,64 @@ DUPLICATE
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 168.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=COOH*(18)+HCOO*(17)             2.000000e+17 0.000     40.167   
+! Ea raised from 0.0 to 22.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=COOH*(18)+HCOO*(17)             2.000000e+17 0.000     5.386    
 DUPLICATE
 
 ! Reaction index: Chemkin #113; RMG #600
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [C-R;*O]
-! Euclidian distance = 1.4142135623730951
+! Estimated using template [Donating;Abstracting] for rate rule [O-H;*C=R]
+! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -7.8 to 0.0 kJ/mol.
-HCOO*(17)+HCOOH*(19)=COOH*(18)+HCOOH*(19)           1.000000e+17 0.000     0.000    
+! Ea raised from -7.3 to 0.0 kJ/mol.
+COOH*(18)+HCOOH*(19)=HCOO*(17)+HCOOH*(19)           1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #114; RMG #616
 ! Template reaction: Surface_Dual_Adsorption_vdW
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 93.4 kJ/mol to match endothermicity of reaction.
-CH2O*(20)+HCOOH*(19)=HCOO*(17)+CH3O*(21)            1.000000e+17 0.000     22.322   
+CH2O*(20)+HCOOH*(19)=HCOO*(17)+CH3O*(21)            1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #115; RMG #623
 ! Template reaction: Surface_Dual_Adsorption_vdW
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 177.3 kJ/mol to match endothermicity of reaction.
-HCOOH*(19)+HCOOH*(19)=HCOO*(17)+CH3O2*(22)          1.000000e+17 0.000     42.371   
+! Ea raised from 0.0 to 80.2 kJ/mol to match endothermicity of reaction.
+HCOOH*(19)+HCOOH*(19)=HCOO*(17)+CH3O2*(22)          1.000000e+17 0.000     19.173   
 
 ! Reaction index: Chemkin #116; RMG #625
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*O]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -21.6 to 0.0 kJ/mol.
-HCOO*(17)+CH3OH*(23)=HCOOH*(19)+CH3O*(21)           1.000000e+17 0.000     0.000    
+! Ea raised from -29.1 to 0.0 kJ/mol.
+HCOOH*(19)+CH3O*(21)=HCOO*(17)+CH3OH*(23)           1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #117; RMG #651
 ! Template reaction: Surface_Dual_Adsorption_vdW
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 79.3 kJ/mol to match endothermicity of reaction.
-CH2O*(20)+HCOOH*(19)=COOH*(18)+CH3O*(21)            1.000000e+17 0.000     18.948   
+! Ea raised from 0.0 to 11.6 kJ/mol to match endothermicity of reaction.
+CH2O*(20)+HCOOH*(19)=COOH*(18)+CH3O*(21)            1.000000e+17 0.000     2.779    
 
 ! Reaction index: Chemkin #118; RMG #659
 ! Template reaction: Surface_Dual_Adsorption_vdW
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 163.2 kJ/mol to match endothermicity of reaction.
-HCOOH*(19)+HCOOH*(19)=COOH*(18)+CH3O2*(22)          1.000000e+17 0.000     38.997   
+! Ea raised from 0.0 to 95.5 kJ/mol to match endothermicity of reaction.
+HCOOH*(19)+HCOOH*(19)=COOH*(18)+CH3O2*(22)          1.000000e+17 0.000     22.828   
 
 ! Reaction index: Chemkin #119; RMG #661
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [O-H;*C=R]
-! Euclidian distance = 2.8284271247461903
+! Estimated using template [Donating;Abstracting] for rate rule [C-R;*O]
+! Euclidian distance = 1.4142135623730951
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -13.8 to 0.0 kJ/mol.
-COOH*(18)+CH3OH*(23)=HCOOH*(19)+CH3O*(21)           1.000000e+17 0.000     0.000    
+! Ea raised from -21.9 to 0.0 kJ/mol.
+HCOOH*(19)+CH3O*(21)=COOH*(18)+CH3OH*(23)           1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #120; RMG #676
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -4814,8 +4798,7 @@ H2X(51)+CO*(14)=H*(10)+HCO*(16)                     4.782614e+24 -0.188    37.17
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 71.5 kJ/mol to match endothermicity of reaction.
-H2X(51)+CO2*(15)=H*(10)+HCOO*(17)                   4.000000e+17 0.000     17.096   
+H2X(51)+CO2*(15)=H*(10)+HCOO*(17)                   4.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #134; RMG #357
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -4823,8 +4806,8 @@ H2X(51)+CO2*(15)=H*(10)+HCOO*(17)                   4.000000e+17 0.000     17.09
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 57.4 kJ/mol to match endothermicity of reaction.
-H2X(51)+CO2*(15)=H*(10)+COOH*(18)                   4.000000e+17 0.000     13.722   
+! Ea raised from 0.0 to 9.0 kJ/mol to match endothermicity of reaction.
+H2X(51)+CO2*(15)=H*(10)+COOH*(18)                   4.000000e+17 0.000     2.139    
 
 ! Reaction index: Chemkin #135; RMG #359
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -4832,7 +4815,7 @@ H2X(51)+CO2*(15)=H*(10)+COOH*(18)                   4.000000e+17 0.000     13.72
 ! Euclidian distance = 1.4142135623730951
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -58.1 to 0.0 kJ/mol.
+! Ea raised from -7.3 to 0.0 kJ/mol.
 H2X(51)+HCOO*(17)=H*(10)+HCOOH*(19)                 2.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #136; RMG #361
@@ -4841,7 +4824,7 @@ H2X(51)+HCOO*(17)=H*(10)+HCOOH*(19)                 2.000000e+17 0.000     0.000
 ! Euclidian distance = 2.23606797749979
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -50.2 to 0.0 kJ/mol.
+! Ea raised from -14.6 to 0.0 kJ/mol.
 H2X(51)+COOH*(18)=H*(10)+HCOOH*(19)                 2.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #137; RMG #363
@@ -5009,8 +4992,8 @@ CO*(14)+CH3OH*(23)=HCO*(16)+CH3OX(47)               4.215000e+24 -0.101    22.15
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 6.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 83.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=HCOO*(17)+CH3OX(47)             6.000000e+17 0.000     19.867   
+! Ea raised from 0.0 to 5.3 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=HCOO*(17)+CH3OX(47)             6.000000e+17 0.000     1.255    
 
 ! Reaction index: Chemkin #156; RMG #543
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -5018,8 +5001,8 @@ CO2*(15)+CH3OH*(23)=HCOO*(17)+CH3OX(47)             6.000000e+17 0.000     19.86
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 6.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 69.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=COOH*(18)+CH3OX(47)             6.000000e+17 0.000     16.493   
+! Ea raised from 0.0 to 20.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=COOH*(18)+CH3OX(47)             6.000000e+17 0.000     4.910    
 
 ! Reaction index: Chemkin #157; RMG #570
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -5039,12 +5022,12 @@ CH2O*(20)+CH3OX(47)=HCO*(16)+CH3OH*(23)             2.000000e+17 0.000     0.000
 
 ! Reaction index: Chemkin #159; RMG #627
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [C-R;*O]
-! Euclidian distance = 1.4142135623730951
-! Multiplied by reaction path degeneracy 3.0
+! Estimated using template [Donating;Abstracting] for rate rule [O-H;*C-3R]
+! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -50.3 to 0.0 kJ/mol.
-HCOO*(17)+CH3OH*(23)=HCOOH*(19)+CH3OX(47)           3.000000e+17 0.000     0.000    
+! Ea raised from -0.5 to 0.0 kJ/mol.
+! Ea raised from 0.0 to 2.0 kJ/mol to match endothermicity of reaction.
+HCOOH*(19)+CH3OX(47)=HCOO*(17)+CH3OH*(23)           1.000000e+17 0.000     0.476    
 
 ! Reaction index: Chemkin #160; RMG #663
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -5052,7 +5035,7 @@ HCOO*(17)+CH3OH*(23)=HCOOH*(19)+CH3OX(47)           3.000000e+17 0.000     0.000
 ! Euclidian distance = 2.23606797749979
 ! Multiplied by reaction path degeneracy 3.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -42.4 to 0.0 kJ/mol.
+! Ea raised from -6.7 to 0.0 kJ/mol.
 COOH*(18)+CH3OH*(23)=HCOOH*(19)+CH3OX(47)           3.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #161; RMG #682
@@ -5060,16 +5043,14 @@ COOH*(18)+CH3OH*(23)=HCOOH*(19)+CH3OX(47)           3.000000e+17 0.000     0.000
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;O-R]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 36.4 kJ/mol to match endothermicity of reaction.
-CH2O*(20)+HCOOH*(19)=HCOO*(17)+CH3OX(47)            1.000000e+17 0.000     8.710    
+CH2O*(20)+HCOOH*(19)=HCOO*(17)+CH3OX(47)            1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #162; RMG #685
 ! Template reaction: Surface_Dual_Adsorption_vdW
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;C-R]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 22.3 kJ/mol to match endothermicity of reaction.
-CH2O*(20)+HCOOH*(19)=COOH*(18)+CH3OX(47)            1.000000e+17 0.000     5.336    
+CH2O*(20)+HCOOH*(19)=COOH*(18)+CH3OX(47)            1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #163; RMG #711
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -5217,7 +5198,7 @@ COXX(63)+HCO*(16)=CO*(14)+CHOX2(64)                 4.400000e+22 0.101     10.13
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CHOX2(64)=COXX(63)+HCOO*(17)               3.690000e+20 0.000     16.851   
+CO2*(15)+CHOX2(64)=COXX(63)+HCOO*(17)               3.690000e+20 0.000     8.850    
 
 ! Reaction index: Chemkin #180; RMG #989
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -5225,7 +5206,7 @@ CO2*(15)+CHOX2(64)=COXX(63)+HCOO*(17)               3.690000e+20 0.000     16.85
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CHOX2(64)=COXX(63)+COOH*(18)               3.690000e+20 0.000     15.188   
+CO2*(15)+CHOX2(64)=COXX(63)+COOH*(18)               3.690000e+20 0.000     10.307   
 
 ! Reaction index: Chemkin #181; RMG #1001
 ! Template reaction: Surface_Abstraction_vdW
@@ -5239,8 +5220,7 @@ COXX(63)+HCOOH*(19)=CHOX2(64)+HCOO*(17)             4.070000e+24 -0.274    52.19
 ! Estimated using template [C-R;Adsorbate1] for rate rule [C-R;*#C]
 ! Euclidian distance = 2.0
 ! family: Surface_Abstraction_vdW
-! Ea raised from 99.2 to 102.5 kJ/mol to match endothermicity of reaction.
-COXX(63)+HCOOH*(19)=CHOX2(64)+COOH*(18)             1.405000e+24 -0.101    24.503   
+COXX(63)+HCOOH*(19)=CHOX2(64)+COOH*(18)             1.405000e+24 -0.101    22.156   
 
 ! Reaction index: Chemkin #183; RMG #1014
 ! Template reaction: Surface_Abstraction_vdW
@@ -5355,7 +5335,7 @@ HCO*(16)+CHOX2(64)=CO*(14)+CH2OX2(53)               1.390000e+21 0.101     4.541
 ! Euclidian distance = 3.605551275463989
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH2OX2(53)=CHOX2(64)+HCOO*(17)             7.380000e+20 0.000     23.390   
+CO2*(15)+CH2OX2(53)=CHOX2(64)+HCOO*(17)             7.380000e+20 0.000     11.597   
 
 ! Reaction index: Chemkin #197; RMG #1251
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -5363,8 +5343,7 @@ CO2*(15)+CH2OX2(53)=CHOX2(64)+HCOO*(17)             7.380000e+20 0.000     23.39
 ! Euclidian distance = 4.47213595499958
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 82.2 to 82.4 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2OX2(53)=CHOX2(64)+COOH*(18)             7.380000e+20 0.000     19.704   
+CO2*(15)+CH2OX2(53)=CHOX2(64)+COOH*(18)             7.380000e+20 0.000     13.053   
 
 ! Reaction index: Chemkin #198; RMG #1264
 ! Template reaction: Surface_Abstraction_vdW
@@ -5475,8 +5454,7 @@ X(1)+X(1)+CH3OH(8)=OH*(12)+CH3X(57)                 1.600e-02 0.000     7.469
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
 ! Euclidian distance = 2.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 66.1 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+HCOOCH3(9)=HCOO*(17)+CH3X(57)             1.600e-02 0.000     15.807   
+X(1)+X(1)+HCOOCH3(9)=HCOO*(17)+CH3X(57)             1.600e-02 0.000     0.000    
     STICK
 
 ! Reaction index: Chemkin #212; RMG #128
@@ -5509,7 +5487,7 @@ H*(10)+CH3OH*(23)=H2O*(13)+CH3X(57)                 1.000000e+17 0.000     0.000
 ! Estimated using template [C-R;Adsorbate1] for rate rule [C-OH;*=C=R]
 ! Euclidian distance = 3.605551275463989
 ! family: Surface_Abstraction_vdW
-CO*(14)+CH3OH*(23)=COOH*(18)+CH3X(57)               1.405000e+24 -0.101    29.806   
+CO*(14)+CH3OH*(23)=COOH*(18)+CH3X(57)               1.405000e+24 -0.101    22.156   
 
 ! Reaction index: Chemkin #216; RMG #584
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -5589,8 +5567,8 @@ CO*(14)+CH4X(182)=HCO*(16)+CH3X(57)                 5.620000e+24 -0.101    23.09
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 8.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 161.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH4X(182)=HCOO*(17)+CH3X(57)               8.000000e+17 0.000     38.620   
+! Ea raised from 0.0 to 83.7 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH4X(182)=HCOO*(17)+CH3X(57)               8.000000e+17 0.000     20.008   
 
 ! Reaction index: Chemkin #225; RMG #1612
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -5598,8 +5576,8 @@ CO2*(15)+CH4X(182)=HCOO*(17)+CH3X(57)               8.000000e+17 0.000     38.62
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 8.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 147.5 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH4X(182)=COOH*(18)+CH3X(57)               8.000000e+17 0.000     35.246   
+! Ea raised from 0.0 to 99.0 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH4X(182)=COOH*(18)+CH3X(57)               8.000000e+17 0.000     23.663   
 
 ! Reaction index: Chemkin #226; RMG #1614
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -5615,16 +5593,16 @@ CH2O*(20)+CH3X(57)=HCO*(16)+CH4X(182)               2.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*C-3R]
 ! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from 11.6 to 20.6 kJ/mol to match endothermicity of reaction.
-HCOOH*(19)+CH3X(57)=HCOO*(17)+CH4X(182)             1.000000e+17 0.000     4.921    
+! Ea raised from -39.1 to 0.0 kJ/mol.
+HCOOH*(19)+CH3X(57)=HCOO*(17)+CH4X(182)             1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #228; RMG #1618
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [C-R;*C-3R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from 3.8 to 6.5 kJ/mol to match endothermicity of reaction.
-HCOOH*(19)+CH3X(57)=COOH*(18)+CH4X(182)             1.000000e+17 0.000     1.547    
+! Ea raised from -31.9 to 0.0 kJ/mol.
+HCOOH*(19)+CH3X(57)=COOH*(18)+CH4X(182)             1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #229; RMG #1620
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -5900,7 +5878,7 @@ X(1)+HCOOCH3(9)=SX(62)                              1.000e-12 0.000     3.652
 ! Exact match found for rate rule [Combined;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_DoubleBond_to_Bidentate
-X(1)+COOH*(18)=HOCOXX(65)                           4.270000e+19 0.549     15.587   
+X(1)+COOH*(18)=HOCOXX(65)                           4.270000e+19 0.549     32.643   
 
 ! Reaction index: Chemkin #261; RMG #116
 ! Template reaction: Surface_Dissociation_Double_vdW
@@ -5976,7 +5954,8 @@ CO2(4)+HCO*(16)=SX(101)                             1.000e-01 0.000     40.987
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-CO2(4)+HCOO*(17)=SX(102)                            1.000e-01 0.000     17.462   
+! Ea raised from 159.6 to 160.0 kJ/mol to match endothermicity of reaction.
+CO2(4)+HCOO*(17)=SX(102)                            1.000e-01 0.000     38.236   
     STICK
 
 ! Reaction index: Chemkin #269; RMG #206
@@ -5986,8 +5965,8 @@ CO2(4)+HCOO*(17)=SX(102)                            1.000e-01 0.000     17.462
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-! Ea raised from 139.8 to 147.2 kJ/mol to match endothermicity of reaction.
-CO2(4)+HCOO*(17)=SX(103)                            1.000e-01 0.000     35.183   
+! Ea raised from 241.4 to 244.3 kJ/mol to match endothermicity of reaction.
+CO2(4)+HCOO*(17)=SX(103)                            1.000e-01 0.000     58.381   
     STICK
 
 ! Reaction index: Chemkin #270; RMG #207
@@ -5997,8 +5976,7 @@ CO2(4)+HCOO*(17)=SX(103)                            1.000e-01 0.000     35.183
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-! Ea raised from 74.4 to 76.1 kJ/mol to match endothermicity of reaction.
-CO2(4)+COOH*(18)=SX(104)                            1.000e-01 0.000     18.182   
+CO2(4)+COOH*(18)=SX(104)                            1.000e-01 0.000     34.832   
     STICK
 
 ! Reaction index: Chemkin #271; RMG #208
@@ -6008,7 +5986,7 @@ CO2(4)+COOH*(18)=SX(104)                            1.000e-01 0.000     18.182
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-CO2(4)+COOH*(18)=SX(105)                            1.000e-01 0.000     17.462   
+CO2(4)+COOH*(18)=SX(105)                            1.000e-01 0.000     33.457   
     STICK
 
 ! Reaction index: Chemkin #272; RMG #209
@@ -6097,8 +6075,8 @@ HCOO*(17)+CH2O(6)=SX(128)                           5.000e-02 0.000     17.462
 ! Estimated using an average for rate rule [Adsorbate1;R=R]
 ! Euclidian distance = 0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-! Ea raised from 96.6 to 104.2 kJ/mol to match endothermicity of reaction.
-HCOO*(17)+CH2O(6)=SX(129)                           5.000e-02 0.000     24.893   
+! Ea raised from 198.2 to 201.2 kJ/mol to match endothermicity of reaction.
+HCOO*(17)+CH2O(6)=SX(129)                           5.000e-02 0.000     48.091   
     STICK
 
 ! Reaction index: Chemkin #281; RMG #262
@@ -6210,7 +6188,8 @@ HCO*(16)+HCOOH(7)=SX(154)                           5.000e-02 0.000     17.582
 ! Estimated using an average for rate rule [Adsorbate1;R=R]
 ! Euclidian distance = 0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-HCOO*(17)+HCOOH(7)=SX(155)                          5.000e-02 0.000     17.462   
+! Ea raised from 100.2 to 100.8 kJ/mol to match endothermicity of reaction.
+HCOO*(17)+HCOOH(7)=SX(155)                          5.000e-02 0.000     24.103   
     STICK
 
 ! Reaction index: Chemkin #293; RMG #305
@@ -6219,8 +6198,8 @@ HCOO*(17)+HCOOH(7)=SX(155)                          5.000e-02 0.000     17.462
 ! Estimated using an average for rate rule [Adsorbate1;R=R]
 ! Euclidian distance = 0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-! Ea raised from 172.2 to 177.0 kJ/mol to match endothermicity of reaction.
-HCOO*(17)+HCOOH(7)=SX(156)                          5.000e-02 0.000     42.310   
+! Ea raised from 273.7 to 274.1 kJ/mol to match endothermicity of reaction.
+HCOO*(17)+HCOOH(7)=SX(156)                          5.000e-02 0.000     65.508   
     STICK
 
 ! Reaction index: Chemkin #294; RMG #306
@@ -6340,7 +6319,8 @@ HCO*(16)+HCOOCH3(9)=SX(171)                         5.000e-02 0.000     18.301
 ! Estimated using an average for rate rule [Adsorbate1;R=R]
 ! Euclidian distance = 0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-HCOO*(17)+HCOOCH3(9)=SX(172)                        5.000e-02 0.000     17.462   
+! Ea raised from 103.6 to 103.9 kJ/mol to match endothermicity of reaction.
+HCOO*(17)+HCOOCH3(9)=SX(172)                        5.000e-02 0.000     24.823   
     STICK
 
 ! Reaction index: Chemkin #307; RMG #332
@@ -6349,8 +6329,7 @@ HCOO*(17)+HCOOCH3(9)=SX(172)                        5.000e-02 0.000     17.462
 ! Estimated using an average for rate rule [Adsorbate1;R=R]
 ! Euclidian distance = 0
 ! family: Surface_EleyRideal_Addition_Multiple_Bond
-! Ea raised from 175.6 to 180.0 kJ/mol to match endothermicity of reaction.
-HCOO*(17)+HCOOCH3(9)=SX(173)                        5.000e-02 0.000     43.030   
+HCOO*(17)+HCOOCH3(9)=SX(173)                        5.000e-02 0.000     66.233   
     STICK
 
 ! Reaction index: Chemkin #308; RMG #333
@@ -6430,7 +6409,7 @@ H*(10)+HCO*(16)=X(1)+CH2OX(56)                      3.048000e+21 0.000     30.47
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;H-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-H*(10)+COOH*(18)=X(1)+SX(181)                       3.048000e+21 0.000     38.299   
+H*(10)+COOH*(18)=X(1)+SX(181)                       3.048000e+21 0.000     49.120   
 
 ! Reaction index: Chemkin #317; RMG #362
 ! Template reaction: Surface_Addition_Single_vdW
@@ -6526,7 +6505,7 @@ HO2X(187)+CO*(14)=O*(11)+COOH*(18)                  1.390000e+21 0.101     4.541
 ! Estimated using template [O;VacantSite] for rate rule [O-C;VacantSite]
 ! Euclidian distance = 1.0
 ! family: Surface_Dissociation
-X(1)+CHO3X(98)=O*(11)+COOH*(18)                     2.250000e+20 0.188     11.348   
+X(1)+CHO3X(98)=O*(11)+COOH*(18)                     2.250000e+20 0.188     7.075    
 
 ! Reaction index: Chemkin #328; RMG #393
 ! Template reaction: Surface_Abstraction_vdW
@@ -6638,8 +6617,7 @@ OH*(12)+CO2*(15)=X(1)+CHO3X(98)                     6.250000e+24 -0.475    28.01
 ! Euclidian distance = 2.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 324.7 to 325.0 kJ/mol to match endothermicity of reaction.
-OH*(12)+CO2*(15)=X(1)+CHO3X(99)                     6.250000e+24 -0.475    77.678   
+OH*(12)+CO2*(15)=X(1)+CHO3X(99)                     6.250000e+24 -0.475    83.027   
 
 ! Reaction index: Chemkin #342; RMG #415
 ! Template reaction: Surface_Dissociation_Beta
@@ -6682,8 +6660,8 @@ H2O2X(191)+CO*(14)=OH*(12)+COOH*(18)                8.140000e+24 -0.274    52.19
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
 ! Euclidian distance = 2.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 126.6 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+CH2O3(196)=OH*(12)+COOH*(18)              1.600e-02 0.000     30.248   
+! Ea raised from 0.0 to 58.9 kJ/mol to match endothermicity of reaction.
+X(1)+X(1)+CH2O3(196)=OH*(12)+COOH*(18)              1.600e-02 0.000     14.079   
     STICK
 
 ! Reaction index: Chemkin #347; RMG #423
@@ -6692,8 +6670,7 @@ X(1)+X(1)+CH2O3(196)=OH*(12)+COOH*(18)              1.600e-02 0.000     30.248
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 370.6 to 371.5 kJ/mol to match endothermicity of reaction.
-OH*(12)+COOH*(18)=X(1)+SX(197)                      3.048000e+21 0.000     88.780   
+OH*(12)+COOH*(18)=X(1)+SX(197)                      3.048000e+21 0.000     105.641  
 
 ! Reaction index: Chemkin #348; RMG #424
 ! Template reaction: Surface_Dissociation_vdW
@@ -6702,7 +6679,8 @@ OH*(12)+COOH*(18)=X(1)+SX(197)                      3.048000e+21 0.000     88.78
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dissociation_vdW
-X(1)+SX(198)=OH*(12)+COOH*(18)                      1.199324e+22 0.000     36.851   
+! Ea raised from 82.8 to 83.8 kJ/mol to match endothermicity of reaction.
+X(1)+SX(198)=OH*(12)+COOH*(18)                      1.199324e+22 0.000     20.039   
 
 ! Reaction index: Chemkin #349; RMG #427
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -6856,8 +6834,8 @@ H*(10)+SX(200)=OH*(12)+CH3OH*(23)                   1.000000e+17 0.000     0.000
 ! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 86.8 kJ/mol to match endothermicity of reaction.
-H2O*(13)+CO2*(15)=H*(10)+CHO3X(98)                  4.000000e+17 0.000     20.748   
+! Ea raised from 0.0 to 106.0 kJ/mol to match endothermicity of reaction.
+H2O*(13)+CO2*(15)=H*(10)+CHO3X(98)                  4.000000e+17 0.000     25.334   
 
 ! Reaction index: Chemkin #367; RMG #454
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -6865,25 +6843,25 @@ H2O*(13)+CO2*(15)=H*(10)+CHO3X(98)                  4.000000e+17 0.000     20.74
 ! Euclidian distance = 4.0
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 402.2 kJ/mol to match endothermicity of reaction.
-H2O*(13)+CO2*(15)=H*(10)+CHO3X(99)                  4.000000e+17 0.000     96.123   
+! Ea raised from 0.0 to 421.4 kJ/mol to match endothermicity of reaction.
+H2O*(13)+CO2*(15)=H*(10)+CHO3X(99)                  4.000000e+17 0.000     100.709  
 
 ! Reaction index: Chemkin #368; RMG #455
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [O-O;Abstracting]
 ! Euclidian distance = 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -115.4 to 0.0 kJ/mol.
+! Ea raised from -166.2 to 0.0 kJ/mol.
 H*(10)+SX(195)=H2O*(13)+HCOO*(17)                   1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #369; RMG #456
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*C=R]
-! Euclidian distance = 2.0
+! Estimated using template [Donating;Abstracting] for rate rule [C-OH;Abstracting]
+! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -38.1 to 0.0 kJ/mol.
-H2O*(13)+COOH*(18)=H*(10)+SX(198)                   2.000000e+17 0.000     0.000    
+! Ea raised from 2.4 to 6.7 kJ/mol to match endothermicity of reaction.
+H*(10)+SX(198)=H2O*(13)+COOH*(18)                   2.000000e+17 0.000     1.594    
 
 ! Reaction index: Chemkin #370; RMG #457
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7011,8 +6989,7 @@ X(1)+SX(101)=CO*(14)+HCOO*(17)                      1.460000e+24 -0.213    12.97
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*=C=O;O-*]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Dissociation_Beta
-! Ea raised from 235.7 to 239.7 kJ/mol to match endothermicity of reaction.
-CO*(14)+HCOO*(17)=X(1)+SX(208)                      3.048000e+21 0.000     57.285   
+CO*(14)+HCOO*(17)=X(1)+SX(208)                      3.048000e+21 0.000     80.597   
 
 ! Reaction index: Chemkin #385; RMG #475
 ! Template reaction: Surface_Dissociation
@@ -7028,7 +7005,7 @@ X(1)+SX(209)=CO*(14)+COOH*(18)                      7.359755e+22 -0.106    6.489
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*=C=O;C-*]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Dissociation_Beta
-CO*(14)+COOH*(18)=X(1)+SX(210)                      3.048000e+21 0.000     158.981  
+CO*(14)+COOH*(18)=X(1)+SX(210)                      3.048000e+21 0.000     176.037  
 
 ! Reaction index: Chemkin #387; RMG #477
 ! Template reaction: Surface_Abstraction_vdW
@@ -7140,8 +7117,7 @@ CO*(14)+CH3OH*(23)=H*(10)+SX(60)                    2.391307e+24 -0.188    37.17
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 170.8 to 171.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCO*(16)=X(1)+SX(100)                      6.250000e+24 -0.475    40.923   
+CO2*(15)+HCO*(16)=X(1)+SX(100)                      6.250000e+24 -0.475    46.253   
 
 ! Reaction index: Chemkin #401; RMG #501
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7150,8 +7126,7 @@ CO2*(15)+HCO*(16)=X(1)+SX(100)                      6.250000e+24 -0.475    40.92
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 143.2 to 145.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCO*(16)=X(1)+SX(101)                      6.250000e+24 -0.475    34.666   
+CO2*(15)+HCO*(16)=X(1)+SX(101)                      6.250000e+24 -0.475    39.668   
 
 ! Reaction index: Chemkin #402; RMG #502
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7160,7 +7135,7 @@ CO2*(15)+HCO*(16)=X(1)+SX(101)                      6.250000e+24 -0.475    34.66
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-CO2*(15)+HCOO*(17)=X(1)+SX(102)                     6.250000e+24 -0.475    28.011   
+CO2*(15)+HCOO*(17)=X(1)+SX(102)                     6.250000e+24 -0.475    37.119   
 
 ! Reaction index: Chemkin #403; RMG #503
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7169,8 +7144,7 @@ CO2*(15)+HCOO*(17)=X(1)+SX(102)                     6.250000e+24 -0.475    28.01
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 117.2 to 120.8 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOO*(17)=X(1)+SX(103)                     6.250000e+24 -0.475    28.863   
+CO2*(15)+HCOO*(17)=X(1)+SX(103)                     6.250000e+24 -0.475    56.657   
 
 ! Reaction index: Chemkin #404; RMG #504
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -7178,8 +7152,7 @@ CO2*(15)+HCOO*(17)=X(1)+SX(103)                     6.250000e+24 -0.475    28.86
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 109.5 to 112.8 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOO*(17)=O*(11)+SX(100)                   3.690000e+20 0.000     26.965   
+CO2*(15)+HCOO*(17)=O*(11)+SX(100)                   3.690000e+20 0.000     55.879   
 
 ! Reaction index: Chemkin #405; RMG #505
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -7187,8 +7160,7 @@ CO2*(15)+HCOO*(17)=O*(11)+SX(100)                   3.690000e+20 0.000     26.96
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 82.0 to 86.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOO*(17)=O*(11)+SX(101)                   3.690000e+20 0.000     20.708   
+CO2*(15)+HCOO*(17)=O*(11)+SX(101)                   3.690000e+20 0.000     49.294   
 
 ! Reaction index: Chemkin #406; RMG #506
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7197,7 +7169,7 @@ CO2*(15)+HCOO*(17)=O*(11)+SX(101)                   3.690000e+20 0.000     20.70
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-CO2*(15)+COOH*(18)=X(1)+SX(104)                     6.250000e+24 -0.475    28.011   
+CO2*(15)+COOH*(18)=X(1)+SX(104)                     6.250000e+24 -0.475    33.795   
 
 ! Reaction index: Chemkin #407; RMG #507
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7206,7 +7178,7 @@ CO2*(15)+COOH*(18)=X(1)+SX(104)                     6.250000e+24 -0.475    28.01
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-CO2*(15)+COOH*(18)=X(1)+SX(105)                     6.250000e+24 -0.475    28.011   
+CO2*(15)+COOH*(18)=X(1)+SX(105)                     6.250000e+24 -0.475    32.420   
 
 ! Reaction index: Chemkin #408; RMG #508
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -7214,7 +7186,7 @@ CO2*(15)+COOH*(18)=X(1)+SX(105)                     6.250000e+24 -0.475    28.01
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+COOH*(18)=CO*(14)+CHO3X(98)                3.690000e+20 0.000     5.457    
+CO2*(15)+COOH*(18)=CO*(14)+CHO3X(98)                3.690000e+20 0.000     14.903   
 
 ! Reaction index: Chemkin #409; RMG #509
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -7222,7 +7194,7 @@ CO2*(15)+COOH*(18)=CO*(14)+CHO3X(98)                3.690000e+20 0.000     5.457
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+COOH*(18)=CO*(14)+CHO3X(99)                3.690000e+20 0.000     65.857   
+CO2*(15)+COOH*(18)=CO*(14)+CHO3X(99)                3.690000e+20 0.000     88.346   
 
 ! Reaction index: Chemkin #410; RMG #510
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7230,8 +7202,8 @@ CO2*(15)+COOH*(18)=CO*(14)+CHO3X(99)                3.690000e+20 0.000     65.85
 ! Euclidian distance = 4.242640687119285
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 224.5 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=OH*(12)+SX(100)                 2.000000e+17 0.000     53.655   
+! Ea raised from 0.0 to 243.7 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=OH*(12)+SX(100)                 2.000000e+17 0.000     58.241   
 
 ! Reaction index: Chemkin #411; RMG #512
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7239,8 +7211,8 @@ CO2*(15)+HCOOH*(19)=OH*(12)+SX(100)                 2.000000e+17 0.000     53.65
 ! Euclidian distance = 4.242640687119285
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 62.9 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=HCO*(16)+CHO3X(98)              2.000000e+17 0.000     15.034   
+! Ea raised from 0.0 to 82.1 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=HCO*(16)+CHO3X(98)              2.000000e+17 0.000     19.620   
 
 ! Reaction index: Chemkin #412; RMG #514
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7248,8 +7220,8 @@ CO2*(15)+HCOOH*(19)=HCO*(16)+CHO3X(98)              2.000000e+17 0.000     15.03
 ! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 133.9 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=H*(10)+SX(104)                  2.000000e+17 0.000     32.007   
+! Ea raised from 0.0 to 153.1 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=H*(10)+SX(104)                  2.000000e+17 0.000     36.593   
 
 ! Reaction index: Chemkin #413; RMG #515
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7257,8 +7229,8 @@ CO2*(15)+HCOOH*(19)=H*(10)+SX(104)                  2.000000e+17 0.000     32.00
 ! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 134.9 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=H*(10)+SX(102)                  2.000000e+17 0.000     32.238   
+! Ea raised from 0.0 to 154.1 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=H*(10)+SX(102)                  2.000000e+17 0.000     36.824   
 
 ! Reaction index: Chemkin #414; RMG #516
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7266,8 +7238,8 @@ CO2*(15)+HCOOH*(19)=H*(10)+SX(102)                  2.000000e+17 0.000     32.23
 ! Euclidian distance = 5.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 198.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=OH*(12)+SX(101)                 2.000000e+17 0.000     47.398   
+! Ea raised from 0.0 to 217.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=OH*(12)+SX(101)                 2.000000e+17 0.000     51.984   
 
 ! Reaction index: Chemkin #415; RMG #518
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7275,8 +7247,8 @@ CO2*(15)+HCOOH*(19)=OH*(12)+SX(101)                 2.000000e+17 0.000     47.39
 ! Euclidian distance = 5.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 378.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=HCO*(16)+CHO3X(99)              2.000000e+17 0.000     90.409   
+! Ea raised from 0.0 to 397.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=HCO*(16)+CHO3X(99)              2.000000e+17 0.000     94.995   
 
 ! Reaction index: Chemkin #416; RMG #520
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7284,8 +7256,8 @@ CO2*(15)+HCOOH*(19)=HCO*(16)+CHO3X(99)              2.000000e+17 0.000     90.40
 ! Euclidian distance = 4.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 129.4 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=H*(10)+SX(105)                  2.000000e+17 0.000     30.933   
+! Ea raised from 0.0 to 148.6 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=H*(10)+SX(105)                  2.000000e+17 0.000     35.519   
 
 ! Reaction index: Chemkin #417; RMG #521
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7293,8 +7265,8 @@ CO2*(15)+HCOOH*(19)=H*(10)+SX(105)                  2.000000e+17 0.000     30.93
 ! Euclidian distance = 4.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 219.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+HCOOH*(19)=H*(10)+SX(103)                  2.000000e+17 0.000     52.383   
+! Ea raised from 0.0 to 238.4 kJ/mol to match endothermicity of reaction.
+CO2*(15)+HCOOH*(19)=H*(10)+SX(103)                  2.000000e+17 0.000     56.969   
 
 ! Reaction index: Chemkin #418; RMG #523
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7302,8 +7274,8 @@ CO2*(15)+HCOOH*(19)=H*(10)+SX(103)                  2.000000e+17 0.000     52.38
 ! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 147.8 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2O*(20)=H*(10)+SX(100)                   4.000000e+17 0.000     35.322   
+! Ea raised from 0.0 to 167.0 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH2O*(20)=H*(10)+SX(100)                   4.000000e+17 0.000     39.908   
 
 ! Reaction index: Chemkin #419; RMG #525
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7311,8 +7283,8 @@ CO2*(15)+CH2O*(20)=H*(10)+SX(100)                   4.000000e+17 0.000     35.32
 ! Euclidian distance = 4.0
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 121.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2O*(20)=H*(10)+SX(101)                   4.000000e+17 0.000     29.065   
+! Ea raised from 0.0 to 140.8 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH2O*(20)=H*(10)+SX(101)                   4.000000e+17 0.000     33.651   
 
 ! Reaction index: Chemkin #420; RMG #526
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7330,8 +7302,7 @@ CO2*(15)+CH3O*(21)=X(1)+SX(106)                     6.250000e+24 -0.475    28.01
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 242.6 to 245.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3O*(21)=X(1)+SX(107)                     6.250000e+24 -0.475    58.554   
+CO2*(15)+CH3O*(21)=X(1)+SX(107)                     6.250000e+24 -0.475    63.411   
 
 ! Reaction index: Chemkin #422; RMG #528
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -7339,7 +7310,7 @@ CO2*(15)+CH3O*(21)=X(1)+SX(107)                     6.250000e+24 -0.475    58.55
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH3O*(21)=O*(11)+SX(216)                   3.690000e+20 0.000     10.967   
+CO2*(15)+CH3O*(21)=O*(11)+SX(216)                   3.690000e+20 0.000     13.249   
 
 ! Reaction index: Chemkin #423; RMG #529
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -7347,8 +7318,7 @@ CO2*(15)+CH3O*(21)=O*(11)+SX(216)                   3.690000e+20 0.000     10.96
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 83.7 to 85.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3O*(21)=O*(11)+SX(60)                    3.690000e+20 0.000     20.449   
+CO2*(15)+CH3O*(21)=O*(11)+SX(60)                    3.690000e+20 0.000     25.445   
 
 ! Reaction index: Chemkin #424; RMG #530
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7366,8 +7336,8 @@ CO2*(15)+CH3O2*(22)=X(1)+SX(108)                    6.250000e+24 -0.475    28.01
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 209.1 to 214.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3O2*(22)=X(1)+SX(109)                    6.250000e+24 -0.475    51.229   
+! Ea raised from 231.8 to 233.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3O2*(22)=X(1)+SX(109)                    6.250000e+24 -0.475    55.815   
 
 ! Reaction index: Chemkin #426; RMG #532
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -7375,7 +7345,7 @@ CO2*(15)+CH3O2*(22)=X(1)+SX(109)                    6.250000e+24 -0.475    51.22
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH3O2*(22)=O*(11)+SX(217)                  3.690000e+20 0.000     10.646   
+CO2*(15)+CH3O2*(22)=O*(11)+SX(217)                  3.690000e+20 0.000     12.927   
 
 ! Reaction index: Chemkin #427; RMG #533
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -7383,7 +7353,8 @@ CO2*(15)+CH3O2*(22)=O*(11)+SX(217)                  3.690000e+20 0.000     10.64
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH3O2*(22)=O*(11)+SX(214)                  3.690000e+20 0.000     14.495   
+! Ea raised from 70.6 to 71.7 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3O2*(22)=O*(11)+SX(214)                  3.690000e+20 0.000     17.128   
 
 ! Reaction index: Chemkin #428; RMG #534
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7391,8 +7362,8 @@ CO2*(15)+CH3O2*(22)=O*(11)+SX(214)                  3.690000e+20 0.000     14.49
 ! Euclidian distance = 4.242640687119285
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 83.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=OH*(12)+SX(216)                 2.000000e+17 0.000     19.986   
+! Ea raised from 0.0 to 102.8 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=OH*(12)+SX(216)                 2.000000e+17 0.000     24.572   
 
 ! Reaction index: Chemkin #429; RMG #536
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7400,8 +7371,8 @@ CO2*(15)+CH3OH*(23)=OH*(12)+SX(216)                 2.000000e+17 0.000     19.98
 ! Euclidian distance = 4.242640687119285
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 82.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=CHO3X(98)+CH3X(57)              2.000000e+17 0.000     19.602   
+! Ea raised from 0.0 to 101.2 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=CHO3X(98)+CH3X(57)              2.000000e+17 0.000     24.188   
 
 ! Reaction index: Chemkin #430; RMG #538
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7409,8 +7380,8 @@ CO2*(15)+CH3OH*(23)=CHO3X(98)+CH3X(57)              2.000000e+17 0.000     19.60
 ! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 6.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 89.8 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=H*(10)+SX(217)                  6.000000e+17 0.000     21.470   
+! Ea raised from 0.0 to 109.0 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=H*(10)+SX(217)                  6.000000e+17 0.000     26.056   
 
 ! Reaction index: Chemkin #431; RMG #539
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7418,8 +7389,8 @@ CO2*(15)+CH3OH*(23)=H*(10)+SX(217)                  6.000000e+17 0.000     21.47
 ! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 89.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=H*(10)+SX(106)                  2.000000e+17 0.000     21.335   
+! Ea raised from 0.0 to 108.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=H*(10)+SX(106)                  2.000000e+17 0.000     25.921   
 
 ! Reaction index: Chemkin #432; RMG #540
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7427,8 +7398,8 @@ CO2*(15)+CH3OH*(23)=H*(10)+SX(106)                  2.000000e+17 0.000     21.33
 ! Euclidian distance = 5.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 155.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=OH*(12)+SX(60)                  2.000000e+17 0.000     37.078   
+! Ea raised from 0.0 to 174.3 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=OH*(12)+SX(60)                  2.000000e+17 0.000     41.664   
 
 ! Reaction index: Chemkin #433; RMG #542
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7436,8 +7407,8 @@ CO2*(15)+CH3OH*(23)=OH*(12)+SX(60)                  2.000000e+17 0.000     37.07
 ! Euclidian distance = 5.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 397.4 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=CHO3X(99)+CH3X(57)              2.000000e+17 0.000     94.977   
+! Ea raised from 0.0 to 416.6 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=CHO3X(99)+CH3X(57)              2.000000e+17 0.000     99.563   
 
 ! Reaction index: Chemkin #434; RMG #544
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7445,8 +7416,8 @@ CO2*(15)+CH3OH*(23)=CHO3X(99)+CH3X(57)              2.000000e+17 0.000     94.97
 ! Euclidian distance = 4.0
 ! Multiplied by reaction path degeneracy 6.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 129.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=H*(10)+SX(214)                  6.000000e+17 0.000     30.888   
+! Ea raised from 0.0 to 148.4 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=H*(10)+SX(214)                  6.000000e+17 0.000     35.473   
 
 ! Reaction index: Chemkin #435; RMG #545
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7454,8 +7425,8 @@ CO2*(15)+CH3OH*(23)=H*(10)+SX(214)                  6.000000e+17 0.000     30.88
 ! Euclidian distance = 4.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 301.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OH*(23)=H*(10)+SX(107)                  2.000000e+17 0.000     72.012   
+! Ea raised from 0.0 to 320.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OH*(23)=H*(10)+SX(107)                  2.000000e+17 0.000     76.598   
 
 ! Reaction index: Chemkin #436; RMG #546
 ! Template reaction: Surface_Adsorption_Dissociative
@@ -7506,8 +7477,7 @@ X(1)+X(1)+C2H2O3(70)=HCO*(16)+HCOO*(17)             1.600e-02 0.000     0.000
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 295.2 to 299.5 kJ/mol to match endothermicity of reaction.
-HCO*(16)+HCOO*(17)=X(1)+SX(220)                     3.048000e+21 0.000     71.585   
+HCO*(16)+HCOO*(17)=X(1)+SX(220)                     3.048000e+21 0.000     94.829   
 
 ! Reaction index: Chemkin #442; RMG #552
 ! Template reaction: Surface_Dissociation_vdW
@@ -7533,8 +7503,7 @@ X(1)+X(1)+C2H2O3(71)=HCO*(16)+COOH*(18)             1.600e-02 0.000     0.000
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;C-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 211.5 to 211.6 kJ/mol to match endothermicity of reaction.
-HCO*(16)+COOH*(18)=X(1)+SX(222)                     3.048000e+21 0.000     50.573   
+HCO*(16)+COOH*(18)=X(1)+SX(222)                     3.048000e+21 0.000     67.596   
 
 ! Reaction index: Chemkin #445; RMG #557
 ! Template reaction: Surface_Dissociation_Beta
@@ -7542,7 +7511,7 @@ HCO*(16)+COOH*(18)=X(1)+SX(222)                     3.048000e+21 0.000     50.57
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;C-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-HCO*(16)+COOH*(18)=X(1)+SX(223)                     3.048000e+21 0.000     38.878   
+HCO*(16)+COOH*(18)=X(1)+SX(223)                     3.048000e+21 0.000     50.191   
 
 ! Reaction index: Chemkin #446; RMG #558
 ! Template reaction: Surface_Dissociation_vdW
@@ -7733,8 +7702,7 @@ O*(11)+SX(221)=HCOO*(17)+HCOO*(17)                  8.140000e+24 -0.274    52.19
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O;VacantSite1;VacantSite2]
 ! Euclidian distance = 1.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 24.1 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+C2H2O4(88)=HCOO*(17)+HCOO*(17)            1.600e-02 0.000     5.757    
+X(1)+X(1)+C2H2O4(88)=HCOO*(17)+HCOO*(17)            1.600e-02 0.000     0.000    
     STICK
 
 ! Reaction index: Chemkin #469; RMG #590
@@ -7766,8 +7734,7 @@ O*(11)+SX(224)=COOH*(18)+HCOO*(17)                  1.405000e+24 -0.101    22.15
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
 ! Euclidian distance = 2.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 99.7 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+C2H2O4(89)=COOH*(18)+HCOO*(17)            8.000e-03 0.000     23.833   
+X(1)+X(1)+C2H2O4(89)=COOH*(18)+HCOO*(17)            8.000e-03 0.000     0.000    
     STICK
 
 ! Reaction index: Chemkin #473; RMG #594
@@ -7776,8 +7743,7 @@ X(1)+X(1)+C2H2O4(89)=COOH*(18)+HCOO*(17)            8.000e-03 0.000     23.833
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 238.5 to 245.0 kJ/mol to match endothermicity of reaction.
-COOH*(18)+HCOO*(17)=X(1)+SX(231)                    3.048000e+21 0.000     58.562   
+COOH*(18)+HCOO*(17)=X(1)+SX(231)                    3.048000e+21 0.000     98.337   
 
 ! Reaction index: Chemkin #474; RMG #595
 ! Template reaction: Surface_Dissociation_vdW
@@ -7786,7 +7752,7 @@ COOH*(18)+HCOO*(17)=X(1)+SX(231)                    3.048000e+21 0.000     58.56
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dissociation_vdW
-X(1)+SX(232)=COOH*(18)+HCOO*(17)                    5.996619e+21 0.000     31.108   
+X(1)+SX(232)=COOH*(18)+HCOO*(17)                    5.996619e+21 0.000     18.140   
 
 ! Reaction index: Chemkin #475; RMG #598
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -7794,7 +7760,7 @@ X(1)+SX(232)=COOH*(18)+HCOO*(17)                    5.996619e+21 0.000     31.10
 ! Euclidian distance = 3.605551275463989
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -12.7 to 0.0 kJ/mol.
+! Ea raised from -63.5 to 0.0 kJ/mol.
 OH*(12)+SX(221)=HCOO*(17)+HCOOH*(19)                2.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #476; RMG #599
@@ -7802,16 +7768,16 @@ OH*(12)+SX(221)=HCOO*(17)+HCOOH*(19)                2.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-O;*C=R]
 ! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -103.4 to 0.0 kJ/mol.
+! Ea raised from -154.2 to 0.0 kJ/mol.
 HCO*(16)+SX(195)=HCOO*(17)+HCOOH*(19)               1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #477; RMG #601
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*O]
-! Euclidian distance = 1.0
+! Estimated using template [Donating;Abstracting] for rate rule [O-C=R;Abstracting]
+! Euclidian distance = 3.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -22.5 to 0.0 kJ/mol.
-HCOO*(17)+HCOOH*(19)=H*(10)+SX(232)                 1.000000e+17 0.000     0.000    
+! Ea raised from -28.3 to 0.0 kJ/mol.
+H*(10)+SX(232)=HCOO*(17)+HCOOH*(19)                 1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #478; RMG #602
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -7819,7 +7785,7 @@ HCOO*(17)+HCOOH*(19)=H*(10)+SX(232)                 1.000000e+17 0.000     0.000
 ! Euclidian distance = 2.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -21.0 to 0.0 kJ/mol.
+! Ea raised from -71.8 to 0.0 kJ/mol.
 H*(10)+SX(230)=HCOO*(17)+HCOOH*(19)                 2.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #479; RMG #603
@@ -7828,7 +7794,8 @@ H*(10)+SX(230)=HCOO*(17)+HCOOH*(19)                 2.000000e+17 0.000     0.000
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;O*]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Addition_Single_vdW
-HCOO*(17)+HCOOH*(19)=X(1)+SX(155)                   3.125000e+24 -0.475    28.011   
+! Ea raised from 125.2 to 125.8 kJ/mol to match endothermicity of reaction.
+HCOO*(17)+HCOOH*(19)=X(1)+SX(155)                   3.125000e+24 -0.475    30.063   
 
 ! Reaction index: Chemkin #480; RMG #604
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7836,32 +7803,31 @@ HCOO*(17)+HCOOH*(19)=X(1)+SX(155)                   3.125000e+24 -0.475    28.01
 ! Estimated using template [C=O;Adsorbate1] for rate rule [2R-C=O;O*]
 ! Euclidian distance = 1.4142135623730951
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 197.2 to 202.0 kJ/mol to match endothermicity of reaction.
-HCOO*(17)+HCOOH*(19)=X(1)+SX(156)                   3.125000e+24 -0.475    48.270   
+! Ea raised from 298.8 to 299.0 kJ/mol to match endothermicity of reaction.
+HCOO*(17)+HCOOH*(19)=X(1)+SX(156)                   3.125000e+24 -0.475    71.468   
 
 ! Reaction index: Chemkin #481; RMG #605
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*O-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 74.0 to 77.2 kJ/mol to match endothermicity of reaction.
-HCOO*(17)+HCOOH*(19)=O*(11)+SX(153)                 1.845000e+20 0.000     18.462   
+HCOO*(17)+HCOOH*(19)=O*(11)+SX(153)                 1.845000e+20 0.000     41.968   
 
 ! Reaction index: Chemkin #482; RMG #606
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*O-R]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Adsorption_Abstraction_vdW
-HCOO*(17)+HCOOH*(19)=O*(11)+SX(154)                 1.845000e+20 0.000     13.302   
+HCOO*(17)+HCOOH*(19)=O*(11)+SX(154)                 1.845000e+20 0.000     32.884   
 
 ! Reaction index: Chemkin #483; RMG #607
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*O]
-! Euclidian distance = 1.0
+! Estimated using template [Donating;Abstracting] for rate rule [O-C=R;Abstracting]
+! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -25.6 to 0.0 kJ/mol.
-HCOO*(17)+CH2O*(20)=H*(10)+SX(221)                  2.000000e+17 0.000     0.000    
+! Ea raised from -25.1 to 0.0 kJ/mol.
+H*(10)+SX(221)=HCOO*(17)+CH2O*(20)                  2.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #484; RMG #608
 ! Template reaction: Surface_Addition_Single_vdW
@@ -7877,23 +7843,21 @@ HCOO*(17)+CH2O*(20)=X(1)+SX(128)                    3.125000e+24 -0.475    28.01
 ! Estimated using template [C=O;Adsorbate1] for rate rule [2R-C=O;O*]
 ! Euclidian distance = 1.4142135623730951
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 148.9 to 153.4 kJ/mol to match endothermicity of reaction.
-HCOO*(17)+CH2O*(20)=X(1)+SX(129)                    3.125000e+24 -0.475    36.653   
+HCOO*(17)+CH2O*(20)=X(1)+SX(129)                    3.125000e+24 -0.475    59.855   
 
 ! Reaction index: Chemkin #486; RMG #610
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*O-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 94.1 to 94.9 kJ/mol to match endothermicity of reaction.
-HCOO*(17)+CH2O*(20)=O*(11)+SX(127)                  1.845000e+20 0.000     22.686   
+HCOO*(17)+CH2O*(20)=O*(11)+SX(127)                  1.845000e+20 0.000     46.756   
 
 ! Reaction index: Chemkin #487; RMG #611
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*O-R]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Adsorption_Abstraction_vdW
-HCOO*(17)+CH2O*(20)=O*(11)+SX(59)                   1.845000e+20 0.000     7.963    
+HCOO*(17)+CH2O*(20)=O*(11)+SX(59)                   1.845000e+20 0.000     20.171   
 
 ! Reaction index: Chemkin #488; RMG #612
 ! Template reaction: Surface_Abstraction_vdW
@@ -7969,8 +7933,8 @@ X(1)+SX(234)=HCOO*(17)+CH3O2*(22)                   5.996619e+21 0.000     18.14
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 137.5 kJ/mol to match endothermicity of reaction.
-CO2*(15)+SX(184)=HCOO*(17)+CH3O2*(22)               4.000000e+17 0.000     32.853   
+! Ea raised from 0.0 to 59.6 kJ/mol to match endothermicity of reaction.
+CO2*(15)+SX(184)=HCOO*(17)+CH3O2*(22)               4.000000e+17 0.000     14.241   
 
 ! Reaction index: Chemkin #497; RMG #622
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -7984,7 +7948,7 @@ CH2O*(20)+SX(195)=HCOO*(17)+CH3O2*(22)              1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-C-3R;*O-H]
 ! Euclidian distance = 3.605551275463989
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -10.8 to 0.0 kJ/mol.
+! Ea raised from -61.6 to 0.0 kJ/mol.
 OH*(12)+SX(62)=HCOO*(17)+CH3OH*(23)                 1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #499; RMG #626
@@ -7992,24 +7956,23 @@ OH*(12)+SX(62)=HCOO*(17)+CH3OH*(23)                 1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-O;*C-3R]
 ! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -114.3 to 0.0 kJ/mol.
+! Ea raised from -165.1 to 0.0 kJ/mol.
 SX(195)+CH3X(57)=HCOO*(17)+CH3OH*(23)               1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #500; RMG #628
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*O]
-! Euclidian distance = 1.0
-! Multiplied by reaction path degeneracy 3.0
+! Estimated using template [Donating;Abstracting] for rate rule [O-C-3R;Abstracting]
+! Euclidian distance = 3.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -14.4 to 0.0 kJ/mol.
-HCOO*(17)+CH3OH*(23)=H*(10)+SX(229)                 3.000000e+17 0.000     0.000    
+! Ea raised from -36.4 to 0.0 kJ/mol.
+H*(10)+SX(229)=HCOO*(17)+CH3OH*(23)                 1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #501; RMG #629
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [O-O;Abstracting]
 ! Euclidian distance = 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -71.8 to 0.0 kJ/mol.
+! Ea raised from -122.5 to 0.0 kJ/mol.
 H*(10)+SX(233)=HCOO*(17)+CH3OH*(23)                 1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #502; RMG #630
@@ -8018,7 +7981,7 @@ H*(10)+SX(233)=HCOO*(17)+CH3OH*(23)                 1.000000e+17 0.000     0.000
 ! Euclidian distance = 3.605551275463989
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_vdW
-CO*(14)+SX(198)=COOH*(18)+COOH*(18)                 2.810000e+24 -0.101    48.588   
+CO*(14)+SX(198)=COOH*(18)+COOH*(18)                 2.810000e+24 -0.101    22.156   
 
 ! Reaction index: Chemkin #503; RMG #631
 ! Template reaction: Surface_Adsorption_Dissociative
@@ -8026,8 +7989,7 @@ CO*(14)+SX(198)=COOH*(18)+COOH*(18)                 2.810000e+24 -0.101    48.58
 ! Estimated using an average for rate rule [Adsorbate;VacantSite1;VacantSite2]
 ! Euclidian distance = 0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 104.4 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+S(235)=COOH*(18)+COOH*(18)                1.600e-02 0.000     24.953   
+X(1)+X(1)+S(235)=COOH*(18)+COOH*(18)                1.600e-02 0.000     0.000    
     STICK
 
 ! Reaction index: Chemkin #504; RMG #632
@@ -8036,7 +7998,7 @@ X(1)+X(1)+S(235)=COOH*(18)+COOH*(18)                1.600e-02 0.000     24.953
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;C-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-COOH*(18)+COOH*(18)=X(1)+SX(236)                    3.048000e+21 0.000     25.754   
+COOH*(18)+COOH*(18)=X(1)+SX(236)                    3.048000e+21 0.000     44.175   
 
 ! Reaction index: Chemkin #505; RMG #633
 ! Template reaction: Surface_Dissociation_vdW
@@ -8045,14 +8007,14 @@ COOH*(18)+COOH*(18)=X(1)+SX(236)                    3.048000e+21 0.000     25.75
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dissociation_vdW
-X(1)+SX(237)=COOH*(18)+COOH*(18)                    5.996619e+21 0.000     31.661   
+X(1)+SX(237)=COOH*(18)+COOH*(18)                    5.996619e+21 0.000     18.140   
 
 ! Reaction index: Chemkin #506; RMG #634
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [C-C;*O-H]
 ! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -50.3 to 0.0 kJ/mol.
+! Ea raised from -86.0 to 0.0 kJ/mol.
 OH*(12)+SX(224)=COOH*(18)+HCOOH*(19)                1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #507; RMG #635
@@ -8060,24 +8022,25 @@ OH*(12)+SX(224)=COOH*(18)+HCOOH*(19)                1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [C-OH;*C=R]
 ! Euclidian distance = 3.605551275463989
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -50.1 to 0.0 kJ/mol.
+! Ea raised from -14.4 to 0.0 kJ/mol.
 COOH*(18)+HCOOH*(19)=HCO*(16)+SX(198)               1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #508; RMG #636
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*C=R]
+! Estimated using template [Donating;Abstracting] for rate rule [C-C;Abstracting]
 ! Euclidian distance = 2.0
+! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -23.6 to 0.0 kJ/mol.
-COOH*(18)+HCOOH*(19)=H*(10)+SX(237)                 1.000000e+17 0.000     0.000    
+! Ea raised from -12.1 to 0.0 kJ/mol.
+H*(10)+SX(237)=COOH*(18)+HCOOH*(19)                 2.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #509; RMG #637
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*C=R]
+! Estimated using template [Donating;Abstracting] for rate rule [C-O;Abstracting]
 ! Euclidian distance = 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -14.6 to 0.0 kJ/mol.
-COOH*(18)+HCOOH*(19)=H*(10)+SX(232)                 1.000000e+17 0.000     0.000    
+! Ea raised from -21.1 to 0.0 kJ/mol.
+H*(10)+SX(232)=COOH*(18)+HCOOH*(19)                 1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #510; RMG #638
 ! Template reaction: Surface_Addition_Single_vdW
@@ -8100,21 +8063,21 @@ COOH*(18)+HCOOH*(19)=X(1)+SX(158)                   3.125000e+24 -0.475    28.01
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [O=C;*C-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Adsorption_Abstraction_vdW
-COOH*(18)+HCOOH*(19)=CO*(14)+SX(151)                1.845000e+20 0.000     10.321   
+COOH*(18)+HCOOH*(19)=CO*(14)+SX(151)                1.845000e+20 0.000     18.569   
 
 ! Reaction index: Chemkin #513; RMG #641
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*C-R]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Adsorption_Abstraction_vdW
-COOH*(18)+HCOOH*(19)=CO*(14)+SX(152)                1.845000e+20 0.000     66.970   
+COOH*(18)+HCOOH*(19)=CO*(14)+SX(152)                1.845000e+20 0.000     84.027   
 
 ! Reaction index: Chemkin #514; RMG #642
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [C-C;Abstracting]
 ! Euclidian distance = 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -11.9 to 0.0 kJ/mol.
+! Ea raised from -47.6 to 0.0 kJ/mol.
 H*(10)+SX(224)=COOH*(18)+CH2O*(20)                  1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #515; RMG #643
@@ -8138,14 +8101,14 @@ COOH*(18)+CH2O*(20)=X(1)+SX(131)                    3.125000e+24 -0.475    28.01
 ! Estimated using template [AdsorbateVdW;Adsorbate1] for rate rule [2R-C=O;*C-R]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Adsorption_Abstraction_vdW
-COOH*(18)+CH2O*(20)=CO*(14)+CH3O2X(49)              1.845000e+20 0.000     55.249   
+COOH*(18)+CH2O*(20)=CO*(14)+CH3O2X(49)              1.845000e+20 0.000     72.305   
 
 ! Reaction index: Chemkin #518; RMG #646
 ! Template reaction: Surface_Abstraction_vdW
 ! Estimated using template [C-R;*=O] for rate rule [C-C;*=O]
 ! Euclidian distance = 1.0
 ! family: Surface_Abstraction_vdW
-O*(11)+SX(238)=COOH*(18)+CH3O*(21)                  1.405000e+24 -0.101    32.206   
+O*(11)+SX(238)=COOH*(18)+CH3O*(21)                  1.405000e+24 -0.101    22.156   
 
 ! Reaction index: Chemkin #519; RMG #647
 ! Template reaction: Surface_Abstraction_vdW
@@ -8160,8 +8123,8 @@ CO*(14)+SX(200)=COOH*(18)+CH3O*(21)                 4.070000e+24 -0.274    52.19
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
 ! Euclidian distance = 2.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 103.2 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+S(239)=COOH*(18)+CH3O*(21)                8.000e-03 0.000     24.674   
+! Ea raised from 0.0 to 35.6 kJ/mol to match endothermicity of reaction.
+X(1)+X(1)+S(239)=COOH*(18)+CH3O*(21)                8.000e-03 0.000     8.506    
     STICK
 
 ! Reaction index: Chemkin #521; RMG #649
@@ -8170,8 +8133,7 @@ X(1)+X(1)+S(239)=COOH*(18)+CH3O*(21)                8.000e-03 0.000     24.674
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 368.3 to 369.3 kJ/mol to match endothermicity of reaction.
-COOH*(18)+CH3O*(21)=X(1)+SX(240)                    3.048000e+21 0.000     88.253   
+COOH*(18)+CH3O*(21)=X(1)+SX(240)                    3.048000e+21 0.000     105.091  
 
 ! Reaction index: Chemkin #522; RMG #650
 ! Template reaction: Surface_Dissociation_vdW
@@ -8180,7 +8142,7 @@ COOH*(18)+CH3O*(21)=X(1)+SX(240)                    3.048000e+21 0.000     88.25
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dissociation_vdW
-X(1)+SX(241)=COOH*(18)+CH3O*(21)                    5.996619e+21 0.000     21.407   
+X(1)+SX(241)=COOH*(18)+CH3O*(21)                    5.996619e+21 0.000     18.140   
 
 ! Reaction index: Chemkin #523; RMG #652
 ! Template reaction: Surface_Abstraction_vdW
@@ -8202,8 +8164,8 @@ CO*(14)+SX(202)=COOH*(18)+CH3O2*(22)                4.070000e+24 -0.274    52.19
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
 ! Euclidian distance = 2.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 133.9 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+S(243)=COOH*(18)+CH3O2*(22)               8.000e-03 0.000     31.998   
+! Ea raised from 0.0 to 66.2 kJ/mol to match endothermicity of reaction.
+X(1)+X(1)+S(243)=COOH*(18)+CH3O2*(22)               8.000e-03 0.000     15.830   
     STICK
 
 ! Reaction index: Chemkin #526; RMG #655
@@ -8212,8 +8174,8 @@ X(1)+X(1)+S(243)=COOH*(18)+CH3O2*(22)               8.000e-03 0.000     31.998
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 334.8 to 338.6 kJ/mol to match endothermicity of reaction.
-COOH*(18)+CH3O2*(22)=X(1)+SX(244)                   3.048000e+21 0.000     80.929   
+! Ea raised from 406.2 to 406.3 kJ/mol to match endothermicity of reaction.
+COOH*(18)+CH3O2*(22)=X(1)+SX(244)                   3.048000e+21 0.000     97.098   
 
 ! Reaction index: Chemkin #527; RMG #656
 ! Template reaction: Surface_Dissociation_vdW
@@ -8222,7 +8184,7 @@ COOH*(18)+CH3O2*(22)=X(1)+SX(244)                   3.048000e+21 0.000     80.92
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dissociation_vdW
-X(1)+SX(245)=COOH*(18)+CH3O2*(22)                   5.996619e+21 0.000     35.665   
+X(1)+SX(245)=COOH*(18)+CH3O2*(22)                   5.996619e+21 0.000     18.608   
 
 ! Reaction index: Chemkin #528; RMG #657
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -8230,8 +8192,8 @@ X(1)+SX(245)=COOH*(18)+CH3O2*(22)                   5.996619e+21 0.000     35.66
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 123.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+SX(184)=COOH*(18)+CH3O2*(22)               4.000000e+17 0.000     29.479   
+! Ea raised from 0.0 to 74.9 kJ/mol to match endothermicity of reaction.
+CO2*(15)+SX(184)=COOH*(18)+CH3O2*(22)               4.000000e+17 0.000     17.896   
 
 ! Reaction index: Chemkin #529; RMG #658
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -8239,41 +8201,40 @@ CO2*(15)+SX(184)=COOH*(18)+CH3O2*(22)               4.000000e+17 0.000     29.47
 ! Euclidian distance = 3.605551275463989
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 153.7 kJ/mol to match endothermicity of reaction.
-CH2O*(20)+SX(198)=COOH*(18)+CH3O2*(22)              2.000000e+17 0.000     36.726   
+! Ea raised from 0.0 to 86.0 kJ/mol to match endothermicity of reaction.
+CH2O*(20)+SX(198)=COOH*(18)+CH3O2*(22)              2.000000e+17 0.000     20.557   
 
 ! Reaction index: Chemkin #530; RMG #660
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [O-C-3R;*C=R]
 ! Euclidian distance = 3.605551275463989
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -31.4 to 0.0 kJ/mol.
-COOH*(18)+CH3OH*(23)=OH*(12)+SX(238)                1.000000e+17 0.000     0.000    
+COOH*(18)+CH3OH*(23)=OH*(12)+SX(238)                1.000000e+17 0.000     1.025    
 
 ! Reaction index: Chemkin #531; RMG #662
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [C-OH;*C=R]
+! Estimated using template [Donating;Abstracting] for rate rule [C-OH;*C-3R]
 ! Euclidian distance = 3.605551275463989
+! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -39.3 to 0.0 kJ/mol.
-COOH*(18)+CH3OH*(23)=SX(198)+CH3X(57)               1.000000e+17 0.000     0.000    
+! Ea raised from 3.6 to 11.5 kJ/mol to match endothermicity of reaction.
+SX(198)+CH3X(57)=COOH*(18)+CH3OH*(23)               2.000000e+17 0.000     2.740    
 
 ! Reaction index: Chemkin #532; RMG #664
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*C=R]
+! Estimated using template [Donating;Abstracting] for rate rule [C-C;Abstracting]
 ! Euclidian distance = 2.0
-! Multiplied by reaction path degeneracy 3.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -6.2 to 0.0 kJ/mol.
-COOH*(18)+CH3OH*(23)=H*(10)+SX(242)                 3.000000e+17 0.000     0.000    
+! Ea raised from -29.5 to 0.0 kJ/mol.
+H*(10)+SX(242)=COOH*(18)+CH3OH*(23)                 1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #533; RMG #665
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*C=R]
+! Estimated using template [Donating;Abstracting] for rate rule [C-O;Abstracting]
 ! Euclidian distance = 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -16.0 to 0.0 kJ/mol.
-COOH*(18)+CH3OH*(23)=H*(10)+SX(241)                 1.000000e+17 0.000     0.000    
+! Ea raised from -19.7 to 0.0 kJ/mol.
+H*(10)+SX(241)=COOH*(18)+CH3OH*(23)                 1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #534; RMG #666
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -8320,8 +8281,8 @@ HCOOH*(19)+HCOOH*(19)=OH*(12)+SX(154)               1.000000e+17 0.000     36.27
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;O-R]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 188.6 kJ/mol to match endothermicity of reaction.
-HCOOH*(19)+HCOOH*(19)=HCOO*(17)+CH3O2X(50)          1.000000e+17 0.000     45.078   
+! Ea raised from 0.0 to 91.5 kJ/mol to match endothermicity of reaction.
+HCOOH*(19)+HCOOH*(19)=HCOO*(17)+CH3O2X(50)          1.000000e+17 0.000     21.880   
 
 ! Reaction index: Chemkin #540; RMG #672
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -8336,8 +8297,8 @@ HCOOH*(19)+HCOOH*(19)=HCO*(16)+SX(152)              1.000000e+17 0.000     91.22
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [2R-C=O;C-R]
 ! Euclidian distance = 3.1622776601683795
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 174.5 kJ/mol to match endothermicity of reaction.
-HCOOH*(19)+HCOOH*(19)=COOH*(18)+CH3O2X(50)          1.000000e+17 0.000     41.704   
+! Ea raised from 0.0 to 106.8 kJ/mol to match endothermicity of reaction.
+HCOOH*(19)+HCOOH*(19)=COOH*(18)+CH3O2X(50)          1.000000e+17 0.000     25.535   
 
 ! Reaction index: Chemkin #542; RMG #674
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -8512,10 +8473,9 @@ HCOOH*(19)+CH3O2*(22)=OH*(12)+SX(229)               1.000000e+17 0.000     1.882
 ! Template reaction: Surface_Abstraction_Single_vdW
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*O]
 ! Euclidian distance = 2.23606797749979
-! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -24.4 to 0.0 kJ/mol.
-HCOO*(17)+SX(184)=HCOOH*(19)+CH3O2*(22)             2.000000e+17 0.000     0.000    
+! Ea raised from -26.3 to 0.0 kJ/mol.
+HCOOH*(19)+CH3O2*(22)=HCOO*(17)+SX(184)             1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #564; RMG #700
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -8530,8 +8490,8 @@ HCO*(16)+SX(202)=HCOOH*(19)+CH3O2*(22)              1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [C-R;*O]
 ! Euclidian distance = 1.4142135623730951
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from 16.6 to 30.6 kJ/mol to match endothermicity of reaction.
-HCOOH*(19)+CH3O2*(22)=COOH*(18)+SX(184)             1.000000e+17 0.000     7.314    
+! Ea raised from -19.1 to 0.0 kJ/mol.
+HCOOH*(19)+CH3O2*(22)=COOH*(18)+SX(184)             1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #566; RMG #702
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -9438,8 +9398,7 @@ CO*(14)+CO2XX(52)=X(1)+SX(293)                      3.048000e+21 0.000     165.7
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 484.0 to 485.4 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CO2XX(52)=X(1)+SX(265)                     6.250000e+24 -0.475    116.025  
+CO2*(15)+CO2XX(52)=X(1)+SX(265)                     6.250000e+24 -0.475    121.109  
 
 ! Reaction index: Chemkin #671; RMG #817
 ! Template reaction: Surface_Addition_Single_vdW
@@ -9448,8 +9407,7 @@ CO2*(15)+CO2XX(52)=X(1)+SX(265)                     6.250000e+24 -0.475    116.0
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 459.6 to 463.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CO2XX(52)=X(1)+SX(266)                     6.250000e+24 -0.475    110.686  
+CO2*(15)+CO2XX(52)=X(1)+SX(266)                     6.250000e+24 -0.475    115.289  
 DUPLICATE
 
 ! Reaction index: Chemkin #672; RMG #818
@@ -9459,8 +9417,7 @@ DUPLICATE
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 459.6 to 463.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CO2XX(52)=X(1)+SX(266)                     6.250000e+24 -0.475    110.686  
+CO2*(15)+CO2XX(52)=X(1)+SX(266)                     6.250000e+24 -0.475    115.289  
 DUPLICATE
 
 ! Reaction index: Chemkin #673; RMG #819
@@ -9470,8 +9427,8 @@ DUPLICATE
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 569.7 to 574.5 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CO2XX(52)=X(1)+SX(267)                     6.250000e+24 -0.475    137.302  
+! Ea raised from 592.5 to 593.7 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CO2XX(52)=X(1)+SX(267)                     6.250000e+24 -0.475    141.888  
 
 ! Reaction index: Chemkin #674; RMG #820
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -9479,8 +9436,7 @@ CO2*(15)+CO2XX(52)=X(1)+SX(267)                     6.250000e+24 -0.475    137.3
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 466.4 to 468.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CO2XX(52)=O*(11)+SX(290)                   3.690000e+20 0.000     111.845  
+CO2*(15)+CO2XX(52)=O*(11)+SX(290)                   3.690000e+20 0.000     116.910  
 
 ! Reaction index: Chemkin #675; RMG #821
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -9488,8 +9444,7 @@ CO2*(15)+CO2XX(52)=O*(11)+SX(290)                   3.690000e+20 0.000     111.8
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 453.8 to 455.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CO2XX(52)=CO*(14)+CO3X2(284)               3.690000e+20 0.000     108.755  
+CO2*(15)+CO2XX(52)=CO*(14)+CO3X2(284)               3.690000e+20 0.000     113.905  
 
 ! Reaction index: Chemkin #676; RMG #822
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -9497,8 +9452,7 @@ CO2*(15)+CO2XX(52)=CO*(14)+CO3X2(284)               3.690000e+20 0.000     108.7
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 538.9 to 540.4 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CO2XX(52)=O*(11)+SX(291)                   3.690000e+20 0.000     129.148  
+CO2*(15)+CO2XX(52)=O*(11)+SX(291)                   3.690000e+20 0.000     134.243  
 
 ! Reaction index: Chemkin #677; RMG #823
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -9506,8 +9460,7 @@ CO2*(15)+CO2XX(52)=O*(11)+SX(291)                   3.690000e+20 0.000     129.1
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 662.6 to 664.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CO2XX(52)=CO*(14)+CO3X2(285)               3.690000e+20 0.000     158.746  
+CO2*(15)+CO2XX(52)=CO*(14)+CO3X2(285)               3.690000e+20 0.000     163.797  
 
 ! Reaction index: Chemkin #678; RMG #824
 ! Template reaction: Surface_Abstraction_vdW
@@ -9620,8 +9573,8 @@ DUPLICATE
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 314.1 to 320.6 kJ/mol to match endothermicity of reaction.
-CO2XX(52)+HCOO*(17)=X(1)+SX(301)                    3.048000e+21 0.000     76.615   
+! Ea raised from 415.6 to 417.6 kJ/mol to match endothermicity of reaction.
+CO2XX(52)+HCOO*(17)=X(1)+SX(301)                    3.048000e+21 0.000     99.813   
 
 ! Reaction index: Chemkin #692; RMG #838
 ! Template reaction: Surface_Dissociation_vdW
@@ -9693,8 +9646,8 @@ CO*(14)+SX(289)=CO2XX(52)+COOH*(18)                 4.070000e+24 -0.274    52.19
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;C-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 455.0 to 459.6 kJ/mol to match endothermicity of reaction.
-CO2XX(52)+COOH*(18)=X(1)+SX(305)                    3.048000e+21 0.000     109.853  
+! Ea raised from 526.4 to 527.3 kJ/mol to match endothermicity of reaction.
+CO2XX(52)+COOH*(18)=X(1)+SX(305)                    3.048000e+21 0.000     126.022  
 
 ! Reaction index: Chemkin #701; RMG #847
 ! Template reaction: Surface_Dissociation_Beta
@@ -9702,8 +9655,7 @@ CO2XX(52)+COOH*(18)=X(1)+SX(305)                    3.048000e+21 0.000     109.8
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 695.5 to 698.7 kJ/mol to match endothermicity of reaction.
-CO2XX(52)+COOH*(18)=X(1)+SX(306)                    3.048000e+21 0.000     167.002  
+CO2XX(52)+COOH*(18)=X(1)+SX(306)                    3.048000e+21 0.000     183.286  
 
 ! Reaction index: Chemkin #702; RMG #848
 ! Template reaction: Surface_Dissociation_Beta
@@ -9711,8 +9663,7 @@ CO2XX(52)+COOH*(18)=X(1)+SX(306)                    3.048000e+21 0.000     167.0
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;C-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 242.8 to 244.9 kJ/mol to match endothermicity of reaction.
-CO2XX(52)+COOH*(18)=X(1)+SX(307)                    3.048000e+21 0.000     58.540   
+CO2XX(52)+COOH*(18)=X(1)+SX(307)                    3.048000e+21 0.000     75.097   
 
 ! Reaction index: Chemkin #703; RMG #849
 ! Template reaction: Surface_Dissociation_vdW
@@ -9769,7 +9720,7 @@ OH*(12)+SX(299)=CO2XX(52)+HCOOH*(19)                1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [C-R;*O]
 ! Euclidian distance = 1.4142135623730951
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -160.7 to 0.0 kJ/mol.
+! Ea raised from -109.9 to 0.0 kJ/mol.
 HCOO*(17)+SX(282)=CO2XX(52)+HCOOH*(19)              1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #710; RMG #856
@@ -9777,7 +9728,7 @@ HCOO*(17)+SX(282)=CO2XX(52)+HCOOH*(19)              1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*O]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -152.9 to 0.0 kJ/mol.
+! Ea raised from -102.1 to 0.0 kJ/mol.
 HCOO*(17)+HOCOX(283)=CO2XX(52)+HCOOH*(19)           1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #711; RMG #857
@@ -9801,7 +9752,7 @@ HCO*(16)+SX(289)=CO2XX(52)+HCOOH*(19)               1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [C-R;*C=R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -152.9 to 0.0 kJ/mol.
+! Ea raised from -117.2 to 0.0 kJ/mol.
 COOH*(18)+SX(282)=CO2XX(52)+HCOOH*(19)              1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #714; RMG #860
@@ -9809,7 +9760,7 @@ COOH*(18)+SX(282)=CO2XX(52)+HCOOH*(19)              1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*C=R]
 ! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -145.0 to 0.0 kJ/mol.
+! Ea raised from -109.4 to 0.0 kJ/mol.
 COOH*(18)+HOCOX(283)=CO2XX(52)+HCOOH*(19)           1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #715; RMG #861
@@ -10641,8 +10592,7 @@ CO*(14)+COXX(63)=X(1)+SX(353)                       3.048000e+21 0.000     244.1
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 859.1 to 861.5 kJ/mol to match endothermicity of reaction.
-COXX(63)+CO2*(15)=X(1)+SX(292)                      6.250000e+24 -0.475    205.899  
+COXX(63)+CO2*(15)=X(1)+SX(292)                      6.250000e+24 -0.475    210.756  
 
 ! Reaction index: Chemkin #815; RMG #965
 ! Template reaction: Surface_Addition_Single_vdW
@@ -10651,8 +10601,8 @@ COXX(63)+CO2*(15)=X(1)+SX(292)                      6.250000e+24 -0.475    205.8
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 494.2 to 498.3 kJ/mol to match endothermicity of reaction.
-COXX(63)+CO2*(15)=X(1)+SX(293)                      6.250000e+24 -0.475    119.106  
+! Ea raised from 517.0 to 517.5 kJ/mol to match endothermicity of reaction.
+COXX(63)+CO2*(15)=X(1)+SX(293)                      6.250000e+24 -0.475    123.692  
 
 ! Reaction index: Chemkin #816; RMG #966
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -10660,8 +10610,8 @@ COXX(63)+CO2*(15)=X(1)+SX(293)                      6.250000e+24 -0.475    119.1
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 146.1 to 149.7 kJ/mol to match endothermicity of reaction.
-COXX(63)+CO2*(15)=O*(11)+SX(354)                    3.690000e+20 0.000     35.776   
+! Ea raised from 168.8 to 168.9 kJ/mol to match endothermicity of reaction.
+COXX(63)+CO2*(15)=O*(11)+SX(354)                    3.690000e+20 0.000     40.362   
 
 ! Reaction index: Chemkin #817; RMG #967
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -10669,8 +10619,8 @@ COXX(63)+CO2*(15)=O*(11)+SX(354)                    3.690000e+20 0.000     35.77
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 506.0 to 510.3 kJ/mol to match endothermicity of reaction.
-COXX(63)+CO2*(15)=CX(32)+CO3X2(284)                 3.690000e+20 0.000     121.974  
+! Ea raised from 528.8 to 529.5 kJ/mol to match endothermicity of reaction.
+COXX(63)+CO2*(15)=CX(32)+CO3X2(284)                 3.690000e+20 0.000     126.560  
 
 ! Reaction index: Chemkin #818; RMG #968
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -10678,8 +10628,7 @@ COXX(63)+CO2*(15)=CX(32)+CO3X2(284)                 3.690000e+20 0.000     121.9
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 851.7 to 853.9 kJ/mol to match endothermicity of reaction.
-COXX(63)+CO2*(15)=O*(11)+SX(352)                    3.690000e+20 0.000     204.079  
+COXX(63)+CO2*(15)=O*(11)+SX(352)                    3.690000e+20 0.000     208.999  
 
 ! Reaction index: Chemkin #819; RMG #969
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -10687,8 +10636,8 @@ COXX(63)+CO2*(15)=O*(11)+SX(352)                    3.690000e+20 0.000     204.0
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 714.8 to 719.5 kJ/mol to match endothermicity of reaction.
-COXX(63)+CO2*(15)=CX(32)+CO3X2(285)                 3.690000e+20 0.000     171.965  
+! Ea raised from 737.5 to 738.7 kJ/mol to match endothermicity of reaction.
+COXX(63)+CO2*(15)=CX(32)+CO3X2(285)                 3.690000e+20 0.000     176.551  
 
 ! Reaction index: Chemkin #820; RMG #971
 ! Template reaction: Surface_Abstraction_vdW
@@ -10838,8 +10787,7 @@ X(1)+SX(361)=COXX(63)+COOH*(18)                     7.359755e+22 -0.106    6.489
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 728.9 to 731.6 kJ/mol to match endothermicity of reaction.
-COXX(63)+COOH*(18)=X(1)+SX(362)                     3.048000e+21 0.000     174.856  
+COXX(63)+COOH*(18)=X(1)+SX(362)                     3.048000e+21 0.000     191.275  
 
 ! Reaction index: Chemkin #839; RMG #992
 ! Template reaction: Surface_Dissociation_vdW
@@ -10871,7 +10819,7 @@ OH*(12)+SX(358)=COXX(63)+HCOOH*(19)                 1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*O]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -163.6 to 0.0 kJ/mol.
+! Ea raised from -112.9 to 0.0 kJ/mol.
 CHOX2(347)+HCOO*(17)=COXX(63)+HCOOH*(19)            1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #843; RMG #996
@@ -10887,7 +10835,7 @@ HCO*(16)+SX(349)=COXX(63)+HCOOH*(19)                1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*C=R]
 ! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -155.8 to 0.0 kJ/mol.
+! Ea raised from -120.1 to 0.0 kJ/mol.
 CHOX2(347)+COOH*(18)=COXX(63)+HCOOH*(19)            1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #845; RMG #998
@@ -11667,8 +11615,7 @@ CO2*(15)+CH3OX(47)=X(1)+SX(217)                     6.250000e+24 -0.475    28.01
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 127.6 to 129.9 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OX(47)=X(1)+SX(214)                     6.250000e+24 -0.475    31.041   
+CO2*(15)+CH3OX(47)=X(1)+SX(214)                     6.250000e+24 -0.475    35.923   
 
 ! Reaction index: Chemkin #939; RMG #1102
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -11676,8 +11623,7 @@ CO2*(15)+CH3OX(47)=X(1)+SX(214)                     6.250000e+24 -0.475    31.04
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 167.9 to 168.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OX(47)=CHO3X(98)+CH2X(54)               3.690000e+20 0.000     40.302   
+CO2*(15)+CH3OX(47)=CHO3X(98)+CH2X(54)               3.690000e+20 0.000     45.560   
 
 ! Reaction index: Chemkin #940; RMG #1103
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -11685,7 +11631,8 @@ CO2*(15)+CH3OX(47)=CHO3X(98)+CH2X(54)               3.690000e+20 0.000     40.30
 ! Euclidian distance = 3.605551275463989
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH3OX(47)=HCOO*(17)+CH2OX(56)              7.380000e+20 0.000     47.303   
+! Ea raised from 119.1 to 119.2 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OX(47)=HCOO*(17)+CH2OX(56)              7.380000e+20 0.000     28.495   
 
 ! Reaction index: Chemkin #941; RMG #1104
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -11693,7 +11640,7 @@ CO2*(15)+CH3OX(47)=HCOO*(17)+CH2OX(56)              7.380000e+20 0.000     47.30
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH3OX(47)=CHO3X(99)+CH2X(54)               3.690000e+20 0.000     116.050  
+CO2*(15)+CH3OX(47)=CHO3X(99)+CH2X(54)               3.690000e+20 0.000     121.483  
 
 ! Reaction index: Chemkin #942; RMG #1105
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -11701,8 +11648,8 @@ CO2*(15)+CH3OX(47)=CHO3X(99)+CH2X(54)               3.690000e+20 0.000     116.0
 ! Euclidian distance = 4.47213595499958
 ! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 182.2 to 183.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OX(47)=COOH*(18)+CH2OX(56)              7.380000e+20 0.000     43.733   
+! Ea raised from 133.6 to 134.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3OX(47)=COOH*(18)+CH2OX(56)              7.380000e+20 0.000     32.150   
 
 ! Reaction index: Chemkin #943; RMG #1106
 ! Template reaction: Surface_Abstraction_vdW
@@ -11772,8 +11719,7 @@ O*(11)+SX(227)=HCOO*(17)+CH3OX(47)                  1.405000e+24 -0.101    22.15
 ! Estimated using template [Adsorbate;VacantSite1;VacantSite2] for rate rule [O-C;VacantSite1;VacantSite2]
 ! Euclidian distance = 2.0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 15.0 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+C2H4O3(90)=HCOO*(17)+CH3OX(47)            8.000e-03 0.000     3.579    
+X(1)+X(1)+C2H4O3(90)=HCOO*(17)+CH3OX(47)            8.000e-03 0.000     0.000    
     STICK
 
 ! Reaction index: Chemkin #952; RMG #1115
@@ -11814,8 +11760,7 @@ CO*(14)+SX(184)=COOH*(18)+CH3OX(47)                 2.810000e+24 -0.101    22.15
 ! Estimated using an average for rate rule [Adsorbate;VacantSite1;VacantSite2]
 ! Euclidian distance = 0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 27.7 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+C2H4O3(91)=COOH*(18)+CH3OX(47)            1.600e-02 0.000     6.615    
+X(1)+X(1)+C2H4O3(91)=COOH*(18)+CH3OX(47)            1.600e-02 0.000     0.000    
     STICK
 
 ! Reaction index: Chemkin #957; RMG #1120
@@ -11824,7 +11769,7 @@ X(1)+X(1)+C2H4O3(91)=COOH*(18)+CH3OX(47)            1.600e-02 0.000     6.615
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;C-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-COOH*(18)+CH3OX(47)=X(1)+SX(393)                    3.048000e+21 0.000     44.522   
+COOH*(18)+CH3OX(47)=X(1)+SX(393)                    3.048000e+21 0.000     60.644   
 
 ! Reaction index: Chemkin #958; RMG #1121
 ! Template reaction: Surface_Dissociation_vdW
@@ -12625,8 +12570,7 @@ X(1)+SX(419)=CO*(14)+CHOX2(64)                      9.280000e+23 -1.000    21.34
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 435.0 to 435.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CHOX2(64)=X(1)+SX(295)                     6.250000e+24 -0.475    103.989  
+CO2*(15)+CHOX2(64)=X(1)+SX(295)                     6.250000e+24 -0.475    109.397  
 
 ! Reaction index: Chemkin #1056; RMG #1225
 ! Template reaction: Surface_Addition_Single_vdW
@@ -12635,8 +12579,7 @@ CO2*(15)+CHOX2(64)=X(1)+SX(295)                     6.250000e+24 -0.475    103.9
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 557.6 to 558.7 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CHOX2(64)=X(1)+SX(296)                     6.250000e+24 -0.475    133.541  
+CO2*(15)+CHOX2(64)=X(1)+SX(296)                     6.250000e+24 -0.475    138.710  
 
 ! Reaction index: Chemkin #1057; RMG #1226
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -12644,8 +12587,7 @@ CO2*(15)+CHOX2(64)=X(1)+SX(296)                     6.250000e+24 -0.475    133.5
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 267.0 to 269.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CHOX2(64)=O*(11)+SX(420)                   3.690000e+20 0.000     64.294   
+CO2*(15)+CHOX2(64)=O*(11)+SX(420)                   3.690000e+20 0.000     69.246   
 
 ! Reaction index: Chemkin #1058; RMG #1227
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -12653,8 +12595,7 @@ CO2*(15)+CHOX2(64)=O*(11)+SX(420)                   3.690000e+20 0.000     64.29
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 373.8 to 374.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CHOX2(64)=CO3X2(284)+CHX(33)               3.690000e+20 0.000     89.433   
+CO2*(15)+CHOX2(64)=CO3X2(284)+CHX(33)               3.690000e+20 0.000     94.771   
 
 ! Reaction index: Chemkin #1059; RMG #1228
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -12662,7 +12603,7 @@ CO2*(15)+CHOX2(64)=CO3X2(284)+CHX(33)               3.690000e+20 0.000     89.43
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CHOX2(64)=O*(11)+SX(418)                   3.690000e+20 0.000     123.488  
+CO2*(15)+CHOX2(64)=O*(11)+SX(418)                   3.690000e+20 0.000     128.921  
 
 ! Reaction index: Chemkin #1060; RMG #1229
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -12670,8 +12611,7 @@ CO2*(15)+CHOX2(64)=O*(11)+SX(418)                   3.690000e+20 0.000     123.4
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 582.5 to 583.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CHOX2(64)=CO3X2(285)+CHX(33)               3.690000e+20 0.000     139.424  
+CO2*(15)+CHOX2(64)=CO3X2(285)+CHX(33)               3.690000e+20 0.000     144.662  
 
 ! Reaction index: Chemkin #1061; RMG #1231
 ! Template reaction: Surface_Abstraction_vdW
@@ -12765,7 +12705,8 @@ DUPLICATE
 ! Exact match found for rate rule [C-O;VacantSite]
 ! Euclidian distance = 0
 ! family: Surface_Dissociation
-X(1)+SX(425)=CHOX2(64)+HCOO*(17)                    1.460000e+24 -0.213    40.855   
+! Ea raised from 69.4 to 70.8 kJ/mol to match endothermicity of reaction.
+X(1)+SX(425)=CHOX2(64)+HCOO*(17)                    1.460000e+24 -0.213    16.919   
 
 ! Reaction index: Chemkin #1073; RMG #1244
 ! Template reaction: Surface_Dissociation_vdW
@@ -12834,7 +12775,7 @@ X(1)+SX(428)=CHOX2(64)+COOH*(18)                    7.359755e+22 -0.106    6.489
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-CHOX2(64)+COOH*(18)=X(1)+SX(429)                    3.048000e+21 0.000     207.194  
+CHOX2(64)+COOH*(18)=X(1)+SX(429)                    3.048000e+21 0.000     224.250  
 
 ! Reaction index: Chemkin #1082; RMG #1254
 ! Template reaction: Surface_Dissociation_vdW
@@ -12873,7 +12814,7 @@ OH*(12)+SX(424)=CHOX2(64)+HCOOH*(19)                1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*O]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -152.1 to 0.0 kJ/mol.
+! Ea raised from -101.3 to 0.0 kJ/mol.
 HCOO*(17)+SX(412)=CHOX2(64)+HCOOH*(19)              1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1087; RMG #1259
@@ -12889,7 +12830,7 @@ HCO*(16)+SX(415)=CHOX2(64)+HCOOH*(19)               1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*C=R]
 ! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -144.2 to 0.0 kJ/mol.
+! Ea raised from -108.5 to 0.0 kJ/mol.
 COOH*(18)+SX(412)=CHOX2(64)+HCOOH*(19)              1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1089; RMG #1261
@@ -14153,8 +14094,7 @@ CO*(14)+CH2OX2(53)=X(1)+SX(341)                     3.048000e+21 0.000     118.9
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 277.4 to 277.5 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2OX2(53)=X(1)+SX(268)                    6.250000e+24 -0.475    66.317   
+CO2*(15)+CH2OX2(53)=X(1)+SX(268)                    6.250000e+24 -0.475    71.742   
 
 ! Reaction index: Chemkin #1244; RMG #1426
 ! Template reaction: Surface_Addition_Single_vdW
@@ -14163,8 +14103,7 @@ CO2*(15)+CH2OX2(53)=X(1)+SX(268)                    6.250000e+24 -0.475    66.31
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 204.5 to 205.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2OX2(53)=X(1)+SX(270)                    6.250000e+24 -0.475    49.068   
+CO2*(15)+CH2OX2(53)=X(1)+SX(270)                    6.250000e+24 -0.475    54.313   
 
 ! Reaction index: Chemkin #1245; RMG #1427
 ! Template reaction: Surface_Addition_Single_vdW
@@ -14173,8 +14112,7 @@ CO2*(15)+CH2OX2(53)=X(1)+SX(270)                    6.250000e+24 -0.475    49.06
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 239.3 to 241.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2OX2(53)=X(1)+SX(269)                    6.250000e+24 -0.475    57.751   
+CO2*(15)+CH2OX2(53)=X(1)+SX(269)                    6.250000e+24 -0.475    62.630   
 
 ! Reaction index: Chemkin #1246; RMG #1428
 ! Template reaction: Surface_Addition_Single_vdW
@@ -14183,8 +14121,7 @@ CO2*(15)+CH2OX2(53)=X(1)+SX(269)                    6.250000e+24 -0.475    57.75
 ! Euclidian distance = 1.0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Addition_Single_vdW
-! Ea raised from 447.5 to 448.8 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2OX2(53)=X(1)+SX(271)                    6.250000e+24 -0.475    107.268  
+CO2*(15)+CH2OX2(53)=X(1)+SX(271)                    6.250000e+24 -0.475    112.396  
 
 ! Reaction index: Chemkin #1247; RMG #1429
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -14192,8 +14129,7 @@ CO2*(15)+CH2OX2(53)=X(1)+SX(271)                    6.250000e+24 -0.475    107.2
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 188.6 to 189.9 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2OX2(53)=O*(11)+SX(482)                  3.690000e+20 0.000     45.376   
+CO2*(15)+CH2OX2(53)=O*(11)+SX(482)                  3.690000e+20 0.000     50.504   
 
 ! Reaction index: Chemkin #1248; RMG #1430
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -14201,7 +14137,7 @@ CO2*(15)+CH2OX2(53)=O*(11)+SX(482)                  3.690000e+20 0.000     45.37
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH2OX2(53)=CO3X2(284)+CH2X(54)             3.690000e+20 0.000     89.391   
+CO2*(15)+CH2OX2(53)=CO3X2(284)+CH2X(54)             3.690000e+20 0.000     94.824   
 
 ! Reaction index: Chemkin #1249; RMG #1431
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -14209,7 +14145,7 @@ CO2*(15)+CH2OX2(53)=CO3X2(284)+CH2X(54)             3.690000e+20 0.000     89.39
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH2OX2(53)=O*(11)+SX(316)                  3.690000e+20 0.000     68.584   
+CO2*(15)+CH2OX2(53)=O*(11)+SX(316)                  3.690000e+20 0.000     74.018   
 
 ! Reaction index: Chemkin #1250; RMG #1432
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -14217,8 +14153,7 @@ CO2*(15)+CH2OX2(53)=O*(11)+SX(316)                  3.690000e+20 0.000     68.58
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 582.8 to 583.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH2OX2(53)=CO3X2(285)+CH2X(54)             3.690000e+20 0.000     139.369  
+CO2*(15)+CH2OX2(53)=CO3X2(285)+CH2X(54)             3.690000e+20 0.000     144.715  
 
 ! Reaction index: Chemkin #1251; RMG #1433
 ! Template reaction: Surface_Abstraction_vdW
@@ -14345,8 +14280,7 @@ X(1)+SX(487)=HCOO*(17)+CH2OX2(53)                   5.996619e+21 0.000     18.14
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 6.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 22.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OX(478)=HCOO*(17)+CH2OX2(53)            6.000000e+17 0.000     5.295    
+CO2*(15)+CH3OX(478)=HCOO*(17)+CH2OX2(53)            6.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1267; RMG #1449
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -14354,16 +14288,15 @@ CO2*(15)+CH3OX(478)=HCOO*(17)+CH2OX2(53)            6.000000e+17 0.000     5.295
 ! Euclidian distance = 3.1622776601683795
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 90.3 kJ/mol to match endothermicity of reaction.
-CO2*(15)+SX(479)=HCOO*(17)+CH2OX2(53)               2.000000e+17 0.000     21.588   
+! Ea raised from 0.0 to 12.5 kJ/mol to match endothermicity of reaction.
+CO2*(15)+SX(479)=HCOO*(17)+CH2OX2(53)               2.000000e+17 0.000     2.976    
 
 ! Reaction index: Chemkin #1268; RMG #1450
 ! Template reaction: Surface_Dual_Adsorption_vdW
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;O-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 50.1 kJ/mol to match endothermicity of reaction.
-HCOX(280)+HCOOH*(19)=HCOO*(17)+CH2OX2(53)           1.000000e+17 0.000     11.971   
+HCOX(280)+HCOOH*(19)=HCOO*(17)+CH2OX2(53)           1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1269; RMG #1451
 ! Template reaction: Surface_Abstraction_vdW
@@ -14399,8 +14332,7 @@ CO*(14)+SX(480)=COOH*(18)+CH2OX2(53)                4.070000e+24 -0.274    52.19
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;C-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-! Ea raised from 294.1 to 295.3 kJ/mol to match endothermicity of reaction.
-COOH*(18)+CH2OX2(53)=X(1)+SX(489)                   3.048000e+21 0.000     70.583   
+COOH*(18)+CH2OX2(53)=X(1)+SX(489)                   3.048000e+21 0.000     87.350   
 
 ! Reaction index: Chemkin #1274; RMG #1456
 ! Template reaction: Surface_Dissociation_Beta
@@ -14408,7 +14340,7 @@ COOH*(18)+CH2OX2(53)=X(1)+SX(489)                   3.048000e+21 0.000     70.58
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;O-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-COOH*(18)+CH2OX2(53)=X(1)+SX(490)                   3.048000e+21 0.000     137.020  
+COOH*(18)+CH2OX2(53)=X(1)+SX(490)                   3.048000e+21 0.000     154.076  
 
 ! Reaction index: Chemkin #1275; RMG #1457
 ! Template reaction: Surface_Dissociation_vdW
@@ -14426,7 +14358,7 @@ X(1)+SX(491)=COOH*(18)+CH2OX2(53)                   5.996619e+21 0.000     18.14
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dissociation_vdW
-X(1)+SX(492)=COOH*(18)+CH2OX2(53)                   5.996619e+21 0.000     18.522   
+X(1)+SX(492)=COOH*(18)+CH2OX2(53)                   5.996619e+21 0.000     18.140   
 
 ! Reaction index: Chemkin #1277; RMG #1459
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -14434,8 +14366,7 @@ X(1)+SX(492)=COOH*(18)+CH2OX2(53)                   5.996619e+21 0.000     18.52
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 6.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 8.0 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3OX(478)=COOH*(18)+CH2OX2(53)            6.000000e+17 0.000     1.921    
+CO2*(15)+CH3OX(478)=COOH*(18)+CH2OX2(53)            6.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1278; RMG #1460
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -14443,16 +14374,15 @@ CO2*(15)+CH3OX(478)=COOH*(18)+CH2OX2(53)            6.000000e+17 0.000     1.921
 ! Euclidian distance = 4.123105625617661
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 76.2 kJ/mol to match endothermicity of reaction.
-CO2*(15)+SX(479)=COOH*(18)+CH2OX2(53)               2.000000e+17 0.000     18.214   
+! Ea raised from 0.0 to 27.7 kJ/mol to match endothermicity of reaction.
+CO2*(15)+SX(479)=COOH*(18)+CH2OX2(53)               2.000000e+17 0.000     6.632    
 
 ! Reaction index: Chemkin #1279; RMG #1461
 ! Template reaction: Surface_Dual_Adsorption_vdW
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;C-R]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 36.0 kJ/mol to match endothermicity of reaction.
-HCOX(280)+HCOOH*(19)=COOH*(18)+CH2OX2(53)           1.000000e+17 0.000     8.597    
+HCOX(280)+HCOOH*(19)=COOH*(18)+CH2OX2(53)           1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1280; RMG #1462
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -14476,7 +14406,7 @@ OH*(12)+SX(485)=CH2OX2(53)+HCOOH*(19)               1.000000e+17 0.000     0.000
 ! Euclidian distance = 1.4142135623730951
 ! Multiplied by reaction path degeneracy 3.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -83.4 to 0.0 kJ/mol.
+! Ea raised from -32.6 to 0.0 kJ/mol.
 HCOO*(17)+CH3OX(478)=CH2OX2(53)+HCOOH*(19)          3.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1283; RMG #1465
@@ -14484,8 +14414,8 @@ HCOO*(17)+CH3OX(478)=CH2OX2(53)+HCOOH*(19)          3.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*O]
 ! Euclidian distance = 2.23606797749979
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -49.3 to 0.0 kJ/mol.
-HCOO*(17)+SX(479)=CH2OX2(53)+HCOOH*(19)             1.000000e+17 0.000     0.000    
+! Ea raised from 1.5 to 5.2 kJ/mol to match endothermicity of reaction.
+HCOO*(17)+SX(479)=CH2OX2(53)+HCOOH*(19)             1.000000e+17 0.000     1.245    
 
 ! Reaction index: Chemkin #1284; RMG #1466
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -14509,7 +14439,7 @@ HCO*(16)+SX(480)=CH2OX2(53)+HCOOH*(19)              1.000000e+17 0.000     0.000
 ! Euclidian distance = 2.23606797749979
 ! Multiplied by reaction path degeneracy 3.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -75.5 to 0.0 kJ/mol.
+! Ea raised from -39.9 to 0.0 kJ/mol.
 COOH*(18)+CH3OX(478)=CH2OX2(53)+HCOOH*(19)          3.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1287; RMG #1469
@@ -14517,7 +14447,7 @@ COOH*(18)+CH3OX(478)=CH2OX2(53)+HCOOH*(19)          3.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-H;*C=R]
 ! Euclidian distance = 2.8284271247461903
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -41.5 to 0.0 kJ/mol.
+! Ea raised from -5.8 to 0.0 kJ/mol.
 COOH*(18)+SX(479)=CH2OX2(53)+HCOOH*(19)             1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1288; RMG #1470
@@ -15589,8 +15519,8 @@ CO*(14)+CH4X(182)=H*(10)+SX(211)                    9.565229e+24 -0.188    37.17
 ! Euclidian distance = 3.0
 ! Multiplied by reaction path degeneracy 8.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 89.1 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH4X(182)=H*(10)+SX(216)                   8.000000e+17 0.000     21.286   
+! Ea raised from 0.0 to 108.2 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH4X(182)=H*(10)+SX(216)                   8.000000e+17 0.000     25.872   
 
 ! Reaction index: Chemkin #1423; RMG #1613
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -15598,8 +15528,8 @@ CO2*(15)+CH4X(182)=H*(10)+SX(216)                   8.000000e+17 0.000     21.28
 ! Euclidian distance = 4.0
 ! Multiplied by reaction path degeneracy 8.0
 ! family: Surface_Dual_Adsorption_vdW
-! Ea raised from 0.0 to 160.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH4X(182)=H*(10)+SX(60)                    8.000000e+17 0.000     38.378   
+! Ea raised from 0.0 to 179.8 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH4X(182)=H*(10)+SX(60)                    8.000000e+17 0.000     42.964   
 
 ! Reaction index: Chemkin #1424; RMG #1615
 ! Template reaction: Surface_Abstraction_Single_vdW
@@ -15614,17 +15544,16 @@ H*(10)+SX(225)=HCO*(16)+CH4X(182)                   1.000000e+17 0.000     0.000
 ! Estimated using template [Donating;Abstracting] for rate rule [O-C-3R;Abstracting]
 ! Euclidian distance = 3.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -11.8 to 0.0 kJ/mol.
+! Ea raised from -62.6 to 0.0 kJ/mol.
 H*(10)+SX(62)=HCOO*(17)+CH4X(182)                   1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1426; RMG #1619
 ! Template reaction: Surface_Abstraction_Single_vdW
-! Estimated using template [Donating;Abstracting] for rate rule [Donating;*C=R]
+! Estimated using template [Donating;Abstracting] for rate rule [C-C;Abstracting]
 ! Euclidian distance = 2.0
-! Multiplied by reaction path degeneracy 4.0
 ! family: Surface_Abstraction_Single_vdW
-! Ea raised from -30.4 to 0.0 kJ/mol.
-COOH*(18)+CH4X(182)=H*(10)+SX(238)                  4.000000e+17 0.000     0.000    
+! Ea raised from -5.3 to 0.0 kJ/mol.
+H*(10)+SX(238)=COOH*(18)+CH4X(182)                  1.000000e+17 0.000     0.000    
 
 ! Reaction index: Chemkin #1427; RMG #1621
 ! Template reaction: Surface_Dual_Adsorption_vdW
@@ -15995,7 +15924,8 @@ CO2*(15)+CH3X(57)=X(1)+SX(60)                       6.250000e+24 -0.475    28.01
 ! Euclidian distance = 3.605551275463989
 ! Multiplied by reaction path degeneracy 6.0
 ! family: Surface_Adsorption_Abstraction_vdW
-CO2*(15)+CH3X(57)=HCOO*(17)+CH2X(54)                1.107000e+21 0.000     40.671   
+! Ea raised from 91.3 to 91.9 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3X(57)=HCOO*(17)+CH2X(54)                1.107000e+21 0.000     21.955   
 
 ! Reaction index: Chemkin #1470; RMG #1672
 ! Template reaction: Surface_Adsorption_Abstraction_vdW
@@ -16003,8 +15933,8 @@ CO2*(15)+CH3X(57)=HCOO*(17)+CH2X(54)                1.107000e+21 0.000     40.67
 ! Euclidian distance = 4.47213595499958
 ! Multiplied by reaction path degeneracy 6.0
 ! family: Surface_Adsorption_Abstraction_vdW
-! Ea raised from 154.5 to 155.6 kJ/mol to match endothermicity of reaction.
-CO2*(15)+CH3X(57)=COOH*(18)+CH2X(54)                1.107000e+21 0.000     37.193   
+! Ea raised from 105.8 to 107.2 kJ/mol to match endothermicity of reaction.
+CO2*(15)+CH3X(57)=COOH*(18)+CH2X(54)                1.107000e+21 0.000     25.610   
 
 ! Reaction index: Chemkin #1471; RMG #1673
 ! Template reaction: Surface_Abstraction_vdW
@@ -16076,8 +16006,8 @@ CH2X(54)+HCOOH*(19)=COOH*(18)+CH3X(57)              1.405000e+24 -0.101    22.15
 ! Estimated using an average for rate rule [Adsorbate;VacantSite1;VacantSite2]
 ! Euclidian distance = 0
 ! family: Surface_Adsorption_Dissociative
-! Ea raised from 0.0 to 125.8 kJ/mol to match endothermicity of reaction.
-X(1)+X(1)+S(540)=COOH*(18)+CH3X(57)                 1.600e-02 0.000     30.075   
+! Ea raised from 0.0 to 58.2 kJ/mol to match endothermicity of reaction.
+X(1)+X(1)+S(540)=COOH*(18)+CH3X(57)                 1.600e-02 0.000     13.907   
     STICK
 
 ! Reaction index: Chemkin #1480; RMG #1682
@@ -16086,7 +16016,7 @@ X(1)+X(1)+S(540)=COOH*(18)+CH3X(57)                 1.600e-02 0.000     30.075
 ! Estimated using template [Adsorbate1;Adsorbate2] for rate rule [*-C=O;C-*]
 ! Euclidian distance = 4.123105625617661
 ! family: Surface_Dissociation_Beta
-COOH*(18)+CH3X(57)=X(1)+SX(541)                     3.048000e+21 0.000     38.095   
+COOH*(18)+CH3X(57)=X(1)+SX(541)                     3.048000e+21 0.000     48.742   
 
 ! Reaction index: Chemkin #1481; RMG #1683
 ! Template reaction: Surface_Dissociation_vdW
@@ -16095,7 +16025,7 @@ COOH*(18)+CH3X(57)=X(1)+SX(541)                     3.048000e+21 0.000     38.09
 ! Euclidian distance = 0
 ! Multiplied by reaction path degeneracy 2.0
 ! family: Surface_Dissociation_vdW
-X(1)+SX(238)=COOH*(18)+CH3X(57)                     5.996619e+21 0.000     33.077   
+X(1)+SX(238)=COOH*(18)+CH3X(57)                     5.996619e+21 0.000     18.140   
 
 ! Reaction index: Chemkin #1482; RMG #1684
 ! Template reaction: Surface_Abstraction_Single_vdW
