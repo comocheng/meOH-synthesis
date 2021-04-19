@@ -284,12 +284,6 @@ OC(O)[Pt]
 6 H u0 p0 c0 {1,S}
 7 X u0 p0 c0 {3,S}
 
-C=[Pt]
-1 C u0 p0 c0 {2,S} {3,S} {4,D}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 X u0 p0 c0 {1,D}
-
 formic_acidXX
 1 O u0 p2 c0 {3,S} {5,S}
 2 O u0 p2 c0 {3,S} {7,S}
@@ -298,13 +292,6 @@ formic_acidXX
 5 H u0 p0 c0 {1,S}
 6 X u0 p0 c0 {3,S}
 7 X u0 p0 c0 {2,S}
-
-OC=[Pt]
-1 O u0 p2 c0 {2,S} {4,S}
-2 C u0 p0 c0 {1,S} {3,S} {5,D}
-3 H u0 p0 c0 {2,S}
-4 H u0 p0 c0 {1,S}
-5 X u0 p0 c0 {2,D}
 
 methyl_formateXX
 1  O u0 p2 c0 {3,S} {4,S}
@@ -338,16 +325,6 @@ CH3OCOX
 7 H u0 p0 c0 {3,S}
 8 X u0 p0 c0 {4,S}
 
-COC=[Pt]
-1 O u0 p2 c0 {2,S} {3,S}
-2 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
-3 C u0 p0 c0 {1,S} {7,S} {8,D}
-4 H u0 p0 c0 {2,S}
-5 H u0 p0 c0 {2,S}
-6 H u0 p0 c0 {2,S}
-7 H u0 p0 c0 {3,S}
-8 X u0 p0 c0 {3,D}
-
 methyl_formate
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,D}
@@ -375,12 +352,25 @@ HCOOH*
 5 H u0 p0 c0 {1,S}
 6 X u0 p0 c0
 
+OC=[Pt]
+1 O u0 p2 c0 {2,S} {4,S}
+2 C u0 p0 c0 {1,S} {3,S} {5,D}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {1,S}
+5 X u0 p0 c0 {2,D}
+
 CH2O*
 1 O u0 p2 c0 {2,D}
 2 C u0 p0 c0 {1,D} {3,S} {4,S}
 3 H u0 p0 c0 {2,S}
 4 H u0 p0 c0 {2,S}
 5 X u0 p0 c0
+
+C=[Pt]
+1 C u0 p0 c0 {2,S} {3,S} {4,D}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0 {1,D}
 
 CO
 1 O u0 p1 c+1 {2,T}
@@ -1998,12 +1988,6 @@ HOOCH2OH-2
 8 H u0 p0 c0 {3,S}
 9 X u0 p0 c0
 
-OCCO(S)
-1 O u0 p2 c0 {3,D}
-2 O u0 p2 c0 {4,D}
-3 C u0 p0 c0 {1,D} {4,D}
-4 C u0 p0 c0 {2,D} {3,D}
-
 OCCOXX
 1 O u0 p2 c0 {3,D}
 2 O u0 p2 c0 {4,D}
@@ -2012,7 +1996,7 @@ OCCOXX
 5 X u0 p0 c0 {3,S}
 6 X u0 p0 c0 {4,S}
 
-OCCO(S)-2
+OCCO(S)
 1 O u0 p2 c0 {3,D}
 2 O u0 p2 c0 {4,D}
 3 C u0 p0 c0 {1,D} {4,D}
@@ -5653,6 +5637,16 @@ CH3CHO-2
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {2,S}
 7 H u0 p0 c0 {3,S}
+
+COC=[Pt]
+1 O u0 p2 c0 {2,S} {3,S}
+2 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
+3 C u0 p0 c0 {1,S} {7,S} {8,D}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {2,S}
+6 H u0 p0 c0 {2,S}
+7 H u0 p0 c0 {3,S}
+8 X u0 p0 c0 {3,D}
 
 acetic_acid-2
 1 O u0 p2 c0 {4,S} {8,S}

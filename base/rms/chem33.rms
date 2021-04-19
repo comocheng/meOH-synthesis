@@ -1190,21 +1190,6 @@ Reactions:
   - CH3OH
   type: ElementaryReaction
 - kinetics:
-    A: 0.02
-    Ea: 41840.0
-    T0: 1.0
-    n: 0.0
-    type: StickingCoefficient
-  products:
-  - O*
-  - CO*
-  radicalchange: 0
-  reactants:
-  - X
-  - X
-  - CO2
-  type: ElementaryReaction
-- kinetics:
     A: 0.032
     Ea: 59622.70421265959
     T0: 1.0
