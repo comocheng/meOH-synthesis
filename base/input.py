@@ -369,6 +369,21 @@ species(
 """),
 )
 
+# insert CH4 because it is smothering the surface. 
+species(
+   label='CH4',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+"""),
+)
+
+
 # species(
 #    label='HCOOCH3*',
 #    reactive=True,
@@ -512,7 +527,7 @@ simulator(
 
 model(
     toleranceKeepInEdge=0.0,
-    toleranceMoveToCore=1e-5,
+    toleranceMoveToCore=1e-3,
 # inturrupt tolerance was 0.1 wout pruning, 1e8 w pruning on
     toleranceInterruptSimulation=1e-5,
     maximumEdgeSpecies=500000,
