@@ -527,7 +527,7 @@ simulator(
 
 model(
     toleranceKeepInEdge=0.0,
-    toleranceMoveToCore=1e-3,
+    toleranceMoveToCore=1e-7,
 # inturrupt tolerance was 0.1 wout pruning, 1e8 w pruning on
     toleranceInterruptSimulation=1e-5,
     maximumEdgeSpecies=500000,
