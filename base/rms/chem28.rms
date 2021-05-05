@@ -767,7 +767,7 @@ Phases:
         - -8.90296991806673e-05
         - 8.911327302811552e-08
         - -3.1451158249259635e-11
-        - 533.024940554869
+        - -1032.260760157739
         - 11.316056245647982
         type: NASApolynomial
       - Tmax: 5000.0
@@ -778,7 +778,7 @@ Phases:
         - -3.826908601569735e-06
         - 7.047252963342019e-10
         - -4.4102446518391794e-14
-        - 1081.7449652574194
+        - -483.5407354551886
         - 7.146333485507283
         type: NASApolynomial
       type: NASA
@@ -2320,7 +2320,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 0.1
-    Ea: 12724.313199538039
+    Ea: 0.0
     T0: 1.0
     n: 0.0
     type: StickingCoefficient
@@ -2424,7 +2424,7 @@ Reactions:
   type: ElementaryReaction
 - kinetics:
     A: 20000000000000.0
-    Ea: 4323.202799868508
+    Ea: 0.0
     n: 0.0
     type: Arrhenius
   products:

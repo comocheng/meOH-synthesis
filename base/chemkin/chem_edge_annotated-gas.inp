@@ -1001,7 +1001,7 @@ He(30)+O(27)+O(27)=He(30)+O2(26)                    1.886000e+13 0.000     -1.78
 ! Library reaction: BurkeH2O2inArHe
 ! Flux pairs: O(27), OH(28); H(25), OH(28); 
 O(27)+H(25)+M=OH(28)+M                              4.714e+18 -1.000    0.000    
-H2(2)/2.50/ Ar(29)/0.75/ CO(3)/1.90/ H2O(5)/12.00/ CO2(4)/3.80/ He(30)/0.75/ 
+H2(2)/2.50/ H2O(5)/12.00/ CO(3)/1.90/ CO2(4)/3.80/ Ar(29)/0.75/ He(30)/0.75/ 
 
 ! Reaction index: Chemkin #20; RMG #12
 ! Library reaction: BurkeH2O2inArHe
