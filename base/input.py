@@ -4,7 +4,7 @@
 
 # Data sources
 database(
-    thermoLibraries=['surfaceThermoPt111', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
+    thermoLibraries=['surfaceThermoCu111', 'surfaceThermoPt111', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
     reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Deutschmann_Ni'],
     seedMechanisms = [],
     kineticsDepositories = ['training'],

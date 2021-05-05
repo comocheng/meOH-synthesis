@@ -401,14 +401,6 @@ CH3OH*
 6 H u0 p0 c0 {1,S}
 7 X u0 p0 c0
 
-C.[Pt]
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 H u0 p0 c0 {1,S}
-3 H u0 p0 c0 {1,S}
-4 H u0 p0 c0 {1,S}
-5 H u0 p0 c0 {1,S}
-6 X u0 p0 c0
-
 CO
 1 O u0 p1 c+1 {2,T}
 2 C u0 p1 c-1 {1,T}
@@ -1883,6 +1875,11 @@ H2O*
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
 4 X u0 p0 c0
+
+[H][H].[Pt]
+1 H u0 p0 c0 {2,S}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0
 
 [Pt]OO[Pt]
 1 O u0 p2 c0 {2,S} {3,S}
@@ -3385,11 +3382,6 @@ CH2(T)X
 4 X u0 p0 c0 {1,D}
 5 X u0 p0 c0
 
-[H][H].[Pt]
-1 H u0 p0 c0 {2,S}
-2 H u0 p0 c0 {1,S}
-3 X u0 p0 c0
-
 HCOH(T)X
 1 O u0 p2 c0 {2,S} {4,S}
 2 C u0 p0 c0 {1,S} {3,S} {5,D}
@@ -4654,4 +4646,12 @@ OCOOC[Pt].[Pt]
 9  X u0 p0 c0 {1,S}
 10 X u0 p0 c0 {2,S}
 11 X u0 p0 c0
+
+C.[Pt]
+1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+6 X u0 p0 c0
 
