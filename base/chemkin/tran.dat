@@ -27,5 +27,7 @@ HCOOCH3(9)          2     377.356     5.234     0.000     0.000     0.000    ! E
 ! CH3OH*(23)          None
 CH4(24)             2     141.400     3.746     0.000     2.600    13.000    ! GRI-Mech
 ! H2X(53)             None
+! CO2XX(54)           None
+! CO2X3(262)          None
 ! COXX(63)            None
 ! CHOX2(64)           None

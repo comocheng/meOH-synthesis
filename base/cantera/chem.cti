@@ -15,7 +15,7 @@ ideal_interface(name='surface1',
                           H2O*(13)    CO*(14)     CO2*(15)    HCO*(16)
                           HCOO*(17)   COOH*(18)   HCOOH*(19)  CH2O*(20)
                           CH3O*(21)   CH3O2*(22)  CH3OH*(23)  H2X(53)
-                          COXX(63)    CHOX2(64)""",
+                          CO2XX(54)   COXX(63)    CHOX2(64)   CO2X3(262)""",
                 site_density=2.943e-09,
                 phases="gas",
           reactions='surface1-*',
@@ -272,14 +272,14 @@ species(name='CO*(14)',
 
 species(name='CO2*(15)',
         atoms='C:1 O:2 X:1',
-        thermo=(NASA([100.00, 882.27],
-                     [-1.54695039E+00,  4.08808711E-02, -8.54317962E-05,
-                       8.20011718E-08, -2.88130542E-11, -4.74892339E+04,
-                       1.37825076E+01]),
-                NASA([882.27, 5000.00],
-                     [ 1.80884506E+00,  9.73006926E-03, -5.37611978E-06,
-                       1.03588570E-09, -6.95109140E-14, -4.74611278E+04,
-                       1.52814039E+00])))
+        thermo=(NASA([100.00, 953.60],
+                     [ 3.09268416E+00,  5.29285051E-03,  8.99424169E-06,
+                      -1.67126189E-08,  7.04895731E-12, -5.24627108E+04,
+                      -4.06894637E+00]),
+                NASA([953.60, 5000.00],
+                     [ 5.99804988E+00,  2.27482238E-03, -6.81075329E-07,
+                       1.34428306E-10, -1.11506248E-14, -5.34337089E+04,
+                      -2.01334826E+01])))
 
 species(name='HCO*(16)',
         atoms='C:1 H:1 O:1 X:1',
@@ -294,25 +294,25 @@ species(name='HCO*(16)',
 
 species(name='HCOO*(17)',
         atoms='C:1 H:1 O:2 X:1',
-        thermo=(NASA([100.00, 833.19],
-                     [-1.79151263E+00,  4.37074792E-02, -7.60380780E-05,
-                       6.72502713E-08, -2.29579212E-11, -4.81907102E+04,
-                       7.22945790E+00]),
-                NASA([833.19, 5000.00],
-                     [ 3.32781731E+00,  1.20450020E-02, -6.27970057E-06,
-                       1.22725729E-09, -8.50498977E-14, -4.87978481E+04,
-                      -1.50582248E+01])))
+        thermo=(NASA([100.00, 956.09],
+                     [ 3.40105120E+00,  8.17066980E-03,  1.08107737E-05,
+                      -2.16698753E-08,  9.26697424E-12, -4.23083933E+04,
+                      -8.40035312E+00]),
+                NASA([956.09, 5000.00],
+                     [ 7.56067772E+00,  3.23174228E-03, -9.94984934E-07,
+                       1.97189961E-10, -1.62207113E-14, -4.36734435E+04,
+                      -3.12604645E+01])))
 
 species(name='COOH*(18)',
         atoms='C:1 H:1 O:2 X:1',
-        thermo=(NASA([100.00, 816.30],
-                     [-1.63418287E+00,  3.88302671E-02, -6.42988766E-05,
-                       5.38357138E-08, -1.75469491E-11, -4.63557116E+04,
-                       1.22626308E+01]),
-                NASA([816.30, 5000.00],
-                     [ 3.87900949E+00,  9.05736380E-03, -4.52248599E-06,
-                       8.78597786E-10, -6.09456909E-14, -4.71639278E+04,
-                      -1.26535941E+01])))
+        thermo=(NASA([100.00, 943.40],
+                     [ 3.72340236E+00, -4.27932838E-03,  5.09064157E-05,
+                      -6.55312082E-08,  2.52469411E-11, -4.04751948E+04,
+                      -7.82080376E+00]),
+                NASA([943.40, 5000.00],
+                     [ 8.73074431E+00,  9.99296790E-04,  3.63420911E-07,
+                      -2.85465672E-11, -4.35216598E-15, -4.25996705E+04,
+                      -3.79389019E+01])))
 
 species(name='HCOOH*(19)',
         atoms='C:1 H:2 O:2 X:1',
@@ -373,12 +373,24 @@ species(name='H2X(53)',
         atoms='H:2 X:1',
         thermo=(NASA([100.00, 911.33],
                      [-1.27856724E+00,  3.68010102E-02, -8.90296992E-05,
-                       8.91132730E-08, -3.14511582E-11, -1.03226076E+03,
+                       8.91132730E-08, -3.14511582E-11, -1.33397682E+03,
                        1.13160562E+01]),
                 NASA([911.33, 5000.00],
                      [ 6.45631937E-01,  6.69563800E-03, -3.82690860E-06,
-                       7.04725296E-10, -4.41024465E-14, -4.83540735E+02,
+                       7.04725296E-10, -4.41024465E-14, -7.85256799E+02,
                        7.14633349E+00])))
+
+species(name='CO2XX(54)',
+        atoms='C:1 O:2 X:2',
+        thermo=(NASA([100.00, 924.23],
+                     [ 3.12758069E+00, -5.98581586E-04,  3.64330738E-05,
+                      -5.17473806E-08,  2.10843705E-11, -7.34791043E+04,
+                      -1.62509607E+01]),
+                NASA([924.23, 5000.00],
+                     [ 8.66361110E+00, -1.93863890E-03,  1.89733836E-06,
+                      -3.56013731E-10,  2.05539006E-14, -7.54685013E+04,
+                      -4.77493127E+01])),
+        size=2.0)
 
 species(name='COXX(63)',
         atoms='C:1 O:1 X:2',
@@ -403,6 +415,18 @@ species(name='CHOX2(64)',
                        6.98047945E-10, -4.93382204E-14, -1.53389937E+04,
                       -1.79870016E+01])),
         size=2.0)
+
+species(name='CO2X3(262)',
+        atoms='C:1 O:2 X:3',
+        thermo=(NASA([100.00, 924.23],
+                     [ 3.12758069E+00, -5.98581586E-04,  3.64330738E-05,
+                      -5.17473806E-08,  2.10843705E-11, -6.97871106E+04,
+                      -1.62509607E+01]),
+                NASA([924.23, 5000.00],
+                     [ 8.66361110E+00, -1.93863890E-03,  1.89733836E-06,
+                      -3.56013731E-10,  2.05539006E-14, -7.17765077E+04,
+                      -4.77493127E+01])),
+        size=3.0)
 
 #-------------------------------------------------------------------------------
 # Reaction data
@@ -444,7 +468,9 @@ surface_reaction('X(1) + X(1) + H2(2) <=> H*(10) + H*(10)', stick(3.200000e-02, 
                  id='surface1-1')
 
 # surface1 Reaction 2
-surface_reaction('X(1) + OH*(12) <=> O*(11) + H*(10)', [7.390000e+19, 0.0, 18.475],
+surface_reaction('X(1) + OH*(12) <=> O*(11) + H*(10)',
+                 Arrhenius(7.390000e+19, 0.0, 18.475,
+                           coverage=[['O*(11)', 0.0, 0.0, -17.5]]),
                  id='surface1-2')
 
 # surface1 Reaction 3
@@ -452,11 +478,15 @@ surface_reaction('X(1) + H2O(5) <=> H2O*(13)', stick(7.500000e-01, 0.0, 0.0),
                  id='surface1-3')
 
 # surface1 Reaction 4
-surface_reaction('X(1) + H2O*(13) <=> H*(10) + OH*(12)', [1.150000e+19, 0.0, 24.235],
+surface_reaction('X(1) + H2O*(13) <=> H*(10) + OH*(12)',
+                 Arrhenius(1.150000e+19, 0.0, 24.235,
+                           coverage=[['O*(11)', 0.0, 0.0, 40.0]]),
                  id='surface1-4')
 
 # surface1 Reaction 5
-surface_reaction('O*(11) + H2O*(13) <=> OH*(12) + OH*(12)', [1.000000e+20, 0.0, 21.63],
+surface_reaction('O*(11) + H2O*(13) <=> OH*(12) + OH*(12)',
+                 Arrhenius(1.000000e+20, 0.0, 21.63,
+                           coverage=[['O*(11)', 0.0, 0.0, -57.5]]),
                  id='surface1-5')
 
 # surface1 Reaction 6
@@ -468,11 +498,15 @@ surface_reaction('X(1) + CO2(4) <=> CO2*(15)', stick(5.000000e-03, 0.0, 0.0),
                  id='surface1-7')
 
 # surface1 Reaction 8
-surface_reaction('O*(11) + CO*(14) <=> X(1) + CO2*(15)', [3.700000e+21, 0.0, 28.107],
+surface_reaction('O*(11) + CO*(14) <=> X(1) + CO2*(15)',
+                 Arrhenius(3.700000e+21, 0.0, 28.107,
+                           coverage=[['CO*(14)', 0.0, 0.0, -7.887]]),
                  id='surface1-8')
 
 # surface1 Reaction 9
-surface_reaction('OH*(12) + CO*(14) <=> H*(10) + CO2*(15)', [1.000000e+19, 0.0, 9.25],
+surface_reaction('OH*(12) + CO*(14) <=> H*(10) + CO2*(15)',
+                 Arrhenius(1.000000e+19, 0.0, 9.25,
+                           coverage=[['CO*(14)', 0.0, 0.0, -7.17]]),
                  id='surface1-9')
 
 # surface1 Reaction 10
@@ -488,7 +522,7 @@ surface_reaction('HCOO*(17) <=> COOH*(18)', [1.112889e+12, 0.0, 14.465],
                  id='surface1-12')
 
 # surface1 Reaction 13
-surface_reaction('H*(10) + CO2(4) <=> COOH*(18)', stick(1.000000e-01, 0.0, 17.462),
+surface_reaction('H*(10) + CO2(4) <=> COOH*(18)', stick(1.000000e-01, 0.0, 18.557),
                  id='surface1-13')
 
 # surface1 Reaction 14
@@ -532,11 +566,11 @@ surface_reaction('X(1) + X(1) + HCOOH(7) <=> OH*(12) + HCO*(16)', stick(1.600000
                  id='surface1-23')
 
 # surface1 Reaction 24
-surface_reaction('X(1) + X(1) + HCOOH(7) <=> H*(10) + HCOO*(17)', stick(1.600000e-02, 0.0, 0.0),
+surface_reaction('X(1) + X(1) + HCOOH(7) <=> H*(10) + HCOO*(17)', stick(1.600000e-02, 0.0, 6.12),
                  id='surface1-24')
 
 # surface1 Reaction 25
-surface_reaction('X(1) + X(1) + HCOOH(7) <=> H*(10) + COOH*(18)', stick(1.600000e-02, 0.0, 0.0),
+surface_reaction('X(1) + X(1) + HCOOH(7) <=> H*(10) + COOH*(18)', stick(1.600000e-02, 0.0, 9.776),
                  id='surface1-25')
 
 # surface1 Reaction 26
@@ -552,7 +586,7 @@ surface_reaction('H*(10) + CO*(14) <=> X(1) + HCO*(16)', [3.140000e+21, 0.0, 22.
                  id='surface1-28')
 
 # surface1 Reaction 29
-surface_reaction('H*(10) + CO2*(15) <=> X(1) + HCOO*(17)', [1.243000e+22, 0.0, 20.063],
+surface_reaction('H*(10) + CO2*(15) <=> X(1) + HCOO*(17)', [1.243000e+22, 0.0, 22.987],
                  id='surface1-29')
 
 # surface1 Reaction 30
@@ -564,7 +598,7 @@ surface_reaction('X(1) + COOH*(18) <=> H*(10) + CO2*(15)', [8.028000e+21, 0.0, 2
                  id='surface1-31')
 
 # surface1 Reaction 32
-surface_reaction('OH*(12) + CO*(14) <=> X(1) + COOH*(18)', [4.020000e+18, 0.0, 2.749],
+surface_reaction('OH*(12) + CO*(14) <=> X(1) + COOH*(18)', [4.020000e+18, 0.0, 7.496],
                  id='surface1-32')
 
 # surface1 Reaction 33
@@ -620,7 +654,7 @@ surface_reaction('O*(11) + CH3OH*(23) <=> H*(10) + CH3O2*(22)', [7.308616e+19, 0
                  id='surface1-45')
 
 # surface1 Reaction 46
-surface_reaction('H2O*(13) + CH2O*(20) <=> H*(10) + CH3O2*(22)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('H2O*(13) + CH2O*(20) <=> H*(10) + CH3O2*(22)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-46')
 
 # surface1 Reaction 47
@@ -628,15 +662,15 @@ surface_reaction('O*(11) + HCO*(16) <=> OH*(12) + CO*(14)', [3.298000e+21, 0.0, 
                  id='surface1-47')
 
 # surface1 Reaction 48
-surface_reaction('OH*(12) + CO2*(15) <=> O*(11) + HCOO*(17)', [3.628000e+20, 0.0, 9.685],
+surface_reaction('OH*(12) + CO2*(15) <=> O*(11) + HCOO*(17)', [3.628000e+20, 0.0, 19.818],
                  id='surface1-48')
 
 # surface1 Reaction 49
-surface_reaction('OH*(12) + CO2*(15) <=> O*(11) + COOH*(18)', [3.628000e+20, 0.0, 9.685],
+surface_reaction('OH*(12) + CO2*(15) <=> O*(11) + COOH*(18)', [3.628000e+20, 0.0, 23.474],
                  id='surface1-49')
 
 # surface1 Reaction 50
-surface_reaction('O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)', [1.174481e+14, 1.215, 30.678],
+surface_reaction('O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)', [2.073853e+17, 1.089, 43.679],
                  id='surface1-50',
                  options='duplicate')
 
@@ -646,7 +680,7 @@ surface_reaction('O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)', [4.224268e+14, 1
                  options='duplicate')
 
 # surface1 Reaction 52
-surface_reaction('O*(11) + HCOOH*(19) <=> OH*(12) + COOH*(18)', [1.405000e+24, -0.101, 22.156],
+surface_reaction('O*(11) + HCOOH*(19) <=> OH*(12) + COOH*(18)', [1.405000e+24, -0.101, 25.95],
                  id='surface1-52')
 
 # surface1 Reaction 53
@@ -662,7 +696,7 @@ surface_reaction('OH*(12) + HCOOH*(19) <=> O*(11) + CH3O2*(22)', [1.814000e+20, 
                  id='surface1-55')
 
 # surface1 Reaction 56
-surface_reaction('O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)', [1.174481e+14, 1.215, 30.678],
+surface_reaction('O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)', [2.073853e+17, 1.089, 43.679],
                  id='surface1-56',
                  options='duplicate')
 
@@ -676,7 +710,7 @@ surface_reaction('OH*(12) + HCO*(16) <=> H2O*(13) + CO*(14)', [3.261000e+21, 0.0
                  id='surface1-58')
 
 # surface1 Reaction 59
-surface_reaction('O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)', [1.174481e+14, 1.215, 30.678],
+surface_reaction('O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)', [2.073853e+17, 1.089, 43.679],
                  id='surface1-59',
                  options='duplicate')
 
@@ -686,7 +720,7 @@ surface_reaction('O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)', [4.224268e+14, 1
                  options='duplicate')
 
 # surface1 Reaction 61
-surface_reaction('H2O*(13) + CO2*(15) <=> OH*(12) + HCOO*(17)', [1.352255e+14, 1.181, 22.574],
+surface_reaction('H2O*(13) + CO2*(15) <=> OH*(12) + HCOO*(17)', [8.122929e+13, 1.299, 44.066],
                  id='surface1-61')
 
 # surface1 Reaction 62
@@ -694,11 +728,11 @@ surface_reaction('OH*(12) + COOH*(18) <=> H2O*(13) + CO2*(15)', [3.398000e+21, 0
                  id='surface1-62')
 
 # surface1 Reaction 63
-surface_reaction('OH*(12) + HCOOH*(19) <=> H2O*(13) + HCOO*(17)', [1.000000e+17, 0.0, 0.0],
+surface_reaction('OH*(12) + HCOOH*(19) <=> H2O*(13) + HCOO*(17)', [1.000000e+17, 0.0, 0.311],
                  id='surface1-63')
 
 # surface1 Reaction 64
-surface_reaction('OH*(12) + HCOOH*(19) <=> H2O*(13) + COOH*(18)', [1.000000e+17, 0.0, 0.0],
+surface_reaction('OH*(12) + HCOOH*(19) <=> H2O*(13) + COOH*(18)', [1.000000e+17, 0.0, 3.861],
                  id='surface1-64')
 
 # surface1 Reaction 65
@@ -706,7 +740,7 @@ surface_reaction('OH*(12) + CH2O*(20) <=> H2O*(13) + HCO*(16)', [2.000000e+17, 0
                  id='surface1-65')
 
 # surface1 Reaction 66
-surface_reaction('O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)', [1.174481e+14, 1.215, 30.678],
+surface_reaction('O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)', [2.073853e+17, 1.089, 43.679],
                  id='surface1-66',
                  options='duplicate')
 
@@ -716,11 +750,11 @@ surface_reaction('O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)', [4.224268e+14, 1
                  options='duplicate')
 
 # surface1 Reaction 68
-surface_reaction('H2O*(13) + CH2O*(20) <=> OH*(12) + CH3O*(21)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('H2O*(13) + CH2O*(20) <=> OH*(12) + CH3O*(21)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-68')
 
 # surface1 Reaction 69
-surface_reaction('H2O*(13) + HCOOH*(19) <=> OH*(12) + CH3O2*(22)', [6.761273e+13, 1.181, 32.729],
+surface_reaction('H2O*(13) + HCOOH*(19) <=> OH*(12) + CH3O2*(22)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-69')
 
 # surface1 Reaction 70
@@ -728,11 +762,11 @@ surface_reaction('OH*(12) + CH3OH*(23) <=> H2O*(13) + CH3O*(21)', [1.000000e+17,
                  id='surface1-70')
 
 # surface1 Reaction 71
-surface_reaction('CO2*(15) + HCO*(16) <=> CO*(14) + HCOO*(17)', [3.628000e+20, 0.0, 9.685],
+surface_reaction('CO2*(15) + HCO*(16) <=> CO*(14) + HCOO*(17)', [3.628000e+20, 0.0, 18.895],
                  id='surface1-71')
 
 # surface1 Reaction 72
-surface_reaction('CO2*(15) + HCO*(16) <=> CO*(14) + COOH*(18)', [3.628000e+20, 0.0, 9.685],
+surface_reaction('CO2*(15) + HCO*(16) <=> CO*(14) + COOH*(18)', [3.628000e+20, 0.0, 22.176],
                  id='surface1-72')
 
 # surface1 Reaction 73
@@ -770,37 +804,37 @@ surface_reaction('HCO*(16) + CH3O*(21) <=> CO*(14) + CH3OH*(23)', [6.572000e+20,
                  id='surface1-80')
 
 # surface1 Reaction 81
-surface_reaction('CO2*(15) + HCOOH*(19) <=> HCOO*(17) + HCOO*(17)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CO2*(15) + HCOOH*(19) <=> HCOO*(17) + HCOO*(17)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-81')
 
 # surface1 Reaction 82
-surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + HCOO*(17)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + HCOO*(17)', [4.061465e+13, 1.299, 45.684],
                  id='surface1-82',
                  options='duplicate')
 
 # surface1 Reaction 83
-surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + HCOO*(17)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + HCOO*(17)', [4.061465e+13, 1.299, 45.684],
                  id='surface1-83',
                  options='duplicate')
 
 # surface1 Reaction 84
-surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + COOH*(18)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + COOH*(18)', [4.061465e+13, 1.299, 48.965],
                  id='surface1-84')
 
 # surface1 Reaction 85
-surface_reaction('CO2*(15) + CH2O*(20) <=> HCO*(16) + HCOO*(17)', [1.352255e+14, 1.181, 22.574],
+surface_reaction('CO2*(15) + CH2O*(20) <=> HCO*(16) + HCOO*(17)', [8.122929e+13, 1.299, 44.066],
                  id='surface1-85')
 
 # surface1 Reaction 86
-surface_reaction('CO2*(15) + CH2O*(20) <=> HCO*(16) + COOH*(18)', [1.352255e+14, 1.181, 22.574],
+surface_reaction('CO2*(15) + CH2O*(20) <=> HCO*(16) + COOH*(18)', [8.122929e+13, 1.299, 44.066],
                  id='surface1-86')
 
 # surface1 Reaction 87
-surface_reaction('CO2*(15) + CH3OH*(23) <=> HCOO*(17) + CH3O*(21)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CO2*(15) + CH3OH*(23) <=> HCOO*(17) + CH3O*(21)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-87')
 
 # surface1 Reaction 88
-surface_reaction('CO2*(15) + CH3OH*(23) <=> COOH*(18) + CH3O*(21)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CO2*(15) + CH3OH*(23) <=> COOH*(18) + CH3O*(21)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-88')
 
 # surface1 Reaction 89
@@ -822,16 +856,16 @@ surface_reaction('COOH*(18) + CH2O*(20) <=> HCO*(16) + HCOOH*(19)', [2.000000e+1
                  id='surface1-92')
 
 # surface1 Reaction 93
-surface_reaction('CH2O*(20) + CH2O*(20) <=> HCO*(16) + CH3O*(21)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CH2O*(20) + CH2O*(20) <=> HCO*(16) + CH3O*(21)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-93')
 
 # surface1 Reaction 94
-surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCO*(16) + CH3O2*(22)', [3.380637e+13, 1.181, 22.574],
+surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCO*(16) + CH3O2*(22)', [2.030732e+13, 1.299, 44.066],
                  id='surface1-94',
                  options='duplicate')
 
 # surface1 Reaction 95
-surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCO*(16) + CH3O2*(22)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCO*(16) + CH3O2*(22)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-95',
                  options='duplicate')
 
@@ -840,12 +874,12 @@ surface_reaction('CH2O*(20) + CH3O*(21) <=> HCO*(16) + CH3OH*(23)', [2.000000e+1
                  id='surface1-96')
 
 # surface1 Reaction 97
-surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + HCOO*(17)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + HCOO*(17)', [4.061465e+13, 1.299, 45.684],
                  id='surface1-97',
                  options='duplicate')
 
 # surface1 Reaction 98
-surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + HCOO*(17)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CO2*(15) + HCOOH*(19) <=> COOH*(18) + HCOO*(17)', [4.061465e+13, 1.299, 45.684],
                  id='surface1-98',
                  options='duplicate')
 
@@ -854,45 +888,45 @@ surface_reaction('COOH*(18) + HCOOH*(19) <=> HCOO*(17) + HCOOH*(19)', [1.000000e
                  id='surface1-99')
 
 # surface1 Reaction 100
-surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCOO*(17) + CH3O*(21)', [3.380637e+13, 1.181, 22.574],
+surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCOO*(17) + CH3O*(21)', [2.030732e+13, 1.299, 44.066],
                  id='surface1-100')
 
 # surface1 Reaction 101
-surface_reaction('HCOOH*(19) + HCOOH*(19) <=> HCOO*(17) + CH3O2*(22)', [3.380637e+13, 1.181, 22.574],
+surface_reaction('HCOOH*(19) + HCOOH*(19) <=> HCOO*(17) + CH3O2*(22)', [2.030732e+13, 1.299, 44.066],
                  id='surface1-101')
 
 # surface1 Reaction 102
-surface_reaction('HCOOH*(19) + CH3O*(21) <=> HCOO*(17) + CH3OH*(23)', [1.000000e+17, 0.0, 0.0],
+surface_reaction('HCOO*(17) + CH3OH*(23) <=> HCOOH*(19) + CH3O*(21)', [1.000000e+17, 0.0, 0.0],
                  id='surface1-102')
 
 # surface1 Reaction 103
-surface_reaction('CH2O*(20) + HCOOH*(19) <=> COOH*(18) + CH3O*(21)', [3.380637e+13, 1.181, 22.574],
+surface_reaction('CH2O*(20) + HCOOH*(19) <=> COOH*(18) + CH3O*(21)', [2.030732e+13, 1.299, 44.066],
                  id='surface1-103')
 
 # surface1 Reaction 104
-surface_reaction('HCOOH*(19) + HCOOH*(19) <=> COOH*(18) + CH3O2*(22)', [3.380637e+13, 1.181, 24.528],
+surface_reaction('HCOOH*(19) + HCOOH*(19) <=> COOH*(18) + CH3O2*(22)', [2.030732e+13, 1.299, 44.066],
                  id='surface1-104')
 
 # surface1 Reaction 105
-surface_reaction('HCOOH*(19) + CH3O*(21) <=> COOH*(18) + CH3OH*(23)', [1.000000e+17, 0.0, 0.0],
+surface_reaction('COOH*(18) + CH3OH*(23) <=> HCOOH*(19) + CH3O*(21)', [1.000000e+17, 0.0, 0.0],
                  id='surface1-105')
 
 # surface1 Reaction 106
-surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCO*(16) + CH3O2*(22)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCO*(16) + CH3O2*(22)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-106',
                  options='duplicate')
 
 # surface1 Reaction 107
-surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCO*(16) + CH3O2*(22)', [3.380637e+13, 1.181, 22.574],
+surface_reaction('CH2O*(20) + HCOOH*(19) <=> HCO*(16) + CH3O2*(22)', [2.030732e+13, 1.299, 44.066],
                  id='surface1-107',
                  options='duplicate')
 
 # surface1 Reaction 108
-surface_reaction('HCOOH*(19) + CH3OH*(23) <=> CH3O*(21) + CH3O2*(22)', [3.380637e+13, 1.181, 27.881],
+surface_reaction('HCOOH*(19) + CH3OH*(23) <=> CH3O*(21) + CH3O2*(22)', [2.030732e+13, 1.299, 44.066],
                  id='surface1-108')
 
 # surface1 Reaction 109
-surface_reaction('CH2O*(20) + CH3OH*(23) <=> CH3O*(21) + CH3O*(21)', [3.380637e+13, 1.181, 22.574],
+surface_reaction('CH2O*(20) + CH3OH*(23) <=> CH3O*(21) + CH3O*(21)', [2.030732e+13, 1.299, 44.066],
                  id='surface1-109')
 
 # surface1 Reaction 110
@@ -912,11 +946,11 @@ surface_reaction('H2X(53) + CO*(14) <=> H*(10) + HCO*(16)', [2.073936e+17, 0.937
                  id='surface1-113')
 
 # surface1 Reaction 114
-surface_reaction('H2X(53) + CO2*(15) <=> H*(10) + HCOO*(17)', [1.352255e+14, 1.181, 22.574],
+surface_reaction('H2X(53) + CO2*(15) <=> H*(10) + HCOO*(17)', [8.122929e+13, 1.299, 44.066],
                  id='surface1-114')
 
 # surface1 Reaction 115
-surface_reaction('H2X(53) + CO2*(15) <=> H*(10) + COOH*(18)', [1.352255e+14, 1.181, 22.574],
+surface_reaction('H2X(53) + CO2*(15) <=> H*(10) + COOH*(18)', [8.122929e+13, 1.299, 44.066],
                  id='surface1-115')
 
 # surface1 Reaction 116
@@ -932,11 +966,11 @@ surface_reaction('H*(10) + CH2O*(20) <=> H2X(53) + HCO*(16)', [2.000000e+17, 0.0
                  id='surface1-118')
 
 # surface1 Reaction 119
-surface_reaction('H2X(53) + CH2O*(20) <=> H*(10) + CH3O*(21)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('H2X(53) + CH2O*(20) <=> H*(10) + CH3O*(21)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-119')
 
 # surface1 Reaction 120
-surface_reaction('H2X(53) + HCOOH*(19) <=> H*(10) + CH3O2*(22)', [6.761273e+13, 1.181, 22.574],
+surface_reaction('H2X(53) + HCOOH*(19) <=> H*(10) + CH3O2*(22)', [4.061465e+13, 1.299, 44.066],
                  id='surface1-120')
 
 # surface1 Reaction 121
@@ -944,61 +978,91 @@ surface_reaction('H2X(53) + CH3O*(21) <=> H*(10) + CH3OH*(23)', [2.000000e+17, 0
                  id='surface1-121')
 
 # surface1 Reaction 122
-surface_reaction('X(1) + CO*(14) <=> COXX(63)', [4.270000e+19, 0.549, 2.836],
+surface_reaction('X(1) + X(1) + CO2(4) <=> CO2XX(54)', stick(2.000000e-01, 0.0, 0.0),
                  id='surface1-122')
 
 # surface1 Reaction 123
-surface_reaction('X(1) + HCO*(16) <=> CHOX2(64)', [4.270000e+19, 0.549, 14.097],
+surface_reaction('X(1) + CO2*(15) <=> CO2XX(54)', [4.000000e+19, 0.0, 0.0],
                  id='surface1-123')
 
 # surface1 Reaction 124
-surface_reaction('X(1) + CHOX2(64) <=> H*(10) + COXX(63)', [3.710000e+21, 0.0, 0.0],
-                 id='surface1-124')
+surface_reaction('CO2XX(54) <=> O*(11) + CO*(14)', [8.960000e+10, 0.422, 57.748],
+                 id='surface1-124',
+                 options='duplicate')
 
 # surface1 Reaction 125
-surface_reaction('OH*(12) + COXX(63) <=> O*(11) + CHOX2(64)', [4.400000e+22, 0.101, 13.353],
-                 id='surface1-125')
+surface_reaction('CO2XX(54) <=> O*(11) + CO*(14)', [8.960000e+10, 0.422, 57.748],
+                 id='surface1-125',
+                 options='duplicate')
 
 # surface1 Reaction 126
-surface_reaction('H2O*(13) + COXX(63) <=> OH*(12) + CHOX2(64)', [2.073936e+17, 0.937, 34.968],
+surface_reaction('X(1) + CO2XX(54) <=> CO2X3(262)', [4.270000e+19, 0.549, 7.338],
                  id='surface1-126')
 
 # surface1 Reaction 127
-surface_reaction('CO*(14) + CHOX2(64) <=> COXX(63) + HCO*(16)', [1.390000e+21, 0.101, 4.541],
+surface_reaction('X(1) + CO*(14) <=> COXX(63)', [4.270000e+19, 0.549, 2.836],
                  id='surface1-127')
 
 # surface1 Reaction 128
-surface_reaction('CO2*(15) + CHOX2(64) <=> COXX(63) + HCOO*(17)', [3.628000e+20, 0.0, 9.685],
+surface_reaction('CO2X3(262) <=> O*(11) + COXX(63)', [1.792000e+11, 0.422, 52.476],
                  id='surface1-128')
 
 # surface1 Reaction 129
-surface_reaction('CO2*(15) + CHOX2(64) <=> COXX(63) + COOH*(18)', [3.628000e+20, 0.0, 9.685],
+surface_reaction('CO*(14) + CO2X3(262) <=> COXX(63) + CO2XX(54)', [2.780000e+21, 0.101, 4.541],
                  id='surface1-129')
 
 # surface1 Reaction 130
-surface_reaction('COXX(63) + HCOOH*(19) <=> CHOX2(64) + HCOO*(17)', [1.036968e+17, 0.937, 29.088],
+surface_reaction('X(1) + HCO*(16) <=> CHOX2(64)', [4.270000e+19, 0.549, 14.097],
                  id='surface1-130')
 
 # surface1 Reaction 131
-surface_reaction('COXX(63) + HCOOH*(19) <=> CHOX2(64) + COOH*(18)', [1.036968e+17, 0.937, 29.088],
+surface_reaction('X(1) + CHOX2(64) <=> H*(10) + COXX(63)', [3.710000e+21, 0.0, 0.0],
                  id='surface1-131')
 
 # surface1 Reaction 132
-surface_reaction('COXX(63) + CH2O*(20) <=> HCO*(16) + CHOX2(64)', [2.073936e+17, 0.937, 29.088],
+surface_reaction('OH*(12) + COXX(63) <=> O*(11) + CHOX2(64)', [4.400000e+22, 0.101, 13.353],
                  id='surface1-132')
 
 # surface1 Reaction 133
-surface_reaction('CHOX2(64) + CH2O*(20) <=> COXX(63) + CH3O*(21)', [1.814000e+20, 0.0, 9.685],
+surface_reaction('H2O*(13) + COXX(63) <=> OH*(12) + CHOX2(64)', [2.073936e+17, 0.937, 34.968],
                  id='surface1-133')
 
 # surface1 Reaction 134
-surface_reaction('CHOX2(64) + HCOOH*(19) <=> COXX(63) + CH3O2*(22)', [1.814000e+20, 0.0, 9.685],
+surface_reaction('CO*(14) + CHOX2(64) <=> COXX(63) + HCO*(16)', [1.390000e+21, 0.101, 4.541],
                  id='surface1-134')
 
 # surface1 Reaction 135
-surface_reaction('COXX(63) + CH3OH*(23) <=> CHOX2(64) + CH3O*(21)', [1.036968e+17, 0.937, 29.981],
+surface_reaction('CO2*(15) + CHOX2(64) <=> COXX(63) + HCOO*(17)', [3.628000e+20, 0.0, 9.685],
                  id='surface1-135')
 
 # surface1 Reaction 136
-surface_reaction('H2X(53) + COXX(63) <=> H*(10) + CHOX2(64)', [2.073936e+17, 0.937, 29.088],
+surface_reaction('CO2*(15) + CHOX2(64) <=> COXX(63) + COOH*(18)', [3.628000e+20, 0.0, 11.034],
                  id='surface1-136')
+
+# surface1 Reaction 137
+surface_reaction('COXX(63) + HCOOH*(19) <=> CHOX2(64) + HCOO*(17)', [1.036968e+17, 0.937, 35.172],
+                 id='surface1-137')
+
+# surface1 Reaction 138
+surface_reaction('COXX(63) + HCOOH*(19) <=> CHOX2(64) + COOH*(18)', [1.036968e+17, 0.937, 38.829],
+                 id='surface1-138')
+
+# surface1 Reaction 139
+surface_reaction('COXX(63) + CH2O*(20) <=> HCO*(16) + CHOX2(64)', [2.073936e+17, 0.937, 29.088],
+                 id='surface1-139')
+
+# surface1 Reaction 140
+surface_reaction('CHOX2(64) + CH2O*(20) <=> COXX(63) + CH3O*(21)', [1.814000e+20, 0.0, 9.685],
+                 id='surface1-140')
+
+# surface1 Reaction 141
+surface_reaction('CHOX2(64) + HCOOH*(19) <=> COXX(63) + CH3O2*(22)', [1.814000e+20, 0.0, 9.685],
+                 id='surface1-141')
+
+# surface1 Reaction 142
+surface_reaction('COXX(63) + CH3OH*(23) <=> CHOX2(64) + CH3O*(21)', [1.036968e+17, 0.937, 29.981],
+                 id='surface1-142')
+
+# surface1 Reaction 143
+surface_reaction('H2X(53) + COXX(63) <=> H*(10) + CHOX2(64)', [2.073936e+17, 0.937, 29.088],
+                 id='surface1-143')

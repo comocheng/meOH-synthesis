@@ -4,7 +4,13 @@
 
 # Data sources
 database(
-    thermoLibraries=['surfaceThermoCu111', 'surfaceThermoPt111', 'primaryThermoLibrary', 'thermo_DFT_CCSDTF12_BAC','DFT_QCI_thermo'],
+    thermoLibraries=[
+        # 'surfaceThermoCu111', 
+        'surfaceThermoPt111', 
+        'primaryThermoLibrary', 
+        'thermo_DFT_CCSDTF12_BAC',
+        'DFT_QCI_thermo'
+        ],
     reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Deutschmann_Ni', 'Surface/CPOX_Pt/Deutschmann2006_adjusted'],
     seedMechanisms = [],
     kineticsDepositories = ['training'],
@@ -20,6 +26,8 @@ catalystProperties( # default values for Cu(111) calculated by Katrin Blondal an
                        'H':(-2.58383235, 'eV/molecule'),
                        },
     surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
+    coverageDependence=True,
+
 )
 # catalystProperties( # Rh111
 #     bindingEnergies = {
