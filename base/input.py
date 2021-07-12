@@ -1,11 +1,13 @@
-# Running on current commits 13feb2021 for 
-# RMG-Py: Meoh2 
-# RMG-Database: Meoh
+# Running on current commits 12Jul2021 for 
+# RMG-Py: cde
+# RMG-Database: meoh_3
+# running with covdep py branch, and meoh_3 branch, which has the CU data from bjarne, 
+# the binding energy chenges for vdw H2, and the coverage_dependence database updates cherry picked in. 
 
 # Data sources
 database(
     thermoLibraries=[
-        # 'surfaceThermoCu111', 
+        'surfaceThermoCu111', 
         'surfaceThermoPt111', 
         'primaryThermoLibrary', 
         'thermo_DFT_CCSDTF12_BAC',
