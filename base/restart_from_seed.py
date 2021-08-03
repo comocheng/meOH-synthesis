@@ -1,21 +1,21 @@
 restartFromSeed(path='seed')
 
 # Running on current commits 12Jul2021 for 
-# RMG-Py: cde
-# RMG-Database: meoh_3
-# running with covdep py branch, and meoh_3 branch, which has the CU data from bjarne, 
+# RMG-Py: master
+# RMG-Database: master
+# running with master branch for both DB and Py, to see improvements from covdep. 
 # the binding energy chenges for vdw H2, and the coverage_dependence database updates cherry picked in. 
 
 # Data sources
 database(
     thermoLibraries=[
-        'surfaceThermoCu111', 
+#        'surfaceThermoCu111', 
         'surfaceThermoPt111', 
         'primaryThermoLibrary', 
         'thermo_DFT_CCSDTF12_BAC',
         'DFT_QCI_thermo'
         ],
-    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Deutschmann_Ni', 'Surface/CPOX_Pt/Deutschmann2006_adjusted'],
+    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Methane/Deutschmann_Ni', 'Surface/CPOX_Pt/Deutschmann2006_adjusted'],
     seedMechanisms = [],
     kineticsDepositories = ['training'],
     kineticsFamilies =['surface','default'],
