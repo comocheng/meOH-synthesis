@@ -1,7 +1,7 @@
 # Running on current commits 12Jul2021 for 
 # RMG-Py: master
-# RMG-Database: master
-# running with master branch for both DB and Py, to see improvements from covdep. 
+# RMG-Database: add_thermo_Pt111
+# running with master branch for Py, and bjarne's thermo branch (rebased) for DB. 
 # the binding energy chenges for vdw H2, and the coverage_dependence database updates cherry picked in. 
 
 # Data sources
