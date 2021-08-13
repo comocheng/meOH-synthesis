@@ -1,15 +1,18 @@
 restartFromSeed(path='seed')
 
-# Running on current commits 12Jul2021 for 
-# RMG-Py: master
-# RMG-Database: add_thermo_Pt111
-# running with master branch for Py, and bjarne's thermo branch (rebased) for DB. 
-# the binding energy chenges for vdw H2, and the coverage_dependence database updates cherry picked in. 
+# Running on current commits 13Jul2021 for 
+# RMG-Py: forbidden_input
+# RMG-Database: meoh_3
+# running with david's forbidden input branch for Py, 
+# Database:
+# bjarne's Pt111 thermo
+# the correct H2vdw values for thermo per david's comments on PR #516 
+# 
 
 # Data sources
 database(
     thermoLibraries=[
-#        'surfaceThermoCu111', 
+        'surfaceThermoCu111', 
         'surfaceThermoPt111', 
         'primaryThermoLibrary', 
         'thermo_DFT_CCSDTF12_BAC',

@@ -9586,14 +9586,14 @@ entry(
     Euclidian distance = 1.4142135623730951
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Abstraction_Single_vdW
-    Ea raised from -9.7 to 0.0 kJ/mol."""),
+    Ea raised from -8.4 to 0.0 kJ/mol."""),
     longDesc = 
 """
 Estimated using template [Donating;Abstracting] for rate rule [H-H;*O]
 Euclidian distance = 1.4142135623730951
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Abstraction_Single_vdW
-Ea raised from -9.7 to 0.0 kJ/mol.
+Ea raised from -8.4 to 0.0 kJ/mol.
 """,
 )
 
@@ -15519,14 +15519,14 @@ entry(
     Euclidian distance = 2.23606797749979
     Multiplied by reaction path degeneracy 2.0
     family: Surface_Abstraction_Single_vdW
-    Ea raised from -46.5 to 0.0 kJ/mol."""),
+    Ea raised from -45.2 to 0.0 kJ/mol."""),
     longDesc = 
 """
 Estimated using template [Donating;Abstracting] for rate rule [H-H;*C-3R]
 Euclidian distance = 2.23606797749979
 Multiplied by reaction path degeneracy 2.0
 family: Surface_Abstraction_Single_vdW
-Ea raised from -46.5 to 0.0 kJ/mol.
+Ea raised from -45.2 to 0.0 kJ/mol.
 """,
 )
 
