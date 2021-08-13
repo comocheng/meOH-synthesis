@@ -7,7 +7,7 @@ restartFromSeed(path='seed')
 # Database:
 # bjarne's Pt111 thermo
 # the correct H2vdw values for thermo per david's comments on PR #516 
-# 
+# removed grabow rates from training data 
 
 # Data sources
 database(
@@ -574,16 +574,16 @@ generatedSpeciesConstraints(
 #    maximumCarbonAtoms=12,
 )
 
-#forbidden(
-#    label='CO2_bidentate',
-#    structure=adjacencyList(
-#        """
-#        1 O u0 p2 c0 {2,D}
-#        2 C u0 p0 c0 {1,D} {3,S} {4,S}
-#        3 X u0 p0 c0 {2,S}
-#        4 O u0 p2 c0 {2,S} {5,S}
-#        5 X u0 p0 c0 {4,S}
-#        """
-#    )
-#)
+forbidden(
+    label='CO2_bidentate',
+    structure=adjacencyList(
+        """
+        1 O u0 p2 c0 {2,D}
+        2 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 X u0 p0 c0 {2,S}
+        4 O u0 p2 c0 {2,S} {5,S}
+        5 X u0 p0 c0 {4,S}
+        """
+    )
+)
 
