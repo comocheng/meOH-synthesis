@@ -1,0 +1,6 @@
+*.vscode*
+*__pycache__*
+*slurm-*
+*.DS_Store*
+*.ipynb_checkpoints*
+
