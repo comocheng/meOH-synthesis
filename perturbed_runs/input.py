@@ -34,15 +34,7 @@ catalystProperties( # default values for Cu(111) calculated by Katrin Blondal an
     coverageDependence=True,
 
 )
-# catalystProperties( # Rh111
-#     bindingEnergies = {
-#                        'C':(-6.568, 'eV/molecule'),
-#                        'O':(-4.610, 'eV/molecule'),
-#                        'N':(-4.352, 'eV/molecule'),
-#                        'H':(-2.479, 'eV/molecule'),
-#                        },
-#     surfaceSiteDensity=(2.72e-9, 'mol/cm^2'),
-# )
+
 
 # List of species
 species(
@@ -171,24 +163,6 @@ species(
 """),
 )
 
-# species(
-#    label='CO3*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-#
-# """),
-# )
-
-# species(
-#    label='HCO3*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-
-# """),
-# )
-
 species(
    label='HCO*',
    reactive=True,
@@ -200,28 +174,6 @@ species(
 4 X u0 p0 c0 {2,S}
 """),
 )
-
-# species(
-#    label='COH*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-#
-# """),
-# )
-
-# species(
-#    label='HCOH*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-# 1 O u0 p2 c0 {2,S} {4,S}
-# 2 C u0 p0 c0 {1,S} {3,S} {5,D}
-# 3 H u0 p0 c0 {2,S}
-# 4 H u0 p0 c0 {1,S}
-# 5 X u0 p0 c0 {2,D}
-# """),
-# )
 
 # HCOO representation in 
 species(
@@ -255,16 +207,6 @@ species(
 # 4 H u0 p0 c0 {2,S}
 # 5 X u0 p0 c0 {1,S}
 # 6 X u0 p0 c0 {3,S}
-# """),
-# )
-
-
-# species(
-#    label='H2CO2*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-#
 # """),
 # )
 
@@ -338,20 +280,6 @@ species(
 """),
 )
 
-# species(
-#    label='CH2OH*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-# 1 O u0 p2 c0 {2,S} {5,S}
-# 2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
-# 3 H u0 p0 c0 {2,S}
-# 4 H u0 p0 c0 {2,S}
-# 5 H u0 p0 c0 {1,S}
-# 6 X u0 p0 c0 {2,S}
-# """),
-# )
-
 species(
    label='CH3O2*',
    reactive=True,
@@ -395,24 +323,6 @@ species(
 5 H u0 p0 c0 {1,S}
 """),
 )
-
-
-# species(
-#    label='HCOOCH3*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-# """),
-# )
-
-# species(
-#    label='H2COOCH3*',
-#    reactive=True,
-#    structure=adjacencyList(
-#        """
-#
-# """),
-# )
 
 #----------
 # Reaction systems
@@ -558,18 +468,17 @@ model(
 options(
     units='si',
     saveRestartPeriod=None,
-    generateOutputHTML=True,
+    generateOutputHTML=False,
     generatePlots=False,
-    # generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
-    saveEdgeSpecies=True,
-    saveSimulationProfiles=True,
-    generateSeedEachIteration=True
+    saveEdgeSpecies=False,
+    saveSimulationProfiles=False,
+    generateSeedEachIteration=False
 )
 
 generatedSpeciesConstraints(
     allowed=['input species','reaction libraries'],
 #    maximumRadicalElectrons=2,
-#    maximumCarbonAtoms=12,
+    maximumCarbonAtoms=3,
 )
 
 forbidden(
