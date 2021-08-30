@@ -1,13 +1,15 @@
 restartFromSeed(path='seed')
 
-# Running on current commits 13Jul2021 for 
-# RMG-Py: forbidden_input
+# Running on current commits 29Aug2021 for 
+# RMG-Py: forbidden_input (rebased)
 # RMG-Database: meoh_3
 # running with david's forbidden input branch for Py, 
 # Database:
 # bjarne's Pt111 thermo
 # the correct H2vdw values for thermo per david's comments on PR #516 
-# removed grabow rates from training data 
+# keep grabow rates from training data
+# added bjarne's new abstraction families
+# removed bidentate families from recommended 
 
 # Data sources
 database(

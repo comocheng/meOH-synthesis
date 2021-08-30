@@ -1,13 +1,5 @@
-/home/blais.ch/.conda/envs/rmg_env/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: rmgpy.kinetics.surface.StickingCoefficient size changed, may indicate binary incompatibility. Expected 104 from C header, got 112 from PyObject
-  return f(*args, **kwds)
-/home/blais.ch/.conda/envs/rmg_env/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: rmgpy.kinetics.surface.StickingCoefficientBEP size changed, may indicate binary incompatibility. Expected 104 from C header, got 112 from PyObject
-  return f(*args, **kwds)
-/home/blais.ch/.conda/envs/rmg_env/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: rmgpy.kinetics.surface.SurfaceArrhenius size changed, may indicate binary incompatibility. Expected 104 from C header, got 112 from PyObject
-  return f(*args, **kwds)
-/home/blais.ch/.conda/envs/rmg_env/lib/python3.7/importlib/_bootstrap.py:219: RuntimeWarning: rmgpy.kinetics.surface.SurfaceArrheniusBEP size changed, may indicate binary incompatibility. Expected 104 from C header, got 112 from PyObject
-  return f(*args, **kwds)
-:root:Removing old /work/westgroup/ChrisB/meoh-synthesis_RMG/meOH-synthesis/base/RMG_backup.log
-:root:Moving /work/westgroup/ChrisB/meoh-synthesis_RMG/meOH-synthesis/base/RMG.log to /work/westgroup/ChrisB/meoh-synthesis_RMG/meOH-synthesis/base/RMG_backup.log
+:root:Removing old /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/base/RMG_backup.log
+:root:Moving /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/base/RMG.log to /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/base/RMG_backup.log
 
 /home/blais.ch/.conda/envs/rmg_env/lib/python3.7/site-packages/scipy/optimize/optimize.py:1978: LinAlgWarning: Ill-conditioned matrix (rcond=9.79183e-18): result may not be accurate.
   fu = func(x, *args)
