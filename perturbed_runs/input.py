@@ -16,7 +16,12 @@ database(
         'thermo_DFT_CCSDTF12_BAC',
         'DFT_QCI_thermo'
         ],
-    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Methane/Deutschmann_Ni', 'Surface/CPOX_Pt/Deutschmann2006_adjusted'],
+    reactionLibraries = [
+        'BurkeH2O2inArHe',
+        'BurkeH2O2inN2',
+        'Surface/Methane/Deutschmann_Ni',
+        'Surface/CPOX_Pt/Deutschmann2006_adjusted'
+        ],
     seedMechanisms = [],
     kineticsDepositories = ['training'],
     kineticsFamilies =['surface','default'],
