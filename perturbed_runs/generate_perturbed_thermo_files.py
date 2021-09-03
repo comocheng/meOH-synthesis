@@ -50,23 +50,27 @@ thermo_database.load(
 sobol_map = {}
 sobol_col_index = 0
 for library_key in thermo_database.libraries:
-    lib = thermo_database.libraries[library_key]
-    for entry_key in lib.entries.keys():
-        label = library_key + '/' + entry_key + '/E0'
-        sobol_map[label] = sobol_col_index
-        sobol_col_index += 1
+    label = library_key + '/E0'
+    sobol_map[label] = sobol_col_index
+    sobol_col_index += 1
 
 for library_key in thermo_database.libraries:
     thermo_lib = thermo_database.libraries[library_key]
+    sobol_key = library_key + '/E0'
+    sobol_col_index = sobol_map[sobol_key]
+
     for i in range(0, N):
+        delta_E0 = DELTA_E0_MAX - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX
+
         for entry_key in thermo_lib.entries.keys():
             entry = thermo_lib.entries[entry_key]
+            # Don't perturb the energy level if it's just a vacant site
+            if entry_key is 'vacant':
+                continue
+            if entry.item.is_isomorphic(Molecule().from_adjacency_list("1 X  u0 p0 c0")):
+                continue
 
             # Perturb the E0 value, which is a5 in the NASA polymial
-            sobol_key = library_key + '/' + entry_key + '/E0'
-            sobol_col_index = sobol_map[sobol_key]
-            delta_E0 = DELTA_E0_MAX - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX
-
             if entry.data.poly1 is not None:
                 E0_ref = entry.data.poly1.c5  # not sure about this conversion factor
                 E0_perturbed = E0_ref + delta_E0 / (constants.R / 1000.0)  # 8.314e-3
