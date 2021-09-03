@@ -6,20 +6,12 @@
 
 import os
 from torch.quasirandom import SobolEngine
-from rmgpy.data.kinetics.database import KineticsDatabase
-
-
-from rmgpy.data.base import Database, Entry, make_logic_node, DatabaseError
-from rmgpy.ml.estimator import MLEstimator
-from rmgpy.molecule import Molecule, Bond, Group
-from rmgpy.species import Species
-from rmgpy.data.thermo import ThermoDatabase  #, NASAPolynomial, NASA, ThermoData, Wilhoit
-
+from rmgpy.molecule import Molecule
+from rmgpy.data.thermo import ThermoDatabase
 from rmgpy import constants
 
 # looks like E0 is the same as NASA polynomial coefficient 5
 # H(0) = R(a0*T + 1/2 a1 * T^2 + 1/3 a2 * T^3 + 1/4 a3 * T^4 + 1/5 a4 * T^5 + a5) = a5
-
 
 DELTA_E0_MAX = 30  # 3 eV is about 30 kJ/mol
 
