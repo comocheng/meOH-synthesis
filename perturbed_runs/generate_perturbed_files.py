@@ -61,8 +61,8 @@ kinetics_database.load_families(
 kinetics_database.load_libraries(
     kinetic_libraries_dir,
     libraries=[
-        'Example',  # just checking if this connects
-        # 'Ni111',
+        #'Example',  # just checking if this connects
+        'Ni111',
     ]
 )
 
@@ -70,7 +70,10 @@ thermo_database = ThermoDatabase()
 thermo_database.load(
     library_path,
     libraries=[
-        'surfaceThermoPt111',
+        'surfaceThermoPt_C',
+        'surfaceThermoPt_H',
+        'surfaceThermoPt_O',
+        'surfaceThermoPt_vdW',
     ],
     depository=False,
     surface=True)
