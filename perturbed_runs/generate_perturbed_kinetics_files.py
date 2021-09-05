@@ -5,9 +5,9 @@
 ###############################################################################
 
 import os
+import copy
 from torch.quasirandom import SobolEngine
 from rmgpy.data.kinetics.database import KineticsDatabase
-
 
 # Define the uncertainty ranges based on the paper
 DELTA_ALPHA_MAX = 0.15
@@ -74,8 +74,10 @@ for klib_key in kinetics_database.libraries:
             sobol_col_index += 1
 
 
+# Perturb the values in the kinetics library
 for klib_key in kinetics_database.libraries:
     kinetics_lib = kinetics_database.libraries[klib_key]
+    kinetics_lib_ref = copy.deepcopy(kinetics_lib)
     for i in range(0, N):
         for klib_entry_key in kinetics_lib.entries.keys():
             kinetics_lib_entry = kinetics_lib.entries[klib_entry_key]
@@ -83,7 +85,7 @@ for klib_key in kinetics_database.libraries:
                 if kinetics_lib_entry.label == label:  # something madeup from the example
                     if kinetics_lib_entry.data.Ea.units != 'J/mol':
                         raise NotImplementedError('Not yet implemented for units other than J/mol')
-                    Ea_ref = kinetics_lib_entry.data.Ea.value
+                    Ea_ref = kinetics_lib_ref.entries[klib_entry_key].data.Ea.value
                     sobol_key = klib_key + '/' + str(klib_entry_key) + '/' + entry_key + '/' + kinetics_lib_entry.label
                     sobol_col_index = sobol_map[sobol_key]
                     delta_E0 = (DELTA_E0_MAX - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX) * 1000.0  # convert from kJ/mol to J/mol
@@ -91,14 +93,16 @@ for klib_key in kinetics_database.libraries:
                     kinetics_lib_entry.data.Ea.value = Ea_perturbed
         kinetics_lib.save(os.path.join(kinetic_libraries_dir, klib_key, 'reactions_' + str(i).zfill(4) + '.py'))
 
+# Perturb the values in the kinetics families
 for key in kinetics_database.families:
     family = kinetics_database.families[key]
+    family_ref = copy.deepcopy(family)
     for i in range(0, N):
         for entry_key in family.rules.entries.keys():
             entry = family.rules.entries[entry_key]
 
             # Perturb the alpha value
-            alpha_ref = entry[0].data.alpha.value
+            alpha_ref = family_ref.rules.entries[entry_key][0].data.alpha.value
             sobol_key = family_key + '/' + entry_key + '/alpha'
             sobol_col_index = sobol_map[sobol_key]
             delta_alpha = DELTA_ALPHA_MAX - 2.0 * x_sobol[i, sobol_col_index] * DELTA_ALPHA_MAX
@@ -108,7 +112,7 @@ for key in kinetics_database.families:
             # Perturb the E0 value
             if entry[0].data.E0.units != 'kJ/mol':
                 raise NotImplementedError('Not yet implemented for units other than kJ/mol')
-            E0_ref = entry[0].data.E0.value
+            E0_ref = family_ref.rules.entries[entry_key][0].data.E0.value
             sobol_key = family_key + '/' + entry_key + '/E0'
             sobol_col_index = sobol_map[sobol_key]
             delta_E0 = DELTA_E0_MAX - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX

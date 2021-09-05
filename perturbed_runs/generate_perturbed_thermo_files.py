@@ -5,6 +5,7 @@
 ###############################################################################
 
 import os
+import copy
 from torch.quasirandom import SobolEngine
 from rmgpy.molecule import Molecule
 from rmgpy.data.thermo import ThermoDatabase
@@ -48,6 +49,7 @@ for library_key in thermo_database.libraries:
 
 for library_key in thermo_database.libraries:
     thermo_lib = thermo_database.libraries[library_key]
+    thermo_lib_ref = copy.deepcopy(thermo_lib)
     sobol_key = library_key + '/E0'
     sobol_col_index = sobol_map[sobol_key]
 
@@ -64,15 +66,15 @@ for library_key in thermo_database.libraries:
 
             # Perturb the E0 value, which is a5 in the NASA polymial
             if entry.data.poly1 is not None:
-                E0_ref = entry.data.poly1.c5  # not sure about this conversion factor
+                E0_ref = thermo_lib_ref.entries[entry_key].data.poly1.c5
                 E0_perturbed = E0_ref + delta_E0 / (constants.R / 1000.0)  # 8.314e-3
                 entry.data.poly1.c5 = E0_perturbed
             if entry.data.poly2 is not None:
-                E0_ref = entry.data.poly2.c5
+                E0_ref = thermo_lib_ref.entries[entry_key].data.poly2.c5
                 E0_perturbed = E0_ref + delta_E0 / (constants.R / 1000.0)  # 8.314e-3
                 entry.data.poly2.c5 = E0_perturbed
             if entry.data.poly3 is not None:
-                E0_ref = entry.data.poly3.c5
+                E0_ref = thermo_lib_ref.entries[entry_key].data.poly3.c5
                 E0_perturbed = E0_ref + delta_E0 / (constants.R / 1000.0)  # 8.314e-3
                 entry.data.poly3.c5 = E0_perturbed
 
