@@ -34,7 +34,18 @@ if not os.path.exists(kinetic_libraries_dir):
 kinetics_database = KineticsDatabase()
 kinetics_database.load_families(
     path=families_dir,
-    families=['Surface_Abstraction'],  # list the families to perturb
+    families=[  # list the families to perturb
+        'Surface_Dissociation_Double',
+        'Surface_Dissociation',
+        'Surface_Dissociation_Beta',
+        'Surface_Dissociation_Beta_vdW',
+        'Surface_Abstraction',
+        'Surface_Abstraction_Beta_Dual_vdW',
+        'Surface_Abstraction_Beta_vdW',
+        'Surface_Abstraction_Beta',
+        'Surface_Adsorption_Dissociative',
+        'Surface_Dissociation_vdW',
+    ],  # list the families to perturb
 )
 
 kinetics_database.load_libraries(
@@ -48,8 +59,8 @@ kinetics_database.load_libraries(
 # pick which entries to perturb in the kinetics library
 # WARNING: does not handle overlap of entries in different libraries
 lib_entries_to_perturb = [
-    "OCX + OX <=> CO2 + Ni + Ni",
-    # "CO2X + Ni <=> OCX + OX"
+    #"OCX + OX <=> CO2 + Ni + Ni",
+    "CO2X + Ni <=> OCX + OX",
 ]
 
 # make the map of sobol columns
@@ -72,7 +83,7 @@ for klib_key in kinetics_database.libraries:
             label = klib_key + '/' + str(klib_entry_key) + '/' + entry_key + '/' + kinetics_lib_entry.label
             sobol_map[label] = sobol_col_index
             sobol_col_index += 1
-
+print(
 
 # Perturb the values in the kinetics library
 for klib_key in kinetics_database.libraries:
