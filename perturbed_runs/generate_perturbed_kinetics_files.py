@@ -26,17 +26,37 @@ families_dir = "/home/moon/rmg/RMG-database/input/kinetics/families/"
 if not os.path.exists(families_dir):
     raise OSError(f'Path to rules does not exist:\n{families_dir}')
 
-database = KineticsDatabase()
-database.load_families(
+# Specify the path to the libraries
+kinetic_libraries_dir = "/home/moon/rmg/RMG-database/input/kinetics/libraries/Surface/"
+if not os.path.exists(kinetic_libraries_dir):
+    raise OSError(f'Path to kinetic libraries does not exist:\n{kinetic_libraries_dir}')
+
+kinetics_database = KineticsDatabase()
+kinetics_database.load_families(
     path=families_dir,
     families=['Surface_Abstraction'],  # list the families to perturb
 )
 
+kinetics_database.load_libraries(
+    kinetic_libraries_dir,
+    libraries=[
+        'Example',  # just checking if this connects
+        # 'Ni111',
+    ]
+)
+
+# pick which entries to perturb in the kinetics library
+# WARNING: does not handle overlap of entries in different libraries
+lib_entries_to_perturb = [
+    "OCX + OX <=> CO2 + Ni + Ni",
+    # "CO2X + Ni <=> OCX + OX"
+]
+
 # make the map of sobol columns
 sobol_map = {}
 sobol_col_index = 0
-for family_key in database.families:
-    family = database.families[family_key]
+for family_key in kinetics_database.families:
+    family = kinetics_database.families[family_key]
     for entry_key in family.rules.entries.keys():
         label = family_key + '/' + entry_key + '/alpha'
         sobol_map[label] = sobol_col_index
@@ -44,9 +64,34 @@ for family_key in database.families:
         label = family_key + '/' + entry_key + '/E0'
         sobol_map[label] = sobol_col_index
         sobol_col_index += 1
+for klib_key in kinetics_database.libraries:
+    kinetics_lib = kinetics_database.libraries[klib_key]
+    for klib_entry_key in kinetics_lib.entries.keys():
+        kinetics_lib_entry = kinetics_lib.entries[klib_entry_key]
+        if kinetics_lib_entry.label in lib_entries_to_perturb:
+            label = klib_key + '/' + str(klib_entry_key) + '/' + entry_key + '/' + kinetics_lib_entry.label
+            sobol_map[label] = sobol_col_index
+            sobol_col_index += 1
 
-for key in database.families:
-    family = database.families[key]
+
+for klib_key in kinetics_database.libraries:
+    kinetics_lib = kinetics_database.libraries[klib_key]
+    for i in range(0, N):
+        for klib_entry_key in kinetics_lib.entries.keys():
+            kinetics_lib_entry = kinetics_lib.entries[klib_entry_key]
+            for label in lib_entries_to_perturb:
+                if kinetics_lib_entry.label == label:  # something madeup from the example
+                    Ea_ref = kinetics_lib_entry.data.Ea.value
+                    sobol_key = klib_key + '/' + str(klib_entry_key) + '/' + entry_key + '/' + kinetics_lib_entry.label
+                    sobol_col_index = sobol_map[sobol_key]
+                    # TODO check these units, I'm pretty sure they're wrong
+                    delta_E0 = DELTA_E0_MAX - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX
+                    Ea_perturbed = Ea_ref + delta_E0
+                    kinetics_lib_entry.data.Ea.value = Ea_perturbed
+        kinetics_lib.save(os.path.join(kinetic_libraries_dir, klib_key, 'reactions_' + str(i).zfill(4) + '.py'))
+
+for key in kinetics_database.families:
+    family = kinetics_database.families[key]
     for i in range(0, N):
         for entry_key in family.rules.entries.keys():
             entry = family.rules.entries[entry_key]
