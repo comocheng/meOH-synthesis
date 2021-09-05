@@ -22,12 +22,12 @@ x_sobol = sobol.draw(N)
 
 
 # Specify the path to the families
-families_dir = "/home/moon/rmg/RMG-database/input/kinetics/families/"
+families_dir = "/scratch/westgroup/methanol/perturb_5000/RMG-database/input/kinetics/families/"
 if not os.path.exists(families_dir):
     raise OSError(f'Path to rules does not exist:\n{families_dir}')
 
 # Specify the path to the libraries
-kinetic_libraries_dir = "/home/moon/rmg/RMG-database/input/kinetics/libraries/Surface/"
+kinetic_libraries_dir = "/scratch/westgroup/methanol/perturb_5000/RMG-database/input/kinetics/libraries/Surface/"
 if not os.path.exists(kinetic_libraries_dir):
     raise OSError(f'Path to kinetic libraries does not exist:\n{kinetic_libraries_dir}')
 

@@ -25,7 +25,7 @@ x_sobol = sobol.draw(N)
 
 
 # Specify the path to the thermo library
-library_path = "/home/moon/rmg/RMG-database/input/thermo/"
+library_path = "/scratch/westgroup/methanol/perturb_5000/RMG-database/input/thermo/"
 if not os.path.exists(library_path):
     raise OSError(f'Path to rules does not exist:\n{library_path}')
 
