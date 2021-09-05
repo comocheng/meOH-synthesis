@@ -81,11 +81,12 @@ for klib_key in kinetics_database.libraries:
             kinetics_lib_entry = kinetics_lib.entries[klib_entry_key]
             for label in lib_entries_to_perturb:
                 if kinetics_lib_entry.label == label:  # something madeup from the example
+                    if kinetics_lib_entry.data.Ea.units != 'J/mol':
+                        raise NotImplementedError('Not yet implemented for units other than J/mol')
                     Ea_ref = kinetics_lib_entry.data.Ea.value
                     sobol_key = klib_key + '/' + str(klib_entry_key) + '/' + entry_key + '/' + kinetics_lib_entry.label
                     sobol_col_index = sobol_map[sobol_key]
-                    # TODO check these units, I'm pretty sure they're wrong
-                    delta_E0 = DELTA_E0_MAX - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX
+                    delta_E0 = (DELTA_E0_MAX - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX) * 1000.0  # convert from kJ/mol to J/mol
                     Ea_perturbed = Ea_ref + delta_E0
                     kinetics_lib_entry.data.Ea.value = Ea_perturbed
         kinetics_lib.save(os.path.join(kinetic_libraries_dir, klib_key, 'reactions_' + str(i).zfill(4) + '.py'))
@@ -105,6 +106,8 @@ for key in kinetics_database.families:
             entry[0].data.alpha.value = alpha_perturbed
 
             # Perturb the E0 value
+            if entry[0].data.E0.units != 'kJ/mol':
+                raise NotImplementedError('Not yet implemented for units other than kJ/mol')
             E0_ref = entry[0].data.E0.value
             sobol_key = family_key + '/' + entry_key + '/E0'
             sobol_col_index = sobol_map[sobol_key]
