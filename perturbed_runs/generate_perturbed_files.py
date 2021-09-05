@@ -1,6 +1,7 @@
 ###############################################################################
 # Sevy Harris 2021-09-02
-# This script takes a handful of families and perturbs the E0 and alpha values
+# This script takes a handful of kinetics families, kinetics libraries, and
+# thermo libraries and perturbs the E0, alpha, and Ea values
 # Based off of Bjarne's Parametric Uncertainty Paper 10.1021/jacsau.1c00276
 ###############################################################################
 
@@ -83,6 +84,7 @@ for klib_key in kinetics_database.libraries:
             label = klib_key + '/' + str(klib_entry_key) + '/' + entry_key + '/' + kinetics_lib_entry.label
             sobol_map[label] = sobol_col_index
             sobol_col_index += 1
+
 
 # Perturb the values in the kinetics library
 for klib_key in kinetics_database.libraries:
