@@ -46,16 +46,20 @@ kinetics_database = KineticsDatabase()
 kinetics_database.load_families(
     path=families_dir,
     families=[  # list the families to perturb
-        # 'Surface_Dissociation_Double',
         'Surface_Dissociation',
         'Surface_Dissociation_Beta',
-        # 'Surface_Dissociation_Beta_vdW',
         'Surface_Abstraction',
-        # 'Surface_Abstraction_Beta_Dual_vdW',
-        # 'Surface_Abstraction_Beta_vdW',
         'Surface_Abstraction_Beta',
         'Surface_Adsorption_Dissociative',
-        # 'Surface_Dissociation_vdW',
+        'Surface_Dissociation_vdW',
+        # These aren't recognized
+        # 'Surface_Dissociation_Double',
+        # 'Surface_Dissociation_Beta_vdW',
+        # 'Surface_Abstraction_Beta_Dual_vdW',
+        # 'Surface_Abstraction_Beta_vdW',
+        #
+        # This was the only substitute I could find
+        'Surface_Abstraction_Beta_double_vdW',
     ],
 )
 
