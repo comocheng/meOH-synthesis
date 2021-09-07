@@ -85,11 +85,13 @@ copytree_sym(
         '.github',
         '.gitignore',
         '.travis.yml',
-        '.vscode'
+        '.vscode',
     ),
     # hardcopy=('/home/moon/rmg/RMG-database/input/kinetics/families/Surface_Abstraction/rules.py')
     hardcopy=hardcopy_patterns(
-        'rules[0-9][0-9][0-9][0-9].py'
+        'rules[0-9][0-9][0-9][0-9].py',
+        'reactions_[0-9][0-9][0-9][0-9].py',
+        'surfaceThermoPt111_[0-9][0-9][0-9][0-9].py',
         # 'Surface_Abstraction.rules.py',
         # 'Surface_Abstraction.groups.py'
     )
