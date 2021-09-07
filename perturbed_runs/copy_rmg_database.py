@@ -1,20 +1,17 @@
 # Sevy's bastardization of https://github.com/python/cpython/blob/main/Lib/shutil.py
 
 import os
-from shutil import copy2, copystat, ignore_patterns
+from shutil import copy2, ignore_patterns
 import fnmatch
 
 
-def ignore_patterns(*patterns):
-    """Function that can be used as copytree() ignore parameter.
-    Patterns is a sequence of glob-style patterns
-    that are used to exclude files"""
-    def _ignore_patterns(path, names):
-        ignored_names = []
+def hardcopy_patterns(*patterns):
+    def _hardcopy_patterns(path, names):
+        matched_names = []
         for pattern in patterns:
-            ignored_names.extend(fnmatch.filter(names, pattern))
-        return set(ignored_names)
-    return _ignore_patterns
+            matched_names.extend(fnmatch.filter(names, pattern))
+        return set(matched_names)
+    return _hardcopy_patterns
 
 
 # start by copying a directory but ignoring the .git
@@ -31,10 +28,16 @@ def copytree_sym(src, dst, ignore=None, hardcopy=None, symlinks=False):
     else:
         ignored_names = set()
 
+    if hardcopy is not None:
+        hardcopy_names = hardcopy(os.fspath(src), names)
+    else:
+        hardcopy_names = set()
+
     errors = []
     for name in names:
         if name in ignored_names:
             continue
+
         srcname = os.path.join(src, name)
         dstname = os.path.join(dst, name)
         try:
@@ -42,11 +45,13 @@ def copytree_sym(src, dst, ignore=None, hardcopy=None, symlinks=False):
                 linkto = os.readlink(srcname)
                 os.symlink(linkto, dstname)
             elif os.path.isdir(srcname):
-                copytree_sym(srcname, dstname, symlinks)
+                copytree_sym(srcname, dstname, symlinks=symlinks, hardcopy=hardcopy)
             else:
-                # TODO - check if this should be hardcopied
-                os.symlink(srcname, dstname)
-                # copy2(srcname, dstname)  instead of actually copying
+                # if srcname in hardcopy:
+                if name in hardcopy_names:
+                    copy2(srcname, dstname)
+                else:
+                    os.symlink(srcname, dstname)
         except OSError as why:
             errors.append((srcname, dstname, str(why)))
         # catch the Error from the recursive copytree so that we can
@@ -80,6 +85,12 @@ copytree_sym(
         '.github',
         '.gitignore',
         '.travis.yml',
-        '.vscode',
+        '.vscode'
+    ),
+    # hardcopy=('/home/moon/rmg/RMG-database/input/kinetics/families/Surface_Abstraction/rules.py')
+    hardcopy=hardcopy_patterns(
+        'rules[0-9][0-9][0-9][0-9].py'
+        # 'Surface_Abstraction.rules.py',
+        # 'Surface_Abstraction.groups.py'
     )
 )
