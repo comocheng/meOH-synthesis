@@ -3,6 +3,7 @@
 import os
 from shutil import copy2, ignore_patterns
 import fnmatch
+import time
 
 
 def hardcopy_patterns(*patterns):
@@ -58,41 +59,39 @@ def copytree_sym(src, dst, ignore=None, hardcopy=None, symlinks=False):
         # continue with other files
         except Exception as err:
             errors.extend(err.args[0])
-    # try:
-    #     copystat(src, dst)
-    # except OSError as why:
-    #     # can't copy file access times on Windows
-    #     if why.winerror is None:
-    #         errors.extend((src, dst, str(why)))
-    # if errors:
-    #     raise OSError(errors)
 
-
-database_src = "/home/moon/rmg/RMG-database/"
-database_dest = "/home/moon/rmg/db_copy/db0/"
+# database_src = "/home/moon/rmg/RMG-database/"
+database_src = "/scratch/westgroup/methanol/perturb_5000/RMG-database/"
 if not os.path.exists(database_src):
     raise OSError(f'Could not find source database {database_src}')
-if os.path.exists(database_dest):
-    raise OSError(f'Destination already exists: {database_dest}')
 
-copytree_sym(
-    database_src,
-    database_dest,
-    symlinks=True,
-    ignore=ignore_patterns(
-        '.conda',
-        '.git',
-        '.github',
-        '.gitignore',
-        '.travis.yml',
-        '.vscode',
-    ),
-    # hardcopy=('/home/moon/rmg/RMG-database/input/kinetics/families/Surface_Abstraction/rules.py')
-    hardcopy=hardcopy_patterns(
-        'rules[0-9][0-9][0-9][0-9].py',
-        'reactions_[0-9][0-9][0-9][0-9].py',
-        'surfaceThermoPt111_[0-9][0-9][0-9][0-9].py',
-        # 'Surface_Abstraction.rules.py',
-        # 'Surface_Abstraction.groups.py'
+start_time = time.time()
+N = 20
+for i in range(0, N):
+    database_dest = "/scratch/westgroup/methanol/perturb_5000/db_" + str(i).zfill(4)
+    if os.path.exists(database_dest):
+        raise OSError(f'Destination already exists: {database_dest}')
+
+    copytree_sym(
+        database_src,
+        database_dest,
+        symlinks=True,
+        ignore=ignore_patterns(
+            '.conda',
+            '.git',
+            '.github',
+            '.gitignore',
+            '.travis.yml',
+            '.vscode',
+        ),
+        hardcopy=hardcopy_patterns(
+            'rules[0-9][0-9][0-9][0-9].py',
+            'reactions_[0-9][0-9][0-9][0-9].py',
+            'surfaceThermoPt111_[0-9][0-9][0-9][0-9].py',
+        )
     )
-)
+    print(f"done with copy {i}")
+stop_time = time.time()
+elapsed_time = stop_time - start_time
+print(f"Copied {N} databases in {elapsed_time} seconds")
+
