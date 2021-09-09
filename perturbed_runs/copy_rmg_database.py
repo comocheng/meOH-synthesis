@@ -46,7 +46,7 @@ def copytree_sym(src, dst, ignore=None, hardcopy=None, symlinks=False):
                 linkto = os.readlink(srcname)
                 os.symlink(linkto, dstname)
             elif os.path.isdir(srcname):
-                copytree_sym(srcname, dstname, symlinks=symlinks, hardcopy=hardcopy)
+                copytree_sym(srcname, dstname, symlinks=symlinks, ignore=ignore, hardcopy=hardcopy)
             else:
                 # if srcname in hardcopy:
                 if name in hardcopy_names:
@@ -83,11 +83,19 @@ for i in range(0, N):
             '.gitignore',
             '.travis.yml',
             '.vscode',
-        ),
-        hardcopy=hardcopy_patterns(
-            'rules[0-9][0-9][0-9][0-9].py',
+            'rules_[0-9][0-9][0-9][0-9].py',
             'reactions_[0-9][0-9][0-9][0-9].py',
             'surfaceThermoPt111_[0-9][0-9][0-9][0-9].py',
+        ),
+        # TODO see if you can delete this hardcopy option - I think it may be unnecessary
+        # only hard copy one of these 
+        hardcopy=hardcopy_patterns(
+            'rules.py',
+            'reactions.py',
+            'surfaceThermoPt111.py',
+            #'rules_0000.py',
+            #'reactions_0000.py',
+            #'surfaceThermoPt111_0000.py',
         )
     )
     print(f"done with copy {i}")
