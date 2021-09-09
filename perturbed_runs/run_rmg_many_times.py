@@ -7,13 +7,14 @@ import os
 import glob
 
 
-# working_dir = "/scratch/westgroup/methanol/perturb5000/"
-working_dir = "/home/moon/rmg/fake_rmg_runs/"
+working_dir = "/scratch/westgroup/methanol/perturb_5000/"
+# working_dir = "/home/moon/rmg/fake_rmg_runs/"
 if not os.path.exists(working_dir):
     os.mkdir(working_dir)
 
 
-reference_db = "/home/moon/rmg/RMG-database/"
+# reference_db = "/home/moon/rmg/RMG-database/"
+reference_db = "/scratch/westgroup/methanol/perturb_5000/RMG-database/"
 if not os.path.exists(reference_db):
     raise OSError(f"Reference database does not exist {reference_db}")
 
@@ -41,14 +42,18 @@ for i in range(0, M, N):
 
     content = ['# Copy the files from the full database to the mostly symbolic one\n']
 
+    content.append('PADDED_SLURM_JOB_ID=$(printf "%04.0f" $SLURM_ARRAY_JOB_ID)\n')
     for rule_file in perturbed_kinetics_rules:
         # TODO convert array job id to rmg run i and database N
         # $SLURM_ARRAY_JOB_ID
-        rule_file_src = rule_file
-        rule_file_dest = os.path.join(working_dir, 'db_' + "$(($SLURM_ARRAY_JOB_ID))")
-        content.append('cp {rule_file_src} {rule_file_dest}')
+        rule_file_src = rule_file.replace('rules0000.py', 'rules' + str(i).zfill(4) + '.py')
+        file_name_parts = rule_file.split('RMG-database/')
+        if len(file_name_parts) != 2:
+            raise OSError(f'Bad source rules.py file path {rule_file}')
+        rule_file_dest = os.path.join(working_dir, 'db_' + '$PADDED_SLURM_JOB_ID', file_name_parts[1].replace('rules0000.py', 'rules.py'))
+        content.append(f'cp "{rule_file_src}" "{rule_file_dest}"\n')
     # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
-
+    content.append('\n')
     jobfile.content = content
     jobfile.write_file()
     # create an arrayjob to run RMG N times
