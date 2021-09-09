@@ -44,20 +44,28 @@ for i in range(0, M, N):
     content = ['# Copy the files from the full database to the mostly symbolic one\n']
 
     content.append('PADDED_SLURM_JOB_ID=$(printf "%04.0f" $SLURM_ARRAY_JOB_ID)\n')
+    content.append('RUN_i=$(printf "%04.0f" $SLURM_ARRAY_JOB_ID)\n')
+    content.append(f'DATABASE_n=$(printf "%04.0f" $(($SLURM_ARRAY_JOB_ID % {N})))\n')
     for rule_file in perturbed_kinetics_rules:
         # TODO convert array job id to rmg run i and database N
         # $SLURM_ARRAY_JOB_ID
-        rule_file_src = rule_file.replace('rules0000.py', 'rules' + str(i).zfill(4) + '.py')
+        rule_file_src = rule_file.replace('rules0000.py', 'rules${RUN_i}.py')
         file_name_parts = rule_file.split('RMG-database/')
         if len(file_name_parts) != 2:
             raise OSError(f'Bad source rules.py file path {rule_file}')
-        rule_file_dest = os.path.join(working_dir, 'db_' + '$PADDED_SLURM_JOB_ID', file_name_parts[1].replace('rules0000.py', 'rules.py'))
+        rule_file_dest = os.path.join(working_dir, 'db_' + '${DATABASE_n}', file_name_parts[1].replace('rules0000.py', 'rules.py'))
         content.append(f'cp "{rule_file_src}" "{rule_file_dest}"\n')
+        break
     # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
     content.append('\n')
     jobfile.content = content
-    jobfile.write_file()
-    # create an arrayjob to run RMG N times
-    # copy the N sets of files to their respective databases - this should probably be part of the bash script
+    
 
+    # make the directory for the rmg run
+    #rmg_run_dir = os.path.join(working_dir, "run"
+    #content.append(f'mkdir "{workin}"')
+    
+    jobfile.write_file()
+    # copy the N sets of files to their respective databases - this should probably be part of the bash script
+    
     # Create the RMGfolder -- do this in bash
