@@ -18,6 +18,10 @@ reference_db = "/scratch/westgroup/methanol/perturb_5000/RMG-database/"
 if not os.path.exists(reference_db):
     raise OSError(f"Reference database does not exist {reference_db}")
 
+reference_input = "/scratch/westgroup/methanol/meOH-synthesis/perturbed_runs/input.py"
+if not os.path.exists(reference_input):
+    raise OSError(f"Cannot find reference rmg input.py file {reference_input}")
+
 # Find all of the files that have been copied 5000 times
 perturbed_kinetics_rules = glob.glob(os.path.join(reference_db, 'input', 'kinetics', 'families', '*/rules0000.py'))
 perturbed_thermo = glob.glob(os.path.join(reference_db, 'input', 'thermo', 'libraries', '*_0000.py'))
@@ -45,6 +49,7 @@ for i in range(0, M, N):
 
     content.append('RUN_i=$(printf "%04.0f" $SLURM_ARRAY_TASK_ID)\n')
     content.append(f'DATABASE_n=$(printf "%04.0f" $(($SLURM_ARRAY_TASK_ID % {N})))\n')
+    dest_db_dir = os.path.join(working_dir, 'db_' + '${DATABASE_n}')
     for rule_file in perturbed_kinetics_rules:
         # TODO convert array job id to rmg run i and database N
         # $SLURM_ARRAY_JOB_ID
@@ -52,18 +57,24 @@ for i in range(0, M, N):
         file_name_parts = rule_file.split('RMG-database/')
         if len(file_name_parts) != 2:
             raise OSError(f'Bad source rules.py file path {rule_file}')
-        rule_file_dest = os.path.join(working_dir, 'db_' + '${DATABASE_n}', file_name_parts[1].replace('rules0000.py', 'rules.py'))
+        rule_file_dest = os.path.join(dest_db_dir, file_name_parts[1].replace('rules0000.py', 'rules.py'))
         content.append(f'cp "{rule_file_src}" "{rule_file_dest}"\n')
         break
     # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
     content.append('\n')
-    jobfile.content = content
     
-
     # make the directory for the rmg run
-    #rmg_run_dir = os.path.join(working_dir, "run"
-    #content.append(f'mkdir "{workin}"')
+    rmg_run_dir = os.path.join(working_dir, "run${RUN_i}")
+    content.append(f'mkdir "{rmg_run_dir}"\n')
     
+    # copy the RMG input file
+    dest_input_file = os.path.join(rmg_run_dir, "input.py")
+    content.append(f'cp "{reference_input}" "{dest_input_file}"\n')
+ 
+    # make the RMGRC file
+    content.append(f'echo "database.directory {dest_db_dir}/input/" > "{rmg_run_dir}/rmgrc"\n')
+
+    jobfile.content = content
     jobfile.write_file()
     # copy the N sets of files to their respective databases - this should probably be part of the bash script
     
