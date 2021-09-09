@@ -12,6 +12,11 @@ from rmgpy.data.kinetics.database import KineticsDatabase
 from rmgpy.molecule import Molecule
 from rmgpy.data.thermo import ThermoDatabase
 from rmgpy import constants
+from tqdm import tqdm  # this is for the progress bar cause copying stuff takes a while
+
+
+# WARNING - right now you need to copy this to /scratch/westgroup/methanol/perturb_5000/RMG-Py and run from there
+
 
 # Define the uncertainty ranges based on the paper
 DELTA_ALPHA_MAX = 0.15
@@ -19,7 +24,7 @@ DELTA_ALPHA_MAX = 0.15
 DELTA_E0_MAX_J_MOL = 30000  # 3 eV is about 30000 J/mol
 
 # Define the number of perturbations to run
-N = 5
+N = 5000
 
 # Create the pseudo randoms
 sobol = SobolEngine(dimension=80, scramble=True, seed=100)
@@ -118,10 +123,11 @@ for library_key in thermo_database.libraries:
 
 
 # Perturb the values in the kinetics library
+print("Creating kinetics library files")
 for klib_key in kinetics_database.libraries:
     kinetics_lib = kinetics_database.libraries[klib_key]
     kinetics_lib_ref = copy.deepcopy(kinetics_lib)
-    for i in range(0, N):
+    for i in tqdm(range(0, N)):
         for klib_entry_key in kinetics_lib.entries.keys():
             kinetics_lib_entry = kinetics_lib.entries[klib_entry_key]
             for label in lib_entries_to_perturb:
@@ -138,10 +144,11 @@ for klib_key in kinetics_database.libraries:
         kinetics_lib.save(os.path.join(kinetic_libraries_dir, klib_key, 'reactions_' + str(i).zfill(4) + '.py'))
 
 # Perturb the values in the kinetics families
+print("Generating kinetics family files")
 for family_key in kinetics_database.families:
     family = kinetics_database.families[family_key]
     family_ref = copy.deepcopy(family)
-    for i in range(0, N):
+    for i in tqdm(range(0, N)):
         for entry_key in family.rules.entries.keys():
             entry = family.rules.entries[entry_key]
 
@@ -167,16 +174,17 @@ for family_key in kinetics_database.families:
             E0_perturbed = E0_ref + delta_E0
             entry[0].data.E0.value_si = E0_perturbed
 
-        family.rules.save(os.path.join(families_dir, family_key, 'rules' + str(i).zfill(4) + '.py'))
+        family.rules.save(os.path.join(families_dir, family_key, 'rules_' + str(i).zfill(4) + '.py'))
 
 # Create the thermo files
+print("generating thermo files")
 for library_key in thermo_database.libraries:
     thermo_lib = thermo_database.libraries[library_key]
     thermo_lib_ref = copy.deepcopy(thermo_lib)
     sobol_key = library_key + '/E0'
     sobol_col_index = sobol_map[sobol_key]
 
-    for i in range(0, N):
+    for i in tqdm(range(0, N)):
         delta_E0 = DELTA_E0_MAX_J_MOL - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX_J_MOL
 
         for entry_key in thermo_lib.entries.keys():

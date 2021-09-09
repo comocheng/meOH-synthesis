@@ -64,7 +64,7 @@ for i in range(0, M, N):
     content.append('\n')
     
     # make the directory for the rmg run
-    rmg_run_dir = os.path.join(working_dir, "run${RUN_i}")
+    rmg_run_dir = os.path.join(working_dir, "run_${RUN_i}")
     content.append(f'mkdir "{rmg_run_dir}"\n')
     
     # copy the RMG input file
