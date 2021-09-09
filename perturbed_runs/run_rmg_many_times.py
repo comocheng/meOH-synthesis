@@ -43,9 +43,8 @@ for i in range(0, M, N):
 
     content = ['# Copy the files from the full database to the mostly symbolic one\n']
 
-    content.append('PADDED_SLURM_JOB_ID=$(printf "%04.0f" $SLURM_ARRAY_JOB_ID)\n')
-    content.append('RUN_i=$(printf "%04.0f" $SLURM_ARRAY_JOB_ID)\n')
-    content.append(f'DATABASE_n=$(printf "%04.0f" $(($SLURM_ARRAY_JOB_ID % {N})))\n')
+    content.append('RUN_i=$(printf "%04.0f" $SLURM_ARRAY_TASK_ID)\n')
+    content.append(f'DATABASE_n=$(printf "%04.0f" $(($SLURM_ARRAY_TASK_ID % {N})))\n')
     for rule_file in perturbed_kinetics_rules:
         # TODO convert array job id to rmg run i and database N
         # $SLURM_ARRAY_JOB_ID
