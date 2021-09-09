@@ -28,8 +28,9 @@ M = 25  # total number of times to run RMG
 N = 20  # number of jobs to run at a time
 for i in range(0, M, N):
     sbatch_index = int(i / N)
-    last_index = np.amin([i + N, M])
-    job_indices = [a for a in range(i, last_index)]
+    range_max = np.amin([i + N, M])
+    last_index = range_max - 1
+    job_indices = [a for a in range(i, range_max)]
     print(f'{sbatch_index}: running jobs {job_indices}')
 
     # Write the job file
