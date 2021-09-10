@@ -26,7 +26,7 @@ if not os.path.exists(reference_input):
     raise OSError(f"Cannot find reference rmg input.py file {reference_input}")
 
 # Find all of the files that have been copied 5000 times
-perturbed_kinetics_rules = glob.glob(os.path.join(reference_db, 'input', 'kinetics', 'families', '*/rules0000.py'))
+perturbed_kinetics_rules = glob.glob(os.path.join(reference_db, 'input', 'kinetics', 'families', '*/rules_0000.py'))
 perturbed_thermo = glob.glob(os.path.join(reference_db, 'input', 'thermo', 'libraries', '*_0000.py'))
 perturbed_kinetics_libs = glob.glob(os.path.join(reference_db, 'input', 'kinetics', 'libraries', '*_0000.py'))
 
@@ -38,7 +38,7 @@ for i in range(0, M, N):
     range_max = np.amin([i + N, M])
     last_index = range_max - 1
     job_indices = [a for a in range(i, range_max)]
-    print(f'{sbatch_index}: running jobs {job_indices}')
+    # print(f'{sbatch_index}: running jobs {job_indices}')
 
     # max slurm array index is 1000, so after that, subtract multiples of 1000
     task_id_offset = int(i/1000) * 1000
@@ -51,28 +51,31 @@ for i in range(0, M, N):
     jobfile.settings['--error'] = f'error{sbatch_index}.log'
     jobfile.settings['--output'] = f'output{sbatch_index}.log'
 
-    content = ['# Copy the files from the full database to the mostly symbolic one\n']
+    content = ['# Define useful bash variables\n']
 
     
     content.append(f'SLURM_TASK_ID_OFFSET={task_id_offset}\n')
     content.append('RUN_i=$(printf "%04.0f" $(($SLURM_ARRAY_TASK_ID + $SLURM_TASK_ID_OFFSET)))\n')
     
     content.append(f'DATABASE_n=$(printf "%04.0f" $(($(($SLURM_ARRAY_TASK_ID + $SLURM_TASK_ID_OFFSET)) % {N})))\n')
+    content = ['# Copy the files from the full database to the mostly symbolic one\n']
+    
     dest_db_dir = os.path.join(working_dir, 'db_' + '${DATABASE_n}')
     for rule_file in perturbed_kinetics_rules:
         # TODO convert array job id to rmg run i and database N
         # $SLURM_ARRAY_JOB_ID
-        rule_file_src = rule_file.replace('rules0000.py', 'rules${RUN_i}.py')
+        rule_file_src = rule_file.replace('rules_0000.py', 'rules_${RUN_i}.py')
         file_name_parts = rule_file.split('RMG-database/')
         if len(file_name_parts) != 2:
             raise OSError(f'Bad source rules.py file path {rule_file}')
-        rule_file_dest = os.path.join(dest_db_dir, file_name_parts[1].replace('rules0000.py', 'rules.py'))
+        rule_file_dest = os.path.join(dest_db_dir, file_name_parts[1].replace('rules_0000.py', 'rules.py'))
         content.append(f'cp "{rule_file_src}" "{rule_file_dest}"\n')
         # break
     # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
     content.append('\n')
     
     # make the directory for the rmg run
+    content = ['# Prepare the directory for the RMG run\n']
     rmg_run_dir = os.path.join(working_dir, "run_${RUN_i}")
     content.append(f'mkdir "{rmg_run_dir}"\n')
     
@@ -83,7 +86,11 @@ for i in range(0, M, N):
     # make the RMGRC file
     content.append(f'echo "database.directory {dest_db_dir}/input/" > "{rmg_run_dir}/rmgrc"\n')
 
+    # run RMG
+    content = ['# Run RMG\n']
+    content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py {rmg_run_dir}/input.py\n')
+
     jobfile.content = content
     jobfile.write_file()
-    # copy the N sets of files to their respective databases - this should probably be part of the bash script
-    
+   
+ 
