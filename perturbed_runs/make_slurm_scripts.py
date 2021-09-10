@@ -7,6 +7,9 @@ import os
 import glob
 
 
+# WARNING - this will fail if M%N != 0
+
+
 working_dir = "/scratch/westgroup/methanol/perturb_5000/"
 # working_dir = "/home/moon/rmg/fake_rmg_runs/"
 if not os.path.exists(working_dir):
@@ -28,7 +31,7 @@ perturbed_thermo = glob.glob(os.path.join(reference_db, 'input', 'thermo', 'libr
 perturbed_kinetics_libs = glob.glob(os.path.join(reference_db, 'input', 'kinetics', 'libraries', '*_0000.py'))
 
 
-M = 25  # total number of times to run RMG
+M = 5000  # total number of times to run RMG
 N = 20  # number of jobs to run at a time
 for i in range(0, M, N):
     sbatch_index = int(i / N)
@@ -37,18 +40,24 @@ for i in range(0, M, N):
     job_indices = [a for a in range(i, range_max)]
     print(f'{sbatch_index}: running jobs {job_indices}')
 
+    # max slurm array index is 1000, so after that, subtract multiples of 1000
+    task_id_offset = int(i/1000) * 1000
+    
     # Write the job file
     fname = f'rmg_runs_{i}-{last_index}.sh'
     jobfile = job_manager.SlurmJobFile(full_path=os.path.join(working_dir, fname))
-    jobfile.settings['--array'] = f'{i}-{last_index}'
+    jobfile.settings['--array'] = f'{i - task_id_offset}-{last_index - task_id_offset}'
     jobfile.settings['--job-name'] = fname
     jobfile.settings['--error'] = f'error{sbatch_index}.log'
     jobfile.settings['--output'] = f'output{sbatch_index}.log'
 
     content = ['# Copy the files from the full database to the mostly symbolic one\n']
 
-    content.append('RUN_i=$(printf "%04.0f" $SLURM_ARRAY_TASK_ID)\n')
-    content.append(f'DATABASE_n=$(printf "%04.0f" $(($SLURM_ARRAY_TASK_ID % {N})))\n')
+    
+    content.append(f'SLURM_TASK_ID_OFFSET={task_id_offset}\n')
+    content.append('RUN_i=$(printf "%04.0f" $(($SLURM_ARRAY_TASK_ID + $SLURM_TASK_ID_OFFSET)))\n')
+    
+    content.append(f'DATABASE_n=$(printf "%04.0f" $(($(($SLURM_ARRAY_TASK_ID + $SLURM_TASK_ID_OFFSET)) % {N})))\n')
     dest_db_dir = os.path.join(working_dir, 'db_' + '${DATABASE_n}')
     for rule_file in perturbed_kinetics_rules:
         # TODO convert array job id to rmg run i and database N
@@ -59,7 +68,7 @@ for i in range(0, M, N):
             raise OSError(f'Bad source rules.py file path {rule_file}')
         rule_file_dest = os.path.join(dest_db_dir, file_name_parts[1].replace('rules0000.py', 'rules.py'))
         content.append(f'cp "{rule_file_src}" "{rule_file_dest}"\n')
-        break
+        # break
     # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
     content.append('\n')
     
@@ -78,4 +87,3 @@ for i in range(0, M, N):
     jobfile.write_file()
     # copy the N sets of files to their respective databases - this should probably be part of the bash script
     
-    # Create the RMGfolder -- do this in bash
