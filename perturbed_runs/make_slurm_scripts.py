@@ -87,7 +87,7 @@ for i in range(0, M, N):
     content.append(f'echo "database.directory {dest_db_dir}/input/" > "{rmg_run_dir}/rmgrc"\n')
 
     # run RMG
-    content = ['# Run RMG\n']
+    content.append('# Run RMG\n')
     content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py {rmg_run_dir}/input.py\n')
 
     jobfile.content = content

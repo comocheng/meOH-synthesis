@@ -12,7 +12,8 @@ slurm_scripts = glob.glob(os.path.join(working_dir, "rmg_runs_*.sh"))
 print("Running job 0")
 
 rmg_job = job_manager.SlurmJob()
-my_cmd = f'sbatch "{slurm_scripts[0]}"'
+my_cmd = f'sbatch {slurm_scripts[0]}'
+print(my_cmd)
 rmg_job.submit(my_cmd)
 
 #practice_job.submit(my_cmd)
