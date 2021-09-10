@@ -58,7 +58,7 @@ for i in range(0, M, N):
     content.append('RUN_i=$(printf "%04.0f" $(($SLURM_ARRAY_TASK_ID + $SLURM_TASK_ID_OFFSET)))\n')
     
     content.append(f'DATABASE_n=$(printf "%04.0f" $(($(($SLURM_ARRAY_TASK_ID + $SLURM_TASK_ID_OFFSET)) % {N})))\n')
-    content = ['# Copy the files from the full database to the mostly symbolic one\n']
+    content.append('# Copy the files from the full database to the mostly symbolic one\n')
     
     dest_db_dir = os.path.join(working_dir, 'db_' + '${DATABASE_n}')
     for rule_file in perturbed_kinetics_rules:
@@ -75,7 +75,7 @@ for i in range(0, M, N):
     content.append('\n')
     
     # make the directory for the rmg run
-    content = ['# Prepare the directory for the RMG run\n']
+    content.append('# Prepare the directory for the RMG run\n')
     rmg_run_dir = os.path.join(working_dir, "run_${RUN_i}")
     content.append(f'mkdir "{rmg_run_dir}"\n')
     
