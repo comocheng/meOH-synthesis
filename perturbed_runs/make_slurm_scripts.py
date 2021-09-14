@@ -48,8 +48,9 @@ for i in range(0, M, N):
     jobfile = job_manager.SlurmJobFile(full_path=os.path.join(working_dir, fname))
     jobfile.settings['--array'] = f'{i - task_id_offset}-{last_index - task_id_offset}'
     jobfile.settings['--job-name'] = fname
-    jobfile.settings['--error'] = f'error{sbatch_index}.log'
-    jobfile.settings['--output'] = f'output{sbatch_index}.log'
+    jobfile.settings['--error'] = os.path.join(working_dir, f'error{sbatch_index}.log')
+    jobfile.settings['--output'] = os.path.join(working_dir, f'output{sbatch_index}.log')
+    jobfile.settings['--mem'] = f'20Gb'
 
     content = ['# Define useful bash variables\n']
 
@@ -88,7 +89,9 @@ for i in range(0, M, N):
 
     # run RMG
     content.append('# Run RMG\n')
-    content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py {rmg_run_dir}/input.py\n')
+    content.append(f'cd {rmg_run_dir} \n')
+    content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py input.py\n')
+    #content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py {rmg_run_dir}/input.py\n')
 
     jobfile.content = content
     jobfile.write_file()

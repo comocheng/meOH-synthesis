@@ -9,19 +9,16 @@ working_dir = "/scratch/westgroup/methanol/perturb_5000/"
 print("Collecting SLURM scripts")
 slurm_scripts = glob.glob(os.path.join(working_dir, "rmg_runs_*.sh"))
 
-print("Running job 0")
 
-rmg_job = job_manager.SlurmJob()
-my_cmd = f'sbatch {slurm_scripts[0]}'
-print(my_cmd)
-rmg_job.submit(my_cmd)
+for i, script in enumerate(slurm_scripts):
+    print(f"{i}/{len(slurm_scripts)}\tRunning job {script}")
 
-#practice_job.submit(my_cmd)
-#time.sleep(3)
-#if practice_job.completed():
-#    print("practice job has completed")
-#else:
-#    print(f'practice job is {practice_job.status}')
+    rmg_job = job_manager.SlurmJob()
+    my_cmd = f'sbatch {script}'
+    print(my_cmd)
+    rmg_job.submit(my_cmd)
 
-#print(slurm_scripts)
+    # wait for job
+    rmg_job.wait()
+
 
