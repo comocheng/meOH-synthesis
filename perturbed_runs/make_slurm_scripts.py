@@ -69,7 +69,7 @@ for i in range(0, M, N):
         RMG_log = os.path.join(rmg_run_dir, 'RMG.log')
         content.append(f'completion_status=$(cat {RMG_log} | grep "$match_str")\n')
         content.append('if [ "$completion_status" == "$match_str" ];\n')
-        content.append('then echo "skipping completed run ${RUN_i}; exit 0\n')
+        content.append('then echo "skipping completed run ${RUN_i}"; exit 0\n')
         content.append('fi\n\n')
 
     content.append('# Copy the files from the full database to the mostly symbolic one\n')
