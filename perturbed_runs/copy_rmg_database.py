@@ -66,11 +66,13 @@ if not os.path.exists(database_src):
     raise OSError(f'Could not find source database {database_src}')
 
 start_time = time.time()
-N = 20
+N = 100
 for i in range(0, N):
     database_dest = "/scratch/westgroup/methanol/perturb_5000/db_" + str(i).zfill(4)
     if os.path.exists(database_dest):
-        raise OSError(f'Destination already exists: {database_dest}')
+        print(f"skipping {database_dest}")
+        continue
+        # raise OSError(f'Destination already exists: {database_dest}')
 
     copytree_sym(
         database_src,

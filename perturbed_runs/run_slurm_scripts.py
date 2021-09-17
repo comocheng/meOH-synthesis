@@ -19,6 +19,9 @@ for i, script in enumerate(slurm_scripts):
     rmg_job.submit(my_cmd)
 
     # wait for job
-    rmg_job.wait()
+    # rmg_job.wait()
+    rmg_job.wait_all()
+
+
 
 

@@ -10,6 +10,8 @@ import glob
 # WARNING - this will fail if M%N != 0
 
 
+skip_completed_runs = True  # set to false to overwrite RMG runs that completed
+
 working_dir = "/scratch/westgroup/methanol/perturb_5000/"
 # working_dir = "/home/moon/rmg/fake_rmg_runs/"
 if not os.path.exists(working_dir):
@@ -32,7 +34,7 @@ perturbed_kinetics_libs = glob.glob(os.path.join(reference_db, 'input', 'kinetic
 
 
 M = 5000  # total number of times to run RMG
-N = 20  # number of jobs to run at a time
+N = 50  # number of jobs to run at a time
 for i in range(0, M, N):
     sbatch_index = int(i / N)
     range_max = np.amin([i + N, M])
@@ -57,8 +59,19 @@ for i in range(0, M, N):
     
     content.append(f'SLURM_TASK_ID_OFFSET={task_id_offset}\n')
     content.append('RUN_i=$(printf "%04.0f" $(($SLURM_ARRAY_TASK_ID + $SLURM_TASK_ID_OFFSET)))\n')
+    rmg_run_dir = os.path.join(working_dir, "run_${RUN_i}")
     
     content.append(f'DATABASE_n=$(printf "%04.0f" $(($(($SLURM_ARRAY_TASK_ID + $SLURM_TASK_ID_OFFSET)) % {N})))\n')
+    
+    # skip if RMG already ran and not the force option
+    if skip_completed_runs:
+        content.append('match_str="MODEL GENERATION COMPLETED"\n')
+        RMG_log = os.path.join(rmg_run_dir, 'RMG.log')
+        content.append(f'completion_status=$(cat {RMG_log} | grep "$match_str")\n')
+        content.append('if [ "$completion_status" == "$match_str" ];\n')
+        content.append('then echo "skipping completed run ${RUN_i}; exit 0\n')
+        content.append('fi\n\n')
+
     content.append('# Copy the files from the full database to the mostly symbolic one\n')
     
     dest_db_dir = os.path.join(working_dir, 'db_' + '${DATABASE_n}')
@@ -77,7 +90,6 @@ for i in range(0, M, N):
     
     # make the directory for the rmg run
     content.append('# Prepare the directory for the RMG run\n')
-    rmg_run_dir = os.path.join(working_dir, "run_${RUN_i}")
     content.append(f'mkdir "{rmg_run_dir}"\n')
     
     # copy the RMG input file
@@ -90,6 +102,7 @@ for i in range(0, M, N):
     # run RMG
     content.append('# Run RMG\n')
     content.append(f'cd {rmg_run_dir} \n')
+    # content.append(f'if RMG_RUN COMPLETED {rmg_run_dir} \n')
     content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py input.py\n')
     #content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py {rmg_run_dir}/input.py\n')
 
