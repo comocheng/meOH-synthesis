@@ -8,6 +8,7 @@
 # keep grabow rates from training data
 # added bjarne's new abstraction families
 # removed bidentate families from recommended 
+# added H* + H2CO -> H2 + HCO* barrier and frequency (RMG-database branch sandia_rates)
 
 # Data sources
 database(
@@ -18,7 +19,7 @@ database(
         'thermo_DFT_CCSDTF12_BAC',
         'DFT_QCI_thermo'
         ],
-    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Methane/Deutschmann_Ni', 'Surface/CPOX_Pt/Deutschmann2006_adjusted'],
+    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Methane/Deutschmann_Ni', 'Surface/CPOX_Pt/Deutschmann2006_adjusted', 'Surface/Methane/sandia'],
     seedMechanisms = [],
     kineticsDepositories = ['training'],
     kineticsFamilies =['surface','default'],

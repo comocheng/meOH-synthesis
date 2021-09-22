@@ -1882,7 +1882,18 @@ family: Surface_Abstraction_Beta_double_vdW
 
 entry(
     index = 116,
-    label = "X + H2 <=> [H][H].[Pt]",
+    label = "H* + CH2O* <=> H2* + HCO*",
+    degeneracy = 1.0,
+    kinetics = SurfaceArrhenius(A=(1.59985e+17,'m^2/(mol*s)'), n=0, Ea=(1.537,'eV/molecule'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    longDesc = 
+"""
+Originally from reaction library: Surface/Methane/sandia
+""",
+)
+
+entry(
+    index = 117,
+    label = "X + H2 <=> H2*",
     degeneracy = 1.0,
     kinetics = StickingCoefficient(A=0.008, n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Adsorbate;VacantSite] for rate rule [H2;VacantSite]
     Euclidian distance = 2.0
@@ -1896,8 +1907,8 @@ family: Surface_Adsorption_vdW
 )
 
 entry(
-    index = 117,
-    label = "O* + [H][H].[Pt] <=> H* + OH*",
+    index = 118,
+    label = "O* + H2* <=> H* + OH*",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(4.78261e+20,'m^2/(mol*s)'), n=-0.1875, Ea=(155.55,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [AdsorbateVdW;*=O] for rate rule [H-H;*=O]
     Euclidian distance = 1.0
@@ -1913,8 +1924,8 @@ family: Surface_Abstraction_vdW
 )
 
 entry(
-    index = 118,
-    label = "OH* + [H][H].[Pt] <=> H* + H2O*",
+    index = 119,
+    label = "OH* + H2* <=> H* + H2O*",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Donating;Abstracting] for rate rule [H-H;*O-H]
     Euclidian distance = 2.23606797749979
@@ -1932,8 +1943,8 @@ Ea raised from -45.3 to 0.0 kJ/mol.
 )
 
 entry(
-    index = 119,
-    label = "[H][H].[Pt] + CO* <=> H* + HCO*",
+    index = 120,
+    label = "H2* + CO* <=> H* + HCO*",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(2.07394e+13,'m^2/(mol*s)'), n=0.936633, Ea=(121.703,'kJ/mol'), T0=(1,'K'), Tmin=(303.03,'K'), Tmax=(2000,'K'), comment="""Estimated using template [AdsorbateVdW;*=C=R] for rate rule [H-H;*=C=R]
     Euclidian distance = 1.0
@@ -1949,8 +1960,8 @@ family: Surface_Abstraction_vdW
 )
 
 entry(
-    index = 120,
-    label = "[H][H].[Pt] + CO2* <=> H* + HCOO*",
+    index = 121,
+    label = "H2* + CO2* <=> H* + HCOO*",
     degeneracy = 4.0,
     kinetics = SurfaceArrhenius(A=(1.35225e+10,'m^2/(mol*s)'), n=1.18055, Ea=(94.4517,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C=O;H-H]
     Euclidian distance = 3.1622776601683795
@@ -1966,8 +1977,8 @@ family: Surface_Dual_Adsorption_vdW
 )
 
 entry(
-    index = 121,
-    label = "[H][H].[Pt] + CO2* <=> H* + COOH*",
+    index = 122,
+    label = "H2* + CO2* <=> H* + COOH*",
     degeneracy = 4.0,
     kinetics = SurfaceArrhenius(A=(1.35225e+10,'m^2/(mol*s)'), n=1.18055, Ea=(94.4517,'kJ/mol'), T0=(1,'K'), Tmin=(303.03,'K'), Tmax=(2000,'K'), comment="""Estimated using template [CO2;Adsorbate2] for rate rule [CO2;H-H]
     Euclidian distance = 1.0
@@ -1983,8 +1994,8 @@ family: Surface_Dual_Adsorption_vdW
 )
 
 entry(
-    index = 122,
-    label = "[H][H].[Pt] + HCOO* <=> H* + HCOOH*",
+    index = 123,
+    label = "H2* + HCOO* <=> H* + HCOOH*",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Donating;Abstracting] for rate rule [H-H;*O]
     Euclidian distance = 1.4142135623730951
@@ -2002,8 +2013,8 @@ Ea raised from -19.8 to 0.0 kJ/mol.
 )
 
 entry(
-    index = 123,
-    label = "[H][H].[Pt] + COOH* <=> H* + HCOOH*",
+    index = 124,
+    label = "H2* + COOH* <=> H* + HCOOH*",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Donating;Abstracting] for rate rule [H-H;*C=R]
     Euclidian distance = 2.23606797749979
@@ -2021,27 +2032,8 @@ Ea raised from -27.0 to 0.0 kJ/mol.
 )
 
 entry(
-    index = 124,
-    label = "H* + CH2O* <=> [H][H].[Pt] + HCO*",
-    degeneracy = 2.0,
-    kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Donating;Abstracting] for rate rule [C-R;Abstracting]
-    Euclidian distance = 1.0
-    Multiplied by reaction path degeneracy 2.0
-    family: Surface_Abstraction_Single_vdW
-    Ea raised from -5.0 to 0.0 kJ/mol."""),
-    longDesc = 
-"""
-Estimated using template [Donating;Abstracting] for rate rule [C-R;Abstracting]
-Euclidian distance = 1.0
-Multiplied by reaction path degeneracy 2.0
-family: Surface_Abstraction_Single_vdW
-Ea raised from -5.0 to 0.0 kJ/mol.
-""",
-)
-
-entry(
     index = 125,
-    label = "[H][H].[Pt] + CH2O* <=> H* + CH3O*",
+    label = "H2* + CH2O* <=> H* + CH3O*",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(6.76127e+09,'m^2/(mol*s)'), n=1.18055, Ea=(94.4517,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;H-H]
     Euclidian distance = 2.23606797749979
@@ -2058,7 +2050,7 @@ family: Surface_Dual_Adsorption_vdW
 
 entry(
     index = 126,
-    label = "[H][H].[Pt] + HCOOH* <=> H* + CH3O2*",
+    label = "H2* + HCOOH* <=> H* + CH3O2*",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(6.76127e+09,'m^2/(mol*s)'), n=1.18055, Ea=(94.4517,'kJ/mol'), T0=(1,'K'), comment="""Estimated using template [Adsorbate1;Adsorbate2] for rate rule [O=C;H-H]
     Euclidian distance = 2.23606797749979
@@ -2075,7 +2067,7 @@ family: Surface_Dual_Adsorption_vdW
 
 entry(
     index = 127,
-    label = "[H][H].[Pt] + CH3O* <=> H* + CH3OH*",
+    label = "H2* + CH3O* <=> H* + CH3OH*",
     degeneracy = 2.0,
     kinetics = SurfaceArrhenius(A=(2e+13,'m^2/(mol*s)'), n=0, Ea=(0,'kJ/mol'), T0=(1,'K'), Tmin=(200,'K'), Tmax=(3000,'K'), comment="""Estimated using template [Donating;Abstracting] for rate rule [H-H;*O]
     Euclidian distance = 1.4142135623730951
