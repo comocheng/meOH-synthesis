@@ -47,7 +47,7 @@ for i in range(0, M, N):
     
     # Write the job file
     fname = f'rmg_runs_{i}-{last_index}.sh'
-    jobfile = job_manager.SlurmJobFile(full_path=os.path.join(working_dir, fname))
+    jobfile = job_manager.SlurmJobFile(full_path=os.path.join(working_dir, "rmg_run_scripts", fname))
     jobfile.settings['--array'] = f'{i - task_id_offset}-{last_index - task_id_offset}'
     jobfile.settings['--job-name'] = fname
     jobfile.settings['--error'] = os.path.join(working_dir, f'error{sbatch_index}.log')
