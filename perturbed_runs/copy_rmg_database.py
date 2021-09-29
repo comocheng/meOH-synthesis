@@ -66,7 +66,7 @@ if not os.path.exists(database_src):
     raise OSError(f'Could not find source database {database_src}')
 
 start_time = time.time()
-N = 100
+N = 50
 for i in range(0, N):
     database_dest = "/scratch/westgroup/methanol/perturb_5000/db_" + str(i).zfill(4)
     if os.path.exists(database_dest):
