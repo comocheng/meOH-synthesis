@@ -782,7 +782,7 @@ model(
     toleranceKeepInEdge=0.0,
     toleranceMoveToCore=0.01,
 # inturrupt tolerance was 0.1 wout pruning, 1e8 w pruning on
-    toleranceInterruptSimulation=1e-5,
+    toleranceInterruptSimulation=0.01,
     maximumEdgeSpecies=500000,
 # PRUNING: uncomment to prune
 #    minCoreSizeForPrune=50,
