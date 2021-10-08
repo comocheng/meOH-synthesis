@@ -31,6 +31,7 @@ if not os.path.exists(reference_input):
 perturbed_kinetics_rules = glob.glob(os.path.join(reference_db, 'input', 'kinetics', 'families', '*/rules_0000.py'))
 perturbed_thermo = glob.glob(os.path.join(reference_db, 'input', 'thermo', 'libraries', '*_0000.py'))
 perturbed_kinetics_libs = glob.glob(os.path.join(reference_db, 'input', 'kinetics', 'libraries', '*_0000.py'))
+perturbed_thermo_groups = glob.glob(os.path.join(reference_db, 'input', 'thermo', 'groups', '*_0000.py'))
 
 
 M = 5000  # total number of times to run RMG
@@ -88,6 +89,19 @@ for i in range(0, M, N):
     # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
     content.append('\n')
     
+    
+    for group_file in perturbed_thermo_groups:
+        group_file_src = group_file.replace('adsorptionPt111_0000.py', 'rules_${RUN_i}.py')
+        file_name_parts = group_file.split('RMG-database/')
+        if len(file_name_parts) != 2:
+            raise OSError(f'Bad source adsorptionPt111_XXXX.py file path {group_file}')
+        group_file_dest = os.path.join(dest_db_dir, file_name_parts[1].replace('adsorptionPt111_0000.py', 'adsorptionPt111.py'))
+        content.append(f'cp "{group_file_src}" "{group_file_dest}"\n')
+        # break
+    # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
+    content.append('\n')
+    
+
     # make the directory for the rmg run
     content.append('# Prepare the directory for the RMG run\n')
     content.append(f'mkdir "{rmg_run_dir}"\n')
