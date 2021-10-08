@@ -91,7 +91,7 @@ for i in range(0, M, N):
     
     
     for group_file in perturbed_thermo_groups:
-        group_file_src = group_file.replace('adsorptionPt111_0000.py', 'rules_${RUN_i}.py')
+        group_file_src = group_file.replace('adsorptionPt111_0000.py', 'adsorptionPt111_${RUN_i}.py')
         file_name_parts = group_file.split('RMG-database/')
         if len(file_name_parts) != 2:
             raise OSError(f'Bad source adsorptionPt111_XXXX.py file path {group_file}')
