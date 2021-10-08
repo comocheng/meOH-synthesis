@@ -13,7 +13,7 @@ from rmgpy.molecule import Molecule
 from rmgpy.data.thermo import ThermoDatabase
 from rmgpy import constants
 from tqdm import tqdm  # this is for the progress bar cause copying stuff takes a while
-
+import numpy as np
 
 # WARNING - right now you need to copy this to /scratch/westgroup/methanol/perturb_5000/RMG-Py and run from there
 
@@ -25,6 +25,7 @@ DELTA_E0_MAX_J_MOL = 30000  # 3 eV is about 30000 J/mol
 
 # Define the number of perturbations to run
 N = 5
+
 
 # Create the pseudo randoms
 sobol = SobolEngine(dimension=80, scramble=True, seed=100)
@@ -142,9 +143,10 @@ if len(thermo_groups_to_perturb) > 0:
     for group_name in thermo_groups_to_perturb:
         for group_entry_name in thermo_database.groups[group_name].entries:
             if thermo_database.groups[group_name].entries[group_entry_name].data:
-                label = f'{group_name}/{group_entry_name}/E0'
-                sobol_map[label] = sobol_col_index
-                sobol_col_index += 1
+                if type(thermo_database.groups[group_name].entries[group_entry_name].data) is not str:
+                    label = f'{group_name}/{group_entry_name}/E0'
+                    sobol_map[label] = sobol_col_index
+                    sobol_col_index += 1
 
 
 # Perturb the values in the kinetics library
@@ -249,26 +251,16 @@ if len(thermo_groups_to_perturb) > 0:
             for group_entry_name in thermo_database.groups[group_name].entries:
                 if not thermo_database.groups[group_name].entries[group_entry_name].data:
                     continue  # only perturb thermo group entries that have thermo data
+                if type(thermo_database.groups[group_name].entries[group_entry_name].data) is str:
+                    continue
                 thermo_group_entry = thermo_database.groups[group_name].entries[group_entry_name]
                 thermo_group_entry_ref = copy.deepcopy(thermo_group_entry)
                 sobol_key = f'{group_name}/{group_entry_name}/E0'
                 sobol_col_index = sobol_map[sobol_key]
 
                 delta_E0 = DELTA_E0_MAX_J_MOL - 2.0 * x_sobol[i, sobol_col_index] * DELTA_E0_MAX_J_MOL
+                H298_ref = thermo_group_entry_ref.data.H298.value_si
+                H298_perturbed = H298_ref + delta_E0
+                thermo_group_entry.data.H298.value_si = H298_perturbed
 
-                # Perturb the E0 value, which is a5 in the NASA polymial
-                if thermo_group_entry.data.poly1 is not None:
-                    E0_ref = thermo_group_entry_ref.data.poly1.c5
-                    # E0_perturbed = E0_ref + delta_E0 / (constants.R / 1000.0)  # 8.314e-3
-                    E0_perturbed = E0_ref + delta_E0 / constants.R  # 8.314
-                    thermo_group_entry.data.poly1.c5 = E0_perturbed
-                if thermo_group_entry.data.poly2 is not None:
-                    E0_ref = thermo_group_entry_ref.data.poly2.c5
-                    E0_perturbed = E0_ref + delta_E0 / constants.R  # 8.314
-                    thermo_group_entry.data.poly2.c5 = E0_perturbed
-                if thermo_group_entry.data.poly3 is not None:
-                    E0_ref = thermo_group_entry_ref.data.poly3.c5
-                    E0_perturbed = E0_ref + delta_E0 / constants.R  # 8.314
-                    thermo_group_entry.data.poly3.c5 = E0_perturbed
-
-            thermo_lib.save(os.path.join(library_path, 'groups', group_name + '_' + str(i).zfill(4) + '.py'))
+            thermo_database.groups[group_name].save(os.path.join(library_path, 'groups', group_name + '_' + str(i).zfill(4) + '.py'))
