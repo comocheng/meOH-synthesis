@@ -245,7 +245,6 @@ if len(thermo_libraries) > 0:
 
 if len(thermo_groups_to_perturb) > 0:
     print("generating thermo group files")
-    thermo_database.groups[group_name].entries[group_entry_name].data
     for i in tqdm(range(0, N)):
         for group_name in thermo_groups_to_perturb:
             for group_entry_name in thermo_database.groups[group_name].entries:
