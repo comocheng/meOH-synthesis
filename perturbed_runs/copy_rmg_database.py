@@ -88,6 +88,7 @@ for i in range(0, N):
             'rules_[0-9][0-9][0-9][0-9].py',
             'reactions_[0-9][0-9][0-9][0-9].py',
             'surfaceThermoPt111_[0-9][0-9][0-9][0-9].py',
+            'adsorptionPt111_[0-9][0-9][0-9][0-9].py',
         ),
         # TODO see if you can delete this hardcopy option - I think it may be unnecessary
         # only hard copy one of these 
@@ -95,6 +96,7 @@ for i in range(0, N):
             'rules.py',
             'reactions.py',
             'surfaceThermoPt111.py',
+            'adsorptionPt111.py'
             #'rules_0000.py',
             #'reactions_0000.py',
             #'surfaceThermoPt111_0000.py',
