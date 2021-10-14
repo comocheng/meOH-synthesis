@@ -1,0 +1,2676 @@
+---
+reactions:
+  - index: 1
+    reaction: X(1) + X(1) + H2(2) <=> H*(10) + H*(10)
+    reaction_family: Surface/Methane/Deutschmann_Ni
+
+  - index: 2
+    reaction: X(1) + OH*(12) <=> O*(11) + H*(10)
+    reaction_family: Surface/CPOX_Pt/Deutschmann2006_adjusted
+
+  - index: 3
+    reaction: X(1) + H2O(5) <=> H2O*(13)
+    reaction_family: Surface/CPOX_Pt/Deutschmann2006_adjusted
+
+  - index: 4
+    reaction: X(1) + H2O*(13) <=> H*(10) + OH*(12)
+    reaction_family: Surface/CPOX_Pt/Deutschmann2006_adjusted
+
+  - index: 5
+    reaction: O*(11) + H2O*(13) <=> OH*(12) + OH*(12)
+    reaction_family: Surface/CPOX_Pt/Deutschmann2006_adjusted
+
+  - index: 6
+    reaction: X(1) + CO(3) <=> CO*(14)
+    reaction_family: Surface/Methane/Deutschmann_Ni
+
+  - index: 7
+    reaction: X(1) + CO2(4) <=> CO2*(15)
+    reaction_family: Surface/CPOX_Pt/Deutschmann2006_adjusted
+
+  - index: 8
+    reaction: O*(11) + CO*(14) <=> X(1) + CO2*(15)
+    reaction_family: Surface/CPOX_Pt/Deutschmann2006_adjusted
+
+  - index: 9
+    reaction: OH*(12) + CO*(14) <=> H*(10) + CO2*(15)
+    reaction_family: Surface/CPOX_Pt/Deutschmann2006_adjusted
+
+  - index: 10
+    reaction: OH*(12) + HCO*(16) <=> H*(10) + COOH*(18)
+    reaction_family: Surface/Methane/Deutschmann_Ni
+
+  - index: 11
+    reaction: H2(2) + CO(3) <=> CH2O(6)
+    reaction_family: 1,2_Insertion_CO
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *1 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 *2 H u0 p0 c0 {2,S}
+        4 *3 H u0 p0 c0 {2,S}
+    product: |
+        1 *4 O u0 p1 c+1 {2,T}
+        2 *1 C u0 p1 c-1 {1,T}
+        3 *2 H u0 p0 c0 {4,S}
+        4 *3 H u0 p0 c0 {3,S}
+
+  - index: 12
+    reaction: H2O(5) + CO(3) <=> HCOOH(7)
+    reaction_family: 1,2_Insertion_CO
+    reactant: |
+        1 *2 O u0 p2 c0 {3,S} {5,S}
+        2 *4 O u0 p2 c0 {3,D}
+        3 *1 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4 *3 H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {1,S}
+    product: |
+        1 *2 O u0 p2 c0 {4,S} {5,S}
+        2 *4 O u0 p1 c+1 {3,T}
+        3 *1 C u0 p1 c-1 {2,T}
+        4 *3 H u0 p0 c0 {1,S}
+        5    H u0 p0 c0 {1,S}
+
+  - index: 13
+    reaction: H2(2) + CO2(4) <=> HCOOH(7)
+    reaction_family: 1,3_Insertion_CO2
+    reactant: |
+        1 *1 O u0 p2 c0 {3,S} {5,S}
+        2    O u0 p2 c0 {3,D}
+        3 *2 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4 *4 H u0 p0 c0 {3,S}
+        5 *3 H u0 p0 c0 {1,S}
+    product: |
+        1 *1 O u0 p2 c0 {3,D}
+        2    O u0 p2 c0 {3,D}
+        3 *2 C u0 p0 c0 {1,D} {2,D}
+        4 *4 H u0 p0 c0 {5,S}
+        5 *3 H u0 p0 c0 {4,S}
+
+  - index: 14
+    reaction: CO(3) + CH3OH(8) <=> HCOOCH3(9)
+    reaction_family: 1,2_Insertion_CO
+    reactant: |
+        1 *2 O u0 p2 c0 {3,S} {4,S}
+        2 *4 O u0 p2 c0 {4,D}
+        3    C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+        4 *1 C u0 p0 c0 {1,S} {2,D} {8,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {3,S}
+        7    H u0 p0 c0 {3,S}
+        8 *3 H u0 p0 c0 {4,S}
+    product: |
+        1 *2 O u0 p2 c0 {3,S} {8,S}
+        2 *4 O u0 p1 c+1 {4,T}
+        3    C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+        4 *1 C u0 p1 c-1 {2,T}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {3,S}
+        7    H u0 p0 c0 {3,S}
+        8 *3 H u0 p0 c0 {1,S}
+
+  - index: 15
+    reaction: CO2(4) + CH4(24) <=> HCOOCH3(9)
+    reaction_family: 1,3_Insertion_CO2
+    reactant: |
+        1 *1 O u0 p2 c0 {3,S} {4,S}
+        2    O u0 p2 c0 {4,D}
+        3 *3 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+        4 *2 C u0 p0 c0 {1,S} {2,D} {8,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {3,S}
+        7    H u0 p0 c0 {3,S}
+        8 *4 H u0 p0 c0 {4,S}
+    product: |
+        1 *1 O u0 p2 c0 {4,D}
+        2    O u0 p2 c0 {4,D}
+        3 *3 C u0 p0 c0 {5,S} {6,S} {7,S} {8,S}
+        4 *2 C u0 p0 c0 {1,D} {2,D}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {3,S}
+        7    H u0 p0 c0 {3,S}
+        8 *4 H u0 p0 c0 {3,S}
+
+  - index: 16
+    reaction: H*(10) + CO2(4) <=> HCOO*(17)
+    reaction_family: Surface_EleyRideal_Addition_Multiple_Bond
+    reactant: |
+        1 *3 O u0 p2 c0 {3,S} {5,S}
+        2    O u0 p2 c0 {3,D}
+        3 *4 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4 *2 H u0 p0 c0 {3,S}
+        5 *1 X u0 p0 c0 {1,S}
+    product: |
+        1 *3 O u0 p2 c0 {3,D}
+        2    O u0 p2 c0 {3,D}
+        3 *4 C u0 p0 c0 {1,D} {2,D}
+        4 *2 H u0 p0 c0 {5,S}
+        5 *1 X u0 p0 c0 {4,S}
+
+  - index: 17
+    reaction: HCOO*(17) <=> COOH*(18)
+    reaction_family: Surface_Migration
+    reactant: |
+        1 *2 O u0 p2 c0 {3,S} {5,S}
+        2    O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4 *4 H u0 p0 c0 {3,S}
+        5 *1 X u0 p0 c0 {1,S}
+    product: |
+        1 *2 O u0 p2 c0 {3,S} {4,S}
+        2    O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4 *4 H u0 p0 c0 {1,S}
+        5 *1 X u0 p0 c0 {3,S}
+
+  - index: 18
+    reaction: H*(10) + CO2(4) <=> COOH*(18)
+    reaction_family: Surface_EleyRideal_Addition_Multiple_Bond
+    reactant: |
+        1 *4 O u0 p2 c0 {3,S} {4,S}
+        2    O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4 *2 H u0 p0 c0 {1,S}
+        5 *1 X u0 p0 c0 {3,S}
+    product: |
+        1 *4 O u0 p2 c0 {3,D}
+        2    O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {1,D} {2,D}
+        4 *2 H u0 p0 c0 {5,S}
+        5 *1 X u0 p0 c0 {4,S}
+
+  - index: 19
+    reaction: X(1) + HCOOH(7) <=> HCOOH*(19)
+    reaction_family: Surface_Adsorption_vdW
+    reactant: |
+        1 *1 O u0 p2 c0 {3,S} {5,S}
+        2    O u0 p2 c0 {3,D}
+        3    C u0 p0 c0 {1,S} {2,D} {4,S}
+        4    H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {1,S}
+        6 *2 X u0 p0 c0
+    product: |
+        1 *1 O u0 p2 c0 {3,S} {5,S}
+        2    O u0 p2 c0 {3,D}
+        3    C u0 p0 c0 {1,S} {2,D} {4,S}
+        4    H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {1,S}
+        6 *2 X u0 p0 c0
+
+  - index: 20
+    reaction: X(1) + CH2O(6) <=> CH2O*(20)
+    reaction_family: Surface_Adsorption_vdW
+    reactant: |
+        1 *1 O u0 p2 c0 {2,D}
+        2    C u0 p0 c0 {1,D} {3,S} {4,S}
+        3    H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5 *2 X u0 p0 c0
+    product: |
+        1 *1 O u0 p2 c0 {2,D}
+        2    C u0 p0 c0 {1,D} {3,S} {4,S}
+        3    H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5 *2 X u0 p0 c0
+
+  - index: 21
+    reaction: H*(10) + CH2O(6) <=> CH3O*(21)
+    reaction_family: Surface_EleyRideal_Addition_Multiple_Bond
+    reactant: |
+        1 *3 O u0 p2 c0 {2,S} {6,S}
+        2 *4 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3 *2 H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5    H u0 p0 c0 {2,S}
+        6 *1 X u0 p0 c0 {1,S}
+    product: |
+        1 *3 O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {4,S} {5,S}
+        3 *2 H u0 p0 c0 {6,S}
+        4    H u0 p0 c0 {2,S}
+        5    H u0 p0 c0 {2,S}
+        6 *1 X u0 p0 c0 {3,S}
+
+  - index: 22
+    reaction: OH*(12) + CH2O(6) <=> CH3O2*(22)
+    reaction_family: Surface_EleyRideal_Addition_Multiple_Bond
+    reactant: |
+        1 *2 O u0 p2 c0 {3,S} {6,S}
+        2 *3 O u0 p2 c0 {3,S} {7,S}
+        3 *4 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
+        4    H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0 {2,S}
+    product: |
+        1 *2 O u0 p2 c0 {6,S} {7,S}
+        2 *3 O u0 p2 c0 {3,D}
+        3 *4 C u0 p0 c0 {2,D} {4,S} {5,S}
+        4    H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0 {1,S}
+
+  - index: 23
+    reaction: H*(10) + HCOOH(7) <=> CH3O2*(22)
+    reaction_family: Surface_EleyRideal_Addition_Multiple_Bond
+    reactant: |
+        1    O u0 p2 c0 {3,S} {6,S}
+        2 *3 O u0 p2 c0 {3,S} {7,S}
+        3 *4 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
+        4 *2 H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0 {2,S}
+    product: |
+        1    O u0 p2 c0 {3,S} {6,S}
+        2 *3 O u0 p2 c0 {3,D}
+        3 *4 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4 *2 H u0 p0 c0 {7,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0 {4,S}
+
+  - index: 24
+    reaction: X(1) + CH3OH(8) <=> CH3OH*(23)
+    reaction_family: Surface_Adsorption_vdW
+    reactant: |
+        1 *1 O u0 p2 c0 {2,S} {6,S}
+        2    C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3    H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5    H u0 p0 c0 {2,S}
+        6    H u0 p0 c0 {1,S}
+        7 *2 X u0 p0 c0
+    product: |
+        1 *1 O u0 p2 c0 {2,S} {6,S}
+        2    C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3    H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5    H u0 p0 c0 {2,S}
+        6    H u0 p0 c0 {1,S}
+        7 *2 X u0 p0 c0
+
+  - index: 25
+    reaction: X(1) + X(1) + CO2(4) <=> O*(11) + CO*(14)
+    reaction_family: Surface_Adsorption_Dissociative_Double
+    reactant: |
+        1 *1 X u0 p0 c0
+        2 *4 X u0 p0 c0
+        3 *2 O u0 p2 c0 {5,D}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,D} {4,D}
+    product: |
+        1 *1 X u0 p0 c0 {3,D}
+        2 *4 X u0 p0 c0 {5,D}
+        3 *2 O u0 p2 c0 {1,D}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {2,D} {4,D}
+
+  - index: 26
+    reaction: X(1) + X(1) + H2O(5) <=> H*(10) + OH*(12)
+    reaction_family: Surface_Adsorption_Dissociative
+    reactant: |
+        1 *3 X u0 p0 c0
+        2 *4 X u0 p0 c0
+        3 *1 O u0 p2 c0 {4,S} {5,S}
+        4 *2 H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+    product: |
+        1 *3 X u0 p0 c0 {3,S}
+        2 *4 X u0 p0 c0 {4,S}
+        3 *1 O u0 p2 c0 {1,S} {5,S}
+        4 *2 H u0 p0 c0 {2,S}
+        5    H u0 p0 c0 {3,S}
+
+  - index: 27
+    reaction: X(1) + X(1) + CH2O(6) <=> H*(10) + HCO*(16)
+    reaction_family: Surface_Adsorption_Dissociative
+    reactant: |
+        1 *3 X u0 p0 c0
+        2 *4 X u0 p0 c0
+        3    O u0 p2 c0 {4,D}
+        4 *1 C u0 p0 c0 {3,D} {5,S} {6,S}
+        5 *2 H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+    product: |
+        1 *3 X u0 p0 c0 {4,S}
+        2 *4 X u0 p0 c0 {5,S}
+        3    O u0 p2 c0 {4,D}
+        4 *1 C u0 p0 c0 {1,S} {3,D} {6,S}
+        5 *2 H u0 p0 c0 {2,S}
+        6    H u0 p0 c0 {4,S}
+
+  - index: 28
+    reaction: X(1) + X(1) + HCOOH(7) <=> OH*(12) + HCO*(16)
+    reaction_family: Surface_Adsorption_Dissociative
+    reactant: |
+        1 *3 X u0 p0 c0
+        2 *4 X u0 p0 c0
+        3 *1 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+    product: |
+        1 *3 X u0 p0 c0 {3,S}
+        2 *4 X u0 p0 c0 {5,S}
+        3 *1 O u0 p2 c0 {1,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {2,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+
+  - index: 29
+    reaction: X(1) + X(1) + HCOOH(7) <=> H*(10) + HCOO*(17)
+    reaction_family: Surface_Adsorption_Dissociative
+    reactant: |
+        1 *3 X u0 p0 c0
+        2 *4 X u0 p0 c0
+        3 *1 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5    C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7 *2 H u0 p0 c0 {3,S}
+    product: |
+        1 *3 X u0 p0 c0 {3,S}
+        2 *4 X u0 p0 c0 {7,S}
+        3 *1 O u0 p2 c0 {1,S} {5,S}
+        4    O u0 p2 c0 {5,D}
+        5    C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7 *2 H u0 p0 c0 {2,S}
+
+  - index: 30
+    reaction: X(1) + X(1) + HCOOH(7) <=> H*(10) + COOH*(18)
+    reaction_family: Surface_Adsorption_Dissociative
+    reactant: |
+        1 *3 X u0 p0 c0
+        2 *4 X u0 p0 c0
+        3    O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *1 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6 *2 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+    product: |
+        1 *3 X u0 p0 c0 {5,S}
+        2 *4 X u0 p0 c0 {6,S}
+        3    O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *1 C u0 p0 c0 {1,S} {3,S} {4,D}
+        6 *2 H u0 p0 c0 {2,S}
+        7    H u0 p0 c0 {3,S}
+
+  - index: 31
+    reaction: X(1) + X(1) + CH3OH(8) <=> H*(10) + CH3O*(21)
+    reaction_family: Surface_Adsorption_Dissociative
+    reactant: |
+        1 *3 X u0 p0 c0
+        2 *4 X u0 p0 c0
+        3 *1 O u0 p2 c0 {4,S} {8,S}
+        4    C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *2 H u0 p0 c0 {3,S}
+    product: |
+        1 *3 X u0 p0 c0 {3,S}
+        2 *4 X u0 p0 c0 {8,S}
+        3 *1 O u0 p2 c0 {1,S} {4,S}
+        4    C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *2 H u0 p0 c0 {2,S}
+
+  - index: 32
+    reaction: X(1) + X(1) + HCOOCH3(9) <=> HCO*(16) + CH3O*(21)
+    reaction_family: Surface_Adsorption_Dissociative
+    reactant: |
+        1  *3 X u0 p0 c0
+        2  *4 X u0 p0 c0
+        3  *1 O u0 p2 c0 {5,S} {6,S}
+        4     O u0 p2 c0 {6,D}
+        5     C u0 p0 c0 {3,S} {7,S} {8,S} {9,S}
+        6  *2 C u0 p0 c0 {3,S} {4,D} {10,S}
+        7     H u0 p0 c0 {5,S}
+        8     H u0 p0 c0 {5,S}
+        9     H u0 p0 c0 {5,S}
+        10    H u0 p0 c0 {6,S}
+    product: |
+        1  *3 X u0 p0 c0 {3,S}
+        2  *4 X u0 p0 c0 {6,S}
+        3  *1 O u0 p2 c0 {1,S} {5,S}
+        4     O u0 p2 c0 {6,D}
+        5     C u0 p0 c0 {3,S} {7,S} {8,S} {9,S}
+        6  *2 C u0 p0 c0 {2,S} {4,D} {10,S}
+        7     H u0 p0 c0 {5,S}
+        8     H u0 p0 c0 {5,S}
+        9     H u0 p0 c0 {5,S}
+        10    H u0 p0 c0 {6,S}
+
+  - index: 33
+    reaction: H*(10) + CO*(14) <=> X(1) + HCO*(16)
+    reaction_family: Surface_Dissociation
+    reactant: |
+        1 *4 X u0 p0 c0
+        2    O u0 p2 c0 {3,D}
+        3 *1 C u0 p0 c0 {2,D} {4,S} {5,S}
+        4 *2 H u0 p0 c0 {3,S}
+        5 *3 X u0 p0 c0 {3,S}
+    product: |
+        1 *4 X u0 p0 c0 {4,S}
+        2    O u0 p2 c0 {3,D}
+        3 *1 C u0 p0 c0 {2,D} {5,D}
+        4 *2 H u0 p0 c0 {1,S}
+        5 *3 X u0 p0 c0 {3,D}
+
+  - index: 34
+    reaction: H*(10) + CO2*(15) <=> X(1) + HCOO*(17)
+    reaction_family: Surface_Addition_Single_vdW
+    reactant: |
+        1 *5 X u0 p0 c0
+        2 *2 O u0 p2 c0 {4,S} {6,S}
+        3    O u0 p2 c0 {4,D}
+        4 *3 C u0 p0 c0 {2,S} {3,D} {5,S}
+        5 *4 H u0 p0 c0 {4,S}
+        6 *1 X u0 p0 c0 {2,S}
+    product: |
+        1 *5 X u0 p0 c0 {5,S}
+        2 *2 O u0 p2 c0 {4,D}
+        3    O u0 p2 c0 {4,D}
+        4 *3 C u0 p0 c0 {2,D} {3,D}
+        5 *4 H u0 p0 c0 {1,S}
+        6 *1 X u0 p0 c0
+
+  - index: 35
+    reaction: X(1) + HCOO*(17) <=> O*(11) + HCO*(16)
+    reaction_family: Surface_Dissociation
+    reactant: |
+        1 *4 X u0 p0 c0
+        2 *1 O u0 p2 c0 {4,S} {6,S}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {2,S} {3,D} {5,S}
+        5    H u0 p0 c0 {4,S}
+        6 *3 X u0 p0 c0 {2,S}
+    product: |
+        1 *4 X u0 p0 c0 {4,S}
+        2 *1 O u0 p2 c0 {6,D}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {1,S} {3,D} {5,S}
+        5    H u0 p0 c0 {4,S}
+        6 *3 X u0 p0 c0 {2,D}
+
+  - index: 36
+    reaction: H*(10) + CO2*(15) <=> X(1) + COOH*(18)
+    reaction_family: Surface_Addition_Single_vdW
+    reactant: |
+        1 *5 X u0 p0 c0
+        2 *3 O u0 p2 c0 {4,S} {5,S}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {2,S} {3,D} {6,S}
+        5 *4 H u0 p0 c0 {2,S}
+        6 *1 X u0 p0 c0 {4,S}
+    product: |
+        1 *5 X u0 p0 c0 {5,S}
+        2 *3 O u0 p2 c0 {4,D}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {2,D} {3,D}
+        5 *4 H u0 p0 c0 {1,S}
+        6 *1 X u0 p0 c0
+
+  - index: 37
+    reaction: OH*(12) + CO*(14) <=> X(1) + COOH*(18)
+    reaction_family: Surface_Dissociation
+    reactant: |
+        1 *4 X u0 p0 c0
+        2 *2 O u0 p2 c0 {4,S} {5,S}
+        3    O u0 p2 c0 {4,D}
+        4 *1 C u0 p0 c0 {2,S} {3,D} {6,S}
+        5    H u0 p0 c0 {2,S}
+        6 *3 X u0 p0 c0 {4,S}
+    product: |
+        1 *4 X u0 p0 c0 {2,S}
+        2 *2 O u0 p2 c0 {1,S} {5,S}
+        3    O u0 p2 c0 {4,D}
+        4 *1 C u0 p0 c0 {3,D} {6,D}
+        5    H u0 p0 c0 {2,S}
+        6 *3 X u0 p0 c0 {4,D}
+
+  - index: 38
+    reaction: X(1) + HCOOH*(19) <=> OH*(12) + HCO*(16)
+    reaction_family: Surface_Dissociation_vdW
+    reactant: |
+        1 *4 X u0 p0 c0
+        2 *1 O u0 p2 c0 {4,S} {6,S}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {2,S} {3,D} {5,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {2,S}
+        7 *3 X u0 p0 c0
+    product: |
+        1 *4 X u0 p0 c0 {4,S}
+        2 *1 O u0 p2 c0 {6,S} {7,S}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {1,S} {3,D} {5,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {2,S}
+        7 *3 X u0 p0 c0 {2,S}
+
+  - index: 39
+    reaction: H*(10) + HCOO*(17) <=> X(1) + HCOOH*(19)
+    reaction_family: Surface_Dissociation_vdW
+    reactant: |
+        1 *4 X u0 p0 c0
+        2 *1 O u0 p2 c0 {4,S} {6,S}
+        3    O u0 p2 c0 {4,D}
+        4    C u0 p0 c0 {2,S} {3,D} {5,S}
+        5    H u0 p0 c0 {4,S}
+        6 *2 H u0 p0 c0 {2,S}
+        7 *3 X u0 p0 c0
+    product: |
+        1 *4 X u0 p0 c0 {6,S}
+        2 *1 O u0 p2 c0 {4,S} {7,S}
+        3    O u0 p2 c0 {4,D}
+        4    C u0 p0 c0 {2,S} {3,D} {5,S}
+        5    H u0 p0 c0 {4,S}
+        6 *2 H u0 p0 c0 {1,S}
+        7 *3 X u0 p0 c0 {2,S}
+
+  - index: 40
+    reaction: H*(10) + COOH*(18) <=> X(1) + HCOOH*(19)
+    reaction_family: Surface_Dissociation_vdW
+    reactant: |
+        1 *4 X u0 p0 c0
+        2    O u0 p2 c0 {4,S} {6,S}
+        3    O u0 p2 c0 {4,D}
+        4 *1 C u0 p0 c0 {2,S} {3,D} {5,S}
+        5 *2 H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {2,S}
+        7 *3 X u0 p0 c0
+    product: |
+        1 *4 X u0 p0 c0 {5,S}
+        2    O u0 p2 c0 {4,S} {6,S}
+        3    O u0 p2 c0 {4,D}
+        4 *1 C u0 p0 c0 {2,S} {3,D} {7,S}
+        5 *2 H u0 p0 c0 {1,S}
+        6    H u0 p0 c0 {2,S}
+        7 *3 X u0 p0 c0 {4,S}
+
+  - index: 41
+    reaction: H*(10) + HCO*(16) <=> X(1) + CH2O*(20)
+    reaction_family: Surface_Dissociation_vdW
+    reactant: |
+        1 *4 X u0 p0 c0
+        2    O u0 p2 c0 {3,D}
+        3 *1 C u0 p0 c0 {2,D} {4,S} {5,S}
+        4 *2 H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6 *3 X u0 p0 c0
+    product: |
+        1 *4 X u0 p0 c0 {4,S}
+        2    O u0 p2 c0 {3,D}
+        3 *1 C u0 p0 c0 {2,D} {5,S} {6,S}
+        4 *2 H u0 p0 c0 {1,S}
+        5    H u0 p0 c0 {3,S}
+        6 *3 X u0 p0 c0 {3,S}
+
+  - index: 42
+    reaction: H*(10) + CH2O*(20) <=> X(1) + CH3O*(21)
+    reaction_family: Surface_Addition_Single_vdW
+    reactant: |
+        1 *5 X u0 p0 c0
+        2 *2 O u0 p2 c0 {3,S} {7,S}
+        3 *3 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
+        4 *4 H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {3,S}
+        7 *1 X u0 p0 c0 {2,S}
+    product: |
+        1 *5 X u0 p0 c0 {4,S}
+        2 *2 O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {2,D} {5,S} {6,S}
+        4 *4 H u0 p0 c0 {1,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {3,S}
+        7 *1 X u0 p0 c0
+
+  - index: 43
+    reaction: OH*(12) + CH2O*(20) <=> X(1) + CH3O2*(22)
+    reaction_family: Surface_Addition_Single_vdW
+    reactant: |
+        1 *5 X u0 p0 c0
+        2 *4 O u0 p2 c0 {4,S} {7,S}
+        3 *2 O u0 p2 c0 {4,S} {8,S}
+        4 *3 C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {2,S}
+        8 *1 X u0 p0 c0 {3,S}
+    product: |
+        1 *5 X u0 p0 c0 {2,S}
+        2 *4 O u0 p2 c0 {1,S} {7,S}
+        3 *2 O u0 p2 c0 {4,D}
+        4 *3 C u0 p0 c0 {3,D} {5,S} {6,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {2,S}
+        8 *1 X u0 p0 c0
+
+  - index: 44
+    reaction: H*(10) + HCOOH*(19) <=> X(1) + CH3O2*(22)
+    reaction_family: Surface_Addition_Single_vdW
+    reactant: |
+        1 *5 X u0 p0 c0
+        2    O u0 p2 c0 {4,S} {7,S}
+        3 *2 O u0 p2 c0 {4,S} {8,S}
+        4 *3 C u0 p0 c0 {2,S} {3,S} {5,S} {6,S}
+        5 *4 H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {2,S}
+        8 *1 X u0 p0 c0 {3,S}
+    product: |
+        1 *5 X u0 p0 c0 {5,S}
+        2    O u0 p2 c0 {4,S} {7,S}
+        3 *2 O u0 p2 c0 {4,D}
+        4 *3 C u0 p0 c0 {2,S} {3,D} {6,S}
+        5 *4 H u0 p0 c0 {1,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {2,S}
+        8 *1 X u0 p0 c0
+
+  - index: 45
+    reaction: H*(10) + CH3O*(21) <=> X(1) + CH3OH*(23)
+    reaction_family: Surface_Dissociation_vdW
+    reactant: |
+        1 *4 X u0 p0 c0
+        2 *1 O u0 p2 c0 {3,S} {7,S}
+        3    C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
+        4    H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {3,S}
+        7 *2 H u0 p0 c0 {2,S}
+        8 *3 X u0 p0 c0
+    product: |
+        1 *4 X u0 p0 c0 {7,S}
+        2 *1 O u0 p2 c0 {3,S} {8,S}
+        3    C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
+        4    H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {3,S}
+        7 *2 H u0 p0 c0 {1,S}
+        8 *3 X u0 p0 c0 {2,S}
+
+  - index: 46
+    reaction: H2(2) + CO2(4) <=> HCOOH(7)
+    reaction_family: 1,3_Insertion_CO2
+    reactant: |
+        1 *3 H u0 p0 c0 {2,S}
+        2 *4 H u0 p0 c0 {1,S}
+        3 *1 O u0 p2 c0 {5,D}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,D} {4,D}
+    product: |
+        1 *3 H u0 p0 c0 {3,S}
+        2 *4 H u0 p0 c0 {5,S}
+        3 *1 O u0 p2 c0 {1,S} {5,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {2,S} {3,S} {4,D}
+
+  - index: 47
+    reaction: H2(2) + CO2(4) <=> HCOOH(7)
+    reaction_family: 1,3_Insertion_CO2
+    reactant: |
+        1 *3 H u0 p0 c0 {2,S}
+        2 *4 H u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {5,D}
+        4    O u0 p2 c0 {5,D}
+        5 *1 C u0 p0 c0 {3,D} {4,D}
+    product: |
+        1 *3 H u0 p0 c0 {5,S}
+        2 *4 H u0 p0 c0 {3,S}
+        3 *2 O u0 p2 c0 {2,S} {5,S}
+        4    O u0 p2 c0 {5,D}
+        5 *1 C u0 p0 c0 {1,S} {3,S} {4,D}
+
+  - index: 48
+    reaction: O*(11) + CH2O*(20) <=> H*(10) + HCOO*(17)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {3,S} {5,S}
+        2    O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4    H u0 p0 c0 {3,S}
+        5 *5 X u0 p0 c0 {1,S}
+        6 *2 H u0 p0 c0 {7,S}
+        7 *1 X u0 p0 c0 {6,S}
+    product: |
+        1 *4 O u0 p2 c0 {5,D}
+        2    O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {2,D} {4,S} {6,S}
+        4    H u0 p0 c0 {3,S}
+        5 *5 X u0 p0 c0 {1,D}
+        6 *2 H u0 p0 c0 {3,S}
+        7 *1 X u0 p0 c0
+
+  - index: 49
+    reaction: H2O*(13) + CO*(14) <=> H*(10) + COOH*(18)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *3 O u0 p2 c0 {3,S} {4,S}
+        2    O u0 p2 c0 {3,D}
+        3 *4 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4    H u0 p0 c0 {1,S}
+        5 *5 X u0 p0 c0 {3,S}
+        6 *2 H u0 p0 c0 {7,S}
+        7 *1 X u0 p0 c0 {6,S}
+    product: |
+        1 *3 O u0 p2 c0 {4,S} {6,S}
+        2    O u0 p2 c0 {3,D}
+        3 *4 C u0 p0 c0 {2,D} {5,D}
+        4    H u0 p0 c0 {1,S}
+        5 *5 X u0 p0 c0 {3,D}
+        6 *2 H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0
+
+  - index: 50
+    reaction: OH*(12) + CH2O*(20) <=> H*(10) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1 *2 H u0 p0 c0 {5,S}
+        2 *1 X u0 p0 c0
+        3 *4 O u0 p2 c0 {7,S} {8,S}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {1,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+        8 *5 X u0 p0 c0 {3,S}
+
+  - index: 51
+    reaction: H*(10) + HCOOH*(19) <=> H2O*(13) + HCO*(16)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *3 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1 *2 H u0 p0 c0 {3,S}
+        2 *1 X u0 p0 c0
+        3 *3 O u0 p2 c0 {1,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *4 C u0 p0 c0 {4,D} {6,S} {8,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+        8 *5 X u0 p0 c0 {5,S}
+
+  - index: 52
+    reaction: O*(11) + CH3OH*(23) <=> H*(10) + CH3O2*(22)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {3,S} {6,S}
+        2 *4 O u0 p2 c0 {3,S} {7,S}
+        3 *3 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
+        4    H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {1,S}
+        7 *5 X u0 p0 c0 {2,S}
+        8 *2 H u0 p0 c0 {9,S}
+        9 *1 X u0 p0 c0 {8,S}
+    product: |
+        1    O u0 p2 c0 {3,S} {6,S}
+        2 *4 O u0 p2 c0 {7,D}
+        3 *3 C u0 p0 c0 {1,S} {4,S} {5,S} {8,S}
+        4    H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6    H u0 p0 c0 {1,S}
+        7 *5 X u0 p0 c0 {2,D}
+        8 *2 H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0
+
+  - index: 53
+    reaction: H2O*(13) + CH2O*(20) <=> H*(10) + CH3O2*(22)
+    reaction_family: Surface_Dual_Adsorption_vdW
+    reactant: |
+        1 *6 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *4 O u0 p2 c0 {5,S} {8,S}
+        4 *2 O u0 p2 c0 {5,S} {9,S}
+        5 *3 C u0 p0 c0 {3,S} {4,S} {6,S} {7,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0 {4,S}
+    product: |
+        1 *6 H u0 p0 c0 {3,S}
+        2 *5 X u0 p0 c0
+        3 *4 O u0 p2 c0 {1,S} {8,S}
+        4 *2 O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {4,D} {6,S} {7,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0
+
+  - index: 54
+    reaction: O*(11) + HCO*(16) <=> OH*(12) + CO*(14)
+    reaction_family: Surface_Abstraction
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *3 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 *4 H u0 p0 c0 {2,S}
+        4 *5 X u0 p0 c0 {2,S}
+        5 *1 O u0 p2 c0 {6,D}
+        6 *2 X u0 p0 c0 {5,D}
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *1 C u0 p0 c0 {1,D} {4,D}
+        3 *4 H u0 p0 c0 {5,S}
+        4 *2 X u0 p0 c0 {2,D}
+        5 *3 O u0 p2 c0 {3,S} {6,S}
+        6 *5 X u0 p0 c0 {5,S}
+
+  - index: 55
+    reaction: OH*(12) + CO2*(15) <=> O*(11) + HCOO*(17)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *6 X u0 p0 c0 {1,D}
+        3 *2 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6 *5 H u0 p0 c0 {5,S}
+        7 *1 X u0 p0 c0 {3,S}
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {6,S}
+        2 *6 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {5,D}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,D} {4,D}
+        6 *5 H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0
+
+  - index: 56
+    reaction: OH*(12) + CO2*(15) <=> O*(11) + COOH*(18)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *6 X u0 p0 c0 {1,D}
+        3 *3 O u0 p2 c0 {5,S} {6,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,S} {4,D} {7,S}
+        6 *5 H u0 p0 c0 {3,S}
+        7 *1 X u0 p0 c0 {5,S}
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {6,S}
+        2 *6 X u0 p0 c0 {1,S}
+        3 *3 O u0 p2 c0 {5,D}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,D} {4,D}
+        6 *5 H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0
+
+  - index: 57
+    reaction: O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *5 X u0 p0 c0 {1,D}
+        3 *2 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {5,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {7,S} {8,S}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {1,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0 {3,S}
+
+  - index: 58
+    reaction: O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *5 X u0 p0 c0 {1,D}
+        3 *2 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5    C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7 *3 H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {7,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {5,S} {8,S}
+        4    O u0 p2 c0 {5,D}
+        5    C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7 *3 H u0 p0 c0 {1,S}
+        8 *1 X u0 p0 c0 {3,S}
+
+  - index: 59
+    reaction: O*(11) + HCOOH*(19) <=> OH*(12) + COOH*(18)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *5 X u0 p0 c0 {1,D}
+        3    O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6 *3 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {6,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3    O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,S} {4,D} {8,S}
+        6 *3 H u0 p0 c0 {1,S}
+        7    H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0 {5,S}
+
+  - index: 60
+    reaction: O*(11) + CH2O*(20) <=> OH*(12) + HCO*(16)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *5 X u0 p0 c0 {1,D}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {3,D} {5,S} {6,S}
+        5 *3 H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7 *1 X u0 p0 c0
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {5,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {3,D} {6,S} {7,S}
+        5 *3 H u0 p0 c0 {1,S}
+        6    H u0 p0 c0 {4,S}
+        7 *1 X u0 p0 c0 {4,S}
+
+  - index: 61
+    reaction: OH*(12) + CH2O*(20) <=> O*(11) + CH3O*(21)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *6 X u0 p0 c0 {1,D}
+        3 *2 O u0 p2 c0 {4,S} {8,S}
+        4 *3 C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5 *5 H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *1 X u0 p0 c0 {3,S}
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {5,S}
+        2 *6 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {4,D}
+        4 *3 C u0 p0 c0 {3,D} {6,S} {7,S}
+        5 *5 H u0 p0 c0 {1,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *1 X u0 p0 c0
+
+  - index: 62
+    reaction: OH*(12) + HCOOH*(19) <=> O*(11) + CH3O2*(22)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *6 X u0 p0 c0 {1,D}
+        3    O u0 p2 c0 {5,S} {8,S}
+        4 *2 O u0 p2 c0 {5,S} {9,S}
+        5 *3 C u0 p0 c0 {3,S} {4,S} {6,S} {7,S}
+        6 *5 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0 {4,S}
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {6,S}
+        2 *6 X u0 p0 c0 {1,S}
+        3    O u0 p2 c0 {5,S} {8,S}
+        4 *2 O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,S} {4,D} {7,S}
+        6 *5 H u0 p0 c0 {1,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0
+
+  - index: 63
+    reaction: O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *5 X u0 p0 c0 {1,D}
+        3 *2 O u0 p2 c0 {4,S} {8,S}
+        4 *3 C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8    H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {4,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {8,S} {9,S}
+        4 *3 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8    H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0 {3,S}
+
+  - index: 64
+    reaction: O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,D}
+        2 *5 X u0 p0 c0 {1,D}
+        3 *2 O u0 p2 c0 {4,S} {8,S}
+        4    C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *3 H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {8,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {4,S} {9,S}
+        4    C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *3 H u0 p0 c0 {1,S}
+        9 *1 X u0 p0 c0 {3,S}
+
+  - index: 65
+    reaction: OH*(12) + HCO*(16) <=> H2O*(13) + CO*(14)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 *3 H u0 p0 c0 {2,S}
+        4 *5 X u0 p0 c0 {2,S}
+        5 *2 O u0 p2 c0 {6,S} {7,S}
+        6    H u0 p0 c0 {5,S}
+        7 *1 X u0 p0 c0 {5,S}
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {4,D}
+        3 *3 H u0 p0 c0 {5,S}
+        4 *5 X u0 p0 c0 {2,D}
+        5 *2 O u0 p2 c0 {3,S} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7 *1 X u0 p0 c0
+
+  - index: 66
+    reaction: OH*(12) + HCOO*(17) <=> H2O*(13) + CO2*(15)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2    H u0 p0 c0 {1,S}
+        3 *6 X u0 p0 c0 {1,S}
+        4 *1 O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {4,S} {5,D} {7,S}
+        7 *3 H u0 p0 c0 {6,S}
+        8 *5 X u0 p0 c0 {4,S}
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {7,S}
+        2    H u0 p0 c0 {1,S}
+        3 *6 X u0 p0 c0
+        4 *1 O u0 p2 c0 {6,D}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {4,D} {5,D}
+        7 *3 H u0 p0 c0 {1,S}
+        8 *5 X u0 p0 c0
+
+  - index: 67
+    reaction: O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {3,S} {5,S}
+        2    O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4    H u0 p0 c0 {3,S}
+        5 *5 X u0 p0 c0 {1,S}
+        6 *2 O u0 p2 c0 {7,S} {8,S}
+        7    H u0 p0 c0 {6,S}
+        8 *1 X u0 p0 c0 {6,S}
+    product: |
+        1 *4 O u0 p2 c0 {5,D}
+        2    O u0 p2 c0 {3,D}
+        3 *3 C u0 p0 c0 {2,D} {4,S} {6,S}
+        4    H u0 p0 c0 {3,S}
+        5 *5 X u0 p0 c0 {1,D}
+        6 *2 O u0 p2 c0 {3,S} {7,S}
+        7    H u0 p0 c0 {6,S}
+        8 *1 X u0 p0 c0
+
+  - index: 68
+    reaction: O*(11) + HCOOH*(19) <=> OH*(12) + HCOO*(17)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2 *3 H u0 p0 c0 {1,S}
+        3 *5 X u0 p0 c0 {1,S}
+        4 *2 O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6    C u0 p0 c0 {4,S} {5,D} {7,S}
+        7    H u0 p0 c0 {6,S}
+        8 *1 X u0 p0 c0 {4,S}
+    product: |
+        1 *4 O u0 p2 c0 {3,D}
+        2 *3 H u0 p0 c0 {4,S}
+        3 *5 X u0 p0 c0 {1,D}
+        4 *2 O u0 p2 c0 {2,S} {6,S}
+        5    O u0 p2 c0 {6,D}
+        6    C u0 p0 c0 {4,S} {5,D} {7,S}
+        7    H u0 p0 c0 {6,S}
+        8 *1 X u0 p0 c0
+
+  - index: 69
+    reaction: OH*(12) + COOH*(18) <=> H2O*(13) + CO2*(15)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2    H u0 p0 c0 {1,S}
+        3 *6 X u0 p0 c0 {1,S}
+        4 *2 O u0 p2 c0 {6,S} {7,S}
+        5    O u0 p2 c0 {6,D}
+        6 *1 C u0 p0 c0 {4,S} {5,D} {8,S}
+        7 *3 H u0 p0 c0 {4,S}
+        8 *5 X u0 p0 c0 {6,S}
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {7,S}
+        2    H u0 p0 c0 {1,S}
+        3 *6 X u0 p0 c0
+        4 *2 O u0 p2 c0 {6,D}
+        5    O u0 p2 c0 {6,D}
+        6 *1 C u0 p0 c0 {4,D} {5,D}
+        7 *3 H u0 p0 c0 {1,S}
+        8 *5 X u0 p0 c0
+
+  - index: 70
+    reaction: OH*(12) + HCOOH*(19) <=> H2O*(13) + HCOO*(17)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2    H u0 p0 c0 {1,S}
+        3 *5 X u0 p0 c0 {1,S}
+        4 *2 O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6    C u0 p0 c0 {4,S} {5,D} {7,S}
+        7    H u0 p0 c0 {6,S}
+        8 *3 H u0 p0 c0 {4,S}
+        9 *1 X u0 p0 c0
+    product: |
+        1 *2 O u0 p2 c0 {2,S} {8,S}
+        2    H u0 p0 c0 {1,S}
+        3 *1 X u0 p0 c0
+        4 *4 O u0 p2 c0 {6,S} {9,S}
+        5    O u0 p2 c0 {6,D}
+        6    C u0 p0 c0 {4,S} {5,D} {7,S}
+        7    H u0 p0 c0 {6,S}
+        8 *3 H u0 p0 c0 {1,S}
+        9 *5 X u0 p0 c0 {4,S}
+
+  - index: 71
+    reaction: OH*(12) + HCOOH*(19) <=> H2O*(13) + COOH*(18)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2    H u0 p0 c0 {1,S}
+        3 *5 X u0 p0 c0 {1,S}
+        4    O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {4,S} {5,D} {7,S}
+        7 *3 H u0 p0 c0 {6,S}
+        8    H u0 p0 c0 {4,S}
+        9 *1 X u0 p0 c0
+    product: |
+        1 *2 O u0 p2 c0 {2,S} {7,S}
+        2    H u0 p0 c0 {1,S}
+        3 *1 X u0 p0 c0
+        4    O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6 *4 C u0 p0 c0 {4,S} {5,D} {9,S}
+        7 *3 H u0 p0 c0 {1,S}
+        8    H u0 p0 c0 {4,S}
+        9 *5 X u0 p0 c0 {6,S}
+
+  - index: 72
+    reaction: OH*(12) + CH2O*(20) <=> H2O*(13) + HCO*(16)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2    H u0 p0 c0 {1,S}
+        3 *5 X u0 p0 c0 {1,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {4,D} {6,S} {7,S}
+        6 *3 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1 *2 O u0 p2 c0 {2,S} {6,S}
+        2    H u0 p0 c0 {1,S}
+        3 *1 X u0 p0 c0
+        4    O u0 p2 c0 {5,D}
+        5 *4 C u0 p0 c0 {4,D} {7,S} {8,S}
+        6 *3 H u0 p0 c0 {1,S}
+        7    H u0 p0 c0 {5,S}
+        8 *5 X u0 p0 c0 {5,S}
+
+  - index: 73
+    reaction: OH*(12) + CH3O*(21) <=> H2O*(13) + CH2O*(20)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2    H u0 p0 c0 {1,S}
+        3 *6 X u0 p0 c0 {1,S}
+        4 *1 O u0 p2 c0 {5,S} {9,S}
+        5 *2 C u0 p0 c0 {4,S} {6,S} {7,S} {8,S}
+        6 *3 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {5,S}
+        9 *5 X u0 p0 c0 {4,S}
+    product: |
+        1 *4 O u0 p2 c0 {2,S} {6,S}
+        2    H u0 p0 c0 {1,S}
+        3 *6 X u0 p0 c0
+        4 *1 O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {4,D} {7,S} {8,S}
+        6 *3 H u0 p0 c0 {1,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {5,S}
+        9 *5 X u0 p0 c0
+
+  - index: 74
+    reaction: O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {6,S}
+        2 *3 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3    H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5    H u0 p0 c0 {2,S}
+        6 *5 X u0 p0 c0 {1,S}
+        7 *2 O u0 p2 c0 {8,S} {9,S}
+        8    H u0 p0 c0 {7,S}
+        9 *1 X u0 p0 c0 {7,S}
+    product: |
+        1 *4 O u0 p2 c0 {6,D}
+        2 *3 C u0 p0 c0 {3,S} {4,S} {5,S} {7,S}
+        3    H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5    H u0 p0 c0 {2,S}
+        6 *5 X u0 p0 c0 {1,D}
+        7 *2 O u0 p2 c0 {2,S} {8,S}
+        8    H u0 p0 c0 {7,S}
+        9 *1 X u0 p0 c0
+
+  - index: 75
+    reaction: O*(11) + CH3OH*(23) <=> OH*(12) + CH3O*(21)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2 *3 H u0 p0 c0 {1,S}
+        3 *5 X u0 p0 c0 {1,S}
+        4 *2 O u0 p2 c0 {5,S} {9,S}
+        5    C u0 p0 c0 {4,S} {6,S} {7,S} {8,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {5,S}
+        9 *1 X u0 p0 c0 {4,S}
+    product: |
+        1 *4 O u0 p2 c0 {3,D}
+        2 *3 H u0 p0 c0 {4,S}
+        3 *5 X u0 p0 c0 {1,D}
+        4 *2 O u0 p2 c0 {2,S} {5,S}
+        5    C u0 p0 c0 {4,S} {6,S} {7,S} {8,S}
+        6    H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {5,S}
+        9 *1 X u0 p0 c0
+
+  - index: 76
+    reaction: OH*(12) + CH3O2*(22) <=> H2O*(13) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {2,S} {3,S}
+        2     H u0 p0 c0 {1,S}
+        3  *6 X u0 p0 c0 {1,S}
+        4     O u0 p2 c0 {6,S} {9,S}
+        5  *1 O u0 p2 c0 {6,S} {10,S}
+        6  *2 C u0 p0 c0 {4,S} {5,S} {7,S} {8,S}
+        7  *3 H u0 p0 c0 {6,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {4,S}
+        10 *5 X u0 p0 c0 {5,S}
+    product: |
+        1  *4 O u0 p2 c0 {2,S} {7,S}
+        2     H u0 p0 c0 {1,S}
+        3  *6 X u0 p0 c0
+        4     O u0 p2 c0 {6,S} {9,S}
+        5  *1 O u0 p2 c0 {6,D}
+        6  *2 C u0 p0 c0 {4,S} {5,D} {8,S}
+        7  *3 H u0 p0 c0 {1,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {4,S}
+        10 *5 X u0 p0 c0
+
+  - index: 77
+    reaction: OH*(12) + CH3OH*(23) <=> H2O*(13) + CH3O*(21)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {2,S} {3,S}
+        2     H u0 p0 c0 {1,S}
+        3  *5 X u0 p0 c0 {1,S}
+        4  *2 O u0 p2 c0 {5,S} {9,S}
+        5     C u0 p0 c0 {4,S} {6,S} {7,S} {8,S}
+        6     H u0 p0 c0 {5,S}
+        7     H u0 p0 c0 {5,S}
+        8     H u0 p0 c0 {5,S}
+        9  *3 H u0 p0 c0 {4,S}
+        10 *1 X u0 p0 c0
+    product: |
+        1  *2 O u0 p2 c0 {2,S} {9,S}
+        2     H u0 p0 c0 {1,S}
+        3  *1 X u0 p0 c0
+        4  *4 O u0 p2 c0 {5,S} {10,S}
+        5     C u0 p0 c0 {4,S} {6,S} {7,S} {8,S}
+        6     H u0 p0 c0 {5,S}
+        7     H u0 p0 c0 {5,S}
+        8     H u0 p0 c0 {5,S}
+        9  *3 H u0 p0 c0 {1,S}
+        10 *5 X u0 p0 c0 {4,S}
+
+  - index: 78
+    reaction: CO2*(15) + HCO*(16) <=> CO*(14) + HCOO*(17)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,D}
+        3 *6 X u0 p0 c0 {2,D}
+        4 *2 O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6 *3 C u0 p0 c0 {4,S} {5,D} {7,S}
+        7 *5 H u0 p0 c0 {6,S}
+        8 *1 X u0 p0 c0 {4,S}
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {7,S}
+        3 *6 X u0 p0 c0 {2,S}
+        4 *2 O u0 p2 c0 {6,D}
+        5    O u0 p2 c0 {6,D}
+        6 *3 C u0 p0 c0 {4,D} {5,D}
+        7 *5 H u0 p0 c0 {2,S}
+        8 *1 X u0 p0 c0
+
+  - index: 79
+    reaction: CO2*(15) + HCO*(16) <=> CO*(14) + COOH*(18)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,D}
+        3 *6 X u0 p0 c0 {2,D}
+        4 *3 O u0 p2 c0 {6,S} {7,S}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {4,S} {5,D} {8,S}
+        7 *5 H u0 p0 c0 {4,S}
+        8 *1 X u0 p0 c0 {6,S}
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {7,S}
+        3 *6 X u0 p0 c0 {2,S}
+        4 *3 O u0 p2 c0 {6,D}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {4,D} {5,D}
+        7 *5 H u0 p0 c0 {2,S}
+        8 *1 X u0 p0 c0
+
+  - index: 80
+    reaction: HCO*(16) + HCOO*(17) <=> CO*(14) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,D}
+        3 *5 X u0 p0 c0 {2,D}
+        4 *2 O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6    C u0 p0 c0 {4,S} {5,D} {7,S}
+        7    H u0 p0 c0 {6,S}
+        8 *3 H u0 p0 c0 {4,S}
+        9 *1 X u0 p0 c0
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {8,S}
+        3 *5 X u0 p0 c0 {2,S}
+        4 *2 O u0 p2 c0 {6,S} {9,S}
+        5    O u0 p2 c0 {6,D}
+        6    C u0 p0 c0 {4,S} {5,D} {7,S}
+        7    H u0 p0 c0 {6,S}
+        8 *3 H u0 p0 c0 {2,S}
+        9 *1 X u0 p0 c0 {4,S}
+
+  - index: 81
+    reaction: CO*(14) + HCOOH*(19) <=> HCO*(16) + COOH*(18)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,D}
+        3 *5 X u0 p0 c0 {2,D}
+        4 *3 O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {4,S} {5,D} {7,S}
+        7    H u0 p0 c0 {6,S}
+        8    H u0 p0 c0 {4,S}
+        9 *1 X u0 p0 c0
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 *5 X u0 p0 c0 {2,S}
+        4 *3 O u0 p2 c0 {2,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {5,D} {7,S} {9,S}
+        7    H u0 p0 c0 {6,S}
+        8    H u0 p0 c0 {4,S}
+        9 *1 X u0 p0 c0 {6,S}
+
+  - index: 82
+    reaction: CO*(14) + HCOOH*(19) <=> HCO*(16) + COOH*(18)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,D}
+        3 *5 X u0 p0 c0 {2,D}
+        4    O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {4,S} {5,D} {7,S}
+        7 *3 H u0 p0 c0 {6,S}
+        8    H u0 p0 c0 {4,S}
+        9 *1 X u0 p0 c0
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {7,S}
+        3 *5 X u0 p0 c0 {2,S}
+        4    O u0 p2 c0 {6,S} {8,S}
+        5    O u0 p2 c0 {6,D}
+        6 *2 C u0 p0 c0 {4,S} {5,D} {9,S}
+        7 *3 H u0 p0 c0 {2,S}
+        8    H u0 p0 c0 {4,S}
+        9 *1 X u0 p0 c0 {6,S}
+
+  - index: 83
+    reaction: CO*(14) + CH2O*(20) <=> HCO*(16) + HCO*(16)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,D}
+        3 *5 X u0 p0 c0 {2,D}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {4,D} {6,S} {7,S}
+        6 *3 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {6,S}
+        3 *5 X u0 p0 c0 {2,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {4,D} {7,S} {8,S}
+        6 *3 H u0 p0 c0 {2,S}
+        7    H u0 p0 c0 {5,S}
+        8 *1 X u0 p0 c0 {5,S}
+
+  - index: 84
+    reaction: HCO*(16) + CH2O*(20) <=> CO*(14) + CH3O*(21)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,D}
+        3 *6 X u0 p0 c0 {2,D}
+        4 *2 O u0 p2 c0 {5,S} {9,S}
+        5 *3 C u0 p0 c0 {4,S} {6,S} {7,S} {8,S}
+        6 *5 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {5,S}
+        9 *1 X u0 p0 c0 {4,S}
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {6,S}
+        3 *6 X u0 p0 c0 {2,S}
+        4 *2 O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {4,D} {7,S} {8,S}
+        6 *5 H u0 p0 c0 {2,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {5,S}
+        9 *1 X u0 p0 c0
+
+  - index: 85
+    reaction: COOH*(18) + CH2O*(20) <=> CO*(14) + CH3O2*(22)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,D}
+        3  *6 X u0 p0 c0 {2,D}
+        4  *5 O u0 p2 c0 {6,S} {9,S}
+        5  *2 O u0 p2 c0 {6,S} {10,S}
+        6  *3 C u0 p0 c0 {4,S} {5,S} {7,S} {8,S}
+        7     H u0 p0 c0 {6,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {4,S}
+        10 *1 X u0 p0 c0 {5,S}
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3  *6 X u0 p0 c0 {2,S}
+        4  *5 O u0 p2 c0 {2,S} {9,S}
+        5  *2 O u0 p2 c0 {6,D}
+        6  *3 C u0 p0 c0 {5,D} {7,S} {8,S}
+        7     H u0 p0 c0 {6,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {4,S}
+        10 *1 X u0 p0 c0
+
+  - index: 86
+    reaction: HCO*(16) + HCOOH*(19) <=> CO*(14) + CH3O2*(22)
+    reaction_family: Surface_Adsorption_Abstraction_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,D}
+        3  *6 X u0 p0 c0 {2,D}
+        4     O u0 p2 c0 {6,S} {9,S}
+        5  *2 O u0 p2 c0 {6,S} {10,S}
+        6  *3 C u0 p0 c0 {4,S} {5,S} {7,S} {8,S}
+        7  *5 H u0 p0 c0 {6,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {4,S}
+        10 *1 X u0 p0 c0 {5,S}
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {7,S}
+        3  *6 X u0 p0 c0 {2,S}
+        4     O u0 p2 c0 {6,S} {9,S}
+        5  *2 O u0 p2 c0 {6,D}
+        6  *3 C u0 p0 c0 {4,S} {5,D} {8,S}
+        7  *5 H u0 p0 c0 {2,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {4,S}
+        10 *1 X u0 p0 c0
+
+  - index: 87
+    reaction: HCO*(16) + CH3O*(21) <=> CO*(14) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,D}
+        3  *5 X u0 p0 c0 {2,D}
+        4  *2 O u0 p2 c0 {5,S} {9,S}
+        5     C u0 p0 c0 {4,S} {6,S} {7,S} {8,S}
+        6     H u0 p0 c0 {5,S}
+        7     H u0 p0 c0 {5,S}
+        8     H u0 p0 c0 {5,S}
+        9  *3 H u0 p0 c0 {4,S}
+        10 *1 X u0 p0 c0
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {9,S}
+        3  *5 X u0 p0 c0 {2,S}
+        4  *2 O u0 p2 c0 {5,S} {10,S}
+        5     C u0 p0 c0 {4,S} {6,S} {7,S} {8,S}
+        6     H u0 p0 c0 {5,S}
+        7     H u0 p0 c0 {5,S}
+        8     H u0 p0 c0 {5,S}
+        9  *3 H u0 p0 c0 {2,S}
+        10 *1 X u0 p0 c0 {4,S}
+
+  - index: 88
+    reaction: HCOO*(17) + HCOO*(17) <=> CO2*(15) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *3 H u0 p0 c0 {1,S}
+        6  *6 X u0 p0 c0
+        7  *1 O u0 p2 c0 {9,D}
+        8     O u0 p2 c0 {9,D}
+        9  *2 C u0 p0 c0 {7,D} {8,D}
+        10 *5 X u0 p0 c0
+    product: |
+        1  *4 O u0 p2 c0 {3,S} {6,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *3 H u0 p0 c0 {9,S}
+        6  *6 X u0 p0 c0 {1,S}
+        7  *1 O u0 p2 c0 {9,S} {10,S}
+        8     O u0 p2 c0 {9,D}
+        9  *2 C u0 p0 c0 {5,S} {7,S} {8,D}
+        10 *5 X u0 p0 c0 {7,S}
+
+  - index: 89
+    reaction: COOH*(18) + HCOO*(17) <=> CO2*(15) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4  *3 H u0 p0 c0 {3,S}
+        5     H u0 p0 c0 {1,S}
+        6  *6 X u0 p0 c0
+        7  *1 O u0 p2 c0 {9,D}
+        8     O u0 p2 c0 {9,D}
+        9  *2 C u0 p0 c0 {7,D} {8,D}
+        10 *5 X u0 p0 c0
+    product: |
+        1     O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {6,S}
+        4  *3 H u0 p0 c0 {9,S}
+        5     H u0 p0 c0 {1,S}
+        6  *6 X u0 p0 c0 {3,S}
+        7  *1 O u0 p2 c0 {9,S} {10,S}
+        8     O u0 p2 c0 {9,D}
+        9  *2 C u0 p0 c0 {4,S} {7,S} {8,D}
+        10 *5 X u0 p0 c0 {7,S}
+
+  - index: 90
+    reaction: COOH*(18) + HCOO*(17) <=> CO2*(15) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *3 H u0 p0 c0 {1,S}
+        6  *6 X u0 p0 c0
+        7  *2 O u0 p2 c0 {9,D}
+        8     O u0 p2 c0 {9,D}
+        9  *1 C u0 p0 c0 {7,D} {8,D}
+        10 *5 X u0 p0 c0
+    product: |
+        1  *4 O u0 p2 c0 {3,S} {6,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *3 H u0 p0 c0 {7,S}
+        6  *6 X u0 p0 c0 {1,S}
+        7  *2 O u0 p2 c0 {5,S} {9,S}
+        8     O u0 p2 c0 {9,D}
+        9  *1 C u0 p0 c0 {7,S} {8,D} {10,S}
+        10 *5 X u0 p0 c0 {9,S}
+
+  - index: 91
+    reaction: COOH*(18) + COOH*(18) <=> CO2*(15) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4  *3 H u0 p0 c0 {3,S}
+        5     H u0 p0 c0 {1,S}
+        6  *6 X u0 p0 c0
+        7  *2 O u0 p2 c0 {9,D}
+        8     O u0 p2 c0 {9,D}
+        9  *1 C u0 p0 c0 {7,D} {8,D}
+        10 *5 X u0 p0 c0
+    product: |
+        1     O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {6,S}
+        4  *3 H u0 p0 c0 {7,S}
+        5     H u0 p0 c0 {1,S}
+        6  *6 X u0 p0 c0 {3,S}
+        7  *2 O u0 p2 c0 {4,S} {9,S}
+        8     O u0 p2 c0 {9,D}
+        9  *1 C u0 p0 c0 {7,S} {8,D} {10,S}
+        10 *5 X u0 p0 c0 {9,S}
+
+  - index: 92
+    reaction: HCO*(16) + HCOO*(17) <=> CO2*(15) + CH2O*(20)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 *3 H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5 *6 X u0 p0 c0
+        6 *1 O u0 p2 c0 {8,D}
+        7    O u0 p2 c0 {8,D}
+        8 *2 C u0 p0 c0 {6,D} {7,D}
+        9 *5 X u0 p0 c0
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {4,S} {5,S}
+        3 *3 H u0 p0 c0 {8,S}
+        4    H u0 p0 c0 {2,S}
+        5 *6 X u0 p0 c0 {2,S}
+        6 *1 O u0 p2 c0 {8,S} {9,S}
+        7    O u0 p2 c0 {8,D}
+        8 *2 C u0 p0 c0 {3,S} {6,S} {7,D}
+        9 *5 X u0 p0 c0 {6,S}
+
+  - index: 93
+    reaction: HCO*(16) + COOH*(18) <=> CO2*(15) + CH2O*(20)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 *3 H u0 p0 c0 {2,S}
+        4    H u0 p0 c0 {2,S}
+        5 *6 X u0 p0 c0
+        6 *2 O u0 p2 c0 {8,D}
+        7    O u0 p2 c0 {8,D}
+        8 *1 C u0 p0 c0 {6,D} {7,D}
+        9 *5 X u0 p0 c0
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {4,S} {5,S}
+        3 *3 H u0 p0 c0 {6,S}
+        4    H u0 p0 c0 {2,S}
+        5 *6 X u0 p0 c0 {2,S}
+        6 *2 O u0 p2 c0 {3,S} {8,S}
+        7    O u0 p2 c0 {8,D}
+        8 *1 C u0 p0 c0 {6,S} {7,D} {9,S}
+        9 *5 X u0 p0 c0 {8,S}
+
+  - index: 94
+    reaction: HCOO*(17) + CH3O*(21) <=> CO2*(15) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {2,S} {6,S}
+        2     C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5     H u0 p0 c0 {2,S}
+        6  *3 H u0 p0 c0 {1,S}
+        7  *6 X u0 p0 c0
+        8  *1 O u0 p2 c0 {10,D}
+        9     O u0 p2 c0 {10,D}
+        10 *2 C u0 p0 c0 {8,D} {9,D}
+        11 *5 X u0 p0 c0
+    product: |
+        1  *4 O u0 p2 c0 {2,S} {7,S}
+        2     C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5     H u0 p0 c0 {2,S}
+        6  *3 H u0 p0 c0 {10,S}
+        7  *6 X u0 p0 c0 {1,S}
+        8  *1 O u0 p2 c0 {10,S} {11,S}
+        9     O u0 p2 c0 {10,D}
+        10 *2 C u0 p0 c0 {6,S} {8,S} {9,D}
+        11 *5 X u0 p0 c0 {8,S}
+
+  - index: 95
+    reaction: COOH*(18) + CH3O*(21) <=> CO2*(15) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {2,S} {6,S}
+        2     C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5     H u0 p0 c0 {2,S}
+        6  *3 H u0 p0 c0 {1,S}
+        7  *6 X u0 p0 c0
+        8  *2 O u0 p2 c0 {10,D}
+        9     O u0 p2 c0 {10,D}
+        10 *1 C u0 p0 c0 {8,D} {9,D}
+        11 *5 X u0 p0 c0
+    product: |
+        1  *4 O u0 p2 c0 {2,S} {7,S}
+        2     C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5     H u0 p0 c0 {2,S}
+        6  *3 H u0 p0 c0 {8,S}
+        7  *6 X u0 p0 c0 {1,S}
+        8  *2 O u0 p2 c0 {6,S} {10,S}
+        9     O u0 p2 c0 {10,D}
+        10 *1 C u0 p0 c0 {8,S} {9,D} {11,S}
+        11 *5 X u0 p0 c0 {10,S}
+
+  - index: 96
+    reaction: CO*(14) + HCOOH*(19) <=> HCO*(16) + COOH*(18)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *3 O u0 p2 c0 {3,S} {4,S}
+        2    O u0 p2 c0 {3,D}
+        3 *4 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4    H u0 p0 c0 {1,S}
+        5 *5 X u0 p0 c0 {3,S}
+        6    O u0 p2 c0 {7,D}
+        7 *2 C u0 p0 c0 {6,D} {8,S} {9,S}
+        8    H u0 p0 c0 {7,S}
+        9 *1 X u0 p0 c0 {7,S}
+    product: |
+        1 *3 O u0 p2 c0 {4,S} {7,S}
+        2    O u0 p2 c0 {3,D}
+        3 *4 C u0 p0 c0 {2,D} {5,D}
+        4    H u0 p0 c0 {1,S}
+        5 *5 X u0 p0 c0 {3,D}
+        6    O u0 p2 c0 {7,D}
+        7 *2 C u0 p0 c0 {1,S} {6,D} {8,S}
+        8    H u0 p0 c0 {7,S}
+        9 *1 X u0 p0 c0
+
+  - index: 97
+    reaction: CO*(14) + HCOOH*(19) <=> HCO*(16) + COOH*(18)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 *3 H u0 p0 c0 {2,S}
+        4 *5 X u0 p0 c0 {2,S}
+        5    O u0 p2 c0 {7,S} {8,S}
+        6    O u0 p2 c0 {7,D}
+        7 *2 C u0 p0 c0 {5,S} {6,D} {9,S}
+        8    H u0 p0 c0 {5,S}
+        9 *1 X u0 p0 c0 {7,S}
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {4,D}
+        3 *3 H u0 p0 c0 {7,S}
+        4 *5 X u0 p0 c0 {2,D}
+        5    O u0 p2 c0 {7,S} {8,S}
+        6    O u0 p2 c0 {7,D}
+        7 *2 C u0 p0 c0 {3,S} {5,S} {6,D}
+        8    H u0 p0 c0 {5,S}
+        9 *1 X u0 p0 c0
+
+  - index: 98
+    reaction: HCO*(16) + HCOOH*(19) <=> HCOO*(17) + CH2O*(20)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3     H u0 p0 c0 {2,S}
+        4  *5 X u0 p0 c0 {2,S}
+        5  *2 O u0 p2 c0 {7,S} {9,S}
+        6     O u0 p2 c0 {7,D}
+        7     C u0 p0 c0 {5,S} {6,D} {8,S}
+        8     H u0 p0 c0 {7,S}
+        9  *3 H u0 p0 c0 {5,S}
+        10 *1 X u0 p0 c0
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *2 C u0 p0 c0 {1,D} {3,S} {9,S}
+        3     H u0 p0 c0 {2,S}
+        4  *1 X u0 p0 c0
+        5  *4 O u0 p2 c0 {7,S} {10,S}
+        6     O u0 p2 c0 {7,D}
+        7     C u0 p0 c0 {5,S} {6,D} {8,S}
+        8     H u0 p0 c0 {7,S}
+        9  *3 H u0 p0 c0 {2,S}
+        10 *5 X u0 p0 c0 {5,S}
+
+  - index: 99
+    reaction: HCO*(16) + HCOOH*(19) <=> COOH*(18) + CH2O*(20)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3     H u0 p0 c0 {2,S}
+        4  *5 X u0 p0 c0 {2,S}
+        5     O u0 p2 c0 {7,S} {9,S}
+        6     O u0 p2 c0 {7,D}
+        7  *2 C u0 p0 c0 {5,S} {6,D} {8,S}
+        8  *3 H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {5,S}
+        10 *1 X u0 p0 c0
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *2 C u0 p0 c0 {1,D} {3,S} {8,S}
+        3     H u0 p0 c0 {2,S}
+        4  *1 X u0 p0 c0
+        5     O u0 p2 c0 {7,S} {9,S}
+        6     O u0 p2 c0 {7,D}
+        7  *4 C u0 p0 c0 {5,S} {6,D} {10,S}
+        8  *3 H u0 p0 c0 {2,S}
+        9     H u0 p0 c0 {5,S}
+        10 *5 X u0 p0 c0 {7,S}
+
+  - index: 100
+    reaction: HCO*(16) + CH3O*(21) <=> CH2O*(20) + CH2O*(20)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3     H u0 p0 c0 {2,S}
+        4  *6 X u0 p0 c0 {2,S}
+        5  *1 O u0 p2 c0 {6,S} {10,S}
+        6  *2 C u0 p0 c0 {5,S} {7,S} {8,S} {9,S}
+        7  *3 H u0 p0 c0 {6,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {6,S}
+        10 *5 X u0 p0 c0 {5,S}
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {7,S}
+        3     H u0 p0 c0 {2,S}
+        4  *6 X u0 p0 c0
+        5  *1 O u0 p2 c0 {6,D}
+        6  *2 C u0 p0 c0 {5,D} {8,S} {9,S}
+        7  *3 H u0 p0 c0 {2,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {6,S}
+        10 *5 X u0 p0 c0
+
+  - index: 101
+    reaction: HCO*(16) + CH3O2*(22) <=> CH2O*(20) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3     H u0 p0 c0 {2,S}
+        4  *6 X u0 p0 c0 {2,S}
+        5  *3 O u0 p2 c0 {7,S} {10,S}
+        6  *1 O u0 p2 c0 {7,S} {11,S}
+        7  *2 C u0 p0 c0 {5,S} {6,S} {8,S} {9,S}
+        8     H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {5,S}
+        11 *5 X u0 p0 c0 {6,S}
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4  *6 X u0 p0 c0
+        5  *3 O u0 p2 c0 {2,S} {10,S}
+        6  *1 O u0 p2 c0 {7,D}
+        7  *2 C u0 p0 c0 {6,D} {8,S} {9,S}
+        8     H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {5,S}
+        11 *5 X u0 p0 c0
+
+  - index: 102
+    reaction: HCO*(16) + CH3O2*(22) <=> CH2O*(20) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3     H u0 p0 c0 {2,S}
+        4  *6 X u0 p0 c0 {2,S}
+        5     O u0 p2 c0 {7,S} {10,S}
+        6  *1 O u0 p2 c0 {7,S} {11,S}
+        7  *2 C u0 p0 c0 {5,S} {6,S} {8,S} {9,S}
+        8  *3 H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {5,S}
+        11 *5 X u0 p0 c0 {6,S}
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {8,S}
+        3     H u0 p0 c0 {2,S}
+        4  *6 X u0 p0 c0
+        5     O u0 p2 c0 {7,S} {10,S}
+        6  *1 O u0 p2 c0 {7,D}
+        7  *2 C u0 p0 c0 {5,S} {6,D} {9,S}
+        8  *3 H u0 p0 c0 {2,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {5,S}
+        11 *5 X u0 p0 c0
+
+  - index: 103
+    reaction: CH2O*(20) + CH3O*(21) <=> HCO*(16) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3     H u0 p0 c0 {2,S}
+        4  *5 X u0 p0 c0 {2,S}
+        5  *2 O u0 p2 c0 {6,S} {10,S}
+        6     C u0 p0 c0 {5,S} {7,S} {8,S} {9,S}
+        7     H u0 p0 c0 {6,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {6,S}
+        10 *3 H u0 p0 c0 {5,S}
+        11 *1 X u0 p0 c0
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *2 C u0 p0 c0 {1,D} {3,S} {10,S}
+        3     H u0 p0 c0 {2,S}
+        4  *1 X u0 p0 c0
+        5  *4 O u0 p2 c0 {6,S} {11,S}
+        6     C u0 p0 c0 {5,S} {7,S} {8,S} {9,S}
+        7     H u0 p0 c0 {6,S}
+        8     H u0 p0 c0 {6,S}
+        9     H u0 p0 c0 {6,S}
+        10 *3 H u0 p0 c0 {2,S}
+        11 *5 X u0 p0 c0 {5,S}
+
+  - index: 104
+    reaction: COOH*(18) + HCOO*(17) <=> CO2*(15) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {3,S} {4,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4     H u0 p0 c0 {1,S}
+        5  *6 X u0 p0 c0 {3,S}
+        6  *1 O u0 p2 c0 {8,S} {10,S}
+        7     O u0 p2 c0 {8,D}
+        8  *2 C u0 p0 c0 {6,S} {7,D} {9,S}
+        9  *3 H u0 p0 c0 {8,S}
+        10 *5 X u0 p0 c0 {6,S}
+    product: |
+        1     O u0 p2 c0 {3,S} {4,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {9,S}
+        4     H u0 p0 c0 {1,S}
+        5  *6 X u0 p0 c0
+        6  *1 O u0 p2 c0 {8,D}
+        7     O u0 p2 c0 {8,D}
+        8  *2 C u0 p0 c0 {6,D} {7,D}
+        9  *3 H u0 p0 c0 {3,S}
+        10 *5 X u0 p0 c0
+
+  - index: 105
+    reaction: COOH*(18) + HCOO*(17) <=> CO2*(15) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *6 X u0 p0 c0 {1,S}
+        6  *2 O u0 p2 c0 {8,S} {9,S}
+        7     O u0 p2 c0 {8,D}
+        8  *1 C u0 p0 c0 {6,S} {7,D} {10,S}
+        9  *3 H u0 p0 c0 {6,S}
+        10 *5 X u0 p0 c0 {8,S}
+    product: |
+        1  *4 O u0 p2 c0 {3,S} {9,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *6 X u0 p0 c0
+        6  *2 O u0 p2 c0 {8,D}
+        7     O u0 p2 c0 {8,D}
+        8  *1 C u0 p0 c0 {6,D} {7,D}
+        9  *3 H u0 p0 c0 {1,S}
+        10 *5 X u0 p0 c0
+
+  - index: 106
+    reaction: COOH*(18) + HCOOH*(19) <=> HCOO*(17) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *5 X u0 p0 c0 {1,S}
+        6     O u0 p2 c0 {8,S} {10,S}
+        7     O u0 p2 c0 {8,D}
+        8  *2 C u0 p0 c0 {6,S} {7,D} {9,S}
+        9  *3 H u0 p0 c0 {8,S}
+        10    H u0 p0 c0 {6,S}
+        11 *1 X u0 p0 c0
+    product: |
+        1  *2 O u0 p2 c0 {3,S} {9,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *1 X u0 p0 c0
+        6     O u0 p2 c0 {8,S} {10,S}
+        7     O u0 p2 c0 {8,D}
+        8  *4 C u0 p0 c0 {6,S} {7,D} {11,S}
+        9  *3 H u0 p0 c0 {1,S}
+        10    H u0 p0 c0 {6,S}
+        11 *5 X u0 p0 c0 {8,S}
+
+  - index: 107
+    reaction: HCOO*(17) + CH3O*(21) <=> CH2O*(20) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *6 X u0 p0 c0 {1,S}
+        6  *1 O u0 p2 c0 {7,S} {11,S}
+        7  *2 C u0 p0 c0 {6,S} {8,S} {9,S} {10,S}
+        8  *3 H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {7,S}
+        11 *5 X u0 p0 c0 {6,S}
+    product: |
+        1  *4 O u0 p2 c0 {3,S} {8,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *6 X u0 p0 c0
+        6  *1 O u0 p2 c0 {7,D}
+        7  *2 C u0 p0 c0 {6,D} {9,S} {10,S}
+        8  *3 H u0 p0 c0 {1,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {7,S}
+        11 *5 X u0 p0 c0
+
+  - index: 108
+    reaction: HCOO*(17) + CH3O2*(22) <=> HCOOH*(19) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *6 X u0 p0 c0 {1,S}
+        6     O u0 p2 c0 {8,S} {11,S}
+        7  *1 O u0 p2 c0 {8,S} {12,S}
+        8  *2 C u0 p0 c0 {6,S} {7,S} {9,S} {10,S}
+        9  *3 H u0 p0 c0 {8,S}
+        10    H u0 p0 c0 {8,S}
+        11    H u0 p0 c0 {6,S}
+        12 *5 X u0 p0 c0 {7,S}
+    product: |
+        1  *4 O u0 p2 c0 {3,S} {9,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *6 X u0 p0 c0
+        6     O u0 p2 c0 {8,S} {11,S}
+        7  *1 O u0 p2 c0 {8,D}
+        8  *2 C u0 p0 c0 {6,S} {7,D} {10,S}
+        9  *3 H u0 p0 c0 {1,S}
+        10    H u0 p0 c0 {8,S}
+        11    H u0 p0 c0 {6,S}
+        12 *5 X u0 p0 c0
+
+  - index: 109
+    reaction: HCOOH*(19) + CH3O*(21) <=> HCOO*(17) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *5 X u0 p0 c0 {1,S}
+        6  *2 O u0 p2 c0 {7,S} {11,S}
+        7     C u0 p0 c0 {6,S} {8,S} {9,S} {10,S}
+        8     H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {7,S}
+        11 *3 H u0 p0 c0 {6,S}
+        12 *1 X u0 p0 c0
+    product: |
+        1  *2 O u0 p2 c0 {3,S} {11,S}
+        2     O u0 p2 c0 {3,D}
+        3     C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5  *1 X u0 p0 c0
+        6  *4 O u0 p2 c0 {7,S} {12,S}
+        7     C u0 p0 c0 {6,S} {8,S} {9,S} {10,S}
+        8     H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {7,S}
+        11 *3 H u0 p0 c0 {1,S}
+        12 *5 X u0 p0 c0 {6,S}
+
+  - index: 110
+    reaction: COOH*(18) + CH3O*(21) <=> CH2O*(20) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {3,S} {4,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4     H u0 p0 c0 {1,S}
+        5  *6 X u0 p0 c0 {3,S}
+        6  *1 O u0 p2 c0 {7,S} {11,S}
+        7  *2 C u0 p0 c0 {6,S} {8,S} {9,S} {10,S}
+        8  *3 H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {7,S}
+        11 *5 X u0 p0 c0 {6,S}
+    product: |
+        1     O u0 p2 c0 {3,S} {4,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {8,S}
+        4     H u0 p0 c0 {1,S}
+        5  *6 X u0 p0 c0
+        6  *1 O u0 p2 c0 {7,D}
+        7  *2 C u0 p0 c0 {6,D} {9,S} {10,S}
+        8  *3 H u0 p0 c0 {3,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {7,S}
+        11 *5 X u0 p0 c0
+
+  - index: 111
+    reaction: COOH*(18) + CH3O2*(22) <=> HCOOH*(19) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {3,S} {4,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4     H u0 p0 c0 {1,S}
+        5  *6 X u0 p0 c0 {3,S}
+        6     O u0 p2 c0 {8,S} {11,S}
+        7  *1 O u0 p2 c0 {8,S} {12,S}
+        8  *2 C u0 p0 c0 {6,S} {7,S} {9,S} {10,S}
+        9  *3 H u0 p0 c0 {8,S}
+        10    H u0 p0 c0 {8,S}
+        11    H u0 p0 c0 {6,S}
+        12 *5 X u0 p0 c0 {7,S}
+    product: |
+        1     O u0 p2 c0 {3,S} {4,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {9,S}
+        4     H u0 p0 c0 {1,S}
+        5  *6 X u0 p0 c0
+        6     O u0 p2 c0 {8,S} {11,S}
+        7  *1 O u0 p2 c0 {8,D}
+        8  *2 C u0 p0 c0 {6,S} {7,D} {10,S}
+        9  *3 H u0 p0 c0 {3,S}
+        10    H u0 p0 c0 {8,S}
+        11    H u0 p0 c0 {6,S}
+        12 *5 X u0 p0 c0
+
+  - index: 112
+    reaction: HCOOH*(19) + CH3O*(21) <=> COOH*(18) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1     O u0 p2 c0 {3,S} {4,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {5,S}
+        4     H u0 p0 c0 {1,S}
+        5  *5 X u0 p0 c0 {3,S}
+        6  *2 O u0 p2 c0 {7,S} {11,S}
+        7     C u0 p0 c0 {6,S} {8,S} {9,S} {10,S}
+        8     H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {7,S}
+        11 *3 H u0 p0 c0 {6,S}
+        12 *1 X u0 p0 c0
+    product: |
+        1     O u0 p2 c0 {3,S} {4,S}
+        2     O u0 p2 c0 {3,D}
+        3  *2 C u0 p0 c0 {1,S} {2,D} {11,S}
+        4     H u0 p0 c0 {1,S}
+        5  *1 X u0 p0 c0
+        6  *4 O u0 p2 c0 {7,S} {12,S}
+        7     C u0 p0 c0 {6,S} {8,S} {9,S} {10,S}
+        8     H u0 p0 c0 {7,S}
+        9     H u0 p0 c0 {7,S}
+        10    H u0 p0 c0 {7,S}
+        11 *3 H u0 p0 c0 {3,S}
+        12 *5 X u0 p0 c0 {6,S}
+
+  - index: 113
+    reaction: HCO*(16) + CH3O2*(22) <=> CH2O*(20) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3  *3 H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5  *6 X u0 p0 c0
+        6     O u0 p2 c0 {8,S} {10,S}
+        7  *1 O u0 p2 c0 {8,D}
+        8  *2 C u0 p0 c0 {6,S} {7,D} {9,S}
+        9     H u0 p0 c0 {8,S}
+        10    H u0 p0 c0 {6,S}
+        11 *5 X u0 p0 c0
+    product: |
+        1     O u0 p2 c0 {2,D}
+        2  *4 C u0 p0 c0 {1,D} {4,S} {5,S}
+        3  *3 H u0 p0 c0 {8,S}
+        4     H u0 p0 c0 {2,S}
+        5  *6 X u0 p0 c0 {2,S}
+        6     O u0 p2 c0 {8,S} {10,S}
+        7  *1 O u0 p2 c0 {8,S} {11,S}
+        8  *2 C u0 p0 c0 {3,S} {6,S} {7,S} {9,S}
+        9     H u0 p0 c0 {8,S}
+        10    H u0 p0 c0 {6,S}
+        11 *5 X u0 p0 c0 {7,S}
+
+  - index: 114
+    reaction: HCO*(16) + CH3O2*(22) <=> CH2O*(20) + HCOOH*(19)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *3 O u0 p2 c0 {3,S} {5,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {1,S} {2,D} {4,S}
+        4     H u0 p0 c0 {3,S}
+        5     H u0 p0 c0 {1,S}
+        6  *6 X u0 p0 c0
+        7  *1 O u0 p2 c0 {8,D}
+        8  *2 C u0 p0 c0 {7,D} {9,S} {10,S}
+        9     H u0 p0 c0 {8,S}
+        10    H u0 p0 c0 {8,S}
+        11 *5 X u0 p0 c0
+    product: |
+        1  *3 O u0 p2 c0 {5,S} {8,S}
+        2     O u0 p2 c0 {3,D}
+        3  *4 C u0 p0 c0 {2,D} {4,S} {6,S}
+        4     H u0 p0 c0 {3,S}
+        5     H u0 p0 c0 {1,S}
+        6  *6 X u0 p0 c0 {3,S}
+        7  *1 O u0 p2 c0 {8,S} {11,S}
+        8  *2 C u0 p0 c0 {1,S} {7,S} {9,S} {10,S}
+        9     H u0 p0 c0 {8,S}
+        10    H u0 p0 c0 {8,S}
+        11 *5 X u0 p0 c0 {7,S}
+
+  - index: 115
+    reaction: CH3O*(21) + CH3O2*(22) <=> HCOOH*(19) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {2,S} {6,S}
+        2     C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5     H u0 p0 c0 {2,S}
+        6  *3 H u0 p0 c0 {1,S}
+        7  *6 X u0 p0 c0
+        8     O u0 p2 c0 {10,S} {12,S}
+        9  *1 O u0 p2 c0 {10,D}
+        10 *2 C u0 p0 c0 {8,S} {9,D} {11,S}
+        11    H u0 p0 c0 {10,S}
+        12    H u0 p0 c0 {8,S}
+        13 *5 X u0 p0 c0
+    product: |
+        1  *4 O u0 p2 c0 {2,S} {7,S}
+        2     C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5     H u0 p0 c0 {2,S}
+        6  *3 H u0 p0 c0 {10,S}
+        7  *6 X u0 p0 c0 {1,S}
+        8     O u0 p2 c0 {10,S} {12,S}
+        9  *1 O u0 p2 c0 {10,S} {13,S}
+        10 *2 C u0 p0 c0 {6,S} {8,S} {9,S} {11,S}
+        11    H u0 p0 c0 {10,S}
+        12    H u0 p0 c0 {8,S}
+        13 *5 X u0 p0 c0 {9,S}
+
+  - index: 116
+    reaction: CH3O*(21) + CH3O*(21) <=> CH2O*(20) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_Beta_double_vdW
+    reactant: |
+        1  *4 O u0 p2 c0 {2,S} {6,S}
+        2     C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5     H u0 p0 c0 {2,S}
+        6  *3 H u0 p0 c0 {1,S}
+        7  *6 X u0 p0 c0
+        8  *1 O u0 p2 c0 {9,D}
+        9  *2 C u0 p0 c0 {8,D} {10,S} {11,S}
+        10    H u0 p0 c0 {9,S}
+        11    H u0 p0 c0 {9,S}
+        12 *5 X u0 p0 c0
+    product: |
+        1  *4 O u0 p2 c0 {2,S} {7,S}
+        2     C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+        3     H u0 p0 c0 {2,S}
+        4     H u0 p0 c0 {2,S}
+        5     H u0 p0 c0 {2,S}
+        6  *3 H u0 p0 c0 {9,S}
+        7  *6 X u0 p0 c0 {1,S}
+        8  *1 O u0 p2 c0 {9,S} {12,S}
+        9  *2 C u0 p0 c0 {6,S} {8,S} {10,S} {11,S}
+        10    H u0 p0 c0 {9,S}
+        11    H u0 p0 c0 {9,S}
+        12 *5 X u0 p0 c0 {8,S}
+
+  - index: 117
+    reaction: X(1) + H2(2) <=> [H][H].[Pt](53)
+    reaction_family: Surface_Adsorption_vdW
+    reactant: |
+        1 *2 X u0 p0 c0
+        2 *1 H u0 p0 c0 {3,S}
+        3    H u0 p0 c0 {2,S}
+    product: |
+        1 *2 X u0 p0 c0
+        2 *1 H u0 p0 c0 {3,S}
+        3    H u0 p0 c0 {2,S}
+
+  - index: 118
+    reaction: O*(11) + [H][H].[Pt](53) <=> H*(10) + OH*(12)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1 *4 O u0 p2 c0 {2,S} {3,S}
+        2 *3 H u0 p0 c0 {1,S}
+        3 *5 X u0 p0 c0 {1,S}
+        4 *2 H u0 p0 c0 {5,S}
+        5 *1 X u0 p0 c0 {4,S}
+    product: |
+        1 *4 O u0 p2 c0 {3,D}
+        2 *3 H u0 p0 c0 {4,S}
+        3 *5 X u0 p0 c0 {1,D}
+        4 *2 H u0 p0 c0 {2,S}
+        5 *1 X u0 p0 c0
+
+  - index: 119
+    reaction: OH*(12) + [H][H].[Pt](53) <=> H*(10) + H2O*(13)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {4,S} {5,S}
+        4 *3 H u0 p0 c0 {3,S}
+        5    H u0 p0 c0 {3,S}
+        6 *1 X u0 p0 c0
+    product: |
+        1 *2 H u0 p0 c0 {4,S}
+        2 *1 X u0 p0 c0
+        3 *4 O u0 p2 c0 {5,S} {6,S}
+        4 *3 H u0 p0 c0 {1,S}
+        5    H u0 p0 c0 {3,S}
+        6 *5 X u0 p0 c0 {3,S}
+
+  - index: 120
+    reaction: [H][H].[Pt](53) + CO*(14) <=> H*(10) + HCO*(16)
+    reaction_family: Surface_Abstraction_vdW
+    reactant: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 *3 H u0 p0 c0 {2,S}
+        4 *5 X u0 p0 c0 {2,S}
+        5 *2 H u0 p0 c0 {6,S}
+        6 *1 X u0 p0 c0 {5,S}
+    product: |
+        1    O u0 p2 c0 {2,D}
+        2 *4 C u0 p0 c0 {1,D} {4,D}
+        3 *3 H u0 p0 c0 {5,S}
+        4 *5 X u0 p0 c0 {2,D}
+        5 *2 H u0 p0 c0 {3,S}
+        6 *1 X u0 p0 c0
+
+  - index: 121
+    reaction: [H][H].[Pt](53) + CO2*(15) <=> H*(10) + HCOO*(17)
+    reaction_family: Surface_Dual_Adsorption_vdW
+    reactant: |
+        1 *6 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6 *4 H u0 p0 c0 {5,S}
+        7 *1 X u0 p0 c0 {3,S}
+    product: |
+        1 *6 H u0 p0 c0 {6,S}
+        2 *5 X u0 p0 c0
+        3 *2 O u0 p2 c0 {5,D}
+        4    O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,D} {4,D}
+        6 *4 H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0
+
+  - index: 122
+    reaction: [H][H].[Pt](53) + CO2*(15) <=> H*(10) + COOH*(18)
+    reaction_family: Surface_Dual_Adsorption_vdW
+    reactant: |
+        1 *6 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *3 O u0 p2 c0 {5,S} {6,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,S} {4,D} {7,S}
+        6 *4 H u0 p0 c0 {3,S}
+        7 *1 X u0 p0 c0 {5,S}
+    product: |
+        1 *6 H u0 p0 c0 {6,S}
+        2 *5 X u0 p0 c0
+        3 *3 O u0 p2 c0 {5,D}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,D} {4,D}
+        6 *4 H u0 p0 c0 {1,S}
+        7 *1 X u0 p0 c0
+
+  - index: 123
+    reaction: H*(10) + HCOOH*(19) <=> [H][H].[Pt](53) + HCOO*(17)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5    C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7 *3 H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1 *2 H u0 p0 c0 {7,S}
+        2 *1 X u0 p0 c0
+        3 *4 O u0 p2 c0 {5,S} {8,S}
+        4    O u0 p2 c0 {5,D}
+        5    C u0 p0 c0 {3,S} {4,D} {6,S}
+        6    H u0 p0 c0 {5,S}
+        7 *3 H u0 p0 c0 {1,S}
+        8 *5 X u0 p0 c0 {3,S}
+
+  - index: 124
+    reaction: H*(10) + HCOOH*(19) <=> [H][H].[Pt](53) + COOH*(18)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3    O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *2 C u0 p0 c0 {3,S} {4,D} {6,S}
+        6 *3 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {3,S}
+        8 *1 X u0 p0 c0
+    product: |
+        1 *2 H u0 p0 c0 {6,S}
+        2 *1 X u0 p0 c0
+        3    O u0 p2 c0 {5,S} {7,S}
+        4    O u0 p2 c0 {5,D}
+        5 *4 C u0 p0 c0 {3,S} {4,D} {8,S}
+        6 *3 H u0 p0 c0 {1,S}
+        7    H u0 p0 c0 {3,S}
+        8 *5 X u0 p0 c0 {5,S}
+
+  - index: 125
+    reaction: H*(10) + CH2O*(20) <=> [H][H].[Pt](53) + HCO*(16)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3    O u0 p2 c0 {4,D}
+        4 *2 C u0 p0 c0 {3,D} {5,S} {6,S}
+        5 *3 H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7 *1 X u0 p0 c0
+    product: |
+        1 *2 H u0 p0 c0 {5,S}
+        2 *1 X u0 p0 c0
+        3    O u0 p2 c0 {4,D}
+        4 *4 C u0 p0 c0 {3,D} {6,S} {7,S}
+        5 *3 H u0 p0 c0 {1,S}
+        6    H u0 p0 c0 {4,S}
+        7 *5 X u0 p0 c0 {4,S}
+
+  - index: 126
+    reaction: [H][H].[Pt](53) + CH2O*(20) <=> H*(10) + CH3O*(21)
+    reaction_family: Surface_Dual_Adsorption_vdW
+    reactant: |
+        1 *6 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {4,S} {8,S}
+        4 *3 C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5 *4 H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *1 X u0 p0 c0 {3,S}
+    product: |
+        1 *6 H u0 p0 c0 {5,S}
+        2 *5 X u0 p0 c0
+        3 *2 O u0 p2 c0 {4,D}
+        4 *3 C u0 p0 c0 {3,D} {6,S} {7,S}
+        5 *4 H u0 p0 c0 {1,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *1 X u0 p0 c0
+
+  - index: 127
+    reaction: [H][H].[Pt](53) + HCOOH*(19) <=> H*(10) + CH3O2*(22)
+    reaction_family: Surface_Dual_Adsorption_vdW
+    reactant: |
+        1 *6 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3    O u0 p2 c0 {5,S} {8,S}
+        4 *2 O u0 p2 c0 {5,S} {9,S}
+        5 *3 C u0 p0 c0 {3,S} {4,S} {6,S} {7,S}
+        6 *4 H u0 p0 c0 {5,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0 {4,S}
+    product: |
+        1 *6 H u0 p0 c0 {6,S}
+        2 *5 X u0 p0 c0
+        3    O u0 p2 c0 {5,S} {8,S}
+        4 *2 O u0 p2 c0 {5,D}
+        5 *3 C u0 p0 c0 {3,S} {4,D} {7,S}
+        6 *4 H u0 p0 c0 {1,S}
+        7    H u0 p0 c0 {5,S}
+        8    H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0
+
+  - index: 128
+    reaction: [H][H].[Pt](53) + CH3O*(21) <=> H*(10) + CH3OH*(23)
+    reaction_family: Surface_Abstraction_Single_vdW
+    reactant: |
+        1 *4 H u0 p0 c0 {2,S}
+        2 *5 X u0 p0 c0 {1,S}
+        3 *2 O u0 p2 c0 {4,S} {8,S}
+        4    C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *3 H u0 p0 c0 {3,S}
+        9 *1 X u0 p0 c0
+    product: |
+        1 *2 H u0 p0 c0 {8,S}
+        2 *1 X u0 p0 c0
+        3 *4 O u0 p2 c0 {4,S} {9,S}
+        4    C u0 p0 c0 {3,S} {5,S} {6,S} {7,S}
+        5    H u0 p0 c0 {4,S}
+        6    H u0 p0 c0 {4,S}
+        7    H u0 p0 c0 {4,S}
+        8 *3 H u0 p0 c0 {1,S}
+        9 *5 X u0 p0 c0 {3,S}
+

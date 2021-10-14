@@ -542,9 +542,9 @@ simulator(
 
 model(
     toleranceKeepInEdge=0.0,
-    toleranceMoveToCore=1e-7,
+    toleranceMoveToCore=0.05,
 # inturrupt tolerance was 0.1 wout pruning, 1e8 w pruning on
-    toleranceInterruptSimulation=1e-5,
+    toleranceInterruptSimulation=0.05,
     maximumEdgeSpecies=500000,
 # PRUNING: uncomment to prune
 #    minCoreSizeForPrune=50,
@@ -562,10 +562,10 @@ options(
     saveRestartPeriod=None,
     generateOutputHTML=True,
     generatePlots=False,
-    # generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
+    generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
     saveEdgeSpecies=True,
     saveSimulationProfiles=True,
-    generateSeedEachIteration=True
+    generateSeedEachIteration=True,
 )
 
 generatedSpeciesConstraints(

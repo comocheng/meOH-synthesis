@@ -218,7 +218,7 @@ CH2X(36)
 3 H u0 p0 c0 {1,S}
 4 X u0 p0 c0 {1,D}
 
-HCO(37)
+CHO(37)
 multiplicity 2
 1 O u0 p2 c0 {2,D}
 2 C u1 p0 c0 {1,D} {3,S}
@@ -239,14 +239,14 @@ multiplicity 2
 3 C u0 p0 c0 {1,S} {2,D} {4,S}
 4 H u0 p0 c0 {3,S}
 
-HOCO(40)
+CHO2(40)
 multiplicity 2
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {3,D}
 3 C u1 p0 c0 {1,S} {2,D}
 4 H u0 p0 c0 {1,S}
 
-CH2(S)(41)
+CH2(41)
 1 C u0 p1 c0 {2,S} {3,S}
 2 H u0 p0 c0 {1,S}
 3 H u0 p0 c0 {1,S}
@@ -266,7 +266,7 @@ multiplicity 2
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {2,S}
 
-CH2OH(44)
+CH3O(44)
 multiplicity 2
 1 O u0 p2 c0 {2,S} {5,S}
 2 C u1 p0 c0 {1,S} {3,S} {4,S}
@@ -306,7 +306,7 @@ multiplicity 2
 6 H u0 p0 c0 {3,S}
 7 H u0 p0 c0 {3,S}
 
-CH3OCO(48)
+C2H3O2(48)
 multiplicity 2
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,D}
@@ -324,7 +324,7 @@ CH3OX(49)
 5 H u0 p0 c0 {1,S}
 6 X u0 p0 c0 {2,S}
 
-HOCH2O(50)
+CH3O2(50)
 multiplicity 2
 1 O u0 p2 c0 {3,S} {6,S}
 2 O u1 p2 c0 {3,S}
@@ -518,7 +518,7 @@ C3H4O3(70)
 9  H u0 p0 c0 {4,S}
 10 H u0 p0 c0 {6,S}
 
-CH3CHO(71)
+C2H4O(71)
 1 O u0 p2 c0 {3,D}
 2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 3 C u0 p0 c0 {1,D} {2,S} {7,S}
@@ -1808,7 +1808,7 @@ SX(175)
 5 H u0 p0 c0 {2,S}
 6 X u0 p0 c0 {3,D}
 
-CH4O2(176)
+OCO(176)
 1 O u0 p2 c0 {3,S} {6,S}
 2 O u0 p2 c0 {3,S} {7,S}
 3 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
@@ -1930,7 +1930,7 @@ SX(190)
 6 H u0 p0 c0 {2,S}
 7 X u0 p0 c0
 
-CH4O2(191)
+COO(191)
 1 O u0 p2 c0 {2,S} {3,S}
 2 O u0 p2 c0 {1,S} {7,S}
 3 C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
@@ -1949,7 +1949,7 @@ SX(192)
 7 H u0 p0 c0 {2,S}
 8 X u0 p0 c0
 
-CH4O3(193)
+OCOO(193)
 1 O u0 p2 c0 {3,S} {4,S}
 2 O u0 p2 c0 {4,S} {7,S}
 3 O u0 p2 c0 {1,S} {8,S}
@@ -2545,7 +2545,7 @@ SX(248)
 9  H u0 p0 c0 {2,S}
 10 X u0 p0 c0 {4,S}
 
-DMEX(249)
+SX(249)
 1  O u0 p2 c0 {2,S} {3,S}
 2  C u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
 3  C u0 p0 c0 {1,S} {7,S} {8,S} {9,S}
@@ -2557,7 +2557,7 @@ DMEX(249)
 9  H u0 p0 c0 {3,S}
 10 X u0 p0 c0
 
-S(250)
+COOC(250)
 1  O u0 p2 c0 {2,S} {3,S}
 2  O u0 p2 c0 {1,S} {4,S}
 3  C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}

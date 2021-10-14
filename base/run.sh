@@ -10,5 +10,6 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --ntasks=1
 
-source activate rmg_env
-python  $RMG -p input.py
+source ~/_02_RMG_envs/RMG_julia_env/.config_file
+source activate rmg_julia_env
+python-jl $RMG input.py

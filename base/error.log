@@ -1,7 +1,32 @@
+/var/spool/slurm/d/job21526016/slurm_script: line 0: unalias: df: not found
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/cmlformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/cmlformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/pubchemjsonformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/pubchemjsonformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/lpmdformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/lpmdformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/cifformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/cifformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/smilesformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/smilesformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/pdbformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/pdbformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/mdlformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/mdlformat.so)
 :root:Removing old /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/base/RMG_backup.log
 :root:Moving /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/base/RMG.log to /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/base/RMG_backup.log
 
-/home/blais.ch/.conda/envs/rmg_env/lib/python3.7/site-packages/scipy/optimize/optimize.py:1978: LinAlgWarning: Ill-conditioned matrix (rcond=9.79183e-18): result may not be accurate.
-  fu = func(x, *args)
-/home/blais.ch/.conda/envs/rmg_env/lib/python3.7/site-packages/scipy/optimize/optimize.py:1978: LinAlgWarning: Ill-conditioned matrix (rcond=5.9437e-17): result may not be accurate.
-  fu = func(x, *args)
