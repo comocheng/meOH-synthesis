@@ -10,9 +10,9 @@ import glob
 # WARNING - this will fail if M%N != 0
 
 
-skip_completed_runs = True  # set to false to overwrite RMG runs that completed
+skip_completed_runs = False # set to false to overwrite RMG runs that completed
 
-working_dir = "/scratch/westgroup/methanol/perturb_5000/"
+working_dir = "/scratch/westgroup/methanol/perturb_5000_correllated/"
 # working_dir = "/home/moon/rmg/fake_rmg_runs/"
 if not os.path.exists(working_dir):
     os.mkdir(working_dir)
@@ -101,6 +101,30 @@ for i in range(0, M, N):
     # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
     content.append('\n')
     
+    for lib_file in perturbed_thermo:
+        if "Pt111" in lib_file:
+            lib_file_src = lib_file.replace('surfaceThermoPt111_0000.py', 'surfaceThermoPt111_${RUN_i}.py')
+            file_name_parts = lib_file.split('RMG-database/')
+            if len(file_name_parts) != 2:
+                raise OSError(f'Bad source adsorptionPt111_XXXX.py file path {lib_file}')
+            lib_file_dest = os.path.join(dest_db_dir, file_name_parts[1].replace('surfaceThermoPt111_0000.py', 'surfaceThermoPt111.py'))
+            content.append(f'rm "{lib_file_dest}"\n')
+            content.append(f'cp "{lib_file_src}" "{lib_file_dest}"\n')
+            # break
+
+        # for some reason, have to remove the original file for it to copy correctly. 
+        elif "Cu111" in lib_file:
+            lib_file_src = lib_file.replace('surfaceThermoCu111_0000.py', 'surfaceThermoCu111_${RUN_i}.py')
+            file_name_parts = lib_file.split('RMG-database/')
+            if len(file_name_parts) != 2:
+                raise OSError(f'Bad source adsorptionCu111_XXXX.py file path {lib_file}')
+            lib_file_dest = os.path.join(dest_db_dir, file_name_parts[1].replace('surfaceThermoCu111_0000.py', 'surfaceThermoCu111.py'))
+            content.append(f'rm "{lib_file_dest}"\n')
+            content.append(f'cp "{lib_file_src}" "{lib_file_dest}"\n')
+            # break
+    # For each perturbed parameter, copy it from the reference database to the Nth symbolic one.
+    content.append('\n')
+
 
     # make the directory for the rmg run
     content.append('# Prepare the directory for the RMG run\n')
@@ -117,7 +141,12 @@ for i in range(0, M, N):
     content.append('# Run RMG\n')
     content.append(f'cd {rmg_run_dir} \n')
     # content.append(f'if RMG_RUN COMPLETED {rmg_run_dir} \n')
-    content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py input.py\n')
+
+   
+    # activate conda env
+    content.append(f'source activate rmg_julia_envrmg\n')
+    # adding in environment variable for $RMG to the RMG-Py/rmg.py in bashrc so we don't have to change path
+    content.append(f'python-jl $RMG input.py\n')
     #content.append(f'python /scratch/westgroup/methanol/perturb_5000/RMG-Py/rmg.py {rmg_run_dir}/input.py\n')
 
     jobfile.content = content

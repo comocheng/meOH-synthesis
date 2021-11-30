@@ -87,8 +87,8 @@ kinetics_database.load_libraries(
 # thermo_database.groups['adsorptionPt111']
 
 thermo_libraries = [
-    # 'surfaceThermoPt111',
-    # 'surfaceThermoPt_C',
+    'surfaceThermoPt111',
+    'surfaceThermoCu111',
     # 'surfaceThermoPt_H',
     # 'surfaceThermoPt_O',
     # 'surfaceThermoPt_vdW',
@@ -240,10 +240,9 @@ if len(thermo_libraries) > 0:
                     E0_ref = thermo_lib_ref.entries[entry_key].data.poly3.c5
                     E0_perturbed = E0_ref + delta_E0 / constants.R  # 8.314
                     entry.data.poly3.c5 = E0_perturbed
-
             thermo_lib.save(os.path.join(library_path, 'libraries', library_key + '_' + str(i).zfill(4) + '.py'))
 
-if len(thermo_groups_to_perturb) > 0:
+if len(thermo_groups_to_perturb) > 0: 
     print("generating thermo group files")
     for i in tqdm(range(0, N)):
         for group_name in thermo_groups_to_perturb:
