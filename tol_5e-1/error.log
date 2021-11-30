@@ -1,0 +1,31 @@
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/cmlformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/cmlformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/pubchemjsonformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/pubchemjsonformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/lpmdformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/lpmdformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/cifformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/cifformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/smilesformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/smilesformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/pdbformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/pdbformat.so)
+==============================
+*** Open Babel Error  in openLib
+  /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/mdlformat.so did not load properly.
+ Error: /shared/centos7/gcc/7.2.0/lib64/libstdc++.so.6: version `GLIBCXX_3.4.26' not found (required by /home/blais.ch/.conda/envs/rmg_julia_env/lib/openbabel/3.1.0/mdlformat.so)
+:root:Removing old /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/tol_5e-1/RMG_backup.log
+:root:Moving /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/tol_5e-1/RMG.log to /work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/tol_5e-1/RMG_backup.log
+

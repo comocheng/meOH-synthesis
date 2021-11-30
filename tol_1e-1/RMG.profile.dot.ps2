@@ -1,0 +1,7216 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.40.1 (20161225.0304)
+%%Title: %3
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 3247 2001
+%%PageOrientation: Portrait
+<< /PageSize [3247 2001] >> setpagedevice
+0 0 1 beginpage
+gsave
+36 36 3211 1965 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+[ /CropBox [36 36 3247 2001] /PAGES pdfmark
+% 28
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 1623.5 832 moveto
+1450.5 832 lineto
+1450.5 769 lineto
+1623.5 769 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 1623.5 832 moveto
+1450.5 832 lineto
+1450.5 769 lineto
+1623.5 769 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1517 820 moveto 40 (<frozen) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1458.5 809 moveto 157 (importlib:1009:_handle_fromlist) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1521.5 798 moveto 31 (0.82%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1518 787 moveto 38 (\(0.21%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1511.5 776 moveto 51 (2783733×) alignedtext
+grestore
+% 78
+gsave
+0.58974 0.9 0.5098 nodecolor
+newpath 1240 1179 moveto
+1044 1179 lineto
+1044 1127 lineto
+1240 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.58974 0.9 0.5098 nodecolor
+newpath 1240 1179 moveto
+1044 1179 lineto
+1044 1127 lineto
+1240 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1052 1167 moveto 180 (family:1101:add_rules_from_training) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1123.5 1156 moveto 37 (11.66%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1123 1145 moveto 38 (\(0.40%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1131.5 1134 moveto 21 (64×) alignedtext
+grestore
+% 79
+gsave
+0.6 0.89844 0.50196 nodecolor
+newpath 945.5 1081.5 moveto
+780.5 1081.5 lineto
+780.5 1029.5 lineto
+945.5 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6 0.89844 0.50196 nodecolor
+newpath 945.5 1081.5 moveto
+780.5 1081.5 lineto
+780.5 1029.5 lineto
+945.5 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+788.5 1069.5 moveto 149 (thermo:1175:get_thermo_data) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+844.5 1058.5 moveto 37 (10.03%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+844 1047.5 moveto 38 (\(0.62%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+846.5 1036.5 moveto 33 (1413×) alignedtext
+grestore
+% 78->79
+gsave
+.5 setlinewidth
+0.62273 0.89431 0.48235 edgecolor
+newpath 1063.0983 1126.9179 moveto
+1054.2837 1123.9392 1045.4434 1120.9232 1037 1118 curveto
+1004.3692 1106.7028 968.4357 1093.8632 937.7378 1082.7727 curveto
+stroke
+0.62273 0.89431 0.48235 edgecolor
+newpath 938.1115 1081.6052 moveto
+934.4034 1081.5675 lineto
+937.2786 1083.9093 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.62273 0.89431 0.48235 edgecolor
+newpath 938.1115 1081.6052 moveto
+934.4034 1081.5675 lineto
+937.2786 1083.9093 lineto
+closepath stroke
+0.62273 0.89431 0.48235 edgecolor
+10 /ArialMT set_font
+1037 1110 moveto 31 (6.63%) alignedtext
+0.62273 0.89431 0.48235 edgecolor
+10 /ArialMT set_font
+1039 1099 moveto 27 (465×) alignedtext
+grestore
+% 545
+gsave
+0.62012 0.89516 0.48627 nodecolor
+newpath 1076 631.5 moveto
+966 631.5 lineto
+966 579.5 lineto
+1076 579.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.62012 0.89516 0.48627 nodecolor
+newpath 1076 631.5 moveto
+966 631.5 lineto
+966 579.5 lineto
+1076 579.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+974 619.5 moveto 94 (copy:132:deepcopy) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1005.5 608.5 moveto 31 (7.09%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1002 597.5 moveto 38 (\(2.43%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+995.5 586.5 moveto 51 (7730680×) alignedtext
+grestore
+% 78->545
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 1137.5601 1126.9515 moveto
+1128.5159 1079.212 1104.6557 975.8292 1057 902 curveto
+1032.2723 863.6913 1000.1723 873.8184 982 832 curveto
+970.8406 806.3199 963.5064 790.0235 982 769 curveto
+992.3588 757.2241 1038.9357 768.6775 1052 760 curveto
+1065.2712 751.1851 1065.8575 744.384 1070 729 curveto
+1076.0091 706.6838 1076.8387 699.0761 1070 677 curveto
+1065.2792 661.7607 1056.065 646.8812 1046.8886 634.677 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 1047.6592 633.6682 moveto
+1044.5592 631.6333 lineto
+1045.7136 635.1573 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 1047.6592 633.6682 moveto
+1044.5592 631.6333 lineto
+1045.7136 635.1573 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+1054 870 moveto 31 (0.39%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+1050 859 moveto 39 (50392×) alignedtext
+grestore
+% 1257
+gsave
+0.64921 0.88983 0.46275 nodecolor
+newpath 1614 1081.5 moveto
+1430 1081.5 lineto
+1430 1029.5 lineto
+1614 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64921 0.88983 0.46275 nodecolor
+newpath 1614 1081.5 moveto
+1430 1081.5 lineto
+1430 1029.5 lineto
+1614 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1438 1069.5 moveto 168 (family:1802:calculate_degeneracy) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1506.5 1058.5 moveto 31 (2.62%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1503 1047.5 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1508.5 1036.5 moveto 27 (607×) alignedtext
+grestore
+% 78->1257
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 1201.6219 1126.962 moveto
+1230.4823 1115.5029 1265.9644 1103.0637 1299 1096 curveto
+1352.6012 1084.5389 1368.1643 1097.3035 1422 1087 curveto
+1428.5616 1085.7442 1435.2973 1084.201 1442.0222 1082.4786 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 1442.6789 1083.5733 moveto
+1445.756 1081.504 lineto
+1442.0601 1081.2027 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 1442.6789 1083.5733 moveto
+1445.756 1081.504 lineto
+1442.0601 1081.2027 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1299 1110 moveto 31 (1.48%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1301 1099 moveto 27 (167×) alignedtext
+grestore
+% 1370
+gsave
+0.6478 0.89076 0.46667 nodecolor
+newpath 2330 1015 moveto
+2142 1015 lineto
+2142 963 lineto
+2330 963 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6478 0.89076 0.46667 nodecolor
+newpath 2330 1015 moveto
+2142 1015 lineto
+2142 963 lineto
+2330 963 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2150 1003 moveto 172 (family:2429:get_reaction_template) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2220.5 992 moveto 31 (2.97%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2217 981 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2216.5 970 moveto 39 (13154×) alignedtext
+grestore
+% 78->1370
+gsave
+.5 setlinewidth
+0.65079 0.88983 0.46275 edgecolor
+newpath 1240.0317 1127.7035 moveto
+1241.6975 1127.4532 1243.3545 1127.2182 1245 1127 curveto
+1365.7372 1110.9889 1672.5714 1136.1876 1793 1118 curveto
+1927.3093 1097.7161 2078.0564 1047.7049 2164.5371 1016.2476 curveto
+stroke
+0.65079 0.88983 0.46275 edgecolor
+newpath 2164.9722 1017.3929 moveto
+2167.8411 1015.0434 lineto
+2164.1332 1015.0911 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65079 0.88983 0.46275 edgecolor
+newpath 2164.9722 1017.3929 moveto
+2167.8411 1015.0434 lineto
+2164.1332 1015.0911 lineto
+closepath stroke
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+1900 1110 moveto 31 (2.47%) alignedtext
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+1899 1099 moveto 33 (8290×) alignedtext
+grestore
+% 79->545
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 945.5393 1031.5617 moveto
+983.2926 1015.9895 1024.357 991.4259 1046 954 curveto
+1057.5697 933.9933 1060.7925 919.7569 1046 902 curveto
+1031.8278 884.9877 1017.1649 902.146 997 893 curveto
+957.2389 874.966 941.9759 869.7257 920 832 curveto
+896.6816 791.9697 907.5661 775.1893 904 729 curveto
+902.221 705.9575 892.695 697.1574 904 677 curveto
+916.7634 654.2421 940.046 637.8648 962.5 626.5762 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 963.2074 627.5933 moveto
+965.8055 624.9474 lineto
+962.1245 625.3956 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 963.2074 627.5933 moveto
+965.8055 624.9474 lineto
+962.1245 625.3956 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+927 803.5 moveto 31 (0.32%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+920 792.5 moveto 45 (159454×) alignedtext
+grestore
+% 118
+gsave
+0.64762 0.88983 0.46275 nodecolor
+newpath 1041.5 954 moveto
+774.5 954 lineto
+774.5 902 lineto
+1041.5 902 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64762 0.88983 0.46275 nodecolor
+newpath 1041.5 954 moveto
+774.5 954 lineto
+774.5 902 lineto
+1041.5 902 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+782.5 942 moveto 251 (thermo:1424:get_thermo_data_for_surface_species) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+892.5 931 moveto 31 (2.82%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+889 920 moveto 38 (\(0.85%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+894.5 909 moveto 27 (355×) alignedtext
+grestore
+% 79->118
+gsave
+.5 setlinewidth
+0.64762 0.88983 0.46275 edgecolor
+newpath 886.7946 1029.3085 moveto
+889.9717 1024.7803 892.8642 1019.9343 895 1015 curveto
+902.7833 997.0189 906.0303 975.2096 907.333 957.9253 curveto
+stroke
+0.64762 0.88983 0.46275 edgecolor
+newpath 908.579 957.6606 moveto
+907.5964 954.085 lineto
+906.1347 957.4929 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64762 0.88983 0.46275 edgecolor
+newpath 908.579 957.6606 moveto
+907.5964 954.085 lineto
+906.1347 957.4929 lineto
+closepath stroke
+0.64762 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+907 992 moveto 31 (2.82%) alignedtext
+0.64762 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+909 981 moveto 27 (355×) alignedtext
+grestore
+% 119
+gsave
+0.62424 0.89431 0.48235 nodecolor
+newpath 682.5 729 moveto
+437.5 729 lineto
+437.5 677 lineto
+682.5 677 lineto
+closepath fill
+1 setlinewidth
+filled
+0.62424 0.89431 0.48235 nodecolor
+newpath 682.5 729 moveto
+437.5 729 lineto
+437.5 677 lineto
+682.5 677 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+445.5 717 moveto 229 (thermo:1816:estimate_radical_thermo_via_hbi) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+544.5 706 moveto 31 (6.52%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+541 695 moveto 38 (\(0.19%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+543.5 684 moveto 33 (1948×) alignedtext
+grestore
+% 79->119
+gsave
+.5 setlinewidth
+0.66667 0.88696 0.45098 edgecolor
+newpath 833.8706 1029.3884 moveto
+813.778 1010.1362 787.6158 982.4473 770 954 curveto
+756.9636 932.9479 760.9892 924.1895 750 902 curveto
+719.1813 839.7704 717.2003 818.0066 668 769 curveto
+653.1357 754.1942 634.3365 741.2519 616.605 730.8425 curveto
+stroke
+0.66667 0.88696 0.45098 edgecolor
+newpath 617.1811 729.7605 moveto
+613.5394 729.0614 lineto
+615.9503 731.8789 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66667 0.88696 0.45098 edgecolor
+newpath 617.1811 729.7605 moveto
+613.5394 729.0614 lineto
+615.9503 731.8789 lineto
+closepath stroke
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+746 870 moveto 31 (0.18%) alignedtext
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+748 859 moveto 27 (990×) alignedtext
+grestore
+% 1443
+gsave
+0.61862 0.89516 0.48627 nodecolor
+newpath 746 954 moveto
+514 954 lineto
+514 902 lineto
+746 902 lineto
+closepath fill
+1 setlinewidth
+filled
+0.61862 0.89516 0.48627 nodecolor
+newpath 746 954 moveto
+514 954 lineto
+514 902 lineto
+746 902 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+522 942 moveto 216 (thermo:1679:get_thermo_data_from_groups) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+614.5 931 moveto 31 (7.17%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+611 920 moveto 38 (\(0.02%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+616.5 909 moveto 27 (706×) alignedtext
+grestore
+% 79->1443
+gsave
+.5 setlinewidth
+0.61862 0.89516 0.48627 edgecolor
+newpath 780.1645 1038.8233 moveto
+760.357 1032.938 739.8068 1025.1622 722 1015 curveto
+695.7954 1000.0453 671.2448 976.1189 654.1068 957.1394 curveto
+stroke
+0.61862 0.89516 0.48627 edgecolor
+newpath 654.8803 956.1668 moveto
+651.6327 954.3767 lineto
+653.0551 957.8012 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.61862 0.89516 0.48627 edgecolor
+newpath 654.8803 956.1668 moveto
+651.6327 954.3767 lineto
+653.0551 957.8012 lineto
+closepath stroke
+0.61862 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+722 992 moveto 31 (7.17%) alignedtext
+0.61862 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+724 981 moveto 27 (706×) alignedtext
+grestore
+% 469
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 946.5 534 moveto
+823.5 534 lineto
+823.5 482 lineto
+946.5 482 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 946.5 534 moveto
+823.5 534 lineto
+823.5 482 lineto
+946.5 482 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+831.5 522 moveto 107 (copy:268:_reconstruct) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+869.5 511 moveto 31 (1.55%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+866 500 moveto 38 (\(0.27%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+862.5 489 moveto 45 (149517×) alignedtext
+grestore
+% 545->469
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 983.4768 579.4742 moveto
+976.6454 574.6861 969.5955 569.7118 963 565 curveto
+950.0585 555.7546 936.0021 545.5375 923.4324 536.3372 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 924.1546 535.3477 moveto
+920.6071 534.268 lineto
+922.707 537.3243 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 924.1546 535.3477 moveto
+920.6071 534.268 lineto
+922.707 537.3243 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+967 557 moveto 31 (1.55%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+963 546 moveto 39 (25675×) alignedtext
+grestore
+% 548
+gsave
+0.64308 0.89076 0.46667 nodecolor
+newpath 1129.5 534 moveto
+990.5 534 lineto
+990.5 482 lineto
+1129.5 482 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64308 0.89076 0.46667 nodecolor
+newpath 1129.5 534 moveto
+990.5 534 lineto
+990.5 482 lineto
+1129.5 482 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+998.5 522 moveto 123 (copy:236:_deepcopy_dict) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1044.5 511 moveto 31 (3.50%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1041 500 moveto 38 (\(1.17%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1034.5 489 moveto 51 (2314680×) alignedtext
+grestore
+% 545->548
+gsave
+.5 setlinewidth
+0.64308 0.89076 0.46667 edgecolor
+newpath 1007.3126 579.4476 moveto
+1003.1135 567.7782 1000.9942 554.1633 1007 543 curveto
+1008.0971 540.9608 1009.3708 539.0206 1010.7849 537.1769 curveto
+stroke
+0.64308 0.89076 0.46667 edgecolor
+newpath 1011.8293 537.8362 moveto
+1013.1172 534.3588 lineto
+1009.9419 536.2741 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64308 0.89076 0.46667 edgecolor
+newpath 1011.8293 537.8362 moveto
+1013.1172 534.3588 lineto
+1009.9419 536.2741 lineto
+closepath stroke
+0.64308 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+1017 557 moveto 31 (3.50%) alignedtext
+0.64308 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+1007 546 moveto 51 (2314680×) alignedtext
+grestore
+% 105
+gsave
+0.6 0.89844 0.50196 nodecolor
+newpath 1970.5 954 moveto
+1737.5 954 lineto
+1737.5 902 lineto
+1970.5 902 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6 0.89844 0.50196 nodecolor
+newpath 1970.5 954 moveto
+1737.5 954 lineto
+1737.5 902 lineto
+1970.5 902 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1745.5 942 moveto 217 (common:177:ensure_independent_atom_ids) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1835.5 931 moveto 37 (10.02%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1835 920 moveto 38 (\(4.58%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1834.5 909 moveto 39 (14819×) alignedtext
+grestore
+% 1257->105
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 1569.3538 1029.324 moveto
+1607.5149 1009.0609 1663.0251 981.4324 1714 963 curveto
+1721.6277 960.2418 1729.5653 957.6215 1737.6122 955.1483 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 1738.0751 956.288 moveto
+1741.0671 954.0974 lineto
+1737.362 953.9441 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 1738.0751 956.288 moveto
+1741.0671 954.0974 lineto
+1737.362 953.9441 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1714 992 moveto 31 (0.82%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1716 981 moveto 27 (607×) alignedtext
+grestore
+% 108
+gsave
+0.58475 0.90076 0.51373 nodecolor
+newpath 1420 954 moveto
+1244 954 lineto
+1244 902 lineto
+1420 902 lineto
+closepath fill
+1 setlinewidth
+filled
+0.58475 0.90076 0.51373 nodecolor
+newpath 1420 954 moveto
+1244 954 lineto
+1244 902 lineto
+1420 902 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1252 942 moveto 160 (family:1873:_generate_reactions) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1313.5 931 moveto 37 (12.35%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1313 920 moveto 38 (\(7.12%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1306.5 909 moveto 51 (1703480×) alignedtext
+grestore
+% 1257->108
+gsave
+.5 setlinewidth
+0.65545 0.88889 0.45882 edgecolor
+newpath 1483.6861 1029.4782 moveto
+1456.2537 1010.8843 1418.4133 985.3119 1385 963 curveto
+1381.6328 960.7516 1378.1412 958.4281 1374.6301 956.0973 curveto
+stroke
+0.65545 0.88889 0.45882 edgecolor
+newpath 1375.2724 955.0533 moveto
+1371.6786 954.1392 lineto
+1373.9179 957.0949 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65545 0.88889 0.45882 edgecolor
+newpath 1375.2724 955.0533 moveto
+1371.6786 954.1392 lineto
+1373.9179 957.0949 lineto
+closepath stroke
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1459 992 moveto 31 (1.72%) alignedtext
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1461 981 moveto 27 (777×) alignedtext
+grestore
+% 518
+gsave
+0.6478 0.89076 0.46667 nodecolor
+newpath 2347 893 moveto
+2163 893 lineto
+2163 841 lineto
+2347 841 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6478 0.89076 0.46667 nodecolor
+newpath 2347 893 moveto
+2163 893 lineto
+2163 841 lineto
+2347 841 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2171 881 moveto 168 (groups:109:get_reaction_template) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2239.5 870 moveto 31 (2.97%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2236 859 moveto 38 (\(0.08%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2235.5 848 moveto 39 (13154×) alignedtext
+grestore
+% 1370->518
+gsave
+.5 setlinewidth
+0.6478 0.89076 0.46667 edgecolor
+newpath 2240.076 962.8279 moveto
+2243.0939 943.4497 2247.2101 917.0194 2250.3553 896.824 curveto
+stroke
+0.6478 0.89076 0.46667 edgecolor
+newpath 2251.6025 896.7756 moveto
+2250.9308 893.1288 lineto
+2249.1817 896.3986 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6478 0.89076 0.46667 edgecolor
+newpath 2251.6025 896.7756 moveto
+2250.9308 893.1288 lineto
+2249.1817 896.3986 lineto
+closepath stroke
+0.6478 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+2253 931 moveto 31 (2.97%) alignedtext
+0.6478 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+2249 920 moveto 39 (13154×) alignedtext
+grestore
+% 118->79
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 867.6372 954.4153 moveto
+865.4395 957.0807 863.5153 959.9431 862 963 curveto
+852.438 982.2906 853.1651 1006.7443 856.0272 1025.6633 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 854.8584 1026.1101 moveto
+856.6257 1029.3701 lineto
+857.2771 1025.7195 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 854.8584 1026.1101 moveto
+856.6257 1029.3701 lineto
+857.2771 1025.7195 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+862 992 moveto 31 (1.43%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+864 981 moveto 27 (355×) alignedtext
+grestore
+% 118->545
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 894.8572 901.7688 moveto
+868.9846 845.9888 819.6315 715.0644 888 646 curveto
+898.8104 635.0796 931.7673 625.0036 962.167 617.6333 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 962.7419 618.7553 moveto
+965.8599 616.7481 lineto
+962.1708 616.3728 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 962.7419 618.7553 moveto
+965.8599 616.7481 lineto
+962.1708 616.3728 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+861 752 moveto 31 (0.35%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+854 741 moveto 45 (172266×) alignedtext
+grestore
+% 639
+gsave
+0.62844 0.89344 0.47843 nodecolor
+newpath 624 631.5 moveto
+374 631.5 lineto
+374 579.5 lineto
+624 579.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.62844 0.89344 0.47843 nodecolor
+newpath 624 631.5 moveto
+374 631.5 lineto
+374 579.5 lineto
+624 579.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+382 619.5 moveto 234 (thermo:1938:compute_group_additivity_thermo) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+483.5 608.5 moveto 31 (5.80%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+480 597.5 moveto 38 (\(0.14%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+482.5 586.5 moveto 33 (1149×) alignedtext
+grestore
+% 119->639
+gsave
+.5 setlinewidth
+0.63272 0.89256 0.47451 edgecolor
+newpath 543.6531 676.8718 moveto
+535.5164 663.8663 525.6528 648.1008 517.2677 634.6984 curveto
+stroke
+0.63272 0.89256 0.47451 edgecolor
+newpath 518.2869 634.0177 moveto
+515.392 631.7003 lineto
+516.2099 635.3172 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.63272 0.89256 0.47451 edgecolor
+newpath 518.2869 634.0177 moveto
+515.392 631.7003 lineto
+516.2099 635.3172 lineto
+closepath stroke
+0.63272 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+537 660 moveto 31 (5.07%) alignedtext
+0.63272 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+539 649 moveto 27 (958×) alignedtext
+grestore
+% 1129
+gsave
+0.64762 0.88983 0.46275 nodecolor
+newpath 745 534 moveto
+539 534 lineto
+539 482 lineto
+745 482 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64762 0.88983 0.46275 nodecolor
+newpath 745 534 moveto
+539 534 lineto
+539 482 lineto
+745 482 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+547 522 moveto 190 (thermo:2311:_add_group_thermo_data) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+626.5 511 moveto 31 (2.90%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+623 500 moveto 38 (\(0.17%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+622.5 489 moveto 39 (69770×) alignedtext
+grestore
+% 119->1129
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 595.8672 676.7722 moveto
+608.1051 665.8855 620.5651 652.2273 628 637 curveto
+643.324 605.6151 645.2218 564.9307 644.3353 537.722 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 645.5564 537.5919 moveto
+644.2 534.1407 lineto
+643.1081 537.6845 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 645.5564 537.5919 moveto
+644.2 534.1407 lineto
+643.1081 537.6845 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+648 608.5 moveto 31 (0.76%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+644 597.5 moveto 39 (19247×) alignedtext
+grestore
+% 1450
+gsave
+0.62012 0.89516 0.48627 nodecolor
+newpath 663.5 826.5 moveto
+392.5 826.5 lineto
+392.5 774.5 lineto
+663.5 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.62012 0.89516 0.48627 nodecolor
+newpath 663.5 826.5 moveto
+392.5 826.5 lineto
+392.5 774.5 lineto
+663.5 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+400.5 814.5 moveto 255 (thermo:1917:estimate_thermo_via_group_additivity) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+512.5 803.5 moveto 31 (7.08%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+509 792.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+511.5 781.5 moveto 33 (1149×) alignedtext
+grestore
+% 1443->1450
+gsave
+.5 setlinewidth
+0.62012 0.89516 0.48627 edgecolor
+newpath 609.1126 901.8908 moveto
+592.2672 880.834 568.5929 851.2412 551.1675 829.4594 curveto
+stroke
+0.62012 0.89516 0.48627 edgecolor
+newpath 552.0025 828.5421 moveto
+548.8594 826.5743 lineto
+550.0893 830.0726 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.62012 0.89516 0.48627 edgecolor
+newpath 552.0025 828.5421 moveto
+548.8594 826.5743 lineto
+550.0893 830.0726 lineto
+closepath stroke
+0.62012 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+601 870 moveto 31 (7.08%) alignedtext
+0.62012 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+600 859 moveto 33 (1149×) alignedtext
+grestore
+% 80
+gsave
+0.56557 0.91045 0.52549 nodecolor
+newpath 2494 1404 moveto
+2340 1404 lineto
+2340 1352 lineto
+2494 1352 lineto
+closepath fill
+1 setlinewidth
+filled
+0.56557 0.91045 0.52549 nodecolor
+newpath 2494 1404 moveto
+2340 1404 lineto
+2340 1352 lineto
+2494 1352 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2348 1392 moveto 138 (output:47:save_output_html) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2398.5 1381 moveto 37 (15.08%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2398 1370 moveto 38 (\(0.02%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2406.5 1359 moveto 21 (50×) alignedtext
+grestore
+% 224
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 2580 1276.5 moveto
+2492 1276.5 lineto
+2492 1224.5 lineto
+2580 1224.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 2580 1276.5 moveto
+2492 1276.5 lineto
+2492 1224.5 lineto
+2580 1224.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2500 1264.5 moveto 72 (draw:150:draw) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2520.5 1253.5 moveto 31 (0.83%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2517 1242.5 moveto 38 (\(0.10%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2522.5 1231.5 moveto 27 (578×) alignedtext
+grestore
+% 80->224
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 2447.1699 1351.623 moveto
+2450.203 1348.7648 2453.1956 1345.8563 2456 1343 curveto
+2475.9905 1322.6395 2497.0394 1298.1643 2512.5263 1279.5056 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 2513.4812 1280.2731 moveto
+2514.7701 1276.796 lineto
+2511.5942 1278.7104 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 2513.4812 1280.2731 moveto
+2514.7701 1276.796 lineto
+2511.5942 1278.7104 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2502 1320 moveto 31 (0.83%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2504 1309 moveto 27 (578×) alignedtext
+grestore
+% 2703
+gsave
+0.57843 0.90152 0.51765 nodecolor
+newpath 2482.5 1276.5 moveto
+2351.5 1276.5 lineto
+2351.5 1224.5 lineto
+2482.5 1224.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.57843 0.90152 0.51765 nodecolor
+newpath 2482.5 1276.5 moveto
+2351.5 1276.5 lineto
+2351.5 1224.5 lineto
+2482.5 1224.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2359.5 1264.5 moveto 115 (asyncsupport:74:render) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2398.5 1253.5 moveto 37 (13.36%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2398 1242.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2406.5 1231.5 moveto 21 (50×) alignedtext
+grestore
+% 80->2703
+gsave
+.53 setlinewidth
+0.57843 0.90152 0.51765 edgecolor
+newpath 2417 1351.8908 moveto
+2417 1331.1778 2417 1302.2052 2417 1280.5325 curveto
+stroke
+0.57843 0.90152 0.51765 edgecolor
+newpath 2418.2951 1280.2742 moveto
+2417 1276.5743 lineto
+2415.7051 1280.2743 lineto
+closepath fill
+.53 setlinewidth
+solid
+0.57843 0.90152 0.51765 edgecolor
+newpath 2418.2951 1280.2742 moveto
+2417 1276.5743 lineto
+2415.7051 1280.2743 lineto
+closepath stroke
+0.57843 0.90152 0.51765 edgecolor
+10 /ArialMT set_font
+2417 1320 moveto 37 (13.36%) alignedtext
+0.57843 0.90152 0.51765 edgecolor
+10 /ArialMT set_font
+2425 1309 moveto 21 (50×) alignedtext
+grestore
+% 2702
+gsave
+0.57843 0.90152 0.51765 nodecolor
+newpath 2683 1179 moveto
+2549 1179 lineto
+2549 1127 lineto
+2683 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.57843 0.90152 0.51765 nodecolor
+newpath 2683 1179 moveto
+2549 1179 lineto
+2549 1127 lineto
+2683 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2557 1167 moveto 118 (environment:993:render) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2597.5 1156 moveto 37 (13.36%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2597 1145 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2605.5 1134 moveto 21 (50×) alignedtext
+grestore
+% 2703->2702
+gsave
+.53 setlinewidth
+0.57843 0.90152 0.51765 edgecolor
+newpath 2470.0669 1224.4999 moveto
+2497.6165 1211.002 2531.288 1194.5046 2559.3428 1180.7592 curveto
+stroke
+0.57843 0.90152 0.51765 edgecolor
+newpath 2559.9827 1181.8878 moveto
+2562.7355 1179.0969 lineto
+2558.8431 1179.562 lineto
+closepath fill
+.53 setlinewidth
+solid
+0.57843 0.90152 0.51765 edgecolor
+newpath 2559.9827 1181.8878 moveto
+2562.7355 1179.0969 lineto
+2558.8431 1179.562 lineto
+closepath stroke
+0.57843 0.90152 0.51765 edgecolor
+10 /ArialMT set_font
+2540 1202 moveto 37 (13.36%) alignedtext
+0.57843 0.90152 0.51765 edgecolor
+10 /ArialMT set_font
+2548 1191 moveto 21 (50×) alignedtext
+grestore
+% 89
+gsave
+0.51908 0.91608 0.56078 nodecolor
+newpath 2103.5 1782 moveto
+1996.5 1782 lineto
+1996.5 1730 lineto
+2103.5 1730 lineto
+closepath fill
+1 setlinewidth
+filled
+0.51908 0.91608 0.56078 nodecolor
+newpath 2103.5 1782 moveto
+1996.5 1782 lineto
+1996.5 1730 lineto
+2103.5 1730 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2004.5 1770 moveto 91 (main:432:initialize) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2031.5 1759 moveto 37 (21.98%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2031 1748 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2042.5 1737 moveto 15 (1×) alignedtext
+grestore
+% 371
+gsave
+0.52163 0.91608 0.56078 nodecolor
+newpath 2083.5 1496 moveto
+1946.5 1496 lineto
+1946.5 1444 lineto
+2083.5 1444 lineto
+closepath fill
+1 setlinewidth
+filled
+0.52163 0.91608 0.56078 nodecolor
+newpath 2083.5 1496 moveto
+1946.5 1496 lineto
+1946.5 1444 lineto
+2083.5 1444 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1954.5 1484 moveto 121 (main:351:load_database) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1996.5 1473 moveto 37 (21.80%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1996 1462 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2007.5 1451 moveto 15 (1×) alignedtext
+grestore
+% 89->371
+gsave
+.87 setlinewidth
+0.52163 0.91608 0.56078 edgecolor
+newpath 2046.8012 1729.8612 moveto
+2040.3471 1677.1222 2025.7906 1558.1742 2018.8377 1501.3594 curveto
+stroke
+0.52163 0.91608 0.56078 edgecolor
+newpath 2020.4332 1500.8539 moveto
+2018.2294 1496.3886 lineto
+2017.1675 1501.2536 lineto
+closepath fill
+.87 setlinewidth
+solid
+0.52163 0.91608 0.56078 edgecolor
+newpath 2020.4332 1500.8539 moveto
+2018.2294 1496.3886 lineto
+2017.1675 1501.2536 lineto
+closepath stroke
+0.52163 0.91608 0.56078 edgecolor
+10 /ArialMT set_font
+2038 1637 moveto 37 (21.80%) alignedtext
+0.52163 0.91608 0.56078 edgecolor
+10 /ArialMT set_font
+2049 1626 moveto 15 (1×) alignedtext
+grestore
+% 371->78
+gsave
+.5 setlinewidth
+0.58974 0.9 0.5098 edgecolor
+newpath 1946.4131 1463.201 moveto
+1792.2676 1447.026 1423.4495 1403.0707 1315 1343 curveto
+1244.306 1303.8423 1187.0347 1224.963 1159.5886 1182.1858 curveto
+stroke
+0.58974 0.9 0.5098 edgecolor
+newpath 1160.5794 1181.4611 moveto
+1157.6642 1179.1693 lineto
+1158.5139 1182.7788 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.58974 0.9 0.5098 edgecolor
+newpath 1160.5794 1181.4611 moveto
+1157.6642 1179.1693 lineto
+1158.5139 1182.7788 lineto
+closepath stroke
+0.58974 0.9 0.5098 edgecolor
+10 /ArialMT set_font
+1315 1320 moveto 37 (11.66%) alignedtext
+0.58974 0.9 0.5098 edgecolor
+10 /ArialMT set_font
+1323 1309 moveto 21 (64×) alignedtext
+grestore
+% 243
+gsave
+0.64465 0.89076 0.46667 nodecolor
+newpath 2225.5 1404 moveto
+2150.5 1404 lineto
+2150.5 1352 lineto
+2225.5 1352 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64465 0.89076 0.46667 nodecolor
+newpath 2225.5 1404 moveto
+2150.5 1404 lineto
+2150.5 1352 lineto
+2225.5 1352 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2158.5 1392 moveto 59 (rmg:72:load) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2172.5 1381 moveto 31 (3.26%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2169 1370 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2180.5 1359 moveto 15 (1×) alignedtext
+grestore
+% 371->243
+gsave
+.5 setlinewidth
+0.64465 0.89076 0.46667 edgecolor
+newpath 2064.1121 1443.8826 moveto
+2090.3073 1429.9522 2122.1671 1413.0094 2147.0179 1399.794 curveto
+stroke
+0.64465 0.89076 0.46667 edgecolor
+newpath 2147.8066 1400.7621 moveto
+2150.3216 1398.0371 lineto
+2146.6562 1398.5989 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64465 0.89076 0.46667 edgecolor
+newpath 2147.8066 1400.7621 moveto
+2150.3216 1398.0371 lineto
+2146.6562 1398.5989 lineto
+closepath stroke
+0.64465 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+2122 1427 moveto 31 (3.26%) alignedtext
+0.64465 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+2130 1416 moveto 15 (1×) alignedtext
+grestore
+% 1352
+gsave
+0.62162 0.89516 0.48627 nodecolor
+newpath 2095.5 1343 moveto
+1888.5 1343 lineto
+1888.5 1291 lineto
+2095.5 1291 lineto
+closepath fill
+1 setlinewidth
+filled
+0.62162 0.89516 0.48627 nodecolor
+newpath 2095.5 1343 moveto
+1888.5 1343 lineto
+1888.5 1291 lineto
+2095.5 1291 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1896.5 1331 moveto 191 (family:1280:fill_rules_by_averaging_up) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1976.5 1320 moveto 31 (6.88%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1973 1309 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1981.5 1298 moveto 21 (64×) alignedtext
+grestore
+% 371->1352
+gsave
+.5 setlinewidth
+0.62162 0.89516 0.48627 edgecolor
+newpath 2011.0462 1443.6984 moveto
+2007.0021 1416.7966 2000.729 1375.0669 1996.4978 1346.9204 curveto
+stroke
+0.62162 0.89516 0.48627 edgecolor
+newpath 1997.6724 1346.493 moveto
+1995.9407 1343.214 lineto
+1995.2497 1346.8572 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.62162 0.89516 0.48627 edgecolor
+newpath 1997.6724 1346.493 moveto
+1995.9407 1343.214 lineto
+1995.2497 1346.8572 lineto
+closepath stroke
+0.62162 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+2009 1427 moveto 31 (6.88%) alignedtext
+0.62162 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+2014 1416 moveto 21 (64×) alignedtext
+grestore
+% 92
+gsave
+0.53359 0.91489 0.55294 nodecolor
+newpath 2254.5 1721 moveto
+2169.5 1721 lineto
+2169.5 1669 lineto
+2254.5 1669 lineto
+closepath fill
+1 setlinewidth
+filled
+0.53359 0.91489 0.55294 nodecolor
+newpath 2254.5 1721 moveto
+2169.5 1721 lineto
+2169.5 1669 lineto
+2254.5 1669 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2177.5 1709 moveto 69 (util:110:notify) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2193.5 1698 moveto 37 (19.98%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2193 1687 moveto 38 (\(1.13%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2201.5 1676 moveto 21 (25×) alignedtext
+grestore
+% 263
+gsave
+0.64921 0.88983 0.46275 nodecolor
+newpath 2525.5 1593.5 moveto
+2432.5 1593.5 lineto
+2432.5 1541.5 lineto
+2525.5 1541.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64921 0.88983 0.46275 nodecolor
+newpath 2525.5 1593.5 moveto
+2432.5 1593.5 lineto
+2432.5 1541.5 lineto
+2525.5 1541.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2440.5 1581.5 moveto 77 (yml:213:update) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2463.5 1570.5 moveto 31 (2.78%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2460 1559.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2468.5 1548.5 moveto 21 (25×) alignedtext
+grestore
+% 92->263
+gsave
+.5 setlinewidth
+0.64921 0.88983 0.46275 edgecolor
+newpath 2254.6497 1677.0795 moveto
+2267.076 1671.7212 2280.6339 1665.7416 2293 1660 curveto
+2339.4235 1638.4456 2391.5395 1612.361 2428.7685 1593.3937 curveto
+stroke
+0.64921 0.88983 0.46275 edgecolor
+newpath 2429.7625 1594.262 moveto
+2432.3241 1591.5808 lineto
+2428.6496 1592.0793 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64921 0.88983 0.46275 edgecolor
+newpath 2429.7625 1594.262 moveto
+2432.3241 1591.5808 lineto
+2428.6496 1592.0793 lineto
+closepath stroke
+0.64921 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2399 1637 moveto 31 (2.78%) alignedtext
+0.64921 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2404 1626 moveto 21 (25×) alignedtext
+grestore
+% 1225
+gsave
+0.62273 0.89431 0.48235 nodecolor
+newpath 2072.5 826.5 moveto
+1917.5 826.5 lineto
+1917.5 774.5 lineto
+2072.5 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.62273 0.89431 0.48235 nodecolor
+newpath 2072.5 826.5 moveto
+1917.5 826.5 lineto
+1917.5 774.5 lineto
+2072.5 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1925.5 814.5 moveto 139 (adjlist:788:to_adjacency_list) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1979.5 803.5 moveto 31 (6.65%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1976 792.5 moveto 38 (\(3.71%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1972.5 781.5 moveto 45 (231761×) alignedtext
+grestore
+% 92->1225
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 2171.3208 1668.8173 moveto
+2141.4282 1646.0608 2106 1610.1034 2106 1567.5 curveto
+2106 1567.5 2106 1567.5 2106 928 curveto
+2106 886.2057 2071.652 851.4559 2041.1699 828.846 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 2041.781 827.7753 moveto
+2038.2333 826.6961 lineto
+2040.3337 829.7521 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 2041.781 827.7753 moveto
+2038.2333 826.6961 lineto
+2040.3337 829.7521 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2110 1253.5 moveto 31 (0.42%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2106 1242.5 moveto 39 (10392×) alignedtext
+grestore
+% 2265
+gsave
+0.56557 0.91045 0.52549 nodecolor
+newpath 2331 1593.5 moveto
+2219 1593.5 lineto
+2219 1541.5 lineto
+2331 1541.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.56557 0.91045 0.52549 nodecolor
+newpath 2331 1593.5 moveto
+2219 1593.5 lineto
+2219 1541.5 lineto
+2331 1541.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2227 1581.5 moveto 96 (output:1358:update) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2256.5 1570.5 moveto 37 (15.09%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2256 1559.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2264.5 1548.5 moveto 21 (25×) alignedtext
+grestore
+% 92->2265
+gsave
+.6 setlinewidth
+0.56557 0.91045 0.52549 edgecolor
+newpath 2224.901 1668.8908 moveto
+2235.1782 1648.0918 2249.5704 1618.9646 2260.2935 1597.2631 curveto
+stroke
+0.56557 0.91045 0.52549 edgecolor
+newpath 2261.6123 1597.6754 moveto
+2262.1162 1593.5743 lineto
+2259.1648 1596.466 lineto
+closepath fill
+.6 setlinewidth
+solid
+0.56557 0.91045 0.52549 edgecolor
+newpath 2261.6123 1597.6754 moveto
+2262.1162 1593.5743 lineto
+2259.1648 1596.466 lineto
+closepath stroke
+0.56557 0.91045 0.52549 edgecolor
+10 /ArialMT set_font
+2254 1637 moveto 37 (15.09%) alignedtext
+0.56557 0.91045 0.52549 edgecolor
+10 /ArialMT set_font
+2262 1626 moveto 21 (25×) alignedtext
+grestore
+% 901
+gsave
+0.64921 0.88983 0.46275 nodecolor
+newpath 2616 1496 moveto
+2514 1496 lineto
+2514 1444 lineto
+2616 1444 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64921 0.88983 0.46275 nodecolor
+newpath 2616 1496 moveto
+2514 1496 lineto
+2514 1444 lineto
+2616 1444 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2522 1484 moveto 86 (yml:59:write_yml) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2549.5 1473 moveto 31 (2.78%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2546 1462 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2554.5 1451 moveto 21 (25×) alignedtext
+grestore
+% 263->901
+gsave
+.5 setlinewidth
+0.64921 0.88983 0.46275 edgecolor
+newpath 2502.0464 1541.3718 moveto
+2513.6143 1528.257 2527.6578 1512.3357 2539.5431 1498.8611 curveto
+stroke
+0.64921 0.88983 0.46275 edgecolor
+newpath 2540.4934 1499.6355 moveto
+2541.89 1496.2003 lineto
+2538.656 1498.0148 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64921 0.88983 0.46275 edgecolor
+newpath 2540.4934 1499.6355 moveto
+2541.89 1496.2003 lineto
+2538.656 1498.0148 lineto
+closepath stroke
+0.64921 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2532 1519 moveto 31 (2.78%) alignedtext
+0.64921 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2537 1508 moveto 21 (25×) alignedtext
+grestore
+% 1100
+gsave
+0.65079 0.88983 0.46275 nodecolor
+newpath 1726.5 442 moveto
+1567.5 442 lineto
+1567.5 379 lineto
+1726.5 379 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65079 0.88983 0.46275 nodecolor
+newpath 1726.5 442 moveto
+1567.5 442 lineto
+1567.5 379 lineto
+1726.5 379 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1575.5 430 moveto 143 (~:0:<method 'format' of 'str') alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1625 419 moveto 44 (objects>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1631.5 408 moveto 31 (2.40%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1628 397 moveto 38 (\(2.34%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1618.5 386 moveto 57 (15899001×) alignedtext
+grestore
+% 1225->1100
+gsave
+.5 setlinewidth
+0.65545 0.88889 0.45882 edgecolor
+newpath 2004.2025 774.3752 moveto
+2010.2311 754.9443 2017 727.6408 2017 703 curveto
+2017 703 2017 703 2017 508 curveto
+2017 449.1026 1839.4752 425.0184 1730.3591 415.7778 curveto
+stroke
+0.65545 0.88889 0.45882 edgecolor
+newpath 1730.4191 414.5536 moveto
+1726.829 415.482 lineto
+1730.2144 416.995 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65545 0.88889 0.45882 edgecolor
+newpath 1730.4191 414.5536 moveto
+1726.829 415.482 lineto
+1730.2144 416.995 lineto
+closepath stroke
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2030 608.5 moveto 31 (1.83%) alignedtext
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2017 597.5 moveto 57 (14220463×) alignedtext
+grestore
+% 261
+gsave
+0.56557 0.91045 0.52549 nodecolor
+newpath 2423 1496 moveto
+2285 1496 lineto
+2285 1444 lineto
+2423 1444 lineto
+closepath fill
+1 setlinewidth
+filled
+0.56557 0.91045 0.52549 nodecolor
+newpath 2423 1496 moveto
+2285 1496 lineto
+2285 1444 lineto
+2423 1444 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2293 1484 moveto 122 (output:1320:save_output) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2335.5 1473 moveto 37 (15.09%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2335 1462 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2343.5 1451 moveto 21 (25×) alignedtext
+grestore
+% 2265->261
+gsave
+.6 setlinewidth
+0.56557 0.91045 0.52549 edgecolor
+newpath 2296.1706 1541.3718 moveto
+2306.6198 1528.4756 2319.2679 1512.8656 2330.0676 1499.5368 curveto
+stroke
+0.56557 0.91045 0.52549 edgecolor
+newpath 2331.3763 1500.0899 moveto
+2332.771 1496.2003 lineto
+2329.2552 1498.3712 lineto
+closepath fill
+.6 setlinewidth
+solid
+0.56557 0.91045 0.52549 edgecolor
+newpath 2331.3763 1500.0899 moveto
+2332.771 1496.2003 lineto
+2329.2552 1498.3712 lineto
+closepath stroke
+0.56557 0.91045 0.52549 edgecolor
+10 /ArialMT set_font
+2323 1519 moveto 37 (15.09%) alignedtext
+0.56557 0.91045 0.52549 edgecolor
+10 /ArialMT set_font
+2331 1508 moveto 21 (25×) alignedtext
+grestore
+% 94
+gsave
+0.47163 0.92157 0.6 nodecolor
+newpath 1178 1854 moveto
+1070 1854 lineto
+1070 1802 lineto
+1178 1802 lineto
+closepath fill
+1 setlinewidth
+filled
+0.47163 0.92157 0.6 nodecolor
+newpath 1178 1854 moveto
+1070 1854 lineto
+1070 1802 lineto
+1178 1802 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1078 1842 moveto 92 (model:499:enlarge) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1105.5 1831 moveto 37 (29.25%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1105 1820 moveto 38 (\(0.02%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1113.5 1809 moveto 21 (69×) alignedtext
+grestore
+% 95
+gsave
+0.6358 0.89256 0.47451 nodecolor
+newpath 932 1660 moveto
+736 1660 lineto
+736 1608 lineto
+932 1608 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6358 0.89256 0.47451 nodecolor
+newpath 932 1660 moveto
+736 1660 lineto
+736 1608 lineto
+932 1608 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+744 1648 moveto 180 (model:808:apply_thermo_to_species) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+818.5 1637 moveto 31 (4.78%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+815 1626 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+823.5 1615 moveto 21 (19×) alignedtext
+grestore
+% 94->95
+gsave
+.5 setlinewidth
+0.6358 0.89256 0.47451 edgecolor
+newpath 1084.8893 1801.8363 moveto
+1030.3619 1765.3593 931.9071 1699.4965 875.9172 1662.0412 curveto
+stroke
+0.6358 0.89256 0.47451 edgecolor
+newpath 876.5433 1660.9862 moveto
+872.9531 1660.0583 lineto
+875.181 1663.0226 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6358 0.89256 0.47451 edgecolor
+newpath 876.5433 1660.9862 moveto
+872.9531 1660.0583 lineto
+875.181 1663.0226 lineto
+closepath stroke
+0.6358 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+1050 1759 moveto 31 (4.78%) alignedtext
+0.6358 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+1055 1748 moveto 21 (19×) alignedtext
+grestore
+% 1062
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 1178.5 1721 moveto
+993.5 1721 lineto
+993.5 1669 lineto
+1178.5 1669 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 1178.5 1721 moveto
+993.5 1721 lineto
+993.5 1669 lineto
+1178.5 1669 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1001.5 1709 moveto 169 (model:734:process_new_reactions) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1070.5 1698 moveto 31 (0.82%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1067 1687 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1072.5 1676 moveto 27 (515×) alignedtext
+grestore
+% 94->1062
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 1116.4924 1801.7235 moveto
+1110.1688 1779.5908 1101.1247 1747.9363 1094.5288 1724.8507 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 1095.6314 1724.2507 moveto
+1093.492 1721.2219 lineto
+1093.2757 1724.9238 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 1095.6314 1724.2507 moveto
+1093.492 1721.2219 lineto
+1093.2757 1724.9238 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1110 1759 moveto 31 (0.82%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1112 1748 moveto 27 (515×) alignedtext
+grestore
+% 1466
+gsave
+0.51253 0.91724 0.56863 nodecolor
+newpath 1288.5 1721 moveto
+1187.5 1721 lineto
+1187.5 1669 lineto
+1288.5 1669 lineto
+closepath fill
+1 setlinewidth
+filled
+0.51253 0.91724 0.56863 nodecolor
+newpath 1288.5 1721 moveto
+1187.5 1721 lineto
+1187.5 1669 lineto
+1288.5 1669 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1195.5 1709 moveto 85 (react:99:react_all) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1219.5 1698 moveto 37 (23.18%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1219 1687 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1227.5 1676 moveto 21 (25×) alignedtext
+grestore
+% 94->1466
+gsave
+.93 setlinewidth
+0.51253 0.91724 0.56863 edgecolor
+newpath 1146.5227 1801.7235 moveto
+1165.4155 1779.6819 1192.4029 1748.1967 1212.169 1725.1361 curveto
+stroke
+0.51253 0.91724 0.56863 edgecolor
+newpath 1213.6758 1725.9597 moveto
+1215.5241 1721.2219 lineto
+1211.1247 1723.773 lineto
+closepath fill
+.93 setlinewidth
+solid
+0.51253 0.91724 0.56863 edgecolor
+newpath 1213.6758 1725.9597 moveto
+1215.5241 1721.2219 lineto
+1211.1247 1723.773 lineto
+closepath stroke
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1207 1759 moveto 37 (23.18%) alignedtext
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1215 1748 moveto 21 (25×) alignedtext
+grestore
+% 372
+gsave
+0.63426 0.89256 0.47451 nodecolor
+newpath 569.5 1496 moveto
+414.5 1496 lineto
+414.5 1444 lineto
+569.5 1444 lineto
+closepath fill
+1 setlinewidth
+filled
+0.63426 0.89256 0.47451 nodecolor
+newpath 569.5 1496 moveto
+414.5 1496 lineto
+414.5 1444 lineto
+569.5 1444 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+422.5 1484 moveto 139 (model:822:generate_thermo) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+476.5 1473 moveto 31 (4.82%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+473 1462 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+478.5 1451 moveto 27 (578×) alignedtext
+grestore
+% 95->372
+gsave
+.5 setlinewidth
+0.6358 0.89256 0.47451 edgecolor
+newpath 779.4309 1607.8324 moveto
+716.6241 1577.7145 613.9098 1528.4597 549.7796 1497.7072 curveto
+stroke
+0.6358 0.89256 0.47451 edgecolor
+newpath 550.0603 1496.4833 moveto
+546.3747 1496.0744 lineto
+549.0009 1498.6924 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6358 0.89256 0.47451 edgecolor
+newpath 550.0603 1496.4833 moveto
+546.3747 1496.0744 lineto
+549.0009 1498.6924 lineto
+closepath stroke
+0.6358 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+761 1570.5 moveto 31 (4.78%) alignedtext
+0.6358 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+763 1559.5 moveto 27 (541×) alignedtext
+grestore
+% 379
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 1171 1593.5 moveto
+1001 1593.5 lineto
+1001 1541.5 lineto
+1171 1541.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 1171 1593.5 moveto
+1001 1593.5 lineto
+1001 1541.5 lineto
+1171 1541.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1009 1581.5 moveto 154 (model:405:make_new_reaction) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1070.5 1570.5 moveto 31 (0.84%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1067 1559.5 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1069.5 1548.5 moveto 33 (1791×) alignedtext
+grestore
+% 1062->379
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 1086 1668.8908 moveto
+1086 1648.0918 1086 1618.9646 1086 1597.2631 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 1087.2251 1597.0742 moveto
+1086 1593.5743 lineto
+1084.7751 1597.0743 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 1087.2251 1597.0742 moveto
+1086 1593.5743 lineto
+1084.7751 1597.0743 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1087 1637 moveto 31 (0.81%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1086 1626 moveto 33 (1713×) alignedtext
+grestore
+% 376
+gsave
+0.51253 0.91724 0.56863 nodecolor
+newpath 1280 1593.5 moveto
+1196 1593.5 lineto
+1196 1541.5 lineto
+1280 1541.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.51253 0.91724 0.56863 nodecolor
+newpath 1280 1593.5 moveto
+1196 1593.5 lineto
+1196 1541.5 lineto
+1280 1541.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1204 1581.5 moveto 68 (react:42:react) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1219.5 1570.5 moveto 37 (23.17%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1219 1559.5 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1227.5 1548.5 moveto 21 (25×) alignedtext
+grestore
+% 1466->376
+gsave
+.93 setlinewidth
+0.51253 0.91724 0.56863 edgecolor
+newpath 1238 1668.8908 moveto
+1238 1648.5215 1238 1620.1647 1238 1598.6176 curveto
+stroke
+0.51253 0.91724 0.56863 edgecolor
+newpath 1239.6801 1598.3742 moveto
+1238 1593.5743 lineto
+1236.3201 1598.3743 lineto
+closepath fill
+.93 setlinewidth
+solid
+0.51253 0.91724 0.56863 edgecolor
+newpath 1239.6801 1598.3742 moveto
+1238 1593.5743 lineto
+1236.3201 1598.3743 lineto
+closepath stroke
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1238 1637 moveto 37 (23.17%) alignedtext
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1246 1626 moveto 21 (25×) alignedtext
+grestore
+% 1149
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 625 436.5 moveto
+497 436.5 lineto
+497 384.5 lineto
+625 384.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 625 436.5 moveto
+497 436.5 lineto
+497 384.5 lineto
+625 384.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+505 424.5 moveto 112 (quantity:162:simplified) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+545.5 413.5 moveto 31 (0.86%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+542 402.5 moveto 38 (\(0.05%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+544.5 391.5 moveto 33 (6715×) alignedtext
+grestore
+% 372->1149
+gsave
+.5 setlinewidth
+0.66667 0.88696 0.45098 edgecolor
+newpath 414.4515 1445.4984 moveto
+385.7188 1431.1892 360 1409.565 360 1378 curveto
+360 1378 360 1378 360 657 curveto
+360 606.1388 344.4682 586.9885 370 543 curveto
+397.9387 494.8647 451.204 460.1392 494.4013 438.3445 curveto
+stroke
+0.66667 0.88696 0.45098 edgecolor
+newpath 495.1734 439.3281 moveto
+497.7563 436.6674 lineto
+494.0779 437.1366 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66667 0.88696 0.45098 edgecolor
+newpath 495.1734 439.3281 moveto
+497.7563 436.6674 lineto
+494.0779 437.1366 lineto
+closepath stroke
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+360 931 moveto 31 (0.16%) alignedtext
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+362 920 moveto 27 (579×) alignedtext
+grestore
+% 1470
+gsave
+0.6358 0.89256 0.47451 nodecolor
+newpath 563.5 1404 moveto
+420.5 1404 lineto
+420.5 1352 lineto
+563.5 1352 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6358 0.89256 0.47451 nodecolor
+newpath 563.5 1404 moveto
+420.5 1404 lineto
+420.5 1352 lineto
+563.5 1352 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+428.5 1392 moveto 127 (thermoengine:164:submit) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+476.5 1381 moveto 31 (4.69%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+473 1370 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+478.5 1359 moveto 27 (615×) alignedtext
+grestore
+% 372->1470
+gsave
+.5 setlinewidth
+0.6358 0.89256 0.47451 edgecolor
+newpath 492 1443.8826 moveto
+492 1432.6171 492 1419.3815 492 1407.7404 curveto
+stroke
+0.6358 0.89256 0.47451 edgecolor
+newpath 493.2251 1407.6827 moveto
+492 1404.1827 lineto
+490.7751 1407.6828 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6358 0.89256 0.47451 edgecolor
+newpath 493.2251 1407.6827 moveto
+492 1404.1827 lineto
+490.7751 1407.6828 lineto
+closepath stroke
+0.6358 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+492 1427 moveto 31 (4.60%) alignedtext
+0.6358 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+494 1416 moveto 27 (578×) alignedtext
+grestore
+% 99
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 637 1081.5 moveto
+429 1081.5 lineto
+429 1029.5 lineto
+637 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 637 1081.5 moveto
+429 1081.5 lineto
+429 1029.5 lineto
+637 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+437 1069.5 moveto 192 (thermoengine:41:process_thermo_data) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+517.5 1058.5 moveto 31 (0.80%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+514 1047.5 moveto 38 (\(0.05%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+519.5 1036.5 moveto 27 (593×) alignedtext
+grestore
+% 100
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 2407 729 moveto
+2285 729 lineto
+2285 677 lineto
+2407 677 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 2407 729 moveto
+2285 729 lineto
+2285 677 lineto
+2407 677 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2293 717 moveto 106 (base:263:get_species) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2330.5 706 moveto 31 (1.62%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2327 695 moveto 38 (\(0.32%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2335.5 684 moveto 21 (68×) alignedtext
+grestore
+% 394
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 2430.5 631.5 moveto
+2261.5 631.5 lineto
+2261.5 579.5 lineto
+2430.5 579.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 2430.5 631.5 moveto
+2261.5 631.5 lineto
+2261.5 579.5 lineto
+2430.5 579.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2269.5 619.5 moveto 153 (adjlist:461:from_adjacency_list) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2330.5 608.5 moveto 31 (1.54%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2327 597.5 moveto 38 (\(1.25%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2326.5 586.5 moveto 39 (17693×) alignedtext
+grestore
+% 100->394
+gsave
+.5 setlinewidth
+0.66019 0.88793 0.4549 edgecolor
+newpath 2346 676.8718 moveto
+2346 664.0849 2346 648.63 2346 635.3762 curveto
+stroke
+0.66019 0.88793 0.4549 edgecolor
+newpath 2347.2251 635.2003 moveto
+2346 631.7003 lineto
+2344.7751 635.2004 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66019 0.88793 0.4549 edgecolor
+newpath 2347.2251 635.2003 moveto
+2346 631.7003 lineto
+2344.7751 635.2004 lineto
+closepath stroke
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2347 660 moveto 31 (1.06%) alignedtext
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2346 649 moveto 33 (7301×) alignedtext
+grestore
+% 1180
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 2205 631.5 moveto
+2083 631.5 lineto
+2083 579.5 lineto
+2205 579.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 2205 631.5 moveto
+2083 631.5 lineto
+2083 579.5 lineto
+2205 579.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2091 619.5 moveto 106 (Graph:45:from_edges) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2128.5 608.5 moveto 31 (1.52%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2125 597.5 moveto 38 (\(0.15%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2121.5 586.5 moveto 45 (126814×) alignedtext
+grestore
+% 100->1180
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 2292.1331 676.9999 moveto
+2264.1682 663.502 2229.989 647.0046 2201.5113 633.2592 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 2201.752 632.0152 moveto
+2198.0675 631.5969 lineto
+2200.687 634.2216 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 2201.752 632.0152 moveto
+2198.0675 631.5969 lineto
+2200.687 634.2216 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2270 660 moveto 31 (0.21%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2269 649 moveto 33 (7338×) alignedtext
+grestore
+% 1182
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 2199.5 534 moveto
+2088.5 534 lineto
+2088.5 482 lineto
+2199.5 482 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 2199.5 534 moveto
+2088.5 534 lineto
+2088.5 482 lineto
+2199.5 482 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2096.5 522 moveto 95 (Graph:81:add_edge) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2128.5 511 moveto 31 (1.32%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2125 500 moveto 38 (\(0.60%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2121.5 489 moveto 45 (902342×) alignedtext
+grestore
+% 1180->1182
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 2144 579.3718 moveto
+2144 566.5849 2144 551.13 2144 537.8762 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 2145.2251 537.7003 moveto
+2144 534.2003 lineto
+2142.7751 537.7004 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 2145.2251 537.7003 moveto
+2144 534.2003 lineto
+2142.7751 537.7004 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2151 557 moveto 31 (1.32%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2144 546 moveto 45 (902342×) alignedtext
+grestore
+% 104
+gsave
+0.65224 0.88889 0.45882 nodecolor
+newpath 1839 729 moveto
+1621 729 lineto
+1621 677 lineto
+1839 677 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65224 0.88889 0.45882 nodecolor
+newpath 1839 729 moveto
+1621 729 lineto
+1621 677 lineto
+1839 677 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1629 717 moveto 202 (filtration:392:mark_unreactive_structures) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1714.5 706 moveto 31 (2.11%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1711 695 moveto 38 (\(0.97%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1710.5 684 moveto 39 (45452×) alignedtext
+grestore
+% 104->545
+gsave
+.5 setlinewidth
+0.66019 0.88793 0.4549 edgecolor
+newpath 1620.9565 680.642 moveto
+1561.9541 669.1119 1487.6955 655.5119 1421 646 curveto
+1300.2634 628.781 1158.002 616.2003 1079.8423 609.9476 curveto
+stroke
+0.66019 0.88793 0.4549 edgecolor
+newpath 1079.7555 608.7119 moveto
+1076.1692 609.6547 lineto
+1079.5607 611.1541 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66019 0.88793 0.4549 edgecolor
+newpath 1079.7555 608.7119 moveto
+1076.1692 609.6547 lineto
+1079.5607 611.1541 lineto
+closepath stroke
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1555 660 moveto 31 (1.09%) alignedtext
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1548 649 moveto 45 (519436×) alignedtext
+grestore
+% 105->545
+gsave
+.5 setlinewidth
+0.65224 0.88889 0.45882 edgecolor
+newpath 1877.1022 901.732 moveto
+1878.9462 898.8985 1880.6242 895.9646 1882 893 curveto
+1893.6311 867.9366 1891.3207 859.5005 1894 832 curveto
+1901.019 759.9567 1903.8061 717.7767 1844 677 curveto
+1781.1842 634.1712 1257.8051 613.2383 1079.9115 607.3122 curveto
+stroke
+0.65224 0.88889 0.45882 edgecolor
+newpath 1079.8263 606.0838 moveto
+1076.2876 607.192 lineto
+1079.745 608.5324 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65224 0.88889 0.45882 edgecolor
+newpath 1079.8263 606.0838 moveto
+1076.2876 607.192 lineto
+1079.745 608.5324 lineto
+closepath stroke
+0.65224 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1906 752 moveto 31 (2.14%) alignedtext
+0.65224 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1896 741 moveto 51 (1001009×) alignedtext
+grestore
+% 105->1180
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 1970.6593 921.7685 moveto
+2017.7589 916.9204 2064.997 908.3052 2082 893 curveto
+2119.9533 858.8365 2136.4476 702.5541 2141.8468 635.8336 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 2143.099 635.5409 moveto
+2142.1563 631.9546 lineto
+2140.6567 635.346 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 2143.099 635.5409 moveto
+2142.1563 631.9546 lineto
+2140.6567 635.346 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2134 752 moveto 31 (0.40%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2130 741 moveto 39 (43815×) alignedtext
+grestore
+% 1198
+gsave
+0.64762 0.88983 0.46275 nodecolor
+newpath 1889 826.5 moveto
+1737 826.5 lineto
+1737 774.5 lineto
+1889 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64762 0.88983 0.46275 nodecolor
+newpath 1889 826.5 moveto
+1737 826.5 lineto
+1737 774.5 lineto
+1889 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1745 814.5 moveto 136 (filtration:53:filter_structures) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1797.5 803.5 moveto 31 (2.81%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1794 792.5 moveto 38 (\(0.09%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1793.5 781.5 moveto 39 (45452×) alignedtext
+grestore
+% 105->1198
+gsave
+.5 setlinewidth
+0.65079 0.88983 0.46275 edgecolor
+newpath 1845.6041 901.8908 moveto
+1838.8882 881.0059 1829.472 851.7237 1822.4845 829.9944 curveto
+stroke
+0.65079 0.88983 0.46275 edgecolor
+newpath 1823.6224 829.5312 moveto
+1821.3847 826.5743 lineto
+1821.29 830.2813 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65079 0.88983 0.46275 edgecolor
+newpath 1823.6224 829.5312 moveto
+1821.3847 826.5743 lineto
+1821.29 830.2813 lineto
+closepath stroke
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+1845 870 moveto 31 (2.46%) alignedtext
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+1841 859 moveto 39 (42837×) alignedtext
+grestore
+% 1198->104
+gsave
+.5 setlinewidth
+0.65224 0.88889 0.45882 edgecolor
+newpath 1790.7575 774.3718 moveto
+1779.6862 761.3663 1766.2653 745.6008 1754.8561 732.1984 curveto
+stroke
+0.65224 0.88889 0.45882 edgecolor
+newpath 1755.5055 731.0714 moveto
+1752.3039 729.2003 lineto
+1753.6399 732.6595 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65224 0.88889 0.45882 edgecolor
+newpath 1755.5055 731.0714 moveto
+1752.3039 729.2003 lineto
+1753.6399 732.6595 lineto
+closepath stroke
+0.65224 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1780 752 moveto 31 (2.11%) alignedtext
+0.65224 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1776 741 moveto 39 (45452×) alignedtext
+grestore
+% 106
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 1636 1179 moveto
+1424 1179 lineto
+1424 1127 lineto
+1636 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 1636 1179 moveto
+1424 1179 lineto
+1424 1127 lineto
+1636 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1432 1167 moveto 196 (common:217:find_degenerate_reactions) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1514.5 1156 moveto 31 (1.26%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1511 1145 moveto 38 (\(0.10%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1510.5 1134 moveto 39 (14819×) alignedtext
+grestore
+% 106->1257
+gsave
+.5 setlinewidth
+0.66019 0.88793 0.4549 edgecolor
+newpath 1527.8561 1126.8718 moveto
+1526.807 1114.0849 1525.5389 1098.63 1524.4514 1085.3762 curveto
+stroke
+0.66019 0.88793 0.4549 edgecolor
+newpath 1525.657 1085.0884 moveto
+1524.1498 1081.7003 lineto
+1523.2152 1085.2888 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66019 0.88793 0.4549 edgecolor
+newpath 1525.657 1085.0884 moveto
+1524.1498 1081.7003 lineto
+1523.2152 1085.2888 lineto
+closepath stroke
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1526 1110 moveto 31 (1.14%) alignedtext
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1528 1099 moveto 27 (440×) alignedtext
+grestore
+% 107
+gsave
+0.65224 0.88889 0.45882 nodecolor
+newpath 1400 729 moveto
+1260 729 lineto
+1260 677 lineto
+1400 677 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65224 0.88889 0.45882 nodecolor
+newpath 1400 729 moveto
+1260 729 lineto
+1260 677 lineto
+1400 677 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1268 717 moveto 124 (family:1288:apply_recipe) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1314.5 706 moveto 31 (2.10%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1311 695 moveto 38 (\(0.84%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1310.5 684 moveto 39 (11547×) alignedtext
+grestore
+% 107->545
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 1259.8831 680.8757 moveto
+1205.5212 663.7227 1131.0538 640.2257 1079.7865 624.0491 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 1080.1501 622.8794 moveto
+1076.4436 622.9944 lineto
+1079.4128 625.2158 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 1080.1501 622.8794 moveto
+1076.4436 622.9944 lineto
+1079.4128 625.2158 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1219 660 moveto 31 (0.90%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1212 649 moveto 45 (159333×) alignedtext
+grestore
+% 107->1180
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 1345.6256 676.8343 moveto
+1354.1676 665.1194 1365.8929 652.5011 1380 646 curveto
+1415.1201 629.8154 2038.2908 645.566 2076 637 curveto
+2080.6508 635.9435 2085.3638 634.5438 2090.026 632.9207 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 2090.7034 633.9787 moveto
+2093.5795 631.638 lineto
+2089.8714 631.6742 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 2090.7034 633.9787 moveto
+2093.5795 631.638 lineto
+2089.8714 631.6742 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+1384 660 moveto 31 (0.26%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+1380 649 moveto 39 (26957×) alignedtext
+grestore
+% 108->28
+gsave
+.5 setlinewidth
+0.6634 0.88696 0.45098 edgecolor
+newpath 1373.9795 901.8908 moveto
+1405.4132 882.3406 1448.6776 855.4322 1482.7371 834.2489 curveto
+stroke
+0.6634 0.88696 0.45098 edgecolor
+newpath 1483.6787 835.1059 moveto
+1486.0037 832.2172 lineto
+1482.3847 833.0255 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6634 0.88696 0.45098 edgecolor
+newpath 1483.6787 835.1059 moveto
+1486.0037 832.2172 lineto
+1482.3847 833.0255 lineto
+closepath stroke
+0.6634 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+1480 870 moveto 31 (0.54%) alignedtext
+0.6634 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+1470 859 moveto 51 (2008407×) alignedtext
+grestore
+% 1133
+gsave
+0.66019 0.88793 0.4549 nodecolor
+newpath 1210 826.5 moveto
+986 826.5 lineto
+986 774.5 lineto
+1210 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66019 0.88793 0.4549 nodecolor
+newpath 1210 826.5 moveto
+986 826.5 lineto
+986 774.5 lineto
+1210 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+994 814.5 moveto 208 (family:1648:_match_reactant_to_template) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1082.5 803.5 moveto 31 (0.97%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1079 792.5 moveto 38 (\(0.82%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1075.5 781.5 moveto 45 (180446×) alignedtext
+grestore
+% 108->1133
+gsave
+.5 setlinewidth
+0.66019 0.88793 0.4549 edgecolor
+newpath 1284.0819 901.8908 moveto
+1244.8055 880.4902 1189.3474 850.2726 1149.2027 828.3989 curveto
+stroke
+0.66019 0.88793 0.4549 edgecolor
+newpath 1149.5135 827.1732 moveto
+1145.854 826.5743 lineto
+1148.3412 829.3246 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66019 0.88793 0.4549 edgecolor
+newpath 1149.5135 827.1732 moveto
+1145.854 826.5743 lineto
+1148.3412 829.3246 lineto
+closepath stroke
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1269 870 moveto 31 (0.97%) alignedtext
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1262 859 moveto 45 (180446×) alignedtext
+grestore
+% 1358
+gsave
+0.65238 0.88983 0.46275 nodecolor
+newpath 1441 826.5 moveto
+1219 826.5 lineto
+1219 774.5 lineto
+1441 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65238 0.88983 0.46275 nodecolor
+newpath 1441 826.5 moveto
+1219 826.5 lineto
+1219 774.5 lineto
+1441 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1227 814.5 moveto 206 (family:1554:_generate_product_structures) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1314.5 803.5 moveto 31 (2.30%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1311 792.5 moveto 38 (\(0.03%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1310.5 781.5 moveto 39 (12176×) alignedtext
+grestore
+% 108->1358
+gsave
+.5 setlinewidth
+0.65238 0.88983 0.46275 edgecolor
+newpath 1331.5904 901.8908 moveto
+1331.2642 881.0918 1330.8073 851.9646 1330.4669 830.2631 curveto
+stroke
+0.65238 0.88983 0.46275 edgecolor
+newpath 1331.6888 830.0546 moveto
+1330.409 826.5743 lineto
+1329.2391 830.0931 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65238 0.88983 0.46275 edgecolor
+newpath 1331.6888 830.0546 moveto
+1330.409 826.5743 lineto
+1329.2391 830.0931 lineto
+closepath stroke
+0.65238 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+1335 870 moveto 31 (2.30%) alignedtext
+0.65238 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+1331 859 moveto 39 (12176×) alignedtext
+grestore
+% 1358->107
+gsave
+.5 setlinewidth
+0.65385 0.88889 0.45882 edgecolor
+newpath 1330 774.3718 moveto
+1330 761.5849 1330 746.13 1330 732.8762 curveto
+stroke
+0.65385 0.88889 0.45882 edgecolor
+newpath 1331.2251 732.7003 moveto
+1330 729.2003 lineto
+1328.7751 732.7004 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65385 0.88889 0.45882 edgecolor
+newpath 1331.2251 732.7003 moveto
+1330 729.2003 lineto
+1328.7751 732.7004 lineto
+closepath stroke
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1334 752 moveto 31 (1.99%) alignedtext
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1330 741 moveto 39 (11239×) alignedtext
+grestore
+% 639->1129
+gsave
+.5 setlinewidth
+0.65224 0.88889 0.45882 edgecolor
+newpath 537.3214 579.3718 moveto
+556.8769 566.0384 580.6872 549.8042 600.6555 536.1894 curveto
+stroke
+0.65224 0.88889 0.45882 edgecolor
+newpath 601.3711 537.1842 moveto
+603.5728 534.2003 lineto
+599.9909 535.1599 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65224 0.88889 0.45882 edgecolor
+newpath 601.3711 537.1842 moveto
+603.5728 534.2003 lineto
+599.9909 535.1599 lineto
+closepath stroke
+0.65224 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+592 557 moveto 31 (2.11%) alignedtext
+0.65224 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+588 546 moveto 39 (50168×) alignedtext
+grestore
+% 385
+gsave
+0.64465 0.89076 0.46667 nodecolor
+newpath 304 339 moveto
+0 339 lineto
+0 287 lineto
+304 287 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64465 0.89076 0.46667 nodecolor
+newpath 304 339 moveto
+0 339 lineto
+0 287 lineto
+304 287 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+8 327 moveto 288 (thermo:2212:_add_ring_correction_thermo_data_from_tree) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+136.5 316 moveto 31 (3.44%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+133 305 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+138.5 294 moveto 27 (853×) alignedtext
+grestore
+% 639->385
+gsave
+.5 setlinewidth
+0.6634 0.88696 0.45098 edgecolor
+newpath 373.951 593.2363 moveto
+252.3659 580.0205 83.111 557.6776 63 534 curveto
+8.0728 469.3315 55 415.8086 106 348 curveto
+107.5758 345.9048 109.3091 343.8728 111.1512 341.9128 curveto
+stroke
+0.6634 0.88696 0.45098 edgecolor
+newpath 112.1511 342.6427 moveto
+113.7262 339.2856 lineto
+110.4014 340.9277 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6634 0.88696 0.45098 edgecolor
+newpath 112.1511 342.6427 moveto
+113.7262 339.2856 lineto
+110.4014 340.9277 lineto
+closepath stroke
+0.6634 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+42 465 moveto 31 (0.49%) alignedtext
+0.6634 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+44 454 moveto 27 (355×) alignedtext
+grestore
+% 1419
+gsave
+0.64623 0.89076 0.46667 nodecolor
+newpath 348.5 534 moveto
+67.5 534 lineto
+67.5 482 lineto
+348.5 482 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64623 0.89076 0.46667 nodecolor
+newpath 348.5 534 moveto
+67.5 534 lineto
+67.5 482 lineto
+348.5 482 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+75.5 522 moveto 265 (thermo:2049:_add_polycyclic_correction_thermo_data) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+192.5 511 moveto 31 (3.01%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+189 500 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+194.5 489 moveto 27 (234×) alignedtext
+grestore
+% 639->1419
+gsave
+.5 setlinewidth
+0.64623 0.89076 0.46667 edgecolor
+newpath 421.3996 579.4999 moveto
+380.5404 565.8099 330.4724 549.0346 289.1044 535.1742 curveto
+stroke
+0.64623 0.89076 0.46667 edgecolor
+newpath 289.3445 533.9627 moveto
+285.6366 534.0123 lineto
+288.5661 536.2858 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64623 0.89076 0.46667 edgecolor
+newpath 289.3445 533.9627 moveto
+285.6366 534.0123 lineto
+288.5661 536.2858 lineto
+closepath stroke
+0.64623 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+371 557 moveto 31 (3.01%) alignedtext
+0.64623 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+373 546 moveto 27 (234×) alignedtext
+grestore
+% 1127
+gsave
+0.61161 0.896 0.4902 nodecolor
+newpath 706.5 247 moveto
+577.5 247 lineto
+577.5 195 lineto
+706.5 195 lineto
+closepath fill
+1 setlinewidth
+filled
+0.61161 0.896 0.4902 nodecolor
+newpath 706.5 247 moveto
+577.5 247 lineto
+577.5 195 lineto
+706.5 195 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+585.5 235 moveto 113 (base:992:descend_tree) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+626.5 224 moveto 31 (8.27%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+623 213 moveto 38 (\(0.36%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+619.5 202 moveto 45 (297283×) alignedtext
+grestore
+% 1129->1127
+gsave
+.5 setlinewidth
+0.65385 0.88889 0.45882 edgecolor
+newpath 642 481.7698 moveto
+642 428.285 642 306.9429 642 250.6761 curveto
+stroke
+0.65385 0.88889 0.45882 edgecolor
+newpath 643.2251 250.5654 moveto
+642 247.0654 lineto
+640.7751 250.5655 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65385 0.88889 0.45882 edgecolor
+newpath 643.2251 250.5654 moveto
+642 247.0654 lineto
+640.7751 250.5655 lineto
+closepath stroke
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+646 362 moveto 31 (2.01%) alignedtext
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+642 351 moveto 39 (69770×) alignedtext
+grestore
+% 1129->1100
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 669.2624 481.9902 moveto
+683.5035 470.157 701.9157 457.3911 721 451 curveto
+743.2887 443.5358 1120.5153 442.9848 1144 442 curveto
+1291.9535 435.7959 1464.1229 424.0275 1563.8249 416.7636 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 1563.9393 417.9836 moveto
+1567.3409 416.5071 lineto
+1563.761 415.5401 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 1563.9393 417.9836 moveto
+1567.3409 416.5071 lineto
+1563.761 415.5401 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+725 465 moveto 31 (0.32%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+721 454 moveto 39 (69770×) alignedtext
+grestore
+% 123
+gsave
+0.63863 0.89167 0.47059 nodecolor
+newpath 643 1179 moveto
+423 1179 lineto
+423 1127 lineto
+643 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.63863 0.89167 0.47059 nodecolor
+newpath 643 1179 moveto
+423 1179 lineto
+423 1127 lineto
+643 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+431 1167 moveto 204 (thermoengine:104:generate_thermo_data) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+517.5 1156 moveto 31 (4.21%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+514 1145 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+519.5 1134 moveto 27 (615×) alignedtext
+grestore
+% 123->79
+gsave
+.5 setlinewidth
+0.64465 0.89076 0.46667 edgecolor
+newpath 621.0004 1126.9999 moveto
+669.2931 1112.7316 728.9296 1095.1117 776.917 1080.9336 curveto
+stroke
+0.64465 0.89076 0.46667 edgecolor
+newpath 777.3422 1082.0854 moveto
+780.3516 1079.9188 lineto
+776.6479 1079.7358 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64465 0.89076 0.46667 edgecolor
+newpath 777.3422 1082.0854 moveto
+780.3516 1079.9188 lineto
+776.6479 1079.7358 lineto
+closepath stroke
+0.64465 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+718 1110 moveto 31 (3.40%) alignedtext
+0.64465 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+720 1099 moveto 27 (593×) alignedtext
+grestore
+% 123->99
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 533 1126.8718 moveto
+533 1114.0849 533 1098.63 533 1085.3762 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 534.2251 1085.2003 moveto
+533 1081.7003 lineto
+531.7751 1085.2004 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 534.2251 1085.2003 moveto
+533 1081.7003 lineto
+531.7751 1085.2004 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+533 1110 moveto 31 (0.80%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+535 1099 moveto 27 (593×) alignedtext
+grestore
+% 124
+gsave
+0.6358 0.89256 0.47451 nodecolor
+newpath 569.5 1276.5 moveto
+414.5 1276.5 lineto
+414.5 1224.5 lineto
+569.5 1224.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6358 0.89256 0.47451 nodecolor
+newpath 569.5 1276.5 moveto
+414.5 1276.5 lineto
+414.5 1224.5 lineto
+569.5 1224.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+422.5 1264.5 moveto 139 (thermoengine:145:evaluator) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+476.5 1253.5 moveto 31 (4.69%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+473 1242.5 moveto 38 (\(0.24%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+478.5 1231.5 moveto 27 (615×) alignedtext
+grestore
+% 124->545
+gsave
+.5 setlinewidth
+0.66667 0.88696 0.45098 edgecolor
+newpath 451.9587 1224.2926 moveto
+430.7341 1206.9695 409 1182.1211 409 1153 curveto
+409 1153 409 1153 409 989 curveto
+409 950.0787 395.8451 933.2844 419 902 curveto
+459.3783 847.4453 493.182 857.5712 559 841 curveto
+582.5691 835.0659 646.5463 843.4216 668 832 curveto
+687.4681 821.6355 775.0899 691.1591 792 677 curveto
+814.1102 658.4867 822.0589 656.2851 849 646 curveto
+885.5015 632.0651 928.2549 621.9715 962.0052 615.346 curveto
+stroke
+0.66667 0.88696 0.45098 edgecolor
+newpath 962.4562 616.5063 moveto
+965.658 614.6356 lineto
+961.9884 614.1014 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66667 0.88696 0.45098 edgecolor
+newpath 962.4562 616.5063 moveto
+965.658 614.6356 lineto
+961.9884 614.1014 lineto
+closepath stroke
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+423 931 moveto 31 (0.16%) alignedtext
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+419 920 moveto 39 (72255×) alignedtext
+grestore
+% 124->123
+gsave
+.5 setlinewidth
+0.63863 0.89167 0.47059 edgecolor
+newpath 502.9872 1224.3718 moveto
+508.4103 1211.4756 514.9745 1195.8656 520.5794 1182.5368 curveto
+stroke
+0.63863 0.89167 0.47059 edgecolor
+newpath 521.7549 1182.9016 moveto
+521.9824 1179.2003 lineto
+519.4964 1181.9518 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.63863 0.89167 0.47059 edgecolor
+newpath 521.7549 1182.9016 moveto
+521.9824 1179.2003 lineto
+519.4964 1181.9518 lineto
+closepath stroke
+0.63863 0.89167 0.47059 edgecolor
+10 /ArialMT set_font
+518 1202 moveto 31 (4.21%) alignedtext
+0.63863 0.89167 0.47059 edgecolor
+10 /ArialMT set_font
+520 1191 moveto 27 (615×) alignedtext
+grestore
+% 129
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 3057.5 1179 moveto
+2906.5 1179 lineto
+2906.5 1127 lineto
+3057.5 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 3057.5 1179 moveto
+2906.5 1179 lineto
+2906.5 1127 lineto
+3057.5 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2914.5 1167 moveto 135 (backend_agg:450:print_png) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2966.5 1156 moveto 31 (1.42%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2963 1145 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2971.5 1134 moveto 21 (48×) alignedtext
+grestore
+% 1644
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 3063.5 1081.5 moveto
+2934.5 1081.5 lineto
+2934.5 1029.5 lineto
+3063.5 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 3063.5 1081.5 moveto
+2934.5 1081.5 lineto
+2934.5 1029.5 lineto
+3063.5 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2942.5 1069.5 moveto 113 (backend_agg:382:draw) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2983.5 1058.5 moveto 31 (1.18%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2980 1047.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2988.5 1036.5 moveto 21 (48×) alignedtext
+grestore
+% 129->1644
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 2986.5557 1126.8718 moveto
+2988.7852 1114.0849 2991.4799 1098.63 2993.7908 1085.3762 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 2995.0373 1085.3588 moveto
+2994.4317 1081.7003 lineto
+2992.6237 1084.9379 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 2995.0373 1085.3588 moveto
+2994.4317 1081.7003 lineto
+2992.6237 1084.9379 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2991 1110 moveto 31 (1.18%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2996 1099 moveto 21 (48×) alignedtext
+grestore
+% 1634
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 3068.5 954 moveto
+2939.5 954 lineto
+2939.5 902 lineto
+3068.5 902 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 3068.5 954 moveto
+2939.5 954 lineto
+2939.5 902 lineto
+3068.5 902 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2947.5 942 moveto 113 (artist:30:draw_wrapper) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2988.5 931 moveto 31 (1.18%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2985 920 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2987.5 909 moveto 33 (7548×) alignedtext
+grestore
+% 1644->1634
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 3000.0239 1029.3908 moveto
+3000.8395 1008.5918 3001.9818 979.4646 3002.8328 957.7631 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 3004.0643 957.6196 moveto
+3002.9775 954.0743 lineto
+3001.6162 957.5236 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 3004.0643 957.6196 moveto
+3002.9775 954.0743 lineto
+3001.6162 957.5236 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3002 992 moveto 31 (1.18%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3007 981 moveto 21 (48×) alignedtext
+grestore
+% 130
+gsave
+0.47857 0.92105 0.59608 nodecolor
+newpath 2971.5 1865 moveto
+2778.5 1865 lineto
+2778.5 1791 lineto
+2971.5 1791 lineto
+closepath fill
+1 setlinewidth
+filled
+0.47857 0.92105 0.59608 nodecolor
+newpath 2971.5 1865 moveto
+2778.5 1865 lineto
+2778.5 1791 lineto
+2971.5 1791 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2809.5 1853 moveto 131 (~:0:<method 'simulate' of) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2786.5 1842 moveto 177 ('rmgpy.solver.base.ReactionSystem') alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2853 1831 moveto 44 (objects>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2856.5 1820 moveto 37 (28.18%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2853 1809 moveto 44 (\(16.57%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2864.5 1798 moveto 21 (24×) alignedtext
+grestore
+% 259
+gsave
+0.65079 0.88983 0.46275 nodecolor
+newpath 3152.5 1721 moveto
+3047.5 1721 lineto
+3047.5 1669 lineto
+3152.5 1669 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65079 0.88983 0.46275 nodecolor
+newpath 3152.5 1721 moveto
+3047.5 1721 lineto
+3047.5 1669 lineto
+3152.5 1669 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+3055.5 1709 moveto 89 (listener:67:update) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3084.5 1698 moveto 31 (2.47%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3081 1687 moveto 38 (\(0.02%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3089.5 1676 moveto 21 (24×) alignedtext
+grestore
+% 130->259
+gsave
+.5 setlinewidth
+0.65079 0.88983 0.46275 edgecolor
+newpath 2960.4929 1790.9285 moveto
+2966.14 1788.0259 2971.6886 1785.0386 2977 1782 curveto
+3007.6521 1764.4642 3040.1842 1741.2267 3064.0877 1723.1788 curveto
+stroke
+0.65079 0.88983 0.46275 edgecolor
+newpath 3064.9086 1724.0939 moveto
+3066.9593 1721.0043 lineto
+3063.4295 1722.1407 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65079 0.88983 0.46275 edgecolor
+newpath 3064.9086 1724.0939 moveto
+3066.9593 1721.0043 lineto
+3063.4295 1722.1407 lineto
+closepath stroke
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+3054 1759 moveto 31 (2.47%) alignedtext
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+3059 1748 moveto 21 (24×) alignedtext
+grestore
+% 260
+gsave
+0.6315 0.89344 0.47843 nodecolor
+newpath 2863.5 1721 moveto
+2752.5 1721 lineto
+2752.5 1669 lineto
+2863.5 1669 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6315 0.89344 0.47843 nodecolor
+newpath 2863.5 1721 moveto
+2752.5 1721 lineto
+2752.5 1669 lineto
+2863.5 1669 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2760.5 1709 moveto 95 (listener:127:update) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2792.5 1698 moveto 31 (5.29%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2789 1687 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2797.5 1676 moveto 21 (24×) alignedtext
+grestore
+% 130->260
+gsave
+.5 setlinewidth
+0.6315 0.89344 0.47843 edgecolor
+newpath 2856.3368 1790.9521 moveto
+2845.7952 1770.0263 2832.7973 1744.2245 2822.936 1724.649 curveto
+stroke
+0.6315 0.89344 0.47843 edgecolor
+newpath 2823.9258 1723.8909 moveto
+2821.2571 1721.3162 lineto
+2821.7377 1724.9932 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6315 0.89344 0.47843 edgecolor
+newpath 2823.9258 1723.8909 moveto
+2821.2571 1721.3162 lineto
+2821.7377 1724.9932 lineto
+closepath stroke
+0.6315 0.89344 0.47843 edgecolor
+10 /ArialMT set_font
+2851 1759 moveto 31 (5.29%) alignedtext
+0.6315 0.89344 0.47843 edgecolor
+10 /ArialMT set_font
+2856 1748 moveto 21 (24×) alignedtext
+grestore
+% 638
+gsave
+0.64921 0.88983 0.46275 nodecolor
+newpath 3005 1721 moveto
+2881 1721 lineto
+2881 1669 lineto
+3005 1669 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64921 0.88983 0.46275 nodecolor
+newpath 3005 1721 moveto
+2881 1721 lineto
+2881 1669 lineto
+3005 1669 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2889 1709 moveto 108 (numeric:94:zeros_like) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2927.5 1698 moveto 31 (2.64%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2924 1687 moveto 38 (\(0.50%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2917.5 1676 moveto 51 (2571837×) alignedtext
+grestore
+% 130->638
+gsave
+.5 setlinewidth
+0.64921 0.88983 0.46275 edgecolor
+newpath 2893.9418 1790.9521 moveto
+2904.6407 1770.0263 2917.8326 1744.2245 2927.8411 1724.649 curveto
+stroke
+0.64921 0.88983 0.46275 edgecolor
+newpath 2929.0424 1724.9902 moveto
+2929.5451 1721.3162 lineto
+2926.861 1723.8749 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64921 0.88983 0.46275 edgecolor
+newpath 2929.0424 1724.9902 moveto
+2929.5451 1721.3162 lineto
+2926.861 1723.8749 lineto
+closepath stroke
+0.64921 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2934 1759 moveto 31 (2.63%) alignedtext
+0.64921 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2924 1748 moveto 51 (2564281×) alignedtext
+grestore
+% 975
+gsave
+0.65079 0.88983 0.46275 nodecolor
+newpath 3203 1599 moveto
+3051 1599 lineto
+3051 1536 lineto
+3203 1536 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65079 0.88983 0.46275 nodecolor
+newpath 3203 1599 moveto
+3051 1599 lineto
+3051 1536 lineto
+3203 1536 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+3059 1587 moveto 136 (~:0:<method 'writerows' of) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3074 1576 moveto 106 ('_csv.writer' objects>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3111.5 1565 moveto 31 (2.45%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3108 1554 moveto 38 (\(2.47%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3116.5 1543 moveto 21 (24×) alignedtext
+grestore
+% 259->975
+gsave
+.5 setlinewidth
+0.65079 0.88983 0.46275 edgecolor
+newpath 3105.529 1668.8908 moveto
+3109.5543 1649.8825 3115.0526 1623.9182 3119.4774 1603.0232 curveto
+stroke
+0.65079 0.88983 0.46275 edgecolor
+newpath 3120.7074 1603.1279 moveto
+3120.2341 1599.45 lineto
+3118.3105 1602.6202 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65079 0.88983 0.46275 edgecolor
+newpath 3120.7074 1603.1279 moveto
+3120.2341 1599.45 lineto
+3118.3105 1602.6202 lineto
+closepath stroke
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+3118 1637 moveto 31 (2.45%) alignedtext
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+3123 1626 moveto 21 (24×) alignedtext
+grestore
+% 2052
+gsave
+0.6315 0.89344 0.47843 nodecolor
+newpath 2841 1593.5 moveto
+2763 1593.5 lineto
+2763 1541.5 lineto
+2841 1541.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.6315 0.89344 0.47843 nodecolor
+newpath 2841 1593.5 moveto
+2763 1593.5 lineto
+2763 1541.5 lineto
+2841 1541.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2771 1581.5 moveto 62 (plot:411:plot) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2786.5 1570.5 moveto 31 (5.29%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2783 1559.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2791.5 1548.5 moveto 21 (24×) alignedtext
+grestore
+% 260->2052
+gsave
+.5 setlinewidth
+0.6315 0.89344 0.47843 edgecolor
+newpath 2806.7713 1668.8908 moveto
+2805.7926 1648.0918 2804.4219 1618.9646 2803.4006 1597.2631 curveto
+stroke
+0.6315 0.89344 0.47843 edgecolor
+newpath 2804.6153 1597.0128 moveto
+2803.227 1593.5743 lineto
+2802.168 1597.128 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6315 0.89344 0.47843 edgecolor
+newpath 2804.6153 1597.0128 moveto
+2803.227 1593.5743 lineto
+2802.168 1597.128 lineto
+closepath stroke
+0.6315 0.89344 0.47843 edgecolor
+10 /ArialMT set_font
+2806 1637 moveto 31 (5.29%) alignedtext
+0.6315 0.89344 0.47843 edgecolor
+10 /ArialMT set_font
+2811 1626 moveto 21 (24×) alignedtext
+grestore
+% 733
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 3041.5 1599 moveto
+2850.5 1599 lineto
+2850.5 1536 lineto
+3041.5 1536 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 3041.5 1599 moveto
+2850.5 1599 lineto
+2850.5 1536 lineto
+3041.5 1536 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2894 1587 moveto 104 (~:0:<built-in method) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2858.5 1576 moveto 175 (numpy.core.multiarray.empty_like>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2930.5 1565 moveto 31 (0.81%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2927 1554 moveto 38 (\(0.82%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2920.5 1543 moveto 51 (2572268×) alignedtext
+grestore
+% 638->733
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 2943.6143 1668.8908 moveto
+2944.0616 1649.8825 2944.6725 1623.9182 2945.1642 1603.0232 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 2946.3905 1602.9779 moveto
+2945.2482 1599.45 lineto
+2943.9411 1602.9202 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 2946.3905 1602.9779 moveto
+2945.2482 1599.45 lineto
+2943.9411 1602.9202 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2955 1637 moveto 31 (0.81%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2945 1626 moveto 51 (2571837×) alignedtext
+grestore
+% 143
+gsave
+0.58832 0.9 0.5098 nodecolor
+newpath 1728 954 moveto
+1632 954 lineto
+1632 902 lineto
+1728 902 lineto
+closepath fill
+1 setlinewidth
+filled
+0.58832 0.9 0.5098 nodecolor
+newpath 1728 954 moveto
+1632 954 lineto
+1632 902 lineto
+1728 902 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1640 942 moveto 80 (runtime:234:call) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1661.5 931 moveto 37 (11.79%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1661 920 moveto 38 (\(2.49%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1657.5 909 moveto 45 (939036×) alignedtext
+grestore
+% 143->28
+gsave
+.5 setlinewidth
+0.66667 0.88696 0.45098 edgecolor
+newpath 1643.9616 901.8996 moveto
+1640.2075 898.9632 1636.4913 895.9614 1633 893 curveto
+1611.4667 874.735 1588.6546 852.871 1570.673 834.9865 curveto
+stroke
+0.66667 0.88696 0.45098 edgecolor
+newpath 1571.3995 833.9809 moveto
+1568.0558 832.3776 lineto
+1569.6698 835.7161 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66667 0.88696 0.45098 edgecolor
+newpath 1571.3995 833.9809 moveto
+1568.0558 832.3776 lineto
+1569.6698 835.7161 lineto
+closepath stroke
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+1640 870 moveto 31 (0.18%) alignedtext
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+1633 859 moveto 45 (520715×) alignedtext
+grestore
+% 143->1225
+gsave
+.5 setlinewidth
+0.62691 0.89344 0.47843 edgecolor
+newpath 1728.2243 903.396 moveto
+1729.8202 902.8867 1731.4145 902.4187 1733 902 curveto
+1765.0719 893.53 1851.1113 905.0927 1882 893 curveto
+1916.7094 879.4116 1948.8219 850.9216 1969.8721 829.1282 curveto
+stroke
+0.62691 0.89344 0.47843 edgecolor
+newpath 1970.8479 829.8804 moveto
+1972.3838 826.5051 lineto
+1969.0783 828.1859 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.62691 0.89344 0.47843 edgecolor
+newpath 1970.8479 829.8804 moveto
+1972.3838 826.5051 lineto
+1969.0783 828.1859 lineto
+closepath stroke
+0.62691 0.89344 0.47843 edgecolor
+10 /ArialMT set_font
+1963 870 moveto 31 (5.91%) alignedtext
+0.62691 0.89344 0.47843 edgecolor
+10 /ArialMT set_font
+1956 859 moveto 45 (214055×) alignedtext
+grestore
+% 143->1180
+gsave
+.5 setlinewidth
+0.66667 0.88696 0.45098 edgecolor
+newpath 1728.2098 903.3395 moveto
+1729.8099 902.8464 1731.409 902.3973 1733 902 curveto
+1791.245 887.4562 1946.8438 914.2246 2003 893 curveto
+2042.87 877.9309 2055.8283 868.9926 2077 832 curveto
+2098.0146 795.2819 2080.8742 778.8172 2092 738 curveto
+2101.8889 701.7205 2118.3943 661.7558 2130.1566 635.3051 curveto
+stroke
+0.66667 0.88696 0.45098 edgecolor
+newpath 2131.4018 635.521 moveto
+2131.7111 631.8257 lineto
+2129.1649 634.5215 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66667 0.88696 0.45098 edgecolor
+newpath 2131.4018 635.521 moveto
+2131.7111 631.8257 lineto
+2129.1649 634.5215 lineto
+closepath stroke
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2093 752 moveto 31 (0.13%) alignedtext
+0.66667 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2092 741 moveto 33 (9307×) alignedtext
+grestore
+% 769
+gsave
+0.65545 0.88889 0.45882 nodecolor
+newpath 1727.5 826.5 moveto
+1632.5 826.5 lineto
+1632.5 774.5 lineto
+1727.5 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65545 0.88889 0.45882 nodecolor
+newpath 1727.5 826.5 moveto
+1632.5 826.5 lineto
+1632.5 774.5 lineto
+1727.5 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1640.5 814.5 moveto 79 (parse:782:quote) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1664.5 803.5 moveto 31 (1.63%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1661 792.5 moveto 38 (\(0.07%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1657.5 781.5 moveto 45 (138501×) alignedtext
+grestore
+% 143->769
+gsave
+.5 setlinewidth
+0.65545 0.88889 0.45882 edgecolor
+newpath 1680 901.8908 moveto
+1680 881.0918 1680 851.9646 1680 830.2631 curveto
+stroke
+0.65545 0.88889 0.45882 edgecolor
+newpath 1681.2251 830.0742 moveto
+1680 826.5743 lineto
+1678.7751 830.0743 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65545 0.88889 0.45882 edgecolor
+newpath 1681.2251 830.0742 moveto
+1680 826.5743 lineto
+1678.7751 830.0743 lineto
+closepath stroke
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1687 870 moveto 31 (1.63%) alignedtext
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1680 859 moveto 45 (138501×) alignedtext
+grestore
+% 766
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 1065 729 moveto
+909 729 lineto
+909 677 lineto
+1065 677 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 1065 729 moveto
+909 729 lineto
+909 677 lineto
+1065 677 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+917 717 moveto 140 (parse:853:quote_from_bytes) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+971.5 706 moveto 31 (1.53%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+968 695 moveto 38 (\(0.15%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+964.5 684 moveto 45 (138501×) alignedtext
+grestore
+% 769->766
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 1641.8387 774.4449 moveto
+1637.3225 772.2595 1632.6589 770.3668 1628 769 curveto
+1591.2044 758.2052 1321.1223 764.1395 1283 760 curveto
+1209.9267 752.0654 1127.9373 735.6799 1068.8109 722.5049 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 1068.9878 721.2893 moveto
+1065.3049 721.7215 lineto
+1068.4535 723.6803 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 1068.9878 721.2893 moveto
+1065.3049 721.7215 lineto
+1068.4535 723.6803 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1290 752 moveto 31 (1.53%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1283 741 moveto 45 (138501×) alignedtext
+grestore
+% 184
+gsave
+0.64762 0.88983 0.46275 nodecolor
+newpath 2866.5 1404 moveto
+2737.5 1404 lineto
+2737.5 1352 lineto
+2866.5 1352 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64762 0.88983 0.46275 nodecolor
+newpath 2866.5 1404 moveto
+2737.5 1404 lineto
+2737.5 1352 lineto
+2866.5 1352 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2745.5 1392 moveto 113 (plot:80:parse_csv_data) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2786.5 1381 moveto 31 (2.82%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2783 1370 moveto 38 (\(1.58%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2791.5 1359 moveto 21 (24×) alignedtext
+grestore
+% 707
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 2883 1282 moveto
+2721 1282 lineto
+2721 1219 lineto
+2883 1219 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 2883 1282 moveto
+2721 1282 lineto
+2721 1219 lineto
+2883 1219 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2750 1270 moveto 104 (~:0:<built-in method) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2729 1259 moveto 146 (numpy.core.multiarray.array>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2786.5 1248 moveto 31 (1.33%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2783 1237 moveto 38 (\(1.34%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2779.5 1226 moveto 45 (215443×) alignedtext
+grestore
+% 184->707
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 2802 1351.8908 moveto
+2802 1332.8825 2802 1306.9182 2802 1286.0232 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 2803.2251 1285.9499 moveto
+2802 1282.45 lineto
+2800.7751 1285.95 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 2803.2251 1285.9499 moveto
+2802 1282.45 lineto
+2800.7751 1285.95 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2802 1320 moveto 31 (1.23%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2804 1309 moveto 27 (894×) alignedtext
+grestore
+% 203
+gsave
+0.66019 0.88793 0.4549 nodecolor
+newpath 610 63 moveto
+490 63 lineto
+490 0 lineto
+610 0 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66019 0.88793 0.4549 nodecolor
+newpath 610 63 moveto
+490 63 lineto
+490 0 lineto
+610 0 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+498 51 moveto 104 (~:0:<built-in method) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+501.5 40 moveto 97 (builtins.isinstance>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+534.5 29 moveto 31 (1.13%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+531 18 moveto 38 (\(1.13%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+521.5 7 moveto 57 (29630636×) alignedtext
+grestore
+% 226
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 3069.5 1276.5 moveto
+2892.5 1276.5 lineto
+2892.5 1224.5 lineto
+3069.5 1224.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 3069.5 1276.5 moveto
+2892.5 1276.5 lineto
+2892.5 1224.5 lineto
+3069.5 1224.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2900.5 1264.5 moveto 161 (backend_bases:1958:print_figure) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2965.5 1253.5 moveto 31 (1.61%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2962 1242.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2970.5 1231.5 moveto 21 (24×) alignedtext
+grestore
+% 226->129
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 2981.268 1224.3718 moveto
+2981.3991 1211.5849 2981.5576 1196.13 2981.6936 1182.8762 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 2982.9202 1182.7127 moveto
+2981.7313 1179.2003 lineto
+2980.4704 1182.6876 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 2982.9202 1182.7127 moveto
+2981.7313 1179.2003 lineto
+2980.4704 1182.6876 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2981 1202 moveto 31 (1.42%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2986 1191 moveto 21 (48×) alignedtext
+grestore
+% 237
+gsave
+0 1 1 nodecolor
+newpath 2141 1957 moveto
+2037 1957 lineto
+2037 1905 lineto
+2141 1905 lineto
+closepath fill
+1 setlinewidth
+filled
+0 1 1 nodecolor
+newpath 2141 1957 moveto
+2037 1957 lineto
+2037 1905 lineto
+2141 1905 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2045 1945 moveto 88 (main:645:execute) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2067.5 1934 moveto 43 (100.00%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2070 1923 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2081.5 1912 moveto 15 (1×) alignedtext
+grestore
+% 237->89
+gsave
+.88 setlinewidth
+0.51908 0.91608 0.56078 edgecolor
+newpath 2082.1035 1904.655 moveto
+2081.3765 1901.7388 2080.6619 1898.8092 2080 1896 curveto
+2071.1893 1858.6048 2062.0822 1815.3329 2056.2481 1786.9111 curveto
+stroke
+0.51908 0.91608 0.56078 edgecolor
+newpath 2057.8239 1786.4058 moveto
+2055.2692 1782.1315 lineto
+2054.6008 1787.066 lineto
+closepath fill
+.88 setlinewidth
+solid
+0.51908 0.91608 0.56078 edgecolor
+newpath 2057.8239 1786.4058 moveto
+2055.2692 1782.1315 lineto
+2054.6008 1787.066 lineto
+closepath stroke
+0.51908 0.91608 0.56078 edgecolor
+10 /ArialMT set_font
+2080 1888 moveto 37 (21.98%) alignedtext
+0.51908 0.91608 0.56078 edgecolor
+10 /ArialMT set_font
+2091 1877 moveto 15 (1×) alignedtext
+grestore
+% 237->94
+gsave
+1.17 setlinewidth
+0.47163 0.92157 0.6 edgecolor
+newpath 2036.7753 1925.4258 moveto
+1871.3123 1907.7649 1359.2766 1853.1124 1183.7564 1834.3781 curveto
+stroke
+0.47163 0.92157 0.6 edgecolor
+newpath 1183.7286 1832.4745 moveto
+1178.1584 1833.7806 lineto
+1183.3273 1836.2332 lineto
+closepath fill
+1.17 setlinewidth
+solid
+0.47163 0.92157 0.6 edgecolor
+newpath 1183.7286 1832.4745 moveto
+1178.1584 1833.7806 lineto
+1183.3273 1836.2332 lineto
+closepath stroke
+0.47163 0.92157 0.6 edgecolor
+10 /ArialMT set_font
+1749 1888 moveto 37 (29.24%) alignedtext
+0.47163 0.92157 0.6 edgecolor
+10 /ArialMT set_font
+1757 1877 moveto 21 (45×) alignedtext
+grestore
+% 237->130
+gsave
+1.13 setlinewidth
+0.47857 0.92105 0.59608 edgecolor
+newpath 2141.1804 1924.1621 moveto
+2269.7324 1907.3162 2603.5134 1863.5765 2773.0178 1841.3641 curveto
+stroke
+0.47857 0.92105 0.59608 edgecolor
+newpath 2773.467 1843.1762 moveto
+2778.481 1840.6482 lineto
+2772.9849 1839.4976 lineto
+closepath fill
+1.13 setlinewidth
+solid
+0.47857 0.92105 0.59608 edgecolor
+newpath 2773.467 1843.1762 moveto
+2778.481 1840.6482 lineto
+2772.9849 1839.4976 lineto
+closepath stroke
+0.47857 0.92105 0.59608 edgecolor
+10 /ArialMT set_font
+2505 1888 moveto 37 (28.18%) alignedtext
+0.47857 0.92105 0.59608 edgecolor
+10 /ArialMT set_font
+2513 1877 moveto 21 (24×) alignedtext
+grestore
+% 531
+gsave
+0.53359 0.91489 0.55294 nodecolor
+newpath 2251 1854 moveto
+2099 1854 lineto
+2099 1802 lineto
+2251 1802 lineto
+closepath fill
+1 setlinewidth
+filled
+0.53359 0.91489 0.55294 nodecolor
+newpath 2251 1854 moveto
+2099 1854 lineto
+2099 1802 lineto
+2251 1802 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2107 1842 moveto 136 (main:1732:save_everything) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2156.5 1831 moveto 37 (19.98%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2156 1820 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2164.5 1809 moveto 21 (25×) alignedtext
+grestore
+% 237->531
+gsave
+.8 setlinewidth
+0.53359 0.91489 0.55294 edgecolor
+newpath 2110.9239 1904.7422 moveto
+2122.852 1890.4563 2137.6546 1872.7276 2150.0263 1857.9103 curveto
+stroke
+0.53359 0.91489 0.55294 edgecolor
+newpath 2151.4409 1858.6735 moveto
+2153.1161 1854.2098 lineto
+2149.0229 1856.6546 lineto
+closepath fill
+.8 setlinewidth
+solid
+0.53359 0.91489 0.55294 edgecolor
+newpath 2151.4409 1858.6735 moveto
+2153.1161 1854.2098 lineto
+2149.0229 1856.6546 lineto
+closepath stroke
+0.53359 0.91489 0.55294 edgecolor
+10 /ArialMT set_font
+2134 1888 moveto 37 (19.98%) alignedtext
+0.53359 0.91489 0.55294 edgecolor
+10 /ArialMT set_font
+2142 1877 moveto 21 (25×) alignedtext
+grestore
+% 531->92
+gsave
+.8 setlinewidth
+0.53359 0.91489 0.55294 edgecolor
+newpath 2182.31 1801.7235 moveto
+2188.3912 1779.8641 2197.0563 1748.7164 2203.4567 1725.7096 curveto
+stroke
+0.53359 0.91489 0.55294 edgecolor
+newpath 2205.0164 1725.9795 moveto
+2204.7052 1721.2219 lineto
+2201.9816 1725.1351 lineto
+closepath fill
+.8 setlinewidth
+solid
+0.53359 0.91489 0.55294 edgecolor
+newpath 2205.0164 1725.9795 moveto
+2204.7052 1721.2219 lineto
+2201.9816 1725.1351 lineto
+closepath stroke
+0.53359 0.91489 0.55294 edgecolor
+10 /ArialMT set_font
+2202 1759 moveto 37 (19.98%) alignedtext
+0.53359 0.91489 0.55294 edgecolor
+10 /ArialMT set_font
+2210 1748 moveto 21 (25×) alignedtext
+grestore
+% 1089
+gsave
+0.65079 0.88983 0.46275 nodecolor
+newpath 2340.5 1276.5 moveto
+2215.5 1276.5 lineto
+2215.5 1224.5 lineto
+2340.5 1224.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65079 0.88983 0.46275 nodecolor
+newpath 2340.5 1276.5 moveto
+2215.5 1276.5 lineto
+2215.5 1224.5 lineto
+2340.5 1224.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2223.5 1264.5 moveto 109 (rmg:136:load_kinetics) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2262.5 1253.5 moveto 31 (2.36%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2259 1242.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2270.5 1231.5 moveto 15 (1×) alignedtext
+grestore
+% 243->1089
+gsave
+.5 setlinewidth
+0.65079 0.88983 0.46275 edgecolor
+newpath 2206.43 1351.8908 moveto
+2221.2937 1330.834 2242.1827 1301.2412 2257.558 1279.4594 curveto
+stroke
+0.65079 0.88983 0.46275 edgecolor
+newpath 2258.577 1280.1401 moveto
+2259.5946 1276.5743 lineto
+2256.5754 1278.7272 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65079 0.88983 0.46275 edgecolor
+newpath 2258.577 1280.1401 moveto
+2259.5946 1276.5743 lineto
+2256.5754 1278.7272 lineto
+closepath stroke
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2248 1320 moveto 31 (2.36%) alignedtext
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2256 1309 moveto 15 (1×) alignedtext
+grestore
+% 244
+gsave
+0.65079 0.88983 0.46275 nodecolor
+newpath 2518.5 1179 moveto
+2411.5 1179 lineto
+2411.5 1127 lineto
+2518.5 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65079 0.88983 0.46275 nodecolor
+newpath 2518.5 1179 moveto
+2411.5 1179 lineto
+2411.5 1127 lineto
+2518.5 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2419.5 1167 moveto 91 (database:105:load) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2449.5 1156 moveto 31 (2.36%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2446 1145 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2457.5 1134 moveto 15 (1×) alignedtext
+grestore
+% 1089->244
+gsave
+.5 setlinewidth
+0.65079 0.88983 0.46275 edgecolor
+newpath 2328.1126 1224.3718 moveto
+2353.9988 1210.875 2385.5861 1194.4056 2411.8924 1180.6898 curveto
+stroke
+0.65079 0.88983 0.46275 edgecolor
+newpath 2412.5365 1181.7355 moveto
+2415.0736 1179.0311 lineto
+2411.4038 1179.5631 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65079 0.88983 0.46275 edgecolor
+newpath 2412.5365 1181.7355 moveto
+2415.0736 1179.0311 lineto
+2411.4038 1179.5631 lineto
+closepath stroke
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2393 1202 moveto 31 (2.36%) alignedtext
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2401 1191 moveto 15 (1×) alignedtext
+grestore
+% 246
+gsave
+0.65079 0.88983 0.46275 nodecolor
+newpath 2606 1081.5 moveto
+2454 1081.5 lineto
+2454 1029.5 lineto
+2606 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65079 0.88983 0.46275 nodecolor
+newpath 2606 1081.5 moveto
+2454 1081.5 lineto
+2454 1029.5 lineto
+2606 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2462 1069.5 moveto 136 (database:147:load_families) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2514.5 1058.5 moveto 31 (2.33%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2511 1047.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2522.5 1036.5 moveto 15 (1×) alignedtext
+grestore
+% 244->246
+gsave
+.5 setlinewidth
+0.65079 0.88983 0.46275 edgecolor
+newpath 2482.4188 1126.8718 moveto
+2491.0891 1113.8663 2501.5994 1098.1008 2510.5344 1084.6984 curveto
+stroke
+0.65079 0.88983 0.46275 edgecolor
+newpath 2511.6109 1085.292 moveto
+2512.5331 1081.7003 lineto
+2509.5723 1083.933 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65079 0.88983 0.46275 edgecolor
+newpath 2511.6109 1085.292 moveto
+2512.5331 1081.7003 lineto
+2509.5723 1083.933 lineto
+closepath stroke
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2501 1110 moveto 31 (2.33%) alignedtext
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2509 1099 moveto 15 (1×) alignedtext
+grestore
+% 248
+gsave
+0.65079 0.88983 0.46275 nodecolor
+newpath 2566 954 moveto
+2474 954 lineto
+2474 902 lineto
+2566 902 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65079 0.88983 0.46275 nodecolor
+newpath 2566 954 moveto
+2474 954 lineto
+2474 902 lineto
+2566 902 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2482 942 moveto 76 (family:640:load) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2504.5 931 moveto 31 (2.33%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2501 920 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2509.5 909 moveto 21 (65×) alignedtext
+grestore
+% 246->248
+gsave
+.5 setlinewidth
+0.65079 0.88983 0.46275 edgecolor
+newpath 2527.9522 1029.3908 moveto
+2526.3209 1008.5918 2524.0364 979.4646 2522.3344 957.7631 curveto
+stroke
+0.65079 0.88983 0.46275 edgecolor
+newpath 2523.54 957.4678 moveto
+2522.045 954.0743 lineto
+2521.0975 957.6594 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65079 0.88983 0.46275 edgecolor
+newpath 2523.54 957.4678 moveto
+2522.045 954.0743 lineto
+2521.0975 957.6594 lineto
+closepath stroke
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2526 992 moveto 31 (2.33%) alignedtext
+0.65079 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2531 981 moveto 21 (65×) alignedtext
+grestore
+% 249
+gsave
+0.65385 0.88889 0.45882 nodecolor
+newpath 2501.5 826.5 moveto
+2388.5 826.5 lineto
+2388.5 774.5 lineto
+2501.5 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65385 0.88889 0.45882 nodecolor
+newpath 2501.5 826.5 moveto
+2388.5 826.5 lineto
+2388.5 774.5 lineto
+2501.5 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2396.5 814.5 moveto 97 (depository:127:load) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2429.5 803.5 moveto 31 (1.95%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2426 792.5 moveto 38 (\(0.05%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2434.5 781.5 moveto 21 (65×) alignedtext
+grestore
+% 248->249
+gsave
+.5 setlinewidth
+0.65385 0.88889 0.45882 edgecolor
+newpath 2488.8418 901.6053 moveto
+2486.3636 898.8393 2484.0361 895.9539 2482 893 curveto
+2468.8406 873.9083 2459.3169 849.4451 2453.2299 830.4721 curveto
+stroke
+0.65385 0.88889 0.45882 edgecolor
+newpath 2454.2786 829.7239 moveto
+2452.0582 826.7539 lineto
+2451.9418 830.4603 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65385 0.88889 0.45882 edgecolor
+newpath 2454.2786 829.7239 moveto
+2452.0582 826.7539 lineto
+2451.9418 830.4603 lineto
+closepath stroke
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2482 870 moveto 31 (1.95%) alignedtext
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2487 859 moveto 21 (65×) alignedtext
+grestore
+% 1118
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 2553.5 729 moveto
+2468.5 729 lineto
+2468.5 677 lineto
+2553.5 677 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 2553.5 729 moveto
+2468.5 729 lineto
+2468.5 677 lineto
+2553.5 677 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2476.5 717 moveto 69 (base:179:load) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2495.5 706 moveto 31 (1.44%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2492 695 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2497.5 684 moveto 27 (220×) alignedtext
+grestore
+% 248->1118
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 2518.95 901.7493 moveto
+2517.2632 859.5796 2513.9601 777.0034 2512.189 732.7253 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 2513.4073 732.5317 moveto
+2512.0433 729.0835 lineto
+2510.9593 732.6297 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 2513.4073 732.5317 moveto
+2512.0433 729.0835 lineto
+2510.9593 732.6297 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2516 803.5 moveto 31 (0.27%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2518 792.5 moveto 27 (130×) alignedtext
+grestore
+% 249->100
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 2418.4698 774.3718 moveto
+2405.1533 761.257 2388.987 745.3357 2375.3051 731.8611 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 2375.9567 730.7835 moveto
+2372.6034 729.2003 lineto
+2374.2376 732.5291 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 2375.9567 730.7835 moveto
+2372.6034 729.2003 lineto
+2374.2376 732.5291 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2401 752 moveto 31 (1.61%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2406 741 moveto 21 (65×) alignedtext
+grestore
+% 249->1118
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 2459.2358 774.3842 moveto
+2465.7744 762.9561 2473.8724 749.5495 2482 738 curveto
+2483.4362 735.9591 2484.9602 733.8883 2486.5282 731.8262 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 2487.5225 732.5429 moveto
+2488.6898 729.0232 lineto
+2485.5823 731.0467 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 2487.5225 732.5429 moveto
+2488.6898 729.0232 lineto
+2485.5823 731.0467 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2482 752 moveto 31 (0.28%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2487 741 moveto 21 (65×) alignedtext
+grestore
+% 2398
+gsave
+0 1 1 nodecolor
+newpath 2571 637 moveto
+2451 637 lineto
+2451 574 lineto
+2571 574 lineto
+closepath fill
+1 setlinewidth
+filled
+0 1 1 nodecolor
+newpath 2571 637 moveto
+2451 637 lineto
+2451 574 lineto
+2571 574 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2459 625 moveto 104 (~:0:<built-in method) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2475.5 614 moveto 71 (builtins.exec>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2489.5 603 moveto 43 (100.00%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2492 592 moveto 38 (\(0.36%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2497.5 581 moveto 27 (308×) alignedtext
+grestore
+% 1118->2398
+gsave
+.5 setlinewidth
+0.65865 0.88889 0.45882 edgecolor
+newpath 2511 676.8718 moveto
+2511 665.83 2511 652.7988 2511 640.9133 curveto
+stroke
+0.65865 0.88889 0.45882 edgecolor
+newpath 2512.2251 640.7649 moveto
+2511 637.265 lineto
+2509.7751 640.765 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65865 0.88889 0.45882 edgecolor
+newpath 2512.2251 640.7649 moveto
+2511 637.265 lineto
+2509.7751 640.765 lineto
+closepath stroke
+0.65865 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2511 660 moveto 31 (1.38%) alignedtext
+0.65865 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2513 649 moveto 27 (220×) alignedtext
+grestore
+% 1532
+gsave
+0.65385 0.88889 0.45882 nodecolor
+newpath 2962 1496 moveto
+2884 1496 lineto
+2884 1444 lineto
+2962 1444 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65385 0.88889 0.45882 nodecolor
+newpath 2962 1496 moveto
+2884 1496 lineto
+2884 1444 lineto
+2962 1444 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2892 1484 moveto 62 (plot:203:plot) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2907.5 1473 moveto 31 (1.98%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2904 1462 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2912.5 1451 moveto 21 (24×) alignedtext
+grestore
+% 2052->1532
+gsave
+.5 setlinewidth
+0.65385 0.88889 0.45882 edgecolor
+newpath 2834.4258 1541.3718 moveto
+2850.8372 1528.1477 2870.7899 1512.0701 2887.6001 1498.5247 curveto
+stroke
+0.65385 0.88889 0.45882 edgecolor
+newpath 2888.528 1499.3503 moveto
+2890.4847 1496.2003 lineto
+2886.9907 1497.4425 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65385 0.88889 0.45882 edgecolor
+newpath 2888.528 1499.3503 moveto
+2890.4847 1496.2003 lineto
+2886.9907 1497.4425 lineto
+closepath stroke
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2876 1519 moveto 31 (1.98%) alignedtext
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2881 1508 moveto 21 (24×) alignedtext
+grestore
+% 2048
+gsave
+0.64623 0.89076 0.46667 nodecolor
+newpath 2842 1496 moveto
+2762 1496 lineto
+2762 1444 lineto
+2842 1444 lineto
+closepath fill
+1 setlinewidth
+filled
+0.64623 0.89076 0.46667 nodecolor
+newpath 2842 1496 moveto
+2762 1496 lineto
+2762 1444 lineto
+2842 1444 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2770 1484 moveto 64 (plot:383:load) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2786.5 1473 moveto 31 (3.11%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2783 1462 moveto 38 (\(0.30%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2791.5 1451 moveto 21 (24×) alignedtext
+grestore
+% 2052->2048
+gsave
+.5 setlinewidth
+0.64623 0.89076 0.46667 edgecolor
+newpath 2802 1541.3718 moveto
+2802 1528.5849 2802 1513.13 2802 1499.8762 curveto
+stroke
+0.64623 0.89076 0.46667 edgecolor
+newpath 2803.2251 1499.7003 moveto
+2802 1496.2003 lineto
+2800.7751 1499.7004 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64623 0.89076 0.46667 edgecolor
+newpath 2803.2251 1499.7003 moveto
+2802 1496.2003 lineto
+2800.7751 1499.7004 lineto
+closepath stroke
+0.64623 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+2802 1519 moveto 31 (3.11%) alignedtext
+0.64623 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+2807 1508 moveto 21 (24×) alignedtext
+grestore
+% 261->80
+gsave
+.6 setlinewidth
+0.56557 0.91045 0.52549 edgecolor
+newpath 2371.8848 1443.8826 moveto
+2379.6657 1432.52 2388.819 1419.1531 2396.8402 1407.4397 curveto
+stroke
+0.56557 0.91045 0.52549 edgecolor
+newpath 2397.9932 1408.1718 moveto
+2399.0705 1404.1827 lineto
+2395.7407 1406.6293 lineto
+closepath fill
+.6 setlinewidth
+solid
+0.56557 0.91045 0.52549 edgecolor
+newpath 2397.9932 1408.1718 moveto
+2399.0705 1404.1827 lineto
+2395.7407 1406.6293 lineto
+closepath stroke
+0.56557 0.91045 0.52549 edgecolor
+10 /ArialMT set_font
+2392 1427 moveto 37 (15.08%) alignedtext
+0.56557 0.91045 0.52549 edgecolor
+10 /ArialMT set_font
+2400 1416 moveto 21 (50×) alignedtext
+grestore
+% 900
+gsave
+0.65385 0.88889 0.45882 nodecolor
+newpath 2644.5 1404 moveto
+2539.5 1404 lineto
+2539.5 1352 lineto
+2644.5 1352 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65385 0.88889 0.45882 nodecolor
+newpath 2644.5 1404 moveto
+2539.5 1404 lineto
+2539.5 1352 lineto
+2644.5 1352 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2547.5 1392 moveto 89 (__init__:285:dump) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2576.5 1381 moveto 31 (2.02%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2573 1370 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2581.5 1359 moveto 21 (33×) alignedtext
+grestore
+% 901->900
+gsave
+.5 setlinewidth
+0.65385 0.88889 0.45882 edgecolor
+newpath 2572.6649 1443.8826 moveto
+2575.9711 1432.6171 2579.8554 1419.3815 2583.2719 1407.7404 curveto
+stroke
+0.65385 0.88889 0.45882 edgecolor
+newpath 2584.5057 1407.8861 moveto
+2584.3159 1404.1827 lineto
+2582.1548 1407.1961 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65385 0.88889 0.45882 edgecolor
+newpath 2584.5057 1407.8861 moveto
+2584.3159 1404.1827 lineto
+2582.1548 1407.1961 lineto
+closepath stroke
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2581 1427 moveto 31 (2.00%) alignedtext
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2586 1416 moveto 21 (25×) alignedtext
+grestore
+% 332
+gsave
+0.575 0.90226 0.52157 nodecolor
+newpath 2759 1087 moveto
+2615 1087 lineto
+2615 1024 lineto
+2759 1024 lineto
+closepath fill
+1 setlinewidth
+filled
+0.575 0.90226 0.52157 nodecolor
+newpath 2759 1087 moveto
+2615 1087 lineto
+2615 1024 lineto
+2759 1024 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2623 1075 moveto 128 (~:0:<method 'join' of 'str') alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2665 1064 moveto 44 (objects>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2668.5 1053 moveto 37 (13.75%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2668 1042 moveto 38 (\(0.53%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2661.5 1031 moveto 51 (8357630×) alignedtext
+grestore
+% 556
+gsave
+0.62162 0.89516 0.48627 nodecolor
+newpath 2342 1179 moveto
+2148 1179 lineto
+2148 1127 lineto
+2342 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.62162 0.89516 0.48627 nodecolor
+newpath 2342 1179 moveto
+2148 1179 lineto
+2148 1127 lineto
+2342 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2156 1167 moveto 178 (rules:453:fill_rules_by_averaging_up) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2229.5 1156 moveto 31 (6.87%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2226 1145 moveto 38 (\(3.19%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2219.5 1134 moveto 51 (1665030×) alignedtext
+grestore
+% 1352->556
+gsave
+.5 setlinewidth
+0.62162 0.89516 0.48627 edgecolor
+newpath 2095.8467 1300.3008 moveto
+2118.202 1295.1811 2137.8672 1289.0178 2147 1282 curveto
+2172.0637 1262.7407 2161.3743 1244.5381 2180 1219 curveto
+2189.6032 1205.8328 2201.7886 1192.7483 2213.0073 1181.7441 curveto
+stroke
+0.62162 0.89516 0.48627 edgecolor
+newpath 2213.8811 1182.6031 moveto
+2215.5345 1179.2839 lineto
+2212.1721 1180.8475 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.62162 0.89516 0.48627 edgecolor
+newpath 2213.8811 1182.6031 moveto
+2215.5345 1179.2839 lineto
+2212.1721 1180.8475 lineto
+closepath stroke
+0.62162 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+2180 1253.5 moveto 31 (6.87%) alignedtext
+0.62162 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+2185 1242.5 moveto 21 (64×) alignedtext
+grestore
+% 1470->124
+gsave
+.5 setlinewidth
+0.6358 0.89256 0.47451 edgecolor
+newpath 492 1351.8908 moveto
+492 1331.0918 492 1301.9646 492 1280.2631 curveto
+stroke
+0.6358 0.89256 0.47451 edgecolor
+newpath 493.2251 1280.0742 moveto
+492 1276.5743 lineto
+490.7751 1280.0743 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6358 0.89256 0.47451 edgecolor
+newpath 493.2251 1280.0742 moveto
+492 1276.5743 lineto
+490.7751 1280.0743 lineto
+closepath stroke
+0.6358 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+492 1320 moveto 31 (4.69%) alignedtext
+0.6358 0.89256 0.47451 edgecolor
+10 /ArialMT set_font
+494 1309 moveto 27 (615×) alignedtext
+grestore
+% 1467
+gsave
+0.51253 0.91724 0.56863 nodecolor
+newpath 1315.5 1496 moveto
+1160.5 1496 lineto
+1160.5 1444 lineto
+1315.5 1444 lineto
+closepath fill
+1 setlinewidth
+filled
+0.51253 0.91724 0.56863 nodecolor
+newpath 1315.5 1496 moveto
+1160.5 1496 lineto
+1160.5 1444 lineto
+1315.5 1444 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1168.5 1484 moveto 139 (react:77:_react_species_star) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1219.5 1473 moveto 37 (23.15%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1219 1462 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1218.5 1451 moveto 39 (14189×) alignedtext
+grestore
+% 376->1467
+gsave
+.93 setlinewidth
+0.51253 0.91724 0.56863 edgecolor
+newpath 1238 1541.3718 moveto
+1238 1529.0221 1238 1514.1836 1238 1501.2431 curveto
+stroke
+0.51253 0.91724 0.56863 edgecolor
+newpath 1239.6801 1501.0003 moveto
+1238 1496.2003 lineto
+1236.3201 1501.0004 lineto
+closepath fill
+.93 setlinewidth
+solid
+0.51253 0.91724 0.56863 edgecolor
+newpath 1239.6801 1501.0003 moveto
+1238 1496.2003 lineto
+1236.3201 1501.0004 lineto
+closepath stroke
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1239 1519 moveto 37 (23.15%) alignedtext
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1238 1508 moveto 39 (14189×) alignedtext
+grestore
+% 1093
+gsave
+0.51253 0.91724 0.56863 nodecolor
+newpath 1301 1404 moveto
+1175 1404 lineto
+1175 1352 lineto
+1301 1352 lineto
+closepath fill
+1 setlinewidth
+filled
+0.51253 0.91724 0.56863 nodecolor
+newpath 1301 1404 moveto
+1175 1404 lineto
+1175 1352 lineto
+1301 1352 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1183 1392 moveto 110 (react:82:react_species) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1219.5 1381 moveto 37 (23.15%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1219 1370 moveto 38 (\(0.03%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1218.5 1359 moveto 39 (14189×) alignedtext
+grestore
+% 1467->1093
+gsave
+.93 setlinewidth
+0.51253 0.91724 0.56863 edgecolor
+newpath 1238 1443.8826 moveto
+1238 1433.1027 1238 1420.5188 1238 1409.2543 curveto
+stroke
+0.51253 0.91724 0.56863 edgecolor
+newpath 1239.6801 1408.9827 moveto
+1238 1404.1827 lineto
+1236.3201 1408.9828 lineto
+closepath fill
+.93 setlinewidth
+solid
+0.51253 0.91724 0.56863 edgecolor
+newpath 1239.6801 1408.9827 moveto
+1238 1404.1827 lineto
+1236.3201 1408.9828 lineto
+closepath stroke
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1239 1427 moveto 37 (23.15%) alignedtext
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1238 1416 moveto 39 (14189×) alignedtext
+grestore
+% 385->1127
+gsave
+.5 setlinewidth
+0.64623 0.89076 0.46667 edgecolor
+newpath 290.7765 286.944 moveto
+383.2111 269.5889 500.6622 247.5369 573.584 233.8454 curveto
+stroke
+0.64623 0.89076 0.46667 edgecolor
+newpath 574.2414 234.9685 moveto
+577.4552 233.1186 lineto
+573.7892 232.5606 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64623 0.89076 0.46667 edgecolor
+newpath 574.2414 234.9685 moveto
+577.4552 233.1186 lineto
+573.7892 232.5606 lineto
+closepath stroke
+0.64623 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+457 270 moveto 31 (3.21%) alignedtext
+0.64623 0.89076 0.46667 edgecolor
+10 /ArialMT set_font
+456 259 moveto 33 (8332×) alignedtext
+grestore
+% 1127->1127
+gsave
+.5 setlinewidth
+0.64019 0.89167 0.47059 edgecolor
+newpath 706.5057 227.7299 moveto
+712.0427 226.298 715.5 224.0547 715.5 221 curveto
+715.5 218.709 713.5553 216.8744 710.247 215.4962 curveto
+stroke
+0.64019 0.89167 0.47059 edgecolor
+newpath 710.2132 214.1961 moveto
+706.5057 214.2701 lineto
+709.4501 216.5242 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64019 0.89167 0.47059 edgecolor
+newpath 710.2132 214.1961 moveto
+706.5057 214.2701 lineto
+709.4501 216.5242 lineto
+closepath stroke
+0.64019 0.89167 0.47059 edgecolor
+10 /ArialMT set_font
+719.5 224 moveto 31 (4.06%) alignedtext
+0.64019 0.89167 0.47059 edgecolor
+10 /ArialMT set_font
+715.5 213 moveto 39 (47779×) alignedtext
+grestore
+% 388
+gsave
+0.61458 0.896 0.4902 nodecolor
+newpath 736 155 moveto
+548 155 lineto
+548 103 lineto
+736 103 lineto
+closepath fill
+1 setlinewidth
+filled
+0.61458 0.896 0.4902 nodecolor
+newpath 736 155 moveto
+548 155 lineto
+548 103 lineto
+736 103 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+556 143 moveto 172 (base:909:match_node_to_structure) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+626.5 132 moveto 31 (7.88%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+623 121 moveto 38 (\(7.08%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+616.5 110 moveto 51 (2392486×) alignedtext
+grestore
+% 1127->388
+gsave
+.5 setlinewidth
+0.61458 0.896 0.4902 edgecolor
+newpath 642 194.8826 moveto
+642 183.6171 642 170.3815 642 158.7404 curveto
+stroke
+0.61458 0.896 0.4902 edgecolor
+newpath 643.2251 158.6827 moveto
+642 155.1827 lineto
+640.7751 158.6828 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.61458 0.896 0.4902 edgecolor
+newpath 643.2251 158.6827 moveto
+642 155.1827 lineto
+640.7751 158.6828 lineto
+closepath stroke
+0.61458 0.896 0.4902 edgecolor
+10 /ArialMT set_font
+652 178 moveto 31 (7.88%) alignedtext
+0.61458 0.896 0.4902 edgecolor
+10 /ArialMT set_font
+642 167 moveto 51 (2025793×) alignedtext
+grestore
+% 388->203
+gsave
+.5 setlinewidth
+0.6634 0.88696 0.45098 edgecolor
+newpath 587.6782 102.8237 moveto
+584.1961 100.103 580.9216 97.1629 578 94 curveto
+570.7517 86.1532 565.1423 76.1161 560.9142 66.3926 curveto
+stroke
+0.6634 0.88696 0.45098 edgecolor
+newpath 562.0198 65.8614 moveto
+559.5329 63.1107 lineto
+559.7616 66.8119 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6634 0.88696 0.45098 edgecolor
+newpath 562.0198 65.8614 moveto
+559.5329 63.1107 lineto
+559.7616 66.8119 lineto
+closepath stroke
+0.6634 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+591 86 moveto 31 (0.44%) alignedtext
+0.6634 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+578 75 moveto 57 (14083340×) alignedtext
+grestore
+% 1128
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 783 57.5 moveto
+619 57.5 lineto
+619 5.5 lineto
+783 5.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 783 57.5 moveto
+619 57.5 lineto
+619 5.5 lineto
+783 5.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+627 45.5 moveto 148 (base:1113:match_to_structure) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+685.5 34.5 moveto 31 (0.84%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+682 23.5 moveto 38 (\(0.07%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+678.5 12.5 moveto 45 (112041×) alignedtext
+grestore
+% 388->1128
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 681.2568 102.6515 moveto
+683.7778 99.9438 686.0727 97.0555 688 94 curveto
+694.109 84.3148 697.4044 72.2668 699.1623 61.3409 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 700.4028 61.3249 moveto
+699.7013 57.6836 lineto
+697.979 60.9676 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 700.4028 61.3249 moveto
+699.7013 57.6836 lineto
+697.979 60.9676 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+701 86 moveto 31 (0.84%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+697 75 moveto 39 (66558×) alignedtext
+grestore
+% 1128->388
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 652.1442 57.7128 moveto
+647.71 61.9201 643.8312 66.6732 641 72 curveto
+636.6917 80.106 635.6365 89.8204 636.0427 98.9137 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 634.8445 99.3562 moveto
+636.3011 102.7663 lineto
+637.2891 99.1922 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 634.8445 99.3562 moveto
+636.3011 102.7663 lineto
+637.2891 99.1922 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+648 86 moveto 31 (0.78%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+641 75 moveto 45 (229526×) alignedtext
+grestore
+% 469->1149
+gsave
+.5 setlinewidth
+0.6634 0.88696 0.45098 edgecolor
+newpath 835.8082 481.9692 moveto
+813.726 471.137 787.0516 459.2016 762 451 curveto
+718.7395 436.837 668.5454 426.7179 629.1385 420.1366 curveto
+stroke
+0.6634 0.88696 0.45098 edgecolor
+newpath 629.0123 418.8741 moveto
+625.3592 419.5108 lineto
+628.612 421.2912 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.6634 0.88696 0.45098 edgecolor
+newpath 629.0123 418.8741 moveto
+625.3592 419.5108 lineto
+628.612 421.2912 lineto
+closepath stroke
+0.6634 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+815 465 moveto 31 (0.46%) alignedtext
+0.6634 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+814 454 moveto 33 (1848×) alignedtext
+grestore
+% 518->1127
+gsave
+.5 setlinewidth
+0.64762 0.88983 0.46275 edgecolor
+newpath 2250.803 840.8321 moveto
+2247.3425 816.9715 2243 780.7113 2243 749 curveto
+2243 749 2243 749 2243 313 curveto
+2243 235.0031 1015.9087 223.0609 710.2968 221.2961 curveto
+stroke
+0.64762 0.88983 0.46275 edgecolor
+newpath 710.251 220.0709 moveto
+706.744 221.2758 lineto
+710.2369 222.5209 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64762 0.88983 0.46275 edgecolor
+newpath 710.251 220.0709 moveto
+706.744 221.2758 lineto
+710.2369 222.5209 lineto
+closepath stroke
+0.64762 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2247 557 moveto 31 (2.86%) alignedtext
+0.64762 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2243 546 moveto 39 (40031×) alignedtext
+grestore
+% 548->545
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 1061.6139 534.0492 moveto
+1061.3602 544.0523 1059.9733 555.3714 1056 565 curveto
+1054.3937 568.8925 1052.2595 572.6759 1049.8346 576.2669 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 1048.7555 575.6713 moveto
+1047.7346 579.2362 lineto
+1050.7558 577.086 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 1048.7555 575.6713 moveto
+1047.7346 579.2362 lineto
+1050.7558 577.086 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1070 557 moveto 31 (1.50%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+1060 546 moveto 51 (4605702×) alignedtext
+grestore
+% 1622
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 1139.5 442 moveto
+980.5 442 lineto
+980.5 379 lineto
+1139.5 379 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 1139.5 442 moveto
+980.5 442 lineto
+980.5 379 lineto
+1139.5 379 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+988.5 430 moveto 143 (~:0:<method 'items' of 'dict') alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1038 419 moveto 44 (objects>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1044.5 408 moveto 31 (0.90%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1041 397 moveto 38 (\(0.91%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1034.5 386 moveto 51 (6237704×) alignedtext
+grestore
+% 548->1622
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 1060 481.8718 moveto
+1060 470.83 1060 457.7988 1060 445.9133 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 1061.2251 445.7649 moveto
+1060 442.265 lineto
+1058.7751 445.765 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 1061.2251 445.7649 moveto
+1060 442.265 lineto
+1058.7751 445.765 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1070 465 moveto 31 (0.79%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1060 454 moveto 51 (2314680×) alignedtext
+grestore
+% 550
+gsave
+0.51253 0.91724 0.56863 nodecolor
+newpath 1582.5 1276.5 moveto
+1329.5 1276.5 lineto
+1329.5 1224.5 lineto
+1582.5 1224.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.51253 0.91724 0.56863 nodecolor
+newpath 1582.5 1276.5 moveto
+1329.5 1276.5 lineto
+1329.5 1224.5 lineto
+1582.5 1224.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1337.5 1264.5 moveto 237 (database:471:generate_reactions_from_families) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1437.5 1253.5 moveto 37 (23.11%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1437 1242.5 moveto 38 (\(0.13%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1436.5 1231.5 moveto 39 (14189×) alignedtext
+grestore
+% 550->545
+gsave
+.5 setlinewidth
+0.66019 0.88793 0.4549 edgecolor
+newpath 1329.0988 1245.6926 moveto
+1130.6794 1235.5469 759.8171 1205.1683 665 1118 curveto
+633.2576 1088.8182 669.3052 1056.5266 641 1024 curveto
+587.0908 962.0508 515.7658 1022.1865 470 954 curveto
+457.1203 934.8105 454.1092 918.7812 470 902 curveto
+482.6244 888.6682 618.0126 899.9671 635 893 curveto
+778.6377 834.0889 749.0537 726.1723 882 646 curveto
+906.4105 631.2794 936.472 621.6532 962.3871 615.4966 curveto
+stroke
+0.66019 0.88793 0.4549 edgecolor
+newpath 962.7217 616.6765 moveto
+965.8518 614.6882 lineto
+962.1649 614.2906 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66019 0.88793 0.4549 edgecolor
+newpath 962.7217 616.6765 moveto
+965.8518 614.6882 lineto
+962.1649 614.2906 lineto
+closepath stroke
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+474 931 moveto 31 (1.02%) alignedtext
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+470 920 moveto 39 (21076×) alignedtext
+grestore
+% 550->105
+gsave
+.5 setlinewidth
+0.60526 0.89764 0.49804 edgecolor
+newpath 1549.9416 1224.4113 moveto
+1580.623 1213.3031 1613.7766 1198.3512 1641 1179 curveto
+1729.3768 1116.1791 1803.7468 1008.6157 1836.3322 957.1295 curveto
+stroke
+0.60526 0.89764 0.49804 edgecolor
+newpath 1837.399 957.7342 moveto
+1838.2295 954.1202 lineto
+1835.3266 956.4275 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.60526 0.89764 0.49804 edgecolor
+newpath 1837.399 957.7342 moveto
+1838.2295 954.1202 lineto
+1835.3266 956.4275 lineto
+closepath stroke
+0.60526 0.89764 0.49804 edgecolor
+10 /ArialMT set_font
+1734 1110 moveto 31 (9.19%) alignedtext
+0.60526 0.89764 0.49804 edgecolor
+10 /ArialMT set_font
+1730 1099 moveto 39 (14189×) alignedtext
+grestore
+% 550->106
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 1475.8306 1224.3718 moveto
+1485.7015 1211.3663 1497.6671 1195.6008 1507.8391 1182.1984 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 1508.9744 1182.7289 moveto
+1510.1146 1179.2003 lineto
+1507.0228 1181.2477 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 1508.9744 1182.7289 moveto
+1510.1146 1179.2003 lineto
+1507.0228 1181.2477 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1505 1202 moveto 31 (1.24%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+1501 1191 moveto 39 (14189×) alignedtext
+grestore
+% 1251
+gsave
+0.59117 0.9 0.5098 nodecolor
+newpath 1415 1179 moveto
+1249 1179 lineto
+1249 1127 lineto
+1415 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.59117 0.9 0.5098 nodecolor
+newpath 1415 1179 moveto
+1249 1179 lineto
+1249 1127 lineto
+1415 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1257 1167 moveto 150 (database:552:react_molecules) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1313.5 1156 moveto 37 (11.49%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1313 1145 moveto 38 (\(0.27%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1312.5 1134 moveto 39 (14189×) alignedtext
+grestore
+% 550->1251
+gsave
+.5 setlinewidth
+0.59117 0.9 0.5098 edgecolor
+newpath 1422.7703 1224.3718 moveto
+1405.952 1211.1477 1385.5046 1195.0701 1368.2776 1181.5247 curveto
+stroke
+0.59117 0.9 0.5098 edgecolor
+newpath 1368.83 1180.4007 moveto
+1365.3215 1179.2003 lineto
+1367.3156 1182.3267 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.59117 0.9 0.5098 edgecolor
+newpath 1368.83 1180.4007 moveto
+1365.3215 1179.2003 lineto
+1367.3156 1182.3267 lineto
+closepath stroke
+0.59117 0.9 0.5098 edgecolor
+10 /ArialMT set_font
+1402 1202 moveto 37 (11.49%) alignedtext
+0.59117 0.9 0.5098 edgecolor
+10 /ArialMT set_font
+1401 1191 moveto 39 (14189×) alignedtext
+grestore
+% 1359
+gsave
+0.59195 0.89922 0.50588 nodecolor
+newpath 1417.5 1081.5 moveto
+1246.5 1081.5 lineto
+1246.5 1029.5 lineto
+1417.5 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.59195 0.89922 0.50588 nodecolor
+newpath 1417.5 1081.5 moveto
+1246.5 1081.5 lineto
+1246.5 1029.5 lineto
+1417.5 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+1254.5 1069.5 moveto 155 (family:1679:generate_reactions) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1313.5 1058.5 moveto 37 (11.20%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1313 1047.5 moveto 38 (\(0.54%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+1309.5 1036.5 moveto 45 (922285×) alignedtext
+grestore
+% 1251->1359
+gsave
+.5 setlinewidth
+0.59195 0.89922 0.50588 edgecolor
+newpath 1332 1126.8718 moveto
+1332 1114.0849 1332 1098.63 1332 1085.3762 curveto
+stroke
+0.59195 0.89922 0.50588 edgecolor
+newpath 1333.2251 1085.2003 moveto
+1332 1081.7003 lineto
+1330.7751 1085.2004 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.59195 0.89922 0.50588 edgecolor
+newpath 1333.2251 1085.2003 moveto
+1332 1081.7003 lineto
+1330.7751 1085.2004 lineto
+closepath stroke
+0.59195 0.89922 0.50588 edgecolor
+10 /ArialMT set_font
+1336 1110 moveto 37 (11.20%) alignedtext
+0.59195 0.89922 0.50588 edgecolor
+10 /ArialMT set_font
+1332 1099 moveto 45 (922285×) alignedtext
+grestore
+% 556->545
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 2147.7419 1127.2968 moveto
+2141.5806 1124.3489 2136.7472 1121.234 2134 1118 curveto
+2115.8309 1096.611 2125 1083.5643 2125 1055.5 curveto
+2125 1055.5 2125 1055.5 2125 800.5 curveto
+2125 772.4357 2134.6592 758.9628 2116 738 curveto
+2009.9192 618.8226 1926.5975 670.8882 1769 646 curveto
+1636.5257 625.0793 1231.9846 611.5803 1079.7569 607.1238 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 1079.7424 605.8979 moveto
+1076.2081 607.0202 lineto
+1079.6709 608.3469 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 1079.7424 605.8979 moveto
+1076.2081 607.0202 lineto
+1079.6709 608.3469 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2126 870 moveto 31 (0.22%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2125 859 moveto 33 (6557×) alignedtext
+grestore
+% 556->332
+gsave
+.5 setlinewidth
+0.66503 0.88696 0.45098 edgecolor
+newpath 2342.036 1135.9944 moveto
+2363.3877 1132.6531 2385.9188 1129.4339 2407 1127 curveto
+2463.2126 1120.5102 2478.8624 1130.721 2534 1118 curveto
+2542.9868 1115.9266 2602.4621 1090.4879 2611 1087 curveto
+2611.1487 1086.9392 2611.2977 1086.8784 2611.4467 1086.8175 curveto
+stroke
+0.66503 0.88696 0.45098 edgecolor
+newpath 2611.8229 1087.9872 moveto
+2614.5986 1085.5283 lineto
+2610.8953 1085.7196 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66503 0.88696 0.45098 edgecolor
+newpath 2611.8229 1087.9872 moveto
+2614.5986 1085.5283 lineto
+2610.8953 1085.7196 lineto
+closepath stroke
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2598 1110 moveto 31 (0.31%) alignedtext
+0.66503 0.88696 0.45098 edgecolor
+10 /ArialMT set_font
+2588 1099 moveto 51 (6337048×) alignedtext
+grestore
+% 556->556
+gsave
+.5 setlinewidth
+0.62162 0.89516 0.48627 edgecolor
+newpath 2342.2657 1158.8197 moveto
+2347.7382 1157.4106 2351 1155.4707 2351 1153 curveto
+2351 1151.147 2349.1652 1149.5925 2345.9391 1148.3367 curveto
+stroke
+0.62162 0.89516 0.48627 edgecolor
+newpath 2345.9721 1147.0628 moveto
+2342.2657 1147.1803 lineto
+2345.2364 1149.3998 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.62162 0.89516 0.48627 edgecolor
+newpath 2345.9721 1147.0628 moveto
+2342.2657 1147.1803 lineto
+2345.2364 1149.3998 lineto
+closepath stroke
+0.62162 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+2351 1156 moveto 31 (6.87%) alignedtext
+0.62162 0.89516 0.48627 edgecolor
+10 /ArialMT set_font
+2353 1145 moveto 27 (475×) alignedtext
+grestore
+% 1136
+gsave
+0.66019 0.88793 0.4549 nodecolor
+newpath 2332 1081.5 moveto
+2158 1081.5 lineto
+2158 1029.5 lineto
+2332 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66019 0.88793 0.4549 nodecolor
+newpath 2332 1081.5 moveto
+2158 1081.5 lineto
+2158 1029.5 lineto
+2332 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2166 1069.5 moveto 158 (base:1267:get_all_combinations) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2229.5 1058.5 moveto 31 (0.95%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2226 1047.5 moveto 38 (\(0.46%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2219.5 1036.5 moveto 51 (1451524×) alignedtext
+grestore
+% 556->1136
+gsave
+.5 setlinewidth
+0.66019 0.88793 0.4549 edgecolor
+newpath 2245 1126.8718 moveto
+2245 1114.0849 2245 1098.63 2245 1085.3762 curveto
+stroke
+0.66019 0.88793 0.4549 edgecolor
+newpath 2246.2251 1085.2003 moveto
+2245 1081.7003 lineto
+2243.7751 1085.2004 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66019 0.88793 0.4549 edgecolor
+newpath 2246.2251 1085.2003 moveto
+2245 1081.7003 lineto
+2243.7751 1085.2004 lineto
+closepath stroke
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2255 1110 moveto 31 (0.95%) alignedtext
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2245 1099 moveto 51 (1451467×) alignedtext
+grestore
+% 1393
+gsave
+0.66019 0.88793 0.4549 nodecolor
+newpath 2445 1081.5 moveto
+2341 1081.5 lineto
+2341 1029.5 lineto
+2445 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66019 0.88793 0.4549 nodecolor
+newpath 2445 1081.5 moveto
+2341 1081.5 lineto
+2341 1029.5 lineto
+2445 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2349 1069.5 moveto 88 (rules:422:get_rule) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2377.5 1058.5 moveto 31 (1.03%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2374 1047.5 moveto 38 (\(0.29%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2367.5 1036.5 moveto 51 (1673437×) alignedtext
+grestore
+% 556->1393
+gsave
+.5 setlinewidth
+0.66019 0.88793 0.4549 edgecolor
+newpath 2284.6613 1126.8718 moveto
+2304.9822 1113.4847 2329.7422 1097.1732 2350.4597 1083.5248 curveto
+stroke
+0.66019 0.88793 0.4549 edgecolor
+newpath 2351.2372 1084.4796 moveto
+2353.4861 1081.5311 lineto
+2349.8894 1082.4337 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66019 0.88793 0.4549 edgecolor
+newpath 2351.2372 1084.4796 moveto
+2353.4861 1081.5311 lineto
+2349.8894 1082.4337 lineto
+closepath stroke
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2337 1110 moveto 31 (1.02%) alignedtext
+0.66019 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2327 1099 moveto 51 (1665030×) alignedtext
+grestore
+% 1419->385
+gsave
+.5 setlinewidth
+0.65385 0.88889 0.45882 edgecolor
+newpath 144.9474 481.844 moveto
+128.7053 471.8833 113.2204 458.7717 104 442 curveto
+90.5109 417.4634 95.3412 405.6275 104 379 curveto
+108.3253 365.6989 116.4525 352.8418 124.8062 342.0641 curveto
+stroke
+0.65385 0.88889 0.45882 edgecolor
+newpath 125.9553 342.5859 moveto
+127.1654 339.0807 lineto
+124.0335 341.0662 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65385 0.88889 0.45882 edgecolor
+newpath 125.9553 342.5859 moveto
+127.1654 339.0807 lineto
+124.0335 341.0662 lineto
+closepath stroke
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+104 413.5 moveto 31 (1.97%) alignedtext
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+106 402.5 moveto 27 (234×) alignedtext
+grestore
+% 640
+gsave
+0.66181 0.88793 0.4549 nodecolor
+newpath 476.5 436.5 moveto
+139.5 436.5 lineto
+139.5 384.5 lineto
+476.5 384.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.66181 0.88793 0.4549 nodecolor
+newpath 476.5 436.5 moveto
+139.5 436.5 lineto
+139.5 384.5 lineto
+476.5 384.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+147.5 424.5 moveto 321 (thermo:2136:get_bicyclic_correction_thermo_data_from_heuristic) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+292.5 413.5 moveto 31 (0.82%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+289 402.5 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+297.5 391.5 moveto 21 (45×) alignedtext
+grestore
+% 1419->640
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 234.7982 481.8718 moveto
+248.2492 468.757 264.5788 452.8357 278.3989 439.3611 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 279.477 440.0208 moveto
+281.1279 436.7003 lineto
+277.7667 438.2666 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 279.477 440.0208 moveto
+281.1279 436.7003 lineto
+277.7667 438.2666 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+264 465 moveto 31 (0.78%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+269 454 moveto 21 (43×) alignedtext
+grestore
+% 640->385
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 266.1949 384.3718 moveto
+244.7755 370.9847 218.6772 354.6732 196.8397 341.0248 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 197.2671 339.8474 moveto
+193.6498 339.0311 lineto
+195.9686 341.925 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 197.2671 339.8474 moveto
+193.6498 339.0311 lineto
+195.9686 341.925 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+240 362 moveto 31 (0.77%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+242 351 moveto 27 (225×) alignedtext
+grestore
+% 770
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 866 631.5 moveto
+740 631.5 lineto
+740 579.5 lineto
+866 579.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 866 631.5 moveto
+740 631.5 lineto
+740 579.5 lineto
+866 579.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+748 619.5 moveto 110 (parse:873:<listcomp>) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+787.5 608.5 moveto 31 (1.24%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+784 597.5 moveto 38 (\(0.74%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+780.5 586.5 moveto 45 (138501×) alignedtext
+grestore
+% 766->770
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 937.6914 676.8718 moveto
+912.2204 663.375 881.1398 646.9056 855.2556 633.1898 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 855.7917 632.0875 moveto
+852.1254 631.5311 lineto
+854.6445 634.2524 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 855.7917 632.0875 moveto
+852.1254 631.5311 lineto
+854.6445 634.2524 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+924 660 moveto 31 (1.24%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+917 649 moveto 45 (138501×) alignedtext
+grestore
+% 899
+gsave
+0.65385 0.88889 0.45882 nodecolor
+newpath 2712 1276.5 moveto
+2590 1276.5 lineto
+2590 1224.5 lineto
+2712 1224.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65385 0.88889 0.45882 nodecolor
+newpath 2712 1276.5 moveto
+2590 1276.5 lineto
+2590 1224.5 lineto
+2712 1224.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2598 1264.5 moveto 106 (__init__:252:dump_all) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2635.5 1253.5 moveto 31 (2.02%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2632 1242.5 moveto 38 (\(0.01%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2640.5 1231.5 moveto 21 (33×) alignedtext
+grestore
+% 964
+gsave
+0.65385 0.88889 0.45882 nodecolor
+newpath 2889.5 1179 moveto
+2752.5 1179 lineto
+2752.5 1127 lineto
+2889.5 1127 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65385 0.88889 0.45882 nodecolor
+newpath 2889.5 1179 moveto
+2752.5 1179 lineto
+2752.5 1127 lineto
+2889.5 1127 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2760.5 1167 moveto 121 (representer:26:represent) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2805.5 1156 moveto 31 (2.01%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2802 1145 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2810.5 1134 moveto 21 (33×) alignedtext
+grestore
+% 899->964
+gsave
+.5 setlinewidth
+0.65385 0.88889 0.45882 edgecolor
+newpath 2696.5569 1224.3718 moveto
+2719.9942 1210.9298 2748.5722 1194.5395 2772.4285 1180.8572 curveto
+stroke
+0.65385 0.88889 0.45882 edgecolor
+newpath 2773.1857 1181.8351 moveto
+2775.6124 1179.0311 lineto
+2771.9668 1179.7098 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65385 0.88889 0.45882 edgecolor
+newpath 2773.1857 1181.8351 moveto
+2775.6124 1179.0311 lineto
+2771.9668 1179.7098 lineto
+closepath stroke
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2756 1202 moveto 31 (2.01%) alignedtext
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2761 1191 moveto 21 (33×) alignedtext
+grestore
+% 914
+gsave
+0.65545 0.88889 0.45882 nodecolor
+newpath 2889.5 1081.5 moveto
+2768.5 1081.5 lineto
+2768.5 1029.5 lineto
+2889.5 1029.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65545 0.88889 0.45882 nodecolor
+newpath 2889.5 1081.5 moveto
+2768.5 1081.5 lineto
+2768.5 1029.5 lineto
+2889.5 1029.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2776.5 1069.5 moveto 105 (serializer:46:serialize) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2813.5 1058.5 moveto 31 (1.81%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2810 1047.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2818.5 1036.5 moveto 21 (33×) alignedtext
+grestore
+% 964->914
+gsave
+.5 setlinewidth
+0.65545 0.88889 0.45882 edgecolor
+newpath 2823.1439 1126.8718 moveto
+2824.193 1114.0849 2825.4611 1098.63 2826.5486 1085.3762 curveto
+stroke
+0.65545 0.88889 0.45882 edgecolor
+newpath 2827.7848 1085.2888 moveto
+2826.8502 1081.7003 lineto
+2825.343 1085.0884 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65545 0.88889 0.45882 edgecolor
+newpath 2827.7848 1085.2888 moveto
+2826.8502 1081.7003 lineto
+2825.343 1085.0884 lineto
+closepath stroke
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2825 1110 moveto 31 (1.81%) alignedtext
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2830 1099 moveto 21 (33×) alignedtext
+grestore
+% 900->899
+gsave
+.5 setlinewidth
+0.65385 0.88889 0.45882 edgecolor
+newpath 2604.0819 1351.8908 moveto
+2613.7463 1331.0059 2627.2965 1301.7237 2637.3516 1279.9944 curveto
+stroke
+0.65385 0.88889 0.45882 edgecolor
+newpath 2638.5761 1280.2652 moveto
+2638.9343 1276.5743 lineto
+2636.3526 1279.2362 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65385 0.88889 0.45882 edgecolor
+newpath 2638.5761 1280.2652 moveto
+2638.9343 1276.5743 lineto
+2636.3526 1279.2362 lineto
+closepath stroke
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2631 1320 moveto 31 (2.02%) alignedtext
+0.65385 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2636 1309 moveto 21 (33×) alignedtext
+grestore
+% 904
+gsave
+0.65545 0.88889 0.45882 nodecolor
+newpath 2881 954 moveto
+2731 954 lineto
+2731 902 lineto
+2881 902 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65545 0.88889 0.45882 nodecolor
+newpath 2881 954 moveto
+2731 954 lineto
+2731 902 lineto
+2881 902 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2739 942 moveto 134 (serializer:78:serialize_node) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2790.5 931 moveto 31 (1.77%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2787 920 moveto 38 (\(0.18%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2783.5 909 moveto 45 (137200×) alignedtext
+grestore
+% 904->904
+gsave
+.5 setlinewidth
+0.65545 0.88889 0.45882 edgecolor
+newpath 2881.0775 936.3489 moveto
+2886.6085 934.4744 2890 931.6914 2890 928 curveto
+2890 925.1161 2887.93 922.7866 2884.387 921.0117 curveto
+stroke
+0.65545 0.88889 0.45882 edgecolor
+newpath 2884.7804 919.849 moveto
+2881.0775 919.6511 lineto
+2883.8488 922.115 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65545 0.88889 0.45882 edgecolor
+newpath 2884.7804 919.849 moveto
+2881.0775 919.6511 lineto
+2883.8488 922.115 lineto
+closepath stroke
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2890 931 moveto 31 (1.77%) alignedtext
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2892 920 moveto 27 (422×) alignedtext
+grestore
+% 927
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 2855.5 826.5 moveto
+2756.5 826.5 lineto
+2756.5 774.5 lineto
+2855.5 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 2855.5 826.5 moveto
+2756.5 826.5 lineto
+2756.5 774.5 lineto
+2855.5 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2764.5 814.5 moveto 83 (emitter:111:emit) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2790.5 803.5 moveto 31 (1.46%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2787 792.5 moveto 38 (\(0.08%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2783.5 781.5 moveto 45 (159980×) alignedtext
+grestore
+% 904->927
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 2806 901.8908 moveto
+2806 881.0918 2806 851.9646 2806 830.2631 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 2807.2251 830.0742 moveto
+2806 826.5743 lineto
+2804.7751 830.0743 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 2807.2251 830.0742 moveto
+2806 826.5743 lineto
+2804.7751 830.0743 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2813 870 moveto 31 (1.45%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2806 859 moveto 45 (159848×) alignedtext
+grestore
+% 914->904
+gsave
+.5 setlinewidth
+0.65545 0.88889 0.45882 edgecolor
+newpath 2824.2901 1029.3908 moveto
+2820.5381 1008.5918 2815.2838 979.4646 2811.369 957.7631 curveto
+stroke
+0.65545 0.88889 0.45882 edgecolor
+newpath 2812.5306 957.3012 moveto
+2810.7036 954.0743 lineto
+2810.1195 957.7362 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65545 0.88889 0.45882 edgecolor
+newpath 2812.5306 957.3012 moveto
+2810.7036 954.0743 lineto
+2810.1195 957.7362 lineto
+closepath stroke
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2821 992 moveto 31 (1.77%) alignedtext
+0.65545 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2826 981 moveto 21 (33×) alignedtext
+grestore
+% 1093->550
+gsave
+.92 setlinewidth
+0.51253 0.91724 0.56863 edgecolor
+newpath 1301.185 1364.429 moveto
+1318.9329 1359.1778 1337.7965 1352.1663 1354 1343 curveto
+1382.99 1326.6004 1410.6377 1300.6525 1429.817 1280.4073 curveto
+stroke
+0.51253 0.91724 0.56863 edgecolor
+newpath 1431.239 1281.3471 moveto
+1433.2981 1276.697 lineto
+1428.7886 1279.0481 lineto
+closepath fill
+.92 setlinewidth
+solid
+0.51253 0.91724 0.56863 edgecolor
+newpath 1431.239 1281.3471 moveto
+1433.2981 1276.697 lineto
+1428.7886 1279.0481 lineto
+closepath stroke
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1418 1320 moveto 37 (23.11%) alignedtext
+0.51253 0.91724 0.56863 edgecolor
+10 /ArialMT set_font
+1417 1309 moveto 39 (14189×) alignedtext
+grestore
+% 1359->108
+gsave
+.5 setlinewidth
+0.59565 0.89844 0.50196 edgecolor
+newpath 1332 1029.3908 moveto
+1332 1008.5918 1332 979.4646 1332 957.7631 curveto
+stroke
+0.59565 0.89844 0.50196 edgecolor
+newpath 1333.2251 957.5742 moveto
+1332 954.0743 lineto
+1330.7751 957.5743 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.59565 0.89844 0.50196 edgecolor
+newpath 1333.2251 957.5742 moveto
+1332 954.0743 lineto
+1330.7751 957.5743 lineto
+closepath stroke
+0.59565 0.89844 0.50196 edgecolor
+10 /ArialMT set_font
+1339 992 moveto 37 (10.62%) alignedtext
+0.59565 0.89844 0.50196 edgecolor
+10 /ArialMT set_font
+1332 981 moveto 51 (1702680×) alignedtext
+grestore
+% 1450->119
+gsave
+.5 setlinewidth
+0.62424 0.89431 0.48235 edgecolor
+newpath 536.5754 774.3718 moveto
+540.808 761.4756 545.9313 745.8656 550.3059 732.5368 curveto
+stroke
+0.62424 0.89431 0.48235 edgecolor
+newpath 551.4733 732.9078 moveto
+551.4009 729.2003 lineto
+549.1455 732.1438 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.62424 0.89431 0.48235 edgecolor
+newpath 551.4733 732.9078 moveto
+551.4009 729.2003 lineto
+549.1455 732.1438 lineto
+closepath stroke
+0.62424 0.89431 0.48235 edgecolor
+10 /ArialMT set_font
+548 752 moveto 31 (6.34%) alignedtext
+0.62424 0.89431 0.48235 edgecolor
+10 /ArialMT set_font
+550 741 moveto 27 (958×) alignedtext
+grestore
+% 1450->639
+gsave
+.5 setlinewidth
+0.66181 0.88793 0.4549 edgecolor
+newpath 452.7985 774.3303 moveto
+432.7682 763.5307 413.5177 748.7788 402 729 curveto
+390.37 709.0284 391.5787 697.6281 402 677 curveto
+410.9325 659.3188 426.5274 644.9356 442.6342 633.8295 curveto
+stroke
+0.66181 0.88793 0.4549 edgecolor
+newpath 443.6448 634.6254 moveto
+445.8606 631.652 lineto
+442.2742 632.5947 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.66181 0.88793 0.4549 edgecolor
+newpath 443.6448 634.6254 moveto
+445.8606 631.652 lineto
+442.2742 632.5947 lineto
+closepath stroke
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+402 706 moveto 31 (0.73%) alignedtext
+0.66181 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+404 695 moveto 27 (191×) alignedtext
+grestore
+% 1510
+gsave
+0.65705 0.88889 0.45882 nodecolor
+newpath 3011 1404 moveto
+2901 1404 lineto
+2901 1352 lineto
+3011 1352 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65705 0.88889 0.45882 nodecolor
+newpath 3011 1404 moveto
+2901 1404 lineto
+2901 1352 lineto
+3011 1352 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2909 1392 moveto 94 (figure:2038:savefig) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2940.5 1381 moveto 31 (1.61%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2937 1370 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2945.5 1359 moveto 21 (24×) alignedtext
+grestore
+% 1510->226
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 2961.1195 1351.8908 moveto
+2965.1977 1331.0918 2970.9089 1301.9646 2975.1641 1280.2631 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 2976.416 1280.2446 moveto
+2975.8874 1276.5743 lineto
+2974.0118 1279.7731 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 2976.416 1280.2446 moveto
+2975.8874 1276.5743 lineto
+2974.0118 1279.7731 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2972 1320 moveto 31 (1.61%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2977 1309 moveto 21 (24×) alignedtext
+grestore
+% 1532->1510
+gsave
+.5 setlinewidth
+0.65705 0.88889 0.45882 edgecolor
+newpath 2932.3682 1443.8826 moveto
+2936.4091 1432.6171 2941.1566 1419.3815 2945.3323 1407.7404 curveto
+stroke
+0.65705 0.88889 0.45882 edgecolor
+newpath 2946.5797 1407.8908 moveto
+2946.6084 1404.1827 lineto
+2944.2735 1407.0636 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65705 0.88889 0.45882 edgecolor
+newpath 2946.5797 1407.8908 moveto
+2946.6084 1404.1827 lineto
+2944.2735 1407.0636 lineto
+closepath stroke
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2943 1427 moveto 31 (1.61%) alignedtext
+0.65705 0.88889 0.45882 edgecolor
+10 /ArialMT set_font
+2948 1416 moveto 21 (24×) alignedtext
+grestore
+% 1636
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 3053 826.5 moveto
+2955 826.5 lineto
+2955 774.5 lineto
+3053 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 3053 826.5 moveto
+2955 826.5 lineto
+2955 774.5 lineto
+3053 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2963 814.5 moveto 82 (figure:1661:draw) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2988.5 803.5 moveto 31 (1.18%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2985 792.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2993.5 781.5 moveto 21 (48×) alignedtext
+grestore
+% 1634->1636
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 3004 901.8908 moveto
+3004 881.0918 3004 851.9646 3004 830.2631 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 3005.2251 830.0742 moveto
+3004 826.5743 lineto
+3002.7751 830.0743 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 3005.2251 830.0742 moveto
+3004 826.5743 lineto
+3002.7751 830.0743 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3004 870 moveto 31 (1.18%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3009 859 moveto 21 (48×) alignedtext
+grestore
+% 1640
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 3161.5 826.5 moveto
+3062.5 826.5 lineto
+3062.5 774.5 lineto
+3161.5 774.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 3161.5 826.5 moveto
+3062.5 826.5 lineto
+3062.5 774.5 lineto
+3161.5 774.5 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+3070.5 814.5 moveto 83 (_base:2573:draw) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3096.5 803.5 moveto 31 (1.17%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3093 792.5 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+3101.5 781.5 moveto 21 (48×) alignedtext
+grestore
+% 1634->1640
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 3029.0806 901.8215 moveto
+3031.785 898.8741 3034.4708 895.8916 3037 893 curveto
+3055.0138 872.4051 3074.4467 848.3829 3089.0171 829.981 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 3090.2862 830.3509 moveto
+3091.4958 826.8455 lineto
+3088.3643 828.8315 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 3090.2862 830.3509 moveto
+3091.4958 826.8455 lineto
+3088.3643 828.8315 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3078 870 moveto 31 (1.17%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3083 859 moveto 21 (48×) alignedtext
+grestore
+% 1635
+gsave
+0.65858 0.88793 0.4549 nodecolor
+newpath 3117.5 729 moveto
+2890.5 729 lineto
+2890.5 677 lineto
+3117.5 677 lineto
+closepath fill
+1 setlinewidth
+filled
+0.65858 0.88793 0.4549 nodecolor
+newpath 3117.5 729 moveto
+2890.5 729 lineto
+2890.5 677 lineto
+3117.5 677 lineto
+closepath stroke
+0 0 1 nodecolor
+10 /ArialMT set_font
+2898.5 717 moveto 211 (image:117:_draw_list_compositing_images) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2988.5 706 moveto 31 (1.17%) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2985 695 moveto 38 (\(0.00%\)) alignedtext
+0 0 1 nodecolor
+10 /ArialMT set_font
+2993.5 684 moveto 21 (96×) alignedtext
+grestore
+% 1636->1635
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 3004 774.3718 moveto
+3004 761.5849 3004 746.13 3004 732.8762 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 3005.2251 732.7003 moveto
+3004 729.2003 lineto
+3002.7751 732.7004 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 3005.2251 732.7003 moveto
+3004 729.2003 lineto
+3002.7751 732.7004 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3004 752 moveto 31 (1.17%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3009 741 moveto 21 (48×) alignedtext
+grestore
+% 1640->1635
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 3083.058 774.3718 moveto
+3068.5309 761.257 3050.8949 745.3357 3035.9692 731.8611 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 3036.4408 730.6364 moveto
+3033.0219 729.2003 lineto
+3034.799 732.455 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 3036.4408 730.6364 moveto
+3033.0219 729.2003 lineto
+3034.799 732.455 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3064 752 moveto 31 (1.15%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+3069 741 moveto 21 (48×) alignedtext
+grestore
+% 1635->1634
+gsave
+.5 setlinewidth
+0.65858 0.88793 0.4549 edgecolor
+newpath 2956.1414 729.0291 moveto
+2941.8285 739.4257 2927.8641 752.8199 2920 769 curveto
+2907.7601 794.1831 2910.1517 805.7891 2920 832 curveto
+2929.8743 858.2799 2950.5664 882.0726 2968.9417 899.3976 curveto
+stroke
+0.65858 0.88793 0.4549 edgecolor
+newpath 2968.2385 900.4167 moveto
+2971.6344 901.9063 lineto
+2969.9086 898.6241 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.65858 0.88793 0.4549 edgecolor
+newpath 2968.2385 900.4167 moveto
+2971.6344 901.9063 lineto
+2969.9086 898.6241 lineto
+closepath stroke
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2920 803.5 moveto 31 (1.17%) alignedtext
+0.65858 0.88793 0.4549 edgecolor
+10 /ArialMT set_font
+2925 792.5 moveto 21 (48×) alignedtext
+grestore
+% 2048->184
+gsave
+.5 setlinewidth
+0.64762 0.88983 0.46275 edgecolor
+newpath 2802 1443.8826 moveto
+2802 1432.6171 2802 1419.3815 2802 1407.7404 curveto
+stroke
+0.64762 0.88983 0.46275 edgecolor
+newpath 2803.2251 1407.6827 moveto
+2802 1404.1827 lineto
+2800.7751 1407.6828 lineto
+closepath fill
+.5 setlinewidth
+solid
+0.64762 0.88983 0.46275 edgecolor
+newpath 2803.2251 1407.6827 moveto
+2802 1404.1827 lineto
+2800.7751 1407.6828 lineto
+closepath stroke
+0.64762 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2802 1427 moveto 31 (2.82%) alignedtext
+0.64762 0.88983 0.46275 edgecolor
+10 /ArialMT set_font
+2807 1416 moveto 21 (24×) alignedtext
+grestore
+% 2702->332
+gsave
+.53 setlinewidth
+0.57843 0.90152 0.51765 edgecolor
+newpath 2635.0267 1126.8718 moveto
+2643.206 1115.6396 2652.8845 1102.3488 2661.6588 1090.2996 curveto
+stroke
+0.57843 0.90152 0.51765 edgecolor
+newpath 2662.7374 1091.0183 moveto
+2663.8686 1087.265 lineto
+2660.6436 1089.4936 lineto
+closepath fill
+.53 setlinewidth
+solid
+0.57843 0.90152 0.51765 edgecolor
+newpath 2662.7374 1091.0183 moveto
+2663.8686 1087.265 lineto
+2660.6436 1089.4936 lineto
+closepath stroke
+0.57843 0.90152 0.51765 edgecolor
+10 /ArialMT set_font
+2655 1110 moveto 37 (13.36%) alignedtext
+0.57843 0.90152 0.51765 edgecolor
+10 /ArialMT set_font
+2663 1099 moveto 21 (50×) alignedtext
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 3247 2001
+end
+restore
+%%EOF

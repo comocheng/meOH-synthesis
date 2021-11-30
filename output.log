@@ -1,0 +1,144 @@
+Global RMG Settings:
+   database.directory   = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input (Default, relative to RMG-Py source code)
+   test_data.directory  = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
+RMG execution initiated at Mon Oct 25 13:31:00 2021
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 3.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	b'36bf58e2ca486ab801934d94793827113763dfc0'
+	b'Thu Oct 21 13:34:41 2021 -0400'
+
+The current git HEAD for RMG-database is:
+	b'31c3770859c5be1f4ef6571f3dda3812b24fc9f2'
+	b'Thu Oct 14 09:41:49 2021 -0400'
+
+Error: The input file "/work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/input.py" could not be opened.
+Check that the file exists and that you have read access.
+Global RMG Settings:
+   database.directory   = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input (Default, relative to RMG-Py source code)
+   test_data.directory  = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
+RMG execution initiated at Mon Oct 25 13:31:06 2021
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 3.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	b'36bf58e2ca486ab801934d94793827113763dfc0'
+	b'Thu Oct 21 13:34:41 2021 -0400'
+
+The current git HEAD for RMG-database is:
+	b'31c3770859c5be1f4ef6571f3dda3812b24fc9f2'
+	b'Thu Oct 14 09:41:49 2021 -0400'
+
+Error: The input file "/work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/input.py" could not be opened.
+Check that the file exists and that you have read access.
+Global RMG Settings:
+   database.directory   = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input (Default, relative to RMG-Py source code)
+   test_data.directory  = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
+RMG execution initiated at Mon Oct 25 13:31:15 2021
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 3.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	b'36bf58e2ca486ab801934d94793827113763dfc0'
+	b'Thu Oct 21 13:34:41 2021 -0400'
+
+The current git HEAD for RMG-database is:
+	b'31c3770859c5be1f4ef6571f3dda3812b24fc9f2'
+	b'Thu Oct 14 09:41:49 2021 -0400'
+
+Error: The input file "/work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/input.py" could not be opened.
+Check that the file exists and that you have read access.
+Global RMG Settings:
+   database.directory   = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input (Default, relative to RMG-Py source code)
+   test_data.directory  = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
+RMG execution initiated at Mon Oct 25 13:31:17 2021
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 3.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	b'36bf58e2ca486ab801934d94793827113763dfc0'
+	b'Thu Oct 21 13:34:41 2021 -0400'
+
+The current git HEAD for RMG-database is:
+	b'31c3770859c5be1f4ef6571f3dda3812b24fc9f2'
+	b'Thu Oct 14 09:41:49 2021 -0400'
+
+Error: The input file "/work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/input.py" could not be opened.
+Check that the file exists and that you have read access.
+Global RMG Settings:
+   database.directory   = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input (Default, relative to RMG-Py source code)
+   test_data.directory  = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
+RMG execution initiated at Mon Oct 25 13:31:23 2021
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 3.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	b'36bf58e2ca486ab801934d94793827113763dfc0'
+	b'Thu Oct 21 13:34:41 2021 -0400'
+
+The current git HEAD for RMG-database is:
+	b'31c3770859c5be1f4ef6571f3dda3812b24fc9f2'
+	b'Thu Oct 14 09:41:49 2021 -0400'
+
+Error: The input file "/work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/input.py" could not be opened.
+Check that the file exists and that you have read access.
+Global RMG Settings:
+   database.directory   = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input (Default, relative to RMG-Py source code)
+   test_data.directory  = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
+RMG execution initiated at Mon Oct 25 13:36:08 2021
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 3.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	b'36bf58e2ca486ab801934d94793827113763dfc0'
+	b'Thu Oct 21 13:34:41 2021 -0400'
+
+The current git HEAD for RMG-database is:
+	b'31c3770859c5be1f4ef6571f3dda3812b24fc9f2'
+	b'Thu Oct 14 09:41:49 2021 -0400'
+
+Error: The input file "/work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/input.py" could not be opened.
+Check that the file exists and that you have read access.

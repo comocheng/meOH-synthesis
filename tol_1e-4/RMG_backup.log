@@ -1,0 +1,1395 @@
+Global RMG Settings:
+   database.directory   = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input (Default, relative to RMG-Py source code)
+   test_data.directory  = /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-Py/rmgpy/test_data (Default, relative to RMG-Py source code)
+RMG execution initiated at Mon Oct 25 13:18:53 2021
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 3.1.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	b'36bf58e2ca486ab801934d94793827113763dfc0'
+	b'Thu Oct 21 13:34:41 2021 -0400'
+
+The current git HEAD for RMG-database is:
+	b'31c3770859c5be1f4ef6571f3dda3812b24fc9f2'
+	b'Thu Oct 14 09:41:49 2021 -0400'
+
+Reading input file "/work/westgroup/ChrisB/_01_MeOH_repos/meOH-synthesis/tol_1e-1/input.py"...
+# Running on current commits 29Aug2021 for 
+# RMG-Py: forbidden_input (rebased)
+# RMG-Database: meoh_3
+# running with david's forbidden input branch for Py, 
+# Database:
+# bjarne's Pt111 thermo
+# the correct H2vdw values for thermo per david's comments on PR #516 
+# keep grabow rates from training data
+# added bjarne's new abstraction families
+# removed bidentate families from recommended 
+
+# Data sources
+database(
+    thermoLibraries=[
+        'surfaceThermoCu111', 
+        'surfaceThermoPt111', 
+        'primaryThermoLibrary', 
+        'thermo_DFT_CCSDTF12_BAC',
+        'DFT_QCI_thermo'
+        ],
+    reactionLibraries = ['BurkeH2O2inArHe','BurkeH2O2inN2','Surface/Methane/Deutschmann_Ni', 'Surface/CPOX_Pt/Deutschmann2006_adjusted'],
+    seedMechanisms = [],
+    kineticsDepositories = ['training'],
+    kineticsFamilies =['surface','default'],
+    kineticsEstimator = 'rate rules',
+)
+
+catalystProperties( # default values for Cu(111) calculated by Katrin Blondal and Bjarne Kreitz at Brown University
+    bindingEnergies = {
+                       'C':(-4.96033553, 'eV/molecule'),
+                       'O':(-4.20763879, 'eV/molecule'),
+                       'N':(-3.58446699, 'eV/molecule'),
+                       'H':(-2.58383235, 'eV/molecule'),
+                       },
+    surfaceSiteDensity=(2.943e-9, 'mol/cm^2'),  # from Katrin
+    coverageDependence=True,
+
+)
+# catalystProperties( # Rh111
+#     bindingEnergies = {
+#                        'C':(-6.568, 'eV/molecule'),
+#                        'O':(-4.610, 'eV/molecule'),
+#                        'N':(-4.352, 'eV/molecule'),
+#                        'H':(-2.479, 'eV/molecule'),
+#                        },
+#     surfaceSiteDensity=(2.72e-9, 'mol/cm^2'),
+# )
+
+# List of species
+species(
+    label='X',
+    reactive=True,
+    structure=adjacencyList("1 X u0"),
+)
+
+species(
+    label='N2',
+    reactive=False,
+    structure=SMILES("N#N"),
+)
+
+species(
+    label='H2',
+    reactive=True,
+    structure=SMILES("[H][H]"),
+)
+
+species(
+    label='CO',
+    reactive=True,
+    structure=SMILES("[C-]#[O+]"),
+)
+
+species(
+    label='CO2',
+    reactive=True,
+    structure=SMILES("O=C=O"),
+)
+
+species(
+    label='H2O',
+    reactive=True,
+    structure=SMILES("O"),
+)
+
+species(
+    label='CH2O',
+    reactive=True,
+    structure=SMILES("C=O"),
+)
+
+species(
+    label='HCOOH',
+    reactive=True,
+    structure=SMILES("O=CO"),
+)
+
+species(
+    label='CH3OH',
+    reactive=True,
+    structure=SMILES("CO"),
+)
+
+species(
+    label='HCOOCH3',
+    reactive=True,
+    structure=SMILES("O=COC"),
+)
+
+species(
+   label='H*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 H u0 p0 c0 {2,S}
+2 X u0 p0 c0 {1,S}
+"""),
+)
+
+species(
+   label='O*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,D}
+2 X u0 p0 c0 {1,D}
+"""),
+)
+
+species(
+   label='OH*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 X u0 p0 c0 {1,S}
+"""),
+)
+
+species(
+   label='H2O*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,S} {3,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 X u0 p0 c0
+"""),
+)
+
+species(
+   label='CO*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,D}
+3 X u0 p0 c0 {2,D}
+"""),
+)
+
+species(
+   label='CO2*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {3,D}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,D} {2,D}
+4 X u0 p0 c0
+"""),
+)
+
+# species(
+#    label='CO3*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+#
+# """),
+# )
+
+# species(
+#    label='HCO3*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+
+# """),
+# )
+
+species(
+   label='HCO*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,S} {4,S}
+3 H u0 p0 c0 {2,S}
+4 X u0 p0 c0 {2,S}
+"""),
+)
+
+# species(
+#    label='COH*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+#
+# """),
+# )
+
+# species(
+#    label='HCOH*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+# 1 O u0 p2 c0 {2,S} {4,S}
+# 2 C u0 p0 c0 {1,S} {3,S} {5,D}
+# 3 H u0 p0 c0 {2,S}
+# 4 H u0 p0 c0 {1,S}
+# 5 X u0 p0 c0 {2,D}
+# """),
+# )
+
+# HCOO representation in 
+species(
+   label='HCOO*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {3,S} {5,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {4,S}
+4 H u0 p0 c0 {3,S}
+5 X u0 p0 c0 {1,S}
+"""),
+)
+
+# HCOO as grabow represents it. I do not have their weird resonance structure though:
+#     H
+#     C
+#    / \
+#   O   O
+#__||__||____resonant 1.5 bond b/w O and X
+#
+# species(
+#    label='HCOO*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+# 1 O u0 p2 c0 {2,S} {5,S}
+# 2 C u1 p0 c0 {1,S} {3,S} {4,S}
+# 3 O u0 p2 c0 {2,S} {6,S}
+# 4 H u0 p0 c0 {2,S}
+# 5 X u0 p0 c0 {1,S}
+# 6 X u0 p0 c0 {3,S}
+# """),
+# )
+
+
+# species(
+#    label='H2CO2*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+#
+# """),
+# )
+
+species(
+   label='COOH*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {3,S} {4,S}
+2 O u0 p2 c0 {3,D}
+3 C u0 p0 c0 {1,S} {2,D} {5,S}
+4 H u0 p0 c0 {1,S}
+5 X u0 p0 c0 {3,S}
+"""),
+)
+
+# radical representation
+# species(
+#    label='HCOOH*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+# 1 O u0 p2 c0 {2,S} {4,S}
+# 2 C u1 p0 c0 {1,S} {3,S} {5,S}
+# 3 O u0 p2 c0 {2,S} {6,S}
+# 4 H u0 p0 c0 {1,S}
+# 5 H u0 p0 c0 {2,S}
+# 6 X u0 p0 c0 {3,S}
+# """),
+# )
+
+# vdw representation
+species(
+   label='HCOOH*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,S} {6,S}
+2 C u0 p0 c0 {1,S} {3,S} {4,D}
+3 H u0 p0 c0 {2,S}
+4 O u0 p2 c0 {2,D}
+5 X u0 p0 c0
+6 H u0 p0 c0 {1,S}
+"""),
+)
+
+species(
+   label='CH2O*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,D}
+2 C u0 p0 c0 {1,D} {3,S} {4,S}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {2,S}
+5 X u0 p0 c0
+"""),
+)
+
+species(
+   label='CH3O*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {2,S} {6,S}
+2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {2,S}
+6 X u0 p0 c0 {1,S}
+"""),
+)
+
+# species(
+#    label='CH2OH*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+# 1 O u0 p2 c0 {2,S} {5,S}
+# 2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
+# 3 H u0 p0 c0 {2,S}
+# 4 H u0 p0 c0 {2,S}
+# 5 H u0 p0 c0 {1,S}
+# 6 X u0 p0 c0 {2,S}
+# """),
+# )
+
+species(
+   label='CH3O2*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 O u0 p2 c0 {3,S} {6,S}
+2 O u0 p2 c0 {3,S} {7,S}
+3 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
+4 H u0 p0 c0 {3,S}
+5 H u0 p0 c0 {3,S}
+6 H u0 p0 c0 {1,S}
+7 X u0 p0 c0 {2,S}
+"""),
+)
+
+species(
+   label='CH3OH*',
+   reactive=True,
+   structure=adjacencyList(
+       """
+ 1 O u0 p2 c0 {2,S} {6,S}
+2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+3 H u0 p0 c0 {2,S}
+4 H u0 p0 c0 {2,S}
+5 H u0 p0 c0 {2,S}
+6 H u0 p0 c0 {1,S}
+7 X u0 p0 c0
+"""),
+)
+
+# insert CH4 because it is smothering the surface. 
+species(
+   label='CH4',
+   reactive=True,
+   structure=adjacencyList(
+       """
+1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
+2 H u0 p0 c0 {1,S}
+3 H u0 p0 c0 {1,S}
+4 H u0 p0 c0 {1,S}
+5 H u0 p0 c0 {1,S}
+"""),
+)
+
+
+# species(
+#    label='HCOOCH3*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+# """),
+# )
+
+# species(
+#    label='H2COOCH3*',
+#    reactive=True,
+#    structure=adjacencyList(
+#        """
+#
+# """),
+# )
+
+#----------
+# Reaction systems
+surfaceReactor(
+    temperature=[(400,'K'),(700, 'K')],
+    initialPressure=(15.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.0,
+        "CO2": 0.776,
+        "H2": 0.7669,
+        "N2": 0.1555,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    terminationConversion = { "CO2":0.99,},
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
+)
+
+surfaceReactor(
+    temperature=[(400,'K'),(700, 'K')],
+    initialPressure=(76.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.0,
+        "CO2": 0.776,
+        "H2": 0.7669,
+        "N2": 0.1555,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    terminationConversion = { "CO2":0.99,},
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
+)
+
+surfaceReactor(
+    temperature=[(400,'K'),(700, 'K')],
+    initialPressure=(15.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.2019,
+        "CO2": 0.0,
+        "H2": 0.6424,
+        "N2": 0.1557,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    terminationConversion = { "CO":0.99,},
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
+)
+
+surfaceReactor(
+    temperature=[(400,'K'),(700, 'K')],
+    initialPressure=(76.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.2019,
+        "CO2": 0.0,
+        "H2": 0.6424,
+        "N2": 0.1557,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    terminationConversion = { "CO":0.99,},
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
+)
+
+# adding in reactor at 15 and 75 bar with all starting species present because why not. 
+surfaceReactor(
+    temperature=[(400,'K'),(700, 'K')],
+    initialPressure=(15.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.2,
+        "CO2": 0.2,
+        "H2": 0.2,
+        "H2O": 0.2,
+        "N2": 0.1,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    terminationConversion = { "CO":0.99,},
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
+)
+
+surfaceReactor(
+    temperature=[(400,'K'),(700, 'K')],
+    initialPressure=(76.0, 'bar'),
+    nSims = 4,
+    initialGasMoleFractions={
+        "CO": 0.2,
+        "CO2": 0.2,
+        "H2": 0.2,
+        "H2O": 0.2,
+        "N2": 0.1,
+    },
+    initialSurfaceCoverages={
+        "X": 1.0,
+    },
+    surfaceVolumeRatio=(1.e5, 'm^-1'),
+    terminationConversion = { "CO":0.99,},
+    terminationTime=(10., 's'),
+    terminationRateRatio=0.01
+)
+
+simulator(
+    atol=1e-18,
+    rtol=1e-12,
+)
+
+model(
+    toleranceKeepInEdge=0.0,
+    toleranceMoveToCore=1e-1,
+# inturrupt tolerance was 0.1 wout pruning, 1e8 w pruning on
+    toleranceInterruptSimulation=1e-1,
+    maximumEdgeSpecies=500000,
+# PRUNING: uncomment to prune
+#    minCoreSizeForPrune=50,
+# prune before simulation based on thermo
+#    toleranceThermoKeepSpeciesInEdge=0.5,
+# prune rxns from edge that dont move into core
+#    minSpeciesExistIterationsForPrune=2,
+# FILTERING: set so threshold is slightly larger than max rate constants
+#    filterReactions=True,
+#    filterThreshold=5e8, # default value
+)
+
+options(
+    units='si',
+    saveRestartPeriod=None,
+    generateOutputHTML=True,
+    generatePlots=False,
+    # generateLabeledReactions=True, # using labelreactions branch, to get a list of labeled reactions
+    saveEdgeSpecies=True,
+    saveSimulationProfiles=True,
+    generateSeedEachIteration=True
+)
+
+generatedSpeciesConstraints(
+    allowed=['input species','reaction libraries'],
+#    maximumRadicalElectrons=2,
+#    maximumCarbonAtoms=12,
+)
+
+forbidden(
+    label='CO2_bidentate',
+    structure=adjacencyList(
+        """
+        1 O u0 p2 c0 {2,D}
+        2 C u0 p0 c0 {1,D} {3,S} {4,S}
+        3 X u0 p0 c0 {2,S}
+        4 O u0 p2 c0 {2,S} {5,S}
+        5 X u0 p0 c0 {4,S}
+        """
+    )
+)
+
+
+Using binding energies:
+{'C': (-4.96034,'eV/molecule'), 'H': (-2.58383,'eV/molecule'), 'O': (-4.20764,'eV/molecule'), 'N': (-3.58447,'eV/molecule')}
+Using surface site density: (2.943e-09,'mol/cm^2')
+Coverage dependence is turned ON
+Warning: Initial gas mole fractions do not sum to one; renormalizing.
+
+
+Surface reaction system 1
+Gas phase mole fractions:
+  CO                   0
+  CO2                  0.4569
+  H2                   0.45154
+  N2                   0.091557
+Total gas phase:          1 moles
+Pressure:                 1.5e+06 Pa
+Temperature:              5e-324 K
+Reactor volume:           0 m3
+Surface/volume ratio:     1e+05 m2/m3
+Surface site density:     2.94e-05 mol/m2
+Surface sites in reactor: 0 moles
+Initial surface coverages (and amounts):
+  X                  1 = 0 moles
+Warning: Initial gas mole fractions do not sum to one; renormalizing.
+
+
+Surface reaction system 2
+Gas phase mole fractions:
+  CO                   0
+  CO2                  0.4569
+  H2                   0.45154
+  N2                   0.091557
+Total gas phase:          1 moles
+Pressure:                 7.6e+06 Pa
+Temperature:              5e-324 K
+Reactor volume:           0 m3
+Surface/volume ratio:     1e+05 m2/m3
+Surface site density:     2.94e-05 mol/m2
+Surface sites in reactor: 0 moles
+Initial surface coverages (and amounts):
+  X                  1 = 0 moles
+
+Surface reaction system 3
+Gas phase mole fractions:
+  CO                   0.2019
+  CO2                  0
+  H2                   0.6424
+  N2                   0.1557
+Total gas phase:          1 moles
+Pressure:                 1.5e+06 Pa
+Temperature:              5e-324 K
+Reactor volume:           0 m3
+Surface/volume ratio:     1e+05 m2/m3
+Surface site density:     2.94e-05 mol/m2
+Surface sites in reactor: 0 moles
+Initial surface coverages (and amounts):
+  X                  1 = 0 moles
+
+Surface reaction system 4
+Gas phase mole fractions:
+  CO                   0.2019
+  CO2                  0
+  H2                   0.6424
+  N2                   0.1557
+Total gas phase:          1 moles
+Pressure:                 7.6e+06 Pa
+Temperature:              5e-324 K
+Reactor volume:           0 m3
+Surface/volume ratio:     1e+05 m2/m3
+Surface site density:     2.94e-05 mol/m2
+Surface sites in reactor: 0 moles
+Initial surface coverages (and amounts):
+  X                  1 = 0 moles
+Warning: Initial gas mole fractions do not sum to one; renormalizing.
+
+
+Surface reaction system 5
+Gas phase mole fractions:
+  CO                   0.22222
+  CO2                  0.22222
+  H2                   0.22222
+  H2O                  0.22222
+  N2                   0.11111
+Total gas phase:          1 moles
+Pressure:                 1.5e+06 Pa
+Temperature:              5e-324 K
+Reactor volume:           0 m3
+Surface/volume ratio:     1e+05 m2/m3
+Surface site density:     2.94e-05 mol/m2
+Surface sites in reactor: 0 moles
+Initial surface coverages (and amounts):
+  X                  1 = 0 moles
+Warning: Initial gas mole fractions do not sum to one; renormalizing.
+
+
+Surface reaction system 6
+Gas phase mole fractions:
+  CO                   0.22222
+  CO2                  0.22222
+  H2                   0.22222
+  H2O                  0.22222
+  N2                   0.11111
+Total gas phase:          1 moles
+Pressure:                 7.6e+06 Pa
+Temperature:              5e-324 K
+Reactor volume:           0 m3
+Surface/volume ratio:     1e+05 m2/m3
+Surface site density:     2.94e-05 mol/m2
+Surface sites in reactor: 0 moles
+Initial surface coverages (and amounts):
+  X                  1 = 0 moles
+Warning: Generate Output HTML option was turned on. Note that this will slow down model generation.
+Warning: Edge species saving was turned on. This will slow down model generation for large simulations.
+
+Loading transport library from PrimaryTransportLibrary.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/transport/libraries...
+Loading transport library from GRI-Mech.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/transport/libraries...
+Loading transport library from NOx2018.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/transport/libraries...
+Loading transport library from NIST_Fluorine.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/transport/libraries...
+Loading transport library from OneDMinN2.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/transport/libraries...
+Loading transport group database from /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/transport/groups...
+Loading kinetics library BurkeH2O2inArHe from /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/kinetics/libraries/BurkeH2O2inArHe/reactions.py...
+Loading kinetics library BurkeH2O2inN2 from /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/kinetics/libraries/BurkeH2O2inN2/reactions.py...
+Loading kinetics library Surface/Methane/Deutschmann_Ni from /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/kinetics/libraries/Surface/Methane/Deutschmann_Ni/reactions.py...
+Loading kinetics library Surface/CPOX_Pt/Deutschmann2006_adjusted from /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/kinetics/libraries/Surface/CPOX_Pt/Deutschmann2006_adjusted/reactions.py...
+Loading frequencies group database from /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/statmech/groups...
+Loading solvation thermodynamics group database from /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/solvation/groups...
+Loading thermodynamics library from surfaceThermoCu111.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from surfaceThermoPt111.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from primaryThermoLibrary.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from thermo_DFT_CCSDTF12_BAC.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from DFT_QCI_thermo.py in /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/thermo/libraries...
+Loading thermodynamics group database from /home/blais.ch/_02_RMG_envs/RMG_julia_env/RMG-database/input/thermo/groups...
+Trimolecular reactions are turned on
+Adding CO2_bidentate to the forbidden structures database...
+Adding rate rules from training set in kinetics families...
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Cphigh is above the theoretical CpInf value for ThermoData object
+ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-91.45,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo for formic_acid from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2CR)*) Binding energy corrected by LSR () from Pt111""").
+The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
+Warning: Cphigh is above the theoretical CpInf value for ThermoData object
+ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-91.45,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo for formic_acid from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2CR)*) Binding energy corrected by LSR () from Pt111""").
+The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
+Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
+Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
+Warning: Found multiple binding energies for 'Pt'. Using 'Pt111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Ni'. Using 'Ni111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Cphigh is above the theoretical CpInf value for ThermoData object
+ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-91.45,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo for formic_acid from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2CR)*) Binding energy corrected by LSR () from Pt111""").
+The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
+Warning: Cphigh is above the theoretical CpInf value for ThermoData object
+ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-91.45,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo for formic_acid from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2CR)*) Binding energy corrected by LSR () from Pt111""").
+The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Cphigh is above the theoretical CpInf value for ThermoData object
+ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-91.45,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo for formic_acid from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2CR)*) Binding energy corrected by LSR () from Pt111""").
+The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 2000.0 K...
+Warning: Cphigh is above the theoretical CpInf value for ThermoData object
+ThermoData(Tdata=([300,400,500,600,800,1000,1500],'K'), Cpdata=([11.54,14.52,16.98,18.92,21.57,23.27,25.39],'cal/(mol*K)'), H298=(-91.45,'kcal/mol'), S298=(26.4,'cal/(mol*K)'), Cp0=(33.2579,'J/(mol*K)'), CpInf=(103.931,'J/(mol*K)'), label="""formic_acidX""", comment="""Gas phase thermo for formic_acid from Thermo library: thermo_DFT_CCSDTF12_BAC. Adsorption correction: + Thermo group additivity estimation: adsorptionPt111((CR2CR)*) Binding energy corrected by LSR () from Pt111""").
+The thermo for this species is probably wrong! Setting CpInf = Cphigh for Entropy calculationat T = 1666.6666666666665 K...
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Warning: Found multiple binding energies for 'Cu'. Using 'Cu111'.
+Filling in rate rules in kinetics families by averaging...
+Adding reaction library BurkeH2O2inArHe to model edge...
+
+Summary of Model Enlargement
+---------------------------------
+Added 0 new core species
+Created 8 new edge species
+    H(25)
+    O2(26)
+    O(27)
+    OH(28)
+    Ar(29)
+    He(30)
+    HO2(31)
+    H2O2(32)
+Added 0 new core reactions
+Created 30 new edge reactions
+    O2(26) + H(25) <=> O(27) + OH(28)
+    O(27) + H2(2) <=> H(25) + OH(28)
+    OH(28) + H2(2) <=> H(25) + H2O(5)
+    OH(28) + OH(28) <=> O(27) + H2O(5)
+    H2(2) <=> H(25) + H(25)
+    Ar(29) + H2(2) <=> Ar(29) + H(25) + H(25)
+    He(30) + H2(2) <=> He(30) + H(25) + H(25)
+    O(27) + O(27) <=> O2(26)
+    Ar(29) + O(27) + O(27) <=> Ar(29) + O2(26)
+    He(30) + O(27) + O(27) <=> He(30) + O2(26)
+    O(27) + H(25) <=> OH(28)
+    H2O(5) <=> H(25) + OH(28)
+    H2O(5) + H2O(5) <=> H(25) + OH(28) + H2O(5)
+    O2(26) + H(25) <=> HO2(31)
+    H(25) + HO2(31) <=> O2(26) + H2(2)
+    H(25) + HO2(31) <=> OH(28) + OH(28)
+    O(27) + HO2(31) <=> O2(26) + OH(28)
+    OH(28) + HO2(31) <=> O2(26) + H2O(5)
+    HO2(31) + HO2(31) <=> O2(26) + H2O2(32)
+    H2O2(32) <=> OH(28) + OH(28)
+    H(25) + H2O2(32) <=> OH(28) + H2O(5)
+    H(25) + H2O2(32) <=> HO2(31) + H2(2)
+    O(27) + H2O2(32) <=> OH(28) + HO2(31)
+    OH(28) + H2O2(32) <=> HO2(31) + H2O(5)
+    H(25) + HO2(31) <=> O(27) + H2O(5)
+    H(25) + HO2(31) <=> H2O2(32)
+    OH(28) + OH(28) <=> O2(26) + H2(2)
+    O(27) + H2O(5) <=> O2(26) + H2(2)
+    O(27) + H2O2(32) <=> O2(26) + H2O(5)
+    O(27) + OH(28) <=> HO2(31)
+
+After model enlargement:
+    The model core has 0 species and 0 reactions
+    The model edge has 33 species and 30 reactions
+
+Adding reaction library BurkeH2O2inN2 to model edge...
+This library reaction was not new: O2(26) + H(25) <=> O(27) + OH(28)
+This library reaction was not new: O(27) + H2(2) <=> H(25) + OH(28)
+This library reaction was not new: OH(28) + H2(2) <=> H(25) + H2O(5)
+This library reaction was not new: OH(28) + OH(28) <=> O(27) + H2O(5)
+This library reaction was not new: H2(2) <=> H(25) + H(25)
+This library reaction was not new: Ar(29) + H2(2) <=> Ar(29) + H(25) + H(25)
+This library reaction was not new: He(30) + H2(2) <=> He(30) + H(25) + H(25)
+This library reaction was not new: O(27) + O(27) <=> O2(26)
+This library reaction was not new: Ar(29) + O(27) + O(27) <=> Ar(29) + O2(26)
+This library reaction was not new: He(30) + O(27) + O(27) <=> He(30) + O2(26)
+This library reaction was not new: O(27) + H(25) <=> OH(28)
+This library reaction was not new: H2O(5) <=> H(25) + OH(28)
+This library reaction was not new: H2O(5) + H2O(5) <=> H(25) + OH(28) + H2O(5)
+This library reaction was not new: O2(26) + H(25) <=> HO2(31)
+This library reaction was not new: H(25) + HO2(31) <=> O2(26) + H2(2)
+This library reaction was not new: H(25) + HO2(31) <=> OH(28) + OH(28)
+This library reaction was not new: O(27) + HO2(31) <=> O2(26) + OH(28)
+This library reaction was not new: OH(28) + HO2(31) <=> O2(26) + H2O(5)
+This library reaction was not new: HO2(31) + HO2(31) <=> O2(26) + H2O2(32)
+This library reaction was not new: H2O2(32) <=> OH(28) + OH(28)
+This library reaction was not new: H(25) + H2O2(32) <=> OH(28) + H2O(5)
+This library reaction was not new: H(25) + H2O2(32) <=> HO2(31) + H2(2)
+This library reaction was not new: O(27) + H2O2(32) <=> OH(28) + HO2(31)
+This library reaction was not new: OH(28) + H2O2(32) <=> HO2(31) + H2O(5)
+This library reaction was not new: H(25) + HO2(31) <=> O(27) + H2O(5)
+This library reaction was not new: H(25) + HO2(31) <=> H2O2(32)
+This library reaction was not new: OH(28) + OH(28) <=> O2(26) + H2(2)
+This library reaction was not new: O(27) + H2O(5) <=> O2(26) + H2(2)
+This library reaction was not new: O(27) + H2O2(32) <=> O2(26) + H2O(5)
+This library reaction was not new: O(27) + OH(28) <=> HO2(31)
+
+Summary of Model Enlargement
+---------------------------------
+Added 0 new core species
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 0 species and 0 reactions
+    The model edge has 33 species and 30 reactions
+
+Adding reaction library Surface/Methane/Deutschmann_Ni to model edge...
+
+Summary of Model Enlargement
+---------------------------------
+Added 0 new core species
+Created 2 new edge species
+    CX(33)
+    CHX(34)
+Added 0 new core reactions
+Created 8 new edge reactions
+    X(1) + X(1) + H2(2) <=> H*(10) + H*(10)
+    X(1) + X(1) + O2(26) <=> O*(11) + O*(11)
+    X(1) + CO(3) <=> CO*(14)
+    X(1) + CO*(14) <=> O*(11) + CX(33)
+    OH*(12) + CX(33) <=> H*(10) + CO*(14)
+    CO*(14) + CO*(14) <=> CX(33) + CO2*(15)
+    O*(11) + CHX(34) <=> X(1) + HCO*(16)
+    OH*(12) + HCO*(16) <=> H*(10) + COOH*(18)
+
+After model enlargement:
+    The model core has 0 species and 0 reactions
+    The model edge has 35 species and 38 reactions
+
+Adding reaction library Surface/CPOX_Pt/Deutschmann2006_adjusted to model edge...
+This library reaction was not new: X(1) + X(1) + H2(2) <=> H*(10) + H*(10)
+This library reaction was not new: O*(11) + O*(11) <=> X(1) + X(1) + O2(26)
+This library reaction was not new: CO*(14) <=> X(1) + CO(3)
+This library reaction was not new: X(1) + CO*(14) <=> O*(11) + CX(33)
+
+Summary of Model Enlargement
+---------------------------------
+Added 0 new core species
+Created 2 new edge species
+    CH3X(35)
+    CH2X(36)
+Added 0 new core reactions
+Created 14 new edge reactions
+    X(1) + O*(11) + CH4(24) <=> OH*(12) + CH3X(35)
+    X(1) + OH*(12) + CH4(24) <=> H2O*(13) + CH3X(35)
+    X(1) + H2O(5) <=> H2O*(13)
+    X(1) + CO2(4) <=> CO2*(15)
+    O*(11) + CO*(14) <=> X(1) + CO2*(15)
+    OH*(12) + CO*(14) <=> H*(10) + CO2*(15)
+    H*(10) + CH2X(36) <=> X(1) + CH3X(35)
+    X(1) + CH2X(36) <=> H*(10) + CHX(34)
+    X(1) + CHX(34) <=> H*(10) + CX(33)
+    X(1) + OH*(12) <=> O*(11) + H*(10)
+    X(1) + H2O*(13) <=> H*(10) + OH*(12)
+    O*(11) + H2O*(13) <=> OH*(12) + OH*(12)
+    H2(2) + CX(33) <=> CH2X(36)
+    H*(10) + CH3X(35) <=> X(1) + X(1) + CH4(24)
+
+After model enlargement:
+    The model core has 0 species and 0 reactions
+    The model edge has 37 species and 52 reactions
+
+NOT generating reactions for unreactive species N2
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    N2
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 1 species and 0 reactions
+    The model edge has 36 species and 52 reactions
+
+
+NOT generating reactions for unreactive species Ne
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    Ne
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 2 species and 0 reactions
+    The model edge has 36 species and 52 reactions
+
+
+Adding species X(1) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    X(1)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 3 species and 0 reactions
+    The model edge has 35 species and 52 reactions
+
+
+Adding species H2(2) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    H2(2)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 4 species and 0 reactions
+    The model edge has 34 species and 52 reactions
+
+
+Adding species CO(3) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CO(3)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 5 species and 0 reactions
+    The model edge has 33 species and 52 reactions
+
+
+Adding species CO2(4) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CO2(4)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 6 species and 0 reactions
+    The model edge has 32 species and 52 reactions
+
+
+Adding species H2O(5) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    H2O(5)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 7 species and 0 reactions
+    The model edge has 31 species and 52 reactions
+
+
+Adding species CH2O(6) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH2O(6)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 8 species and 0 reactions
+    The model edge has 30 species and 52 reactions
+
+
+Adding species HCOOH(7) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    HCOOH(7)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 9 species and 0 reactions
+    The model edge has 29 species and 52 reactions
+
+
+Adding species CH3OH(8) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH3OH(8)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 10 species and 0 reactions
+    The model edge has 28 species and 52 reactions
+
+
+Adding species HCOOCH3(9) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    HCOOCH3(9)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 11 species and 0 reactions
+    The model edge has 27 species and 52 reactions
+
+
+Adding species H*(10) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    H*(10)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + X(1) + H2(2) <=> H*(10) + H*(10)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 12 species and 1 reactions
+    The model edge has 26 species and 51 reactions
+
+
+Adding species O*(11) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    O*(11)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 13 species and 1 reactions
+    The model edge has 25 species and 51 reactions
+
+
+Adding species OH*(12) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    OH*(12)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + OH*(12) <=> O*(11) + H*(10)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 14 species and 2 reactions
+    The model edge has 24 species and 50 reactions
+
+
+Adding species H2O*(13) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    H2O*(13)
+Created 0 new edge species
+Moved 3 reactions from edge to core
+    X(1) + H2O(5) <=> H2O*(13)
+    X(1) + H2O*(13) <=> H*(10) + OH*(12)
+    O*(11) + H2O*(13) <=> OH*(12) + OH*(12)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 15 species and 5 reactions
+    The model edge has 23 species and 47 reactions
+
+
+Adding species CO*(14) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CO*(14)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    X(1) + CO(3) <=> CO*(14)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 16 species and 6 reactions
+    The model edge has 22 species and 46 reactions
+
+
+Adding species CO2*(15) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CO2*(15)
+Created 0 new edge species
+Moved 3 reactions from edge to core
+    X(1) + CO2(4) <=> CO2*(15)
+    O*(11) + CO*(14) <=> X(1) + CO2*(15)
+    OH*(12) + CO*(14) <=> H*(10) + CO2*(15)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 17 species and 9 reactions
+    The model edge has 21 species and 43 reactions
+
+
+Adding species HCO*(16) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    HCO*(16)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 18 species and 9 reactions
+    The model edge has 20 species and 43 reactions
+
+
+Adding species HCOO*(17) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    HCOO*(17)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 19 species and 9 reactions
+    The model edge has 19 species and 43 reactions
+
+
+Adding species COOH*(18) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    COOH*(18)
+Created 0 new edge species
+Moved 1 reactions from edge to core
+    OH*(12) + HCO*(16) <=> H*(10) + COOH*(18)
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 20 species and 10 reactions
+    The model edge has 18 species and 42 reactions
+
+
+Adding species HCOOH*(19) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    HCOOH*(19)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 21 species and 10 reactions
+    The model edge has 17 species and 42 reactions
+
+
+Adding species CH2O*(20) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH2O*(20)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 22 species and 10 reactions
+    The model edge has 16 species and 42 reactions
+
+
+Adding species CH3O*(21) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH3O*(21)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 23 species and 10 reactions
+    The model edge has 15 species and 42 reactions
+
+
+Adding species CH3O2*(22) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH3O2*(22)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 24 species and 10 reactions
+    The model edge has 14 species and 42 reactions
+
+
+Adding species CH3OH*(23) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH3OH*(23)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 25 species and 10 reactions
+    The model edge has 13 species and 42 reactions
+
+
+Adding species CH4(24) to model core
+
+Summary of Model Enlargement
+---------------------------------
+Added 1 new core species
+    CH4(24)
+Created 0 new edge species
+Added 0 new core reactions
+Created 0 new edge reactions
+
+After model enlargement:
+    The model core has 26 species and 10 reactions
+    The model edge has 12 species and 42 reactions
+
+
+Initialization complete. Starting model generation.
+
+conditions choosen for reactor 0 were: T = 400.0 K, 
+Generating initial reactions...
+For reaction generation 1 process is used.

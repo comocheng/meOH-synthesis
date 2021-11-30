@@ -1,0 +1,2403 @@
+Interfaces:
+- {}
+Phases:
+- Species:
+  - name: N2
+    radicalelectrons: 0
+    smiles: N#N
+    thermo:
+      polys:
+      - Tmax: 1000.0
+        Tmin: 200.0
+        coefs:
+        - 3.53101
+        - -0.000123661
+        - -5.02999e-07
+        - 2.43531e-09
+        - -1.40881e-12
+        - -1046.98
+        - 2.96747
+        type: NASApolynomial
+      - Tmax: 6000.0
+        Tmin: 1000.0
+        coefs:
+        - 2.95258
+        - 0.0013969
+        - -4.92632e-07
+        - 7.8601e-11
+        - -4.60755e-15
+        - -923.949
+        - 5.87189
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: Ne
+    radicalelectrons: 0
+    smiles: '[Ne]'
+    thermo:
+      polys:
+      - Tmax: 1000.0
+        Tmin: 200.0
+        coefs:
+        - 2.5
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -745.375
+        - 3.35532
+        type: NASApolynomial
+      - Tmax: 6000.0
+        Tmin: 1000.0
+        coefs:
+        - 2.5
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -745.375
+        - 3.35532
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: H2
+    radicalelectrons: 0
+    smiles: '[H][H]'
+    thermo:
+      polys:
+      - Tmax: 1959.0740240372913
+        Tmin: 100.0
+        coefs:
+        - 3.4353640477304808
+        - 0.000212710954015714
+        - -2.7862640513047053e-07
+        - 3.402682350893216e-10
+        - -7.760346439837987e-14
+        - -1031.3598363643353
+        - -3.9084170548300823
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1959.0740240372913
+        coefs:
+        - 2.788173063906217
+        - 0.0005876315454010114
+        - 1.5901481574169616e-07
+        - -5.5274785534900734e-11
+        - 4.343174196374119e-15
+        - -596.1485368092698
+        - 0.11268978313302606
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: CO
+    radicalelectrons: 0
+    smiles: '[C-]#[O+]'
+    thermo:
+      polys:
+      - Tmax: 1571.6421906208973
+        Tmin: 100.0
+        coefs:
+        - 3.56837975682971
+        - -0.0008521234520552957
+        - 2.4891722989619147e-06
+        - -1.5633052288274875e-09
+        - 3.1359377284886324e-13
+        - -14284.254927650725
+        - 3.5791226322908845
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1571.6421906208973
+        coefs:
+        - 2.9130718738021812
+        - 0.0016465710327595734
+        - -6.886113758668026e-07
+        - 1.210366220713742e-10
+        - -7.840123798549237e-15
+        - -14180.887282855088
+        - 6.710427319663846
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: CO2
+    radicalelectrons: 0
+    smiles: O=C=O
+    thermo:
+      polys:
+      - Tmax: 978.2198475234931
+        Tmin: 100.0
+        coefs:
+        - 3.2808411653239715
+        - 0.002501897151763444
+        - 8.081774603943297e-06
+        - -1.2050841229906264e-08
+        - 4.6653414131808734e-12
+        - -48400.83018144593
+        - 6.000826389257792
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 978.2198475234931
+        coefs:
+        - 4.67428675265618
+        - 0.0026096072546808943
+        - -9.856707148879281e-07
+        - 1.957093222036703e-10
+        - -1.49832475266211e-14
+        - -48951.22209908351
+        - -2.1108448657244216
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: H2O
+    radicalelectrons: 0
+    smiles: O
+    thermo:
+      polys:
+      - Tmax: 1130.2320738322057
+        Tmin: 100.0
+        coefs:
+        - 4.057635252604483
+        - -0.0007879293112522543
+        - 2.908753497235269e-06
+        - -1.4751630499481873e-09
+        - 2.128330452748158e-13
+        - -30281.58661109765
+        - -0.3113619616144323
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1130.2320738322057
+        coefs:
+        - 2.8432544921593617
+        - 0.0027510789070854
+        - -7.810278407990648e-07
+        - 1.0724280035986706e-10
+        - -5.7938541447652635e-15
+        - -29958.61457437327
+        - 5.910396960112943
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: CH2O
+    radicalelectrons: 0
+    smiles: C=O
+    thermo:
+      polys:
+      - Tmax: 1070.440786736435
+        Tmin: 100.0
+        coefs:
+        - 4.129276389310868
+        - -0.00408399426227863
+        - 2.0322869910736544e-05
+        - -1.8352344542496354e-08
+        - 5.379722860916123e-12
+        - -14429.463904690823
+        - 3.2241905030484417
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1070.440786736435
+        coefs:
+        - 2.211733329178461
+        - 0.007942642026285144
+        - -3.34192217784792e-06
+        - 6.284694567577519e-10
+        - -4.404298510258141e-14
+        - -14297.44952155685
+        - 11.304848023043917
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: HCOOH
+    radicalelectrons: 0
+    smiles: O=CO
+    thermo:
+      polys:
+      - Tmax: 993.7310184005831
+        Tmin: 100.0
+        coefs:
+        - 3.7624046051372337
+        - -0.000943842928853897
+        - 3.387782153618384e-05
+        - -4.049828537650054e-08
+        - 1.4398628900674487e-11
+        - -46821.21012596644
+        - 7.632764536545068
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 993.7310184005831
+        coefs:
+        - 5.645005385538862
+        - 0.0075518156865158085
+        - -3.2085111868844112e-06
+        - 6.589182769542225e-10
+        - -5.050545799578382e-14
+        - -47989.00335430608
+        - -5.431057497463979
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: CH3OH
+    radicalelectrons: 0
+    smiles: CO
+    thermo:
+      polys:
+      - Tmax: 1035.7453470869239
+        Tmin: 100.0
+        coefs:
+        - 3.8400653385653656
+        - 0.0013823823192879133
+        - 1.9166849721914737e-05
+        - -2.015703261234441e-08
+        - 6.3910919772452e-12
+        - -25608.308847480323
+        - 5.909769893494216
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1035.7453470869239
+        coefs:
+        - 2.7918277833532428
+        - 0.011582810662506186
+        - -4.5155338050483765e-06
+        - 8.212101108949334e-10
+        - -5.6706605693302004e-14
+        - -25721.160851199416
+        - 9.410701641395352
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: HCOOCH3
+    radicalelectrons: 0
+    smiles: COC=O
+    thermo:
+      polys:
+      - Tmax: 1141.7765268510552
+        Tmin: 100.0
+        coefs:
+        - 3.2812273213672336
+        - 0.01131811737805193
+        - 1.8447569045648917e-05
+        - -2.4194295170211935e-08
+        - 7.751277730749824e-12
+        - -44672.55627334606
+        - 12.036392265472804
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1141.7765268510552
+        coefs:
+        - 4.909928380794891
+        - 0.01875291225194511
+        - -8.583252758602662e-06
+        - 1.6684656728802366e-09
+        - -1.1861145179979698e-13
+        - -45901.02119789549
+        - 0.211989513069733
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - name: CH4
+    radicalelectrons: 0
+    smiles: C
+    thermo:
+      polys:
+      - Tmax: 1084.1256176028905
+        Tmin: 100.0
+        coefs:
+        - 4.205412213725752
+        - -0.005355538772936121
+        - 2.5112209208822313e-05
+        - -2.137613978583813e-08
+        - 5.975181452908957e-12
+        - -10161.943173486035
+        - -0.9212683768870791
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1084.1256176028905
+        coefs:
+        - 0.9082831598521157
+        - 0.011454057074333902
+        - -4.571722072765139e-06
+        - 8.291879073043641e-10
+        - -5.6631181261556025e-14
+        - -9719.982076300364
+        - 13.992995648079988
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  name: gas
+- Species:
+  - adjlist: '1 X u0 p0 c0
+
+      '
+    name: X
+    radicalelectrons: 0
+    smiles: '[Pt]'
+    thermo:
+      polys:
+      - Tmax: 1554.822881652033
+        Tmin: 100.0
+        coefs:
+        - 0.0071011771479201746
+        - -4.255983843672255e-05
+        - 8.98477065717142e-08
+        - -7.801413596680754e-11
+        - 2.3244988111617888e-14
+        - -0.876090873698163
+        - -0.03112030636900487
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1554.822881652033
+        coefs:
+        - 0.16030644336551533
+        - -0.00025224478535384065
+        - 1.1418602756453465e-07
+        - -1.2148182629916009e-11
+        - 3.858681797049633e-16
+        - -70.81351488070877
+        - -0.9095656098086956
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 H u0 p0 c0 {2,S}
+
+      2 X u0 p0 c0 {1,S}
+
+      '
+    name: H*
+    radicalelectrons: 0
+    smiles: '[Pt]'
+    thermo:
+      polys:
+      - Tmax: 952.9132107886601
+        Tmin: 100.0
+        coefs:
+        - -0.3809660626081575
+        - 0.005472294569083162
+        - 2.6091003565509858e-06
+        - -9.649582524627901e-09
+        - 4.639450896464364e-12
+        - -1405.5976515756006
+        - 1.0172576682237555
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 952.9132107886601
+        coefs:
+        - 2.803398598170275
+        - -0.0005410505450549231
+        - 4.995100344663371e-07
+        - -7.549685429955127e-11
+        - 3.0677645005263437e-15
+        - -2346.3479394109213
+        - -15.943690223309131
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {2,D}
+
+      2 X u0 p0 c0 {1,D}
+
+      '
+    name: O*
+    radicalelectrons: 0
+    smiles: O=[Pt]
+    thermo:
+      polys:
+      - Tmax: 888.2502509391171
+        Tmin: 100.0
+        coefs:
+        - -0.7590176358048287
+        - 0.01898690769294487
+        - -3.824759680728252e-05
+        - 3.435615848830674e-08
+        - -1.1397588156215137e-11
+        - -21835.59612752371
+        - 1.7601900878415129
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 888.2502509391171
+        coefs:
+        - 1.8989476764029016
+        - 0.002032933929733934
+        - -1.1997536913653204e-06
+        - 2.32677753486701e-10
+        - -1.535058355980007e-14
+        - -22111.146946292036
+        - -9.641104973265131
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {2,S} {3,S}
+
+      2 H u0 p0 c0 {1,S}
+
+      3 X u0 p0 c0 {1,S}
+
+      '
+    name: OH*
+    radicalelectrons: 0
+    smiles: O[Pt]
+    thermo:
+      polys:
+      - Tmax: 914.5706177425961
+        Tmin: 100.0
+        coefs:
+        - -1.2951583635882373
+        - 0.03364789077004807
+        - -7.077278749567032e-05
+        - 6.543291818715707e-08
+        - -2.1941667806540214e-11
+        - -21645.38386079824
+        - 4.376324179051058
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 914.5706177425961
+        coefs:
+        - 2.4352181281212495
+        - 0.004646344196150331
+        - -2.400079165616958e-06
+        - 4.2640057564116323e-10
+        - -2.6064869732159122e-14
+        - -21797.159121488814
+        - -10.38684709656586
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {2,S} {3,S}
+
+      2 H u0 p0 c0 {1,S}
+
+      3 H u0 p0 c0 {1,S}
+
+      4 X u0 p0 c0
+
+      '
+    name: H2O*
+    radicalelectrons: 0
+    smiles: O.[Pt]
+    thermo:
+      polys:
+      - Tmax: 912.837822307862
+        Tmin: 100.0
+        coefs:
+        - -1.3434326891924422
+        - 0.03666994540479323
+        - -7.994954827526018e-05
+        - 7.74145984309618e-08
+        - -2.6867495734038675e-11
+        - -32349.029134203407
+        - 11.023877583444389
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 912.837822307862
+        coefs:
+        - 1.121677134432516
+        - 0.008166238465705104
+        - -4.02348954958092e-06
+        - 7.203989933697367e-10
+        - -4.5142396002015585e-14
+        - -32061.559014854134
+        - 3.3956640042972275
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {2,D}
+
+      2 C u0 p0 c0 {1,D} {3,D}
+
+      3 X u0 p0 c0 {2,D}
+
+      '
+    name: CO*
+    radicalelectrons: 0
+    smiles: O=C=[Pt]
+    thermo:
+      polys:
+      - Tmax: 891.3283984408441
+        Tmin: 100.0
+        coefs:
+        - -1.3821586401659256
+        - 0.03753076136428041
+        - -8.297669196625139e-05
+        - 8.097136374629087e-08
+        - -2.8547652894952893e-11
+        - -22536.9682186391
+        - 4.354538264782492
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 891.3283984408441
+        coefs:
+        - 1.380950958672332
+        - 0.008057111712588126
+        - -4.643043148854635e-06
+        - 8.911595088764479e-10
+        - -5.900389425036665e-14
+        - -22351.312350269156
+        - -4.85342807388533
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {3,D}
+
+      2 O u0 p2 c0 {3,D}
+
+      3 C u0 p0 c0 {1,D} {2,D}
+
+      4 X u0 p0 c0
+
+      '
+    name: CO2*
+    radicalelectrons: 0
+    smiles: O=C=O.[Pt]
+    thermo:
+      polys:
+      - Tmax: 882.2952978470935
+        Tmin: 100.0
+        coefs:
+        - -1.5468806695263004
+        - 0.040879985002847764
+        - -8.542837912098204e-05
+        - 8.19962432826798e-08
+        - -2.881070912104194e-11
+        - -47489.23685279596
+        - 13.782261636360259
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 882.2952978470935
+        coefs:
+        - 1.8086746995892238
+        - 0.009730371354018542
+        - -5.376299226073746e-06
+        - 1.0359290036961394e-09
+        - -6.951456386317092e-14
+        - -47461.06010400784
+        - 1.529091796623102
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {2,D}
+
+      2 C u0 p0 c0 {1,D} {3,S} {4,S}
+
+      3 H u0 p0 c0 {2,S}
+
+      4 X u0 p0 c0 {2,S}
+
+      '
+    name: HCO*
+    radicalelectrons: 0
+    smiles: O=C[Pt]
+    thermo:
+      polys:
+      - Tmax: 873.23079656509
+        Tmin: 100.0
+        coefs:
+        - -1.4367733991995575
+        - 0.03692406730912639
+        - -7.178932667215676e-05
+        - 6.73516651469521e-08
+        - -2.3517056110009787e-11
+        - -21694.82174013142
+        - 8.275540434025187
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 873.23079656509
+        coefs:
+        - 1.8327502802351
+        - 0.01007796656391854
+        - -5.285386984542896e-06
+        - 1.0135329388671397e-09
+        - -6.851952004606135e-14
+        - -21813.29066994276
+        - -4.46363300630439
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {3,S} {5,S}
+
+      2 O u0 p2 c0 {3,D}
+
+      3 C u0 p0 c0 {1,S} {2,D} {4,S}
+
+      4 H u0 p0 c0 {3,S}
+
+      5 X u0 p0 c0 {1,S}
+
+      '
+    name: HCOO*
+    radicalelectrons: 0
+    smiles: O=CO[Pt]
+    thermo:
+      polys:
+      - Tmax: 833.208956385829
+        Tmin: 100.0
+        coefs:
+        - -1.791479806634534
+        - 0.043707050320066755
+        - -7.603636095033734e-05
+        - 6.72476837348139e-08
+        - -2.295662974043244e-11
+        - -48190.71155421103
+        - 7.22934273803227
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 833.208956385829
+        coefs:
+        - 3.3277537506572568
+        - 0.01204511692764277
+        - -6.279769781211535e-06
+        - 1.227274153956667e-09
+        - -8.505132919576832e-14
+        - -48797.823510276365
+        - -15.05787117184127
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {3,S} {4,S}
+
+      2 O u0 p2 c0 {3,D}
+
+      3 C u0 p0 c0 {1,S} {2,D} {5,S}
+
+      4 H u0 p0 c0 {1,S}
+
+      5 X u0 p0 c0 {3,S}
+
+      '
+    name: COOH*
+    radicalelectrons: 0
+    smiles: O=C(O)[Pt]
+    thermo:
+      polys:
+      - Tmax: 816.2502947153436
+        Tmin: 100.0
+        coefs:
+        - -1.634211156398728
+        - 0.03883064027211077
+        - -6.43003909874773e-05
+        - 5.383803196653604e-08
+        - -1.754812603627561e-11
+        - -46355.71041599026
+        - 12.262729799544685
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 816.2502947153436
+        coefs:
+        - 3.879059869600425
+        - 0.009057272064397567
+        - -4.5224304943683915e-06
+        - 8.785842166519868e-10
+        - -6.094453622138073e-14
+        - -47163.9470768658
+        - -12.653874035075749
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {3,S} {5,S}
+
+      2 O u0 p2 c0 {3,D}
+
+      3 C u0 p0 c0 {1,S} {2,D} {4,S}
+
+      4 H u0 p0 c0 {3,S}
+
+      5 H u0 p0 c0 {1,S}
+
+      6 X u0 p0 c0
+
+      '
+    name: HCOOH*
+    radicalelectrons: 0
+    smiles: O=CO.[Pt]
+    thermo:
+      polys:
+      - Tmax: 950.500199371375
+        Tmin: 100.0
+        coefs:
+        - 3.669472638817562
+        - -0.0037816818202877018
+        - 5.534403222944553e-05
+        - -7.041889111342148e-08
+        - 2.6779699276046948e-11
+        - -47306.91700780753
+        - -8.382410761860607
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 950.500199371375
+        coefs:
+        - 8.667507860643761
+        - 0.003456478846331396
+        - -6.942604848164256e-07
+        - 1.7827101382542436e-10
+        - -1.9322285084872698e-14
+        - -49534.13643808675
+        - -38.959310291380774
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {2,D}
+
+      2 C u0 p0 c0 {1,D} {3,S} {4,S}
+
+      3 H u0 p0 c0 {2,S}
+
+      4 H u0 p0 c0 {2,S}
+
+      5 X u0 p0 c0
+
+      '
+    name: CH2O*
+    radicalelectrons: 0
+    smiles: C=O.[Pt]
+    thermo:
+      polys:
+      - Tmax: 879.3152133428782
+        Tmin: 100.0
+        coefs:
+        - -1.466981349174555
+        - 0.0413873230363437
+        - -8.876222845420807e-05
+        - 9.101193067430417e-08
+        - -3.366110487270153e-11
+        - -20300.240568346326
+        - 15.717874411423974
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 879.3152133428782
+        coefs:
+        - -0.8928995768925984
+        - 0.016619600202326255
+        - -8.715931898839694e-06
+        - 1.6681595608039454e-09
+        - -1.1250335168175846e-13
+        - -19544.645827260385
+        - 17.892672523972834
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {2,S} {6,S}
+
+      2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+
+      3 H u0 p0 c0 {2,S}
+
+      4 H u0 p0 c0 {2,S}
+
+      5 H u0 p0 c0 {2,S}
+
+      6 X u0 p0 c0 {1,S}
+
+      '
+    name: CH3O*
+    radicalelectrons: 0
+    smiles: CO[Pt]
+    thermo:
+      polys:
+      - Tmax: 857.6610505109971
+        Tmin: 100.0
+        coefs:
+        - -1.6842238180563438
+        - 0.042802383874920635
+        - -7.507840606267565e-05
+        - 7.036828824042352e-08
+        - -2.5092029538916753e-11
+        - -22313.705419881782
+        - 7.764238844144672
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 857.6610505109971
+        coefs:
+        - 1.1479415259292838
+        - 0.017134474632133963
+        - -8.396412609927113e-06
+        - 1.5980863392506168e-09
+        - -1.089762603549827e-13
+        - -22341.27736780484
+        - -2.7930271180061395
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {3,S} {6,S}
+
+      2 O u0 p2 c0 {3,S} {7,S}
+
+      3 C u0 p0 c0 {1,S} {2,S} {4,S} {5,S}
+
+      4 H u0 p0 c0 {3,S}
+
+      5 H u0 p0 c0 {3,S}
+
+      6 H u0 p0 c0 {1,S}
+
+      7 X u0 p0 c0 {2,S}
+
+      '
+    name: CH3O2*
+    radicalelectrons: 0
+    smiles: OCO[Pt]
+    thermo:
+      polys:
+      - Tmax: 932.2634023649351
+        Tmin: 100.0
+        coefs:
+        - 3.2191625743882875
+        - 0.006717219860656926
+        - 3.722718810505753e-05
+        - -5.736339856897969e-08
+        - 2.3626111684626194e-11
+        - -47489.3740654283
+        - -6.145183541065841
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 932.2634023649351
+        coefs:
+        - 10.310238163380754
+        - 0.0030429668853794844
+        - 9.707657064735528e-08
+        - -3.192669846059297e-11
+        - -2.134724266916546e-15
+        - -49974.00673926549
+        - -46.092889708020365
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {2,S} {6,S}
+
+      2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+
+      3 H u0 p0 c0 {2,S}
+
+      4 H u0 p0 c0 {2,S}
+
+      5 H u0 p0 c0 {2,S}
+
+      6 H u0 p0 c0 {1,S}
+
+      7 X u0 p0 c0
+
+      '
+    name: CH3OH*
+    radicalelectrons: 0
+    smiles: CO.[Pt]
+    thermo:
+      polys:
+      - Tmax: 850.4138755354976
+        Tmin: 100.0
+        coefs:
+        - -1.6400836695762155
+        - 0.040997452217885255
+        - -6.661579761210502e-05
+        - 6.121001777248855e-08
+        - -2.1772819387648383e-11
+        - -30508.736609716016
+        - 13.824483148013949
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 850.4138755354976
+        coefs:
+        - 1.018338626687362
+        - 0.018296680971257685
+        - -8.589801176325115e-06
+        - 1.622322249354259e-09
+        - -1.1073325234863515e-13
+        - -30592.176137139926
+        - 3.5977225402339883
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  name: surface
+Reactions:
+- kinetics:
+    A: 0.032
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - H*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - H2
+  type: ElementaryReaction
+- kinetics:
+    A: 7390000000000000.0
+    Ea: 77300.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - O*
+  - H*
+  radicalchange: 0
+  reactants:
+  - X
+  - OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 0.75
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H2O*
+  radicalchange: 0
+  reactants:
+  - X
+  - H2O
+  type: ElementaryReaction
+- kinetics:
+    A: 1150000000000000.0
+    Ea: 101400.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H*
+  - OH*
+  radicalchange: 0
+  reactants:
+  - X
+  - H2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.0e+16
+    Ea: 90500.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - OH*
+  - OH*
+  radicalchange: 0
+  reactants:
+  - O*
+  - H2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 0.5
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CO*
+  radicalchange: 0
+  reactants:
+  - X
+  - CO
+  type: ElementaryReaction
+- kinetics:
+    A: 0.005
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CO2*
+  radicalchange: 0
+  reactants:
+  - X
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 3.7e+17
+    Ea: 117600.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - CO2*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CO*
+  type: ElementaryReaction
+- kinetics:
+    A: 1000000000000000.0
+    Ea: 38700.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H*
+  - CO2*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CO*
+  type: ElementaryReaction
+- kinetics:
+    A: 2.28e+16
+    Ea: 15900.0
+    n: 0.263
+    type: Arrhenius
+  products:
+  - H*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - HCO*
+  type: ElementaryReaction
+- kinetics:
+    A: 2890.0000000000005
+    Ea: 343506.0
+    n: 1.16
+    type: Arrhenius
+  products:
+  - CH2O
+  radicalchange: 0
+  reactants:
+  - H2
+  - CO
+  type: ElementaryReaction
+- kinetics:
+    A: 2.54e-07
+    Ea: 223258.0
+    n: 3.7
+    type: Arrhenius
+  products:
+  - HCOOH
+  radicalchange: 0
+  reactants:
+  - H2O
+  - CO
+  type: ElementaryReaction
+- kinetics:
+    A: 1510.0000000000002
+    Ea: 309198.0
+    n: 1.23
+    type: Arrhenius
+  products:
+  - HCOOH
+  radicalchange: 0
+  reactants:
+  - H2
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 1.27e-07
+    Ea: 223258.0
+    n: 3.7
+    type: Arrhenius
+  products:
+  - HCOOCH3
+  radicalchange: 0
+  reactants:
+  - CO
+  - CH3OH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.03624000000000002
+    Ea: 331373.0
+    n: 2.83
+    type: Arrhenius
+  products:
+  - HCOOCH3
+  radicalchange: 0
+  reactants:
+  - CO2
+  - CH4
+  type: ElementaryReaction
+- kinetics:
+    A: 0.09999999999999999
+    Ea: 73060.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - H*
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 2499999999999.9995
+    Ea: 60523.33333333338
+    n: 0.0
+    type: Arrhenius
+  products:
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 0.09999999999999999
+    Ea: 73060.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - H*
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 0.1
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - X
+  - HCOOH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.1
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CH2O*
+  radicalchange: 0
+  reactants:
+  - X
+  - CH2O
+  type: ElementaryReaction
+- kinetics:
+    A: 0.049999999999999996
+    Ea: 73060.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - H*
+  - CH2O
+  type: ElementaryReaction
+- kinetics:
+    A: 0.049999999999999996
+    Ea: 73060.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CH2O
+  type: ElementaryReaction
+- kinetics:
+    A: 0.049999999999999996
+    Ea: 73060.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - H*
+  - HCOOH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.1
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - X
+  - CH3OH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.02
+    Ea: 41840.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - O*
+  - CO*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 0.03
+    Ea: 59622.70421266192
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - OH*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - H2O
+  type: ElementaryReaction
+- kinetics:
+    A: 0.03
+    Ea: 5000.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - CH2O
+  type: ElementaryReaction
+- kinetics:
+    A: 0.015
+    Ea: 28919.606513889477
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - OH*
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - HCOOH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.015
+    Ea: 5000.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - HCOOH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.015
+    Ea: 5000.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - HCOOH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.015
+    Ea: 15183.19387518114
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - H*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - CH3OH
+  type: ElementaryReaction
+- kinetics:
+    A: 0.015
+    Ea: 5222.186642418586
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - HCO*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - X
+  - X
+  - HCOOCH3
+  type: ElementaryReaction
+- kinetics:
+    A: 3.14e+17
+    Ea: 95520.48893907486
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - H*
+  - CO*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.243e+18
+    Ea: 83942.24785555065
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - H*
+  - CO2*
+  type: ElementaryReaction
+- kinetics:
+    A: 8.733e+16
+    Ea: 227705.4079759764
+    n: 0.0
+    type: Arrhenius
+  products:
+  - O*
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - X
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.25e+20
+    Ea: 117200.0
+    n: -0.475
+    type: Arrhenius
+  products:
+  - X
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - H*
+  - CO2*
+  type: ElementaryReaction
+- kinetics:
+    A: 402000000000000.0
+    Ea: 11500.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CO*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.781e+17
+    Ea: 157271.10805120406
+    n: 0.0
+    type: Arrhenius
+  products:
+  - OH*
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - X
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 4.424e+18
+    Ea: 87801.66155005872
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - H*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 2.308e+18
+    Ea: 70434.29992477236
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - H*
+  - COOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.932e+17
+    Ea: 45348.110910469884
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - CH2O*
+  radicalchange: 0
+  reactants:
+  - H*
+  - HCO*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.167e+17
+    Ea: 23156.482167048453
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - H*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.401e+17
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 2.122e+19
+    Ea: 100344.75605720998
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - H*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 4.349e+17
+    Ea: 112887.85056436119
+    n: 0.0
+    type: Arrhenius
+  products:
+  - X
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - H*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 1510.0000000000002
+    Ea: 309198.0
+    n: 1.23
+    type: Arrhenius
+  products:
+  - HCOOH
+  radicalchange: 0
+  reactants:
+  - H2
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 1510.0000000000002
+    Ea: 309198.0
+    n: 1.23
+    type: Arrhenius
+  products:
+  - HCOOH
+  radicalchange: 0
+  reactants:
+  - H2
+  - CO2
+  type: ElementaryReaction
+- kinetics:
+    A: 4.782614347822758e+20
+    Ea: 155550.0
+    n: -0.1875
+    type: Arrhenius
+  products:
+  - H*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 20739359874374.08
+    Ea: 121703.14564536512
+    n: 0.9366327977096471
+    type: Arrhenius
+  products:
+  - H*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - H2O*
+  - CO*
+  type: ElementaryReaction
+- kinetics:
+    A: 20000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - H*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 7.173921521734137e+20
+    Ea: 155550.0
+    n: -0.1875
+    type: Arrhenius
+  products:
+  - H*
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CH3OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 6761273401.3622
+    Ea: 94451.70722271885
+    n: 1.1805468792437384
+    type: Arrhenius
+  products:
+  - H*
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - H2O*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.298e+17
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - OH*
+  - CO*
+  radicalchange: 0
+  reactants:
+  - O*
+  - HCO*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.628e+16
+    Ea: 40523.843792334796
+    n: 0.0
+    type: Arrhenius
+  products:
+  - O*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CO2*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.628000000000007e+16
+    Ea: 40523.843792334796
+    n: 0.0
+    type: Arrhenius
+  products:
+  - O*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CO2*
+  type: ElementaryReaction
+- kinetics:
+    A: 11744812069.09178
+    Ea: 128358.38576475091
+    n: 1.2147809786485166
+    type: Arrhenius
+  products:
+  - OH*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - O*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 4.07e+20
+    Ea: 218400.0
+    n: -0.274
+    type: Arrhenius
+  products:
+  - OH*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - O*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.405e+20
+    Ea: 92700.0
+    n: -0.101
+    type: Arrhenius
+  products:
+  - OH*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - O*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 2.81e+20
+    Ea: 92700.0
+    n: -0.101
+    type: Arrhenius
+  products:
+  - OH*
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.814e+16
+    Ea: 40523.843792334796
+    n: 0.0
+    type: Arrhenius
+  products:
+  - O*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.814e+16
+    Ea: 40523.843792334796
+    n: 0.0
+    type: Arrhenius
+  products:
+  - O*
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 11744812069.09178
+    Ea: 128358.38576475091
+    n: 1.2147809786485166
+    type: Arrhenius
+  products:
+  - OH*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CH3OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 4.07e+20
+    Ea: 218400.0
+    n: -0.274
+    type: Arrhenius
+  products:
+  - OH*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CH3OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.261e+17
+    Ea: 28945.602708810562
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - CO*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - HCO*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 49272.26206360362
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - CO2*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 11744812069.09178
+    Ea: 128358.38576475091
+    n: 1.2147809786485166
+    type: Arrhenius
+  products:
+  - OH*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - O*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 4.07e+20
+    Ea: 218400.0
+    n: -0.274
+    type: Arrhenius
+  products:
+  - OH*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - O*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - CO2*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - COOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 20000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 9.6e+17
+    Ea: 56842.87453992183
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - CH2O*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 11744812069.09178
+    Ea: 128358.38576475091
+    n: 1.2147809786485166
+    type: Arrhenius
+  products:
+  - OH*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CH3OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 4.07e+20
+    Ea: 218400.0
+    n: -0.274
+    type: Arrhenius
+  products:
+  - OH*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - O*
+  - CH3OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.4e+17
+    Ea: 45844.436878256376
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CH3O2*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2O*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - OH*
+  - CH3OH*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.628e+16
+    Ea: 40523.843792334796
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO*
+  - HCOO*
+  radicalchange: 0
+  reactants:
+  - CO2*
+  - HCO*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.628e+16
+    Ea: 40523.843792334796
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - CO2*
+  - HCO*
+  type: ElementaryReaction
+- kinetics:
+    A: 7.475e+18
+    Ea: 57891.205417621124
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 10369679937187.04
+    Ea: 121703.14564536512
+    n: 0.9366327977096471
+    type: Arrhenius
+  products:
+  - HCO*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - CO*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 10369679937187.04
+    Ea: 121703.14564536512
+    n: 0.9366327977096471
+    type: Arrhenius
+  products:
+  - HCO*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - CO*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 20739359874374.08
+    Ea: 121703.14564536512
+    n: 0.9366327977096471
+    type: Arrhenius
+  products:
+  - HCO*
+  - HCO*
+  radicalchange: 0
+  reactants:
+  - CO*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.398e+17
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO*
+  - CH3O*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.814e+16
+    Ea: 40523.843792334796
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO*
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - CH2O*
+  type: ElementaryReaction
+- kinetics:
+    A: 1.814e+16
+    Ea: 40523.843792334796
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO*
+  - CH3O2*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.572e+16
+    Ea: 36664.43009782672
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO*
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 116874.93697367281
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - HCOO*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 107009.12818078171
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 107009.12818078171
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 97143.31938789062
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - COOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 117793.44067136262
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - CH2O*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 107927.63187847151
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - CH2O*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - COOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 63065.50357396277
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - HCOO*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 53199.694781071754
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 10369679937187.04
+    Ea: 121703.14564536512
+    n: 0.9366327977096471
+    type: Arrhenius
+  products:
+  - HCO*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - CO*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 10369679937187.04
+    Ea: 121703.14564536512
+    n: 0.9366327977096471
+    type: Arrhenius
+  products:
+  - HCO*
+  - COOH*
+  radicalchange: 0
+  reactants:
+  - CO*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 3948.1085020881146
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCOO*
+  - CH2O*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 19240.778123287484
+    n: 0.0
+    type: Arrhenius
+  products:
+  - COOH*
+  - CH2O*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 9.6e+17
+    Ea: 125364.0531476808
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O*
+  - CH2O*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 114365.61548601538
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - CH3O2*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.4e+17
+    Ea: 114365.61548601538
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - CH3O2*
+  type: ElementaryReaction
+- kinetics:
+    A: 20000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCO*
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - CH2O*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 107009.12818078171
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 107009.12818078171
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CO2*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - HCOO*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCOO*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - HCOOH*
+  type: ElementaryReaction
+- kinetics:
+    A: 9.6e+17
+    Ea: 124445.549449991
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - HCOO*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.4e+17
+    Ea: 113447.11178832556
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCOOH*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - HCOO*
+  - CH3O2*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCOO*
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - HCOOH*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 9.6e+17
+    Ea: 114579.74065709996
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.4e+17
+    Ea: 103581.30299543455
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCOOH*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - COOH*
+  - CH3O2*
+  type: ElementaryReaction
+- kinetics:
+    A: 10000000000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - COOH*
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - HCOOH*
+  - CH3O*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.4e+17
+    Ea: 114365.61548601538
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - CH3O2*
+  type: ElementaryReaction
+- kinetics:
+    A: 3.2e+17
+    Ea: 114365.61548601538
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O*
+  - HCOOH*
+  radicalchange: 0
+  reactants:
+  - HCO*
+  - CH3O2*
+  type: ElementaryReaction
+- kinetics:
+    A: 6.4e+17
+    Ea: 59637.67838861561
+    n: 0.0
+    type: Arrhenius
+  products:
+  - HCOOH*
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - CH3O*
+  - CH3O2*
+  type: ElementaryReaction
+- kinetics:
+    A: 9.6e+17
+    Ea: 70636.11605028105
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH2O*
+  - CH3OH*
+  radicalchange: 0
+  reactants:
+  - CH3O*
+  - CH3O*
+  type: ElementaryReaction
+Units: {}
