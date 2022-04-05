@@ -587,3 +587,13 @@ forbidden(
     )
 )
 
+forbidden(
+    label='H2_vdw',
+    structure=adjacencyList(
+        """
+        1 H u0 p0 c0 {2,S}
+        2 H u0 p0 c0 {1,S}
+        3 X u0 p0 c0 
+        """
+    )
+)
